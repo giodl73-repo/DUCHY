@@ -35,6 +35,7 @@ The accepted records identify licensing/copyright pages and do not import
 historical facts.
 
 `src-wikidata-q158445` passes this gate for structured claims only. DUCHY imports
-only the label/name and existence span facts for Grand Duchy of
-Mecklenburg-Schwerin from Wikidata Q158445. Prose text, geometry, map boundary,
-holder genealogy, and full parentage/control timeline remain out of scope.
+only the label/name, normalized title rank, and existence span facts for Grand
+Duchy of Mecklenburg-Schwerin from Wikidata Q158445. Prose text, geometry, map
+boundary, holder genealogy, and full parentage/control timeline remain out of
+scope.

@@ -16,7 +16,8 @@ intended answer surfaces before CLI/API behavior is locked.
 | IF-005 | `transfers_between(area_or_title, rank, start, end)` | Return ordered parentage/control transfers within a range. | planned |
 | IF-006 | `lineage_for_title(title_id)` | Return ordered continuity and parentage/control events. | planned |
 | IF-007 | answer trace object | Explain matched spans, events, source class, confidence, and gaps. | planned |
-| IF-008 | fixture source/confidence fields | Mark seed, fictional, source-backed, contested, uncertain, or unsupported rows. | deferred to source package |
+| IF-008 | fixture source/confidence fields | Mark seed, fictional, source-backed, contested, uncertain, or unsupported rows. | implemented for first source-backed facts |
+| IF-009 | source-backed title materializer | Convert reviewed name/rank/existence fact sets into `Title` records. | implemented first slice |
 
 ## Answer Shape
 

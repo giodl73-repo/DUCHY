@@ -207,6 +207,7 @@ pub enum ClaimKind {
     Holder,
     Event,
     Name,
+    Rank,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1256,6 +1257,16 @@ pub fn first_real_fact_records() -> Vec<FactRecord> {
             conflict_group: None,
         },
         FactRecord {
+            fact_id: "fact-q158445-rank".to_string(),
+            subject_id: "title-q158445".to_string(),
+            claim_kind: ClaimKind::Rank,
+            span: None,
+            value: "Duchy".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
             fact_id: "fact-q158445-exists".to_string(),
             subject_id: "title-q158445".to_string(),
             claim_kind: ClaimKind::TitleExists,
@@ -1282,6 +1293,84 @@ pub fn validate_first_real_facts() -> Result<(), Vec<String>> {
         Ok(())
     } else {
         Err(errors)
+    }
+}
+
+pub fn source_backed_titles_from_facts(
+    catalog: &SourceCatalog,
+    facts: &[FactRecord],
+) -> Result<Vec<Title>, Vec<String>> {
+    let mut errors = catalog.validate().err().unwrap_or_default();
+
+    for fact in facts {
+        if let Err(mut fact_errors) = catalog.validate_fact(fact) {
+            errors.append(&mut fact_errors);
+        }
+    }
+
+    let mut grouped: HashMap<&str, Vec<&FactRecord>> = HashMap::new();
+    for fact in facts {
+        grouped.entry(&fact.subject_id).or_default().push(fact);
+    }
+
+    let mut titles = Vec::new();
+    for (subject_id, subject_facts) in grouped {
+        let name = subject_facts
+            .iter()
+            .find(|fact| fact.claim_kind == ClaimKind::Name)
+            .map(|fact| fact.value.clone());
+        let rank = subject_facts
+            .iter()
+            .find(|fact| fact.claim_kind == ClaimKind::Rank)
+            .and_then(|fact| parse_title_rank(&fact.value));
+        let exists = subject_facts
+            .iter()
+            .find(|fact| fact.claim_kind == ClaimKind::TitleExists)
+            .and_then(|fact| fact.span.clone());
+
+        match (name, rank, exists) {
+            (Some(name), Some(rank), Some(exists)) => titles.push(Title {
+                id: subject_id.to_string(),
+                name,
+                rank,
+                exists,
+                de_jure_parent: None,
+            }),
+            (name, rank, exists) => {
+                if name.is_none() {
+                    errors.push(format!("{subject_id} missing source-backed name fact"));
+                }
+                if rank.is_none() {
+                    errors.push(format!("{subject_id} missing source-backed rank fact"));
+                }
+                if exists.is_none() {
+                    errors.push(format!("{subject_id} missing source-backed existence span"));
+                }
+            }
+        }
+    }
+
+    if errors.is_empty() {
+        titles.sort_by(|left, right| left.id.cmp(&right.id));
+        Ok(titles)
+    } else {
+        Err(errors)
+    }
+}
+
+pub fn first_real_titles() -> Result<Vec<Title>, Vec<String>> {
+    let catalog = first_real_source_catalog();
+    let facts = first_real_fact_records();
+    source_backed_titles_from_facts(&catalog, &facts)
+}
+
+fn parse_title_rank(value: &str) -> Option<TitleRank> {
+    match value.trim().to_ascii_lowercase().as_str() {
+        "county" => Some(TitleRank::County),
+        "duchy" | "grand duchy" => Some(TitleRank::Duchy),
+        "kingdom" => Some(TitleRank::Kingdom),
+        "empire" => Some(TitleRank::Empire),
+        _ => None,
     }
 }
 
@@ -2021,16 +2110,59 @@ allowed_use: no_such_use
     }
 
     #[test]
-    fn first_real_fact_records_are_minimal_name_and_existence_claims() {
+    fn first_real_fact_records_are_minimal_name_rank_and_existence_claims() {
         let facts = first_real_fact_records();
 
-        assert_eq!(facts.len(), 2);
+        assert_eq!(facts.len(), 3);
         assert!(facts.iter().any(|fact| fact.claim_kind == ClaimKind::Name
             && fact.value == "Grand Duchy of Mecklenburg-Schwerin"));
+        assert!(facts
+            .iter()
+            .any(|fact| fact.claim_kind == ClaimKind::Rank && fact.value == "Duchy"));
         assert!(facts.iter().any(|fact| {
             fact.claim_kind == ClaimKind::TitleExists
                 && fact.span == Some(YearSpan::new(1815, Some(1918)))
         }));
+    }
+
+    #[test]
+    fn first_real_facts_materialize_a_source_backed_title() {
+        let titles = first_real_titles().expect("first real title should materialize");
+
+        assert_eq!(
+            titles,
+            vec![Title {
+                id: "title-q158445".to_string(),
+                name: "Grand Duchy of Mecklenburg-Schwerin".to_string(),
+                rank: TitleRank::Duchy,
+                exists: YearSpan::new(1815, Some(1918)),
+                de_jure_parent: None,
+            }]
+        );
+    }
+
+    #[test]
+    fn materialization_rejects_incomplete_title_fact_set() {
+        let catalog = first_real_source_catalog();
+        let facts = vec![FactRecord {
+            fact_id: "fact-incomplete-name".to_string(),
+            subject_id: "title-incomplete".to_string(),
+            claim_kind: ClaimKind::Name,
+            span: None,
+            value: "Incomplete Title".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        }];
+
+        let errors = source_backed_titles_from_facts(&catalog, &facts).unwrap_err();
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("missing source-backed rank fact")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("missing source-backed existence span")));
     }
 
     #[test]

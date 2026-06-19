@@ -18,6 +18,7 @@ source record and two structured facts that can pass custody validation.
 ## Imported Facts
 
 - `fact-q158445-name`: title name, `Grand Duchy of Mecklenburg-Schwerin`
+- `fact-q158445-rank`: normalized DUCHY rank, `Duchy`
 - `fact-q158445-exists`: title existence span, 1815 through 1918
 
 ## Explicit Non-Imports

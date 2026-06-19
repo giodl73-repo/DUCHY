@@ -77,5 +77,20 @@ fn main() {
     println!("Source fact gate: metadata-only records cannot import facts");
 
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
-    println!("First real facts: Wikidata Q158445 name/existence validated");
+    println!("First real facts: Wikidata Q158445 name/rank/existence validated");
+
+    let first_real_titles =
+        duchy::first_real_titles().expect("first real title should materialize");
+    for title in first_real_titles {
+        println!(
+            "First real title: {:?} {} ({}-{})",
+            title.rank,
+            title.name,
+            title.exists.start,
+            title
+                .exists
+                .end
+                .map_or_else(|| "present".to_string(), |end| end.to_string())
+        );
+    }
 }

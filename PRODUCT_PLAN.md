@@ -53,8 +53,10 @@ Pulses:
    validation, and source file parser complete.
 4. Source-backed fact gate. Complete for validation logic.
 5. First real source-backed facts. Complete for the minimal Wikidata Q158445
-   name/existence slice.
-6. Review packet for contested/uncertain history.
+   name/rank/existence slice.
+6. Source-backed title materialization. Complete for one title record with no
+   parentage/control claims.
+7. Review packet for contested/uncertain history.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

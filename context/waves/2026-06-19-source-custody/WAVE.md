@@ -19,8 +19,9 @@ records and validation.
 | 01 | Metadata-only source records | complete | Add source records, allowed-use posture, review decisions, and validation. |
 | 02 | Metadata source file format | complete | Define and parse a fixture file shape for source records without importing historical facts. |
 | 03 | Source-backed fact gate | complete | Validate fact records against accepted source records and confidence labels. |
-| 04 | First real source-backed facts | complete | Import only reviewed name and existence facts for Wikidata Q158445. |
-| 05 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
+| 04 | First real source-backed facts | complete | Import only reviewed name, rank, and existence facts for Wikidata Q158445. |
+| 05 | Source-backed title materialization | complete | Convert reviewed fact sets into a real `Title` record without parentage/control claims. |
+| 06 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
 
 ## Success Criteria
 
