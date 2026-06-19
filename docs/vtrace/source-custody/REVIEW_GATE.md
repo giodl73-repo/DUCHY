@@ -44,3 +44,14 @@ scope.
 only the label/name, normalized title rank, and existence span facts for Grand
 Duchy of Hesse from Wikidata Q20135. Prose text, geometry, map boundary, holder
 genealogy, and full parentage/control timeline remain out of scope.
+
+`src-wikidata-q43287` passes this gate for structured claims only. DUCHY imports
+only the label/name, normalized title rank, and existence span facts for German
+Empire from Wikidata Q43287. Prose text, geometry, map boundary, holder
+genealogy, and full parentage/control timeline remain out of scope.
+
+`fact-q20135-parent-q43287` passes this gate as a single source-backed
+parentage claim from Grand Duchy of Hesse to German Empire for 1871-1918. This
+authorizes one direct title-path relation only; it does not import intermediate
+constituent-state semantics, holders, borders, legal prose, or a complete
+German Empire hierarchy.

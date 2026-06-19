@@ -44,3 +44,33 @@ span: 1806..1918
 value: exists
 source_ids: src-wikidata-q20135
 confidence: single_source
+---
+fact_id: fact-q43287-name
+subject_id: title-q43287
+claim_kind: name
+value: German Empire
+source_ids: src-wikidata-q43287
+confidence: single_source
+---
+fact_id: fact-q43287-rank
+subject_id: title-q43287
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q43287
+confidence: single_source
+---
+fact_id: fact-q43287-exists
+subject_id: title-q43287
+claim_kind: title_exists
+span: 1871..1918
+value: exists
+source_ids: src-wikidata-q43287
+confidence: single_source
+---
+fact_id: fact-q20135-parent-q43287
+subject_id: title-q20135
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q20135
+confidence: single_source

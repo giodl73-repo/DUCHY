@@ -21,7 +21,7 @@ intended answer surfaces before CLI/API behavior is locked.
 | IF-010 | source-backed title-path query | Return a traced answer envelope for source-backed title records. | implemented first slice |
 | IF-011 | fact fixture parser | Parse reviewed source-backed fact records from dependency-free text fixtures. | implemented first slice |
 | IF-012 | contested fact review packet | Group contested claims and block normal materialization until resolution. | implemented first slice |
-| IF-013 | source-backed parentage materializer | Convert reviewed parentage fact records into temporal `ParentageSpan` relations. | implemented without real parentage import |
+| IF-013 | source-backed parentage materializer | Convert reviewed parentage fact records into temporal `ParentageSpan` relations. | implemented with first real parentage import |
 | IF-014 | reviewed source fixture parser | Parse real reviewed source records that authorize fact fixtures. | implemented first slice |
 
 ## Answer Shape

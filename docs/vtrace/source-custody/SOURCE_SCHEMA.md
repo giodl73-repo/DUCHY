@@ -105,6 +105,8 @@ Rules:
 - `span` uses `start..end`; open spans use `start..present`.
 - `parentage` facts use `subject_id` as the child title and `value` as the
   parent title ID.
+- Source-backed parentage uses direct documented links and may skip CK-style
+  intermediate ranks when the reviewed source supports that relation.
 - Fact files still require separate source metadata and source-custody review.
 
 The first real fact fixture is `fixtures/first-real.facts`; it must be validated

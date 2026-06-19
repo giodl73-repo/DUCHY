@@ -37,8 +37,8 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The first accepted import is a minimal Wikidata Q158445 name/rank/existence
-  fact set for Grand Duchy of Mecklenburg-Schwerin.
+  The first accepted imports are minimal Wikidata structured claims for
+  Q158445, Q20135, and Q43287.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -47,11 +47,11 @@ range, and which continuity events explain a title lineage.
 The current source-custody slice validates metadata-only source records, review
 decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
-source-backed title-path query for the reviewed mini-catalog. The first real
-facts now live in `fixtures/first-real.facts`, and contested fact groups are
-blocked from normal materialization until reviewed. Parentage materialization is
-implemented, but no real parentage claim has been imported yet. Reviewed real
-source metadata lives in `fixtures/first-real.sources`.
+source-backed title-path query for the reviewed mini-catalog, including a
+bounded Q20135 -> Q43287 parentage path for 1871-1918. The first real facts now
+live in `fixtures/first-real.facts`, and contested fact groups are blocked from
+normal materialization until reviewed. Reviewed real source metadata lives in
+`fixtures/first-real.sources`.
 
 ## Relationship To Games Design
 

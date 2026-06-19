@@ -69,6 +69,13 @@ pub struct ParentageSpan {
     pub child_title_id: String,
     pub parent_title_id: String,
     pub span: YearSpan,
+    pub rank_policy: ParentageRankPolicy,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ParentageRankPolicy {
+    StrictImmediate,
+    AllowRankSkip,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -705,16 +712,26 @@ impl TitleTimeline {
                             parentage.child_title_id, parentage.parent_title_id
                         ));
                     }
-                    match child.rank.parent_rank() {
-                        Some(expected_rank) if parent.rank == expected_rank => {}
-                        Some(expected_rank) => errors.push(format!(
-                            "{} expects temporal parent rank {:?}, found {:?}",
-                            child.id, expected_rank, parent.rank
-                        )),
-                        None => errors.push(format!(
-                            "{} cannot have temporal parent {}",
-                            child.id, parent.id
-                        )),
+                    match parentage.rank_policy {
+                        ParentageRankPolicy::StrictImmediate => match child.rank.parent_rank() {
+                            Some(expected_rank) if parent.rank == expected_rank => {}
+                            Some(expected_rank) => errors.push(format!(
+                                "{} expects temporal parent rank {:?}, found {:?}",
+                                child.id, expected_rank, parent.rank
+                            )),
+                            None => errors.push(format!(
+                                "{} cannot have temporal parent {}",
+                                child.id, parent.id
+                            )),
+                        },
+                        ParentageRankPolicy::AllowRankSkip => {
+                            if parent.rank <= child.rank {
+                                errors.push(format!(
+                                    "{} expects temporal parent rank above {:?}, found {:?}",
+                                    child.id, child.rank, parent.rank
+                                ));
+                            }
+                        }
                     }
                     if parentage.span.start < child.exists.start {
                         errors.push(format!(
@@ -1400,6 +1417,25 @@ pub fn first_real_source_catalog() -> SourceCatalog {
             "Accepted for minimal structured-claim import: label, inception, and dissolution only."
                 .to_string(),
     });
+    catalog.add_record(SourceRecord {
+        source_id: "src-wikidata-q43287".to_string(),
+        source_kind: SourceKind::Wikidata,
+        source_url: "https://www.wikidata.org/wiki/Q43287".to_string(),
+        license: "Wikidata structured data in main namespace is CC0; page text is CC BY-SA"
+            .to_string(),
+        retrieved_on: "2026-06-19".to_string(),
+        allowed_use: AllowedUse::StructuredClaims,
+        attribution: Some("Wikidata contributors".to_string()),
+        notes: Some("German Empire (Q43287).".to_string()),
+    });
+    catalog.add_review(SourceReview {
+        source_id: "src-wikidata-q43287".to_string(),
+        decision: SourceReviewDecision::AcceptedStructuredClaims,
+        reviewer: "Source Custody Reviewer".to_string(),
+        note:
+            "Accepted for minimal structured-claim import: label, inception, and dissolution only."
+                .to_string(),
+    });
 
     catalog
 }
@@ -1466,6 +1502,46 @@ pub fn first_real_fact_records() -> Vec<FactRecord> {
             claim_kind: ClaimKind::TitleExists,
             span: Some(YearSpan::new(1806, Some(1918))),
             value: "exists".to_string(),
+            source_ids: vec!["src-wikidata-q20135".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q43287-name".to_string(),
+            subject_id: "title-q43287".to_string(),
+            claim_kind: ClaimKind::Name,
+            span: None,
+            value: "German Empire".to_string(),
+            source_ids: vec!["src-wikidata-q43287".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q43287-rank".to_string(),
+            subject_id: "title-q43287".to_string(),
+            claim_kind: ClaimKind::Rank,
+            span: None,
+            value: "Empire".to_string(),
+            source_ids: vec!["src-wikidata-q43287".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q43287-exists".to_string(),
+            subject_id: "title-q43287".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: Some(YearSpan::new(1871, Some(1918))),
+            value: "exists".to_string(),
+            source_ids: vec!["src-wikidata-q43287".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q20135-parent-q43287".to_string(),
+            subject_id: "title-q20135".to_string(),
+            claim_kind: ClaimKind::Parentage,
+            span: Some(YearSpan::new(1871, Some(1918))),
+            value: "title-q43287".to_string(),
             source_ids: vec!["src-wikidata-q20135".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
@@ -1764,6 +1840,7 @@ pub fn source_backed_parentage_from_facts(
             child_title_id,
             parent_title_id,
             span,
+            rank_policy: ParentageRankPolicy::AllowRankSkip,
         });
     }
 
@@ -1905,46 +1982,55 @@ pub fn seed_timeline() -> TitleTimeline {
         child_title_id: "d_alpine_seed".to_string(),
         parent_title_id: "k_burgundy_seed".to_string(),
         span: YearSpan::new(1000, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "d_river_seed".to_string(),
         parent_title_id: "k_burgundy_seed".to_string(),
         span: YearSpan::new(1000, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "d_highland_seed".to_string(),
         parent_title_id: "k_burgundy_seed".to_string(),
         span: YearSpan::new(1000, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_lake_seed".to_string(),
         parent_title_id: "d_alpine_seed".to_string(),
         span: YearSpan::new(1000, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_bridge_seed".to_string(),
         parent_title_id: "d_alpine_seed".to_string(),
         span: YearSpan::new(1000, Some(1049)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_bridge_seed".to_string(),
         parent_title_id: "d_river_seed".to_string(),
         span: YearSpan::new(1050, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_ford_seed".to_string(),
         parent_title_id: "d_alpine_seed".to_string(),
         span: YearSpan::new(1000, Some(1024)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_ford_seed".to_string(),
         parent_title_id: "d_river_seed".to_string(),
         span: YearSpan::new(1025, Some(1074)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
     timeline.add_parentage(ParentageSpan {
         child_title_id: "c_ford_seed".to_string(),
         parent_title_id: "d_highland_seed".to_string(),
         span: YearSpan::new(1075, Some(1100)),
+        rank_policy: ParentageRankPolicy::StrictImmediate,
     });
 
     timeline.add_control(ControlSpan {
@@ -2541,7 +2627,7 @@ allowed_use: no_such_use
     fn first_real_fact_records_are_minimal_name_rank_and_existence_claims() {
         let facts = first_real_fact_records();
 
-        assert_eq!(facts.len(), 6);
+        assert_eq!(facts.len(), 10);
         assert!(facts.iter().any(|fact| fact.claim_kind == ClaimKind::Name
             && fact.value == "Grand Duchy of Mecklenburg-Schwerin"));
         assert!(facts
@@ -2561,6 +2647,19 @@ allowed_use: no_such_use
             fact.claim_kind == ClaimKind::TitleExists
                 && fact.span == Some(YearSpan::new(1806, Some(1918)))
         }));
+        assert!(facts
+            .iter()
+            .any(|fact| fact.claim_kind == ClaimKind::Name && fact.value == "German Empire"));
+        assert!(facts.iter().any(|fact| {
+            fact.claim_kind == ClaimKind::TitleExists
+                && fact.span == Some(YearSpan::new(1871, Some(1918)))
+        }));
+        assert!(facts.iter().any(|fact| {
+            fact.claim_kind == ClaimKind::Parentage
+                && fact.subject_id == "title-q20135"
+                && fact.value == "title-q43287"
+                && fact.span == Some(YearSpan::new(1871, Some(1918)))
+        }));
     }
 
     #[test]
@@ -2576,7 +2675,11 @@ allowed_use: no_such_use
         let catalog = first_real_source_catalog_from_fixture()
             .expect("first real source fixture should parse");
 
-        for source_id in ["src-wikidata-q158445", "src-wikidata-q20135"] {
+        for source_id in [
+            "src-wikidata-q158445",
+            "src-wikidata-q20135",
+            "src-wikidata-q43287",
+        ] {
             assert_eq!(
                 catalog.record(source_id).map(|record| record.source_kind),
                 Some(SourceKind::Wikidata)
@@ -2670,7 +2773,7 @@ confidence: maybe
     fn first_real_facts_materialize_a_source_backed_title() {
         let titles = first_real_titles_from_fixture().expect("first real title should materialize");
 
-        assert_eq!(titles.len(), 2);
+        assert_eq!(titles.len(), 3);
         assert_eq!(
             titles[0],
             Title {
@@ -2688,6 +2791,16 @@ confidence: maybe
                 name: "Grand Duchy of Hesse".to_string(),
                 rank: TitleRank::Duchy,
                 exists: YearSpan::new(1806, Some(1918)),
+                de_jure_parent: None,
+            }
+        );
+        assert_eq!(
+            titles[2],
+            Title {
+                id: "title-q43287".to_string(),
+                name: "German Empire".to_string(),
+                rank: TitleRank::Empire,
+                exists: YearSpan::new(1871, Some(1918)),
                 de_jure_parent: None,
             }
         );
@@ -2713,6 +2826,52 @@ confidence: maybe
                 name: "Grand Duchy of Mecklenburg-Schwerin".to_string(),
                 rank: TitleRank::Duchy,
             }])
+        );
+    }
+
+    #[test]
+    fn first_real_timeline_answers_source_backed_parentage_path() {
+        let timeline =
+            first_real_timeline_from_fixture().expect("first real timeline should materialize");
+        let query = timeline.title_path_query_for_title_in_year(
+            "title-q20135",
+            1871,
+            SourceClass::SourceBacked,
+        );
+
+        assert_eq!(query.status, QueryStatus::Answered);
+        assert_eq!(
+            query.answer.as_ref().map(|answer| {
+                answer
+                    .titles
+                    .iter()
+                    .map(|step| step.title_id.as_str())
+                    .collect::<Vec<_>>()
+            }),
+            Some(vec!["title-q20135", "title-q43287"])
+        );
+    }
+
+    #[test]
+    fn first_real_timeline_keeps_parentage_span_bounded() {
+        let timeline =
+            first_real_timeline_from_fixture().expect("first real timeline should materialize");
+        let query = timeline.title_path_query_for_title_in_year(
+            "title-q20135",
+            1866,
+            SourceClass::SourceBacked,
+        );
+
+        assert_eq!(query.status, QueryStatus::Answered);
+        assert_eq!(
+            query.answer.as_ref().map(|answer| {
+                answer
+                    .titles
+                    .iter()
+                    .map(|step| step.title_id.as_str())
+                    .collect::<Vec<_>>()
+            }),
+            Some(vec!["title-q20135"])
         );
     }
 
@@ -2898,6 +3057,7 @@ confidence: maybe
             child_title_id: "c_bad".to_string(),
             parent_title_id: "k_bad".to_string(),
             span: YearSpan::new(1000, None),
+            rank_policy: ParentageRankPolicy::StrictImmediate,
         });
 
         let errors = timeline
