@@ -20,6 +20,7 @@ cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/
 cargo run --bin duchy-import -- rejected-report data/staging/example.manifest data/staging/rejected.md
 cargo run --bin duchy-import -- active-manifest data/staging/example.manifest data/staging/active.manifest
 cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest data/staging/archive.manifest
+cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 ```
 
 Generated source stubs are blocked by default and must be reviewed before they
@@ -29,6 +30,7 @@ Active manifests keep only pending and reviewed candidates after promoted or
 rejected rows have been archived.
 Archive manifests keep promoted and rejected candidates as parseable audit
 records outside the working queue.
+Manifest shards split larger queues into fixed-size, parseable review batches.
 
 Example dry run:
 

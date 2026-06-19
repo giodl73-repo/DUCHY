@@ -73,6 +73,7 @@ git diff --check
 | EVID-030 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- rejected-report`; `context/waves/2026-06-19-source-custody/pulses/pulse-21.md` | Rejected manifest rows generate audit reports before queue cleanup. | pass on 2026-06-19 |
 | EVID-031 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- active-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-22.md` | Pending and reviewed manifest rows are regenerated as an active queue after audit/archive. | pass on 2026-06-19 |
 | EVID-032 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- archive-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-23.md` | Promoted and rejected manifest rows are regenerated as a parseable archive queue. | pass on 2026-06-19 |
+| EVID-033 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- shard-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-24.md` | Large candidate manifests split into parseable fixed-size review shards. | pass on 2026-06-19 |
 
 ## Gaps
 
