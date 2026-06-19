@@ -49,7 +49,8 @@ decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
 source-backed title-path query for the reviewed mini-catalog. The first real
 facts now live in `fixtures/first-real.facts`, and contested fact groups are
-blocked from normal materialization until reviewed.
+blocked from normal materialization until reviewed. Parentage materialization is
+implemented, but no real parentage claim has been imported yet.
 
 ## Relationship To Games Design
 

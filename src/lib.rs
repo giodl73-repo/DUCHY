@@ -1618,7 +1618,12 @@ pub fn source_backed_titles_from_facts(
     }
 
     let mut grouped: HashMap<&str, Vec<&FactRecord>> = HashMap::new();
-    for fact in facts {
+    for fact in facts.iter().filter(|fact| {
+        matches!(
+            fact.claim_kind,
+            ClaimKind::Name | ClaimKind::Rank | ClaimKind::TitleExists
+        )
+    }) {
         grouped.entry(&fact.subject_id).or_default().push(fact);
     }
 
@@ -1693,7 +1698,76 @@ pub fn source_backed_timeline_from_facts(
         timeline.add_title(title);
     }
 
+    let parentage = source_backed_parentage_from_facts(catalog, facts, &timeline)?;
+    for parentage in parentage {
+        timeline.add_parentage(parentage);
+    }
+
+    timeline.validate()?;
     Ok(timeline)
+}
+
+pub fn source_backed_parentage_from_facts(
+    catalog: &SourceCatalog,
+    facts: &[FactRecord],
+    timeline: &TitleTimeline,
+) -> Result<Vec<ParentageSpan>, Vec<String>> {
+    let mut errors = catalog.validate().err().unwrap_or_default();
+    let mut parentage = Vec::new();
+
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.claim_kind == ClaimKind::Parentage)
+    {
+        if let Err(mut fact_errors) = catalog.validate_fact(fact) {
+            errors.append(&mut fact_errors);
+        }
+        if fact.confidence == ConfidenceLabel::Contested {
+            errors.push(format!(
+                "{} is contested; resolve before parentage materialization",
+                fact.fact_id
+            ));
+            continue;
+        }
+
+        let Some(span) = fact.span.clone() else {
+            errors.push(format!("{} parentage fact requires a span", fact.fact_id));
+            continue;
+        };
+        let child_title_id = fact.subject_id.clone();
+        let parent_title_id = fact.value.clone();
+
+        if !timeline.titles.contains_key(&child_title_id) {
+            errors.push(format!(
+                "{} parentage child {} is not materialized",
+                fact.fact_id, child_title_id
+            ));
+        }
+        if !timeline.titles.contains_key(&parent_title_id) {
+            errors.push(format!(
+                "{} parentage parent {} is not materialized",
+                fact.fact_id, parent_title_id
+            ));
+        }
+
+        parentage.push(ParentageSpan {
+            child_title_id,
+            parent_title_id,
+            span,
+        });
+    }
+
+    if errors.is_empty() {
+        parentage.sort_by(|left, right| {
+            left.child_title_id
+                .cmp(&right.child_title_id)
+                .then(left.span.start.cmp(&right.span.start))
+                .then(left.parent_title_id.cmp(&right.parent_title_id))
+        });
+        Ok(parentage)
+    } else {
+        Err(errors)
+    }
 }
 
 pub fn first_real_timeline() -> Result<TitleTimeline, Vec<String>> {
@@ -2684,6 +2758,59 @@ confidence: maybe
     }
 
     #[test]
+    fn source_backed_timeline_materializes_reviewed_parentage() {
+        let catalog = test_structured_claim_catalog();
+        let facts = test_parentage_fact_set();
+
+        let timeline =
+            source_backed_timeline_from_facts(&catalog, &facts).expect("timeline should build");
+        let answer = timeline
+            .title_path_for_title_in_year("title-child-duchy", 1050)
+            .expect("child should have parent path");
+
+        assert_eq!(
+            answer
+                .titles
+                .iter()
+                .map(|step| step.title_id.as_str())
+                .collect::<Vec<_>>(),
+            vec!["title-child-duchy", "title-parent-kingdom"]
+        );
+    }
+
+    #[test]
+    fn source_backed_parentage_requires_span() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts
+            .iter_mut()
+            .find(|fact| fact.claim_kind == ClaimKind::Parentage)
+            .expect("fixture should have parentage")
+            .span = None;
+
+        let errors = source_backed_timeline_from_facts(&catalog, &facts)
+            .expect_err("parentage without span should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("parentage fact requires a span")));
+    }
+
+    #[test]
+    fn source_backed_parentage_requires_materialized_parent() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.retain(|fact| fact.subject_id != "title-parent-kingdom");
+
+        let errors = source_backed_timeline_from_facts(&catalog, &facts)
+            .expect_err("missing parent should fail");
+
+        assert!(errors.iter().any(
+            |error| error.contains("parentage parent title-parent-kingdom is not materialized")
+        ));
+    }
+
+    #[test]
     fn validation_rejects_wrong_parent_rank() {
         let mut timeline = TitleTimeline::new();
         timeline.add_title(Title {
@@ -2738,5 +2865,101 @@ confidence: maybe
         assert!(errors
             .iter()
             .any(|error| error.contains("expects temporal parent rank Duchy")));
+    }
+
+    fn test_structured_claim_catalog() -> SourceCatalog {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_record(SourceRecord {
+            source_id: "src-test-structured".to_string(),
+            source_kind: SourceKind::Other,
+            source_url: "urn:duchy:test-structured".to_string(),
+            license: "test structured claims".to_string(),
+            retrieved_on: "2026-06-19".to_string(),
+            allowed_use: AllowedUse::StructuredClaims,
+            attribution: Some("DUCHY test fixture".to_string()),
+            notes: None,
+        });
+        catalog.add_review(SourceReview {
+            source_id: "src-test-structured".to_string(),
+            decision: SourceReviewDecision::AcceptedStructuredClaims,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "Accepted for source-backed parentage materialization tests.".to_string(),
+        });
+        catalog
+    }
+
+    fn test_parentage_fact_set() -> Vec<FactRecord> {
+        vec![
+            FactRecord {
+                fact_id: "fact-parent-name".to_string(),
+                subject_id: "title-parent-kingdom".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Test Parent Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-parent-rank".to_string(),
+                subject_id: "title-parent-kingdom".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-parent-exists".to_string(),
+                subject_id: "title-parent-kingdom".to_string(),
+                claim_kind: ClaimKind::TitleExists,
+                span: Some(YearSpan::new(1000, Some(1100))),
+                value: "exists".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-name".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Test Child Duchy".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-rank".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Duchy".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-exists".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::TitleExists,
+                span: Some(YearSpan::new(1000, Some(1100))),
+                value: "exists".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-parentage".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::Parentage,
+                span: Some(YearSpan::new(1000, Some(1100))),
+                value: "title-parent-kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+        ]
     }
 }

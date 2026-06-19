@@ -61,7 +61,9 @@ Pulses:
 9. Review packet for contested/uncertain history. Complete for fact-level
    grouping and materialization blocking.
 10. Second reviewed source import. Complete for Q20135 Grand Duchy of Hesse.
-11. Source-backed parentage review.
+11. Source-backed parentage review. Complete for materialization support; no
+    real parentage imported yet.
+12. First real parentage source import.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

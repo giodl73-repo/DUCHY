@@ -102,6 +102,8 @@ Rules:
 - Blank lines and `#` comments are ignored.
 - `source_ids` is a comma-separated list.
 - `span` uses `start..end`; open spans use `start..present`.
+- `parentage` facts use `subject_id` as the child title and `value` as the
+  parent title ID.
 - Fact files still require separate source metadata and source-custody review.
 
 The first real fact fixture is `fixtures/first-real.facts`.
@@ -117,6 +119,7 @@ The current crate implements the fact-gate layer:
 | `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
 | `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
+| `source_backed_parentage_from_facts` | Converts reviewed parentage facts into `ParentageSpan` records after title materialization. |
 
 Fact-gate rules:
 
@@ -129,6 +132,8 @@ Fact-gate rules:
 - `seed`, `metadata_pointer`, and `unsupported` are not accepted as
   source-backed fact confidence labels.
 - Materialization rejects fact sets containing contested facts.
+- Parentage materialization requires a span and already-materialized child and
+  parent titles.
 
 ## Non-Goals
 
