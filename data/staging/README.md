@@ -12,6 +12,12 @@ after:
 - parentage/control spans fit materialized titles after merge, and
 - `duchy-promote --dry-run` passes.
 
+Manifest queues track candidate sources before fact extraction:
+
+```powershell
+cargo run --bin duchy-import -- manifest data/staging/example.manifest
+```
+
 Example dry run:
 
 ```powershell

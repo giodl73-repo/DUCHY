@@ -1,0 +1,19 @@
+# Synthetic candidate manifest; not accepted history.
+
+candidate_id: cand-staging-one
+source_id: src-staging-one
+source_url: urn:duchy:staging-one
+status: pending
+notes: First synthetic candidate.
+---
+candidate_id: cand-staging-two
+source_id: src-staging-two
+source_url: urn:duchy:staging-two
+status: reviewed
+notes: Second synthetic candidate ready for fact extraction.
+---
+candidate_id: cand-staging-three
+source_id: src-staging-three
+source_url: urn:duchy:staging-three
+status: rejected
+notes: Rejected synthetic candidate.

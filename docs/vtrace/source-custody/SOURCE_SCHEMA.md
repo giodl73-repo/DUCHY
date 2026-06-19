@@ -121,6 +121,7 @@ Candidate batch imports belong in `data/staging/` until review. The staging
 gate is:
 
 ```powershell
+cargo run --bin duchy-import -- manifest data/staging/example.manifest
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/example-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
@@ -133,6 +134,21 @@ merged source-backed timeline without writing files. `duchy-promote --apply`
 uses the same validation path, then rewrites accepted fixture files with the
 validated merged content. `--report path` writes a promotion review report with
 candidate titles, parentage rows, fact IDs, and merged counts.
+
+## Candidate Manifest Format
+
+Manifest files queue candidate sources before fact extraction:
+
+```text
+candidate_id: cand-example
+source_id: src-example
+source_url: urn:duchy:example
+status: pending
+notes: Optional review note.
+```
+
+Statuses are `pending`, `reviewed`, `promoted`, or `rejected`. Duplicate
+`candidate_id` and `source_id` values are rejected.
 
 ## Fact Gate
 

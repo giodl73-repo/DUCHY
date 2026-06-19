@@ -224,6 +224,23 @@ pub struct ContestedFactGroup {
     pub facts: Vec<FactRecord>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct CandidateRecord {
+    pub candidate_id: String,
+    pub source_id: String,
+    pub source_url: String,
+    pub status: CandidateStatus,
+    pub notes: Option<String>,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum CandidateStatus {
+    Pending,
+    Reviewed,
+    Promoted,
+    Rejected,
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum ClaimKind {
     TitleExists,
@@ -1255,6 +1272,26 @@ fn parse_required_confidence(
     }
 }
 
+fn parse_required_candidate_status(
+    values: &HashMap<String, String>,
+    key: &str,
+    errors: &mut Vec<String>,
+) -> CandidateStatus {
+    match values.get(key) {
+        Some(value) => match parse_candidate_status(value) {
+            Some(status) => status,
+            None => {
+                errors.push(format!("invalid status {value}"));
+                CandidateStatus::Rejected
+            }
+        },
+        None => {
+            errors.push(format!("missing required field {key}"));
+            CandidateStatus::Rejected
+        }
+    }
+}
+
 fn parse_source_kind(value: &str) -> Option<SourceKind> {
     match value {
         "wikidata" => Some(SourceKind::Wikidata),
@@ -1326,6 +1363,16 @@ fn parse_allowed_use(value: &str) -> Option<AllowedUse> {
         "geometry" => Some(AllowedUse::Geometry),
         "text_excerpt" => Some(AllowedUse::TextExcerpt),
         "blocked" => Some(AllowedUse::Blocked),
+        _ => None,
+    }
+}
+
+fn parse_candidate_status(value: &str) -> Option<CandidateStatus> {
+    match value {
+        "pending" => Some(CandidateStatus::Pending),
+        "reviewed" => Some(CandidateStatus::Reviewed),
+        "promoted" => Some(CandidateStatus::Promoted),
+        "rejected" => Some(CandidateStatus::Rejected),
         _ => None,
     }
 }
@@ -1433,6 +1480,77 @@ pub fn first_real_fact_records_from_fixture() -> Result<Vec<FactRecord>, Vec<Str
     fact_records_from_text(include_str!("../fixtures/first-real.facts"))
 }
 
+pub fn candidate_records_from_text(input: &str) -> Result<Vec<CandidateRecord>, Vec<String>> {
+    let mut candidates = Vec::new();
+    let mut errors = Vec::new();
+
+    for (index, block) in input.split("\n---").enumerate() {
+        let block = block.trim();
+        if block.is_empty() {
+            continue;
+        }
+        match parse_candidate_record_block(block) {
+            Ok(candidate) => candidates.push(candidate),
+            Err(mut block_errors) => {
+                for error in block_errors.drain(..) {
+                    errors.push(format!("candidate {}: {error}", index + 1));
+                }
+            }
+        }
+    }
+
+    if errors.is_empty() {
+        Ok(candidates)
+    } else {
+        Err(errors)
+    }
+}
+
+pub fn validate_candidate_records(candidates: &[CandidateRecord]) -> Result<(), Vec<String>> {
+    let mut errors = Vec::new();
+    let mut candidate_ids: HashMap<&str, usize> = HashMap::new();
+    let mut source_ids: HashMap<&str, usize> = HashMap::new();
+
+    for (index, candidate) in candidates.iter().enumerate() {
+        let position = index + 1;
+        if candidate.candidate_id.trim().is_empty() {
+            errors.push(format!(
+                "candidate {position} candidate_id must not be empty"
+            ));
+        }
+        if candidate.source_id.trim().is_empty() {
+            errors.push(format!(
+                "{} source_id must not be empty",
+                candidate.candidate_id
+            ));
+        }
+        if candidate.source_url.trim().is_empty() {
+            errors.push(format!(
+                "{} source_url must not be empty",
+                candidate.candidate_id
+            ));
+        }
+        if let Some(first_seen) = candidate_ids.insert(candidate.candidate_id.as_str(), position) {
+            errors.push(format!(
+                "{} duplicates candidate_id first seen at position {}",
+                candidate.candidate_id, first_seen
+            ));
+        }
+        if let Some(first_seen) = source_ids.insert(candidate.source_id.as_str(), position) {
+            errors.push(format!(
+                "{} duplicates source_id {} first seen at position {}",
+                candidate.candidate_id, candidate.source_id, first_seen
+            ));
+        }
+    }
+
+    if errors.is_empty() {
+        Ok(())
+    } else {
+        Err(errors)
+    }
+}
+
 pub fn validate_fact_records(
     catalog: &SourceCatalog,
     facts: &[FactRecord],
@@ -1482,6 +1600,44 @@ pub fn validate_fact_records(
     } else {
         Err(errors)
     }
+}
+
+fn parse_candidate_record_block(block: &str) -> Result<CandidateRecord, Vec<String>> {
+    let mut values = HashMap::new();
+    let mut errors = Vec::new();
+
+    for (line_index, line) in block.lines().enumerate() {
+        let line = line.trim();
+        if line.is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let Some((key, value)) = line.split_once(':') else {
+            errors.push(format!("line {} is not key: value", line_index + 1));
+            continue;
+        };
+        values.insert(key.trim().to_string(), value.trim().to_string());
+    }
+
+    let candidate_id = take_required(&values, "candidate_id", &mut errors);
+    let source_id = take_required(&values, "source_id", &mut errors);
+    let source_url = take_required(&values, "source_url", &mut errors);
+    let status = parse_required_candidate_status(&values, "status", &mut errors);
+    let notes = values
+        .get("notes")
+        .filter(|value| !value.trim().is_empty())
+        .cloned();
+
+    if !errors.is_empty() {
+        return Err(errors);
+    }
+
+    Ok(CandidateRecord {
+        candidate_id,
+        source_id,
+        source_url,
+        status,
+        notes,
+    })
 }
 
 fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
@@ -2642,6 +2798,78 @@ review_note: Duplicate record.
             first_real_fact_records_from_fixture().expect("first real fixture should parse");
 
         assert_eq!(facts, first_real_fact_records());
+    }
+
+    #[test]
+    fn candidate_records_parse_manifest_text() {
+        let text = r#"
+candidate_id: cand-one
+source_id: src-one
+source_url: urn:duchy:candidate-one
+status: pending
+notes: Pending candidate.
+---
+candidate_id: cand-two
+source_id: src-two
+source_url: urn:duchy:candidate-two
+status: reviewed
+"#;
+
+        let candidates =
+            candidate_records_from_text(text).expect("candidate manifest should parse");
+
+        assert_eq!(candidates.len(), 2);
+        assert_eq!(candidates[0].candidate_id, "cand-one");
+        assert_eq!(candidates[0].status, CandidateStatus::Pending);
+        assert_eq!(candidates[1].status, CandidateStatus::Reviewed);
+        assert_eq!(validate_candidate_records(&candidates), Ok(()));
+    }
+
+    #[test]
+    fn candidate_records_reject_invalid_status_and_duplicates() {
+        let text = r#"
+candidate_id: cand-one
+source_id: src-one
+source_url: urn:duchy:candidate-one
+status: maybe
+---
+candidate_id: cand-one
+source_id: src-one
+source_url: urn:duchy:candidate-two
+status: pending
+"#;
+
+        let parse_errors =
+            candidate_records_from_text(text).expect_err("invalid candidate status should fail");
+        assert!(parse_errors
+            .iter()
+            .any(|error| error.contains("invalid status")));
+
+        let candidates = vec![
+            CandidateRecord {
+                candidate_id: "cand-one".to_string(),
+                source_id: "src-one".to_string(),
+                source_url: "urn:duchy:candidate-one".to_string(),
+                status: CandidateStatus::Pending,
+                notes: None,
+            },
+            CandidateRecord {
+                candidate_id: "cand-one".to_string(),
+                source_id: "src-one".to_string(),
+                source_url: "urn:duchy:candidate-two".to_string(),
+                status: CandidateStatus::Reviewed,
+                notes: None,
+            },
+        ];
+
+        let validation_errors = validate_candidate_records(&candidates)
+            .expect_err("duplicate manifest entries should fail");
+        assert!(validation_errors
+            .iter()
+            .any(|error| error.contains("duplicates candidate_id")));
+        assert!(validation_errors
+            .iter()
+            .any(|error| error.contains("duplicates source_id")));
     }
 
     #[test]

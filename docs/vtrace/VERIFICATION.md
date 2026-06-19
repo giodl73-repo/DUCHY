@@ -68,6 +68,7 @@ git diff --check
 | EVID-025 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-import -- status`; `cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts`; `context/waves/2026-06-19-source-custody/pulses/pulse-16.md` | Batch import staging gate validates status, dry-run promotion, duplicates, and conflicting accepted facts. | pass on 2026-06-19 |
 | EVID-026 | test/demo/review | `cargo test --quiet`; temp-copy `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-17.md` | Apply-mode promotion rewrites accepted fixture files only after merged validation passes. | pass on 2026-06-19 |
 | EVID-027 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-promote -- --dry-run --report`; `context/waves/2026-06-19-source-custody/pulses/pulse-18.md` | Promotion review reports summarize candidate titles, parentage, fact IDs, and merged counts. | pass on 2026-06-19 |
+| EVID-028 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-import -- manifest data/staging/example.manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-19.md` | Candidate manifests parse and report pending/reviewed/promoted/rejected counts before fact extraction. | pass on 2026-06-19 |
 
 ## Gaps
 

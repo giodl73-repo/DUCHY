@@ -20,6 +20,7 @@ The first foundation is a Rust model for title snapshots:
 cargo test --quiet
 cargo run --quiet
 cargo run --bin duchy-import -- status
+cargo run --bin duchy-import -- manifest data/staging/example.manifest
 ```
 
 ## Product Shape

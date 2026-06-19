@@ -13,6 +13,12 @@ fn main() {
 
 fn run() -> Result<(), Vec<String>> {
     let args = env::args().skip(1).collect::<Vec<_>>();
+    if let [command, manifest_path] = args.as_slice() {
+        if command == "manifest" {
+            return manifest_status(manifest_path);
+        }
+    }
+
     let (sources_path, facts_path) = match args.as_slice() {
         [] => ("fixtures/first-real.sources", "fixtures/first-real.facts"),
         [command] if command == "status" => {
@@ -21,7 +27,8 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]]".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file"
+                    .to_string(),
             ])
         }
     };
@@ -55,6 +62,35 @@ fn run() -> Result<(), Vec<String>> {
             .collect::<Vec<_>>()
     })?;
     println!("- timeline: valid");
+
+    Ok(())
+}
+
+fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+
+    let mut pending = 0;
+    let mut reviewed = 0;
+    let mut promoted = 0;
+    let mut rejected = 0;
+    for candidate in &candidates {
+        match candidate.status {
+            duchy::CandidateStatus::Pending => pending += 1,
+            duchy::CandidateStatus::Reviewed => reviewed += 1,
+            duchy::CandidateStatus::Promoted => promoted += 1,
+            duchy::CandidateStatus::Rejected => rejected += 1,
+        }
+    }
+
+    println!("DUCHY manifest status");
+    println!("- candidates: {}", candidates.len());
+    println!("- pending: {pending}");
+    println!("- reviewed: {reviewed}");
+    println!("- promoted: {promoted}");
+    println!("- rejected: {rejected}");
 
     Ok(())
 }

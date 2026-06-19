@@ -76,7 +76,9 @@ Pulses:
 18. Apply-mode promotion. Complete for validated staging-to-accepted fixture
     merge.
 19. Promotion review reports. Complete for `duchy-promote --report`.
-20. Next reviewed import packet.
+20. Candidate manifest queue. Complete for staging manifest parsing and status
+    counts.
+21. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
