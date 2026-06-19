@@ -18,5 +18,12 @@ Example dry run:
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 ```
 
-Promotion should append reviewed rows to accepted fixture files in a separate,
-reviewable commit.
+Apply a reviewed batch only after dry-run and review:
+
+```powershell
+cargo run --bin duchy-promote -- --apply fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
+```
+
+`--apply` rewrites the accepted fixture files with the validated merged content.
+Use it only for reviewed historical batches, then commit the accepted fixture
+diff separately from staging cleanup.

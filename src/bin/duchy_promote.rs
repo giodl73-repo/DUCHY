@@ -17,15 +17,19 @@ fn run() -> Result<(), Vec<String>> {
         args.as_slice()
     else {
         return Err(vec![
-            "usage: duchy-promote --dry-run accepted.sources accepted.facts candidate.sources candidate.facts"
+            "usage: duchy-promote (--dry-run|--apply) accepted.sources accepted.facts candidate.sources candidate.facts"
                 .to_string(),
         ]);
     };
-    if mode != "--dry-run" {
-        return Err(vec![
-            "duchy-promote currently supports --dry-run only".to_string()
-        ]);
-    }
+    let apply = match mode.as_str() {
+        "--dry-run" => false,
+        "--apply" => true,
+        _ => {
+            return Err(vec![
+                "duchy-promote mode must be --dry-run or --apply".to_string()
+            ]);
+        }
+    };
 
     let accepted_source_text = read_text(accepted_sources)?;
     let accepted_fact_text = read_text(accepted_facts)?;
@@ -43,12 +47,29 @@ fn run() -> Result<(), Vec<String>> {
     duchy::validate_fact_records(&merged_catalog, &merged_facts)?;
     duchy::source_backed_timeline_from_facts(&merged_catalog, &merged_facts)?;
 
-    println!("DUCHY promotion dry run");
+    if apply {
+        fs::write(accepted_sources, &merged_source_text)
+            .map_err(|error| vec![format!("failed to write {accepted_sources}: {error}")])?;
+        fs::write(accepted_facts, &merged_fact_text)
+            .map_err(|error| vec![format!("failed to write {accepted_facts}: {error}")])?;
+    }
+
+    println!(
+        "DUCHY promotion {}",
+        if apply { "apply" } else { "dry run" }
+    );
     println!("- candidate sources: {}", candidate_catalog.record_count());
     println!("- candidate facts: {}", candidate_facts.len());
     println!("- merged sources: {}", merged_catalog.record_count());
     println!("- merged facts: {}", merged_facts.len());
-    println!("- result: valid; no files changed");
+    println!(
+        "- result: valid; {}",
+        if apply {
+            "accepted fixture files updated"
+        } else {
+            "no files changed"
+        }
+    );
 
     Ok(())
 }

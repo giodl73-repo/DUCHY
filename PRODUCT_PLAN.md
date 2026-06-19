@@ -73,7 +73,9 @@ Pulses:
     title facts and Q153015 -> Q43287, 1871-1918.
 17. Batch import staging gate. Complete for CLI status, dry-run promotion, and
     duplicate/conflict validation.
-18. Next reviewed import packet.
+18. Apply-mode promotion. Complete for validated staging-to-accepted fixture
+    merge.
+19. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -64,6 +64,9 @@ promotion before accepted fixture rows are appended:
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 ```
 
+Reviewed batches can then be appended with `duchy-promote --apply`, which
+rewrites accepted fixture files only after the same validation path passes.
+
 ## Relationship To Games Design
 
 - BANISH can consume DUCHY-style political timelines when settlement pressure

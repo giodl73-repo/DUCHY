@@ -66,6 +66,7 @@ git diff --check
 | EVID-023 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-14.md` | Reviewed Prussia packet imports Q27306 title facts and Q27306 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
 | EVID-024 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-15.md` | Reviewed Saxony packet imports Q153015 title facts and Q153015 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
 | EVID-025 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-import -- status`; `cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts`; `context/waves/2026-06-19-source-custody/pulses/pulse-16.md` | Batch import staging gate validates status, dry-run promotion, duplicates, and conflicting accepted facts. | pass on 2026-06-19 |
+| EVID-026 | test/demo/review | `cargo test --quiet`; temp-copy `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-17.md` | Apply-mode promotion rewrites accepted fixture files only after merged validation passes. | pass on 2026-06-19 |
 
 ## Gaps
 

@@ -123,11 +123,14 @@ gate is:
 ```powershell
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
+cargo run --bin duchy-promote -- --apply fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 ```
 
 `duchy-promote --dry-run` validates candidate sources/facts, merges them with
 accepted fixtures in memory, validates duplicates/conflicts, and materializes a
-merged source-backed timeline without writing files.
+merged source-backed timeline without writing files. `duchy-promote --apply`
+uses the same validation path, then rewrites accepted fixture files with the
+validated merged content.
 
 ## Fact Gate
 
