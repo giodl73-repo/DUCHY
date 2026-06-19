@@ -21,7 +21,8 @@ records and validation.
 | 03 | Source-backed fact gate | complete | Validate fact records against accepted source records and confidence labels. |
 | 04 | First real source-backed facts | complete | Import only reviewed name, rank, and existence facts for Wikidata Q158445. |
 | 05 | Source-backed title materialization | complete | Convert reviewed fact sets into a real `Title` record without parentage/control claims. |
-| 06 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
+| 06 | Source-backed title query | complete | Answer a source-backed title-path query for the first real title. |
+| 07 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
 
 ## Success Criteria
 

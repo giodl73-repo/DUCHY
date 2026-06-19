@@ -55,6 +55,7 @@ git diff --check
 | EVID-012 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Source-backed fact gate validation. | pass on 2026-06-19 |
 | EVID-013 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-04.md` | First reviewed real source-backed facts for Wikidata Q158445. | pass on 2026-06-19 |
 | EVID-014 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-05.md` | First source-backed title materializes from reviewed name/rank/existence facts. | pass on 2026-06-19 |
+| EVID-015 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-06.md` | First source-backed title-path query returns a traced answer envelope. | pass on 2026-06-19 |
 
 ## Gaps
 

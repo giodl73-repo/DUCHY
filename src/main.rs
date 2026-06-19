@@ -93,4 +93,22 @@ fn main() {
                 .map_or_else(|| "present".to_string(), |end| end.to_string())
         );
     }
+
+    let first_real_timeline =
+        duchy::first_real_timeline().expect("first real timeline should materialize");
+    let first_real_query = first_real_timeline.title_path_query_for_title_in_year(
+        "title-q158445",
+        1815,
+        duchy::SourceClass::SourceBacked,
+    );
+    println!(
+        "First real title query [{:?}/{}]: {}",
+        first_real_query.status,
+        first_real_query.trace[0].code,
+        first_real_query
+            .answer
+            .as_ref()
+            .and_then(|answer| answer.titles.first())
+            .map_or("unanswered", |step| step.name.as_str())
+    );
 }

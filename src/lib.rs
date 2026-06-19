@@ -132,6 +132,18 @@ pub enum SourceClass {
     Unsupported,
 }
 
+impl SourceClass {
+    fn title_path_trace_code(self) -> &'static str {
+        match self {
+            Self::Seed => "seed_title_path",
+            Self::Fictional => "fictional_title_path",
+            Self::SourceBacked => "source_backed_title_path",
+            Self::Contested => "contested_title_path",
+            Self::Unsupported => "unsupported_title_path",
+        }
+    }
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct TraceNote {
     pub code: String,
@@ -367,6 +379,37 @@ impl TitleTimeline {
                 SourceClass::Seed,
                 "no_area_title_span",
                 format!("area {area_id} has no modeled title path in {year}"),
+            ),
+        }
+    }
+
+    pub fn title_path_query_for_title_in_year(
+        &self,
+        title_id: &str,
+        year: Year,
+        source_class: SourceClass,
+    ) -> QueryEnvelope<TitlePathAnswer> {
+        if !self.titles.contains_key(title_id) {
+            return QueryEnvelope::without_answer(
+                QueryStatus::Unknown,
+                source_class,
+                "title_missing",
+                format!("title {title_id} is not present in the timeline"),
+            );
+        }
+
+        match self.title_path_for_title_in_year(title_id, year) {
+            Some(answer) => QueryEnvelope::with_answer(
+                answer,
+                source_class,
+                source_class.title_path_trace_code(),
+                format!("resolved {source_class:?} title path for title {title_id} in {year}"),
+            ),
+            None => QueryEnvelope::without_answer(
+                QueryStatus::Empty,
+                source_class,
+                "no_title_span",
+                format!("title {title_id} has no modeled title path in {year}"),
             ),
         }
     }
@@ -1364,6 +1407,25 @@ pub fn first_real_titles() -> Result<Vec<Title>, Vec<String>> {
     source_backed_titles_from_facts(&catalog, &facts)
 }
 
+pub fn source_backed_timeline_from_facts(
+    catalog: &SourceCatalog,
+    facts: &[FactRecord],
+) -> Result<TitleTimeline, Vec<String>> {
+    let mut timeline = TitleTimeline::new();
+
+    for title in source_backed_titles_from_facts(catalog, facts)? {
+        timeline.add_title(title);
+    }
+
+    Ok(timeline)
+}
+
+pub fn first_real_timeline() -> Result<TitleTimeline, Vec<String>> {
+    let catalog = first_real_source_catalog();
+    let facts = first_real_fact_records();
+    source_backed_timeline_from_facts(&catalog, &facts)
+}
+
 fn parse_title_rank(value: &str) -> Option<TitleRank> {
     match value.trim().to_ascii_lowercase().as_str() {
         "county" => Some(TitleRank::County),
@@ -2139,6 +2201,42 @@ allowed_use: no_such_use
                 de_jure_parent: None,
             }]
         );
+    }
+
+    #[test]
+    fn first_real_timeline_answers_source_backed_title_path() {
+        let timeline = first_real_timeline().expect("first real timeline should materialize");
+        let query = timeline.title_path_query_for_title_in_year(
+            "title-q158445",
+            1815,
+            SourceClass::SourceBacked,
+        );
+
+        assert_eq!(query.status, QueryStatus::Answered);
+        assert_eq!(query.source_class, SourceClass::SourceBacked);
+        assert_eq!(query.trace[0].code, "source_backed_title_path");
+        assert_eq!(
+            query.answer.as_ref().map(|answer| answer.titles.clone()),
+            Some(vec![TitlePathStep {
+                title_id: "title-q158445".to_string(),
+                name: "Grand Duchy of Mecklenburg-Schwerin".to_string(),
+                rank: TitleRank::Duchy,
+            }])
+        );
+    }
+
+    #[test]
+    fn first_real_timeline_returns_empty_outside_existence_span() {
+        let timeline = first_real_timeline().expect("first real timeline should materialize");
+        let query = timeline.title_path_query_for_title_in_year(
+            "title-q158445",
+            1814,
+            SourceClass::SourceBacked,
+        );
+
+        assert_eq!(query.status, QueryStatus::Empty);
+        assert_eq!(query.source_class, SourceClass::SourceBacked);
+        assert_eq!(query.answer, None);
     }
 
     #[test]
