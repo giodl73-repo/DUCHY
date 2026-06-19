@@ -78,7 +78,9 @@ Pulses:
 19. Promotion review reports. Complete for `duchy-promote --report`.
 20. Candidate manifest queue. Complete for staging manifest parsing and status
     counts.
-21. Next reviewed import packet.
+21. Source stub generation. Complete for blocked review-required source stubs
+    from reviewed manifest rows.
+22. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

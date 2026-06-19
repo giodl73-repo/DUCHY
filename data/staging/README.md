@@ -16,7 +16,11 @@ Manifest queues track candidate sources before fact extraction:
 
 ```powershell
 cargo run --bin duchy-import -- manifest data/staging/example.manifest
+cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/staging/generated.sources
 ```
+
+Generated source stubs are blocked by default and must be reviewed before they
+can support fact promotion.
 
 Example dry run:
 

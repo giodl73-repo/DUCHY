@@ -18,6 +18,11 @@ fn run() -> Result<(), Vec<String>> {
             return manifest_status(manifest_path);
         }
     }
+    if let [command, manifest_path, output_path] = args.as_slice() {
+        if command == "source-stubs" {
+            return source_stubs(manifest_path, output_path);
+        }
+    }
 
     let (sources_path, facts_path) = match args.as_slice() {
         [] => ("fixtures/first-real.sources", "fixtures/first-real.facts"),
@@ -27,8 +32,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file"
-                    .to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources".to_string(),
             ])
         }
     };
@@ -91,6 +95,51 @@ fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
     println!("- reviewed: {reviewed}");
     println!("- promoted: {promoted}");
     println!("- rejected: {rejected}");
+
+    Ok(())
+}
+
+fn source_stubs(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+
+    let reviewed = candidates
+        .iter()
+        .filter(|candidate| candidate.status == duchy::CandidateStatus::Reviewed)
+        .collect::<Vec<_>>();
+    if reviewed.is_empty() {
+        return Err(vec![
+            "manifest has no reviewed candidates for source stub generation".to_string(),
+        ]);
+    }
+
+    let mut output = String::new();
+    output.push_str("# Generated source stubs; review before promotion.\n");
+    for (index, candidate) in reviewed.iter().enumerate() {
+        if index > 0 {
+            output.push_str("---\n");
+        }
+        output.push_str(&format!("source_id: {}\n", candidate.source_id));
+        output.push_str("source_kind: other\n");
+        output.push_str(&format!("source_url: {}\n", candidate.source_url));
+        output.push_str("license: REVIEW_REQUIRED\n");
+        output.push_str("retrieved_on: REVIEW_REQUIRED\n");
+        output.push_str("allowed_use: blocked\n");
+        output.push_str("notes: Generated from reviewed candidate manifest; replace review fields before fact promotion.\n");
+        output.push_str("review_decision: blocked_scope\n");
+        output.push_str("reviewer: Source Custody Reviewer\n");
+        output.push_str("review_note: Generated stub only; source-custody review required before fact extraction.\n");
+    }
+
+    duchy::SourceCatalog::from_metadata_text(&output)?;
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY source stubs");
+    println!("- reviewed candidates: {}", reviewed.len());
+    println!("- output: {output_path}");
 
     Ok(())
 }

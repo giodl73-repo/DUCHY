@@ -122,6 +122,7 @@ gate is:
 
 ```powershell
 cargo run --bin duchy-import -- manifest data/staging/example.manifest
+cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/staging/generated.sources
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/example-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
@@ -149,6 +150,11 @@ notes: Optional review note.
 
 Statuses are `pending`, `reviewed`, `promoted`, or `rejected`. Duplicate
 `candidate_id` and `source_id` values are rejected.
+
+`duchy-import source-stubs` emits parseable blocked source records for reviewed
+manifest rows. These stubs are not accepted sources; reviewers must replace the
+license, allowed-use, source kind, and review decision fields before facts can
+be promoted.
 
 ## Fact Gate
 
