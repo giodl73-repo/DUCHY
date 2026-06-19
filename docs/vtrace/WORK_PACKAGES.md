@@ -13,7 +13,7 @@ Work packages for lineage and territorial-transfer query capability.
 | WP-003 | Year title-path and lineage answer query. | REQ-001, REQ-002, REQ-003, REQ-005, REQ-009, REQ-010 | `src/lib.rs`, tests, README examples | WP-002 complete. | Query returns title path and ordered lineage events with tests. | L0: cargo test / L1: cargo run + tests / L2: role review | complete |
 | WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | complete |
 | WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | complete |
-| WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-*`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted. | L0: docs review / L1: custody review / L2: source package gate | deferred |
+| WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-custody/`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted; concrete imports remain gated per source. | L0: docs review / L1: custody review / L2: source package gate | complete |
 
 ## Work Package Details
 
@@ -147,7 +147,8 @@ Exit criteria:
 - no restricted or commercial-game source data is copied,
 - metadata-only rows are clearly distinguished from extracted data.
 
-Status: deferred.
+Status: complete for policy; concrete source imports remain blocked until a
+source record passes `docs/vtrace/source-custody/REVIEW_GATE.md`.
 
 ## Orphan Check
 

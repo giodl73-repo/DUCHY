@@ -12,7 +12,7 @@ Validation scenarios for user-facing lineage and territorial-transfer questions.
 | VAL-002 | Game designer | Find areas that moved between duchies. | Ask transfer query for area/title over date range. | Answer lists ordered transfers with from/to titles and dates. | `cargo test --quiet`; `cargo run --quiet` on 2026-06-19 | pass |
 | VAL-003 | World builder | Explain title lineage. | Ask lineage query for title T. | Answer shows continuity events and relevant parent/control changes. | `TitlePathAnswer.events` test on 2026-06-19 | pass |
 | VAL-004 | Campaign author | Separate control from legal claim. | Ask holder and de jure parent question for title/year. | Answer shows de facto holder separately from de jure parent path. | `holder_in_year`; `title_path_for_area_in_year`; tests on 2026-06-19 | pass |
-| VAL-005 | Source reviewer | Know whether answer is source-backed. | Inspect answer trace for fixture/source class. | Seed answers are labeled seed; real historical confidence remains deferred. | `cargo test --quiet`; `cargo run --quiet` on 2026-06-19 | partial pass |
+| VAL-005 | Source reviewer | Know whether answer is source-backed. | Inspect answer trace for fixture/source class and source-custody package. | Seed answers are labeled seed; real historical imports are blocked until source records pass review. | `cargo test --quiet`; `docs/vtrace/source-custody/` | pass for policy |
 
 ## Acceptance Evidence
 

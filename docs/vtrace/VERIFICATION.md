@@ -16,7 +16,7 @@ Verification for lineage and territorial-transfer query capability.
 | REQ-009 | test / inspection | `cargo test --quiet` | Parentage changes are represented over time. | pass | `ParentageSpan` tests on 2026-06-19. |
 | REQ-010 | test / review | `cargo test --quiet` | Area identity survives title/parent/holder changes. | pass | `AreaTitleSpan` test on 2026-06-19. |
 | REQ-011 | test / inspection | `cargo test --quiet` | No-transfer, single-transfer, and multi-transfer cases exist. | pass | Transfer fixture test on 2026-06-19. |
-| REQ-006 | review / inspection | `cargo test --quiet`; Source Custody review | Seed answers carry source class; real historical confidence remains deferred. | partial pass | `SourceClass::Seed` tests on 2026-06-19; source package pending. |
+| REQ-006 | review / inspection | `cargo test --quiet`; Source Custody review | Seed answers carry source class; real historical imports require source records and confidence labels. | pass for policy | `SourceClass::Seed` tests and `docs/vtrace/source-custody/`. |
 | REQ-007 | test | `cargo test --quiet` | Answer statuses distinguish answered/empty/unknown/unsupported; contested remains reserved. | pass | Query envelope tests on 2026-06-19. |
 | REQ-008 | review | `.roles` and VTRACE inspection | No mechanics or clone behavior in core lineage work. | pass foundation | README, PRODUCT_PLAN, roles. |
 
@@ -49,11 +49,12 @@ git diff --check
 | EVID-006 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Year title-path and lineage answer query. | pass on 2026-06-19 |
 | EVID-007 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Duchy-transfer range query. | pass on 2026-06-19 |
 | EVID-008 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Answer status, seed source class, and trace codes. | pass on 2026-06-19 |
+| EVID-009 | review artifact | `docs/vtrace/source-custody/` | Source inventory, import policy, confidence model, schema sketch, and review gate. | pass for policy on 2026-06-19 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
 | Contested and split transfer semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Deferred until fixtures express contested or split states. |
-| Real historical confidence is not modeled yet. | Source-backed claims cannot be made. | WP-006. |
+| No concrete source records have passed the gate yet. | Source-backed claims cannot be made. | Add source records only through `docs/vtrace/source-custody/REVIEW_GATE.md`. |
 | No historical source custody package yet. | Real European data import remains blocked. | Defer to source VTRACE package. |

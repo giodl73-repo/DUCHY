@@ -45,10 +45,15 @@ or rights-unsafe material.
 
 Pulses:
 
-1. Source inventory and rights posture.
-2. Citation and confidence model.
-3. Import adapter for metadata-only seed rows.
+1. Source inventory and rights posture. Complete as a policy gate in
+   `docs/vtrace/source-custody/`.
+2. Citation and confidence model. Complete as a policy gate in
+   `docs/vtrace/source-custody/`.
+3. Import adapter for metadata-only source records.
 4. Review packet for contested/uncertain history.
+
+No real historical title data may be imported until a concrete source record
+passes the source-custody review gate.
 
 ## Wave 3: Game Scenario Integration
 

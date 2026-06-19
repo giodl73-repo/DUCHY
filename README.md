@@ -36,6 +36,8 @@ requires source custody, citation policy, and rights review before import.
   lineage, source custody, game-system boundaries, and query interfaces.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
+- `docs/vtrace/source-custody/` defines the gate for future real historical
+  sources. No real European source data is imported yet.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date

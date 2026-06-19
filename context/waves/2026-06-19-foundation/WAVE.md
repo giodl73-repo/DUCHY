@@ -22,6 +22,7 @@ and scenario packets.
 | 04 | Year title-path query | complete | Answer which higher title path contained an area/title in a year. |
 | 05 | Duchy-transfer query | complete | Answer when areas/titles moved between duchies across a date range. |
 | 06 | Answer trace and source status | complete | Distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed answers. |
+| 07 | Source-custody gate | complete | Define source inventory, import policy, confidence model, schema sketch, and review gate for real historical data. |
 
 ## Success Criteria
 
