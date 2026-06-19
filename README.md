@@ -48,13 +48,13 @@ The current source-custody slice validates metadata-only source records, review
 decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
 source-backed title-path query for the reviewed mini-catalog, including bounded
-Q20135 -> Q43287, Q158445 -> Q43287, and Q27306 -> Q43287 parentage paths for
-1871-1918. The first real facts now live in `fixtures/first-real.facts`, and
-contested fact groups are blocked from normal materialization until reviewed.
-Reviewed real source metadata lives in `fixtures/first-real.sources`. The Rust
-crate treats those fixtures as canonical for reviewed historical imports;
-source-backed historical IDs, names, and spans must not be duplicated as Rust
-literals.
+Q20135 -> Q43287, Q158445 -> Q43287, Q27306 -> Q43287, and Q153015 -> Q43287
+parentage paths for 1871-1918. The first real facts now live in
+`fixtures/first-real.facts`, and contested fact groups are blocked from normal
+materialization until reviewed. Reviewed real source metadata lives in
+`fixtures/first-real.sources`. The Rust crate treats those fixtures as canonical
+for reviewed historical imports; source-backed historical IDs, names, and spans
+must not be duplicated as Rust literals.
 
 ## Relationship To Games Design
 

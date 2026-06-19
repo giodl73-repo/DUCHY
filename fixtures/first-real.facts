@@ -112,3 +112,33 @@ span: 1871..1918
 value: title-q43287
 source_ids: src-wikidata-q27306
 confidence: single_source
+---
+fact_id: fact-q153015-name
+subject_id: title-q153015
+claim_kind: name
+value: Kingdom of Saxony
+source_ids: src-wikidata-q153015
+confidence: single_source
+---
+fact_id: fact-q153015-rank
+subject_id: title-q153015
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q153015
+confidence: single_source
+---
+fact_id: fact-q153015-exists
+subject_id: title-q153015
+claim_kind: title_exists
+span: 1806..1918
+value: exists
+source_ids: src-wikidata-q153015
+confidence: single_source
+---
+fact_id: fact-q153015-parent-q43287
+subject_id: title-q153015
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q153015
+confidence: single_source

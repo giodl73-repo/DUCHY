@@ -67,3 +67,9 @@ only the label/name, normalized title rank, existence span, and one country
 relation to German Empire for Kingdom of Prussia from Wikidata Q27306. Prose
 text, geometry, map boundary, holder genealogy, provincial structure, and full
 parentage/control timeline remain out of scope.
+
+`src-wikidata-q153015` passes this gate for structured claims only. DUCHY
+imports only the label/name, normalized title rank, existence span, and one
+country relation to German Empire for Kingdom of Saxony from Wikidata Q153015.
+Prose text, geometry, map boundary, holder genealogy, internal administration,
+and full parentage/control timeline remain out of scope.

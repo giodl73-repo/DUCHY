@@ -30,6 +30,7 @@ records and validation.
 | 12 | First real parentage source import | complete | Import Q20135 -> Q43287 and Q158445 -> Q43287 for 1871-1918 after source review. |
 | 13 | Fixture-canonical import path | complete | Remove reviewed historical data literals from Rust; make fixtures the import source of truth. |
 | 14 | Reviewed Prussia import packet | complete | Import Q27306 title facts and Q27306 -> Q43287 for 1871-1918 after source review. |
+| 15 | Reviewed Saxony import packet | complete | Import Q153015 title facts and Q153015 -> Q43287 for 1871-1918 after source review. |
 
 ## Success Criteria
 

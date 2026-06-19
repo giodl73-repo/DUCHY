@@ -64,12 +64,13 @@ git diff --check
 | EVID-021 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-12.md` | First real source-backed parentage paths import Q20135 -> Q43287 and Q158445 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
 | EVID-022 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `cargo fmt --check`; `git diff --check`; `context/waves/2026-06-19-source-custody/pulses/pulse-13.md` | Reviewed historical import helpers are fixture-canonical, with no source-backed historical data literals in Rust. | pass on 2026-06-19 |
 | EVID-023 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-14.md` | Reviewed Prussia packet imports Q27306 title facts and Q27306 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
+| EVID-024 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-15.md` | Reviewed Saxony packet imports Q153015 title facts and Q153015 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
 | Contested and split transfer query semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Fact-level contested packets exist; query-level contested answers remain deferred. |
-| Only four concrete source records have passed the gate. | Historical import is real but intentionally tiny. | Expand through reviewed source packets only. |
+| Only five concrete source records have passed the gate. | Historical import is real but intentionally tiny. | Expand through reviewed source packets only. |
 | No real contested historical fixture has passed review yet. | The contested packet is proven with synthetic alternatives only. | Add real contested claims only through reviewed source packets. |
-| Only three real parentage fixtures have passed review. | Source-backed title paths remain sparse and incomplete. | Expand parentage only through reviewed source packets. |
+| Only four real parentage fixtures have passed review. | Source-backed title paths remain sparse and incomplete. | Expand parentage only through reviewed source packets. |
