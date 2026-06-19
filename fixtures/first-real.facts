@@ -1,5 +1,5 @@
 # First reviewed real DUCHY title facts.
-# Source metadata lives in first_real_source_catalog for this slice.
+# Source metadata lives in first-real.sources.
 
 fact_id: fact-q158445-name
 subject_id: title-q158445

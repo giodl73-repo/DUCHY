@@ -79,10 +79,14 @@ fn main() {
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
     println!("Reviewed real facts: Wikidata Q158445/Q20135 name/rank/existence validated");
 
+    let first_real_fixture_catalog = duchy::first_real_source_catalog_from_fixture()
+        .expect("first real source fixture should parse");
+    println!("Reviewed real source fixture: metadata file parsed");
+
     let first_real_fixture_facts = duchy::first_real_fact_records_from_fixture()
         .expect("first real fact fixture should parse");
     for fact in &first_real_fixture_facts {
-        duchy::first_real_source_catalog()
+        first_real_fixture_catalog
             .validate_fact(fact)
             .expect("first real fixture fact should validate");
     }
@@ -92,7 +96,7 @@ fn main() {
     );
 
     let first_real_titles =
-        duchy::first_real_titles().expect("first real title should materialize");
+        duchy::first_real_titles_from_fixture().expect("first real title should materialize");
     for title in first_real_titles {
         println!(
             "Reviewed real title: {:?} {} ({}-{})",

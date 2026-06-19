@@ -1,0 +1,26 @@
+# Reviewed real DUCHY source records.
+# These records authorize only the structured facts in first-real.facts.
+
+source_id: src-wikidata-q158445
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q158445
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Grand Duchy of Mecklenburg-Schwerin (Q158445).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikidata-q20135
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q20135
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Grand Duchy of Hesse (Q20135).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.

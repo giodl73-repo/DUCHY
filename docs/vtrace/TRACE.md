@@ -15,6 +15,7 @@
 | REQ-011 | CONOPS-002 / CONOPS-005 | Define no-transfer, single-transfer, and multi-transfer fixtures. | SPEC-011 transfer fixture baseline | fixtures/tests | CR-001, CR-002 | WP-002 / WP-004 | seed fixtures and query tests | test / inspection | query-interface review | `temporal_parentage_covers_no_single_and_multi_transfer_fixtures` | verified |
 | REQ-012 | CONOPS-005 | Preserve contested source-backed claims without normalizing one alternative into accepted history. | SPEC-007 answer status taxonomy | IF-012 | CR-002, CR-003 | WP-006 | `ContestedFactGroup`, materialization rejection tests | test / review | contested-history review | `cargo test --quiet` on 2026-06-19 | verified first packet |
 | REQ-013 | CONOPS-001 / CONOPS-005 | Materialize reviewed source-backed parentage only when child, parent, source, confidence, and span are all valid. | SPEC-009 temporal parentage contract | IF-013 | CR-001, CR-003 | WP-006 | `source_backed_parentage_from_facts`, `source_backed_timeline_from_facts` | test / review | parentage source-review scenario | `cargo test --quiet` on 2026-06-19 | verified support |
+| REQ-014 | CONOPS-005 | Real source metadata for imported facts is fixture-backed and validated with the facts it authorizes. | SPEC-006 source/confidence fields | IF-014 | CR-003 | WP-006 | `fixtures/first-real.sources`, `first_real_source_catalog_from_fixture` | test / review | source fixture review | `cargo test --quiet` on 2026-06-19 | verified |
 
 ## Code Rigor Constraints
 

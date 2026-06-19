@@ -26,7 +26,8 @@ records and validation.
 | 08 | Contested-history review packet | complete | Represent conflicting source-backed claims without overwriting them. |
 | 09 | Second reviewed source import | complete | Add Q20135 Grand Duchy of Hesse name/rank/existence facts. |
 | 10 | Source-backed parentage review | complete | Materialize reviewed parentage facts while keeping real fixture hierarchy-free. |
-| 11 | First real parentage source import | pending | Add higher-title relations only after source review. |
+| 11 | Reviewed source fixture import | complete | Parse reviewed real source records from `fixtures/first-real.sources`. |
+| 12 | First real parentage source import | pending | Add higher-title relations only after source review. |
 
 ## Success Criteria
 

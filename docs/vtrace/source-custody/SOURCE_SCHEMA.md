@@ -58,7 +58,8 @@ Rules:
 - This format carries source metadata and review decisions only; it does not
   carry historical facts.
 
-The seed metadata fixture is `fixtures/source-policy.sources`.
+The seed metadata fixture is `fixtures/source-policy.sources`. The reviewed
+real source fixture is `fixtures/first-real.sources`.
 
 ## Fact Record
 
@@ -106,7 +107,8 @@ Rules:
   parent title ID.
 - Fact files still require separate source metadata and source-custody review.
 
-The first real fact fixture is `fixtures/first-real.facts`.
+The first real fact fixture is `fixtures/first-real.facts`; it must be validated
+against `fixtures/first-real.sources`.
 
 ## Fact Gate
 

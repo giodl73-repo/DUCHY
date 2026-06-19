@@ -1404,6 +1404,10 @@ pub fn first_real_source_catalog() -> SourceCatalog {
     catalog
 }
 
+pub fn first_real_source_catalog_from_fixture() -> Result<SourceCatalog, Vec<String>> {
+    SourceCatalog::from_metadata_text(include_str!("../fixtures/first-real.sources"))
+}
+
 pub fn first_real_fact_records() -> Vec<FactRecord> {
     vec![
         FactRecord {
@@ -1688,6 +1692,12 @@ pub fn first_real_titles() -> Result<Vec<Title>, Vec<String>> {
     source_backed_titles_from_facts(&catalog, &facts)
 }
 
+pub fn first_real_titles_from_fixture() -> Result<Vec<Title>, Vec<String>> {
+    let catalog = first_real_source_catalog_from_fixture()?;
+    let facts = first_real_fact_records_from_fixture()?;
+    source_backed_titles_from_facts(&catalog, &facts)
+}
+
 pub fn source_backed_timeline_from_facts(
     catalog: &SourceCatalog,
     facts: &[FactRecord],
@@ -1777,7 +1787,7 @@ pub fn first_real_timeline() -> Result<TitleTimeline, Vec<String>> {
 }
 
 pub fn first_real_timeline_from_fixture() -> Result<TitleTimeline, Vec<String>> {
-    let catalog = first_real_source_catalog();
+    let catalog = first_real_source_catalog_from_fixture()?;
     let facts = first_real_fact_records_from_fixture()?;
     source_backed_timeline_from_facts(&catalog, &facts)
 }
@@ -2562,6 +2572,37 @@ allowed_use: no_such_use
     }
 
     #[test]
+    fn source_catalog_parses_first_real_fixture() {
+        let catalog = first_real_source_catalog_from_fixture()
+            .expect("first real source fixture should parse");
+
+        for source_id in ["src-wikidata-q158445", "src-wikidata-q20135"] {
+            assert_eq!(
+                catalog.record(source_id).map(|record| record.source_kind),
+                Some(SourceKind::Wikidata)
+            );
+            assert_eq!(
+                catalog
+                    .latest_review(source_id)
+                    .map(|review| review.decision),
+                Some(SourceReviewDecision::AcceptedStructuredClaims)
+            );
+        }
+    }
+
+    #[test]
+    fn first_real_fixture_sources_validate_fixture_facts() {
+        let catalog = first_real_source_catalog_from_fixture()
+            .expect("first real source fixture should parse");
+        let facts =
+            first_real_fact_records_from_fixture().expect("first real fact fixture should parse");
+
+        for fact in facts {
+            assert_eq!(catalog.validate_fact(&fact), Ok(()));
+        }
+    }
+
+    #[test]
     fn fact_records_reject_invalid_text() {
         let text = r#"
 fact_id: fact-bad
@@ -2627,7 +2668,7 @@ confidence: maybe
 
     #[test]
     fn first_real_facts_materialize_a_source_backed_title() {
-        let titles = first_real_titles().expect("first real title should materialize");
+        let titles = first_real_titles_from_fixture().expect("first real title should materialize");
 
         assert_eq!(titles.len(), 2);
         assert_eq!(

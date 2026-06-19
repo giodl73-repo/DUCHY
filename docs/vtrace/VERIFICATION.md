@@ -60,6 +60,7 @@ git diff --check
 | EVID-017 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-08.md` | Contested facts group for review and are blocked from normal materialization. | pass on 2026-06-19 |
 | EVID-018 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `context/waves/2026-06-19-source-custody/pulses/pulse-09.md` | Second reviewed Wikidata title imports as source-backed facts and materializes. | pass on 2026-06-19 |
 | EVID-019 | test/review | `cargo test --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-10.md` | Reviewed parentage facts can materialize only with accepted sources, spans, and materialized titles. | pass on 2026-06-19 |
+| EVID-020 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-11.md` | Reviewed real source metadata parses from fixture and validates the real fact fixture. | pass on 2026-06-19 |
 
 ## Gaps
 
