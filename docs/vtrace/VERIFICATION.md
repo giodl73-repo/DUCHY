@@ -75,6 +75,7 @@ git diff --check
 | EVID-032 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- archive-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-23.md` | Promoted and rejected manifest rows are regenerated as a parseable archive queue. | pass on 2026-06-19 |
 | EVID-033 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- shard-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-24.md` | Large candidate manifests split into parseable fixed-size review shards. | pass on 2026-06-19 |
 | EVID-034 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- shard-manifest`; `context/waves/2026-06-19-source-custody/pulses/pulse-25.md` | Manifest sharding writes `INDEX.md` with per-shard candidate and status counts. | pass on 2026-06-19 |
+| EVID-035 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-report`; `context/waves/2026-06-19-source-custody/pulses/pulse-26.md` | Candidate manifests generate Markdown review reports grouped by queue status. | pass on 2026-06-19 |
 
 ## Gaps
 

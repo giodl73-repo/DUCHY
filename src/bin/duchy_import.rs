@@ -32,6 +32,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "archive-manifest" {
             return archive_manifest(manifest_path, output_path);
         }
+        if command == "manifest-report" {
+            return manifest_report(manifest_path, output_path);
+        }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
         if command == "shard-manifest" {
@@ -47,7 +50,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | shard-manifest manifest-file output-dir chunk-size".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | shard-manifest manifest-file output-dir chunk-size".to_string(),
             ])
         }
     };
@@ -353,6 +356,60 @@ fn shard_manifest(
     Ok(())
 }
 
+fn manifest_report(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+    if candidates.is_empty() {
+        return Err(vec!["manifest has no candidates to report".to_string()]);
+    }
+
+    let counts = candidate_status_counts(&candidates);
+    let mut output = String::new();
+    output.push_str("# DUCHY Candidate Manifest Report\n\n");
+    output.push_str(&format!("source_manifest: {manifest_path}\n"));
+    output.push_str(&format!("candidates: {}\n", candidates.len()));
+    output.push_str(&format!("pending: {}\n", counts.pending));
+    output.push_str(&format!("reviewed: {}\n", counts.reviewed));
+    output.push_str(&format!("promoted: {}\n", counts.promoted));
+    output.push_str(&format!("rejected: {}\n\n", counts.rejected));
+
+    push_manifest_report_section(
+        &mut output,
+        "Pending",
+        &candidates,
+        duchy::CandidateStatus::Pending,
+    );
+    push_manifest_report_section(
+        &mut output,
+        "Reviewed",
+        &candidates,
+        duchy::CandidateStatus::Reviewed,
+    );
+    push_manifest_report_section(
+        &mut output,
+        "Promoted",
+        &candidates,
+        duchy::CandidateStatus::Promoted,
+    );
+    push_manifest_report_section(
+        &mut output,
+        "Rejected",
+        &candidates,
+        duchy::CandidateStatus::Rejected,
+    );
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY manifest report");
+    println!("- candidates: {}", candidates.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn candidate_manifest_block(candidate: &duchy::CandidateRecord) -> String {
     let mut output = String::new();
     output.push_str(&format!("candidate_id: {}\n", candidate.candidate_id));
@@ -420,4 +477,31 @@ fn candidate_status_counts(candidates: &[duchy::CandidateRecord]) -> CandidateSt
         }
     }
     counts
+}
+
+fn push_manifest_report_section(
+    output: &mut String,
+    heading: &str,
+    candidates: &[duchy::CandidateRecord],
+    status: duchy::CandidateStatus,
+) {
+    output.push_str(&format!("## {heading}\n\n"));
+    let matching = candidates
+        .iter()
+        .filter(|candidate| candidate.status == status)
+        .collect::<Vec<_>>();
+    if matching.is_empty() {
+        output.push_str("none\n\n");
+        return;
+    }
+
+    for candidate in matching {
+        output.push_str(&format!("- candidate_id: {}\n", candidate.candidate_id));
+        output.push_str(&format!("  source_id: {}\n", candidate.source_id));
+        output.push_str(&format!("  source_url: {}\n", candidate.source_url));
+        if let Some(notes) = &candidate.notes {
+            output.push_str(&format!("  notes: {notes}\n"));
+        }
+    }
+    output.push('\n');
 }

@@ -126,6 +126,7 @@ cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/
 cargo run --bin duchy-import -- rejected-report data/staging/example.manifest data/staging/rejected.md
 cargo run --bin duchy-import -- active-manifest data/staging/example.manifest data/staging/active.manifest
 cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest data/staging/archive.manifest
+cargo run --bin duchy-import -- manifest-report data/staging/example.manifest data/staging/manifest-report.md
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
@@ -167,6 +168,8 @@ pending and reviewed rows so promoted or rejected candidates can be archived
 outside the working queue.
 `duchy-import archive-manifest` writes promoted and rejected rows as a parseable
 manifest for long-term queue audit.
+`duchy-import manifest-report` writes a Markdown review packet listing every
+candidate grouped by queue status.
 `duchy-import shard-manifest` writes fixed-size parseable manifest shards for
 large candidate queues that need smaller source-custody review batches. It also
 writes `INDEX.md` with per-shard candidate and status counts.
