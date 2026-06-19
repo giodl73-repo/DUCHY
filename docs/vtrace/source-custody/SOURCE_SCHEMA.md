@@ -112,6 +112,11 @@ Rules:
 The first real fact fixture is `fixtures/first-real.facts`; it must be validated
 against `fixtures/first-real.sources`.
 
+Reviewed historical imports are fixture-canonical. Rust code may include parser
+logic, validation rules, and synthetic test data, but source-backed historical
+IDs, names, spans, and relations belong in reviewed fixture files rather than
+hardcoded Rust literals.
+
 ## Fact Gate
 
 The current crate implements the fact-gate layer:

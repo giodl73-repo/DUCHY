@@ -28,6 +28,7 @@ records and validation.
 | 10 | Source-backed parentage review | complete | Materialize reviewed parentage facts while keeping real fixture hierarchy-free. |
 | 11 | Reviewed source fixture import | complete | Parse reviewed real source records from `fixtures/first-real.sources`. |
 | 12 | First real parentage source import | complete | Import Q20135 -> Q43287 and Q158445 -> Q43287 for 1871-1918 after source review. |
+| 13 | Fixture-canonical import path | complete | Remove reviewed historical data literals from Rust; make fixtures the import source of truth. |
 
 ## Success Criteria
 
@@ -36,3 +37,5 @@ records and validation.
 - Review decisions reference existing source records.
 - Validation commands pass.
 - Real title facts enter only through reviewed source records and fact gate validation.
+- Reviewed historical IDs, names, spans, and relations live in fixtures rather
+  than Rust literals.

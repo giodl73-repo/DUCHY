@@ -51,7 +51,9 @@ source-backed title-path query for the reviewed mini-catalog, including bounded
 Q20135 -> Q43287 and Q158445 -> Q43287 parentage paths for 1871-1918. The first
 real facts now live in `fixtures/first-real.facts`, and contested fact groups
 are blocked from normal materialization until reviewed. Reviewed real source
-metadata lives in `fixtures/first-real.sources`.
+metadata lives in `fixtures/first-real.sources`. The Rust crate treats those
+fixtures as canonical for reviewed historical imports; source-backed historical
+IDs, names, and spans must not be duplicated as Rust literals.
 
 ## Relationship To Games Design
 

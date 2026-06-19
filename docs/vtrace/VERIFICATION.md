@@ -62,6 +62,7 @@ git diff --check
 | EVID-019 | test/review | `cargo test --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-10.md` | Reviewed parentage facts can materialize only with accepted sources, spans, and materialized titles. | pass on 2026-06-19 |
 | EVID-020 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-11.md` | Reviewed real source metadata parses from fixture and validates the real fact fixture. | pass on 2026-06-19 |
 | EVID-021 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `fixtures/first-real.sources`; `context/waves/2026-06-19-source-custody/pulses/pulse-12.md` | First real source-backed parentage paths import Q20135 -> Q43287 and Q158445 -> Q43287 for 1871-1918. | pass on 2026-06-19 |
+| EVID-022 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `cargo fmt --check`; `git diff --check`; `context/waves/2026-06-19-source-custody/pulses/pulse-13.md` | Reviewed historical import helpers are fixture-canonical, with no source-backed historical data literals in Rust. | pass on 2026-06-19 |
 
 ## Gaps
 

@@ -77,9 +77,7 @@ fn main() {
     println!("Source fact gate: metadata-only records cannot import facts");
 
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
-    println!(
-        "Reviewed real facts: Wikidata Q158445/Q20135/Q43287 facts and German Empire parentage validated"
-    );
+    println!("Reviewed real facts: fixture-backed facts and parentage validated");
 
     let first_real_fixture_catalog = duchy::first_real_source_catalog_from_fixture()
         .expect("first real source fixture should parse");
@@ -99,7 +97,7 @@ fn main() {
 
     let first_real_titles =
         duchy::first_real_titles_from_fixture().expect("first real title should materialize");
-    for title in first_real_titles {
+    for title in &first_real_titles {
         println!(
             "Reviewed real title: {:?} {} ({}-{})",
             title.rank,
@@ -114,64 +112,58 @@ fn main() {
 
     let first_real_timeline = duchy::first_real_timeline_from_fixture()
         .expect("first real fixture timeline should materialize");
-    let first_real_query = first_real_timeline.title_path_query_for_title_in_year(
-        "title-q158445",
-        1815,
-        duchy::SourceClass::SourceBacked,
-    );
-    println!(
-        "Reviewed real title query [{:?}/{}]: {}",
-        first_real_query.status,
-        first_real_query.trace[0].code,
-        first_real_query
+    if let Some(title) = first_real_titles.first() {
+        let first_real_query = first_real_timeline.title_path_query_for_title_in_year(
+            &title.id,
+            title.exists.start,
+            duchy::SourceClass::SourceBacked,
+        );
+        println!(
+            "Reviewed real title query [{:?}/{}]: {}",
+            first_real_query.status,
+            first_real_query.trace[0].code,
+            first_real_query
+                .answer
+                .as_ref()
+                .and_then(|answer| answer.titles.first())
+                .map_or("unanswered", |step| step.name.as_str())
+        );
+    }
+    for parentage_fact in first_real_fixture_facts
+        .iter()
+        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
+    {
+        let Some(span) = &parentage_fact.span else {
+            continue;
+        };
+        let query = first_real_timeline.title_path_query_for_title_in_year(
+            &parentage_fact.subject_id,
+            span.start,
+            duchy::SourceClass::SourceBacked,
+        );
+        let path = query
             .answer
             .as_ref()
-            .and_then(|answer| answer.titles.first())
-            .map_or("unanswered", |step| step.name.as_str())
-    );
-    let hesse_query = first_real_timeline.title_path_query_for_title_in_year(
-        "title-q20135",
-        1871,
-        duchy::SourceClass::SourceBacked,
-    );
-    let hesse_path = hesse_query
-        .answer
-        .as_ref()
-        .map(|answer| {
-            answer
-                .titles
-                .iter()
-                .map(|step| step.name.as_str())
-                .collect::<Vec<_>>()
-                .join(" -> ")
-        })
-        .unwrap_or_else(|| "unanswered".to_string());
-    println!(
-        "Reviewed real parentage query [{:?}/{}]: {}",
-        hesse_query.status, hesse_query.trace[0].code, hesse_path
-    );
-    let mecklenburg_query = first_real_timeline.title_path_query_for_title_in_year(
-        "title-q158445",
-        1871,
-        duchy::SourceClass::SourceBacked,
-    );
-    let mecklenburg_path = mecklenburg_query
-        .answer
-        .as_ref()
-        .map(|answer| {
-            answer
-                .titles
-                .iter()
-                .map(|step| step.name.as_str())
-                .collect::<Vec<_>>()
-                .join(" -> ")
-        })
-        .unwrap_or_else(|| "unanswered".to_string());
-    println!(
-        "Reviewed real parentage query [{:?}/{}]: {}",
-        mecklenburg_query.status, mecklenburg_query.trace[0].code, mecklenburg_path
-    );
+            .map(|answer| {
+                answer
+                    .titles
+                    .iter()
+                    .map(|step| step.name.as_str())
+                    .collect::<Vec<_>>()
+                    .join(" -> ")
+            })
+            .unwrap_or_else(|| "unanswered".to_string());
+        println!(
+            "Reviewed real parentage query [{:?}/{}]: {}",
+            query.status, query.trace[0].code, path
+        );
+    }
 
+    let reviewed_source_id = first_real_fixture_facts
+        .iter()
+        .find_map(|fact| fact.source_ids.first())
+        .expect("reviewed fixture should contain at least one source")
+        .clone();
     let contested_demo = vec![
         duchy::FactRecord {
             fact_id: "fact-demo-contested-rank-duchy".to_string(),
@@ -179,7 +171,7 @@ fn main() {
             claim_kind: duchy::ClaimKind::Rank,
             span: None,
             value: "Duchy".to_string(),
-            source_ids: vec!["src-wikidata-q158445".to_string()],
+            source_ids: vec![reviewed_source_id.clone()],
             confidence: duchy::ConfidenceLabel::Contested,
             conflict_group: Some("conflict-demo-rank".to_string()),
         },
@@ -189,7 +181,7 @@ fn main() {
             claim_kind: duchy::ClaimKind::Rank,
             span: None,
             value: "Kingdom".to_string(),
-            source_ids: vec!["src-wikidata-q158445".to_string()],
+            source_ids: vec![reviewed_source_id],
             confidence: duchy::ConfidenceLabel::Contested,
             conflict_group: Some("conflict-demo-rank".to_string()),
         },
