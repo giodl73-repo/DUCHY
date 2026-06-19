@@ -28,6 +28,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "active-manifest" {
             return active_manifest(manifest_path, output_path);
         }
+        if command == "archive-manifest" {
+            return archive_manifest(manifest_path, output_path);
+        }
     }
 
     let (sources_path, facts_path) = match args.as_slice() {
@@ -38,7 +41,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest".to_string(),
             ])
         }
     };
@@ -226,6 +229,48 @@ fn active_manifest(manifest_path: &str, output_path: &str) -> Result<(), Vec<Str
 
     println!("DUCHY active manifest");
     println!("- active candidates: {}", active.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn archive_manifest(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+
+    let archived = candidates
+        .iter()
+        .filter(|candidate| {
+            matches!(
+                candidate.status,
+                duchy::CandidateStatus::Promoted | duchy::CandidateStatus::Rejected
+            )
+        })
+        .collect::<Vec<_>>();
+    if archived.is_empty() {
+        return Err(vec![
+            "manifest has no promoted or rejected candidates to archive".to_string(),
+        ]);
+    }
+
+    let mut output = String::new();
+    output.push_str("# Archived candidate manifest generated from staging queue.\n");
+    for (index, candidate) in archived.iter().enumerate() {
+        if index > 0 {
+            output.push_str("---\n");
+        }
+        output.push_str(&candidate_manifest_block(candidate));
+    }
+
+    let parsed_output = duchy::candidate_records_from_text(&output)?;
+    duchy::validate_candidate_records(&parsed_output)?;
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY archive manifest");
+    println!("- archived candidates: {}", archived.len());
     println!("- output: {output_path}");
 
     Ok(())

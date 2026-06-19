@@ -38,6 +38,7 @@ records and validation.
 | 20 | Source stub generation | complete | Generate blocked source stubs from reviewed manifest candidates. |
 | 21 | Rejected candidate audit | complete | Generate rejected-candidate reports before queue cleanup. |
 | 22 | Active manifest cleanup | complete | Generate pending/reviewed-only manifests after audit/archive. |
+| 23 | Archive manifest cleanup | complete | Generate promoted/rejected-only manifests for queue audit. |
 
 ## Success Criteria
 

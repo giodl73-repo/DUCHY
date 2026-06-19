@@ -82,7 +82,9 @@ Pulses:
     from reviewed manifest rows.
 22. Rejected candidate audit. Complete for rejected manifest report generation.
 23. Active manifest cleanup. Complete for pending/reviewed manifest generation.
-24. Next reviewed import packet.
+24. Archive manifest cleanup. Complete for promoted/rejected manifest
+    generation.
+25. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
