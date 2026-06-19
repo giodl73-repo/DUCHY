@@ -62,4 +62,17 @@ fn main() {
         .validate()
         .expect("source policy fixture should validate");
     println!("Source fixture records: metadata file parsed");
+
+    let blocked_fact = duchy::FactRecord {
+        fact_id: "fact-demo-blocked".to_string(),
+        subject_id: "c_demo".to_string(),
+        claim_kind: duchy::ClaimKind::TitleExists,
+        span: None,
+        value: "exists".to_string(),
+        source_ids: vec!["src-wikidata-licensing".to_string()],
+        confidence: duchy::ConfidenceLabel::SingleSource,
+        conflict_group: None,
+    };
+    assert!(source_catalog.validate_fact(&blocked_fact).is_err());
+    println!("Source fact gate: metadata-only records cannot import facts");
 }

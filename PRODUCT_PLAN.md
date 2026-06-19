@@ -51,7 +51,9 @@ Pulses:
    `docs/vtrace/source-custody/`.
 3. Import adapter for metadata-only source records. Rust metadata catalog,
    validation, and source file parser complete.
-4. Review packet for contested/uncertain history.
+4. Source-backed fact gate. Complete for validation logic; no real facts
+   imported.
+5. Review packet for contested/uncertain history.
 
 No real historical title data may be imported until a concrete source record
 passes the source-custody review gate.

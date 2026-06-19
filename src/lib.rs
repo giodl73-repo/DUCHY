@@ -187,6 +187,38 @@ pub enum SourceReviewDecision {
     BlockedScope,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct FactRecord {
+    pub fact_id: String,
+    pub subject_id: String,
+    pub claim_kind: ClaimKind,
+    pub span: Option<YearSpan>,
+    pub value: String,
+    pub source_ids: Vec<String>,
+    pub confidence: ConfidenceLabel,
+    pub conflict_group: Option<String>,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ClaimKind {
+    TitleExists,
+    AreaTitle,
+    Parentage,
+    Holder,
+    Event,
+    Name,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ConfidenceLabel {
+    Seed,
+    MetadataPointer,
+    SingleSource,
+    MultiSource,
+    Contested,
+    Unsupported,
+}
+
 #[derive(Debug, Clone, Default)]
 pub struct SourceCatalog {
     records: HashMap<String, SourceRecord>,
@@ -716,6 +748,24 @@ impl TitleTimeline {
     }
 }
 
+impl SourceRecord {
+    fn allows_fact_claims(&self) -> bool {
+        matches!(
+            self.allowed_use,
+            AllowedUse::StructuredClaims | AllowedUse::Geometry | AllowedUse::TextExcerpt
+        )
+    }
+}
+
+impl SourceReviewDecision {
+    fn allows_fact_claims(self) -> bool {
+        matches!(
+            self,
+            Self::AcceptedStructuredClaims | Self::AcceptedPackageBoundary
+        )
+    }
+}
+
 impl<T> QueryEnvelope<T> {
     fn with_answer(answer: T, source_class: SourceClass, code: &str, detail: String) -> Self {
         Self::with_status(QueryStatus::Answered, answer, source_class, code, detail)
@@ -841,6 +891,86 @@ impl SourceCatalog {
             }
             if review.reviewer.trim().is_empty() {
                 errors.push(format!("{} review has no reviewer", review.source_id));
+            }
+        }
+
+        if errors.is_empty() {
+            Ok(())
+        } else {
+            Err(errors)
+        }
+    }
+
+    pub fn validate_fact(&self, fact: &FactRecord) -> Result<(), Vec<String>> {
+        let mut errors = Vec::new();
+
+        if fact.fact_id.trim().is_empty() {
+            errors.push("fact id must not be empty".to_string());
+        }
+        if fact.subject_id.trim().is_empty() {
+            errors.push(format!("{} subject_id must not be empty", fact.fact_id));
+        }
+        if fact.value.trim().is_empty() {
+            errors.push(format!("{} value must not be empty", fact.fact_id));
+        }
+        if fact.source_ids.is_empty() {
+            errors.push(format!("{} must cite at least one source", fact.fact_id));
+        }
+        if let Some(span) = &fact.span {
+            if !span.is_valid() {
+                errors.push(format!("{} has invalid fact span", fact.fact_id));
+            }
+        }
+
+        match fact.confidence {
+            ConfidenceLabel::SingleSource if fact.source_ids.len() != 1 => errors.push(format!(
+                "{} single_source confidence requires exactly one source",
+                fact.fact_id
+            )),
+            ConfidenceLabel::MultiSource if fact.source_ids.len() < 2 => errors.push(format!(
+                "{} multi_source confidence requires at least two sources",
+                fact.fact_id
+            )),
+            ConfidenceLabel::Contested if fact.conflict_group.is_none() => errors.push(format!(
+                "{} contested confidence requires a conflict_group",
+                fact.fact_id
+            )),
+            ConfidenceLabel::Seed
+            | ConfidenceLabel::MetadataPointer
+            | ConfidenceLabel::Unsupported => {
+                errors.push(format!(
+                    "{} confidence {:?} is not accepted for source-backed facts",
+                    fact.fact_id, fact.confidence
+                ));
+            }
+            _ => {}
+        }
+
+        for source_id in &fact.source_ids {
+            match self.records.get(source_id) {
+                Some(record) => {
+                    if !record.allows_fact_claims() {
+                        errors.push(format!(
+                            "{} source {} is not allowed for fact claims",
+                            fact.fact_id, source_id
+                        ));
+                    }
+                    match self.latest_review(source_id) {
+                        Some(review) if review.decision.allows_fact_claims() => {}
+                        Some(review) => errors.push(format!(
+                            "{} source {} review {:?} does not allow fact claims",
+                            fact.fact_id, source_id, review.decision
+                        )),
+                        None => errors.push(format!(
+                            "{} source {} has no review decision",
+                            fact.fact_id, source_id
+                        )),
+                    }
+                }
+                None => errors.push(format!(
+                    "{} references missing source {}",
+                    fact.fact_id, source_id
+                )),
             }
         }
 
@@ -1680,6 +1810,141 @@ allowed_use: no_such_use
         assert!(errors
             .iter()
             .any(|error| error.contains("invalid allowed_use")));
+    }
+
+    #[test]
+    fn source_catalog_accepts_structured_claim_fact_with_review() {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_record(SourceRecord {
+            source_id: "src-structured".to_string(),
+            source_kind: SourceKind::Wikidata,
+            source_url: "https://www.wikidata.org/wiki/Q31".to_string(),
+            license: "CC0 structured data".to_string(),
+            retrieved_on: "2026-06-19".to_string(),
+            allowed_use: AllowedUse::StructuredClaims,
+            attribution: Some("Wikidata contributors".to_string()),
+            notes: None,
+        });
+        catalog.add_review(SourceReview {
+            source_id: "src-structured".to_string(),
+            decision: SourceReviewDecision::AcceptedStructuredClaims,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "Structured claims accepted for fact-gate test.".to_string(),
+        });
+        let fact = FactRecord {
+            fact_id: "fact-title-exists".to_string(),
+            subject_id: "c_example".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "exists".to_string(),
+            source_ids: vec!["src-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        };
+
+        assert_eq!(catalog.validate(), Ok(()));
+        assert_eq!(catalog.validate_fact(&fact), Ok(()));
+    }
+
+    #[test]
+    fn source_catalog_rejects_metadata_only_source_for_fact() {
+        let catalog = source_policy_catalog();
+        let fact = FactRecord {
+            fact_id: "fact-bad".to_string(),
+            subject_id: "c_example".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: None,
+            value: "exists".to_string(),
+            source_ids: vec!["src-wikidata-licensing".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        };
+
+        let errors = catalog
+            .validate_fact(&fact)
+            .expect_err("metadata-only source cannot support facts");
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("not allowed for fact claims")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("does not allow fact claims")));
+    }
+
+    #[test]
+    fn source_catalog_rejects_bad_fact_confidence_counts() {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_record(SourceRecord {
+            source_id: "src-structured".to_string(),
+            source_kind: SourceKind::Wikidata,
+            source_url: "https://www.wikidata.org/wiki/Q31".to_string(),
+            license: "CC0 structured data".to_string(),
+            retrieved_on: "2026-06-19".to_string(),
+            allowed_use: AllowedUse::StructuredClaims,
+            attribution: Some("Wikidata contributors".to_string()),
+            notes: None,
+        });
+        catalog.add_review(SourceReview {
+            source_id: "src-structured".to_string(),
+            decision: SourceReviewDecision::AcceptedStructuredClaims,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "Structured claims accepted for fact-gate test.".to_string(),
+        });
+        let fact = FactRecord {
+            fact_id: "fact-bad-count".to_string(),
+            subject_id: "c_example".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: None,
+            value: "exists".to_string(),
+            source_ids: vec!["src-structured".to_string()],
+            confidence: ConfidenceLabel::MultiSource,
+            conflict_group: None,
+        };
+
+        let errors = catalog
+            .validate_fact(&fact)
+            .expect_err("multi_source needs multiple sources");
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("requires at least two sources")));
+    }
+
+    #[test]
+    fn source_catalog_requires_conflict_group_for_contested_fact() {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_record(SourceRecord {
+            source_id: "src-structured".to_string(),
+            source_kind: SourceKind::Wikidata,
+            source_url: "https://www.wikidata.org/wiki/Q31".to_string(),
+            license: "CC0 structured data".to_string(),
+            retrieved_on: "2026-06-19".to_string(),
+            allowed_use: AllowedUse::StructuredClaims,
+            attribution: Some("Wikidata contributors".to_string()),
+            notes: None,
+        });
+        catalog.add_review(SourceReview {
+            source_id: "src-structured".to_string(),
+            decision: SourceReviewDecision::AcceptedStructuredClaims,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "Structured claims accepted for fact-gate test.".to_string(),
+        });
+        let fact = FactRecord {
+            fact_id: "fact-contested".to_string(),
+            subject_id: "c_example".to_string(),
+            claim_kind: ClaimKind::Parentage,
+            span: Some(YearSpan::new(1000, Some(1050))),
+            value: "d_example".to_string(),
+            source_ids: vec!["src-structured".to_string()],
+            confidence: ConfidenceLabel::Contested,
+            conflict_group: None,
+        };
+
+        let errors = catalog
+            .validate_fact(&fact)
+            .expect_err("contested fact needs conflict group");
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("requires a conflict_group")));
     }
 
     #[test]

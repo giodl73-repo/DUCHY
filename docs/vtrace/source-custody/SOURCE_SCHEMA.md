@@ -75,8 +75,30 @@ Future title facts should include:
 | `confidence` | yes | Confidence label from `CONFIDENCE_MODEL.md`. |
 | `conflict_group` | no | ID joining alternative contested claims. |
 
+## Fact Gate
+
+The current crate implements the fact-gate layer:
+
+| Rust item | Purpose |
+|---|---|
+| `FactRecord` | Candidate source-backed claim. |
+| `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, or `name`. |
+| `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
+| `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
+
+Fact-gate rules:
+
+- `metadata_only` sources cannot support fact claims.
+- source reviews must allow fact claims through `accepted_structured_claims` or
+  `accepted_package_boundary`.
+- `single_source` requires exactly one source.
+- `multi_source` requires at least two sources.
+- `contested` requires a `conflict_group`.
+- `seed`, `metadata_pointer`, and `unsupported` are not accepted as
+  source-backed fact confidence labels.
+
 ## Non-Goals
 
 - This is not a final serialization format.
-- This does not authorize any source import.
+- This does not authorize importing any concrete historical title facts.
 - This does not define geometry storage.

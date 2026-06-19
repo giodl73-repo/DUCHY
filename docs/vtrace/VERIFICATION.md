@@ -52,6 +52,7 @@ git diff --check
 | EVID-009 | review artifact | `docs/vtrace/source-custody/` | Source inventory, import policy, confidence model, schema sketch, and review gate. | pass for policy on 2026-06-19 |
 | EVID-010 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Metadata-only source catalog and review validation. | pass on 2026-06-19 |
 | EVID-011 | test/demo | `cargo test --quiet`; `cargo run --quiet`; `fixtures/source-policy.sources` | Metadata source file parser and fixture validation. | pass on 2026-06-19 |
+| EVID-012 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Source-backed fact gate validation. | pass on 2026-06-19 |
 
 ## Gaps
 
