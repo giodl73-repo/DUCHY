@@ -9,7 +9,7 @@ Work packages for lineage and territorial-transfer query capability.
 | ID | Objective | Parent IDs | Affected Surfaces | Entry Criteria | Exit Criteria | L0 / L1 / L2 | Status |
 |---|---|---|---|---|---|---|---|
 | WP-001 | Baseline governance and VTRACE package. | REQ-001, REQ-002, REQ-008 | `.roles/`, `docs/vtrace/`, README links | Foundation repo exists. | Roles and VTRACE files added; validation passes. | L0: docs inspect / L1: full current commands / L2: n/a | complete |
-| WP-002 | Temporal area/title model and fixture baseline. | REQ-001, REQ-002, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, seed fixtures/tests | WP-001 complete. | Time-varying parentage and area-title identity are represented; fixtures cover no-transfer, single-transfer, and multi-transfer cases. | L0: cargo test / L1: role review / L2: n/a | proposed |
+| WP-002 | Temporal area/title model and fixture baseline. | REQ-001, REQ-002, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, seed fixtures/tests | WP-001 complete. | Time-varying parentage and area-title identity are represented; fixtures cover no-transfer, single-transfer, and multi-transfer cases. | L0: cargo test / L1: role review / L2: n/a | complete |
 | WP-003 | Year title-path and lineage answer query. | REQ-001, REQ-002, REQ-003, REQ-005, REQ-009, REQ-010 | `src/lib.rs`, tests, README examples | WP-002 complete. | Query returns title path and ordered lineage events with tests. | L0: cargo test / L1: cargo run + tests / L2: role review | proposed |
 | WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | proposed |
 | WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish empty, unknown, unsupported, contested, seed, and source/confidence classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | proposed |
@@ -69,7 +69,7 @@ Exit criteria:
 - fixtures cover no-transfer, single-transfer, and multi-transfer cases,
 - Timeline Steward and Territorial Lineage Reviewer findings are recorded.
 
-Status: proposed.
+Status: complete.
 
 ### WP-003: Year Title-Path And Lineage Answer Query
 

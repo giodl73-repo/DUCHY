@@ -18,9 +18,10 @@ and scenario packets.
 |------:|-------|--------|---------|
 | 01 | Workspace foundation | complete | Create repo skeleton, docs, skills, and first tested timeline contract. |
 | 02 | Governance and VTRACE baseline | complete | Add role governance and VTRACE requirements for lineage/transfer questions. |
-| 03 | Year title-path query | pending | Answer which higher title path contained an area/title in a year. |
-| 04 | Duchy-transfer query | pending | Answer when areas/titles moved between duchies across a date range. |
-| 05 | Answer trace and source status | pending | Distinguish empty, unknown, unsupported, contested, seed, and source-backed answers. |
+| 03 | Temporal area/title model | complete | Add stable area identity, temporal parentage spans, and transfer baseline fixtures. |
+| 04 | Year title-path query | pending | Answer which higher title path contained an area/title in a year. |
+| 05 | Duchy-transfer query | pending | Answer when areas/titles moved between duchies across a date range. |
+| 06 | Answer trace and source status | pending | Distinguish empty, unknown, unsupported, contested, seed, and source-backed answers. |
 
 ## Success Criteria
 
