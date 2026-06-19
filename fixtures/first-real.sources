@@ -36,3 +36,15 @@ notes: Grand Duchy of Hesse (Q20135).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikidata-q27306
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q27306
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Kingdom of Prussia (Q27306).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and country relation to German Empire only.

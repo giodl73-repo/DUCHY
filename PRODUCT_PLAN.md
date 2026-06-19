@@ -67,7 +67,9 @@ Pulses:
     Q158445 -> Q43287, 1871-1918.
 14. Fixture-canonical import path. Complete: reviewed historical facts and
     source records live in fixtures, not Rust literals.
-15. Next reviewed import packet.
+15. Reviewed Prussia import packet. Complete for Q27306 Kingdom of Prussia
+    title facts and Q27306 -> Q43287, 1871-1918.
+16. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -61,3 +61,9 @@ parentage claim from Grand Duchy of Mecklenburg-Schwerin to German Empire for
 1871-1918. This authorizes one direct title-path relation only; it does not
 import intermediate confederation/state semantics, holders, borders, legal
 prose, or a complete German Empire hierarchy.
+
+`src-wikidata-q27306` passes this gate for structured claims only. DUCHY imports
+only the label/name, normalized title rank, existence span, and one country
+relation to German Empire for Kingdom of Prussia from Wikidata Q27306. Prose
+text, geometry, map boundary, holder genealogy, provincial structure, and full
+parentage/control timeline remain out of scope.
