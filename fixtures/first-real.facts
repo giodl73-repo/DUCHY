@@ -74,3 +74,11 @@ span: 1871..1918
 value: title-q43287
 source_ids: src-wikidata-q20135
 confidence: single_source
+---
+fact_id: fact-q158445-parent-q43287
+subject_id: title-q158445
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q158445
+confidence: single_source

@@ -47,11 +47,11 @@ range, and which continuity events explain a title lineage.
 The current source-custody slice validates metadata-only source records, review
 decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
-source-backed title-path query for the reviewed mini-catalog, including a
-bounded Q20135 -> Q43287 parentage path for 1871-1918. The first real facts now
-live in `fixtures/first-real.facts`, and contested fact groups are blocked from
-normal materialization until reviewed. Reviewed real source metadata lives in
-`fixtures/first-real.sources`.
+source-backed title-path query for the reviewed mini-catalog, including bounded
+Q20135 -> Q43287 and Q158445 -> Q43287 parentage paths for 1871-1918. The first
+real facts now live in `fixtures/first-real.facts`, and contested fact groups
+are blocked from normal materialization until reviewed. Reviewed real source
+metadata lives in `fixtures/first-real.sources`.
 
 ## Relationship To Games Design
 

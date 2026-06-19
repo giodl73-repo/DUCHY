@@ -63,8 +63,8 @@ Pulses:
 10. Second reviewed source import. Complete for Q20135 Grand Duchy of Hesse.
 11. Source-backed parentage review. Complete for materialization support.
 12. Reviewed source fixture import. Complete for `fixtures/first-real.sources`.
-13. First real parentage source import. Complete for Q20135 -> Q43287,
-    1871-1918.
+13. First real parentage source import. Complete for Q20135 -> Q43287 and
+    Q158445 -> Q43287, 1871-1918.
 14. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record

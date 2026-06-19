@@ -55,3 +55,9 @@ parentage claim from Grand Duchy of Hesse to German Empire for 1871-1918. This
 authorizes one direct title-path relation only; it does not import intermediate
 constituent-state semantics, holders, borders, legal prose, or a complete
 German Empire hierarchy.
+
+`fact-q158445-parent-q43287` passes this gate as a single source-backed
+parentage claim from Grand Duchy of Mecklenburg-Schwerin to German Empire for
+1871-1918. This authorizes one direct title-path relation only; it does not
+import intermediate confederation/state semantics, holders, borders, legal
+prose, or a complete German Empire hierarchy.

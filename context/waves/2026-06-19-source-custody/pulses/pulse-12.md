@@ -8,7 +8,7 @@ Import the first real source-backed parentage span after source-custody review.
 
 - Add reviewed Wikidata Q43287 source metadata.
 - Add German Empire name, rank, and existence facts.
-- Add Q20135 -> Q43287 parentage for 1871-1918.
+- Add Q20135 -> Q43287 and Q158445 -> Q43287 parentage for 1871-1918.
 - Distinguish strict seed parentage from direct source-backed parentage so
   reviewed facts can represent documented rank skips.
 - Extend the source-backed title-path query smoke to show Grand Duchy of Hesse
@@ -16,7 +16,7 @@ Import the first real source-backed parentage span after source-custody review.
 
 ## Review Boundary
 
-This pulse authorizes one direct parentage path only. It does not import
+This pulse authorizes two direct parentage paths only. It does not import
 intermediate constituent-state semantics, holder genealogy, borders, map
 geometry, or a complete German Empire hierarchy.
 

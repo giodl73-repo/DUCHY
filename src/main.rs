@@ -78,7 +78,7 @@ fn main() {
 
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
     println!(
-        "Reviewed real facts: Wikidata Q158445/Q20135/Q43287 facts and Q20135 parentage validated"
+        "Reviewed real facts: Wikidata Q158445/Q20135/Q43287 facts and German Empire parentage validated"
     );
 
     let first_real_fixture_catalog = duchy::first_real_source_catalog_from_fixture()
@@ -149,6 +149,27 @@ fn main() {
     println!(
         "Reviewed real parentage query [{:?}/{}]: {}",
         hesse_query.status, hesse_query.trace[0].code, hesse_path
+    );
+    let mecklenburg_query = first_real_timeline.title_path_query_for_title_in_year(
+        "title-q158445",
+        1871,
+        duchy::SourceClass::SourceBacked,
+    );
+    let mecklenburg_path = mecklenburg_query
+        .answer
+        .as_ref()
+        .map(|answer| {
+            answer
+                .titles
+                .iter()
+                .map(|step| step.name.as_str())
+                .collect::<Vec<_>>()
+                .join(" -> ")
+        })
+        .unwrap_or_else(|| "unanswered".to_string());
+    println!(
+        "Reviewed real parentage query [{:?}/{}]: {}",
+        mecklenburg_query.status, mecklenburg_query.trace[0].code, mecklenburg_path
     );
 
     let contested_demo = vec![

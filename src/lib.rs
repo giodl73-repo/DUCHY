@@ -1546,6 +1546,16 @@ pub fn first_real_fact_records() -> Vec<FactRecord> {
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
         },
+        FactRecord {
+            fact_id: "fact-q158445-parent-q43287".to_string(),
+            subject_id: "title-q158445".to_string(),
+            claim_kind: ClaimKind::Parentage,
+            span: Some(YearSpan::new(1871, Some(1918))),
+            value: "title-q43287".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
     ]
 }
 
@@ -2627,7 +2637,7 @@ allowed_use: no_such_use
     fn first_real_fact_records_are_minimal_name_rank_and_existence_claims() {
         let facts = first_real_fact_records();
 
-        assert_eq!(facts.len(), 10);
+        assert_eq!(facts.len(), 11);
         assert!(facts.iter().any(|fact| fact.claim_kind == ClaimKind::Name
             && fact.value == "Grand Duchy of Mecklenburg-Schwerin"));
         assert!(facts
@@ -2657,6 +2667,12 @@ allowed_use: no_such_use
         assert!(facts.iter().any(|fact| {
             fact.claim_kind == ClaimKind::Parentage
                 && fact.subject_id == "title-q20135"
+                && fact.value == "title-q43287"
+                && fact.span == Some(YearSpan::new(1871, Some(1918)))
+        }));
+        assert!(facts.iter().any(|fact| {
+            fact.claim_kind == ClaimKind::Parentage
+                && fact.subject_id == "title-q158445"
                 && fact.value == "title-q43287"
                 && fact.span == Some(YearSpan::new(1871, Some(1918)))
         }));
@@ -2849,6 +2865,23 @@ confidence: maybe
                     .collect::<Vec<_>>()
             }),
             Some(vec!["title-q20135", "title-q43287"])
+        );
+
+        let mecklenburg_query = timeline.title_path_query_for_title_in_year(
+            "title-q158445",
+            1871,
+            SourceClass::SourceBacked,
+        );
+        assert_eq!(mecklenburg_query.status, QueryStatus::Answered);
+        assert_eq!(
+            mecklenburg_query.answer.as_ref().map(|answer| {
+                answer
+                    .titles
+                    .iter()
+                    .map(|step| step.title_id.as_str())
+                    .collect::<Vec<_>>()
+            }),
+            Some(vec!["title-q158445", "title-q43287"])
         );
     }
 
