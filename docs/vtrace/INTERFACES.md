@@ -10,11 +10,13 @@ intended answer surfaces before CLI/API behavior is locked.
 | ID | Interface | Purpose | Status |
 |---|---|---|---|
 | IF-001 | `TitleTimeline` model | Store title identity, ranks, existence spans, parentage, control, and continuity events. | implemented foundation |
-| IF-002 | `title_path_in_year(area_or_title, year)` | Return county -> duchy -> kingdom -> empire path for a year. | planned |
-| IF-003 | `transfers_between(area_or_title, rank, start, end)` | Return ordered parentage/control transfers within a range. | planned |
-| IF-004 | `lineage_for_title(title_id)` | Return ordered continuity and parentage/control events. | planned |
-| IF-005 | answer trace object | Explain matched spans, events, source class, confidence, and gaps. | planned |
-| IF-006 | fixture source/confidence fields | Mark seed, fictional, source-backed, contested, uncertain, or unsupported rows. | deferred to source package |
+| IF-002 | temporal parentage relation | Store parent-child title/area relationships as date spans or events. | planned |
+| IF-003 | area identity relation | Link a stable area/place identity to one or more titles over time. | planned |
+| IF-004 | `title_path_in_year(area_or_title, year)` | Return county -> duchy -> kingdom -> empire path for a year. | planned |
+| IF-005 | `transfers_between(area_or_title, rank, start, end)` | Return ordered parentage/control transfers within a range. | planned |
+| IF-006 | `lineage_for_title(title_id)` | Return ordered continuity and parentage/control events. | planned |
+| IF-007 | answer trace object | Explain matched spans, events, source class, confidence, and gaps. | planned |
+| IF-008 | fixture source/confidence fields | Mark seed, fictional, source-backed, contested, uncertain, or unsupported rows. | deferred to source package |
 
 ## Answer Shape
 
@@ -37,3 +39,5 @@ Lineage answers should eventually include:
   if a UI later displays them together.
 - Transfer queries must report intermediate changes and contested/split states
   rather than returning only the latest parent.
+- Area identity and title identity must remain separable so a place can move
+  between duchies without losing its continuity.

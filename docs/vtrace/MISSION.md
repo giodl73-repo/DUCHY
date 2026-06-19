@@ -68,6 +68,6 @@ commercial game's data or rules.
 | Criterion | Validation Method | Evidence Pointer |
 |---|---|---|
 | DUCHY has stable requirements for lineage and transfer questions. | Role review and trace inspection. | `docs/vtrace/REQUIREMENTS.md`, `docs/vtrace/TRACE.md`. |
-| Foundation queries distinguish parentage, control, and continuity events. | Unit tests and fixture review. | Future WP-001/WP-002 evidence. |
+| Foundation queries distinguish parentage, control, and continuity events. | Unit tests and fixture review. | Future WP-002/WP-003 evidence. |
 | Historical-source boundaries are explicit before import. | Source Custody review. | `.roles/source-custody-reviewer.md`, deferred source package. |
 | Work can continue without chat history. | VTRACE work-package inspection. | `docs/vtrace/WORK_PACKAGES.md`. |

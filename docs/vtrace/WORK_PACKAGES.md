@@ -9,10 +9,11 @@ Work packages for lineage and territorial-transfer query capability.
 | ID | Objective | Parent IDs | Affected Surfaces | Entry Criteria | Exit Criteria | L0 / L1 / L2 | Status |
 |---|---|---|---|---|---|---|---|
 | WP-001 | Baseline governance and VTRACE package. | REQ-001, REQ-002, REQ-008 | `.roles/`, `docs/vtrace/`, README links | Foundation repo exists. | Roles and VTRACE files added; validation passes. | L0: docs inspect / L1: full current commands / L2: n/a | complete |
-| WP-002 | Year title-path and lineage answer query. | REQ-001, REQ-002, REQ-003, REQ-005 | `src/lib.rs`, tests, README examples | WP-001 complete. | Query returns title path and ordered lineage events with tests. | L0: cargo test / L1: cargo run + tests / L2: role review | proposed |
-| WP-003 | Duchy-transfer range query. | REQ-004 | `src/lib.rs`, transfer fixtures/tests | WP-002 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | proposed |
-| WP-004 | Answer trace and status taxonomy. | REQ-006, REQ-007 | answer types, negative fixtures, docs | WP-002 and WP-003 query semantics known. | Answers distinguish empty, unknown, unsupported, contested, and source/confidence classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | proposed |
-| WP-005 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-*`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted. | L0: docs review / L1: custody review / L2: source package gate | deferred |
+| WP-002 | Temporal area/title model and fixture baseline. | REQ-001, REQ-002, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, seed fixtures/tests | WP-001 complete. | Time-varying parentage and area-title identity are represented; fixtures cover no-transfer, single-transfer, and multi-transfer cases. | L0: cargo test / L1: role review / L2: n/a | proposed |
+| WP-003 | Year title-path and lineage answer query. | REQ-001, REQ-002, REQ-003, REQ-005, REQ-009, REQ-010 | `src/lib.rs`, tests, README examples | WP-002 complete. | Query returns title path and ordered lineage events with tests. | L0: cargo test / L1: cargo run + tests / L2: role review | proposed |
+| WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | proposed |
+| WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish empty, unknown, unsupported, contested, seed, and source/confidence classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | proposed |
+| WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-*`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted. | L0: docs review / L1: custody review / L2: source package gate | deferred |
 
 ## Work Package Details
 
@@ -48,12 +49,34 @@ git diff --check
 
 Status: complete.
 
-### WP-002: Year Title-Path And Lineage Answer Query
+### WP-002: Temporal Area/Title Model And Fixture Baseline
+
+Objective: make the data model capable of representing areas that move between
+duchies before implementing user-facing transfer queries.
+
+Parent requirement IDs: REQ-001, REQ-002, REQ-009, REQ-010, REQ-011.
+
+Affected files/modules:
+
+- `src/lib.rs`
+- seed fixture constructors
+- model tests
+
+Exit criteria:
+
+- parentage can vary over time as spans or events,
+- stable area/place identity can be linked to title identity over time,
+- fixtures cover no-transfer, single-transfer, and multi-transfer cases,
+- Timeline Steward and Territorial Lineage Reviewer findings are recorded.
+
+Status: proposed.
+
+### WP-003: Year Title-Path And Lineage Answer Query
 
 Objective: let a caller ask which higher-title path contained a county/area in a
 year and inspect title continuity events.
 
-Parent requirement IDs: REQ-001, REQ-002, REQ-003, REQ-005.
+Parent requirement IDs: REQ-001, REQ-002, REQ-003, REQ-005, REQ-009, REQ-010.
 
 Affected files/modules:
 
@@ -72,12 +95,12 @@ Exit criteria:
 
 Status: proposed.
 
-### WP-003: Duchy-Transfer Range Query
+### WP-004: Duchy-Transfer Range Query
 
 Objective: let a caller ask when an area/title moved between duchies over a
 date range.
 
-Parent requirement IDs: REQ-004.
+Parent requirement IDs: REQ-004, REQ-009, REQ-010, REQ-011.
 
 Affected files/modules:
 
@@ -93,7 +116,7 @@ Exit criteria:
 
 Status: proposed.
 
-### WP-004: Answer Trace And Status Taxonomy
+### WP-005: Answer Trace And Status Taxonomy
 
 Objective: make answers explainable and distinguish negative/uncertain cases.
 
@@ -110,7 +133,7 @@ Exit criteria:
 
 Status: proposed.
 
-### WP-005: Source-Custody VTRACE Package For Real Historical Data
+### WP-006: Source-Custody VTRACE Package For Real Historical Data
 
 Objective: define how DUCHY can import real European title data safely.
 

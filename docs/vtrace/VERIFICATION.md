@@ -10,11 +10,14 @@ Verification for lineage and territorial-transfer query capability.
 |---|---|---|---|---|---|
 | REQ-001 | test / inspection | `cargo test --quiet` | Stable title identity tests pass. | partial pass | Current seed tests. |
 | REQ-002 | test / review | `cargo test --quiet` plus role review | Parentage/control distinction remains visible. | partial pass | Current seed tests; WP-002 pending. |
-| REQ-003 | test / demonstration | Future `title_path_in_year` tests | County/duchy/kingdom path returned for target year. | pending | WP-002. |
-| REQ-004 | test / demonstration | Future transfer fixture tests | Range query returns ordered duchy transfers. | pending | WP-003. |
-| REQ-005 | test / inspection | `cargo test --quiet` | Continuity events are ordered and queryable. | partial pass | Current `events_for_title` tests are implicit only; strengthen in WP-002. |
+| REQ-003 | test / demonstration | Future `title_path_in_year` tests | County/duchy/kingdom path returned for target year. | pending | WP-003. |
+| REQ-004 | test / demonstration | Future transfer fixture tests | Range query returns ordered duchy transfers. | pending | WP-004. |
+| REQ-005 | test / inspection | `cargo test --quiet` | Continuity events are ordered and queryable. | partial pass | Current `events_for_title` tests are implicit only; strengthen in WP-003. |
+| REQ-009 | test / inspection | Future temporal-parentage tests | Parentage changes are represented over time. | pending | WP-002. |
+| REQ-010 | test / review | Future area-title identity tests | Area identity survives title/parent/holder changes. | pending | WP-002. |
+| REQ-011 | test / inspection | Future fixture tests | No-transfer, single-transfer, and multi-transfer cases exist. | pending | WP-002. |
 | REQ-006 | review / inspection | Source Custody review | Historical answers carry source class and confidence. | deferred | Source package. |
-| REQ-007 | test | Negative and contested fixture tests | Answer statuses distinguish empty/unknown/unsupported/contested. | pending | WP-004. |
+| REQ-007 | test | Negative and contested fixture tests | Answer statuses distinguish empty/unknown/unsupported/contested. | pending | WP-005. |
 | REQ-008 | review | `.roles` and VTRACE inspection | No mechanics or clone behavior in core lineage work. | pass foundation | README, PRODUCT_PLAN, roles. |
 
 ## Commands
@@ -47,7 +50,8 @@ git diff --check
 
 | Gap | Impact | Disposition |
 |---|---|---|
-| No title-path query yet. | Cannot directly answer "which duchy in year Y". | WP-002. |
-| No transfer range query yet. | Cannot directly answer movement between duchies. | WP-003. |
-| No answer trace/status object yet. | Hard to explain uncertain or negative answers. | WP-004. |
+| No temporal parentage or area identity model yet. | Transfer queries would be built on a static-parent shortcut. | WP-002. |
+| No title-path query yet. | Cannot directly answer "which duchy in year Y". | WP-003. |
+| No transfer range query yet. | Cannot directly answer movement between duchies. | WP-004. |
+| No answer trace/status object yet. | Hard to explain uncertain or negative answers. | WP-005. |
 | No historical source custody package yet. | Real European data import remains blocked. | Defer to source VTRACE package. |

@@ -16,6 +16,9 @@ Lineage and territorial-transfer question support for DUCHY.
 | REQ-006 | DUCHY shall label answer source class and confidence once non-seed historical data is introduced. | CONOPS-005 | Historical claims require provenance and uncertainty posture. | must later | Source Custody Reviewer | review / inspection | proposed |
 | REQ-007 | DUCHY shall distinguish empty, unsupported, unknown, and contested answers where the fixture expresses those states. | CONOPS-005 | Query consumers need reliable negative answers. | should | Query Interface Reviewer | test | accepted |
 | REQ-008 | DUCHY shall keep game mechanics out of the core lineage model unless a later VTRACE package accepts them. | Mission constraints | Prevents clone risk and mechanics leakage. | must | Game Systems Reviewer | review | accepted |
+| REQ-009 | DUCHY shall represent time-varying parentage as spans or events rather than overwriting a title's current parent. | CONOPS-001 / CONOPS-002 | Areas moving between duchies cannot be reconstructed from a single static parent field. | must | Timeline Steward | test / inspection | accepted |
+| REQ-010 | DUCHY shall support area identity separately from title identity when a place, title, holder, or parentage changes independently. | CONOPS-002 / CONOPS-003 | The user asks about areas moving between duchies, not only title records changing labels. | must | Territorial Lineage Reviewer | test / review | accepted |
+| REQ-011 | DUCHY shall define seed fixtures that include at least one no-transfer case, one single-transfer case, and one multi-transfer case before accepting range-transfer behavior. | CONOPS-002 / CONOPS-005 | Transfer queries need positive and negative fixtures before implementation claims. | must | Query Interface Reviewer | test / inspection | accepted |
 
 ## Requirement Quality Checklist
 
