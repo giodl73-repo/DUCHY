@@ -22,6 +22,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "source-stubs" {
             return source_stubs(manifest_path, output_path);
         }
+        if command == "rejected-report" {
+            return rejected_report(manifest_path, output_path);
+        }
     }
 
     let (sources_path, facts_path) = match args.as_slice() {
@@ -32,7 +35,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md".to_string(),
             ])
         }
     };
@@ -139,6 +142,45 @@ fn source_stubs(manifest_path: &str, output_path: &str) -> Result<(), Vec<String
 
     println!("DUCHY source stubs");
     println!("- reviewed candidates: {}", reviewed.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn rejected_report(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+
+    let rejected = candidates
+        .iter()
+        .filter(|candidate| candidate.status == duchy::CandidateStatus::Rejected)
+        .collect::<Vec<_>>();
+    if rejected.is_empty() {
+        return Err(vec![
+            "manifest has no rejected candidates to archive".to_string()
+        ]);
+    }
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Rejected Candidate Report\n\n");
+    output.push_str(&format!("rejected_candidates: {}\n\n", rejected.len()));
+    for candidate in &rejected {
+        output.push_str(&format!("## {}\n\n", candidate.candidate_id));
+        output.push_str(&format!("- source_id: {}\n", candidate.source_id));
+        output.push_str(&format!("- source_url: {}\n", candidate.source_url));
+        output.push_str(&format!(
+            "- notes: {}\n\n",
+            candidate.notes.as_deref().unwrap_or("none")
+        ));
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY rejected candidate report");
+    println!("- rejected candidates: {}", rejected.len());
     println!("- output: {output_path}");
 
     Ok(())

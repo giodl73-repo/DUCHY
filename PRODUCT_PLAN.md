@@ -80,7 +80,8 @@ Pulses:
     counts.
 21. Source stub generation. Complete for blocked review-required source stubs
     from reviewed manifest rows.
-22. Next reviewed import packet.
+22. Rejected candidate audit. Complete for rejected manifest report generation.
+23. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
