@@ -72,6 +72,21 @@ pub struct ParentageSpan {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct TitlePathAnswer {
+    pub subject_id: String,
+    pub year: Year,
+    pub titles: Vec<TitlePathStep>,
+    pub events: Vec<ContinuityEvent>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct TitlePathStep {
+    pub title_id: String,
+    pub name: String,
+    pub rank: TitleRank,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ContinuityEventKind {
     Created,
     Inherited,
@@ -171,6 +186,52 @@ impl TitleTimeline {
     pub fn parent_title_in_year(&self, child_title_id: &str, year: Year) -> Option<&Title> {
         self.parentage_for_title_in_year(child_title_id, year)
             .and_then(|parentage| self.titles.get(&parentage.parent_title_id))
+    }
+
+    pub fn title_path_for_area_in_year(
+        &self,
+        area_id: &str,
+        year: Year,
+    ) -> Option<TitlePathAnswer> {
+        let title = self.title_for_area_in_year(area_id, year)?;
+        self.title_path_for_title_in_year(&title.id, year)
+            .map(|answer| TitlePathAnswer {
+                subject_id: area_id.to_string(),
+                ..answer
+            })
+    }
+
+    pub fn title_path_for_title_in_year(
+        &self,
+        title_id: &str,
+        year: Year,
+    ) -> Option<TitlePathAnswer> {
+        let title = self.titles.get(title_id)?;
+        if !title.exists.contains(year) {
+            return None;
+        }
+
+        let mut titles = vec![TitlePathStep::from_title(title)];
+        let mut current_id = title.id.as_str();
+
+        while let Some(parentage) = self.parentage_for_title_in_year(current_id, year) {
+            let parent = self.titles.get(&parentage.parent_title_id)?;
+            titles.push(TitlePathStep::from_title(parent));
+            current_id = parent.id.as_str();
+        }
+
+        let events = self
+            .events_for_title(title_id)
+            .into_iter()
+            .cloned()
+            .collect();
+
+        Some(TitlePathAnswer {
+            subject_id: title_id.to_string(),
+            year,
+            titles,
+            events,
+        })
     }
 
     pub fn events_for_title(&self, title_id: &str) -> Vec<&ContinuityEvent> {
@@ -379,6 +440,16 @@ impl TitleTimeline {
             Ok(())
         } else {
             Err(errors)
+        }
+    }
+}
+
+impl TitlePathStep {
+    fn from_title(title: &Title) -> Self {
+        Self {
+            title_id: title.id.clone(),
+            name: title.name.clone(),
+            rank: title.rank,
         }
     }
 }
@@ -642,6 +713,61 @@ mod tests {
                 .map(|title| title.id.as_str()),
             Some("d_highland_seed")
         );
+    }
+
+    #[test]
+    fn title_path_answer_resolves_area_hierarchy_for_year() {
+        let timeline = seed_timeline();
+        let answer = timeline
+            .title_path_for_area_in_year("area_bridge_ford", 1050)
+            .expect("area should resolve to title path");
+
+        let ids: Vec<&str> = answer
+            .titles
+            .iter()
+            .map(|step| step.title_id.as_str())
+            .collect();
+        assert_eq!(
+            ids,
+            vec!["c_bridge_seed", "d_river_seed", "k_burgundy_seed"]
+        );
+        assert_eq!(answer.subject_id, "area_bridge_ford");
+        assert_eq!(answer.year, 1050);
+        assert!(answer
+            .events
+            .iter()
+            .any(|event| event.kind == ContinuityEventKind::Conquered));
+    }
+
+    #[test]
+    fn title_path_answer_respects_temporal_parentage() {
+        let timeline = seed_timeline();
+
+        let before = timeline
+            .title_path_for_title_in_year("c_ford_seed", 1024)
+            .expect("title should have early path");
+        let during = timeline
+            .title_path_for_title_in_year("c_ford_seed", 1025)
+            .expect("title should have middle path");
+        let after = timeline
+            .title_path_for_title_in_year("c_ford_seed", 1075)
+            .expect("title should have late path");
+
+        assert_eq!(before.titles[1].title_id, "d_alpine_seed");
+        assert_eq!(during.titles[1].title_id, "d_river_seed");
+        assert_eq!(after.titles[1].title_id, "d_highland_seed");
+    }
+
+    #[test]
+    fn title_path_answer_is_empty_for_missing_year_or_area() {
+        let timeline = seed_timeline();
+
+        assert!(timeline
+            .title_path_for_area_in_year("area_bridge_ford", 1200)
+            .is_none());
+        assert!(timeline
+            .title_path_for_area_in_year("missing_area", 1050)
+            .is_none());
     }
 
     #[test]
