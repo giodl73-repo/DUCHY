@@ -306,25 +306,49 @@ fn shard_manifest(
         .map_err(|error| vec![format!("failed to create {output_dir}: {error}")])?;
 
     let shard_count = candidates.len().div_ceil(chunk_size);
+    let mut index_output = String::new();
+    index_output.push_str("# DUCHY Manifest Shard Index\n\n");
+    index_output.push_str(&format!("source_manifest: {manifest_path}\n"));
+    index_output.push_str(&format!("candidates: {}\n", candidates.len()));
+    index_output.push_str(&format!("chunk_size: {chunk_size}\n"));
+    index_output.push_str(&format!("shards: {shard_count}\n\n"));
+    index_output.push_str("| Shard | Candidates | Pending | Reviewed | Promoted | Rejected |\n");
+    index_output.push_str("|---|---:|---:|---:|---:|---:|\n");
+
     for (index, chunk) in candidates.chunks(chunk_size).enumerate() {
         let output = candidate_manifest_text(
             "Candidate manifest shard generated from staging queue.",
             chunk,
         )?;
-        let output_path = Path::new(output_dir).join(format!("batch-{:03}.manifest", index + 1));
+        let shard_name = format!("batch-{:03}.manifest", index + 1);
+        let output_path = Path::new(output_dir).join(&shard_name);
         fs::write(&output_path, output).map_err(|error| {
             vec![format!(
                 "failed to write {}: {error}",
                 output_path.display()
             )]
         })?;
+
+        let counts = candidate_status_counts(chunk);
+        index_output.push_str(&format!(
+            "| {shard_name} | {} | {} | {} | {} | {} |\n",
+            chunk.len(),
+            counts.pending,
+            counts.reviewed,
+            counts.promoted,
+            counts.rejected
+        ));
     }
+    let index_path = Path::new(output_dir).join("INDEX.md");
+    fs::write(&index_path, index_output)
+        .map_err(|error| vec![format!("failed to write {}: {error}", index_path.display())])?;
 
     println!("DUCHY manifest shards");
     println!("- candidates: {}", candidates.len());
     println!("- chunk size: {chunk_size}");
     println!("- shards: {shard_count}");
     println!("- output: {output_dir}");
+    println!("- index: {}", index_path.display());
 
     Ok(())
 }
@@ -371,4 +395,29 @@ fn candidate_status_label(status: duchy::CandidateStatus) -> &'static str {
         duchy::CandidateStatus::Promoted => "promoted",
         duchy::CandidateStatus::Rejected => "rejected",
     }
+}
+
+struct CandidateStatusCounts {
+    pending: usize,
+    reviewed: usize,
+    promoted: usize,
+    rejected: usize,
+}
+
+fn candidate_status_counts(candidates: &[duchy::CandidateRecord]) -> CandidateStatusCounts {
+    let mut counts = CandidateStatusCounts {
+        pending: 0,
+        reviewed: 0,
+        promoted: 0,
+        rejected: 0,
+    };
+    for candidate in candidates {
+        match candidate.status {
+            duchy::CandidateStatus::Pending => counts.pending += 1,
+            duchy::CandidateStatus::Reviewed => counts.reviewed += 1,
+            duchy::CandidateStatus::Promoted => counts.promoted += 1,
+            duchy::CandidateStatus::Rejected => counts.rejected += 1,
+        }
+    }
+    counts
 }

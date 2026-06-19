@@ -40,6 +40,7 @@ records and validation.
 | 22 | Active manifest cleanup | complete | Generate pending/reviewed-only manifests after audit/archive. |
 | 23 | Archive manifest cleanup | complete | Generate promoted/rejected-only manifests for queue audit. |
 | 24 | Manifest sharding | complete | Split large candidate manifests into fixed-size review batches. |
+| 25 | Shard index | complete | Write per-shard status counts for large review queues. |
 
 ## Success Criteria
 

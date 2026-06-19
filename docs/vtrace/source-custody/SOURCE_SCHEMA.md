@@ -168,7 +168,8 @@ outside the working queue.
 `duchy-import archive-manifest` writes promoted and rejected rows as a parseable
 manifest for long-term queue audit.
 `duchy-import shard-manifest` writes fixed-size parseable manifest shards for
-large candidate queues that need smaller source-custody review batches.
+large candidate queues that need smaller source-custody review batches. It also
+writes `INDEX.md` with per-shard candidate and status counts.
 
 ## Fact Gate
 

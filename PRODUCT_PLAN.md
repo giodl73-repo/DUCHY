@@ -85,7 +85,8 @@ Pulses:
 24. Archive manifest cleanup. Complete for promoted/rejected manifest
     generation.
 25. Manifest sharding. Complete for fixed-size candidate review batches.
-26. Next reviewed import packet.
+26. Shard index. Complete for per-shard review status counts.
+27. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -30,7 +30,8 @@ Active manifests keep only pending and reviewed candidates after promoted or
 rejected rows have been archived.
 Archive manifests keep promoted and rejected candidates as parseable audit
 records outside the working queue.
-Manifest shards split larger queues into fixed-size, parseable review batches.
+Manifest shards split larger queues into fixed-size, parseable review batches
+and write `INDEX.md` with per-shard status counts.
 
 Example dry run:
 
