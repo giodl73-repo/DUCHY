@@ -117,6 +117,18 @@ logic, validation rules, and synthetic test data, but source-backed historical
 IDs, names, spans, and relations belong in reviewed fixture files rather than
 hardcoded Rust literals.
 
+Candidate batch imports belong in `data/staging/` until review. The staging
+gate is:
+
+```powershell
+cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
+cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
+```
+
+`duchy-promote --dry-run` validates candidate sources/facts, merges them with
+accepted fixtures in memory, validates duplicates/conflicts, and materializes a
+merged source-backed timeline without writing files.
+
 ## Fact Gate
 
 The current crate implements the fact-gate layer:
@@ -128,6 +140,7 @@ The current crate implements the fact-gate layer:
 | `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
 | `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
+| `validate_fact_records` | Validates a fact batch for duplicate IDs and conflicting accepted claims. |
 | `source_backed_parentage_from_facts` | Converts reviewed parentage facts into `ParentageSpan` records after title materialization. |
 
 Fact-gate rules:
@@ -140,6 +153,9 @@ Fact-gate rules:
 - `contested` requires a `conflict_group`.
 - `seed`, `metadata_pointer`, and `unsupported` are not accepted as
   source-backed fact confidence labels.
+- Duplicate source IDs and duplicate fact IDs are rejected.
+- Contradictory non-contested facts with the same subject, claim kind, and span
+  are rejected.
 - Materialization rejects fact sets containing contested facts.
 - Parentage materialization requires a span and already-materialized child and
   parent titles.

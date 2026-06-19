@@ -1,0 +1,53 @@
+# Synthetic staging example; not accepted history.
+
+fact_id: fact-staging-parent-name
+subject_id: title-staging-parent
+claim_kind: name
+value: Staging Parent Realm
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-parent-rank
+subject_id: title-staging-parent
+claim_kind: rank
+value: Kingdom
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-parent-exists
+subject_id: title-staging-parent
+claim_kind: title_exists
+span: 1000..1100
+value: exists
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-child-name
+subject_id: title-staging-child
+claim_kind: name
+value: Staging Child Duchy
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-child-rank
+subject_id: title-staging-child
+claim_kind: rank
+value: Duchy
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-child-exists
+subject_id: title-staging-child
+claim_kind: title_exists
+span: 1000..1100
+value: exists
+source_ids: src-staging-example
+confidence: single_source
+---
+fact_id: fact-staging-child-parent
+subject_id: title-staging-child
+claim_kind: parentage
+span: 1000..1100
+value: title-staging-parent
+source_ids: src-staging-example
+confidence: single_source

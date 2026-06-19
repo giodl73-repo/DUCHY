@@ -21,7 +21,7 @@ impl TitleRank {
     }
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct YearSpan {
     pub start: Year,
     pub end: Option<Year>,
@@ -224,7 +224,7 @@ pub struct ContestedFactGroup {
     pub facts: Vec<FactRecord>,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum ClaimKind {
     TitleExists,
     AreaTitle,
@@ -922,6 +922,14 @@ impl SourceCatalog {
             .find(|review| review.source_id == source_id)
     }
 
+    pub fn record_count(&self) -> usize {
+        self.records.len()
+    }
+
+    pub fn review_count(&self) -> usize {
+        self.reviews.len()
+    }
+
     pub fn validate(&self) -> Result<(), Vec<String>> {
         let mut errors = Vec::new();
 
@@ -1059,6 +1067,13 @@ impl SourceCatalog {
             }
             match parse_source_record_block(block) {
                 Ok((record, review)) => {
+                    if catalog.records.contains_key(&record.source_id) {
+                        errors.push(format!(
+                            "record {}: duplicate source_id {}",
+                            index + 1,
+                            record.source_id
+                        ));
+                    }
                     catalog.add_record(record);
                     if let Some(review) = review {
                         catalog.add_review(review);
@@ -1418,6 +1433,57 @@ pub fn first_real_fact_records_from_fixture() -> Result<Vec<FactRecord>, Vec<Str
     fact_records_from_text(include_str!("../fixtures/first-real.facts"))
 }
 
+pub fn validate_fact_records(
+    catalog: &SourceCatalog,
+    facts: &[FactRecord],
+) -> Result<(), Vec<String>> {
+    let mut errors = catalog.validate().err().unwrap_or_default();
+    let mut fact_ids: HashMap<&str, usize> = HashMap::new();
+    let mut accepted_claims: HashMap<(&str, ClaimKind, Option<YearSpan>), &FactRecord> =
+        HashMap::new();
+
+    for fact in facts {
+        if let Some(first_seen) = fact_ids.insert(fact.fact_id.as_str(), fact_ids.len() + 1) {
+            errors.push(format!(
+                "{} duplicates fact_id first seen at position {}",
+                fact.fact_id, first_seen
+            ));
+        }
+
+        if let Err(mut fact_errors) = catalog.validate_fact(fact) {
+            errors.append(&mut fact_errors);
+        }
+
+        if fact.confidence == ConfidenceLabel::Contested {
+            continue;
+        }
+
+        let claim_key = (fact.subject_id.as_str(), fact.claim_kind, fact.span.clone());
+        match accepted_claims.get(&claim_key) {
+            Some(existing) if existing.value != fact.value => errors.push(format!(
+                "{} conflicts with {} for {:?} on {} over {:?}: {} vs {}",
+                fact.fact_id,
+                existing.fact_id,
+                fact.claim_kind,
+                fact.subject_id,
+                fact.span,
+                fact.value,
+                existing.value
+            )),
+            Some(_) => {}
+            None => {
+                accepted_claims.insert(claim_key, fact);
+            }
+        }
+    }
+
+    if errors.is_empty() {
+        Ok(())
+    } else {
+        Err(errors)
+    }
+}
+
 fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
     let mut values = HashMap::new();
     let mut errors = Vec::new();
@@ -1480,19 +1546,8 @@ fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
 
 pub fn validate_first_real_facts() -> Result<(), Vec<String>> {
     let catalog = first_real_source_catalog();
-    let mut errors = catalog.validate().err().unwrap_or_default();
-
-    for fact in first_real_fact_records() {
-        if let Err(mut fact_errors) = catalog.validate_fact(&fact) {
-            errors.append(&mut fact_errors);
-        }
-    }
-
-    if errors.is_empty() {
-        Ok(())
-    } else {
-        Err(errors)
-    }
+    let facts = first_real_fact_records();
+    validate_fact_records(&catalog, &facts)
 }
 
 pub fn contested_fact_groups(facts: &[FactRecord]) -> Vec<ContestedFactGroup> {
@@ -2323,6 +2378,40 @@ allowed_use: no_such_use
     }
 
     #[test]
+    fn source_catalog_rejects_duplicate_source_ids() {
+        let text = r#"
+source_id: src-duplicate
+source_kind: other
+source_url: urn:duchy:test-one
+license: test license
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: Test fixture
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: First record.
+---
+source_id: src-duplicate
+source_kind: other
+source_url: urn:duchy:test-two
+license: test license
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: Test fixture
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Duplicate record.
+"#;
+
+        let errors =
+            SourceCatalog::from_metadata_text(text).expect_err("duplicate source should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("duplicate source_id src-duplicate")));
+    }
+
+    #[test]
     fn source_catalog_accepts_structured_claim_fact_with_review() {
         let mut catalog = SourceCatalog::new();
         catalog.add_record(SourceRecord {
@@ -2455,6 +2544,72 @@ allowed_use: no_such_use
         assert!(errors
             .iter()
             .any(|error| error.contains("requires a conflict_group")));
+    }
+
+    #[test]
+    fn fact_set_validation_rejects_duplicate_fact_ids() {
+        let catalog = test_structured_claim_catalog();
+        let facts = vec![
+            FactRecord {
+                fact_id: "fact-duplicate".to_string(),
+                subject_id: "title-example".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Example One".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-duplicate".to_string(),
+                subject_id: "title-example-two".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Example Two".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+        ];
+
+        let errors =
+            validate_fact_records(&catalog, &facts).expect_err("duplicate fact ids should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("duplicates fact_id")));
+    }
+
+    #[test]
+    fn fact_set_validation_rejects_conflicting_accepted_claims() {
+        let catalog = test_structured_claim_catalog();
+        let facts = vec![
+            FactRecord {
+                fact_id: "fact-name-one".to_string(),
+                subject_id: "title-example".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Example One".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-name-two".to_string(),
+                subject_id: "title-example".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Example Two".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+        ];
+
+        let errors = validate_fact_records(&catalog, &facts)
+            .expect_err("conflicting accepted facts should fail");
+
+        assert!(errors.iter().any(|error| error.contains("conflicts with")));
     }
 
     #[test]

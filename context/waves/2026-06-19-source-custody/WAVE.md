@@ -31,6 +31,7 @@ records and validation.
 | 13 | Fixture-canonical import path | complete | Remove reviewed historical data literals from Rust; make fixtures the import source of truth. |
 | 14 | Reviewed Prussia import packet | complete | Import Q27306 title facts and Q27306 -> Q43287 for 1871-1918 after source review. |
 | 15 | Reviewed Saxony import packet | complete | Import Q153015 title facts and Q153015 -> Q43287 for 1871-1918 after source review. |
+| 16 | Batch import staging gate | complete | Add CLI status/dry-run promotion and duplicate/conflict validation for staged batches. |
 
 ## Success Criteria
 
@@ -41,3 +42,4 @@ records and validation.
 - Real title facts enter only through reviewed source records and fact gate validation.
 - Reviewed historical IDs, names, spans, and relations live in fixtures rather
   than Rust literals.
+- Candidate batches validate in staging before accepted fixture promotion.

@@ -19,6 +19,7 @@ The first foundation is a Rust model for title snapshots:
 ```powershell
 cargo test --quiet
 cargo run --quiet
+cargo run --bin duchy-import -- status
 ```
 
 ## Product Shape
@@ -55,6 +56,13 @@ materialization until reviewed. Reviewed real source metadata lives in
 `fixtures/first-real.sources`. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
+
+Batch candidate imports go through `data/staging/` and must pass dry-run
+promotion before accepted fixture rows are appended:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
+```
 
 ## Relationship To Games Design
 

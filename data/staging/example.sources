@@ -1,0 +1,13 @@
+# Synthetic staging example; not accepted history.
+
+source_id: src-staging-example
+source_kind: other
+source_url: urn:duchy:staging-example
+license: synthetic staging example
+retrieved_on: 2026-06-19
+allowed_use: structured_claims
+attribution: DUCHY staging fixture
+notes: Synthetic candidate source for importer dry-run testing.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only as synthetic staging data for pipeline validation.

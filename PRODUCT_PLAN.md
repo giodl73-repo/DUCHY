@@ -71,7 +71,9 @@ Pulses:
     title facts and Q27306 -> Q43287, 1871-1918.
 16. Reviewed Saxony import packet. Complete for Q153015 Kingdom of Saxony
     title facts and Q153015 -> Q43287, 1871-1918.
-17. Next reviewed import packet.
+17. Batch import staging gate. Complete for CLI status, dry-run promotion, and
+    duplicate/conflict validation.
+18. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

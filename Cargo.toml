@@ -5,6 +5,7 @@ edition = "2021"
 license = "MIT"
 authors = ["Gio Della-Libera <giodl73@gmail.com>"]
 description = "Historical title timeline model for game-design experiments."
+default-run = "duchy"
 
 [lib]
 name = "duchy"
@@ -13,3 +14,11 @@ path = "src/lib.rs"
 [[bin]]
 name = "duchy"
 path = "src/main.rs"
+
+[[bin]]
+name = "duchy-import"
+path = "src/bin/duchy_import.rs"
+
+[[bin]]
+name = "duchy-promote"
+path = "src/bin/duchy_promote.rs"
