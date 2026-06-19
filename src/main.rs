@@ -9,8 +9,10 @@ fn main() {
         println!("- {:?}: {} ({holder})", title.rank, title.name);
     }
 
-    let answer = timeline
-        .title_path_for_area_in_year("area_bridge_ford", year)
+    let path_query = timeline.title_path_query_for_area_in_year("area_bridge_ford", year);
+    let answer = path_query
+        .answer
+        .as_ref()
         .expect("seed area should have a title path");
     let path = answer
         .titles
@@ -19,14 +21,27 @@ fn main() {
         .collect::<Vec<_>>()
         .join(" -> ");
     println!();
-    println!("Path for area_bridge_ford in {year}: {path}");
+    println!(
+        "Path for area_bridge_ford in {year} [{:?}/{}]: {path}",
+        path_query.status, path_query.trace[0].code
+    );
 
-    let transfers = timeline
-        .transfers_for_area_between("area_old_ford", duchy::TitleRank::Duchy, 1000, 1100)
+    let transfer_query = timeline.transfers_query_for_area_between(
+        "area_old_ford",
+        duchy::TitleRank::Duchy,
+        1000,
+        1100,
+    );
+    let transfers = transfer_query
+        .answer
+        .as_ref()
         .expect("seed area should have duchy transfers");
     println!();
-    println!("Duchy transfers for area_old_ford:");
-    for transfer in transfers.transfers {
+    println!(
+        "Duchy transfers for area_old_ford [{:?}/{}]:",
+        transfer_query.status, transfer_query.trace[0].code
+    );
+    for transfer in &transfers.transfers {
         println!(
             "- {}: {} -> {}",
             transfer.year, transfer.from_name, transfer.to_name

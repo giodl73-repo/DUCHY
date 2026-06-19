@@ -107,6 +107,38 @@ pub struct TransferStep {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct QueryEnvelope<T> {
+    pub status: QueryStatus,
+    pub source_class: SourceClass,
+    pub trace: Vec<TraceNote>,
+    pub answer: Option<T>,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum QueryStatus {
+    Answered,
+    Empty,
+    Unknown,
+    Unsupported,
+    Contested,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SourceClass {
+    Seed,
+    Fictional,
+    SourceBacked,
+    Contested,
+    Unsupported,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct TraceNote {
+    pub code: String,
+    pub detail: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ContinuityEventKind {
     Created,
     Inherited,
@@ -221,6 +253,36 @@ impl TitleTimeline {
             })
     }
 
+    pub fn title_path_query_for_area_in_year(
+        &self,
+        area_id: &str,
+        year: Year,
+    ) -> QueryEnvelope<TitlePathAnswer> {
+        if !self.areas.contains_key(area_id) {
+            return QueryEnvelope::without_answer(
+                QueryStatus::Unknown,
+                SourceClass::Seed,
+                "area_missing",
+                format!("area {area_id} is not present in the seed timeline"),
+            );
+        }
+
+        match self.title_path_for_area_in_year(area_id, year) {
+            Some(answer) => QueryEnvelope::with_answer(
+                answer,
+                SourceClass::Seed,
+                "seed_title_path",
+                format!("resolved seed title path for area {area_id} in {year}"),
+            ),
+            None => QueryEnvelope::without_answer(
+                QueryStatus::Empty,
+                SourceClass::Seed,
+                "no_area_title_span",
+                format!("area {area_id} has no modeled title path in {year}"),
+            ),
+        }
+    }
+
     pub fn title_path_for_title_in_year(
         &self,
         title_id: &str,
@@ -267,6 +329,61 @@ impl TitleTimeline {
                 subject_id: area_id.to_string(),
                 ..answer
             })
+    }
+
+    pub fn transfers_query_for_area_between(
+        &self,
+        area_id: &str,
+        rank: TitleRank,
+        start: Year,
+        end: Year,
+    ) -> QueryEnvelope<TransferAnswer> {
+        if start > end {
+            return QueryEnvelope::without_answer(
+                QueryStatus::Unsupported,
+                SourceClass::Seed,
+                "invalid_range",
+                format!("start year {start} is after end year {end}"),
+            );
+        }
+        if rank != TitleRank::Duchy {
+            return QueryEnvelope::without_answer(
+                QueryStatus::Unsupported,
+                SourceClass::Seed,
+                "unsupported_transfer_rank",
+                format!("transfer queries currently support Duchy rank, not {rank:?}"),
+            );
+        }
+        if !self.areas.contains_key(area_id) {
+            return QueryEnvelope::without_answer(
+                QueryStatus::Unknown,
+                SourceClass::Seed,
+                "area_missing",
+                format!("area {area_id} is not present in the seed timeline"),
+            );
+        }
+
+        match self.transfers_for_area_between(area_id, rank, start, end) {
+            Some(answer) if answer.transfers.is_empty() => QueryEnvelope::with_status(
+                QueryStatus::Empty,
+                answer,
+                SourceClass::Seed,
+                "no_transfers",
+                format!("area {area_id} has no modeled duchy transfers from {start} to {end}"),
+            ),
+            Some(answer) => QueryEnvelope::with_answer(
+                answer,
+                SourceClass::Seed,
+                "seed_transfer_query",
+                format!("resolved seed duchy transfers for area {area_id} from {start} to {end}"),
+            ),
+            None => QueryEnvelope::without_answer(
+                QueryStatus::Empty,
+                SourceClass::Seed,
+                "no_transfer_subject",
+                format!("area {area_id} has no modeled transfer subject from {start} to {end}"),
+            ),
+        }
     }
 
     pub fn transfers_for_title_between(
@@ -540,6 +657,50 @@ impl TitleTimeline {
             Ok(())
         } else {
             Err(errors)
+        }
+    }
+}
+
+impl<T> QueryEnvelope<T> {
+    fn with_answer(answer: T, source_class: SourceClass, code: &str, detail: String) -> Self {
+        Self::with_status(QueryStatus::Answered, answer, source_class, code, detail)
+    }
+
+    fn with_status(
+        status: QueryStatus,
+        answer: T,
+        source_class: SourceClass,
+        code: &str,
+        detail: String,
+    ) -> Self {
+        Self {
+            status,
+            source_class,
+            trace: vec![TraceNote::new(code, detail)],
+            answer: Some(answer),
+        }
+    }
+
+    fn without_answer(
+        status: QueryStatus,
+        source_class: SourceClass,
+        code: &str,
+        detail: String,
+    ) -> Self {
+        Self {
+            status,
+            source_class,
+            trace: vec![TraceNote::new(code, detail)],
+            answer: None,
+        }
+    }
+}
+
+impl TraceNote {
+    fn new(code: &str, detail: String) -> Self {
+        Self {
+            code: code.to_string(),
+            detail,
         }
     }
 }
@@ -932,6 +1093,75 @@ mod tests {
 
         assert_eq!(answer.transfers.len(), 1);
         assert_eq!(answer.transfers[0].year, 1075);
+    }
+
+    #[test]
+    fn title_path_query_reports_answered_seed_trace() {
+        let timeline = seed_timeline();
+        let envelope = timeline.title_path_query_for_area_in_year("area_bridge_ford", 1050);
+
+        assert_eq!(envelope.status, QueryStatus::Answered);
+        assert_eq!(envelope.source_class, SourceClass::Seed);
+        assert_eq!(envelope.trace[0].code, "seed_title_path");
+        assert!(envelope.answer.is_some());
+    }
+
+    #[test]
+    fn title_path_query_distinguishes_unknown_and_empty() {
+        let timeline = seed_timeline();
+        let missing = timeline.title_path_query_for_area_in_year("missing_area", 1050);
+        let out_of_range = timeline.title_path_query_for_area_in_year("area_bridge_ford", 1200);
+
+        assert_eq!(missing.status, QueryStatus::Unknown);
+        assert_eq!(missing.trace[0].code, "area_missing");
+        assert_eq!(out_of_range.status, QueryStatus::Empty);
+        assert_eq!(out_of_range.trace[0].code, "no_area_title_span");
+    }
+
+    #[test]
+    fn transfer_query_reports_empty_and_answered_statuses() {
+        let timeline = seed_timeline();
+        let no_transfer = timeline.transfers_query_for_area_between(
+            "area_lake_road",
+            TitleRank::Duchy,
+            1000,
+            1100,
+        );
+        let transfer = timeline.transfers_query_for_area_between(
+            "area_old_ford",
+            TitleRank::Duchy,
+            1000,
+            1100,
+        );
+
+        assert_eq!(no_transfer.status, QueryStatus::Empty);
+        assert_eq!(no_transfer.trace[0].code, "no_transfers");
+        assert!(no_transfer.answer.is_some());
+        assert_eq!(transfer.status, QueryStatus::Answered);
+        assert_eq!(transfer.trace[0].code, "seed_transfer_query");
+        assert_eq!(transfer.answer.expect("answer").transfers.len(), 2);
+    }
+
+    #[test]
+    fn transfer_query_reports_unsupported_cases() {
+        let timeline = seed_timeline();
+        let invalid_range = timeline.transfers_query_for_area_between(
+            "area_old_ford",
+            TitleRank::Duchy,
+            1100,
+            1000,
+        );
+        let unsupported_rank = timeline.transfers_query_for_area_between(
+            "area_old_ford",
+            TitleRank::Kingdom,
+            1000,
+            1100,
+        );
+
+        assert_eq!(invalid_range.status, QueryStatus::Unsupported);
+        assert_eq!(invalid_range.trace[0].code, "invalid_range");
+        assert_eq!(unsupported_rank.status, QueryStatus::Unsupported);
+        assert_eq!(unsupported_rank.trace[0].code, "unsupported_transfer_rank");
     }
 
     #[test]

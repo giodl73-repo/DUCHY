@@ -21,7 +21,7 @@ and scenario packets.
 | 03 | Temporal area/title model | complete | Add stable area identity, temporal parentage spans, and transfer baseline fixtures. |
 | 04 | Year title-path query | complete | Answer which higher title path contained an area/title in a year. |
 | 05 | Duchy-transfer query | complete | Answer when areas/titles moved between duchies across a date range. |
-| 06 | Answer trace and source status | pending | Distinguish empty, unknown, unsupported, contested, seed, and source-backed answers. |
+| 06 | Answer trace and source status | complete | Distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed answers. |
 
 ## Success Criteria
 

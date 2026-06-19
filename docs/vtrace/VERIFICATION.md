@@ -9,15 +9,15 @@ Verification for lineage and territorial-transfer query capability.
 | Requirement ID | Method | Command / Inspection | Expected Evidence | Result | Evidence Pointer |
 |---|---|---|---|---|---|
 | REQ-001 | test / inspection | `cargo test --quiet` | Stable title identity tests pass. | partial pass | Current seed tests. |
-| REQ-002 | test / review | `cargo test --quiet` plus role review | Parentage/control distinction remains visible. | partial pass | Current seed tests; WP-002 pending. |
+| REQ-002 | test / review | `cargo test --quiet` plus role review | Parentage/control distinction remains visible. | pass | Current seed tests and temporal parentage model. |
 | REQ-003 | test / demonstration | `cargo test --quiet`; `cargo run --quiet` | County/duchy/kingdom path returned for target year. | pass | Title-path tests and CLI demo on 2026-06-19. |
 | REQ-004 | test / demonstration | `cargo test --quiet`; `cargo run --quiet` | Range query returns ordered duchy transfers. | pass | Transfer query tests and CLI demo on 2026-06-19. |
 | REQ-005 | test / inspection | `cargo test --quiet` | Continuity events are ordered and queryable. | pass | `TitlePathAnswer.events` test on 2026-06-19. |
 | REQ-009 | test / inspection | `cargo test --quiet` | Parentage changes are represented over time. | pass | `ParentageSpan` tests on 2026-06-19. |
 | REQ-010 | test / review | `cargo test --quiet` | Area identity survives title/parent/holder changes. | pass | `AreaTitleSpan` test on 2026-06-19. |
 | REQ-011 | test / inspection | `cargo test --quiet` | No-transfer, single-transfer, and multi-transfer cases exist. | pass | Transfer fixture test on 2026-06-19. |
-| REQ-006 | review / inspection | Source Custody review | Historical answers carry source class and confidence. | deferred | Source package. |
-| REQ-007 | test | Negative and contested fixture tests | Answer statuses distinguish empty/unknown/unsupported/contested. | pending | WP-005. |
+| REQ-006 | review / inspection | `cargo test --quiet`; Source Custody review | Seed answers carry source class; real historical confidence remains deferred. | partial pass | `SourceClass::Seed` tests on 2026-06-19; source package pending. |
+| REQ-007 | test | `cargo test --quiet` | Answer statuses distinguish answered/empty/unknown/unsupported; contested remains reserved. | pass | Query envelope tests on 2026-06-19. |
 | REQ-008 | review | `.roles` and VTRACE inspection | No mechanics or clone behavior in core lineage work. | pass foundation | README, PRODUCT_PLAN, roles. |
 
 ## Commands
@@ -35,7 +35,7 @@ git diff --check
 |---|---|---|---|
 | L0 | Fast local sanity for active query/model work. | `cargo fmt --check`; `cargo test --quiet` | current pass |
 | L1 | Full child-repo confidence before commit or push. | `cargo fmt --check`; `cargo test --quiet`; `cargo run --quiet`; role-file inspection | current pass for foundation |
-| L2 | Readiness proof before claiming lineage-transfer capability. | L1 plus transfer fixtures, answer-trace examples, and role review ledger | pending |
+| L2 | Readiness proof before claiming seed lineage-transfer capability. | L1 plus transfer fixtures, answer-trace examples, and role review ledger | pass for seed fixtures |
 
 ## Evidence Ledger
 
@@ -48,11 +48,12 @@ git diff --check
 | EVID-005 | test | `cargo test --quiet` | Temporal parentage, area identity, and transfer fixture baseline. | pass on 2026-06-19 |
 | EVID-006 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Year title-path and lineage answer query. | pass on 2026-06-19 |
 | EVID-007 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Duchy-transfer range query. | pass on 2026-06-19 |
+| EVID-008 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Answer status, seed source class, and trace codes. | pass on 2026-06-19 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
-| No answer trace/status object yet. | Hard to explain uncertain or negative answers. | WP-005. |
-| Contested and split transfer semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | WP-005 must model or explicitly defer contested/split statuses. |
+| Contested and split transfer semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Deferred until fixtures express contested or split states. |
+| Real historical confidence is not modeled yet. | Source-backed claims cannot be made. | WP-006. |
 | No historical source custody package yet. | Real European data import remains blocked. | Defer to source VTRACE package. |

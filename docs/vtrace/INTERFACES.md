@@ -37,7 +37,8 @@ Lineage answers should eventually include:
 - Query interfaces must not imply historical authority without source evidence.
 - Parentage-path queries and holder/control queries are separate operations even
   if a UI later displays them together.
-- Transfer queries must report intermediate changes and contested/split states
-  rather than returning only the latest parent.
+- Transfer queries must report intermediate changes rather than returning only
+  the latest parent. Contested/split states are reserved in the status taxonomy
+  and remain deferred until fixtures express them.
 - Area identity and title identity must remain separable so a place can move
   between duchies without losing its continuity.

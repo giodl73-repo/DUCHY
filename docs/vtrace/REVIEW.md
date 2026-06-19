@@ -38,5 +38,5 @@ historical data. It is not sufficient to claim real European historical coverage
 | Risk | Owner | Disposition |
 |---|---|---|
 | Area identity may later need geometry or source-boundary IDs. | Territorial Lineage Reviewer | Defer map/GIS work until REQ-MAP-001 trigger. |
-| Contested or split control may require richer relation types than simple parent spans. | Timeline Steward / Query Interface Reviewer | WP-005 must decide whether to model or explicitly defer contested states. |
+| Contested or split control may require richer relation types than simple parent spans. | Timeline Steward / Query Interface Reviewer | WP-005 explicitly reserves contested status and defers contested/split semantics until fixtures require them. |
 | Source-backed answers may be mistaken for authoritative history. | Source Custody Reviewer | WP-006 remains required before real historical imports. |
