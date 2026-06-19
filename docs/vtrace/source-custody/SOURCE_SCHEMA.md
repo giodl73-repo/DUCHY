@@ -33,7 +33,7 @@ facts.
 
 ## Metadata File Format
 
-The current fixture format is dependency-free line-oriented text:
+The source metadata fixture format is dependency-free line-oriented text:
 
 ```text
 source_id: src-example
@@ -68,12 +68,43 @@ Future title facts should include:
 |---|---:|---|
 | `fact_id` | yes | Stable DUCHY-local ID. |
 | `subject_id` | yes | Area or title identity. |
-| `claim_kind` | yes | `title_exists`, `area_title`, `parentage`, `holder`, `event`, or `name`. |
+| `claim_kind` | yes | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `span` | conditional | Date span for temporal claims. |
 | `value` | yes | Referenced title, holder, event kind, name, or status. |
 | `source_ids` | yes | Source records supporting the claim. |
 | `confidence` | yes | Confidence label from `CONFIDENCE_MODEL.md`. |
 | `conflict_group` | no | ID joining alternative contested claims. |
+
+## Fact File Format
+
+The fact fixture format is also dependency-free line-oriented text:
+
+```text
+fact_id: fact-example-name
+subject_id: title-example
+claim_kind: name
+value: Example Duchy
+source_ids: src-example
+confidence: single_source
+---
+fact_id: fact-example-exists
+subject_id: title-example
+claim_kind: title_exists
+span: 1815..1918
+value: exists
+source_ids: src-example
+confidence: single_source
+```
+
+Rules:
+
+- Records are separated by `---`.
+- Blank lines and `#` comments are ignored.
+- `source_ids` is a comma-separated list.
+- `span` uses `start..end`; open spans use `start..present`.
+- Fact files still require separate source metadata and source-custody review.
+
+The first real fact fixture is `fixtures/first-real.facts`.
 
 ## Fact Gate
 
@@ -82,7 +113,7 @@ The current crate implements the fact-gate layer:
 | Rust item | Purpose |
 |---|---|
 | `FactRecord` | Candidate source-backed claim. |
-| `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, or `name`. |
+| `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
 | `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
 
@@ -100,5 +131,5 @@ Fact-gate rules:
 ## Non-Goals
 
 - This is not a final serialization format.
-- This does not authorize importing any concrete historical title facts.
+- This does not authorize importing unreviewed concrete historical title facts.
 - This does not define geometry storage.

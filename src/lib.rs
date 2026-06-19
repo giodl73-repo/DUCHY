@@ -1177,6 +1177,46 @@ fn parse_required_allowed_use(
     }
 }
 
+fn parse_required_claim_kind(
+    values: &HashMap<String, String>,
+    key: &str,
+    errors: &mut Vec<String>,
+) -> ClaimKind {
+    match values.get(key) {
+        Some(value) => match parse_claim_kind(value) {
+            Some(claim_kind) => claim_kind,
+            None => {
+                errors.push(format!("invalid claim_kind {value}"));
+                ClaimKind::Event
+            }
+        },
+        None => {
+            errors.push(format!("missing required field {key}"));
+            ClaimKind::Event
+        }
+    }
+}
+
+fn parse_required_confidence(
+    values: &HashMap<String, String>,
+    key: &str,
+    errors: &mut Vec<String>,
+) -> ConfidenceLabel {
+    match values.get(key) {
+        Some(value) => match parse_confidence_label(value) {
+            Some(confidence) => confidence,
+            None => {
+                errors.push(format!("invalid confidence {value}"));
+                ConfidenceLabel::Unsupported
+            }
+        },
+        None => {
+            errors.push(format!("missing required field {key}"));
+            ConfidenceLabel::Unsupported
+        }
+    }
+}
+
 fn parse_source_kind(value: &str) -> Option<SourceKind> {
     match value {
         "wikidata" => Some(SourceKind::Wikidata),
@@ -1187,6 +1227,58 @@ fn parse_source_kind(value: &str) -> Option<SourceKind> {
         "other" => Some(SourceKind::Other),
         _ => None,
     }
+}
+
+fn parse_claim_kind(value: &str) -> Option<ClaimKind> {
+    match value {
+        "title_exists" => Some(ClaimKind::TitleExists),
+        "area_title" => Some(ClaimKind::AreaTitle),
+        "parentage" => Some(ClaimKind::Parentage),
+        "holder" => Some(ClaimKind::Holder),
+        "event" => Some(ClaimKind::Event),
+        "name" => Some(ClaimKind::Name),
+        "rank" => Some(ClaimKind::Rank),
+        _ => None,
+    }
+}
+
+fn parse_confidence_label(value: &str) -> Option<ConfidenceLabel> {
+    match value {
+        "seed" => Some(ConfidenceLabel::Seed),
+        "metadata_pointer" => Some(ConfidenceLabel::MetadataPointer),
+        "single_source" => Some(ConfidenceLabel::SingleSource),
+        "multi_source" => Some(ConfidenceLabel::MultiSource),
+        "contested" => Some(ConfidenceLabel::Contested),
+        "unsupported" => Some(ConfidenceLabel::Unsupported),
+        _ => None,
+    }
+}
+
+fn parse_year_span(value: &str, errors: &mut Vec<String>) -> Option<YearSpan> {
+    let Some((start, end)) = value.split_once("..") else {
+        errors.push(format!("invalid span {value}; expected start..end"));
+        return None;
+    };
+
+    let start = match start.trim().parse::<Year>() {
+        Ok(start) => start,
+        Err(_) => {
+            errors.push(format!("invalid span start {}", start.trim()));
+            return None;
+        }
+    };
+    let end = match end.trim() {
+        "" | "present" | "none" => None,
+        value => match value.parse::<Year>() {
+            Ok(end) => Some(end),
+            Err(_) => {
+                errors.push(format!("invalid span end {value}"));
+                return None;
+            }
+        },
+    };
+
+    Some(YearSpan::new(start, end))
 }
 
 fn parse_allowed_use(value: &str) -> Option<AllowedUse> {
@@ -1322,6 +1414,96 @@ pub fn first_real_fact_records() -> Vec<FactRecord> {
     ]
 }
 
+pub fn fact_records_from_text(input: &str) -> Result<Vec<FactRecord>, Vec<String>> {
+    let mut facts = Vec::new();
+    let mut errors = Vec::new();
+
+    for (index, block) in input.split("\n---").enumerate() {
+        let block = block.trim();
+        if block.is_empty() {
+            continue;
+        }
+        match parse_fact_record_block(block) {
+            Ok(fact) => facts.push(fact),
+            Err(mut block_errors) => {
+                for error in block_errors.drain(..) {
+                    errors.push(format!("fact {}: {error}", index + 1));
+                }
+            }
+        }
+    }
+
+    if errors.is_empty() {
+        Ok(facts)
+    } else {
+        Err(errors)
+    }
+}
+
+pub fn first_real_fact_records_from_fixture() -> Result<Vec<FactRecord>, Vec<String>> {
+    fact_records_from_text(include_str!("../fixtures/first-real.facts"))
+}
+
+fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
+    let mut values = HashMap::new();
+    let mut errors = Vec::new();
+
+    for (line_index, line) in block.lines().enumerate() {
+        let line = line.trim();
+        if line.is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let Some((key, value)) = line.split_once(':') else {
+            errors.push(format!("line {} is not key: value", line_index + 1));
+            continue;
+        };
+        values.insert(key.trim().to_string(), value.trim().to_string());
+    }
+
+    let fact_id = take_required(&values, "fact_id", &mut errors);
+    let subject_id = take_required(&values, "subject_id", &mut errors);
+    let claim_kind = parse_required_claim_kind(&values, "claim_kind", &mut errors);
+    let span = values
+        .get("span")
+        .filter(|value| !value.trim().is_empty())
+        .and_then(|value| parse_year_span(value, &mut errors));
+    let value = take_required(&values, "value", &mut errors);
+    let source_ids = values
+        .get("source_ids")
+        .map(|value| {
+            value
+                .split(',')
+                .map(str::trim)
+                .filter(|source_id| !source_id.is_empty())
+                .map(ToString::to_string)
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+    if source_ids.is_empty() {
+        errors.push("missing required field source_ids".to_string());
+    }
+    let confidence = parse_required_confidence(&values, "confidence", &mut errors);
+    let conflict_group = values
+        .get("conflict_group")
+        .filter(|value| !value.trim().is_empty())
+        .cloned();
+
+    if !errors.is_empty() {
+        return Err(errors);
+    }
+
+    Ok(FactRecord {
+        fact_id,
+        subject_id,
+        claim_kind,
+        span,
+        value,
+        source_ids,
+        confidence,
+        conflict_group,
+    })
+}
+
 pub fn validate_first_real_facts() -> Result<(), Vec<String>> {
     let catalog = first_real_source_catalog();
     let mut errors = catalog.validate().err().unwrap_or_default();
@@ -1423,6 +1605,12 @@ pub fn source_backed_timeline_from_facts(
 pub fn first_real_timeline() -> Result<TitleTimeline, Vec<String>> {
     let catalog = first_real_source_catalog();
     let facts = first_real_fact_records();
+    source_backed_timeline_from_facts(&catalog, &facts)
+}
+
+pub fn first_real_timeline_from_fixture() -> Result<TitleTimeline, Vec<String>> {
+    let catalog = first_real_source_catalog();
+    let facts = first_real_fact_records_from_fixture()?;
     source_backed_timeline_from_facts(&catalog, &facts)
 }
 
@@ -2188,6 +2376,39 @@ allowed_use: no_such_use
     }
 
     #[test]
+    fn fact_records_parse_first_real_fixture() {
+        let facts =
+            first_real_fact_records_from_fixture().expect("first real fixture should parse");
+
+        assert_eq!(facts, first_real_fact_records());
+    }
+
+    #[test]
+    fn fact_records_reject_invalid_text() {
+        let text = r#"
+fact_id: fact-bad
+subject_id: title-bad
+claim_kind: no_such_claim
+span: eighteen..nineteen
+value: Bad
+source_ids: src-wikidata-q158445
+confidence: maybe
+"#;
+
+        let errors = fact_records_from_text(text).expect_err("invalid fact text should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("invalid claim_kind")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("invalid span start")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("invalid confidence")));
+    }
+
+    #[test]
     fn first_real_facts_materialize_a_source_backed_title() {
         let titles = first_real_titles().expect("first real title should materialize");
 
@@ -2205,7 +2426,8 @@ allowed_use: no_such_use
 
     #[test]
     fn first_real_timeline_answers_source_backed_title_path() {
-        let timeline = first_real_timeline().expect("first real timeline should materialize");
+        let timeline =
+            first_real_timeline_from_fixture().expect("first real timeline should materialize");
         let query = timeline.title_path_query_for_title_in_year(
             "title-q158445",
             1815,
@@ -2227,7 +2449,8 @@ allowed_use: no_such_use
 
     #[test]
     fn first_real_timeline_returns_empty_outside_existence_span() {
-        let timeline = first_real_timeline().expect("first real timeline should materialize");
+        let timeline =
+            first_real_timeline_from_fixture().expect("first real timeline should materialize");
         let query = timeline.title_path_query_for_title_in_year(
             "title-q158445",
             1814,

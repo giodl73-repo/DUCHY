@@ -47,7 +47,8 @@ range, and which continuity events explain a title lineage.
 The current source-custody slice validates metadata-only source records, review
 decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
-source-backed title-path query for that first real title.
+source-backed title-path query for that first real title. The first real facts
+now live in `fixtures/first-real.facts`.
 
 ## Relationship To Games Design
 

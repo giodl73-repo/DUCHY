@@ -1,0 +1,24 @@
+# First reviewed real DUCHY title facts.
+# Source metadata lives in first_real_source_catalog for this slice.
+
+fact_id: fact-q158445-name
+subject_id: title-q158445
+claim_kind: name
+value: Grand Duchy of Mecklenburg-Schwerin
+source_ids: src-wikidata-q158445
+confidence: single_source
+---
+fact_id: fact-q158445-rank
+subject_id: title-q158445
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q158445
+confidence: single_source
+---
+fact_id: fact-q158445-exists
+subject_id: title-q158445
+claim_kind: title_exists
+span: 1815..1918
+value: exists
+source_ids: src-wikidata-q158445
+confidence: single_source

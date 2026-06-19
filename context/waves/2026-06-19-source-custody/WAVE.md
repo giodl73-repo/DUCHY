@@ -22,7 +22,8 @@ records and validation.
 | 04 | First real source-backed facts | complete | Import only reviewed name, rank, and existence facts for Wikidata Q158445. |
 | 05 | Source-backed title materialization | complete | Convert reviewed fact sets into a real `Title` record without parentage/control claims. |
 | 06 | Source-backed title query | complete | Answer a source-backed title-path query for the first real title. |
-| 07 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
+| 07 | Fact fixture import | complete | Parse first real source-backed facts from `fixtures/first-real.facts`. |
+| 08 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
 
 ## Success Criteria
 

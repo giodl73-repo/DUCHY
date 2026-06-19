@@ -19,6 +19,7 @@ intended answer surfaces before CLI/API behavior is locked.
 | IF-008 | fixture source/confidence fields | Mark seed, fictional, source-backed, contested, uncertain, or unsupported rows. | implemented for first source-backed facts |
 | IF-009 | source-backed title materializer | Convert reviewed name/rank/existence fact sets into `Title` records. | implemented first slice |
 | IF-010 | source-backed title-path query | Return a traced answer envelope for source-backed title records. | implemented first slice |
+| IF-011 | fact fixture parser | Parse reviewed source-backed fact records from dependency-free text fixtures. | implemented first slice |
 
 ## Answer Shape
 

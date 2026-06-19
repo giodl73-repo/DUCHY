@@ -79,6 +79,18 @@ fn main() {
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
     println!("First real facts: Wikidata Q158445 name/rank/existence validated");
 
+    let first_real_fixture_facts = duchy::first_real_fact_records_from_fixture()
+        .expect("first real fact fixture should parse");
+    for fact in &first_real_fixture_facts {
+        duchy::first_real_source_catalog()
+            .validate_fact(fact)
+            .expect("first real fixture fact should validate");
+    }
+    println!(
+        "First real fact fixture: {} records parsed",
+        first_real_fixture_facts.len()
+    );
+
     let first_real_titles =
         duchy::first_real_titles().expect("first real title should materialize");
     for title in first_real_titles {
@@ -94,8 +106,8 @@ fn main() {
         );
     }
 
-    let first_real_timeline =
-        duchy::first_real_timeline().expect("first real timeline should materialize");
+    let first_real_timeline = duchy::first_real_timeline_from_fixture()
+        .expect("first real fixture timeline should materialize");
     let first_real_query = first_real_timeline.title_path_query_for_title_in_year(
         "title-q158445",
         1815,

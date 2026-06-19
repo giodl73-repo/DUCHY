@@ -57,7 +57,8 @@ Pulses:
 6. Source-backed title materialization. Complete for one title record with no
    parentage/control claims.
 7. Source-backed title query. Complete for the first real title path envelope.
-8. Review packet for contested/uncertain history.
+8. Fact fixture import. Complete for `fixtures/first-real.facts`.
+9. Review packet for contested/uncertain history.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
