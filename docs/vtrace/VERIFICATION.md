@@ -57,11 +57,12 @@ git diff --check
 | EVID-014 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-05.md` | First source-backed title materializes from reviewed name/rank/existence facts. | pass on 2026-06-19 |
 | EVID-015 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-06.md` | First source-backed title-path query returns a traced answer envelope. | pass on 2026-06-19 |
 | EVID-016 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `fixtures/first-real.facts`; `context/waves/2026-06-19-source-custody/pulses/pulse-07.md` | First real source-backed facts parse from fixture file and drive the query smoke. | pass on 2026-06-19 |
+| EVID-017 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-08.md` | Contested facts group for review and are blocked from normal materialization. | pass on 2026-06-19 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
-| Contested and split transfer semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Deferred until fixtures express contested or split states. |
+| Contested and split transfer query semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Fact-level contested packets exist; query-level contested answers remain deferred. |
 | Only one concrete source record has passed the gate. | Historical import is real but intentionally tiny. | Expand through reviewed source packets only. |
-| No historical source custody package for contested claims yet. | Uncertain or conflicting European data remains blocked. | Defer to source VTRACE contested-history packet. |
+| No real contested historical fixture has passed review yet. | The contested packet is proven with synthetic alternatives only. | Add real contested claims only through reviewed source packets. |

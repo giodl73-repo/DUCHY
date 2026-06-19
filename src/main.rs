@@ -123,4 +123,32 @@ fn main() {
             .and_then(|answer| answer.titles.first())
             .map_or("unanswered", |step| step.name.as_str())
     );
+
+    let contested_demo = vec![
+        duchy::FactRecord {
+            fact_id: "fact-demo-contested-rank-duchy".to_string(),
+            subject_id: "title-demo-contested".to_string(),
+            claim_kind: duchy::ClaimKind::Rank,
+            span: None,
+            value: "Duchy".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: duchy::ConfidenceLabel::Contested,
+            conflict_group: Some("conflict-demo-rank".to_string()),
+        },
+        duchy::FactRecord {
+            fact_id: "fact-demo-contested-rank-kingdom".to_string(),
+            subject_id: "title-demo-contested".to_string(),
+            claim_kind: duchy::ClaimKind::Rank,
+            span: None,
+            value: "Kingdom".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: duchy::ConfidenceLabel::Contested,
+            conflict_group: Some("conflict-demo-rank".to_string()),
+        },
+    ];
+    let contested_groups = duchy::contested_fact_groups(&contested_demo);
+    println!(
+        "Contested fact review: {} group requires resolution before materialization",
+        contested_groups.len()
+    );
 }

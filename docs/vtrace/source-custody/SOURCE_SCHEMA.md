@@ -113,6 +113,7 @@ The current crate implements the fact-gate layer:
 | Rust item | Purpose |
 |---|---|
 | `FactRecord` | Candidate source-backed claim. |
+| `ContestedFactGroup` | Review packet for alternative contested fact claims. |
 | `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
 | `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
@@ -127,6 +128,7 @@ Fact-gate rules:
 - `contested` requires a `conflict_group`.
 - `seed`, `metadata_pointer`, and `unsupported` are not accepted as
   source-backed fact confidence labels.
+- Materialization rejects fact sets containing contested facts.
 
 ## Non-Goals
 

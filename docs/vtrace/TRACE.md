@@ -13,6 +13,7 @@
 | REQ-009 | CONOPS-001 / CONOPS-002 | Represent time-varying parentage as spans/events. | SPEC-009 temporal parentage contract | IF-002 | CR-001 | WP-002 | `ParentageSpan`, seed fixtures, tests | test / inspection | transfer scenario review | `cargo test --quiet` on 2026-06-19 | verified |
 | REQ-010 | CONOPS-002 / CONOPS-003 | Support area identity separately from title identity. | SPEC-010 area identity contract | IF-003 | CR-001 | WP-002 | `Area`, `AreaTitleSpan`, tests | test / review | territorial lineage review | `cargo test --quiet` on 2026-06-19 | verified |
 | REQ-011 | CONOPS-002 / CONOPS-005 | Define no-transfer, single-transfer, and multi-transfer fixtures. | SPEC-011 transfer fixture baseline | fixtures/tests | CR-001, CR-002 | WP-002 / WP-004 | seed fixtures and query tests | test / inspection | query-interface review | `temporal_parentage_covers_no_single_and_multi_transfer_fixtures` | verified |
+| REQ-012 | CONOPS-005 | Preserve contested source-backed claims without normalizing one alternative into accepted history. | SPEC-007 answer status taxonomy | IF-012 | CR-002, CR-003 | WP-006 | `ContestedFactGroup`, materialization rejection tests | test / review | contested-history review | `cargo test --quiet` on 2026-06-19 | verified first packet |
 
 ## Code Rigor Constraints
 

@@ -58,7 +58,9 @@ Pulses:
    parentage/control claims.
 7. Source-backed title query. Complete for the first real title path envelope.
 8. Fact fixture import. Complete for `fixtures/first-real.facts`.
-9. Review packet for contested/uncertain history.
+9. Review packet for contested/uncertain history. Complete for fact-level
+   grouping and materialization blocking.
+10. Second reviewed source import.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

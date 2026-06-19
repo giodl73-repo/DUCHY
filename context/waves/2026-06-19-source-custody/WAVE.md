@@ -23,7 +23,8 @@ records and validation.
 | 05 | Source-backed title materialization | complete | Convert reviewed fact sets into a real `Title` record without parentage/control claims. |
 | 06 | Source-backed title query | complete | Answer a source-backed title-path query for the first real title. |
 | 07 | Fact fixture import | complete | Parse first real source-backed facts from `fixtures/first-real.facts`. |
-| 08 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
+| 08 | Contested-history review packet | complete | Represent conflicting source-backed claims without overwriting them. |
+| 09 | Second reviewed source import | pending | Add another real title only after source review and fact fixture update. |
 
 ## Success Criteria
 

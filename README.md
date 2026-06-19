@@ -48,7 +48,8 @@ The current source-custody slice validates metadata-only source records, review
 decisions, the source-backed fact gate, the first minimal real title facts, and
 materialization of those facts into a `Title`. It can also answer a traced
 source-backed title-path query for that first real title. The first real facts
-now live in `fixtures/first-real.facts`.
+now live in `fixtures/first-real.facts`, and contested fact groups are blocked
+from normal materialization until reviewed.
 
 ## Relationship To Games Design
 

@@ -19,6 +19,8 @@
   conflicting dates.
 - Keep de jure parentage, de facto control, title holder, and area identity as
   separate claims.
+- Do not materialize normal title records from a fact set that contains
+  contested claims.
 
 ## Answer Rules
 
@@ -32,3 +34,10 @@ Future source-backed answers must include:
 - uncertainty or contested status when applicable.
 
 Seed answers may use `SourceClass::Seed` and trace codes without source records.
+
+## Implemented Contested Packet
+
+DUCHY now groups contested facts by `conflict_group` with
+`ContestedFactGroup`. A contested fact group is reviewable input, not a resolved
+title. `source_backed_titles_from_facts` rejects any title fact set containing a
+contested fact so conflicting claims cannot be overwritten by iteration order.

@@ -211,6 +211,12 @@ pub struct FactRecord {
     pub conflict_group: Option<String>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct ContestedFactGroup {
+    pub conflict_group: String,
+    pub facts: Vec<FactRecord>,
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ClaimKind {
     TitleExists,
@@ -1521,6 +1527,35 @@ pub fn validate_first_real_facts() -> Result<(), Vec<String>> {
     }
 }
 
+pub fn contested_fact_groups(facts: &[FactRecord]) -> Vec<ContestedFactGroup> {
+    let mut grouped: HashMap<String, Vec<FactRecord>> = HashMap::new();
+
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.confidence == ConfidenceLabel::Contested)
+    {
+        if let Some(conflict_group) = &fact.conflict_group {
+            grouped
+                .entry(conflict_group.clone())
+                .or_default()
+                .push(fact.clone());
+        }
+    }
+
+    let mut groups = grouped
+        .into_iter()
+        .map(|(conflict_group, mut facts)| {
+            facts.sort_by(|left, right| left.fact_id.cmp(&right.fact_id));
+            ContestedFactGroup {
+                conflict_group,
+                facts,
+            }
+        })
+        .collect::<Vec<_>>();
+    groups.sort_by(|left, right| left.conflict_group.cmp(&right.conflict_group));
+    groups
+}
+
 pub fn source_backed_titles_from_facts(
     catalog: &SourceCatalog,
     facts: &[FactRecord],
@@ -1540,6 +1575,16 @@ pub fn source_backed_titles_from_facts(
 
     let mut titles = Vec::new();
     for (subject_id, subject_facts) in grouped {
+        if subject_facts
+            .iter()
+            .any(|fact| fact.confidence == ConfidenceLabel::Contested)
+        {
+            errors.push(format!(
+                "{subject_id} has contested facts; resolve or route as contested before materialization"
+            ));
+            continue;
+        }
+
         let name = subject_facts
             .iter()
             .find(|fact| fact.claim_kind == ClaimKind::Name)
@@ -2409,6 +2454,45 @@ confidence: maybe
     }
 
     #[test]
+    fn contested_fact_groups_collect_alternative_claims() {
+        let facts = vec![
+            FactRecord {
+                fact_id: "fact-contested-rank-duchy".to_string(),
+                subject_id: "title-contested".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Duchy".to_string(),
+                source_ids: vec!["src-wikidata-q158445".to_string()],
+                confidence: ConfidenceLabel::Contested,
+                conflict_group: Some("conflict-title-contested-rank".to_string()),
+            },
+            FactRecord {
+                fact_id: "fact-contested-rank-kingdom".to_string(),
+                subject_id: "title-contested".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Kingdom".to_string(),
+                source_ids: vec!["src-wikidata-q158445".to_string()],
+                confidence: ConfidenceLabel::Contested,
+                conflict_group: Some("conflict-title-contested-rank".to_string()),
+            },
+        ];
+
+        let groups = contested_fact_groups(&facts);
+
+        assert_eq!(groups.len(), 1);
+        assert_eq!(groups[0].conflict_group, "conflict-title-contested-rank");
+        assert_eq!(
+            groups[0]
+                .facts
+                .iter()
+                .map(|fact| fact.value.as_str())
+                .collect::<Vec<_>>(),
+            vec!["Duchy", "Kingdom"]
+        );
+    }
+
+    #[test]
     fn first_real_facts_materialize_a_source_backed_title() {
         let titles = first_real_titles().expect("first real title should materialize");
 
@@ -2484,6 +2568,49 @@ confidence: maybe
         assert!(errors
             .iter()
             .any(|error| error.contains("missing source-backed existence span")));
+    }
+
+    #[test]
+    fn materialization_rejects_contested_fact_set() {
+        let catalog = first_real_source_catalog();
+        let facts = vec![
+            FactRecord {
+                fact_id: "fact-contested-name".to_string(),
+                subject_id: "title-contested".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Contested Title".to_string(),
+                source_ids: vec!["src-wikidata-q158445".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+            FactRecord {
+                fact_id: "fact-contested-rank".to_string(),
+                subject_id: "title-contested".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Duchy".to_string(),
+                source_ids: vec!["src-wikidata-q158445".to_string()],
+                confidence: ConfidenceLabel::Contested,
+                conflict_group: Some("conflict-title-contested-rank".to_string()),
+            },
+            FactRecord {
+                fact_id: "fact-contested-exists".to_string(),
+                subject_id: "title-contested".to_string(),
+                claim_kind: ClaimKind::TitleExists,
+                span: Some(YearSpan::new(1815, Some(1918))),
+                value: "exists".to_string(),
+                source_ids: vec!["src-wikidata-q158445".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+            },
+        ];
+
+        let errors = source_backed_titles_from_facts(&catalog, &facts).unwrap_err();
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("has contested facts")));
     }
 
     #[test]

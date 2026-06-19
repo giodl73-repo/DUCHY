@@ -20,6 +20,7 @@ intended answer surfaces before CLI/API behavior is locked.
 | IF-009 | source-backed title materializer | Convert reviewed name/rank/existence fact sets into `Title` records. | implemented first slice |
 | IF-010 | source-backed title-path query | Return a traced answer envelope for source-backed title records. | implemented first slice |
 | IF-011 | fact fixture parser | Parse reviewed source-backed fact records from dependency-free text fixtures. | implemented first slice |
+| IF-012 | contested fact review packet | Group contested claims and block normal materialization until resolution. | implemented first slice |
 
 ## Answer Shape
 
