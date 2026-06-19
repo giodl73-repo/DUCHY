@@ -1,0 +1,15 @@
+[package]
+name = "duchy"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Gio Della-Libera <giodl73@gmail.com>"]
+description = "Historical title timeline model for game-design experiments."
+
+[lib]
+name = "duchy"
+path = "src/lib.rs"
+
+[[bin]]
+name = "duchy"
+path = "src/main.rs"
