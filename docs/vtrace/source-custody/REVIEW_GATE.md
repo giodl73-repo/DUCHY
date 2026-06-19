@@ -30,3 +30,7 @@ Before source-backed data enters DUCHY:
 The seed-query foundation is custody-safe because it uses fictional seed
 fixtures only. Real source import remains blocked until a concrete source record
 passes this gate.
+
+The metadata-only source catalog is custody-safe as a policy pointer catalog.
+The accepted records identify licensing/copyright pages and do not import
+historical facts.

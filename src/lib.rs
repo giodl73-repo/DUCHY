@@ -139,6 +139,61 @@ pub struct TraceNote {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct SourceRecord {
+    pub source_id: String,
+    pub source_kind: SourceKind,
+    pub source_url: String,
+    pub license: String,
+    pub retrieved_on: String,
+    pub allowed_use: AllowedUse,
+    pub attribution: Option<String>,
+    pub notes: Option<String>,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SourceKind {
+    Wikidata,
+    OpenHistoricalMap,
+    WikimediaText,
+    PublicDomainWork,
+    ScholarlyDatabase,
+    Other,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AllowedUse {
+    MetadataOnly,
+    StructuredClaims,
+    Geometry,
+    TextExcerpt,
+    Blocked,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct SourceReview {
+    pub source_id: String,
+    pub decision: SourceReviewDecision,
+    pub reviewer: String,
+    pub note: String,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SourceReviewDecision {
+    AcceptedMetadataOnly,
+    AcceptedStructuredClaims,
+    AcceptedPackageBoundary,
+    BlockedRights,
+    BlockedQuality,
+    BlockedScope,
+}
+
+#[derive(Debug, Clone, Default)]
+pub struct SourceCatalog {
+    records: HashMap<String, SourceRecord>,
+    reviews: Vec<SourceReview>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ContinuityEventKind {
     Created,
     Inherited,
@@ -705,6 +760,147 @@ impl TraceNote {
     }
 }
 
+impl SourceRecord {
+    pub fn metadata_only(
+        source_id: &str,
+        source_kind: SourceKind,
+        source_url: &str,
+        license: &str,
+        retrieved_on: &str,
+    ) -> Self {
+        Self {
+            source_id: source_id.to_string(),
+            source_kind,
+            source_url: source_url.to_string(),
+            license: license.to_string(),
+            retrieved_on: retrieved_on.to_string(),
+            allowed_use: AllowedUse::MetadataOnly,
+            attribution: None,
+            notes: None,
+        }
+    }
+}
+
+impl SourceCatalog {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
+    pub fn add_record(&mut self, record: SourceRecord) {
+        self.records.insert(record.source_id.clone(), record);
+    }
+
+    pub fn add_review(&mut self, review: SourceReview) {
+        self.reviews.push(review);
+    }
+
+    pub fn record(&self, source_id: &str) -> Option<&SourceRecord> {
+        self.records.get(source_id)
+    }
+
+    pub fn latest_review(&self, source_id: &str) -> Option<&SourceReview> {
+        self.reviews
+            .iter()
+            .rev()
+            .find(|review| review.source_id == source_id)
+    }
+
+    pub fn validate(&self) -> Result<(), Vec<String>> {
+        let mut errors = Vec::new();
+
+        for record in self.records.values() {
+            if record.source_id.trim().is_empty() {
+                errors.push("source id must not be empty".to_string());
+            }
+            if record.source_url.trim().is_empty() {
+                errors.push(format!("{} source_url must not be empty", record.source_id));
+            }
+            if record.license.trim().is_empty() {
+                errors.push(format!("{} license must not be empty", record.source_id));
+            }
+            if record.retrieved_on.trim().is_empty() {
+                errors.push(format!(
+                    "{} retrieved_on must not be empty",
+                    record.source_id
+                ));
+            }
+            if requires_attribution(record.allowed_use) && record.attribution.is_none() {
+                errors.push(format!(
+                    "{} requires attribution for {:?}",
+                    record.source_id, record.allowed_use
+                ));
+            }
+        }
+
+        for review in &self.reviews {
+            if !self.records.contains_key(&review.source_id) {
+                errors.push(format!(
+                    "review references missing source {}",
+                    review.source_id
+                ));
+            }
+            if review.reviewer.trim().is_empty() {
+                errors.push(format!("{} review has no reviewer", review.source_id));
+            }
+        }
+
+        if errors.is_empty() {
+            Ok(())
+        } else {
+            Err(errors)
+        }
+    }
+}
+
+fn requires_attribution(allowed_use: AllowedUse) -> bool {
+    matches!(
+        allowed_use,
+        AllowedUse::StructuredClaims | AllowedUse::Geometry | AllowedUse::TextExcerpt
+    )
+}
+
+pub fn source_policy_catalog() -> SourceCatalog {
+    let mut catalog = SourceCatalog::new();
+
+    catalog.add_record(SourceRecord::metadata_only(
+        "src-wikidata-licensing",
+        SourceKind::Wikidata,
+        "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "CC0 for structured data; CC BY-SA 4.0 for text outside data namespaces",
+        "2026-06-19",
+    ));
+    catalog.add_record(SourceRecord::metadata_only(
+        "src-openhistoricalmap-copyright",
+        SourceKind::OpenHistoricalMap,
+        "https://www.openhistoricalmap.org/copyright",
+        "CC0 unless noted; some features may carry CC BY or CC BY-SA tags",
+        "2026-06-19",
+    ));
+    catalog.add_record(SourceRecord::metadata_only(
+        "src-wikimedia-terms",
+        SourceKind::WikimediaText,
+        "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "Free/open licenses; project text commonly requires attribution/share-alike",
+        "2026-06-19",
+    ));
+
+    for source_id in [
+        "src-wikidata-licensing",
+        "src-openhistoricalmap-copyright",
+        "src-wikimedia-terms",
+    ] {
+        catalog.add_review(SourceReview {
+            source_id: source_id.to_string(),
+            decision: SourceReviewDecision::AcceptedMetadataOnly,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "Accepted as a source-policy pointer only; no historical facts imported."
+                .to_string(),
+        });
+    }
+
+    catalog
+}
+
 fn span_overlaps(span: &YearSpan, start: Year, end: Year) -> bool {
     span.start <= end && span.end.map_or(true, |span_end| span_end >= start)
 }
@@ -1162,6 +1358,66 @@ mod tests {
         assert_eq!(invalid_range.trace[0].code, "invalid_range");
         assert_eq!(unsupported_rank.status, QueryStatus::Unsupported);
         assert_eq!(unsupported_rank.trace[0].code, "unsupported_transfer_rank");
+    }
+
+    #[test]
+    fn source_policy_catalog_validates_metadata_only_records() {
+        let catalog = source_policy_catalog();
+
+        assert_eq!(catalog.validate(), Ok(()));
+        assert_eq!(
+            catalog
+                .record("src-wikidata-licensing")
+                .map(|record| record.allowed_use),
+            Some(AllowedUse::MetadataOnly)
+        );
+        assert_eq!(
+            catalog
+                .latest_review("src-wikidata-licensing")
+                .map(|review| review.decision),
+            Some(SourceReviewDecision::AcceptedMetadataOnly)
+        );
+    }
+
+    #[test]
+    fn source_catalog_rejects_missing_required_metadata() {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_record(SourceRecord::metadata_only(
+            "bad-source",
+            SourceKind::Other,
+            "",
+            "",
+            "",
+        ));
+
+        let errors = catalog
+            .validate()
+            .expect_err("missing source metadata should fail");
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("source_url must not be empty")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("license must not be empty")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("retrieved_on must not be empty")));
+    }
+
+    #[test]
+    fn source_catalog_rejects_orphan_reviews() {
+        let mut catalog = SourceCatalog::new();
+        catalog.add_review(SourceReview {
+            source_id: "missing-source".to_string(),
+            decision: SourceReviewDecision::AcceptedMetadataOnly,
+            reviewer: "Source Custody Reviewer".to_string(),
+            note: "No matching source record.".to_string(),
+        });
+
+        let errors = catalog.validate().expect_err("orphan review should fail");
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("review references missing source")));
     }
 
     #[test]

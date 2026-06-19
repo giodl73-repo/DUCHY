@@ -49,7 +49,8 @@ Pulses:
    `docs/vtrace/source-custody/`.
 2. Citation and confidence model. Complete as a policy gate in
    `docs/vtrace/source-custody/`.
-3. Import adapter for metadata-only source records.
+3. Import adapter for metadata-only source records. Initial Rust metadata
+   catalog and validation complete.
 4. Review packet for contested/uncertain history.
 
 No real historical title data may be imported until a concrete source record

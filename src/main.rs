@@ -47,4 +47,11 @@ fn main() {
             transfer.year, transfer.from_name, transfer.to_name
         );
     }
+
+    let source_catalog = duchy::source_policy_catalog();
+    source_catalog
+        .validate()
+        .expect("source policy catalog should validate");
+    println!();
+    println!("Source policy records: metadata-only gate validated");
 }

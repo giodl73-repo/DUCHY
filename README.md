@@ -43,6 +43,9 @@ The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
 range, and which continuity events explain a title lineage.
 
+The current source-custody slice validates metadata-only source records and
+review decisions. It still does not import real title facts.
+
 ## Relationship To Games Design
 
 - BANISH can consume DUCHY-style political timelines when settlement pressure

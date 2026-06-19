@@ -15,6 +15,22 @@ Future source-backed fixtures should include a source record with at least:
 | `attribution` | conditional | Required attribution text when applicable. |
 | `notes` | no | Source-specific caveats. |
 
+## Rust Model
+
+The current crate implements the metadata-only layer:
+
+| Rust item | Purpose |
+|---|---|
+| `SourceRecord` | Source metadata record. |
+| `SourceKind` | Source class such as Wikidata, OpenHistoricalMap, Wikimedia text, public-domain work, scholarly database, or other. |
+| `AllowedUse` | Metadata-only, structured claims, geometry, text excerpt, or blocked. |
+| `SourceReview` | Review decision attached to a source record. |
+| `SourceReviewDecision` | Accepted/blocked source-custody decision labels. |
+| `SourceCatalog` | Validates source records and review references. |
+
+The implemented seed catalog is policy-only and contains no historical title
+facts.
+
 ## Fact Record
 
 Future title facts should include:

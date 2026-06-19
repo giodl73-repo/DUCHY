@@ -50,6 +50,7 @@ git diff --check
 | EVID-007 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Duchy-transfer range query. | pass on 2026-06-19 |
 | EVID-008 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Answer status, seed source class, and trace codes. | pass on 2026-06-19 |
 | EVID-009 | review artifact | `docs/vtrace/source-custody/` | Source inventory, import policy, confidence model, schema sketch, and review gate. | pass for policy on 2026-06-19 |
+| EVID-010 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Metadata-only source catalog and review validation. | pass on 2026-06-19 |
 
 ## Gaps
 

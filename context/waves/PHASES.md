@@ -4,7 +4,7 @@ Work is organized into small waves and pulses.
 
 ## Active Wave
 
-- `2026-06-19-foundation`
+- `2026-06-19-source-custody`
 
 ## Protocol
 
