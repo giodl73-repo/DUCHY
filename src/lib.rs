@@ -1217,6 +1217,74 @@ pub fn source_policy_catalog() -> SourceCatalog {
     catalog
 }
 
+pub fn first_real_source_catalog() -> SourceCatalog {
+    let mut catalog = SourceCatalog::new();
+
+    catalog.add_record(SourceRecord {
+        source_id: "src-wikidata-q158445".to_string(),
+        source_kind: SourceKind::Wikidata,
+        source_url: "https://www.wikidata.org/wiki/Q158445".to_string(),
+        license: "Wikidata structured data in main namespace is CC0; page text is CC BY-SA"
+            .to_string(),
+        retrieved_on: "2026-06-19".to_string(),
+        allowed_use: AllowedUse::StructuredClaims,
+        attribution: Some("Wikidata contributors".to_string()),
+        notes: Some("Grand Duchy of Mecklenburg-Schwerin (Q158445).".to_string()),
+    });
+    catalog.add_review(SourceReview {
+        source_id: "src-wikidata-q158445".to_string(),
+        decision: SourceReviewDecision::AcceptedStructuredClaims,
+        reviewer: "Source Custody Reviewer".to_string(),
+        note:
+            "Accepted for minimal structured-claim import: label, inception, and dissolution only."
+                .to_string(),
+    });
+
+    catalog
+}
+
+pub fn first_real_fact_records() -> Vec<FactRecord> {
+    vec![
+        FactRecord {
+            fact_id: "fact-q158445-name".to_string(),
+            subject_id: "title-q158445".to_string(),
+            claim_kind: ClaimKind::Name,
+            span: None,
+            value: "Grand Duchy of Mecklenburg-Schwerin".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q158445-exists".to_string(),
+            subject_id: "title-q158445".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: Some(YearSpan::new(1815, Some(1918))),
+            value: "exists".to_string(),
+            source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+    ]
+}
+
+pub fn validate_first_real_facts() -> Result<(), Vec<String>> {
+    let catalog = first_real_source_catalog();
+    let mut errors = catalog.validate().err().unwrap_or_default();
+
+    for fact in first_real_fact_records() {
+        if let Err(mut fact_errors) = catalog.validate_fact(&fact) {
+            errors.append(&mut fact_errors);
+        }
+    }
+
+    if errors.is_empty() {
+        Ok(())
+    } else {
+        Err(errors)
+    }
+}
+
 fn span_overlaps(span: &YearSpan, start: Year, end: Year) -> bool {
     span.start <= end && span.end.map_or(true, |span_end| span_end >= start)
 }
@@ -1945,6 +2013,24 @@ allowed_use: no_such_use
         assert!(errors
             .iter()
             .any(|error| error.contains("requires a conflict_group")));
+    }
+
+    #[test]
+    fn first_real_wikidata_facts_pass_source_gate() {
+        assert_eq!(validate_first_real_facts(), Ok(()));
+    }
+
+    #[test]
+    fn first_real_fact_records_are_minimal_name_and_existence_claims() {
+        let facts = first_real_fact_records();
+
+        assert_eq!(facts.len(), 2);
+        assert!(facts.iter().any(|fact| fact.claim_kind == ClaimKind::Name
+            && fact.value == "Grand Duchy of Mecklenburg-Schwerin"));
+        assert!(facts.iter().any(|fact| {
+            fact.claim_kind == ClaimKind::TitleExists
+                && fact.span == Some(YearSpan::new(1815, Some(1918)))
+        }));
     }
 
     #[test]

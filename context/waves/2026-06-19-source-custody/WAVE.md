@@ -19,7 +19,8 @@ records and validation.
 | 01 | Metadata-only source records | complete | Add source records, allowed-use posture, review decisions, and validation. |
 | 02 | Metadata source file format | complete | Define and parse a fixture file shape for source records without importing historical facts. |
 | 03 | Source-backed fact gate | complete | Validate fact records against accepted source records and confidence labels. |
-| 04 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
+| 04 | First real source-backed facts | complete | Import only reviewed name and existence facts for Wikidata Q158445. |
+| 05 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
 
 ## Success Criteria
 
@@ -27,4 +28,4 @@ records and validation.
 - Metadata-only records cannot masquerade as accepted historical facts.
 - Review decisions reference existing source records.
 - Validation commands pass.
-- Real title facts remain blocked until the fact gate exists.
+- Real title facts enter only through reviewed source records and fact gate validation.

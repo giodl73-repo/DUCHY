@@ -51,11 +51,12 @@ Pulses:
    `docs/vtrace/source-custody/`.
 3. Import adapter for metadata-only source records. Rust metadata catalog,
    validation, and source file parser complete.
-4. Source-backed fact gate. Complete for validation logic; no real facts
-   imported.
-5. Review packet for contested/uncertain history.
+4. Source-backed fact gate. Complete for validation logic.
+5. First real source-backed facts. Complete for the minimal Wikidata Q158445
+   name/existence slice.
+6. Review packet for contested/uncertain history.
 
-No real historical title data may be imported until a concrete source record
+Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
 
 ## Wave 3: Game Scenario Integration

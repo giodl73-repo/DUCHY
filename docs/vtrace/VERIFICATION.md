@@ -53,11 +53,12 @@ git diff --check
 | EVID-010 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Metadata-only source catalog and review validation. | pass on 2026-06-19 |
 | EVID-011 | test/demo | `cargo test --quiet`; `cargo run --quiet`; `fixtures/source-policy.sources` | Metadata source file parser and fixture validation. | pass on 2026-06-19 |
 | EVID-012 | test/demo | `cargo test --quiet`; `cargo run --quiet` | Source-backed fact gate validation. | pass on 2026-06-19 |
+| EVID-013 | test/demo/review | `cargo test --quiet`; `cargo run --quiet`; `context/waves/2026-06-19-source-custody/pulses/pulse-04.md` | First reviewed real source-backed facts for Wikidata Q158445. | pass on 2026-06-19 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
 | Contested and split transfer semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Deferred until fixtures express contested or split states. |
-| No concrete source records have passed the gate yet. | Source-backed claims cannot be made. | Add source records only through `docs/vtrace/source-custody/REVIEW_GATE.md`. |
-| No historical source custody package yet. | Real European data import remains blocked. | Defer to source VTRACE package. |
+| Only one concrete source record has passed the gate. | Historical import is real but intentionally tiny. | Expand through reviewed source packets only. |
+| No historical source custody package for contested claims yet. | Uncertain or conflicting European data remains blocked. | Defer to source VTRACE contested-history packet. |

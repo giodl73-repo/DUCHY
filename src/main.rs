@@ -75,4 +75,7 @@ fn main() {
     };
     assert!(source_catalog.validate_fact(&blocked_fact).is_err());
     println!("Source fact gate: metadata-only records cannot import facts");
+
+    duchy::validate_first_real_facts().expect("first real facts should pass source custody");
+    println!("First real facts: Wikidata Q158445 name/existence validated");
 }

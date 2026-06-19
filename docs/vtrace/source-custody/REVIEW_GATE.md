@@ -28,9 +28,13 @@ Before source-backed data enters DUCHY:
 ## Current Review Decision
 
 The seed-query foundation is custody-safe because it uses fictional seed
-fixtures only. Real source import remains blocked until a concrete source record
-passes this gate.
+fixtures only.
 
 The metadata-only source catalog is custody-safe as a policy pointer catalog.
 The accepted records identify licensing/copyright pages and do not import
 historical facts.
+
+`src-wikidata-q158445` passes this gate for structured claims only. DUCHY imports
+only the label/name and existence span facts for Grand Duchy of
+Mecklenburg-Schwerin from Wikidata Q158445. Prose text, geometry, map boundary,
+holder genealogy, and full parentage/control timeline remain out of scope.
