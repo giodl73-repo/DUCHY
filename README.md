@@ -30,6 +30,17 @@ fictional realm generators, and design comparison packets.
 The first vertical slice uses tiny hand-authored fixtures. Real historical data
 requires source custody, citation policy, and rights review before import.
 
+## Governance And VTRACE
+
+- `.roles/` defines review authority for timeline semantics, territorial
+  lineage, source custody, game-system boundaries, and query interfaces.
+- `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
+  interfaces, trace matrix, verification, validation, and work packages.
+
+The first accepted capability target is the ability to ask which higher title
+contained an area in a year, how an area moved between duchies over a date
+range, and which continuity events explain a title lineage.
+
 ## Relationship To Games Design
 
 - BANISH can consume DUCHY-style political timelines when settlement pressure

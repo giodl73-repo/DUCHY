@@ -30,6 +30,14 @@ Pulses:
 3. Query surface: answer "what existed in year X" and "who controlled title Y".
 4. Design packet: produce a small scenario packet for a game-design consumer.
 
+VTRACE refinement: the first query surface is governed by
+`docs/vtrace/REQUIREMENTS.md` and should prioritize:
+
+- title path in year,
+- lineage events for a title,
+- areas/titles that moved between duchies over a range,
+- answer trace and negative/uncertain answer status.
+
 ## Wave 2: Historical Source Custody
 
 Outcome: a source plan for real European title data without bundling uncertain

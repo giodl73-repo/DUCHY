@@ -17,9 +17,10 @@ and scenario packets.
 | Pulse | Title | Status | Outcome |
 |------:|-------|--------|---------|
 | 01 | Workspace foundation | complete | Create repo skeleton, docs, skills, and first tested timeline contract. |
-| 02 | Fixture schema | pending | Add hand-authored fixture format and yearly snapshot reports. |
-| 03 | Query surface | pending | Add basic title/year/control queries for design iteration. |
-| 04 | Scenario packet | pending | Emit a small game-design packet without renderer or raw corpus import. |
+| 02 | Governance and VTRACE baseline | complete | Add role governance and VTRACE requirements for lineage/transfer questions. |
+| 03 | Year title-path query | pending | Answer which higher title path contained an area/title in a year. |
+| 04 | Duchy-transfer query | pending | Answer when areas/titles moved between duchies across a date range. |
+| 05 | Answer trace and source status | pending | Distinguish empty, unknown, unsupported, contested, seed, and source-backed answers. |
 
 ## Success Criteria
 
@@ -28,4 +29,7 @@ and scenario packets.
 - Wave/pulse scaffolding exists.
 - Repo-specific skills exist for future wave, pulse, and research work.
 - Seed timeline validates in tests.
+- `.roles/` governs lineage, source, game-system, and query-interface reviews.
+- `docs/vtrace/` maps lineage/transfer questions to requirements and work
+  packages.
 - Validation commands pass.
