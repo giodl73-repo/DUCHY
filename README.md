@@ -23,6 +23,7 @@ cargo run --bin duchy-import -- status
 cargo run --bin duchy-import -- manifest data/staging/example.manifest
 cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/staging/generated.sources
 cargo run --bin duchy-import -- rejected-report data/staging/example.manifest data/staging/rejected.md
+cargo run --bin duchy-import -- active-manifest data/staging/example.manifest data/staging/active.manifest
 ```
 
 ## Product Shape

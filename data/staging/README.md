@@ -18,11 +18,14 @@ Manifest queues track candidate sources before fact extraction:
 cargo run --bin duchy-import -- manifest data/staging/example.manifest
 cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/staging/generated.sources
 cargo run --bin duchy-import -- rejected-report data/staging/example.manifest data/staging/rejected.md
+cargo run --bin duchy-import -- active-manifest data/staging/example.manifest data/staging/active.manifest
 ```
 
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
+Active manifests keep only pending and reviewed candidates after promoted or
+rejected rows have been archived.
 
 Example dry run:
 

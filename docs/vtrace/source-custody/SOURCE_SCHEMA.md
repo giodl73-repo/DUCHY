@@ -124,6 +124,7 @@ gate is:
 cargo run --bin duchy-import -- manifest data/staging/example.manifest
 cargo run --bin duchy-import -- source-stubs data/staging/example.manifest data/staging/generated.sources
 cargo run --bin duchy-import -- rejected-report data/staging/example.manifest data/staging/rejected.md
+cargo run --bin duchy-import -- active-manifest data/staging/example.manifest data/staging/active.manifest
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/example-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
@@ -159,6 +160,9 @@ be promoted.
 
 `duchy-import rejected-report` writes rejected candidate rows and notes to a
 Markdown audit report before those candidates are removed from active queues.
+`duchy-import active-manifest` writes a parseable manifest containing only
+pending and reviewed rows so promoted or rejected candidates can be archived
+outside the working queue.
 
 ## Fact Gate
 
