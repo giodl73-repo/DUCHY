@@ -31,6 +31,35 @@ The current crate implements the metadata-only layer:
 The implemented seed catalog is policy-only and contains no historical title
 facts.
 
+## Metadata File Format
+
+The current fixture format is dependency-free line-oriented text:
+
+```text
+source_id: src-example
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Wikidata:Licensing
+license: CC0 structured data
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+review_decision: accepted_metadata_only
+reviewer: Source Custody Reviewer
+review_note: Policy pointer only.
+---
+source_id: src-another
+...
+```
+
+Rules:
+
+- Records are separated by `---`.
+- Blank lines and `#` comments are ignored.
+- Required enum values use the lowercase labels in this file.
+- This format carries source metadata and review decisions only; it does not
+  carry historical facts.
+
+The seed metadata fixture is `fixtures/source-policy.sources`.
+
 ## Fact Record
 
 Future title facts should include:

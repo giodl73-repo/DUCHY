@@ -1,0 +1,32 @@
+# Metadata-only source policy pointers.
+# These records are not historical title facts.
+
+source_id: src-wikidata-licensing
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Wikidata:Licensing
+license: CC0 for structured data; CC BY-SA 4.0 for text outside data namespaces
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+review_decision: accepted_metadata_only
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-policy pointer only; no historical facts imported.
+---
+source_id: src-openhistoricalmap-copyright
+source_kind: openhistoricalmap
+source_url: https://www.openhistoricalmap.org/copyright
+license: CC0 unless noted; some features may carry CC BY or CC BY-SA tags
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+review_decision: accepted_metadata_only
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-policy pointer only; no historical facts imported.
+---
+source_id: src-wikimedia-terms
+source_kind: wikimedia_text
+source_url: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use
+license: Free/open licenses; project text commonly requires attribution/share-alike
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+review_decision: accepted_metadata_only
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-policy pointer only; no historical facts imported.

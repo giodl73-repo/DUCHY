@@ -54,4 +54,12 @@ fn main() {
         .expect("source policy catalog should validate");
     println!();
     println!("Source policy records: metadata-only gate validated");
+
+    let fixture_catalog =
+        duchy::SourceCatalog::from_metadata_text(include_str!("../fixtures/source-policy.sources"))
+            .expect("source policy fixture should parse");
+    fixture_catalog
+        .validate()
+        .expect("source policy fixture should validate");
+    println!("Source fixture records: metadata file parsed");
 }

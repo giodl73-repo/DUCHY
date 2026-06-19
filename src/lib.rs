@@ -850,6 +850,192 @@ impl SourceCatalog {
             Err(errors)
         }
     }
+
+    pub fn from_metadata_text(input: &str) -> Result<Self, Vec<String>> {
+        let mut catalog = SourceCatalog::new();
+        let mut errors = Vec::new();
+
+        for (index, block) in input.split("\n---").enumerate() {
+            let block = block.trim();
+            if block.is_empty() {
+                continue;
+            }
+            match parse_source_record_block(block) {
+                Ok((record, review)) => {
+                    catalog.add_record(record);
+                    if let Some(review) = review {
+                        catalog.add_review(review);
+                    }
+                }
+                Err(mut block_errors) => {
+                    for error in block_errors.drain(..) {
+                        errors.push(format!("record {}: {error}", index + 1));
+                    }
+                }
+            }
+        }
+
+        if errors.is_empty() {
+            catalog.validate()?;
+            Ok(catalog)
+        } else {
+            Err(errors)
+        }
+    }
+}
+
+fn parse_source_record_block(
+    block: &str,
+) -> Result<(SourceRecord, Option<SourceReview>), Vec<String>> {
+    let mut values = HashMap::new();
+    let mut errors = Vec::new();
+
+    for (line_index, line) in block.lines().enumerate() {
+        let line = line.trim();
+        if line.is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let Some((key, value)) = line.split_once(':') else {
+            errors.push(format!("line {} is not key: value", line_index + 1));
+            continue;
+        };
+        values.insert(key.trim().to_string(), value.trim().to_string());
+    }
+
+    let source_id = take_required(&values, "source_id", &mut errors);
+    let source_kind = parse_required_source_kind(&values, "source_kind", &mut errors);
+    let source_url = take_required(&values, "source_url", &mut errors);
+    let license = take_required(&values, "license", &mut errors);
+    let retrieved_on = take_required(&values, "retrieved_on", &mut errors);
+    let allowed_use = parse_required_allowed_use(&values, "allowed_use", &mut errors);
+    let attribution = values
+        .get("attribution")
+        .filter(|value| !value.is_empty())
+        .cloned();
+    let notes = values
+        .get("notes")
+        .filter(|value| !value.is_empty())
+        .cloned();
+
+    let review_decision = values
+        .get("review_decision")
+        .map(|value| parse_source_review_decision(value))
+        .transpose()
+        .unwrap_or_else(|error| {
+            errors.push(error);
+            None
+        });
+    let reviewer = values.get("reviewer").cloned();
+    let review_note = values.get("review_note").cloned();
+
+    if !errors.is_empty() {
+        return Err(errors);
+    }
+
+    let record = SourceRecord {
+        source_id: source_id.clone(),
+        source_kind,
+        source_url,
+        license,
+        retrieved_on,
+        allowed_use,
+        attribution,
+        notes,
+    };
+
+    let review = review_decision.map(|decision| SourceReview {
+        source_id,
+        decision,
+        reviewer: reviewer.unwrap_or_else(|| "Source Custody Reviewer".to_string()),
+        note: review_note.unwrap_or_else(|| "Parsed metadata source review.".to_string()),
+    });
+
+    Ok((record, review))
+}
+
+fn take_required(values: &HashMap<String, String>, key: &str, errors: &mut Vec<String>) -> String {
+    match values.get(key) {
+        Some(value) if !value.trim().is_empty() => value.clone(),
+        _ => {
+            errors.push(format!("missing required field {key}"));
+            String::new()
+        }
+    }
+}
+
+fn parse_required_source_kind(
+    values: &HashMap<String, String>,
+    key: &str,
+    errors: &mut Vec<String>,
+) -> SourceKind {
+    match values.get(key) {
+        Some(value) => match parse_source_kind(value) {
+            Some(kind) => kind,
+            None => {
+                errors.push(format!("invalid source_kind {value}"));
+                SourceKind::Other
+            }
+        },
+        None => {
+            errors.push(format!("missing required field {key}"));
+            SourceKind::Other
+        }
+    }
+}
+
+fn parse_required_allowed_use(
+    values: &HashMap<String, String>,
+    key: &str,
+    errors: &mut Vec<String>,
+) -> AllowedUse {
+    match values.get(key) {
+        Some(value) => match parse_allowed_use(value) {
+            Some(allowed_use) => allowed_use,
+            None => {
+                errors.push(format!("invalid allowed_use {value}"));
+                AllowedUse::Blocked
+            }
+        },
+        None => {
+            errors.push(format!("missing required field {key}"));
+            AllowedUse::Blocked
+        }
+    }
+}
+
+fn parse_source_kind(value: &str) -> Option<SourceKind> {
+    match value {
+        "wikidata" => Some(SourceKind::Wikidata),
+        "openhistoricalmap" => Some(SourceKind::OpenHistoricalMap),
+        "wikimedia_text" => Some(SourceKind::WikimediaText),
+        "public_domain_work" => Some(SourceKind::PublicDomainWork),
+        "scholarly_database" => Some(SourceKind::ScholarlyDatabase),
+        "other" => Some(SourceKind::Other),
+        _ => None,
+    }
+}
+
+fn parse_allowed_use(value: &str) -> Option<AllowedUse> {
+    match value {
+        "metadata_only" => Some(AllowedUse::MetadataOnly),
+        "structured_claims" => Some(AllowedUse::StructuredClaims),
+        "geometry" => Some(AllowedUse::Geometry),
+        "text_excerpt" => Some(AllowedUse::TextExcerpt),
+        "blocked" => Some(AllowedUse::Blocked),
+        _ => None,
+    }
+}
+
+fn parse_source_review_decision(value: &str) -> Result<SourceReviewDecision, String> {
+    match value {
+        "accepted_metadata_only" => Ok(SourceReviewDecision::AcceptedMetadataOnly),
+        "accepted_structured_claims" => Ok(SourceReviewDecision::AcceptedStructuredClaims),
+        "accepted_package_boundary" => Ok(SourceReviewDecision::AcceptedPackageBoundary),
+        "blocked_rights" => Ok(SourceReviewDecision::BlockedRights),
+        "blocked_quality" => Ok(SourceReviewDecision::BlockedQuality),
+        "blocked_scope" => Ok(SourceReviewDecision::BlockedScope),
+        _ => Err(format!("invalid review_decision {value}")),
+    }
 }
 
 fn requires_attribution(allowed_use: AllowedUse) -> bool {
@@ -1418,6 +1604,82 @@ mod tests {
         assert!(errors
             .iter()
             .any(|error| error.contains("review references missing source")));
+    }
+
+    #[test]
+    fn source_catalog_parses_metadata_text_records() {
+        let text = r#"
+source_id: src-example
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Wikidata:Licensing
+license: CC0 structured data
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+review_decision: accepted_metadata_only
+reviewer: Source Custody Reviewer
+review_note: Policy pointer only.
+"#;
+
+        let catalog = SourceCatalog::from_metadata_text(text).expect("metadata text should parse");
+
+        assert_eq!(
+            catalog
+                .record("src-example")
+                .map(|record| record.source_kind),
+            Some(SourceKind::Wikidata)
+        );
+        assert_eq!(
+            catalog
+                .latest_review("src-example")
+                .map(|review| review.decision),
+            Some(SourceReviewDecision::AcceptedMetadataOnly)
+        );
+    }
+
+    #[test]
+    fn source_catalog_parses_multiple_metadata_text_records() {
+        let text = r#"
+source_id: src-one
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Wikidata:Licensing
+license: CC0 structured data
+retrieved_on: 2026-06-19
+allowed_use: metadata_only
+---
+source_id: src-two
+source_kind: other
+source_url: urn:example:blocked
+license: blocked
+retrieved_on: 2026-06-19
+allowed_use: blocked
+"#;
+
+        let catalog = SourceCatalog::from_metadata_text(text).expect("metadata text should parse");
+
+        assert!(catalog.record("src-one").is_some());
+        assert!(catalog.record("src-two").is_some());
+    }
+
+    #[test]
+    fn source_catalog_rejects_invalid_metadata_text() {
+        let text = r#"
+source_id: src-bad
+source_kind: unknown_kind
+source_url: https://example.invalid
+license: example
+retrieved_on: 2026-06-19
+allowed_use: no_such_use
+"#;
+
+        let errors = SourceCatalog::from_metadata_text(text)
+            .expect_err("invalid source metadata should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("invalid source_kind")));
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("invalid allowed_use")));
     }
 
     #[test]

@@ -17,7 +17,7 @@ records and validation.
 | Pulse | Title | Status | Outcome |
 |------:|-------|--------|---------|
 | 01 | Metadata-only source records | complete | Add source records, allowed-use posture, review decisions, and validation. |
-| 02 | Metadata source file format | pending | Define a fixture file shape for source records without importing historical facts. |
+| 02 | Metadata source file format | complete | Define and parse a fixture file shape for source records without importing historical facts. |
 | 03 | Source-backed fact gate | pending | Validate fact records against accepted source records and confidence labels. |
 | 04 | Contested-history review packet | pending | Represent conflicting source-backed claims without overwriting them. |
 
