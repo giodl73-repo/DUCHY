@@ -24,7 +24,8 @@ records and validation.
 | 06 | Source-backed title query | complete | Answer a source-backed title-path query for the first real title. |
 | 07 | Fact fixture import | complete | Parse first real source-backed facts from `fixtures/first-real.facts`. |
 | 08 | Contested-history review packet | complete | Represent conflicting source-backed claims without overwriting them. |
-| 09 | Second reviewed source import | pending | Add another real title only after source review and fact fixture update. |
+| 09 | Second reviewed source import | complete | Add Q20135 Grand Duchy of Hesse name/rank/existence facts. |
+| 10 | Source-backed parentage review | pending | Add higher-title relations only after source review. |
 
 ## Success Criteria
 

@@ -77,7 +77,7 @@ fn main() {
     println!("Source fact gate: metadata-only records cannot import facts");
 
     duchy::validate_first_real_facts().expect("first real facts should pass source custody");
-    println!("First real facts: Wikidata Q158445 name/rank/existence validated");
+    println!("Reviewed real facts: Wikidata Q158445/Q20135 name/rank/existence validated");
 
     let first_real_fixture_facts = duchy::first_real_fact_records_from_fixture()
         .expect("first real fact fixture should parse");
@@ -87,7 +87,7 @@ fn main() {
             .expect("first real fixture fact should validate");
     }
     println!(
-        "First real fact fixture: {} records parsed",
+        "Reviewed real fact fixture: {} records parsed",
         first_real_fixture_facts.len()
     );
 
@@ -95,7 +95,7 @@ fn main() {
         duchy::first_real_titles().expect("first real title should materialize");
     for title in first_real_titles {
         println!(
-            "First real title: {:?} {} ({}-{})",
+            "Reviewed real title: {:?} {} ({}-{})",
             title.rank,
             title.name,
             title.exists.start,
@@ -114,7 +114,7 @@ fn main() {
         duchy::SourceClass::SourceBacked,
     );
     println!(
-        "First real title query [{:?}/{}]: {}",
+        "Reviewed real title query [{:?}/{}]: {}",
         first_real_query.status,
         first_real_query.trace[0].code,
         first_real_query

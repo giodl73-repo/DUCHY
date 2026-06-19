@@ -60,7 +60,8 @@ Pulses:
 8. Fact fixture import. Complete for `fixtures/first-real.facts`.
 9. Review packet for contested/uncertain history. Complete for fact-level
    grouping and materialization blocking.
-10. Second reviewed source import.
+10. Second reviewed source import. Complete for Q20135 Grand Duchy of Hesse.
+11. Source-backed parentage review.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

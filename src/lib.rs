@@ -1381,6 +1381,25 @@ pub fn first_real_source_catalog() -> SourceCatalog {
             "Accepted for minimal structured-claim import: label, inception, and dissolution only."
                 .to_string(),
     });
+    catalog.add_record(SourceRecord {
+        source_id: "src-wikidata-q20135".to_string(),
+        source_kind: SourceKind::Wikidata,
+        source_url: "https://www.wikidata.org/wiki/Q20135".to_string(),
+        license: "Wikidata structured data in main namespace is CC0; page text is CC BY-SA"
+            .to_string(),
+        retrieved_on: "2026-06-19".to_string(),
+        allowed_use: AllowedUse::StructuredClaims,
+        attribution: Some("Wikidata contributors".to_string()),
+        notes: Some("Grand Duchy of Hesse (Q20135).".to_string()),
+    });
+    catalog.add_review(SourceReview {
+        source_id: "src-wikidata-q20135".to_string(),
+        decision: SourceReviewDecision::AcceptedStructuredClaims,
+        reviewer: "Source Custody Reviewer".to_string(),
+        note:
+            "Accepted for minimal structured-claim import: label, inception, and dissolution only."
+                .to_string(),
+    });
 
     catalog
 }
@@ -1414,6 +1433,36 @@ pub fn first_real_fact_records() -> Vec<FactRecord> {
             span: Some(YearSpan::new(1815, Some(1918))),
             value: "exists".to_string(),
             source_ids: vec!["src-wikidata-q158445".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q20135-name".to_string(),
+            subject_id: "title-q20135".to_string(),
+            claim_kind: ClaimKind::Name,
+            span: None,
+            value: "Grand Duchy of Hesse".to_string(),
+            source_ids: vec!["src-wikidata-q20135".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q20135-rank".to_string(),
+            subject_id: "title-q20135".to_string(),
+            claim_kind: ClaimKind::Rank,
+            span: None,
+            value: "Duchy".to_string(),
+            source_ids: vec!["src-wikidata-q20135".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        },
+        FactRecord {
+            fact_id: "fact-q20135-exists".to_string(),
+            subject_id: "title-q20135".to_string(),
+            claim_kind: ClaimKind::TitleExists,
+            span: Some(YearSpan::new(1806, Some(1918))),
+            value: "exists".to_string(),
+            source_ids: vec!["src-wikidata-q20135".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
         },
@@ -2408,7 +2457,7 @@ allowed_use: no_such_use
     fn first_real_fact_records_are_minimal_name_rank_and_existence_claims() {
         let facts = first_real_fact_records();
 
-        assert_eq!(facts.len(), 3);
+        assert_eq!(facts.len(), 6);
         assert!(facts.iter().any(|fact| fact.claim_kind == ClaimKind::Name
             && fact.value == "Grand Duchy of Mecklenburg-Schwerin"));
         assert!(facts
@@ -2417,6 +2466,16 @@ allowed_use: no_such_use
         assert!(facts.iter().any(|fact| {
             fact.claim_kind == ClaimKind::TitleExists
                 && fact.span == Some(YearSpan::new(1815, Some(1918)))
+        }));
+        assert!(
+            facts
+                .iter()
+                .any(|fact| fact.claim_kind == ClaimKind::Name
+                    && fact.value == "Grand Duchy of Hesse")
+        );
+        assert!(facts.iter().any(|fact| {
+            fact.claim_kind == ClaimKind::TitleExists
+                && fact.span == Some(YearSpan::new(1806, Some(1918)))
         }));
     }
 
@@ -2496,15 +2555,26 @@ confidence: maybe
     fn first_real_facts_materialize_a_source_backed_title() {
         let titles = first_real_titles().expect("first real title should materialize");
 
+        assert_eq!(titles.len(), 2);
         assert_eq!(
-            titles,
-            vec![Title {
+            titles[0],
+            Title {
                 id: "title-q158445".to_string(),
                 name: "Grand Duchy of Mecklenburg-Schwerin".to_string(),
                 rank: TitleRank::Duchy,
                 exists: YearSpan::new(1815, Some(1918)),
                 de_jure_parent: None,
-            }]
+            }
+        );
+        assert_eq!(
+            titles[1],
+            Title {
+                id: "title-q20135".to_string(),
+                name: "Grand Duchy of Hesse".to_string(),
+                rank: TitleRank::Duchy,
+                exists: YearSpan::new(1806, Some(1918)),
+                de_jure_parent: None,
+            }
         );
     }
 

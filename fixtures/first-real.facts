@@ -22,3 +22,25 @@ span: 1815..1918
 value: exists
 source_ids: src-wikidata-q158445
 confidence: single_source
+---
+fact_id: fact-q20135-name
+subject_id: title-q20135
+claim_kind: name
+value: Grand Duchy of Hesse
+source_ids: src-wikidata-q20135
+confidence: single_source
+---
+fact_id: fact-q20135-rank
+subject_id: title-q20135
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q20135
+confidence: single_source
+---
+fact_id: fact-q20135-exists
+subject_id: title-q20135
+claim_kind: title_exists
+span: 1806..1918
+value: exists
+source_ids: src-wikidata-q20135
+confidence: single_source
