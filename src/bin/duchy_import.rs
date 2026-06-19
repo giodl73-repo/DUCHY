@@ -1,3 +1,4 @@
+use std::collections::BTreeMap;
 use std::env;
 use std::fs;
 use std::path::Path;
@@ -35,6 +36,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "manifest-report" {
             return manifest_report(manifest_path, output_path);
         }
+        if command == "duplicate-url-report" {
+            return duplicate_url_report(manifest_path, output_path);
+        }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
         if command == "shard-manifest" {
@@ -50,7 +54,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | shard-manifest manifest-file output-dir chunk-size".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | shard-manifest manifest-file output-dir chunk-size".to_string(),
             ])
         }
     };
@@ -405,6 +409,70 @@ fn manifest_report(manifest_path: &str, output_path: &str) -> Result<(), Vec<Str
 
     println!("DUCHY manifest report");
     println!("- candidates: {}", candidates.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn duplicate_url_report(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+    if candidates.is_empty() {
+        return Err(vec![
+            "manifest has no candidates to scan for duplicate source URLs".to_string(),
+        ]);
+    }
+
+    let mut by_url = BTreeMap::<&str, Vec<&duchy::CandidateRecord>>::new();
+    for candidate in &candidates {
+        by_url
+            .entry(candidate.source_url.as_str())
+            .or_default()
+            .push(candidate);
+    }
+
+    let duplicate_groups = by_url
+        .iter()
+        .filter(|(_, matching)| matching.len() > 1)
+        .collect::<Vec<_>>();
+    let duplicate_group_count = duplicate_groups.len();
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Duplicate Source URL Report\n\n");
+    output.push_str(&format!("source_manifest: {manifest_path}\n"));
+    output.push_str(&format!("candidates: {}\n", candidates.len()));
+    output.push_str(&format!(
+        "duplicate_source_urls: {duplicate_group_count}\n\n"
+    ));
+
+    if duplicate_groups.is_empty() {
+        output.push_str("No duplicate source URLs found.\n");
+    } else {
+        for (source_url, matching) in duplicate_groups {
+            output.push_str(&format!("## {source_url}\n\n"));
+            for candidate in matching {
+                output.push_str(&format!("- candidate_id: {}\n", candidate.candidate_id));
+                output.push_str(&format!("  source_id: {}\n", candidate.source_id));
+                output.push_str(&format!(
+                    "  status: {}\n",
+                    candidate_status_label(candidate.status)
+                ));
+                if let Some(notes) = &candidate.notes {
+                    output.push_str(&format!("  notes: {notes}\n"));
+                }
+            }
+            output.push('\n');
+        }
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY duplicate source URL report");
+    println!("- candidates: {}", candidates.len());
+    println!("- duplicate source URLs: {duplicate_group_count}");
     println!("- output: {output_path}");
 
     Ok(())

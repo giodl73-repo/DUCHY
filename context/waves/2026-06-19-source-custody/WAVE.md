@@ -42,6 +42,7 @@ records and validation.
 | 24 | Manifest sharding | complete | Split large candidate manifests into fixed-size review batches. |
 | 25 | Shard index | complete | Write per-shard status counts for large review queues. |
 | 26 | Manifest review report | complete | List every candidate grouped by queue status for inspection. |
+| 27 | Duplicate URL report | complete | Report repeated candidate source URLs before source review. |
 
 ## Success Criteria
 
