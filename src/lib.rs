@@ -87,6 +87,26 @@ pub struct TitlePathStep {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct TransferAnswer {
+    pub subject_id: String,
+    pub rank: TitleRank,
+    pub start: Year,
+    pub end: Year,
+    pub transfers: Vec<TransferStep>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct TransferStep {
+    pub year: Year,
+    pub from_title_id: String,
+    pub from_name: String,
+    pub to_title_id: String,
+    pub to_name: String,
+    pub event_kind: Option<ContinuityEventKind>,
+    pub note: Option<String>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ContinuityEventKind {
     Created,
     Inherited,
@@ -232,6 +252,86 @@ impl TitleTimeline {
             titles,
             events,
         })
+    }
+
+    pub fn transfers_for_area_between(
+        &self,
+        area_id: &str,
+        rank: TitleRank,
+        start: Year,
+        end: Year,
+    ) -> Option<TransferAnswer> {
+        let title = self.title_for_area_in_year(area_id, start)?;
+        self.transfers_for_title_between(&title.id, rank, start, end)
+            .map(|answer| TransferAnswer {
+                subject_id: area_id.to_string(),
+                ..answer
+            })
+    }
+
+    pub fn transfers_for_title_between(
+        &self,
+        title_id: &str,
+        rank: TitleRank,
+        start: Year,
+        end: Year,
+    ) -> Option<TransferAnswer> {
+        if start > end {
+            return None;
+        }
+
+        let title = self.titles.get(title_id)?;
+        if !title.exists.contains(start) {
+            return None;
+        }
+
+        let mut matching_parentage: Vec<&ParentageSpan> = self
+            .parentage
+            .iter()
+            .filter(|parentage| parentage.child_title_id == title_id)
+            .filter(|parentage| span_overlaps(&parentage.span, start, end))
+            .filter(|parentage| {
+                self.titles
+                    .get(&parentage.parent_title_id)
+                    .map_or(false, |parent| parent.rank == rank)
+            })
+            .collect();
+        matching_parentage.sort_by_key(|parentage| parentage.span.start);
+
+        let mut transfers = Vec::new();
+        for window in matching_parentage.windows(2) {
+            let from = window[0];
+            let to = window[1];
+            if from.parent_title_id == to.parent_title_id {
+                continue;
+            }
+            let from_title = self.titles.get(&from.parent_title_id)?;
+            let to_title = self.titles.get(&to.parent_title_id)?;
+            let event = self.event_for_title_in_year(title_id, to.span.start);
+            transfers.push(TransferStep {
+                year: to.span.start,
+                from_title_id: from_title.id.clone(),
+                from_name: from_title.name.clone(),
+                to_title_id: to_title.id.clone(),
+                to_name: to_title.name.clone(),
+                event_kind: event.map(|event| event.kind.clone()),
+                note: event.map(|event| event.note.clone()),
+            });
+        }
+
+        Some(TransferAnswer {
+            subject_id: title_id.to_string(),
+            rank,
+            start,
+            end,
+            transfers,
+        })
+    }
+
+    fn event_for_title_in_year(&self, title_id: &str, year: Year) -> Option<&ContinuityEvent> {
+        self.events
+            .iter()
+            .find(|event| event.title_id == title_id && event.year == year)
     }
 
     pub fn events_for_title(&self, title_id: &str) -> Vec<&ContinuityEvent> {
@@ -442,6 +542,10 @@ impl TitleTimeline {
             Err(errors)
         }
     }
+}
+
+fn span_overlaps(span: &YearSpan, start: Year, end: Year) -> bool {
+    span.start <= end && span.end.map_or(true, |span_end| span_end >= start)
 }
 
 impl TitlePathStep {
@@ -768,6 +872,66 @@ mod tests {
         assert!(timeline
             .title_path_for_area_in_year("missing_area", 1050)
             .is_none());
+    }
+
+    #[test]
+    fn transfer_query_returns_no_transfer_case() {
+        let timeline = seed_timeline();
+        let answer = timeline
+            .transfers_for_area_between("area_lake_road", TitleRank::Duchy, 1000, 1100)
+            .expect("area should resolve to transfer answer");
+
+        assert_eq!(answer.subject_id, "area_lake_road");
+        assert_eq!(answer.transfers, Vec::new());
+    }
+
+    #[test]
+    fn transfer_query_returns_single_duchy_transfer() {
+        let timeline = seed_timeline();
+        let answer = timeline
+            .transfers_for_area_between("area_bridge_ford", TitleRank::Duchy, 1000, 1100)
+            .expect("area should resolve to transfer answer");
+
+        assert_eq!(answer.transfers.len(), 1);
+        assert_eq!(answer.transfers[0].year, 1050);
+        assert_eq!(answer.transfers[0].from_title_id, "d_alpine_seed");
+        assert_eq!(answer.transfers[0].to_title_id, "d_river_seed");
+        assert_eq!(
+            answer.transfers[0].event_kind,
+            Some(ContinuityEventKind::Conquered)
+        );
+    }
+
+    #[test]
+    fn transfer_query_returns_multiple_duchy_transfers_in_order() {
+        let timeline = seed_timeline();
+        let answer = timeline
+            .transfers_for_area_between("area_old_ford", TitleRank::Duchy, 1000, 1100)
+            .expect("area should resolve to transfer answer");
+
+        let years: Vec<Year> = answer
+            .transfers
+            .iter()
+            .map(|transfer| transfer.year)
+            .collect();
+        let to_titles: Vec<&str> = answer
+            .transfers
+            .iter()
+            .map(|transfer| transfer.to_title_id.as_str())
+            .collect();
+        assert_eq!(years, vec![1025, 1075]);
+        assert_eq!(to_titles, vec!["d_river_seed", "d_highland_seed"]);
+    }
+
+    #[test]
+    fn transfer_query_respects_requested_range() {
+        let timeline = seed_timeline();
+        let answer = timeline
+            .transfers_for_title_between("c_ford_seed", TitleRank::Duchy, 1030, 1100)
+            .expect("title should resolve to transfer answer");
+
+        assert_eq!(answer.transfers.len(), 1);
+        assert_eq!(answer.transfers[0].year, 1075);
     }
 
     #[test]

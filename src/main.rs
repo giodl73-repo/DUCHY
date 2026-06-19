@@ -20,4 +20,16 @@ fn main() {
         .join(" -> ");
     println!();
     println!("Path for area_bridge_ford in {year}: {path}");
+
+    let transfers = timeline
+        .transfers_for_area_between("area_old_ford", duchy::TitleRank::Duchy, 1000, 1100)
+        .expect("seed area should have duchy transfers");
+    println!();
+    println!("Duchy transfers for area_old_ford:");
+    for transfer in transfers.transfers {
+        println!(
+            "- {}: {} -> {}",
+            transfer.year, transfer.from_name, transfer.to_name
+        );
+    }
 }
