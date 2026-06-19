@@ -18,6 +18,12 @@ Example dry run:
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 ```
 
+Add `--report path/to/report.md` after the mode to produce a review artifact:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/example-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
+```
+
 Apply a reviewed batch only after dry-run and review:
 
 ```powershell

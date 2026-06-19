@@ -75,7 +75,8 @@ Pulses:
     duplicate/conflict validation.
 18. Apply-mode promotion. Complete for validated staging-to-accepted fixture
     merge.
-19. Next reviewed import packet.
+19. Promotion review reports. Complete for `duchy-promote --report`.
+20. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

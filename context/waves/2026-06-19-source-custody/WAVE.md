@@ -33,6 +33,7 @@ records and validation.
 | 15 | Reviewed Saxony import packet | complete | Import Q153015 title facts and Q153015 -> Q43287 for 1871-1918 after source review. |
 | 16 | Batch import staging gate | complete | Add CLI status/dry-run promotion and duplicate/conflict validation for staged batches. |
 | 17 | Apply-mode promotion | complete | Let reviewed staging batches rewrite accepted fixture files after full validation. |
+| 18 | Promotion review reports | complete | Emit promotion reports listing candidate titles, parentage, fact IDs, and merged counts. |
 
 ## Success Criteria
 

@@ -66,6 +66,7 @@ cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/
 
 Reviewed batches can then be appended with `duchy-promote --apply`, which
 rewrites accepted fixture files only after the same validation path passes.
+Add `--report path.md` after the mode to emit a promotion review report.
 
 ## Relationship To Games Design
 
