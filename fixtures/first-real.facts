@@ -8964,3 +8964,13 @@ span: 1867..1918
 value: title-q28513
 source_ids: src-wikidata-q692946, src-wikidata-q28513
 confidence: multi_source
+---
+# Reviewed parentage packet for Duchy of Urbino under the Papal States.
+
+fact_id: fact-q649202-parent-q170174
+subject_id: title-q649202
+claim_kind: parentage
+span: 1443..1631
+value: title-q170174
+source_ids: src-wikidata-q649202, src-wikidata-q170174
+confidence: multi_source

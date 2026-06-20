@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 338
-facts: 1157
+facts: 1158
 titles: 327
-parentage_facts: 176
-titles_with_parentage: 132
-titles_without_parentage: 195
+parentage_facts: 177
+titles_with_parentage: 133
+titles_without_parentage: 194
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 195
 |---|---:|---:|---:|
 | County | 29 | 16 | 13 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 135 | 86 | 49 |
+| Duchy | 135 | 87 | 48 |
 | Empire | 39 | 0 | 39 |
 | Kingdom | 120 | 30 | 90 |
 | TheocraticState | 1 | 0 | 1 |
@@ -175,7 +175,6 @@ titles_without_parentage: 195
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q641138 | Duchy of Cleves | Duchy | 1092..1795
-- title-q649202 | Duchy of Urbino | Duchy | 1443..1631
 - title-q657241 | Duchy of Westphalia | Duchy | 1180..1803
 - title-q660393 | Lower Lotharingia | Duchy | 959..1190
 - title-q6673921 | Lotharingia | Duchy | 855..959

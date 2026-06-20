@@ -1,31 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 20
+gap_rows: 19
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 13 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Duchy | 6 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q736029 | Nassau-Siegen
-
-- rank: County
-- exists: 1303..1743
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q769782 | Kingdom of Powys
 

@@ -15,8 +15,8 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
-| Duchy | 13 |
+| County | 3 |
+| Duchy | 12 |
 | Empire | 4 |
 | Kingdom | 6 |
 
@@ -54,13 +54,6 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1092..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q649202 | Duchy of Urbino
-
-- rank: Duchy
-- exists: 1443..1631
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 577..780
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q736029 | Nassau-Siegen
+
+- rank: County
+- exists: 1303..1743
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

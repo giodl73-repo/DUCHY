@@ -205,7 +205,9 @@ Pulses:
 73. Gorizia and Gradisca Austrian parentage packet. Complete for correcting
     Q692946 to County rank and importing Gorizia and Gradisca -> Austrian
     Empire for 1804-1866 and -> Austria-Hungary for 1867-1918.
-74. Next reviewed parentage packet.
+74. Duchy of Urbino Papal States parentage packet. Complete for importing the
+    reviewed Duchy of Urbino -> Papal States relation for 1443-1631.
+75. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

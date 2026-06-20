@@ -1,7 +1,7 @@
 # DUCHY Parentage Gap Shards
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 195
+gap_rows: 194
 chunk_size: 25
 
 | Shard | Rows | High | Medium | Root |
@@ -13,4 +13,4 @@ chunk_size: 25
 | batch-005.tsv | 25 | 11 | 8 | 6 |
 | batch-006.tsv | 25 | 8 | 11 | 6 |
 | batch-007.tsv | 25 | 15 | 6 | 4 |
-| batch-008.tsv | 20 | 7 | 13 | 0 |
+| batch-008.tsv | 19 | 6 | 13 | 0 |
