@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 11 |
-| medium_parentage_review | 9 |
-| root_or_successor_review | 5 |
+| medium_parentage_review | 8 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 10 |
-| Empire | 5 |
-| Kingdom | 9 |
+| Empire | 6 |
+| Kingdom | 8 |
 
 ## Review Rows
 
@@ -162,6 +162,13 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
+### title-q34266 | Russian Empire
+
+- rank: Empire
+- exists: 1721..1917
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
 ### title-q3446210 | Kingdom of Pamplona
 
 - rank: Kingdom
@@ -189,11 +196,4 @@ gap_rows: 25
 - exists: 1580..1640
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q386496 | Kingdom of Montenegro
-
-- rank: Kingdom
-- exists: 1910..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 

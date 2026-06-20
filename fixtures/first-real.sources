@@ -4385,3 +4385,17 @@ notes: Papal States (Q170174).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import after TheocraticState rank review: label, inception, dissolution, and relation support only.
+---
+# Reviewed Russian Empire source import for Grand Duchy of Finland parentage.
+
+source_id: src-wikidata-q34266
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q34266
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Russian Empire (Q34266).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, empire rank, inception, dissolution, and relation support only.

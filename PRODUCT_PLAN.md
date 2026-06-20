@@ -199,7 +199,10 @@ Pulses:
     Comtat Venaissin -> Papal States for 1274-1791.
 71. Kingdom of Poland German Empire parentage packet. Complete for importing
     the reviewed 1916-1918 Kingdom of Poland -> German Empire relation.
-72. Next reviewed parentage packet.
+72. Russian Empire Finland parentage packet. Complete for promoting Russian
+    Empire and importing Grand Duchy of Finland -> Russian Empire for
+    1809-1917.
+73. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

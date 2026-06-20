@@ -1,0 +1,32 @@
+# Reviewed Russian Empire source import and Grand Duchy of Finland parentage packet.
+
+fact_id: fact-q34266-name
+subject_id: title-q34266
+claim_kind: name
+value: Russian Empire
+source_ids: src-wikidata-q34266
+confidence: single_source
+---
+fact_id: fact-q34266-rank
+subject_id: title-q34266
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q34266
+confidence: single_source
+---
+fact_id: fact-q34266-exists
+subject_id: title-q34266
+claim_kind: title_exists
+span: 1721..1917
+value: exists
+source_ids: src-wikidata-q34266
+confidence: single_source
+---
+
+fact_id: fact-q62633-parent-q34266
+subject_id: title-q62633
+claim_kind: parentage
+span: 1809..1917
+value: title-q34266
+source_ids: src-wikidata-q62633, src-wikidata-q34266
+confidence: multi_source

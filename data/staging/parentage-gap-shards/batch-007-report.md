@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 16 |
-| medium_parentage_review | 4 |
+| high_parentage_review | 15 |
+| medium_parentage_review | 5 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -16,11 +16,18 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 14 |
+| Duchy | 13 |
 | Empire | 5 |
-| Kingdom | 4 |
+| Kingdom | 5 |
 
 ## Review Rows
+
+### title-q62567 | Kingdom of Iceland
+
+- rank: Kingdom
+- exists: 1918..1944
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62623 | Kalmar Union
 
@@ -28,13 +35,6 @@ gap_rows: 25
 - exists: 1397..1523
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q62633 | Grand Duchy of Finland
-
-- rank: Duchy
-- exists: 1809..1917
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q62651 | Denmark-Norway
 

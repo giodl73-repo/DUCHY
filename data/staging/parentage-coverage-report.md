@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 337
-facts: 1151
-titles: 326
-parentage_facts: 173
-titles_with_parentage: 130
+sources: 338
+facts: 1155
+titles: 327
+parentage_facts: 174
+titles_with_parentage: 131
 titles_without_parentage: 196
 
 ## Coverage By Rank
@@ -13,8 +13,8 @@ titles_without_parentage: 196
 |---|---:|---:|---:|
 | County | 28 | 15 | 13 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 135 | 85 | 50 |
-| Empire | 39 | 0 | 39 |
+| Duchy | 135 | 86 | 49 |
+| Empire | 40 | 0 | 40 |
 | Kingdom | 120 | 30 | 90 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -140,6 +140,7 @@ titles_without_parentage: 196
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
 - title-q3324486 | Prince-Bishopric of Montenegro | Duchy | 1516..1852
 - title-q334714 | Duchy of Athens | Duchy | 1205..1458
+- title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q3624335 | Duchy of Austria | Duchy | 1156..1453
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
@@ -171,7 +172,6 @@ titles_without_parentage: 196
 - title-q625380 | Eastern Hungarian Kingdom | Kingdom | 1526..1570
 - title-q62567 | Kingdom of Iceland | Kingdom | 1918..1944
 - title-q62623 | Kalmar Union | Kingdom | 1397..1523
-- title-q62633 | Grand Duchy of Finland | Duchy | 1809..1917
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q641138 | Duchy of Cleves | Duchy | 1092..1795

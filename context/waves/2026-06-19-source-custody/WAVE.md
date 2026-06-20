@@ -86,6 +86,7 @@ records and validation.
 | 68 | Commonwealth boundary parentage packet | complete | Import the year-granular Kingdom of Poland -> Polish-Lithuanian Commonwealth transition at 1569. |
 | 69 | Theocratic state parentage packet | complete | Add `TheocraticState` rank support, promote Papal States, and import Comtat Venaissin -> Papal States parentage. |
 | 70 | Kingdom of Poland German Empire parentage | complete | Import the reviewed 1916-1918 Kingdom of Poland -> German Empire relation. |
+| 71 | Russian Empire Finland parentage | complete | Promote Russian Empire and import Grand Duchy of Finland -> Russian Empire parentage. |
 
 ## Success Criteria
 
