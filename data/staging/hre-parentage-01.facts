@@ -1,0 +1,561 @@
+# Reviewed parentage packet for Holy Roman Empire member titles.
+
+fact_id: fact-q686965-parent-q12548
+subject_id: title-q686965
+claim_kind: parentage
+span: 1252..1806
+value: title-q12548
+source_ids: src-wikidata-q686965, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q278874-parent-q12548
+subject_id: title-q278874
+claim_kind: parentage
+span: 1396..1806
+value: title-q12548
+source_ids: src-wikidata-q278874, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q264970-parent-q12548
+subject_id: title-q264970
+claim_kind: parentage
+span: 1396..1806
+value: title-q12548
+source_ids: src-wikidata-q264970, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q699964-parent-q12548
+subject_id: title-q699964
+claim_kind: parentage
+span: 1358..1803
+value: title-q12548
+source_ids: src-wikidata-q699964, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q552033-parent-q12548
+subject_id: title-q552033
+claim_kind: parentage
+span: 1392..1505
+value: title-q12548
+source_ids: src-wikidata-q552033, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q556263-parent-q12548
+subject_id: title-q556263
+claim_kind: parentage
+span: 1235..1806
+value: title-q12548
+source_ids: src-wikidata-q556263, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q830084-parent-q12548
+subject_id: title-q830084
+claim_kind: parentage
+span: 1269..1806
+value: title-q12548
+source_ids: src-wikidata-q830084, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q642314-parent-q12548
+subject_id: title-q642314
+claim_kind: parentage
+span: 982..1678
+value: title-q12548
+source_ids: src-wikidata-q642314, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q157070-parent-q12548
+subject_id: title-q157070
+claim_kind: parentage
+span: 962..1797
+value: title-q12548
+source_ids: src-wikidata-q157070, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q762943-parent-q12548
+subject_id: title-q762943
+claim_kind: parentage
+span: 962..1795
+value: title-q12548
+source_ids: src-wikidata-q762943, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q12817455-parent-q12548
+subject_id: title-q12817455
+claim_kind: parentage
+span: 1160..1806
+value: title-q12548
+source_ids: src-wikidata-q12817455, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q151095-parent-q12548
+subject_id: title-q151095
+claim_kind: parentage
+span: 1380..1806
+value: title-q12548
+source_ids: src-wikidata-q151095, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q159856-parent-q12548
+subject_id: title-q159856
+claim_kind: parentage
+span: 1183..1795
+value: title-q12548
+source_ids: src-wikidata-q159856, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q694594-parent-q12548
+subject_id: title-q694594
+claim_kind: parentage
+span: 1648..1806
+value: title-q12548
+source_ids: src-wikidata-q694594, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q2360973-parent-q12548
+subject_id: title-q2360973
+claim_kind: parentage
+span: 1364..1803
+value: title-q12548
+source_ids: src-wikidata-q2360973, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q152420-parent-q12548
+subject_id: title-q152420
+claim_kind: parentage
+span: 1096..1795
+value: title-q12548
+source_ids: src-wikidata-q152420, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q704288-parent-q12548
+subject_id: title-q704288
+claim_kind: parentage
+span: 1474..1806
+value: title-q12548
+source_ids: src-wikidata-q704288, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q155019-parent-q12548
+subject_id: title-q155019
+claim_kind: parentage
+span: 962..1766
+value: title-q12548
+source_ids: src-wikidata-q155019, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q2719360-parent-q12548
+subject_id: title-q2719360
+claim_kind: parentage
+span: 1353..1795
+value: title-q12548
+source_ids: src-wikidata-q2719360, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q766501-parent-q12548
+subject_id: title-q766501
+claim_kind: parentage
+span: 1530..1797
+value: title-q12548
+source_ids: src-wikidata-q766501, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q933592-parent-q12548
+subject_id: title-q933592
+claim_kind: parentage
+span: 1473..1806
+value: title-q12548
+source_ids: src-wikidata-q933592, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q11024667-parent-q12548
+subject_id: title-q11024667
+claim_kind: parentage
+span: 1701..1806
+value: title-q12548
+source_ids: src-wikidata-q11024667, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q153529-parent-q12548
+subject_id: title-q153529
+claim_kind: parentage
+span: 1395..1797
+value: title-q12548
+source_ids: src-wikidata-q153529, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q1615455-parent-q12548
+subject_id: title-q1615455
+claim_kind: parentage
+span: 1310..1710
+value: title-q12548
+source_ids: src-wikidata-q1615455, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q696640-parent-q12548
+subject_id: title-q696640
+claim_kind: parentage
+span: 1121..1637
+value: title-q12548
+source_ids: src-wikidata-q696640, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q426025-parent-q12548
+subject_id: title-q426025
+claim_kind: parentage
+span: 1416..1806
+value: title-q12548
+source_ids: src-wikidata-q426025, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q157710-parent-q12548
+subject_id: title-q157710
+claim_kind: parentage
+span: 1675..1806
+value: title-q12548
+source_ids: src-wikidata-q157710, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q164092-parent-q12548
+subject_id: title-q164092
+claim_kind: parentage
+span: 962..1296
+value: title-q12548
+source_ids: src-wikidata-q164092, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q693980-parent-q12548
+subject_id: title-q693980
+claim_kind: parentage
+span: 962..1313
+value: title-q12548
+source_ids: src-wikidata-q693980, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q2227570-parent-q12548
+subject_id: title-q2227570
+claim_kind: parentage
+span: 1495..1803
+value: title-q12548
+source_ids: src-wikidata-q2227570, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q637238-parent-q12548
+subject_id: title-q637238
+claim_kind: parentage
+span: 1803..1806
+value: title-q12548
+source_ids: src-wikidata-q637238, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q256961-parent-q12548
+subject_id: title-q256961
+claim_kind: parentage
+span: 1623..1805
+value: title-q12548
+source_ids: src-wikidata-q256961, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q7904317-parent-q12548
+subject_id: title-q7904317
+claim_kind: parentage
+span: 962..1803
+value: title-q12548
+source_ids: src-wikidata-q7904317, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q706018-parent-q12548
+subject_id: title-q706018
+claim_kind: parentage
+span: 1692..1806
+value: title-q12548
+source_ids: src-wikidata-q706018, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q284667-parent-q12548
+subject_id: title-q284667
+claim_kind: parentage
+span: 962..1803
+value: title-q12548
+source_ids: src-wikidata-q284667, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q156199-parent-q12548
+subject_id: title-q156199
+claim_kind: parentage
+span: 1356..1806
+value: title-q12548
+source_ids: src-wikidata-q156199, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q2172530-parent-q12548
+subject_id: title-q2172530
+claim_kind: parentage
+span: 1803..1806
+value: title-q12548
+source_ids: src-wikidata-q2172530, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q673865-parent-q12548
+subject_id: title-q673865
+claim_kind: parentage
+span: 1576..1806
+value: title-q12548
+source_ids: src-wikidata-q673865, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q157013-parent-q12548
+subject_id: title-q157013
+claim_kind: parentage
+span: 1576..1806
+value: title-q12548
+source_ids: src-wikidata-q157013, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q42585-parent-q12548
+subject_id: title-q42585
+claim_kind: parentage
+span: 1198..1803
+value: title-q12548
+source_ids: src-wikidata-q42585, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q838931-parent-q12548
+subject_id: title-q838931
+claim_kind: parentage
+span: 962..1806
+value: title-q12548
+source_ids: src-wikidata-q838931, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q751868-parent-q12548
+subject_id: title-q751868
+claim_kind: parentage
+span: 1085..1183
+value: title-q12548
+source_ids: src-wikidata-q751868, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q695322-parent-q12548
+subject_id: title-q695322
+claim_kind: parentage
+span: 1264..1567
+value: title-q12548
+source_ids: src-wikidata-q695322, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q693551-parent-q12548
+subject_id: title-q693551
+claim_kind: parentage
+span: 1567..1806
+value: title-q12548
+source_ids: src-wikidata-q693551, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q168651-parent-q12548
+subject_id: title-q168651
+claim_kind: parentage
+span: 1567..1803
+value: title-q12548
+source_ids: src-wikidata-q168651, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q673837-parent-q12548
+subject_id: title-q673837
+claim_kind: parentage
+span: 1458..1604
+value: title-q12548
+source_ids: src-wikidata-q673837, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q58942549-parent-q12548
+subject_id: title-q58942549
+claim_kind: parentage
+span: 1200..1700
+value: title-q12548
+source_ids: src-wikidata-q58942549, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q426488-parent-q12548
+subject_id: title-q426488
+claim_kind: parentage
+span: 964..1091
+value: title-q12548
+source_ids: src-wikidata-q426488, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q1867844-parent-q12548
+subject_id: title-q1867844
+claim_kind: parentage
+span: 962..1197
+value: title-q12548
+source_ids: src-wikidata-q1867844, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q148499-parent-q12548
+subject_id: title-q148499
+claim_kind: parentage
+span: 1157..1806
+value: title-q12548
+source_ids: src-wikidata-q148499, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q170180-parent-q12548
+subject_id: title-q170180
+claim_kind: parentage
+span: 965..1423
+value: title-q12548
+source_ids: src-wikidata-q170180, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q552822-parent-q12548
+subject_id: title-q552822
+claim_kind: parentage
+span: 1520..1695
+value: title-q12548
+source_ids: src-wikidata-q552822, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q454436-parent-q12548
+subject_id: title-q454436
+claim_kind: parentage
+span: 1557..1806
+value: title-q12548
+source_ids: src-wikidata-q454436, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q701614-parent-q12548
+subject_id: title-q701614
+claim_kind: parentage
+span: 1278..1803
+value: title-q12548
+source_ids: src-wikidata-q701614, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q158835-parent-q12548
+subject_id: title-q158835
+claim_kind: parentage
+span: 985..1795
+value: title-q12548
+source_ids: src-wikidata-q158835, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q650645-parent-q12548
+subject_id: title-q650645
+claim_kind: parentage
+span: 1180..1648
+value: title-q12548
+source_ids: src-wikidata-q650645, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q697254-parent-q12548
+subject_id: title-q697254
+claim_kind: parentage
+span: 1180..1802
+value: title-q12548
+source_ids: src-wikidata-q697254, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q477035-parent-q12548
+subject_id: title-q477035
+claim_kind: parentage
+span: 1225..1803
+value: title-q12548
+source_ids: src-wikidata-q477035, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q649192-parent-q12548
+subject_id: title-q649192
+claim_kind: parentage
+span: 1281..1802
+value: title-q12548
+source_ids: src-wikidata-q649192, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q771332-parent-q12548
+subject_id: title-q771332
+claim_kind: parentage
+span: 982..1803
+value: title-q12548
+source_ids: src-wikidata-q771332, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q707767-parent-q12548
+subject_id: title-q707767
+claim_kind: parentage
+span: 1024..1528
+value: title-q12548
+source_ids: src-wikidata-q707767, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q17015016-parent-q12548
+subject_id: title-q17015016
+claim_kind: parentage
+span: 997..1552
+value: title-q12548
+source_ids: src-wikidata-q17015016, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q14551680-parent-q12548
+subject_id: title-q14551680
+claim_kind: parentage
+span: 1789..1806
+value: title-q12548
+source_ids: src-wikidata-q14551680, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q158151-parent-q12548
+subject_id: title-q158151
+claim_kind: parentage
+span: 1602..1806
+value: title-q12548
+source_ids: src-wikidata-q158151, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q700663-parent-q12548
+subject_id: title-q700663
+claim_kind: parentage
+span: 1699..1806
+value: title-q12548
+source_ids: src-wikidata-q700663, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q675085-parent-q12548
+subject_id: title-q675085
+claim_kind: parentage
+span: 1680..1806
+value: title-q12548
+source_ids: src-wikidata-q675085, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q281005-parent-q12548
+subject_id: title-q281005
+claim_kind: parentage
+span: 1680..1806
+value: title-q12548
+source_ids: src-wikidata-q281005, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q313175-parent-q12548
+subject_id: title-q313175
+claim_kind: parentage
+span: 1296..1806
+value: title-q12548
+source_ids: src-wikidata-q313175, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q310650-parent-q12548
+subject_id: title-q310650
+claim_kind: parentage
+span: 1643..1806
+value: title-q12548
+source_ids: src-wikidata-q310650, src-wikidata-q12548
+confidence: multi_source
+---
+fact_id: fact-q630163-parent-q12548
+subject_id: title-q630163
+claim_kind: parentage
+span: 1599..1806
+value: title-q12548
+source_ids: src-wikidata-q630163, src-wikidata-q12548
+confidence: multi_source
