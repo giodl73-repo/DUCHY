@@ -99,13 +99,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q568473 | Burgraviate of Nuremberg
-
-- rank: Empire
-- exists: 1105..1440
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q568638 | Duchy of Silesia
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1397..1523
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62651 | Denmark-Norway
+
+- rank: Empire
+- exists: 1536..1814
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

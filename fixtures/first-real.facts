@@ -1649,7 +1649,7 @@ confidence: single_source
 fact_id: fact-q568473-rank
 subject_id: title-q568473
 claim_kind: rank
-value: Empire
+value: County
 source_ids: src-wikidata-q568473
 confidence: single_source
 ---
@@ -9003,4 +9003,14 @@ claim_kind: parentage
 span: 1306..1801
 value: title-q12548
 source_ids: src-wikidata-q2629137, src-wikidata-q12548
+confidence: multi_source
+---
+# Reviewed parentage packet for Burgraviate of Nuremberg under the Holy Roman Empire.
+
+fact_id: fact-q568473-parent-q12548
+subject_id: title-q568473
+claim_kind: parentage
+span: 1105..1440
+value: title-q12548
+source_ids: src-wikidata-q568473, src-wikidata-q12548
 confidence: multi_source

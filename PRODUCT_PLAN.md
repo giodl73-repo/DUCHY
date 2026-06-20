@@ -216,7 +216,10 @@ Pulses:
 77. Free Imperial City of Aachen HRE parentage packet. Complete for adding
     `FreeCity` rank support, correcting Q2629137 to FreeCity, and importing
     Free Imperial City of Aachen -> Holy Roman Empire for 1306-1801.
-78. Next reviewed parentage packet.
+78. Burgraviate of Nuremberg HRE parentage packet. Complete for correcting
+    Q568473 to County rank and importing Burgraviate of Nuremberg -> Holy Roman
+    Empire for 1105-1440.
+79. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

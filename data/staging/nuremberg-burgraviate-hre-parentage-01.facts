@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Burgraviate of Nuremberg under the Holy Roman Empire.
+
+fact_id: fact-q568473-parent-q12548
+subject_id: title-q568473
+claim_kind: parentage
+span: 1105..1440
+value: title-q12548
+source_ids: src-wikidata-q568473, src-wikidata-q12548
+confidence: multi_source

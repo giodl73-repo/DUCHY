@@ -92,6 +92,7 @@ records and validation.
 | 74 | Illyrian Provinces French Empire parentage | complete | Add `Province` rank support, correct Illyrian Provinces rank, and import First French Empire parentage. |
 | 75 | Electoral Palatinate HRE parentage | complete | Correct Electoral Palatinate rank to Duchy and import Holy Roman Empire parentage. |
 | 76 | Free Imperial City of Aachen HRE parentage | complete | Add `FreeCity` rank support, correct Free Imperial City of Aachen rank, and import Holy Roman Empire parentage. |
+| 77 | Burgraviate of Nuremberg HRE parentage | complete | Correct Burgraviate of Nuremberg rank to County and import Holy Roman Empire parentage. |
 
 ## Success Criteria
 

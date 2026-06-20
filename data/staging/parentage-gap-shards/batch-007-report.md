@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 16 |
-| medium_parentage_review | 6 |
-| root_or_successor_review | 3 |
+| medium_parentage_review | 7 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 3 |
 | Duchy | 13 |
-| Empire | 3 |
-| Kingdom | 6 |
+| Empire | 2 |
+| Kingdom | 7 |
 
 ## Review Rows
-
-### title-q62651 | Denmark-Norway
-
-- rank: Empire
-- exists: 1536..1814
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q633573 | Kingdom of Rheged
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1852..1910
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q816814 | Kingdom of Gwynedd
+
+- rank: Kingdom
+- exists: 401..1216
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

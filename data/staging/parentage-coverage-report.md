@@ -1,20 +1,20 @@
 # DUCHY Parentage Coverage Report
 
 sources: 338
-facts: 1161
+facts: 1162
 titles: 327
-parentage_facts: 180
-titles_with_parentage: 136
-titles_without_parentage: 191
+parentage_facts: 181
+titles_with_parentage: 137
+titles_without_parentage: 190
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 29 | 16 | 13 |
+| County | 30 | 17 | 13 |
 | Crown | 3 | 0 | 3 |
 | Duchy | 136 | 88 | 48 |
-| Empire | 36 | 0 | 36 |
+| Empire | 35 | 0 | 35 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 120 | 30 | 90 |
 | Province | 1 | 1 | 0 |
@@ -158,7 +158,6 @@ titles_without_parentage: 191
 - title-q5177890 | County of Luxembourg | County | 963..1354
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q566639 | Duchy of Opava | Duchy | 1269..1918
-- title-q568473 | Burgraviate of Nuremberg | Empire | 1105..1440
 - title-q568638 | Duchy of Silesia | Duchy | 1138..1742
 - title-q573290 | County of Ravensberg | County | 1140..1807
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
