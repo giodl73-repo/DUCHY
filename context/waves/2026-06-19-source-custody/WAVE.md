@@ -85,6 +85,7 @@ records and validation.
 | 67 | Commonwealth children parentage packet | complete | Import Crown of the Kingdom of Poland and Grand Duchy of Lithuania under Polish-Lithuanian Commonwealth. |
 | 68 | Commonwealth boundary parentage packet | complete | Import the year-granular Kingdom of Poland -> Polish-Lithuanian Commonwealth transition at 1569. |
 | 69 | Theocratic state parentage packet | complete | Add `TheocraticState` rank support, promote Papal States, and import Comtat Venaissin -> Papal States parentage. |
+| 70 | Kingdom of Poland German Empire parentage | complete | Import the reviewed 1916-1918 Kingdom of Poland -> German Empire relation. |
 
 ## Success Criteria
 

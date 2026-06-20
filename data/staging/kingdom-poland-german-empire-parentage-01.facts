@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Kingdom of Poland under German Empire.
+
+fact_id: fact-q696908-parent-q43287
+subject_id: title-q696908
+claim_kind: parentage
+span: 1916..1918
+value: title-q43287
+source_ids: src-wikidata-q696908, src-wikidata-q43287
+confidence: multi_source

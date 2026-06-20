@@ -197,7 +197,9 @@ Pulses:
 70. Theocratic state parentage packet. Complete for adding
     `TheocraticState` rank support, promoting Papal States, and importing
     Comtat Venaissin -> Papal States for 1274-1791.
-71. Next reviewed parentage packet.
+71. Kingdom of Poland German Empire parentage packet. Complete for importing
+    the reviewed 1916-1918 Kingdom of Poland -> German Empire relation.
+72. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

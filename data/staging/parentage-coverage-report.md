@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 337
-facts: 1150
+facts: 1151
 titles: 326
-parentage_facts: 172
-titles_with_parentage: 129
-titles_without_parentage: 197
+parentage_facts: 173
+titles_with_parentage: 130
+titles_without_parentage: 196
 
 ## Coverage By Rank
 
@@ -15,7 +15,7 @@ titles_without_parentage: 197
 | Crown | 3 | 0 | 3 |
 | Duchy | 135 | 85 | 50 |
 | Empire | 39 | 0 | 39 |
-| Kingdom | 120 | 29 | 91 |
+| Kingdom | 120 | 30 | 90 |
 | TheocraticState | 1 | 0 | 1 |
 
 ## Titles Without Parentage
@@ -187,7 +187,6 @@ titles_without_parentage: 197
 - title-q686312 | Duchy of Amalfi | Duchy | 839..1137
 - title-q692946 | Gorizia and Gradisca | Empire | 1754..1919
 - title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
-- title-q696908 | Kingdom of Poland | Kingdom | 1916..1918
 - title-q698089 | Grand Duchy of Wurzburg | Duchy | 1806..1814
 - title-q699923 | Illyrian Provinces | Empire | 1809..1816
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801

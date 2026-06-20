@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 16 |
-| medium_parentage_review | 5 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 4 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Duchy | 14 |
-| Empire | 4 |
-| Kingdom | 5 |
+| Empire | 5 |
+| Kingdom | 4 |
 
 ## Review Rows
 
@@ -141,13 +141,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q696908 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1916..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q698089 | Grand Duchy of Wurzburg
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 987..1791
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q71084 | First French Empire
+
+- rank: Empire
+- exists: 1804..1815
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
