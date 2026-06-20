@@ -94,6 +94,7 @@ cargo run --bin duchy-promote -- --dry-run --report data/staging/baden-hanover-r
 cargo run --bin duchy-promote -- --dry-run --report data/staging/oldenburg-brunswick-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/oldenburg-brunswick.sources data/staging/oldenburg-brunswick.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/mass-title-50-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/mass-title-50.sources data/staging/mass-title-50.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/batch-001-title-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/batch-001-title.sources data/staging/batch-001-title.facts
+cargo run --bin duchy-promote -- --dry-run --report data/staging/batch-002-title-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/batch-002-title.sources data/staging/batch-002-title.facts
 ```
 
 Add `--report path/to/report.md` after the mode to produce a review artifact:

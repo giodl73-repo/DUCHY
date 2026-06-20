@@ -106,7 +106,10 @@ Pulses:
     bringing accepted plus staged source records to 500 under review.
 37. Batch 001 title promotion. Complete for 18 title-identity sources promoted
     from the 500-source candidate queue.
-38. Next reviewed parentage packet.
+38. Batch 002 title promotion. Complete for 26 title-identity sources promoted
+    from the 500-source candidate queue, with four title candidates deferred for
+    missing date claims.
+39. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

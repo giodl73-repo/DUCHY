@@ -1,0 +1,339 @@
+# Reviewed packet for 500-candidate batch 002 title import.
+
+source_id: src-wikidata-q2042616
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2042616
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Chalkidian League (Q2042616).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1122980
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1122980
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Comtat Venaissin (Q1122980).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1235737
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1235737
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Aragon (Q1235737).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1541613
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1541613
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Astarac (Q1541613).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1233672
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1233672
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Barcelona (Q1233672).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q642314
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q642314
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Burgundy (Q642314).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1541699
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1541699
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Empuries (Q1541699).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q157070
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q157070
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Flanders (Q157070).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q675363
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q675363
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Geneva (Q675363).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q762943
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q762943
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Holland (Q762943).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q5177890
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q5177890
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Luxembourg (Q5177890).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q700198
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q700198
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Mark (Q700198).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q589251
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q589251
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Montbeliard (Q589251).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q599613
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q599613
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Namur (Q599613).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q12817455
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q12817455
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Nassau (Q12817455).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q706553
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q706553
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Nice (Q706553).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1139807
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1139807
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Portugal (Q1139807).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q2991382
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2991382
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Provence (Q2991382).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q573290
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q573290
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Ravensberg (Q573290).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1297894
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1297894
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Ribagorza (Q1297894).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1232887
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1232887
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Savoy (Q1232887).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1917014
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1917014
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Sicily (Q1917014).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q2991474
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2991474
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Wurttemberg (Q2991474).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q160440
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q160440
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Crimean Khanate (Q160440).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1789596
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1789596
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Croatia in personal union with Hungary (Q1789596).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q171348
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q171348
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Crown of the Kingdom of Poland (Q171348).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---

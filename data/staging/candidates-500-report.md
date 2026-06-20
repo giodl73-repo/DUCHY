@@ -2,9 +2,9 @@
 
 source_manifest: data\staging\candidates-500.manifest
 candidates: 450
-pending: 432
+pending: 406
 reviewed: 0
-promoted: 18
+promoted: 44
 rejected: 0
 
 ## Pending
@@ -441,18 +441,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Catalan State; description: federated state of the Spanish Republic proclaimed in 1934; article: https://en.wikipedia.org/wiki/Catalan_State_(1934)
-- candidate_id: cand-q2042616
-  source_id: src-wikidata-q2042616
-  source_url: https://www.wikidata.org/wiki/Q2042616
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: approximate
-  entity_class: confederation
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Chalkidian League; description: federal state that existed on the Chalcidice peninsula; article: https://en.wikipedia.org/wiki/Chalcidian_League
 - candidate_id: cand-q213353
   source_id: src-wikidata-q213353
   source_url: https://www.wikidata.org/wiki/Q213353
@@ -501,18 +489,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Commonwealth of England; description: historic republic on the British Isles (1649–1660); article: https://en.wikipedia.org/wiki/Commonwealth_of_England
-- candidate_id: cand-q1122980
-  source_id: src-wikidata-q1122980
-  source_url: https://www.wikidata.org/wiki/Q1122980
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Comtat Venaissin; description: countship; article: https://en.wikipedia.org/wiki/Comtat_Venaissin
 - candidate_id: cand-q5171759
   source_id: src-wikidata-q5171759
   source_url: https://www.wikidata.org/wiki/Q5171759
@@ -537,174 +513,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Corsican Republic; description: unrecognized European state (1755–1769); article: https://en.wikipedia.org/wiki/Corsican_Republic
-- candidate_id: cand-q1235737
-  source_id: src-wikidata-q1235737
-  source_url: https://www.wikidata.org/wiki/Q1235737
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Aragon; description: countship (802-1035); article: https://en.wikipedia.org/wiki/County_of_Aragon
-- candidate_id: cand-q1541613
-  source_id: src-wikidata-q1541613
-  source_url: https://www.wikidata.org/wiki/Q1541613
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Astarac; description: former province of France; article: https://en.wikipedia.org/wiki/Astarac
-- candidate_id: cand-q1233672
-  source_id: src-wikidata-q1233672
-  source_url: https://www.wikidata.org/wiki/Q1233672
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Barcelona; description: countship; article: https://en.wikipedia.org/wiki/County_of_Barcelona
-- candidate_id: cand-q642314
-  source_id: src-wikidata-q642314
-  source_url: https://www.wikidata.org/wiki/Q642314
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Burgundy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Burgundy
-- candidate_id: cand-q1541699
-  source_id: src-wikidata-q1541699
-  source_url: https://www.wikidata.org/wiki/Q1541699
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Empúries; description: Medieval Catalonian county (812–1402); article: https://en.wikipedia.org/wiki/County_of_Emp%C3%BAries
-- candidate_id: cand-q157070
-  source_id: src-wikidata-q157070
-  source_url: https://www.wikidata.org/wiki/Q157070
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Flanders; description: county and historic territory in the Low Countries; article: https://en.wikipedia.org/wiki/County_of_Flanders
-- candidate_id: cand-q675363
-  source_id: src-wikidata-q675363
-  source_url: https://www.wikidata.org/wiki/Q675363
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Geneva; description: countship; article: https://en.wikipedia.org/wiki/County_of_Geneva
-- candidate_id: cand-q762943
-  source_id: src-wikidata-q762943
-  source_url: https://www.wikidata.org/wiki/Q762943
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Holland; description: state of the Holy Roman Empire and part of the Habsburg Netherlands: in 1579 became partly the Dutch Republic; article: https://en.wikipedia.org/wiki/County_of_Holland
-- candidate_id: cand-q5177890
-  source_id: src-wikidata-q5177890
-  source_url: https://www.wikidata.org/wiki/Q5177890
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Luxembourg; description: county in Western Europe during the Middle Ages; article: https://en.wikipedia.org/wiki/County_of_Luxembourg
-- candidate_id: cand-q700198
-  source_id: src-wikidata-q700198
-  source_url: https://www.wikidata.org/wiki/Q700198
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Mark; description: county and state in the Lower Rhenish–Westphalian Circle of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/County_of_Mark
-- candidate_id: cand-q589251
-  source_id: src-wikidata-q589251
-  source_url: https://www.wikidata.org/wiki/Q589251
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Montbéliard; description: feudal county; article: https://en.wikipedia.org/wiki/County_of_Montb%C3%A9liard
-- candidate_id: cand-q599613
-  source_id: src-wikidata-q599613
-  source_url: https://www.wikidata.org/wiki/Q599613
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Namur; description: countship; article: https://en.wikipedia.org/wiki/County_of_Namur
-- candidate_id: cand-q12817455
-  source_id: src-wikidata-q12817455
-  source_url: https://www.wikidata.org/wiki/Q12817455
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Nassau; description: German state within the Holy Roman Empire during the middle ages, or one of its many successor counties; article: https://en.wikipedia.org/wiki/County_of_Nassau
-- candidate_id: cand-q706553
-  source_id: src-wikidata-q706553
-  source_url: https://www.wikidata.org/wiki/Q706553
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Nice; description: county of Savoy; article: https://en.wikipedia.org/wiki/County_of_Nice
 - candidate_id: cand-q3688464
   source_id: src-wikidata-q3688464
   source_url: https://www.wikidata.org/wiki/Q3688464
@@ -717,78 +525,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: existence_only
   notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
-- candidate_id: cand-q1139807
-  source_id: src-wikidata-q1139807
-  source_url: https://www.wikidata.org/wiki/Q1139807
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Portugal; description: county in Southwestern Europe between 868–1139, predecessor of the Kingdom of Portugal; article: https://en.wikipedia.org/wiki/County_of_Portugal
-- candidate_id: cand-q2991382
-  source_id: src-wikidata-q2991382
-  source_url: https://www.wikidata.org/wiki/Q2991382
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Provence; description: historical county (855-1487); article: https://en.wikipedia.org/wiki/County_of_Provence
-- candidate_id: cand-q573290
-  source_id: src-wikidata-q573290
-  source_url: https://www.wikidata.org/wiki/Q573290
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Ravensberg; description: county of the Holy Roman Empire, in modern North Rhine-Westphalia; article: https://en.wikipedia.org/wiki/County_of_Ravensberg
-- candidate_id: cand-q1297894
-  source_id: src-wikidata-q1297894
-  source_url: https://www.wikidata.org/wiki/Q1297894
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Ribagorza; description: medieval county; article: https://en.wikipedia.org/wiki/County_of_Ribagorza
-- candidate_id: cand-q1232887
-  source_id: src-wikidata-q1232887
-  source_url: https://www.wikidata.org/wiki/Q1232887
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Savoy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Savoy
-- candidate_id: cand-q1917014
-  source_id: src-wikidata-q1917014
-  source_url: https://www.wikidata.org/wiki/Q1917014
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Sicily; description: Norman state comprising the islands of Sicily and Malta and part of Calabria from 1071 until 1130; article: https://en.wikipedia.org/wiki/County_of_Sicily
 - candidate_id: cand-q517940
   source_id: src-wikidata-q517940
   source_url: https://www.wikidata.org/wiki/Q517940
@@ -825,18 +561,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: existence_only
   notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
-- candidate_id: cand-q2991474
-  source_id: src-wikidata-q2991474
-  source_url: https://www.wikidata.org/wiki/Q2991474
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Württemberg; description: historical territory; article: https://en.wikipedia.org/wiki/County_of_W%C3%BCrttemberg
 - candidate_id: cand-q953432
   source_id: src-wikidata-q953432
   source_url: https://www.wikidata.org/wiki/Q953432
@@ -861,18 +585,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Cretan State; description: state on Crete between 1898-1913; article: https://en.wikipedia.org/wiki/Cretan_State
-- candidate_id: cand-q160440
-  source_id: src-wikidata-q160440
-  source_url: https://www.wikidata.org/wiki/Q160440
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Crimean Khanate; description: former state at the Crimean Peninsula until April 1783; article: https://en.wikipedia.org/wiki/Crimean_Khanate
 - candidate_id: cand-q1419681
   source_id: src-wikidata-q1419681
   source_url: https://www.wikidata.org/wiki/Q1419681
@@ -897,18 +609,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Crimean Socialist Soviet Republic; description: former state; article: https://en.wikipedia.org/wiki/Crimean_Socialist_Soviet_Republic
-- candidate_id: cand-q1789596
-  source_id: src-wikidata-q1789596
-  source_url: https://www.wikidata.org/wiki/Q1789596
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Croatia in personal union with Hungary; description: personal union of the Kingdom of Croatia and the Kingdom of Hungary from 1102 to 1526; article: https://en.wikipedia.org/wiki/Croatia_in_personal_union_with_Hungary
 - candidate_id: cand-q334731
   source_id: src-wikidata-q334731
   source_url: https://www.wikidata.org/wiki/Q334731
@@ -945,18 +645,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Crown of Castile; description: former country; article: https://en.wikipedia.org/wiki/Crown_of_Castile
-- candidate_id: cand-q171348
-  source_id: src-wikidata-q171348
-  source_url: https://www.wikidata.org/wiki/Q171348
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Crown of the Kingdom of Poland; description: 1385–1795 territorial possessions of the King of Poland; article: https://en.wikipedia.org/wiki/Crown_of_the_Kingdom_of_Poland
 - candidate_id: cand-q1998866
   source_id: src-wikidata-q1998866
   source_url: https://www.wikidata.org/wiki/Q1998866
@@ -5416,6 +5104,318 @@ none
   parentage_status: none_reviewed
   query_readiness: existence_only
   notes: Candidate label: Carolingian Empire; description: 800–843 final stage in the history of the early medieval realm of the Franks, ruled by the Carolingian dynasty; article: https://en.wikipedia.org/wiki/Carolingian_Empire
+- candidate_id: cand-q2042616
+  source_id: src-wikidata-q2042616
+  source_url: https://www.wikidata.org/wiki/Q2042616
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: approximate
+  entity_class: confederation
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Chalkidian League; description: federal state that existed on the Chalcidice peninsula; article: https://en.wikipedia.org/wiki/Chalcidian_League
+- candidate_id: cand-q1122980
+  source_id: src-wikidata-q1122980
+  source_url: https://www.wikidata.org/wiki/Q1122980
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Comtat Venaissin; description: countship; article: https://en.wikipedia.org/wiki/Comtat_Venaissin
+- candidate_id: cand-q1235737
+  source_id: src-wikidata-q1235737
+  source_url: https://www.wikidata.org/wiki/Q1235737
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Aragon; description: countship (802-1035); article: https://en.wikipedia.org/wiki/County_of_Aragon
+- candidate_id: cand-q1541613
+  source_id: src-wikidata-q1541613
+  source_url: https://www.wikidata.org/wiki/Q1541613
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Astarac; description: former province of France; article: https://en.wikipedia.org/wiki/Astarac
+- candidate_id: cand-q1233672
+  source_id: src-wikidata-q1233672
+  source_url: https://www.wikidata.org/wiki/Q1233672
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Barcelona; description: countship; article: https://en.wikipedia.org/wiki/County_of_Barcelona
+- candidate_id: cand-q642314
+  source_id: src-wikidata-q642314
+  source_url: https://www.wikidata.org/wiki/Q642314
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Burgundy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Burgundy
+- candidate_id: cand-q1541699
+  source_id: src-wikidata-q1541699
+  source_url: https://www.wikidata.org/wiki/Q1541699
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Empúries; description: Medieval Catalonian county (812–1402); article: https://en.wikipedia.org/wiki/County_of_Emp%C3%BAries
+- candidate_id: cand-q157070
+  source_id: src-wikidata-q157070
+  source_url: https://www.wikidata.org/wiki/Q157070
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Flanders; description: county and historic territory in the Low Countries; article: https://en.wikipedia.org/wiki/County_of_Flanders
+- candidate_id: cand-q675363
+  source_id: src-wikidata-q675363
+  source_url: https://www.wikidata.org/wiki/Q675363
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Geneva; description: countship; article: https://en.wikipedia.org/wiki/County_of_Geneva
+- candidate_id: cand-q762943
+  source_id: src-wikidata-q762943
+  source_url: https://www.wikidata.org/wiki/Q762943
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Holland; description: state of the Holy Roman Empire and part of the Habsburg Netherlands: in 1579 became partly the Dutch Republic; article: https://en.wikipedia.org/wiki/County_of_Holland
+- candidate_id: cand-q5177890
+  source_id: src-wikidata-q5177890
+  source_url: https://www.wikidata.org/wiki/Q5177890
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Luxembourg; description: county in Western Europe during the Middle Ages; article: https://en.wikipedia.org/wiki/County_of_Luxembourg
+- candidate_id: cand-q700198
+  source_id: src-wikidata-q700198
+  source_url: https://www.wikidata.org/wiki/Q700198
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Mark; description: county and state in the Lower Rhenish–Westphalian Circle of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/County_of_Mark
+- candidate_id: cand-q589251
+  source_id: src-wikidata-q589251
+  source_url: https://www.wikidata.org/wiki/Q589251
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Montbéliard; description: feudal county; article: https://en.wikipedia.org/wiki/County_of_Montb%C3%A9liard
+- candidate_id: cand-q599613
+  source_id: src-wikidata-q599613
+  source_url: https://www.wikidata.org/wiki/Q599613
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Namur; description: countship; article: https://en.wikipedia.org/wiki/County_of_Namur
+- candidate_id: cand-q12817455
+  source_id: src-wikidata-q12817455
+  source_url: https://www.wikidata.org/wiki/Q12817455
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Nassau; description: German state within the Holy Roman Empire during the middle ages, or one of its many successor counties; article: https://en.wikipedia.org/wiki/County_of_Nassau
+- candidate_id: cand-q706553
+  source_id: src-wikidata-q706553
+  source_url: https://www.wikidata.org/wiki/Q706553
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Nice; description: county of Savoy; article: https://en.wikipedia.org/wiki/County_of_Nice
+- candidate_id: cand-q1139807
+  source_id: src-wikidata-q1139807
+  source_url: https://www.wikidata.org/wiki/Q1139807
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Portugal; description: county in Southwestern Europe between 868–1139, predecessor of the Kingdom of Portugal; article: https://en.wikipedia.org/wiki/County_of_Portugal
+- candidate_id: cand-q2991382
+  source_id: src-wikidata-q2991382
+  source_url: https://www.wikidata.org/wiki/Q2991382
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Provence; description: historical county (855-1487); article: https://en.wikipedia.org/wiki/County_of_Provence
+- candidate_id: cand-q573290
+  source_id: src-wikidata-q573290
+  source_url: https://www.wikidata.org/wiki/Q573290
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Ravensberg; description: county of the Holy Roman Empire, in modern North Rhine-Westphalia; article: https://en.wikipedia.org/wiki/County_of_Ravensberg
+- candidate_id: cand-q1297894
+  source_id: src-wikidata-q1297894
+  source_url: https://www.wikidata.org/wiki/Q1297894
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Ribagorza; description: medieval county; article: https://en.wikipedia.org/wiki/County_of_Ribagorza
+- candidate_id: cand-q1232887
+  source_id: src-wikidata-q1232887
+  source_url: https://www.wikidata.org/wiki/Q1232887
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Savoy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Savoy
+- candidate_id: cand-q1917014
+  source_id: src-wikidata-q1917014
+  source_url: https://www.wikidata.org/wiki/Q1917014
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Sicily; description: Norman state comprising the islands of Sicily and Malta and part of Calabria from 1071 until 1130; article: https://en.wikipedia.org/wiki/County_of_Sicily
+- candidate_id: cand-q2991474
+  source_id: src-wikidata-q2991474
+  source_url: https://www.wikidata.org/wiki/Q2991474
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: County of Württemberg; description: historical territory; article: https://en.wikipedia.org/wiki/County_of_W%C3%BCrttemberg
+- candidate_id: cand-q160440
+  source_id: src-wikidata-q160440
+  source_url: https://www.wikidata.org/wiki/Q160440
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Crimean Khanate; description: former state at the Crimean Peninsula until April 1783; article: https://en.wikipedia.org/wiki/Crimean_Khanate
+- candidate_id: cand-q1789596
+  source_id: src-wikidata-q1789596
+  source_url: https://www.wikidata.org/wiki/Q1789596
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Croatia in personal union with Hungary; description: personal union of the Kingdom of Croatia and the Kingdom of Hungary from 1102 to 1526; article: https://en.wikipedia.org/wiki/Croatia_in_personal_union_with_Hungary
+- candidate_id: cand-q171348
+  source_id: src-wikidata-q171348
+  source_url: https://www.wikidata.org/wiki/Q171348
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Crown of the Kingdom of Poland; description: 1385–1795 territorial possessions of the King of Poland; article: https://en.wikipedia.org/wiki/Crown_of_the_Kingdom_of_Poland
 
 ## Rejected
 
