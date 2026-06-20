@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-q173082
+source_id: src-wikidata-q173082
+source_url: https://www.wikidata.org/wiki/Q173082
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Dacia; description: Balkan kingdom of the Dacians (168 BC-106 AD); article: https://en.wikipedia.org/wiki/Dacia
+---
+candidate_id: cand-q1277557
+source_id: src-wikidata-q1277557
+source_url: https://www.wikidata.org/wiki/Q1277557
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Democratic Federal Yugoslavia; description: former state in Southeast Europe between November 1943 and November 1945; article: https://en.wikipedia.org/wiki/Democratic_Federal_Yugoslavia
+---
+candidate_id: cand-q62651
+source_id: src-wikidata-q62651
+source_url: https://www.wikidata.org/wiki/Q62651
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: confederation
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Denmark–Norway; description: political union (1524–1814); article: https://en.wikipedia.org/wiki/Denmark%E2%80%93Norway
+---
+candidate_id: cand-q187684
+source_id: src-wikidata-q187684
+source_url: https://www.wikidata.org/wiki/Q187684
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Despotate of Epirus; description: former country; article: https://en.wikipedia.org/wiki/Despotate_of_Epirus
+---
+candidate_id: cand-q113614156
+source_id: src-wikidata-q113614156
+source_url: https://www.wikidata.org/wiki/Q113614156
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Despotate of Lovech; description: Medieval Bulgarian state centered in Lovech (1330–1446); article: https://en.wikipedia.org/wiki/Despotate_of_Lovech
+---
+candidate_id: cand-q3623202
+source_id: src-wikidata-q3623202
+source_url: https://www.wikidata.org/wiki/Q3623202
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: District of Branković; description: medieval Serbian state; article: https://en.wikipedia.org/wiki/District_of_Brankovi%C4%87
+---
+candidate_id: cand-q2453974
+source_id: src-wikidata-q2453974
+source_url: https://www.wikidata.org/wiki/Q2453974
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Don Republic; description: independent self-proclaimed anti-Bolshevik republic formed by the Armed Forces of South Russia on the territory of Don Cossacks against another self-proclaimed Don Soviet Republic; article: https://en.wikipedia.org/wiki/Don_Republic
+---
+candidate_id: cand-q61427
+source_id: src-wikidata-q61427
+source_url: https://www.wikidata.org/wiki/Q61427
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Donetsk-Krivoy Rog Soviet Republic; description: self-declared Soviet republic of the Russian SFSR; article: https://en.wikipedia.org/wiki/Donetsk%E2%80%93Krivoy_Rog_Soviet_Republic
+---
+candidate_id: cand-q3738649
+source_id: src-wikidata-q3738649
+source_url: https://www.wikidata.org/wiki/Q3738649
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Dual monarchy of England and France; description: period in the Middle Ages where Charles VII of France and Henry VI of England disputed the succession to the throne of France; article: https://en.wikipedia.org/wiki/Dual_monarchy_of_England_and_France
+---
+candidate_id: cand-q95950649
+source_id: src-wikidata-q95950649
+source_url: https://www.wikidata.org/wiki/Q95950649
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Alsace; description: former political subdivision of the Frankish kingdoms; article: https://en.wikipedia.org/wiki/Duchy_of_Alsace
+---
+candidate_id: cand-q686312
+source_id: src-wikidata-q686312
+source_url: https://www.wikidata.org/wiki/Q686312
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Amalfi; description: former country in modern-day Italy; article: https://en.wikipedia.org/wiki/Duchy_of_Amalfi
+---
+candidate_id: cand-q7703611
+source_id: src-wikidata-q7703611
+source_url: https://www.wikidata.org/wiki/Q7703611
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Aquitaine; description: medieval duchy in southern France; article: https://en.wikipedia.org/wiki/Duchy_of_Aquitaine
+---
+candidate_id: cand-q334714
+source_id: src-wikidata-q334714
+source_url: https://www.wikidata.org/wiki/Q334714
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Athens; description: former country (1205–1458); article: https://en.wikipedia.org/wiki/Duchy_of_Athens
+---
+candidate_id: cand-q3624335
+source_id: src-wikidata-q3624335
+source_url: https://www.wikidata.org/wiki/Q3624335
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Austria; description: a medieval principality of the Holy Roman Empire, established in 1156 by the Privilegium Minus; article: https://en.wikipedia.org/wiki/Duchy_of_Austria
+---
+candidate_id: cand-q47261
+source_id: src-wikidata-q47261
+source_url: https://www.wikidata.org/wiki/Q47261
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Bavaria; description: (907-1805) duchy of Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Bavaria
+---
+candidate_id: cand-q2183293
+source_id: src-wikidata-q2183293
+source_url: https://www.wikidata.org/wiki/Q2183293
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Belz; description: volhynian fiefdom under various successive countries; article: https://en.wikipedia.org/wiki/Duchy_of_Belz
+---
+candidate_id: cand-q151095
+source_id: src-wikidata-q151095
+source_url: https://www.wikidata.org/wiki/Q151095
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Berg; description: former German state and dukedom; article: https://en.wikipedia.org/wiki/Duchy_of_Berg
+---
+candidate_id: cand-q2162698
+source_id: src-wikidata-q2162698
+source_url: https://www.wikidata.org/wiki/Q2162698
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Bohemia; description: historical country; article: https://en.wikipedia.org/wiki/Duchy_of_Bohemia
+---
+candidate_id: cand-q159856
+source_id: src-wikidata-q159856
+source_url: https://www.wikidata.org/wiki/Q159856
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Brabant; description: state of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Brabant
+---
+candidate_id: cand-q694594
+source_id: src-wikidata-q694594
+source_url: https://www.wikidata.org/wiki/Q694594
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Bremen and Verden; description: territories and immediate fiefs of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Bremen-Verden
+---
+candidate_id: cand-q71747
+source_id: src-wikidata-q71747
+source_url: https://www.wikidata.org/wiki/Q71747
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Brittany; description: former European sovereign state 939–1547, then dukedom of the Kingdom of France; article: https://en.wikipedia.org/wiki/Duchy_of_Brittany
+---
+candidate_id: cand-q4712
+source_id: src-wikidata-q4712
+source_url: https://www.wikidata.org/wiki/Q4712
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Burgundy; description: vassal territory of France, 918–1482; article: https://en.wikipedia.org/wiki/Duchy_of_Burgundy
+---
+candidate_id: cand-q682001
+source_id: src-wikidata-q682001
+source_url: https://www.wikidata.org/wiki/Q682001
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Bytom; description: principality founded in 1284 as a result of the division of the Duchy of Opole; article: https://en.wikipedia.org/wiki/Duchy_of_Bytom
+---
+candidate_id: cand-q2360973
+source_id: src-wikidata-q2360973
+source_url: https://www.wikidata.org/wiki/Q2360973
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Carniola; description: historical state, Habsburgian crown land; article: https://en.wikipedia.org/wiki/Duchy_of_Carniola
+---
+candidate_id: cand-q641138
+source_id: src-wikidata-q641138
+source_url: https://www.wikidata.org/wiki/Q641138
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Cleves; description: State of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Cleves
+---
+candidate_id: cand-q1991540
+source_id: src-wikidata-q1991540
+source_url: https://www.wikidata.org/wiki/Q1991540
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Courland and Semigallia; description: 1918 German client state in the Baltics; article: https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia_(1918)
+---
+candidate_id: cand-q156038
+source_id: src-wikidata-q156038
+source_url: https://www.wikidata.org/wiki/Q156038
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Courland and Semigallia; description: former duchy (1562–1795); article: https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia
+---
+candidate_id: cand-q16835712
+source_id: src-wikidata-q16835712
+source_url: https://www.wikidata.org/wiki/Q16835712
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Estonia; description: Swedish dominion in the Baltic region from 1561 to 1721; article: https://en.wikipedia.org/wiki/Duchy_of_Estonia_(1561%E2%80%931721)
+---
+candidate_id: cand-q693570
+source_id: src-wikidata-q693570
+source_url: https://www.wikidata.org/wiki/Q693570
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Ferrara; description: former country; article: https://en.wikipedia.org/wiki/Duchy_of_Ferrara
+---
+candidate_id: cand-q2252973
+source_id: src-wikidata-q2252973
+source_url: https://www.wikidata.org/wiki/Q2252973
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Florence; description: (1532-1569) former Italian principality centred on the city of Florence; article: https://en.wikipedia.org/wiki/Duchy_of_Florence
+---
+candidate_id: cand-q2295939
+source_id: src-wikidata-q2295939
+source_url: https://www.wikidata.org/wiki/Q2295939
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Gascony; description: medieval duchy of the Aquitaine region; article: https://en.wikipedia.org/wiki/Duchy_of_Gascony
+---
+candidate_id: cand-q152420
+source_id: src-wikidata-q152420
+source_url: https://www.wikidata.org/wiki/Q152420
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Guelders; description: historical county in the Low Countries; article: https://en.wikipedia.org/wiki/Duchy_of_Guelders
+---
+candidate_id: cand-q836937
+source_id: src-wikidata-q836937
+source_url: https://www.wikidata.org/wiki/Q836937
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Jülich; description: duchy; article: https://en.wikipedia.org/wiki/Duchy_of_J%C3%BClich
+---
+candidate_id: cand-q1352878
+source_id: src-wikidata-q1352878
+source_url: https://www.wikidata.org/wiki/Q1352878
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Livonia; description: territory of Grand Duchy of Lithuania and later of Polish–Lithuanian Commonwealth, 1561-1621; article: https://en.wikipedia.org/wiki/Duchy_of_Livonia
+---
+candidate_id: cand-q155019
+source_id: src-wikidata-q155019
+source_url: https://www.wikidata.org/wiki/Q155019
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Lorraine; description: former state; article: https://en.wikipedia.org/wiki/Duchy_of_Lorraine
+---
+candidate_id: cand-q2719360
+source_id: src-wikidata-q2719360
+source_url: https://www.wikidata.org/wiki/Q2719360
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Luxembourg; description: country in Western Europe during Late Middle Ages-Early Modern Ages; article: https://en.wikipedia.org/wiki/Duchy_of_Luxembourg
+---
+candidate_id: cand-q766501
+source_id: src-wikidata-q766501
+source_url: https://www.wikidata.org/wiki/Q766501
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Mantua; description: duchy subject to the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Mantua
+---
+candidate_id: cand-q933592
+source_id: src-wikidata-q933592
+source_url: https://www.wikidata.org/wiki/Q933592
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Massa and Carrara; description: 1473–1829 duchy in northwestern Tuscany, Italian Peninsula; article: https://en.wikipedia.org/wiki/Duchy_of_Massa_and_Carrara
+---
+candidate_id: cand-q11024667
+source_id: src-wikidata-q11024667
+source_url: https://www.wikidata.org/wiki/Q11024667
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Mecklenburg-Schwerin; description: duchy in northern Germany created in 1701; article: https://en.wikipedia.org/wiki/Duchy_of_Mecklenburg-Schwerin
+---
+candidate_id: cand-q153529
+source_id: src-wikidata-q153529
+source_url: https://www.wikidata.org/wiki/Q153529
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Milan; description: former duchy in Italy (1395–1447; 1450–1796); article: https://en.wikipedia.org/wiki/Duchy_of_Milan
+---
+candidate_id: cand-q1615455
+source_id: src-wikidata-q1615455
+source_url: https://www.wikidata.org/wiki/Q1615455
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Mirandola; description: countship; article: https://en.wikipedia.org/wiki/Duchy_of_Mirandola
+---
+candidate_id: cand-q842091
+source_id: src-wikidata-q842091
+source_url: https://www.wikidata.org/wiki/Q842091
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Normandy; description: former European sovereign state, then dukedom of France; article: https://en.wikipedia.org/wiki/Duchy_of_Normandy
+---
+candidate_id: cand-q570702
+source_id: src-wikidata-q570702
+source_url: https://www.wikidata.org/wiki/Q570702
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Nysa; description: Silesian duchy (1290–1850); article: https://en.wikipedia.org/wiki/Duchy_of_Nysa
+---
+candidate_id: cand-q566639
+source_id: src-wikidata-q566639
+source_url: https://www.wikidata.org/wiki/Q566639
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Opava; description: Silesian duchy (1269–1918); article: https://en.wikipedia.org/wiki/Duchy_of_Troppau
+---
+candidate_id: cand-q702327
+source_id: src-wikidata-q702327
+source_url: https://www.wikidata.org/wiki/Q702327
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Oświęcim; description: Silesian duchy (1315–1564); article: https://en.wikipedia.org/wiki/Duchy_of_O%C5%9Bwi%C4%99cim
+---
+candidate_id: cand-q104863335
+source_id: src-wikidata-q104863335
+source_url: https://www.wikidata.org/wiki/Q104863335
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Poland; description: duchy in Central Europe existing from around 960 to 1025; article: https://en.wikipedia.org/wiki/Duchy_of_Poland_(c._960%E2%80%931025)
+---
+candidate_id: cand-q696640
+source_id: src-wikidata-q696640
+source_url: https://www.wikidata.org/wiki/Q696640
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Pomerania; description: state in west-central Europe from 1121 to 1637; article: https://en.wikipedia.org/wiki/Duchy_of_Pomerania
+---
+candidate_id: cand-q153091
+source_id: src-wikidata-q153091
+source_url: https://www.wikidata.org/wiki/Q153091
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Prussia; description: historical state (1525–1701); article: https://en.wikipedia.org/wiki/Duchy_of_Prussia
+---
+candidate_id: cand-q661340
+source_id: src-wikidata-q661340
+source_url: https://www.wikidata.org/wiki/Q661340
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Salzburg; description: former country; article: https://en.wikipedia.org/wiki/Duchy_of_Salzburg
+---
+candidate_id: cand-q426025
+source_id: src-wikidata-q426025
+source_url: https://www.wikidata.org/wiki/Q426025
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Savoy; description: state in Western Europe that existed from 1416 to 1860; article: https://en.wikipedia.org/wiki/Duchy_of_Savoy

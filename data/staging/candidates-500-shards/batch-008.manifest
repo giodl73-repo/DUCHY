@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-q142417
+source_id: src-wikidata-q142417
+source_url: https://www.wikidata.org/wiki/Q142417
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Valencia; description: kingdom at the Iberian Peninsula existing between 1238-1707; article: https://en.wikipedia.org/wiki/Kingdom_of_Valencia
+---
+candidate_id: cand-q105313
+source_id: src-wikidata-q105313
+source_url: https://www.wikidata.org/wiki/Q105313
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Wessex; description: Anglo-Saxon kingdom in the south of Great Britain; article: https://en.wikipedia.org/wiki/Wessex
+---
+candidate_id: cand-q56089236
+source_id: src-wikidata-q56089236
+source_url: https://www.wikidata.org/wiki/Q56089236
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Western Georgia; description: Western Georgian monarchy; article: https://en.wikipedia.org/wiki/Kingdom_of_Western_Georgia
+---
+candidate_id: cand-q191077
+source_id: src-wikidata-q191077
+source_url: https://www.wikidata.org/wiki/Q191077
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Yugoslavia; description: the official name of Yugoslavia during the period of 1929–1941 (de facto)/1945 (de jure); article: https://en.wikipedia.org/wiki/Kingdom_of_Yugoslavia
+---
+candidate_id: cand-q13590051
+source_id: src-wikidata-q13590051
+source_url: https://www.wikidata.org/wiki/Q13590051
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of the Burgundians; description: kingdom established by the Germanic Burgundians in the Rhineland and then in Savoy in the 5th century; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians
+---
+candidate_id: cand-q60614780
+source_id: src-wikidata-q60614780
+source_url: https://www.wikidata.org/wiki/Q60614780
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of the Heruli; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Heruli
+---
+candidate_id: cand-q733799
+source_id: src-wikidata-q733799
+source_url: https://www.wikidata.org/wiki/Q733799
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of the Hwicce; description: Anglo-Saxon kingdom in south west Britain; article: https://en.wikipedia.org/wiki/Hwicce
+---
+candidate_id: cand-q854415
+source_id: src-wikidata-q854415
+source_url: https://www.wikidata.org/wiki/Q854415
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of the Lombards; description: Germanic successor state to the Western Roman Empire established by the Lombards, a Germanic people, on the Italian Peninsula (568–774); article: https://en.wikipedia.org/wiki/Kingdom_of_the_Lombards
+---
+candidate_id: cand-q1048918
+source_id: src-wikidata-q1048918
+source_url: https://www.wikidata.org/wiki/Q1048918
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of the Suebi; description: Germanic kingdom in what is today Galicia, Spain, that was established by the Suebi about 410, and existed until 585; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Suebi
+---
+candidate_id: cand-q3568009
+source_id: src-wikidata-q3568009
+source_url: https://www.wikidata.org/wiki/Q3568009
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom within Anglo-Saxon Britain on the Isle of Wight; article: https://en.wikipedia.org/wiki/Wihtwara
+---
+candidate_id: cand-q2510537
+source_id: src-wikidata-q2510537
+source_url: https://www.wikidata.org/wiki/Q2510537
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Komancza Republic; description: short-lived state; article: https://en.wikipedia.org/wiki/Koma%C5%84cza_Republic
+---
+candidate_id: cand-q1771831
+source_id: src-wikidata-q1771831
+source_url: https://www.wikidata.org/wiki/Q1771831
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kruševo Republic; description: Rebel state in North Macedonia, 1903; article: https://en.wikipedia.org/wiki/Kru%C5%A1evo_Republic
+---
+candidate_id: cand-q1778994
+source_id: src-wikidata-q1778994
+source_url: https://www.wikidata.org/wiki/Q1778994
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kuban People's Republic; description: short-lived country in Eastern Europe (1918-1920); article: https://en.wikipedia.org/wiki/Kuban_People%27s_Republic
+---
+candidate_id: cand-q1761355
+source_id: src-wikidata-q1761355
+source_url: https://www.wikidata.org/wiki/Q1761355
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kuban-Black Sea Soviet Republic; description: Soviet republic; article: https://en.wikipedia.org/wiki/Kuban%E2%80%93Black_Sea_Soviet_Republic
+---
+candidate_id: cand-q751868
+source_id: src-wikidata-q751868
+source_url: https://www.wikidata.org/wiki/Q751868
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Brabant; description: landgraviate of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Landgraviate_of_Brabant
+---
+candidate_id: cand-q695322
+source_id: src-wikidata-q695322
+source_url: https://www.wikidata.org/wiki/Q695322
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Hesse; description: landgraviate; article: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse
+---
+candidate_id: cand-q693551
+source_id: src-wikidata-q693551
+source_url: https://www.wikidata.org/wiki/Q693551
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Hesse-Darmstadt; description: Principality of the Holy Roman Empire (1567–1806); article: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse-Darmstadt
+---
+candidate_id: cand-q168651
+source_id: src-wikidata-q168651
+source_url: https://www.wikidata.org/wiki/Q168651
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Hesse-Kassel; description: state of the Holy Roman Empire in 1567–1803; article: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse-Kassel
+---
+candidate_id: cand-q673837
+source_id: src-wikidata-q673837
+source_url: https://www.wikidata.org/wiki/Q673837
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Hesse-Marburg; description: state of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Hesse-Marburg
+---
+candidate_id: cand-q58942549
+source_id: src-wikidata-q58942549
+source_url: https://www.wikidata.org/wiki/Q58942549
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Landgraviate of Lower Alsace; description: historical region of France, former landgraviate of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Lower_Alsace
+---
+candidate_id: cand-q686971
+source_id: src-wikidata-q686971
+source_url: https://www.wikidata.org/wiki/Q686971
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lands of the Bohemian Crown; description: monarchy in Central Europe, predecessor of modern Czech Republic; article: https://en.wikipedia.org/wiki/Lands_of_the_Bohemian_Crown
+---
+candidate_id: cand-q178897
+source_id: src-wikidata-q178897
+source_url: https://www.wikidata.org/wiki/Q178897
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Latin Empire; description: feudal Crusader state founded by the leaders of the Fourth Crusade on lands captured from the Byzantine Empire; article: https://en.wikipedia.org/wiki/Latin_Empire
+---
+candidate_id: cand-q874283
+source_id: src-wikidata-q874283
+source_url: https://www.wikidata.org/wiki/Q874283
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Latin League; description: ancient confederation of Latin city-states for mutual defense; article: https://en.wikipedia.org/wiki/Latin_League
+---
+candidate_id: cand-q136884
+source_id: src-wikidata-q136884
+source_url: https://www.wikidata.org/wiki/Q136884
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lazica; description: former country; article: https://en.wikipedia.org/wiki/Lazica
+---
+candidate_id: cand-q2308885
+source_id: src-wikidata-q2308885
+source_url: https://www.wikidata.org/wiki/Q2308885
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lemko Republic; description: short-lived state; article: https://en.wikipedia.org/wiki/Lemko_Republic
+---
+candidate_id: cand-q1247020
+source_id: src-wikidata-q1247020
+source_url: https://www.wikidata.org/wiki/Q1247020
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Liburnia; description: ancient country in Croatia; article: https://en.wikipedia.org/wiki/Liburnia
+---
+candidate_id: cand-q659312
+source_id: src-wikidata-q659312
+source_url: https://www.wikidata.org/wiki/Q659312
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Ligurian Republic; description: former nation in Europe; article: https://en.wikipedia.org/wiki/Ligurian_Republic
+---
+candidate_id: cand-q80211
+source_id: src-wikidata-q80211
+source_url: https://www.wikidata.org/wiki/Q80211
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lithuanian Soviet Socialist Republic; description: independent 1918-1919 republic; article: https://en.wikipedia.org/wiki/Lithuanian_Soviet_Socialist_Republic_(1918%E2%80%931919)
+---
+candidate_id: cand-q76236
+source_id: src-wikidata-q76236
+source_url: https://www.wikidata.org/wiki/Q76236
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lithuanian–Byelorussian Soviet Socialist Republic; description: former country; article: https://en.wikipedia.org/wiki/Socialist_Soviet_Republic_of_Lithuania_and_Belorussia
+---
+candidate_id: cand-q30573
+source_id: src-wikidata-q30573
+source_url: https://www.wikidata.org/wiki/Q30573
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: administrative_region
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lokot Autonomy; description: semi-autonomous region in Nazi German-occupied Central Russia; article: https://en.wikipedia.org/wiki/Lokot_Autonomy
+---
+candidate_id: cand-q3572054
+source_id: src-wikidata-q3572054
+source_url: https://www.wikidata.org/wiki/Q3572054
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lordship of Albarracin; description: Independent lordship (1167- ); article: https://en.wikipedia.org/wiki/Lordship_of_Albarrac%C3%ADn
+---
+candidate_id: cand-q6680233
+source_id: src-wikidata-q6680233
+source_url: https://www.wikidata.org/wiki/Q6680233
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lordship of Chios; description: autonomous lordship the Aegean Sea; article: https://en.wikipedia.org/wiki/Lordship_of_Chios
+---
+candidate_id: cand-q844250
+source_id: src-wikidata-q844250
+source_url: https://www.wikidata.org/wiki/Q844250
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: administrative_region
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lordship of Ireland; description: 1171–1542 English-ruled territory in Ireland; article: https://en.wikipedia.org/wiki/Lordship_of_Ireland
+---
+candidate_id: cand-q1614435
+source_id: src-wikidata-q1614435
+source_url: https://www.wikidata.org/wiki/Q1614435
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lordship of Rostock; description: former country; article: https://en.wikipedia.org/wiki/Lordship_of_Rostock
+---
+candidate_id: cand-q6673921
+source_id: src-wikidata-q6673921
+source_url: https://www.wikidata.org/wiki/Q6673921
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Lotharingia; description: Former medieval kingdom and duchy (855-959); article: https://en.wikipedia.org/wiki/Lotharingia
+---
+candidate_id: cand-q33242
+source_id: src-wikidata-q33242
+source_url: https://www.wikidata.org/wiki/Q33242
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Lower Burgundy; description: former country; article: https://en.wikipedia.org/wiki/Lower_Burgundy
+---
+candidate_id: cand-q660393
+source_id: src-wikidata-q660393
+source_url: https://www.wikidata.org/wiki/Q660393
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Lower Lotharingia; description: duchy; article: https://en.wikipedia.org/wiki/Lower_Lotharingia
+---
+candidate_id: cand-q83958
+source_id: src-wikidata-q83958
+source_url: https://www.wikidata.org/wiki/Q83958
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Macedonia; description: ancient Hellenic kingdom; article: https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)
+---
+candidate_id: cand-q1436243
+source_id: src-wikidata-q1436243
+source_url: https://www.wikidata.org/wiki/Q1436243
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Makhnovshchina; description: Ukrainian anarchist movement; article: https://en.wikipedia.org/wiki/Makhnovshchina
+---
+candidate_id: cand-q6753657
+source_id: src-wikidata-q6753657
+source_url: https://www.wikidata.org/wiki/Q6753657
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Maona of Chios and Phocaea; description: ; article: https://en.wikipedia.org/wiki/Maona_of_Chios_and_Phocaea
+---
+candidate_id: cand-q426488
+source_id: src-wikidata-q426488
+source_url: https://www.wikidata.org/wiki/Q426488
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: March of Turin; description: Italian Marquisiate; article: https://en.wikipedia.org/wiki/March_of_Turin
+---
+candidate_id: cand-q1867844
+source_id: src-wikidata-q1867844
+source_url: https://www.wikidata.org/wiki/Q1867844
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: March of Tuscany; description: Italian mark; article: https://en.wikipedia.org/wiki/March_of_Tuscany
+---
+candidate_id: cand-q283627
+source_id: src-wikidata-q283627
+source_url: https://www.wikidata.org/wiki/Q283627
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Margraviate of Austria; description: southeastern frontier march of the Holy Roman Empire, 976–1156; article: https://en.wikipedia.org/wiki/Margraviate_of_Austria
+---
+candidate_id: cand-q148499
+source_id: src-wikidata-q148499
+source_url: https://www.wikidata.org/wiki/Q148499
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Margraviate of Brandenburg; description: Holy Roman Empire principality (1157–1806); article: https://en.wikipedia.org/wiki/Margraviate_of_Brandenburg
+---
+candidate_id: cand-q170180
+source_id: src-wikidata-q170180
+source_url: https://www.wikidata.org/wiki/Q170180
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Margraviate of Meissen; description: medieval principality in the area of the modern German state of Saxony; article: https://en.wikipedia.org/wiki/Margravate_of_Meissen
+---
+candidate_id: cand-q2670751
+source_id: src-wikidata-q2670751
+source_url: https://www.wikidata.org/wiki/Q2670751
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Margraviate of Moravia; description: historic state; article: https://en.wikipedia.org/wiki/Margraviate_of_Moravia
+---
+candidate_id: cand-q2280660
+source_id: src-wikidata-q2280660
+source_url: https://www.wikidata.org/wiki/Q2280660
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Marquisate of Finale; description: Italian state (967–1797); article: https://en.wikipedia.org/wiki/Marquisate_of_Finale
+---
+candidate_id: cand-q552822
+source_id: src-wikidata-q552822
+source_url: https://www.wikidata.org/wiki/Q552822
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Mecklenburg-Güstrow; description: duchy; article: https://en.wikipedia.org/wiki/Mecklenburg-G%C3%BCstrow
+---
+candidate_id: cand-q124003554
+source_id: src-wikidata-q124003554
+source_url: https://www.wikidata.org/wiki/Q124003554
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Medo-Persia; description: ; article: https://en.wikipedia.org/wiki/Medo-persia
+---
+candidate_id: cand-q468902
+source_id: src-wikidata-q468902
+source_url: https://www.wikidata.org/wiki/Q468902
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Middle Francia; description: former country; article: https://en.wikipedia.org/wiki/Middle_Francia

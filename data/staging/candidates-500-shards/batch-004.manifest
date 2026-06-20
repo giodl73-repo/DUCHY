@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-q164092
+source_id: src-wikidata-q164092
+source_url: https://www.wikidata.org/wiki/Q164092
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Saxony; description: (804-1260) duchy of Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Saxony
+---
+candidate_id: cand-q568638
+source_id: src-wikidata-q568638
+source_url: https://www.wikidata.org/wiki/Q568638
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Silesia; description: Medieval duchy in the historic region of Silesia (1138-1249/1335/1742); article: https://en.wikipedia.org/wiki/Duchy_of_Silesia
+---
+candidate_id: cand-q693980
+source_id: src-wikidata-q693980
+source_url: https://www.wikidata.org/wiki/Q693980
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Swabia; description: duchy of Holy Roman Empire (909-1268); article: https://en.wikipedia.org/wiki/Duchy_of_Swabia
+---
+candidate_id: cand-q671899
+source_id: src-wikidata-q671899
+source_url: https://www.wikidata.org/wiki/Q671899
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Teschen; description: former country; article: https://en.wikipedia.org/wiki/Duchy_of_Teschen
+---
+candidate_id: cand-q649202
+source_id: src-wikidata-q649202
+source_url: https://www.wikidata.org/wiki/Q649202
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Urbino; description: former Italian state (1213–1625); article: https://en.wikipedia.org/wiki/Duchy_of_Urbino
+---
+candidate_id: cand-q657241
+source_id: src-wikidata-q657241
+source_url: https://www.wikidata.org/wiki/Q657241
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Westphalia; description: principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Westphalia
+---
+candidate_id: cand-q2227570
+source_id: src-wikidata-q2227570
+source_url: https://www.wikidata.org/wiki/Q2227570
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duchy of Württemberg; description: former German state (1495-1803); article: https://en.wikipedia.org/wiki/Duchy_of_W%C3%BCrttemberg
+---
+candidate_id: cand-q1252942
+source_id: src-wikidata-q1252942
+source_url: https://www.wikidata.org/wiki/Q1252942
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: principality
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Duklja; description: Medieval principality in Eastern/Southern Europe; article: https://en.wikipedia.org/wiki/Duklja
+---
+candidate_id: cand-q170072
+source_id: src-wikidata-q170072
+source_url: https://www.wikidata.org/wiki/Q170072
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Dutch Republic; description: predecessor state of the Netherlands (1581–1795); article: https://en.wikipedia.org/wiki/Dutch_Republic
+---
+candidate_id: cand-q153080
+source_id: src-wikidata-q153080
+source_url: https://www.wikidata.org/wiki/Q153080
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: East Francia; description: country in Western Europe from 843 to 962; predecessor to the Kingdom of Germany; article: https://en.wikipedia.org/wiki/East_Francia
+---
+candidate_id: cand-q625380
+source_id: src-wikidata-q625380
+source_url: https://www.wikidata.org/wiki/Q625380
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Eastern Hungarian Kingdom; description: the modern name used to designate the realm of John Zápolya and his son John Sigismund Zápolya, who contested the claims of the House of Habsburg to rule the Kingdom of Hungary from 1526 to 1570; article: https://en.wikipedia.org/wiki/Eastern_Hungarian_Kingdom
+---
+candidate_id: cand-q22880
+source_id: src-wikidata-q22880
+source_url: https://www.wikidata.org/wiki/Q22880
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electoral Palatinate; description: state of the Holy Roman Empire (1085–1803); article: https://en.wikipedia.org/wiki/Electoral_Palatinate
+---
+candidate_id: cand-q637238
+source_id: src-wikidata-q637238
+source_url: https://www.wikidata.org/wiki/Q637238
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Baden; description: state of the Holy Roman Empire (1803-1806); article: https://en.wikipedia.org/wiki/Electorate_of_Baden
+---
+candidate_id: cand-q256961
+source_id: src-wikidata-q256961
+source_url: https://www.wikidata.org/wiki/Q256961
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Bavaria; description: state in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Electorate_of_Bavaria
+---
+candidate_id: cand-q7904317
+source_id: src-wikidata-q7904317
+source_url: https://www.wikidata.org/wiki/Q7904317
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Cologne; description: secular dominion of the Archbishops of Cologne; article: https://en.wikipedia.org/wiki/Electorate_of_Cologne
+---
+candidate_id: cand-q706018
+source_id: src-wikidata-q706018
+source_url: https://www.wikidata.org/wiki/Q706018
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Hanover; description: former principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Electorate_of_Hanover
+---
+candidate_id: cand-q284667
+source_id: src-wikidata-q284667
+source_url: https://www.wikidata.org/wiki/Q284667
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Mainz; description: territory in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Electorate_of_Mainz
+---
+candidate_id: cand-q156199
+source_id: src-wikidata-q156199
+source_url: https://www.wikidata.org/wiki/Q156199
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Saxony; description: state of the Holy Roman Empire, established when Emperor Charles IV raised the Ascanian duchy of Saxe-Wittenberg to the status of an Electorate 1356; article: https://en.wikipedia.org/wiki/Electorate_of_Saxony
+---
+candidate_id: cand-q2172530
+source_id: src-wikidata-q2172530
+source_url: https://www.wikidata.org/wiki/Q2172530
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Electorate of Württemberg; description: electorate; article: https://en.wikipedia.org/wiki/Electorate_of_W%C3%BCrttemberg
+---
+candidate_id: cand-q1333032
+source_id: src-wikidata-q1333032
+source_url: https://www.wikidata.org/wiki/Q1333032
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Elmet; description: Brittonic kingdom; article: https://en.wikipedia.org/wiki/Kingdom_of_Elfed
+---
+candidate_id: cand-q603771
+source_id: src-wikidata-q603771
+source_url: https://www.wikidata.org/wiki/Q603771
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Emirate of Crete; description: Muslim state that existed on the Mediterranean island of Crete from the late 820s to the reconquest of the island by the Byzantine Empire in 961; article: https://en.wikipedia.org/wiki/Emirate_of_Crete
+---
+candidate_id: cand-q1337854
+source_id: src-wikidata-q1337854
+source_url: https://www.wikidata.org/wiki/Q1337854
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Emirate of Córdoba; description: independent emirate in the Iberian Peninsula (756–929); article: https://en.wikipedia.org/wiki/Umayyad_state_of_C%C3%B3rdoba
+---
+candidate_id: cand-q238445
+source_id: src-wikidata-q238445
+source_url: https://www.wikidata.org/wiki/Q238445
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Emirate of Granada; description: historic Iberian state (1238–1492); article: https://en.wikipedia.org/wiki/Emirate_of_Granada
+---
+candidate_id: cand-q181254
+source_id: src-wikidata-q181254
+source_url: https://www.wikidata.org/wiki/Q181254
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Empire of Nicaea; description: successor state of the Byzantine Empire when the crusaders conquered Constantinople at Fourth Crusade of 1204; article: https://en.wikipedia.org/wiki/Empire_of_Nicaea
+---
+candidate_id: cand-q130280
+source_id: src-wikidata-q130280
+source_url: https://www.wikidata.org/wiki/Q130280
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Estonian Soviet Socialist Republic; description: republic of the Soviet Union (1940–1991); article: https://en.wikipedia.org/wiki/Estonian_Soviet_Socialist_Republic
+---
+candidate_id: cand-q48742118
+source_id: src-wikidata-q48742118
+source_url: https://www.wikidata.org/wiki/Q48742118
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Fascist Italy; description: kingdom of Italy under Fascist rule (31st October 1922 – 25th July 1943); article: https://en.wikipedia.org/wiki/Fascist_Italy
+---
+candidate_id: cand-q12714608
+source_id: src-wikidata-q12714608
+source_url: https://www.wikidata.org/wiki/Q12714608
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Fascist Romania; description: kingdom in Europe under Fascist rule between 1937 and 1944; article: https://en.wikipedia.org/wiki/Kingdom_of_Romania_under_Fascism
+---
+candidate_id: cand-q160307
+source_id: src-wikidata-q160307
+source_url: https://www.wikidata.org/wiki/Q160307
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Fatimid Egyptian Caliphate; description: Shia Islamic caliphate (909–1171); article: https://en.wikipedia.org/wiki/Fatimid_Caliphate
+---
+candidate_id: cand-q1290149
+source_id: src-wikidata-q1290149
+source_url: https://www.wikidata.org/wiki/Q1290149
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Federal People's Republic of Yugoslavia; description: the official name of Yugoslavia in the period of 1945-1963; article: https://en.wikipedia.org/wiki/Federal_People%27s_Republic_of_Yugoslavia
+---
+candidate_id: cand-q838261
+source_id: src-wikidata-q838261
+source_url: https://www.wikidata.org/wiki/Q838261
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Federal Republic of Yugoslavia; description: former Balkan republic (1992–2003); article: https://en.wikipedia.org/wiki/Federal_Republic_of_Yugoslavia
+---
+candidate_id: cand-q176495
+source_id: src-wikidata-q176495
+source_url: https://www.wikidata.org/wiki/Q176495
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Federal State of Austria; description: sovereign state in Central Europe (1934–1938); article: https://en.wikipedia.org/wiki/Federal_State_of_Austria
+---
+candidate_id: cand-q62519
+source_id: src-wikidata-q62519
+source_url: https://www.wikidata.org/wiki/Q62519
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Finnish Democratic Republic; description: short-lived puppet government created and recognised only by the Soviet Union; article: https://en.wikipedia.org/wiki/Finnish_Democratic_Republic
+---
+candidate_id: cand-q203817
+source_id: src-wikidata-q203817
+source_url: https://www.wikidata.org/wiki/Q203817
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: First Bulgarian Empire; description: medieval Bulgar-Slavic and later Bulgarian state that existed in Southeastern Europe between the 7th and 11th centuries AD.; article: https://en.wikipedia.org/wiki/First_Bulgarian_Empire
+---
+candidate_id: cand-q140359
+source_id: src-wikidata-q140359
+source_url: https://www.wikidata.org/wiki/Q140359
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Czechoslovak Republic; description: 1918–1938 republic in Central/Eastern Europe; article: https://en.wikipedia.org/wiki/First_Czechoslovak_Republic
+---
+candidate_id: cand-q71084
+source_id: src-wikidata-q71084
+source_url: https://www.wikidata.org/wiki/Q71084
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: First French Empire; description: empire of Napoleon I of France, from 1804 to 1815; article: https://en.wikipedia.org/wiki/First_French_Empire
+---
+candidate_id: cand-q528546
+source_id: src-wikidata-q528546
+source_url: https://www.wikidata.org/wiki/Q528546
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Hellenic Republic; description: historiographical concept of Greece (1822–1833); article: https://en.wikipedia.org/wiki/First_Hellenic_Republic
+---
+candidate_id: cand-q516160
+source_id: src-wikidata-q516160
+source_url: https://www.wikidata.org/wiki/Q516160
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Hungarian Republic; description: former country (1918–1919); article: https://en.wikipedia.org/wiki/First_Hungarian_Republic
+---
+candidate_id: cand-q167360
+source_id: src-wikidata-q167360
+source_url: https://www.wikidata.org/wiki/Q167360
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Portuguese Republic; description: 1910–1926 republic in Southwestern Europe; article: https://en.wikipedia.org/wiki/First_Portuguese_Republic
+---
+candidate_id: cand-q518101
+source_id: src-wikidata-q518101
+source_url: https://www.wikidata.org/wiki/Q518101
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Republic of Austria; description: sovereign state in Europe (1919–1934); article: https://en.wikipedia.org/wiki/First_Austrian_Republic
+---
+candidate_id: cand-q497777
+source_id: src-wikidata-q497777
+source_url: https://www.wikidata.org/wiki/Q497777
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: First Spanish Republic; description: political regime that existed in Spain between 11 February 1873 and 29 December 1874; article: https://en.wikipedia.org/wiki/First_Spanish_Republic
+---
+candidate_id: cand-q2044
+source_id: src-wikidata-q2044
+source_url: https://www.wikidata.org/wiki/Q2044
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Florence; description: Italian city and commune, located in Tuscany; article: https://en.wikipedia.org/wiki/Florence
+---
+candidate_id: cand-q146246
+source_id: src-wikidata-q146246
+source_url: https://www.wikidata.org/wiki/Q146246
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Francia; description: Frankish Kingdom from 481 to 843; article: https://en.wikipedia.org/wiki/Francia
+---
+candidate_id: cand-q13474305
+source_id: src-wikidata-q13474305
+source_url: https://www.wikidata.org/wiki/Q13474305
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Francoist Spain; description: 1939–1975 dictature period of Spain; article: https://en.wikipedia.org/wiki/Francoist_Spain
+---
+candidate_id: cand-q901974
+source_id: src-wikidata-q901974
+source_url: https://www.wikidata.org/wiki/Q901974
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free City of Danzig; description: Napoleonic semi-independent city state; article: https://en.wikipedia.org/wiki/Free_City_of_Danzig_(Napoleonic)
+---
+candidate_id: cand-q216173
+source_id: src-wikidata-q216173
+source_url: https://www.wikidata.org/wiki/Q216173
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free City of Danzig; description: semi-autonomous city-state that existed between 1920 and 1939; article: https://en.wikipedia.org/wiki/Free_City_of_Danzig
+---
+candidate_id: cand-q704300
+source_id: src-wikidata-q704300
+source_url: https://www.wikidata.org/wiki/Q704300
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free City of Frankfurt; description: historical city-state, today part of Germany; article: https://en.wikipedia.org/wiki/Free_City_of_Frankfurt
+---
+candidate_id: cand-q501303
+source_id: src-wikidata-q501303
+source_url: https://www.wikidata.org/wiki/Q501303
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free City of Kraków; description: former city-state; article: https://en.wikipedia.org/wiki/Free_City_of_Cracow
+---
+candidate_id: cand-q2629137
+source_id: src-wikidata-q2629137
+source_url: https://www.wikidata.org/wiki/Q2629137
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Free Imperial City of Aachen; description: was a Free Imperial City and spa of the Holy Roman Empire west of Cologne; article: https://en.wikipedia.org/wiki/Free_Imperial_City_of_Aachen
+---
+candidate_id: cand-q117020
+source_id: src-wikidata-q117020
+source_url: https://www.wikidata.org/wiki/Q117020
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free Imperial City of Nuremberg; description: quasi-independent city state within the Holy Roman Empire, 1219–1806; article: https://en.wikipedia.org/wiki/Free_Imperial_City_of_Nuremberg
+---
+candidate_id: cand-q569871
+source_id: src-wikidata-q569871
+source_url: https://www.wikidata.org/wiki/Q569871
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Free People's State of Württemberg; description: former state of Germany; article: https://en.wikipedia.org/wiki/Free_People%27s_State_of_W%C3%BCrttemberg

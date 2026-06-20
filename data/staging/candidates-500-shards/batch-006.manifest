@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-q31747
+source_id: src-wikidata-q31747
+source_url: https://www.wikidata.org/wiki/Q31747
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Irish Free State; description: state on the island of Ireland between December 1922 and December 1937; article: https://en.wikipedia.org/wiki/Irish_Free_State
+---
+candidate_id: cand-q2712121
+source_id: src-wikidata-q2712121
+source_url: https://www.wikidata.org/wiki/Q2712121
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Irish Republic; description: short-lived revolutionary state in 1798; article: https://en.wikipedia.org/wiki/Irish_Republic_(1798)
+---
+candidate_id: cand-q1140152
+source_id: src-wikidata-q1140152
+source_url: https://www.wikidata.org/wiki/Q1140152
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Irish Republic; description: revolutionary state that declared its independence from Great Britain (UKGBI); 1919-1922; article: https://en.wikipedia.org/wiki/Irish_Republic
+---
+candidate_id: cand-q3802443
+source_id: src-wikidata-q3802443
+source_url: https://www.wikidata.org/wiki/Q3802443
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Isenburg-Wächtersbach; description: ; article: https://en.wikipedia.org/wiki/Isenburg-W%C3%A4chtersbach
+---
+candidate_id: cand-q1423581
+source_id: src-wikidata-q1423581
+source_url: https://www.wikidata.org/wiki/Q1423581
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Italian Regency of Carnaro; description: former country; article: https://en.wikipedia.org/wiki/Italian_Regency_of_Carnaro
+---
+candidate_id: cand-q723118
+source_id: src-wikidata-q723118
+source_url: https://www.wikidata.org/wiki/Q723118
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Italian Republic; description: French republic in Northern Italy between 1802 and 1805; article: https://en.wikipedia.org/wiki/Italian_Republic_(Napoleonic)
+---
+candidate_id: cand-q153660
+source_id: src-wikidata-q153660
+source_url: https://www.wikidata.org/wiki/Q153660
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Italian Social Republic; description: 1943–1945 German puppet state in northern Italy; article: https://en.wikipedia.org/wiki/Italian_Social_Republic
+---
+candidate_id: cand-q3968612
+source_id: src-wikidata-q3968612
+source_url: https://www.wikidata.org/wiki/Q3968612
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Italian United Provinces; description: 1831 republic in parts of Italy; article: https://en.wikipedia.org/wiki/Italian_United_Provinces
+---
+candidate_id: cand-q1448131
+source_id: src-wikidata-q1448131
+source_url: https://www.wikidata.org/wiki/Q1448131
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Italian protectorate of Albania; description: kingdom in Southeast Europe between 1939–1943; article: https://en.wikipedia.org/wiki/Kingdom_of_Albania_in_personal_union_with_Italy
+---
+candidate_id: cand-q889970
+source_id: src-wikidata-q889970
+source_url: https://www.wikidata.org/wiki/Q889970
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Jorvik; description: state; article: https://en.wikipedia.org/wiki/Scandinavian_York
+---
+candidate_id: cand-q1241847
+source_id: src-wikidata-q1241847
+source_url: https://www.wikidata.org/wiki/Q1241847
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Judicate of Arborea; description: historical kingdom of Sardinia; article: https://en.wikipedia.org/wiki/Judicate_of_Arborea
+---
+candidate_id: cand-q58202
+source_id: src-wikidata-q58202
+source_url: https://www.wikidata.org/wiki/Q58202
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: July Monarchy; description: kingdom governing France, 1830–1848; article: https://en.wikipedia.org/wiki/July_Monarchy
+---
+candidate_id: cand-q2640598
+source_id: src-wikidata-q2640598
+source_url: https://www.wikidata.org/wiki/Q2640598
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kabardia; description: historical country in the North Caucasus; article: https://en.wikipedia.org/wiki/Kabardia
+---
+candidate_id: cand-q62623
+source_id: src-wikidata-q62623
+source_url: https://www.wikidata.org/wiki/Q62623
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kalmar Union; description: former country. personal union of the three kingdoms of Denmark, Sweden and Norway (1397–1523); article: https://en.wikipedia.org/wiki/Kalmar_Union
+---
+candidate_id: cand-q4208290
+source_id: src-wikidata-q4208290
+source_url: https://www.wikidata.org/wiki/Q4208290
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kazikumukh Khanate; description: Feudal formation created as a result of the collapse of the Tarkov Shamkhalate (Kumyk feudal state); article: https://en.wikipedia.org/wiki/Gazikumukh_Khanate
+---
+candidate_id: cand-q186537
+source_id: src-wikidata-q186537
+source_url: https://www.wikidata.org/wiki/Q186537
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Khanate of Qazan; description: former country; article: https://en.wikipedia.org/wiki/Khanate_of_Kazan
+---
+candidate_id: cand-q2090473
+source_id: src-wikidata-q2090473
+source_url: https://www.wikidata.org/wiki/Q2090473
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Khazar Khaganate; description: khanate, c. 650–969; article: https://en.wikipedia.org/wiki/Khazaria
+---
+candidate_id: cand-q12167518
+source_id: src-wikidata-q12167518
+source_url: https://www.wikidata.org/wiki/Q12167518
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kholodny Yar Republic; description: Ukrainian partisan state (1919–1922); article: https://en.wikipedia.org/wiki/Kholodny_Yar_Republic
+---
+candidate_id: cand-q1108445
+source_id: src-wikidata-q1108445
+source_url: https://www.wikidata.org/wiki/Q1108445
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Kievan Rus'; description: former federation of East Slavic tribes; article: https://en.wikipedia.org/wiki/Kievan_Rus%27
+---
+candidate_id: cand-q199442
+source_id: src-wikidata-q199442
+source_url: https://www.wikidata.org/wiki/Q199442
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Aragon; description: medieval and early modern kingdom in the Iberian Peninsula (1035-1707); article: https://en.wikipedia.org/wiki/Kingdom_of_Aragon
+---
+candidate_id: cand-q231392
+source_id: src-wikidata-q231392
+source_url: https://www.wikidata.org/wiki/Q231392
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Asturias; description: former kingdom on the Iberian Peninsula; article: https://en.wikipedia.org/wiki/Kingdom_of_Asturias
+---
+candidate_id: cand-q623751
+source_id: src-wikidata-q623751
+source_url: https://www.wikidata.org/wiki/Q623751
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Bernicia; description: Anglo-Saxon kingdom in northern Britain; article: https://en.wikipedia.org/wiki/Bernicia
+---
+candidate_id: cand-q42585
+source_id: src-wikidata-q42585
+source_url: https://www.wikidata.org/wiki/Q42585
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Bohemia; description: monarchy in Central Europe, predecessor of modern Czech Republic; article: https://en.wikipedia.org/wiki/Kingdom_of_Bohemia
+---
+candidate_id: cand-q2980623
+source_id: src-wikidata-q2980623
+source_url: https://www.wikidata.org/wiki/Q2980623
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Bosnia; description: 1377–1463 Bosnian medieval state, evolved from the Banate of Bosnia; article: https://en.wikipedia.org/wiki/Kingdom_of_Bosnia
+---
+candidate_id: cand-q905131
+source_id: src-wikidata-q905131
+source_url: https://www.wikidata.org/wiki/Q905131
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Breifne; description: former country; article: https://en.wikipedia.org/wiki/Kingdom_of_Breifne
+---
+candidate_id: cand-q771193
+source_id: src-wikidata-q771193
+source_url: https://www.wikidata.org/wiki/Q771193
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Brittany; description: short-lived vassal-state of the Frankish Empire; article: https://en.wikipedia.org/wiki/Kingdom_of_Brittany
+---
+candidate_id: cand-q147909
+source_id: src-wikidata-q147909
+source_url: https://www.wikidata.org/wiki/Q147909
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Bulgaria; description: state on the Balkan Peninsula between 1908 and 1946; article: https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria
+---
+candidate_id: cand-q530670
+source_id: src-wikidata-q530670
+source_url: https://www.wikidata.org/wiki/Q530670
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Burgundy; description: history of all the kingdoms and others states named Burgundy; article: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
+---
+candidate_id: cand-q179293
+source_id: src-wikidata-q179293
+source_url: https://www.wikidata.org/wiki/Q179293
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Castile; description: European sovereign state (1065–1230); article: https://en.wikipedia.org/wiki/Kingdom_of_Castile
+---
+candidate_id: cand-q858841
+source_id: src-wikidata-q858841
+source_url: https://www.wikidata.org/wiki/Q858841
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Croatia; description: (925–1102) a medieval kingdom comprising most of what is today Croatia as well as, periodically, parts of Bosnia and Herzegovina; article: https://en.wikipedia.org/wiki/Kingdom_of_Croatia_(925%E2%80%931102)
+---
+candidate_id: cand-q533558
+source_id: src-wikidata-q533558
+source_url: https://www.wikidata.org/wiki/Q533558
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Croatia-Slavonia; description: administrative division that existed between 1868 and 1918 within the Austro-Hungary; article: https://en.wikipedia.org/wiki/Kingdom_of_Croatia-Slavonia
+---
+candidate_id: cand-q837136
+source_id: src-wikidata-q837136
+source_url: https://www.wikidata.org/wiki/Q837136
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Deheubarth; description: kingdom in west Britain; article: https://en.wikipedia.org/wiki/Deheubarth
+---
+candidate_id: cand-q506008
+source_id: src-wikidata-q506008
+source_url: https://www.wikidata.org/wiki/Q506008
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Deira; description: kingdom in the north of early Anglo-Saxon Britain; article: https://en.wikipedia.org/wiki/Deira
+---
+candidate_id: cand-q436994
+source_id: src-wikidata-q436994
+source_url: https://www.wikidata.org/wiki/Q436994
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Dublin; description: former country (839-1171); article: https://en.wikipedia.org/wiki/Kingdom_of_Dublin
+---
+candidate_id: cand-q956451
+source_id: src-wikidata-q956451
+source_url: https://www.wikidata.org/wiki/Q956451
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Dyfed; description: kingdom in west of Wales; article: https://en.wikipedia.org/wiki/Kingdom_of_Dyfed
+---
+candidate_id: cand-q837998
+source_id: src-wikidata-q837998
+source_url: https://www.wikidata.org/wiki/Q837998
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of East Anglia; description: Anglo-Saxon kingdom in southeast Britain; article: https://en.wikipedia.org/wiki/Kingdom_of_East_Anglia
+---
+candidate_id: cand-q179876
+source_id: src-wikidata-q179876
+source_url: https://www.wikidata.org/wiki/Q179876
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of England; description: historic kingdom on the British Isles (927–1649; 1660–1707); article: https://en.wikipedia.org/wiki/Kingdom_of_England
+---
+candidate_id: cand-q110888
+source_id: src-wikidata-q110888
+source_url: https://www.wikidata.org/wiki/Q110888
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Essex; description: former kingdom on the island of Britain (527–825 CE); article: https://en.wikipedia.org/wiki/Kingdom_of_Essex
+---
+candidate_id: cand-q70972
+source_id: src-wikidata-q70972
+source_url: https://www.wikidata.org/wiki/Q70972
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of France; description: monarchical state that ruled France from 987 to 1792, and again from 1814 to 1848 (except during the Hundred Days in 1815); article: https://en.wikipedia.org/wiki/Kingdom_of_France
+---
+candidate_id: cand-q303421
+source_id: src-wikidata-q303421
+source_url: https://www.wikidata.org/wiki/Q303421
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Galicia; description: kingdom in Iberia; article: https://en.wikipedia.org/wiki/Kingdom_of_Galicia
+---
+candidate_id: cand-q154667
+source_id: src-wikidata-q154667
+source_url: https://www.wikidata.org/wiki/Q154667
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Georgia; description: medieval state in Eastern Europe; article: https://en.wikipedia.org/wiki/Kingdom_of_Georgia
+---
+candidate_id: cand-q175211
+source_id: src-wikidata-q175211
+source_url: https://www.wikidata.org/wiki/Q175211
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of Germany; article: https://en.wikipedia.org/wiki/Kingdom_of_Germany
+---
+candidate_id: cand-q2253783
+source_id: src-wikidata-q2253783
+source_url: https://www.wikidata.org/wiki/Q2253783
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Glywysing; description: early medieval petty kingdom in south-east Wales; article: https://en.wikipedia.org/wiki/Glywysing
+---
+candidate_id: cand-q1796202
+source_id: src-wikidata-q1796202
+source_url: https://www.wikidata.org/wiki/Q1796202
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Granada; description: former state (1492-1833); article: https://en.wikipedia.org/wiki/Kingdom_of_Granada_(Crown_of_Castile)
+---
+candidate_id: cand-q161885
+source_id: src-wikidata-q161885
+source_url: https://www.wikidata.org/wiki/Q161885
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Great Britain; description: constitutional monarchy in Western Europe (1707–1800); article: https://en.wikipedia.org/wiki/Kingdom_of_Great_Britain
+---
+candidate_id: cand-q209065
+source_id: src-wikidata-q209065
+source_url: https://www.wikidata.org/wiki/Q209065
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Greece; description: period of Greek statehood from 1832 to 1924 and 1935 to 1973; article: https://en.wikipedia.org/wiki/Kingdom_of_Greece
+---
+candidate_id: cand-q816814
+source_id: src-wikidata-q816814
+source_url: https://www.wikidata.org/wiki/Q816814
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Gwynedd; description: kingdom in northwest Wales, 401–1283; article: https://en.wikipedia.org/wiki/Kingdom_of_Gwynedd
+---
+candidate_id: cand-q187461
+source_id: src-wikidata-q187461
+source_url: https://www.wikidata.org/wiki/Q187461
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Hereti; description: former country; article: https://en.wikipedia.org/wiki/Kingdom_of_Hereti
+---
+candidate_id: cand-q212278
+source_id: src-wikidata-q212278
+source_url: https://www.wikidata.org/wiki/Q212278
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Holland; description: French client states in Netherlands (1806-1810); article: https://en.wikipedia.org/wiki/Kingdom_of_Holland
+---
+candidate_id: cand-q253094
+source_id: src-wikidata-q253094
+source_url: https://www.wikidata.org/wiki/Q253094
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Kingdom of Hungary; description: Crownland of the Habsburg Monarchy from 1526 and the Austrian Empire from 1804 until 1867; article: https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1526%E2%80%931867)

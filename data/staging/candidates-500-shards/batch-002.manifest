@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-q42345047
+source_id: src-wikidata-q42345047
+source_url: https://www.wikidata.org/wiki/Q42345047
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Catalan Republic; description: former independent state south of France and east of Spain (1640-1641); article: https://en.wikipedia.org/wiki/Catalan_Republic_(1640%E2%80%931641)
+---
+candidate_id: cand-q42346198
+source_id: src-wikidata-q42346198
+source_url: https://www.wikidata.org/wiki/Q42346198
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Catalan Republic (1931); description: April 1931 short-lived state on the Iberian Peninsula; article: https://en.wikipedia.org/wiki/Catalan_Republic_(1931)
+---
+candidate_id: cand-q42346134
+source_id: src-wikidata-q42346134
+source_url: https://www.wikidata.org/wiki/Q42346134
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Catalan State; description: short lived state in Catalonia and the Balearic Islands proclaimed in 1873; article: https://en.wikipedia.org/wiki/Catalan_State_(1873)
+---
+candidate_id: cand-q42346215
+source_id: src-wikidata-q42346215
+source_url: https://www.wikidata.org/wiki/Q42346215
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Catalan State; description: federated state of the Spanish Republic proclaimed in 1934; article: https://en.wikipedia.org/wiki/Catalan_State_(1934)
+---
+candidate_id: cand-q2042616
+source_id: src-wikidata-q2042616
+source_url: https://www.wikidata.org/wiki/Q2042616
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: confederation
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Chalkidian League; description: federal state that existed on the Chalcidice peninsula; article: https://en.wikipedia.org/wiki/Chalcidian_League
+---
+candidate_id: cand-q213353
+source_id: src-wikidata-q213353
+source_url: https://www.wikidata.org/wiki/Q213353
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Cisalpine Republic; description: French client republic in Northern Italy (1797-1802); article: https://en.wikipedia.org/wiki/Cisalpine_Republic
+---
+candidate_id: cand-q655092
+source_id: src-wikidata-q655092
+source_url: https://www.wikidata.org/wiki/Q655092
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Cisrhenian Republic; description: former country; article: https://en.wikipedia.org/wiki/Cisrhenian_Republic
+---
+candidate_id: cand-q183150
+source_id: src-wikidata-q183150
+source_url: https://www.wikidata.org/wiki/Q183150
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: administrative_region
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Colchis; description: historical polity and region of Antiquity; article: https://en.wikipedia.org/wiki/Colchis
+---
+candidate_id: cand-q330362
+source_id: src-wikidata-q330362
+source_url: https://www.wikidata.org/wiki/Q330362
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Commonwealth of England; description: historic republic on the British Isles (1649–1660); article: https://en.wikipedia.org/wiki/Commonwealth_of_England
+---
+candidate_id: cand-q1122980
+source_id: src-wikidata-q1122980
+source_url: https://www.wikidata.org/wiki/Q1122980
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Comtat Venaissin; description: countship; article: https://en.wikipedia.org/wiki/Comtat_Venaissin
+---
+candidate_id: cand-q5171759
+source_id: src-wikidata-q5171759
+source_url: https://www.wikidata.org/wiki/Q5171759
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Corniculum; description: ancient Latin town; article: https://en.wikipedia.org/wiki/Corniculum_(ancient_Latin_town)
+---
+candidate_id: cand-q71234
+source_id: src-wikidata-q71234
+source_url: https://www.wikidata.org/wiki/Q71234
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Corsican Republic; description: unrecognized European state (1755–1769); article: https://en.wikipedia.org/wiki/Corsican_Republic
+---
+candidate_id: cand-q1235737
+source_id: src-wikidata-q1235737
+source_url: https://www.wikidata.org/wiki/Q1235737
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Aragon; description: countship (802-1035); article: https://en.wikipedia.org/wiki/County_of_Aragon
+---
+candidate_id: cand-q1541613
+source_id: src-wikidata-q1541613
+source_url: https://www.wikidata.org/wiki/Q1541613
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Astarac; description: former province of France; article: https://en.wikipedia.org/wiki/Astarac
+---
+candidate_id: cand-q1233672
+source_id: src-wikidata-q1233672
+source_url: https://www.wikidata.org/wiki/Q1233672
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Barcelona; description: countship; article: https://en.wikipedia.org/wiki/County_of_Barcelona
+---
+candidate_id: cand-q642314
+source_id: src-wikidata-q642314
+source_url: https://www.wikidata.org/wiki/Q642314
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Burgundy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Burgundy
+---
+candidate_id: cand-q1541699
+source_id: src-wikidata-q1541699
+source_url: https://www.wikidata.org/wiki/Q1541699
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Empúries; description: Medieval Catalonian county (812–1402); article: https://en.wikipedia.org/wiki/County_of_Emp%C3%BAries
+---
+candidate_id: cand-q157070
+source_id: src-wikidata-q157070
+source_url: https://www.wikidata.org/wiki/Q157070
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Flanders; description: county and historic territory in the Low Countries; article: https://en.wikipedia.org/wiki/County_of_Flanders
+---
+candidate_id: cand-q675363
+source_id: src-wikidata-q675363
+source_url: https://www.wikidata.org/wiki/Q675363
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Geneva; description: countship; article: https://en.wikipedia.org/wiki/County_of_Geneva
+---
+candidate_id: cand-q762943
+source_id: src-wikidata-q762943
+source_url: https://www.wikidata.org/wiki/Q762943
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Holland; description: state of the Holy Roman Empire and part of the Habsburg Netherlands: in 1579 became partly the Dutch Republic; article: https://en.wikipedia.org/wiki/County_of_Holland
+---
+candidate_id: cand-q5177890
+source_id: src-wikidata-q5177890
+source_url: https://www.wikidata.org/wiki/Q5177890
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Luxembourg; description: county in Western Europe during the Middle Ages; article: https://en.wikipedia.org/wiki/County_of_Luxembourg
+---
+candidate_id: cand-q700198
+source_id: src-wikidata-q700198
+source_url: https://www.wikidata.org/wiki/Q700198
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Mark; description: county and state in the Lower Rhenish–Westphalian Circle of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/County_of_Mark
+---
+candidate_id: cand-q589251
+source_id: src-wikidata-q589251
+source_url: https://www.wikidata.org/wiki/Q589251
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Montbéliard; description: feudal county; article: https://en.wikipedia.org/wiki/County_of_Montb%C3%A9liard
+---
+candidate_id: cand-q599613
+source_id: src-wikidata-q599613
+source_url: https://www.wikidata.org/wiki/Q599613
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Namur; description: countship; article: https://en.wikipedia.org/wiki/County_of_Namur
+---
+candidate_id: cand-q12817455
+source_id: src-wikidata-q12817455
+source_url: https://www.wikidata.org/wiki/Q12817455
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Nassau; description: German state within the Holy Roman Empire during the middle ages, or one of its many successor counties; article: https://en.wikipedia.org/wiki/County_of_Nassau
+---
+candidate_id: cand-q706553
+source_id: src-wikidata-q706553
+source_url: https://www.wikidata.org/wiki/Q706553
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Nice; description: county of Savoy; article: https://en.wikipedia.org/wiki/County_of_Nice
+---
+candidate_id: cand-q3688464
+source_id: src-wikidata-q3688464
+source_url: https://www.wikidata.org/wiki/Q3688464
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
+---
+candidate_id: cand-q1139807
+source_id: src-wikidata-q1139807
+source_url: https://www.wikidata.org/wiki/Q1139807
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Portugal; description: county in Southwestern Europe between 868–1139, predecessor of the Kingdom of Portugal; article: https://en.wikipedia.org/wiki/County_of_Portugal
+---
+candidate_id: cand-q2991382
+source_id: src-wikidata-q2991382
+source_url: https://www.wikidata.org/wiki/Q2991382
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Provence; description: historical county (855-1487); article: https://en.wikipedia.org/wiki/County_of_Provence
+---
+candidate_id: cand-q573290
+source_id: src-wikidata-q573290
+source_url: https://www.wikidata.org/wiki/Q573290
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Ravensberg; description: county of the Holy Roman Empire, in modern North Rhine-Westphalia; article: https://en.wikipedia.org/wiki/County_of_Ravensberg
+---
+candidate_id: cand-q1297894
+source_id: src-wikidata-q1297894
+source_url: https://www.wikidata.org/wiki/Q1297894
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Ribagorza; description: medieval county; article: https://en.wikipedia.org/wiki/County_of_Ribagorza
+---
+candidate_id: cand-q1232887
+source_id: src-wikidata-q1232887
+source_url: https://www.wikidata.org/wiki/Q1232887
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Savoy; description: countship; article: https://en.wikipedia.org/wiki/County_of_Savoy
+---
+candidate_id: cand-q1917014
+source_id: src-wikidata-q1917014
+source_url: https://www.wikidata.org/wiki/Q1917014
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Sicily; description: Norman state comprising the islands of Sicily and Malta and part of Calabria from 1071 until 1130; article: https://en.wikipedia.org/wiki/County_of_Sicily
+---
+candidate_id: cand-q517940
+source_id: src-wikidata-q517940
+source_url: https://www.wikidata.org/wiki/Q517940
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Sponheim; description: countship; article: https://en.wikipedia.org/wiki/County_of_Sponheim
+---
+candidate_id: cand-q881030
+source_id: src-wikidata-q881030
+source_url: https://www.wikidata.org/wiki/Q881030
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Tecklenburg; description: countship; article: https://en.wikipedia.org/wiki/County_of_Tecklenburg
+---
+candidate_id: cand-q110133597
+source_id: src-wikidata-q110133597
+source_url: https://www.wikidata.org/wiki/Q110133597
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
+---
+candidate_id: cand-q2991474
+source_id: src-wikidata-q2991474
+source_url: https://www.wikidata.org/wiki/Q2991474
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: county
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: County of Württemberg; description: historical territory; article: https://en.wikipedia.org/wiki/County_of_W%C3%BCrttemberg
+---
+candidate_id: cand-q953432
+source_id: src-wikidata-q953432
+source_url: https://www.wikidata.org/wiki/Q953432
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Couto Misto; description: former country in Modern Day Spain and Portugal; article: https://en.wikipedia.org/wiki/Couto_Misto
+---
+candidate_id: cand-q72785
+source_id: src-wikidata-q72785
+source_url: https://www.wikidata.org/wiki/Q72785
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Cretan State; description: state on Crete between 1898-1913; article: https://en.wikipedia.org/wiki/Cretan_State
+---
+candidate_id: cand-q160440
+source_id: src-wikidata-q160440
+source_url: https://www.wikidata.org/wiki/Q160440
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: empire
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Crimean Khanate; description: former state at the Crimean Peninsula until April 1783; article: https://en.wikipedia.org/wiki/Crimean_Khanate
+---
+candidate_id: cand-q1419681
+source_id: src-wikidata-q1419681
+source_url: https://www.wikidata.org/wiki/Q1419681
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Crimean People's Republic; description: former country in Europe; article: https://en.wikipedia.org/wiki/Crimean_People%27s_Republic
+---
+candidate_id: cand-q1842362
+source_id: src-wikidata-q1842362
+source_url: https://www.wikidata.org/wiki/Q1842362
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Crimean Socialist Soviet Republic; description: former state; article: https://en.wikipedia.org/wiki/Crimean_Socialist_Soviet_Republic
+---
+candidate_id: cand-q1789596
+source_id: src-wikidata-q1789596
+source_url: https://www.wikidata.org/wiki/Q1789596
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Croatia in personal union with Hungary; description: personal union of the Kingdom of Croatia and the Kingdom of Hungary from 1102 to 1526; article: https://en.wikipedia.org/wiki/Croatia_in_personal_union_with_Hungary
+---
+candidate_id: cand-q334731
+source_id: src-wikidata-q334731
+source_url: https://www.wikidata.org/wiki/Q334731
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Croatian Republic of Herzeg-Bosnia; description: unrecognized proto-state in the Balkans (1991-96); now part of Bosnia and Herzegovina; article: https://en.wikipedia.org/wiki/Croatian_Republic_of_Herzeg-Bosnia
+---
+candidate_id: cand-q204920
+source_id: src-wikidata-q204920
+source_url: https://www.wikidata.org/wiki/Q204920
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Crown of Aragon; description: composite monarchy which existed between 1162–1716; article: https://en.wikipedia.org/wiki/Crown_of_Aragon
+---
+candidate_id: cand-q217196
+source_id: src-wikidata-q217196
+source_url: https://www.wikidata.org/wiki/Q217196
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Crown of Castile; description: former country; article: https://en.wikipedia.org/wiki/Crown_of_Castile
+---
+candidate_id: cand-q171348
+source_id: src-wikidata-q171348
+source_url: https://www.wikidata.org/wiki/Q171348
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: title_identity_only
+rank_basis: literal
+entity_class: kingdom
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
+notes: Candidate label: Crown of the Kingdom of Poland; description: 1385–1795 territorial possessions of the King of Poland; article: https://en.wikipedia.org/wiki/Crown_of_the_Kingdom_of_Poland
+---
+candidate_id: cand-q1998866
+source_id: src-wikidata-q1998866
+source_url: https://www.wikidata.org/wiki/Q1998866
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Czech and Slovak Federal Republic; description: 1990-1993 federal republic in Central/Eastern Europe; article: https://en.wikipedia.org/wiki/Czech_and_Slovak_Federative_Republic
+---
+candidate_id: cand-q853348
+source_id: src-wikidata-q853348
+source_url: https://www.wikidata.org/wiki/Q853348
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: free_city
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Czechoslovak Socialist Republic; description: republic in Central/Eastern Europe between 1948 and 1990; article: https://en.wikipedia.org/wiki/Czechoslovak_Socialist_Republic
+---
+candidate_id: cand-q33946
+source_id: src-wikidata-q33946
+source_url: https://www.wikidata.org/wiki/Q33946
+status: pending
+review_batch_id: batch-500-candidates
+import_scope: contested_review
+rank_basis: unsupported
+entity_class: other
+source_claims_used: label, description, enwiki_sitelink, continent
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: unsupported
+notes: Candidate label: Czechoslovakia; description: country in Central Europe (1918–1992); article: https://en.wikipedia.org/wiki/Czechoslovakia

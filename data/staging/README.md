@@ -27,6 +27,16 @@ cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 ```
 
+The 500-source candidate queue uses the same tooling at larger review-batch
+size:
+
+```powershell
+cargo run --bin duchy-import -- manifest data/staging/candidates-500.manifest
+cargo run --bin duchy-import -- manifest-report data/staging/candidates-500.manifest data/staging/candidates-500-report.md
+cargo run --bin duchy-import -- duplicate-url-report data/staging/candidates-500.manifest data/staging/candidates-500-duplicate-urls.md
+cargo run --bin duchy-import -- shard-manifest data/staging/candidates-500.manifest data/staging/candidates-500-shards 50
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
