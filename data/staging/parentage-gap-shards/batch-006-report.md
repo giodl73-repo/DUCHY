@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q386496 | Kingdom of Montenegro
-
-- rank: Kingdom
-- exists: 1910..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q389688 | Achaemenid Empire
 
 - rank: Empire
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1526..1570
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62567 | Kingdom of Iceland
+
+- rank: Kingdom
+- exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -70,7 +70,7 @@ kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The title-identity queue promotions and follow-on parentage packets extend the
-accepted fixture set to 338 reviewed sources and 1159 reviewed facts. Title
+accepted fixture set to 338 reviewed sources and 1160 reviewed facts. Title
 promotion adds title identity, rank, and existence facts only; parentage remains
 a separate review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
@@ -89,8 +89,8 @@ parentage packet adds 70 reviewed pre-1807 spans. The first Kingdom of France
 parentage packet adds 4 reviewed spans. The residual German Confederation
 packet adds 4 reviewed spans, with later relation, crown, Commonwealth,
 theocratic-state, German Empire, Russian Empire, Gorizia and Gradisca Austrian,
-Duchy of Urbino Papal States, and Illyrian Provinces French Empire packets
-raising reviewed real parentage coverage to 178 facts.
+Duchy of Urbino Papal States, Illyrian Provinces French Empire, and Electoral
+Palatinate HRE packets raising reviewed real parentage coverage to 179 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

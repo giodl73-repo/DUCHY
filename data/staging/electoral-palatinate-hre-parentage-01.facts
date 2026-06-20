@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Electoral Palatinate under the Holy Roman Empire.
+
+fact_id: fact-q22880-parent-q12548
+subject_id: title-q22880
+claim_kind: parentage
+span: 1085..1803
+value: title-q12548
+source_ids: src-wikidata-q22880, src-wikidata-q12548
+confidence: multi_source

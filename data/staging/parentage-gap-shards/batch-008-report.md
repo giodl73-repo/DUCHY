@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 18
+gap_rows: 17
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 6 |
-| medium_parentage_review | 12 |
+| medium_parentage_review | 11 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 6 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q771193 | Kingdom of Brittany
-
-- rank: Kingdom
-- exists: 851..939
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q779011 | Principality of Montenegro
 

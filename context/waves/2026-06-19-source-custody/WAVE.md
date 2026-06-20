@@ -90,6 +90,7 @@ records and validation.
 | 72 | Gorizia and Gradisca Austrian parentage | complete | Correct Gorizia and Gradisca to County rank and import Austrian Empire/Austria-Hungary parentage. |
 | 73 | Duchy of Urbino Papal States parentage | complete | Import Duchy of Urbino -> Papal States parentage from an accepted structured relation. |
 | 74 | Illyrian Provinces French Empire parentage | complete | Add `Province` rank support, correct Illyrian Provinces rank, and import First French Empire parentage. |
+| 75 | Electoral Palatinate HRE parentage | complete | Correct Electoral Palatinate rank to Duchy and import Holy Roman Empire parentage. |
 
 ## Success Criteria
 

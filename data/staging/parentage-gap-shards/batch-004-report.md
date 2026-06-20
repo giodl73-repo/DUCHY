@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
+| high_parentage_review | 5 |
 | medium_parentage_review | 16 |
-| root_or_successor_review | 5 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Crown | 2 |
-| Duchy | 4 |
-| Empire | 5 |
+| Duchy | 5 |
+| Empire | 4 |
 | Kingdom | 14 |
 
 ## Review Rows
@@ -155,13 +155,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q22880 | Electoral Palatinate
-
-- rank: Empire
-- exists: 1085..1803
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q230791 | Kingdom of Scotland
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1882..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q249428 | Grand Duchy of Berg
+
+- rank: Duchy
+- exists: 1806..1813
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

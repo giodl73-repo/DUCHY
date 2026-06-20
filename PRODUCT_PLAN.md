@@ -210,7 +210,10 @@ Pulses:
 75. Illyrian Provinces French Empire parentage packet. Complete for adding
     `Province` rank support, correcting Q699923 to Province, and importing
     Illyrian Provinces -> First French Empire for 1809-1815.
-76. Next reviewed parentage packet.
+76. Electoral Palatinate HRE parentage packet. Complete for correcting Q22880
+    to Duchy rank and importing Electoral Palatinate -> Holy Roman Empire for
+    1085-1803.
+77. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

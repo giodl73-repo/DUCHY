@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 11 |
-| medium_parentage_review | 8 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 9 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 10 |
+| Duchy | 9 |
 | Empire | 6 |
-| Kingdom | 8 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q249428 | Grand Duchy of Berg
-
-- rank: Duchy
-- exists: 1806..1813
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q252580 | Duchy of Modena and Reggio
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1580..1640
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q386496 | Kingdom of Montenegro
+
+- rank: Kingdom
+- exists: 1910..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

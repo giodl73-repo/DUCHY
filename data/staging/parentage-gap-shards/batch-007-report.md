@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q62567 | Kingdom of Iceland
-
-- rank: Kingdom
-- exists: 1918..1944
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q62623 | Kalmar Union
 
 - rank: Kingdom
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 500..1160
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q771193 | Kingdom of Brittany
+
+- rank: Kingdom
+- exists: 851..939
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

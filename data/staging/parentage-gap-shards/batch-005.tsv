@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q249428	Grand Duchy of Berg	Duchy	1806..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q252580	Duchy of Modena and Reggio	Duchy	1452..1859	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q2577303	Kingdom of Sardinia	Kingdom	1720..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q259511	Prince-Bishopric of Freising	Duchy	1294..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	F
 title-q3624335	Duchy of Austria	Duchy	1156..1453	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q3755547	Kingdom of Italy	Kingdom	476..493	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q377350	Iberian Union	Empire	1580..1640	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q386496	Kingdom of Montenegro	Kingdom	1910..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
