@@ -11,7 +11,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dessau; Kingdoms: Anhalt/East Francia/East Francia; Empires: East Francia/Germania/Holy Roman Empire; CK id: c_dessau
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dessau; Duchy: Anhalt; Kingdoms: East Francia/East Francia/East Francia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_dessau
 ---
 candidate_id: cand-ck3-c_devon
 source_id: src-ck3-county-c_devon
@@ -25,7 +25,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Devon; Kingdoms: Cornwall/England/England; Empires: England/Britannia/Britannia; CK id: c_devon
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Devon; Duchy: Cornwall; Kingdoms: England/England/England; Empires: Britannia/Britannia/Britannia; CK id: c_devon
 ---
 candidate_id: cand-ck3-c_dijon
 source_id: src-ck3-county-c_dijon
@@ -39,10 +39,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dijon; Kingdoms: Burgundy/France/France; Empires: France/Francia/Francia; CK id: c_dijon
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dijon; Duchy: Burgundy; Kingdoms: France/France/France; Empires: Francia/Francia/Francia; CK id: c_dijon
 ---
-candidate_id: cand-ck3-c_dithmarschen
-source_id: src-ck3-county-c_dithmarschen
+candidate_id: cand-ck3-c_ditmarschen
+source_id: src-ck3-county-c_ditmarschen
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Dithmarschen
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -53,11 +53,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dithmarschen; Kingdoms: Holstein/East Francia/East Francia; Empires: East Francia/Germania/Holy Roman Empire; CK id: c_dithmarschen
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dithmarschen; Duchy: Holstein; Kingdoms: East Francia/East Francia/East Francia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_ditmarschen
 ---
-candidate_id: cand-ck3-c_dobrzy
-source_id: src-ck3-county-c_dobrzy
-source_url: https://ck3.paradoxwikis.com/List_of_counties#Dobrzy%C3%85%C2%84
+candidate_id: cand-ck3-c_dobrzynska
+source_id: src-ck3-county-c_dobrzynska
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Dobrzy%C5%84
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -67,7 +67,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: DobrzyÅ; Kingdoms: Kuyavia/Poland/Poland; Empires: Poland/West-Slavia/West-Slavia; CK id: c_dobrzy
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dobrzyń; Duchy: Kuyavia; Kingdoms: Poland/Poland/Poland; Empires: West-Slavia/West-Slavia/West-Slavia; CK id: c_dobrzynska
 ---
 candidate_id: cand-ck3-c_dokkum
 source_id: src-ck3-county-c_dokkum
@@ -81,7 +81,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dokkum; Kingdoms: Frisia/Frisia/Frisia; Empires: Frisia/Germania/Holy Roman Empire; CK id: c_dokkum
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dokkum; Duchy: Frisia; Kingdoms: Frisia/Frisia/Frisia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_dokkum
 ---
 candidate_id: cand-ck3-c_dole
 source_id: src-ck3-county-c_dole
@@ -95,10 +95,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dole; Kingdoms: Upper Burgundy/Burgundy/Burgundy; Empires: Burgundy/Francia/Francia; CK id: c_dole
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dole; Duchy: Upper Burgundy; Kingdoms: Burgundy/Burgundy/Burgundy; Empires: Francia/Francia/Francia; CK id: c_dole
 ---
-candidate_id: cand-ck3-c_donji_kraji
-source_id: src-ck3-county-c_donji_kraji
+candidate_id: cand-ck3-c_donjikraji
+source_id: src-ck3-county-c_donjikraji
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Donji_Kraji
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -109,7 +109,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Donji Kraji; Kingdoms: Upper Bosnia/Croatia/Croatia; Empires: Croatia/Byzantine Empire/Byzantine Empire; CK id: c_donji_kraji
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Donji Kraji; Duchy: Upper Bosnia; Kingdoms: Croatia/Croatia/Croatia; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_donjikraji
 ---
 candidate_id: cand-ck3-c_dorohoi
 source_id: src-ck3-county-c_dorohoi
@@ -123,7 +123,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dorohoi; Kingdoms: Bukovina/Moldavia/Moldavia; Empires: Moldavia/Carpathia/Carpathia; CK id: c_dorohoi
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dorohoi; Duchy: Bukovina; Kingdoms: Moldavia/Moldavia/Moldavia; Empires: Carpathia/Carpathia/Carpathia; CK id: c_dorohoi
 ---
 candidate_id: cand-ck3-c_dorohychyn
 source_id: src-ck3-county-c_dorohychyn
@@ -137,7 +137,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dorohychyn; Kingdoms: Volhynia/Galicia-Volhynia/Galicia-Volhynia; Empires: Galicia-Volhynia/West-Slavia/West-Slavia; CK id: c_dorohychyn
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dorohychyn; Duchy: Volhynia; Kingdoms: Galicia-Volhynia/Galicia-Volhynia/Galicia-Volhynia; Empires: West-Slavia/West-Slavia/West-Slavia; CK id: c_dorohychyn
 ---
 candidate_id: cand-ck3-c_dorset
 source_id: src-ck3-county-c_dorset
@@ -151,7 +151,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dorset; Kingdoms: Wessex/England/England; Empires: England/Britannia/Britannia; CK id: c_dorset
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dorset; Duchy: Wessex; Kingdoms: England/England/England; Empires: Britannia/Britannia/Britannia; CK id: c_dorset
 ---
 candidate_id: cand-ck3-c_dortmund
 source_id: src-ck3-county-c_dortmund
@@ -165,7 +165,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dortmund; Kingdoms: Lower Lotharingia/Lotharingia/Lotharingia; Empires: Lotharingia/Germania/Holy Roman Empire; CK id: c_dortmund
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dortmund; Duchy: Lower Lotharingia; Kingdoms: Lotharingia/Lotharingia/Lotharingia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_dortmund
 ---
 candidate_id: cand-ck3-c_doudleby
 source_id: src-ck3-county-c_doudleby
@@ -179,7 +179,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Doudleby; Kingdoms: Bohemia/Bohemia/Bohemia; Empires: Bohemia/West-Slavia/Holy Roman Empire; CK id: c_doudleby
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Doudleby; Duchy: Bohemia; Kingdoms: Bohemia/Bohemia/Bohemia; Empires: West-Slavia/Holy Roman Empire/Holy Roman Empire; CK id: c_doudleby
 ---
 candidate_id: cand-ck3-c_dresden
 source_id: src-ck3-county-c_dresden
@@ -193,7 +193,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dresden; Kingdoms: Meissen/Sorbia/East Francia; Empires: East Francia/West-Slavia/Holy Roman Empire; CK id: c_dresden
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dresden; Duchy: Meissen; Kingdoms: Sorbia/East Francia/East Francia; Empires: West-Slavia/Holy Roman Empire/Holy Roman Empire; CK id: c_dresden
 ---
 candidate_id: cand-ck3-c_dublin
 source_id: src-ck3-county-c_dublin
@@ -207,7 +207,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dublin; Kingdoms: Meath/Ireland/Ireland; Empires: Ireland/Britannia/Britannia; CK id: c_dublin
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dublin; Duchy: Meath; Kingdoms: Ireland/Ireland/Ireland; Empires: Britannia/Britannia/Britannia; CK id: c_dublin
 ---
 candidate_id: cand-ck3-c_dubrovytsia
 source_id: src-ck3-county-c_dubrovytsia
@@ -221,7 +221,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dubrovytsia; Kingdoms: Turov/Ruthenia/Ruthenia; Empires: Ruthenia/Russia/Russia; CK id: c_dubrovytsia
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dubrovytsia; Duchy: Turov; Kingdoms: Ruthenia/Ruthenia/Ruthenia; Empires: Russia/Russia/Russia; CK id: c_dubrovytsia
 ---
 candidate_id: cand-ck3-c_duklja
 source_id: src-ck3-county-c_duklja
@@ -235,7 +235,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Duklja; Kingdoms: Duklja/Serbia/Serbia; Empires: Serbia/Byzantine Empire/Byzantine Empire; CK id: c_duklja
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Duklja; Duchy: Duklja; Kingdoms: Serbia/Serbia/Serbia; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_duklja
 ---
 candidate_id: cand-ck3-c_dunbar
 source_id: src-ck3-county-c_dunbar
@@ -249,7 +249,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dunbar; Kingdoms: Lothian/Scotland/Scotland; Empires: Scotland/Britannia/Britannia; CK id: c_dunbar
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dunbar; Duchy: Lothian; Kingdoms: Scotland/Scotland/Scotland; Empires: Britannia/Britannia/Britannia; CK id: c_dunbar
 ---
 candidate_id: cand-ck3-c_durham
 source_id: src-ck3-county-c_durham
@@ -263,11 +263,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Durham; Kingdoms: Northumbria/England/England; Empires: England/Britannia/Britannia; CK id: c_durham
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Durham; Duchy: Northumbria; Kingdoms: England/England/England; Empires: Britannia/Britannia/Britannia; CK id: c_durham
 ---
-candidate_id: cand-ck3-c_d_rn
-source_id: src-ck3-county-c_d_rn
-source_url: https://ck3.paradoxwikis.com/List_of_counties#D%C3%83%C2%BCrn
+candidate_id: cand-ck3-c_durne
+source_id: src-ck3-county-c_durne
+source_url: https://ck3.paradoxwikis.com/List_of_counties#D%C3%BCrn
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -277,7 +277,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: DÃ¼rn; Kingdoms: West Franconia/East Francia/East Francia; Empires: East Francia/Germania/Holy Roman Empire; CK id: c_d_rn
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dürn; Duchy: West Franconia; Kingdoms: East Francia/East Francia/East Francia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_durne
 ---
 candidate_id: cand-ck3-c_dvin
 source_id: src-ck3-county-c_dvin
@@ -291,10 +291,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dvin; Kingdoms: Greater Armenia/Armenia/Armenia; Empires: Armenia/Byzantine Empire/Byzantine Empire; CK id: c_dvin
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dvin; Duchy: Greater Armenia; Kingdoms: Armenia/Armenia/Armenia; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_dvin
 ---
-candidate_id: cand-ck3-c_dyfed
-source_id: src-ck3-county-c_dyfed
+candidate_id: cand-ck3-c_pembrokeshire
+source_id: src-ck3-county-c_pembrokeshire
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Dyfed
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -305,7 +305,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dyfed; Kingdoms: Deheubarth/Wales/Wales; Empires: Wales/Britannia/Britannia; CK id: c_dyfed
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dyfed; Duchy: Deheubarth; Kingdoms: Wales/Wales/Wales; Empires: Britannia/Britannia/Britannia; CK id: c_pembrokeshire
 ---
 candidate_id: cand-ck3-c_dyrrachion
 source_id: src-ck3-county-c_dyrrachion
@@ -319,7 +319,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Dyrrachion; Kingdoms: Dyrrachion/Epirus/Epirus; Empires: Epirus/Byzantine Empire/Byzantine Empire; CK id: c_dyrrachion
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Dyrrachion; Duchy: Dyrrachion; Kingdoms: Epirus/Epirus/Epirus; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_dyrrachion
 ---
 candidate_id: cand-ck3-c_east_kiilt
 source_id: src-ck3-county-c_east_kiilt
@@ -333,7 +333,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: East Kiilt; Kingdoms: GuolÃ¡dat/SÃ¡pmi/SÃ¡pmi; Empires: SÃ¡pmi/Scandinavia/Scandinavia; CK id: c_east_kiilt
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: East Kiilt; Duchy: Guoládat; Kingdoms: Sápmi/Sápmi/Sápmi; Empires: Scandinavia/Scandinavia/Scandinavia; CK id: c_east_kiilt
 ---
 candidate_id: cand-ck3-c_east_riding
 source_id: src-ck3-county-c_east_riding
@@ -347,11 +347,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: East Riding; Kingdoms: York/England/England; Empires: England/Britannia/Britannia; CK id: c_east_riding
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: East Riding; Duchy: York; Kingdoms: England/England/England; Empires: Britannia/Britannia/Britannia; CK id: c_east_riding
 ---
-candidate_id: cand-ck3-c_eichst_tt
-source_id: src-ck3-county-c_eichst_tt
-source_url: https://ck3.paradoxwikis.com/List_of_counties#Eichst%C3%83%C2%A4tt
+candidate_id: cand-ck3-c_eichstadt
+source_id: src-ck3-county-c_eichstadt
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Eichst%C3%A4tt
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -361,10 +361,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: EichstÃ¤tt; Kingdoms: Nordgau/Bavaria/Bavaria; Empires: Bavaria/Germania/Holy Roman Empire; CK id: c_eichst_tt
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Eichstätt; Duchy: Nordgau; Kingdoms: Bavaria/Bavaria/Bavaria; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_eichstadt
 ---
-candidate_id: cand-ck3-c_elfinn
-source_id: src-ck3-county-c_elfinn
+candidate_id: cand-ck3-c_raniriki
+source_id: src-ck3-county-c_raniriki
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Elfinn
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -375,7 +375,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Elfinn; Kingdoms: VÃ­kin/Norway/Norway; Empires: Norway/Scandinavia/Scandinavia; CK id: c_elfinn
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Elfinn; Duchy: Víkin; Kingdoms: Norway/Norway/Norway; Empires: Scandinavia/Scandinavia/Scandinavia; CK id: c_raniriki
 ---
 candidate_id: cand-ck3-c_elvas
 source_id: src-ck3-county-c_elvas
@@ -389,7 +389,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Elvas; Kingdoms: Beja/Badajoz/Badajoz; Empires: Portugal/Hispania/Hispania; CK id: c_elvas
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Elvas; Duchy: Beja; Kingdoms: Badajoz/Badajoz/Portugal; Empires: Hispania/Hispania/Hispania; CK id: c_elvas
 ---
 candidate_id: cand-ck3-c_ennis
 source_id: src-ck3-county-c_ennis
@@ -403,7 +403,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ennis; Kingdoms: Munster/Ireland/Ireland; Empires: Ireland/Britannia/Britannia; CK id: c_ennis
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Ennis; Duchy: Munster; Kingdoms: Ireland/Ireland/Ireland; Empires: Britannia/Britannia/Britannia; CK id: c_ennis
 ---
 candidate_id: cand-ck3-c_epeiros
 source_id: src-ck3-county-c_epeiros
@@ -417,7 +417,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Epeiros; Kingdoms: Epirus/Epirus/Epirus; Empires: Epirus/Byzantine Empire/Byzantine Empire; CK id: c_epeiros
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Epeiros; Duchy: Epirus; Kingdoms: Epirus/Epirus/Epirus; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_epeiros
 ---
 candidate_id: cand-ck3-c_erbach
 source_id: src-ck3-county-c_erbach
@@ -431,10 +431,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Erbach; Kingdoms: West Franconia/East Francia/East Francia; Empires: East Francia/Germania/Holy Roman Empire; CK id: c_erbach
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Erbach; Duchy: West Franconia; Kingdoms: East Francia/East Francia/East Francia; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_erbach
 ---
-candidate_id: cand-ck3-c_eryri
-source_id: src-ck3-county-c_eryri
+candidate_id: cand-ck3-c_caernarfonshire
+source_id: src-ck3-county-c_caernarfonshire
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Eryri
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -445,7 +445,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Eryri; Kingdoms: Gwynedd/Wales/Wales; Empires: Wales/Britannia/Britannia; CK id: c_eryri
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Eryri; Duchy: Gwynedd; Kingdoms: Wales/Wales/Wales; Empires: Britannia/Britannia/Britannia; CK id: c_caernarfonshire
 ---
 candidate_id: cand-ck3-c_eschenlohe
 source_id: src-ck3-county-c_eschenlohe
@@ -459,7 +459,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Eschenlohe; Kingdoms: Bavaria/Bavaria/Bavaria; Empires: Bavaria/Germania/Holy Roman Empire; CK id: c_eschenlohe
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Eschenlohe; Duchy: Bavaria; Kingdoms: Bavaria/Bavaria/Bavaria; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_eschenlohe
 ---
 candidate_id: cand-ck3-c_essex
 source_id: src-ck3-county-c_essex
@@ -473,7 +473,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Essex; Kingdoms: Essex/England/England; Empires: England/Britannia/Britannia; CK id: c_essex
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Essex; Duchy: Essex; Kingdoms: England/England/England; Empires: Britannia/Britannia/Britannia; CK id: c_essex
 ---
 candidate_id: cand-ck3-c_esztergom
 source_id: src-ck3-county-c_esztergom
@@ -487,7 +487,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Esztergom; Kingdoms: Visegrad/Hungary/Hungary; Empires: Hungary/Carpathia/Carpathia; CK id: c_esztergom
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Esztergom; Duchy: Visegrad; Kingdoms: Hungary/Hungary/Hungary; Empires: Carpathia/Carpathia/Carpathia; CK id: c_esztergom
 ---
 candidate_id: cand-ck3-c_eu
 source_id: src-ck3-county-c_eu
@@ -501,7 +501,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Eu; Kingdoms: Normandy/France/France; Empires: France/Francia/Francia; CK id: c_eu
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Eu; Duchy: Normandy; Kingdoms: France/France/France; Empires: Francia/Francia/Francia; CK id: c_eu
 ---
 candidate_id: cand-ck3-c_euboea
 source_id: src-ck3-county-c_euboea
@@ -515,7 +515,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Euboea; Kingdoms: Athens/Hellas/Hellas; Empires: Hellas/Byzantine Empire/Byzantine Empire; CK id: c_euboea
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Euboea; Duchy: Athens; Kingdoms: Hellas/Hellas/Hellas; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_euboea
 ---
 candidate_id: cand-ck3-c_euchaita
 source_id: src-ck3-county-c_euchaita
@@ -529,11 +529,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Euchaita; Kingdoms: Armeniac/Pontus/Pontus; Empires: Pontus/Byzantine Empire/Byzantine Empire; CK id: c_euchaita
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Euchaita; Duchy: Armeniac; Kingdoms: Pontus/Pontus/Pontus; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_euchaita
 ---
-candidate_id: cand-ck3-c_vora
-source_id: src-ck3-county-c_vora
-source_url: https://ck3.paradoxwikis.com/List_of_counties#%C3%83%C2%89vora
+candidate_id: cand-ck3-c_beja
+source_id: src-ck3-county-c_beja
+source_url: https://ck3.paradoxwikis.com/List_of_counties#%C3%89vora
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -543,11 +543,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ãvora; Kingdoms: Beja/Badajoz/Badajoz; Empires: Portugal/Hispania/Hispania; CK id: c_vora
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Évora; Duchy: Beja; Kingdoms: Badajoz/Badajoz/Portugal; Empires: Hispania/Hispania/Hispania; CK id: c_beja
 ---
-candidate_id: cand-ck3-c_vreux
-source_id: src-ck3-county-c_vreux
-source_url: https://ck3.paradoxwikis.com/List_of_counties#%C3%83%C2%89vreux
+candidate_id: cand-ck3-c_evreux
+source_id: src-ck3-county-c_evreux
+source_url: https://ck3.paradoxwikis.com/List_of_counties#%C3%89vreux
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -557,7 +557,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ãvreux; Kingdoms: Normandy/France/France; Empires: France/Francia/Francia; CK id: c_vreux
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Évreux; Duchy: Normandy; Kingdoms: France/France/France; Empires: Francia/Francia/Francia; CK id: c_evreux
 ---
 candidate_id: cand-ck3-c_eystridalir
 source_id: src-ck3-county-c_eystridalir
@@ -571,11 +571,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Eystridalir; Kingdoms: UpplÃ¶nd/Norway/Norway; Empires: Norway/Scandinavia/Scandinavia; CK id: c_eystridalir
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Eystridalir; Duchy: Upplönd; Kingdoms: Norway/Norway/Norway; Empires: Scandinavia/Scandinavia/Scandinavia; CK id: c_eystridalir
 ---
-candidate_id: cand-ck3-c_f_reyjar
-source_id: src-ck3-county-c_f_reyjar
-source_url: https://ck3.paradoxwikis.com/List_of_counties#F%C3%83%C2%A6reyjar
+candidate_id: cand-ck3-c_faereyar
+source_id: src-ck3-county-c_faereyar
+source_url: https://ck3.paradoxwikis.com/List_of_counties#F%C3%A6reyjar
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -585,7 +585,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: FÃ¦reyjar; Kingdoms: Northern Isles/Norway/Norway; Empires: Norway/Scandinavia/Scandinavia; CK id: c_f_reyjar
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Færeyjar; Duchy: Northern Isles; Kingdoms: Norway/Norway/Norway; Empires: Scandinavia/Scandinavia/Scandinavia; CK id: c_faereyar
 ---
 candidate_id: cand-ck3-c_falkenstein
 source_id: src-ck3-county-c_falkenstein
@@ -599,7 +599,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Falkenstein; Kingdoms: Bavaria/Bavaria/Bavaria; Empires: Bavaria/Germania/Holy Roman Empire; CK id: c_falkenstein
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Falkenstein; Duchy: Bavaria; Kingdoms: Bavaria/Bavaria/Bavaria; Empires: Germania/Holy Roman Empire/Holy Roman Empire; CK id: c_falkenstein
 ---
 candidate_id: cand-ck3-c_famagusta
 source_id: src-ck3-county-c_famagusta
@@ -613,7 +613,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Famagusta; Kingdoms: Cyprus/Cyprus/Cyprus; Empires: Cyprus/Byzantine Empire/Byzantine Empire; CK id: c_famagusta
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Famagusta; Duchy: Cyprus; Kingdoms: Cyprus/Cyprus/Cyprus; Empires: Byzantine Empire/Byzantine Empire/Byzantine Empire; CK id: c_famagusta
 ---
 candidate_id: cand-ck3-c_faro
 source_id: src-ck3-county-c_faro
@@ -627,11 +627,11 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Faro; Kingdoms: Algarve/Badajoz/Badajoz; Empires: Badajoz/Hispania/Hispania; CK id: c_faro
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Faro; Duchy: Algarve; Kingdoms: Badajoz/Badajoz/Badajoz; Empires: Hispania/Hispania/Hispania; CK id: c_faro
 ---
-candidate_id: cand-ck3-c_feh_r
-source_id: src-ck3-county-c_feh_r
-source_url: https://ck3.paradoxwikis.com/List_of_counties#Feh%C3%83%C2%A9r
+candidate_id: cand-ck3-c_feher
+source_id: src-ck3-county-c_feher
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Feh%C3%A9r
 status: pending
 review_batch_id: batch-ck3-counties-500
 import_scope: title_identity_only
@@ -641,10 +641,10 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: FehÃ©r; Kingdoms: Transylvania/Hungary/Hungary; Empires: Hungary/Carpathia/Carpathia; CK id: c_feh_r
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Fehér; Duchy: Transylvania; Kingdoms: Hungary/Hungary/Hungary; Empires: Carpathia/Carpathia/Carpathia; CK id: c_feher
 ---
-candidate_id: cand-ck3-c_ferlix
-source_id: src-ck3-county-c_ferlix
+candidate_id: cand-ck3-c_sir_faesyfed
+source_id: src-ck3-county-c_sir_faesyfed
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Ferlix
 status: pending
 review_batch_id: batch-ck3-counties-500
@@ -655,7 +655,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ferlix; Kingdoms: Powys/Wales/Wales; Empires: Wales/Britannia/Britannia; CK id: c_ferlix
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Ferlix; Duchy: Powys; Kingdoms: Wales/Wales/Wales; Empires: Britannia/Britannia/Britannia; CK id: c_sir_faesyfed
 ---
 candidate_id: cand-ck3-c_fermo
 source_id: src-ck3-county-c_fermo
@@ -669,7 +669,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Fermo; Kingdoms: Ancona/Romagna/Romagna; Empires: Romagna/Italia/Italia; CK id: c_fermo
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Fermo; Duchy: Ancona; Kingdoms: Romagna/Romagna/Romagna; Empires: Italia/Italia/Italia; CK id: c_fermo
 ---
 candidate_id: cand-ck3-c_ferrara
 source_id: src-ck3-county-c_ferrara
@@ -683,7 +683,7 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ferrara; Kingdoms: Romagna/Romagna/Romagna; Empires: Romagna/Italia/Italia; CK id: c_ferrara
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Ferrara; Duchy: Romagna; Kingdoms: Romagna/Romagna/Romagna; Empires: Italia/Italia/Italia; CK id: c_ferrara
 ---
 candidate_id: cand-ck3-c_fife
 source_id: src-ck3-county-c_fife
@@ -697,4 +697,4 @@ source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
 confidence_detail: unsupported
 parentage_status: candidate_available
 query_readiness: unsupported
-notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Fife; Kingdoms: Albany/Scotland/Scotland; Empires: Scotland/Britannia/Britannia; CK id: c_fife
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: Fife; Duchy: Albany; Kingdoms: Scotland/Scotland/Scotland; Empires: Britannia/Britannia/Britannia; CK id: c_fife
