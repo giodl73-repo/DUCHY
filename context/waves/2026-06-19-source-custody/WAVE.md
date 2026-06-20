@@ -64,6 +64,7 @@ records and validation.
 | 46 | CK3 Europe county discovery queue | complete | Stage 500 pending Europe-bucket CK3 county candidates as search leads, with no fact promotion. |
 | 47 | CK3 batch 001 source-resolution leads | complete | Query Wikidata for the first 50 CK3 county candidates and preserve exact/fuzzy/no-result leads for manual review. |
 | 48 | CK3 batch 001 reviewed source-resolution packet | complete | Promote 7 reviewed Wikidata source records from the first CK3 research shard, with no fact promotion. |
+| 49 | CK3 batch 001 first title fact packet | complete | Promote Abaúj county name, rank, and existence facts from an accepted source-resolution record. |
 
 ## Success Criteria
 

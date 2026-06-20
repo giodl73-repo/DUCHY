@@ -70,6 +70,14 @@ cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-001-s
 cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-001-source-resolution-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-source-resolution.sources data/staging/ck3-batch-001-source-resolution.facts
 ```
 
+The first title-fact packet promotes only rows whose source-resolution record
+has clean structured title claims:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-001-title-facts-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-title-facts.sources data/staging/ck3-batch-001-title-facts.facts
+cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-001-title-facts-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-title-facts.sources data/staging/ck3-batch-001-title-facts.facts
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.

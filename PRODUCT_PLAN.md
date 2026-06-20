@@ -139,7 +139,10 @@ Pulses:
 49. CK3 batch 001 reviewed source-resolution packet. Complete for 7 reviewed
     Wikidata source records promoted from the first CK3 research shard, with
     facts explicitly deferred.
-50. Next reviewed parentage packet.
+50. CK3 batch 001 first title fact packet. Complete for Abaúj county
+    source-backed name, county rank, and 1201-1881 existence span from the
+    reviewed Wikidata source record.
+51. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
