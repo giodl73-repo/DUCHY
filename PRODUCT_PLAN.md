@@ -219,7 +219,9 @@ Pulses:
 78. Burgraviate of Nuremberg HRE parentage packet. Complete for correcting
     Q568473 to County rank and importing Burgraviate of Nuremberg -> Holy Roman
     Empire for 1105-1440.
-79. Next reviewed parentage packet.
+79. Courland Commonwealth parentage packet. Complete for importing Duchy of
+    Courland and Semigallia -> Polish-Lithuanian Commonwealth for 1569-1795.
+80. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

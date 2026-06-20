@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 16 |
-| medium_parentage_review | 7 |
+| high_parentage_review | 17 |
+| medium_parentage_review | 6 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Duchy | 13 |
+| Duchy | 14 |
 | Empire | 2 |
-| Kingdom | 7 |
+| Kingdom | 6 |
 
 ## Review Rows
-
-### title-q633573 | Kingdom of Rheged
-
-- rank: Kingdom
-- exists: 500..650
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q641138 | Duchy of Cleves
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 401..1216
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q825902 | Polish-Lithuanian union
+
+- rank: Duchy
+- exists: 1385..1569
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

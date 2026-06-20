@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 338
-facts: 1162
+facts: 1163
 titles: 327
-parentage_facts: 181
-titles_with_parentage: 137
-titles_without_parentage: 190
+parentage_facts: 182
+titles_with_parentage: 138
+titles_without_parentage: 189
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 190
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 136 | 88 | 48 |
+| Duchy | 136 | 89 | 47 |
 | Empire | 35 | 0 | 35 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 120 | 30 | 90 |
@@ -59,7 +59,6 @@ titles_without_parentage: 190
 - title-q1541699 | County of Empuries | County | 812..1402
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
 - title-q154849 | Grand Duchy of Tuscany | Duchy | 1569..1860
-- title-q156038 | Duchy of Courland and Semigallia | Duchy | 1561..1795
 - title-q157109 | Burgundian Netherlands | Duchy | 1384..1482
 - title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
 - title-q160440 | Crimean Khanate | Empire | 1441..1783

@@ -107,13 +107,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q156038 | Duchy of Courland and Semigallia
-
-- rank: Duchy
-- exists: 1561..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q157109 | Burgundian Netherlands
 
 - rank: Duchy
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 754..1870
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q170770 | Grand Principality of Moscow
+
+- rank: Duchy
+- exists: 1263..1478
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

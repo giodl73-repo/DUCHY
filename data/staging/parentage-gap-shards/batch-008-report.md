@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 15
+gap_rows: 14
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
+| high_parentage_review | 4 |
 | medium_parentage_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 5 |
+| Duchy | 4 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q825902 | Polish-Lithuanian union
-
-- rank: Duchy
-- exists: 1385..1569
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q83546 | Grand Principality of Vladimir
 

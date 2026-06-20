@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 8 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 5 |
+| medium_parentage_review | 13 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 5 |
 | Duchy | 3 |
-| Empire | 5 |
-| Kingdom | 12 |
+| Empire | 4 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q4208290 | Kazikumukh Khanate
-
-- rank: Empire
-- exists: 1642..1860
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q43287 | German Empire
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1536..1814
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q633573 | Kingdom of Rheged
+
+- rank: Kingdom
+- exists: 500..650
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
