@@ -4357,3 +4357,17 @@ notes: Parentage gap shard 001 candidate parent; Wikidata lead Crown of Castile 
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for parentage-gap shard 001: label, composite crown rank, inception, dissolution, and relation bridge to accepted Kingdom of Murcia only. Previously scope-deferred in the broad 500-source queue; reopened because it is a reviewed parent candidate for an accepted title gap.
+---
+# Reviewed parentage-gap shard 001 source record.
+
+source_id: src-wikidata-q204920
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q204920
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Parentage gap shard 001 candidate parent; Wikidata lead Crown of Aragon (Q204920), composite monarchy with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for parentage-gap shard 001: label, composite crown rank, inception, dissolution, and relation bridge to accepted County of Barcelona only. Previously scope-deferred in the broad 500-source queue; reopened because composite Crown rank is now materialized and it is a reviewed parent candidate for an accepted county gap.

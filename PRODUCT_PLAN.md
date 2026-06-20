@@ -181,7 +181,9 @@ Pulses:
 64. Composite crown parentage packet. Complete for a `Crown` rank between
     kingdom and empire, plus the reviewed Kingdom of Murcia -> Crown of Castile
     parentage bridge from parentage-gap shard 001.
-65. Next reviewed parentage packet.
+65. Crown of Aragon parentage packet. Complete for a reviewed County of
+    Barcelona -> Crown of Aragon bridge from parentage-gap shard 001.
+66. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

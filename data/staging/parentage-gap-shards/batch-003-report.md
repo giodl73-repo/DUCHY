@@ -7,26 +7,19 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 6 |
+| Duchy | 5 |
 | Empire | 6 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q165040 | Duchy of Parma and Piacenza
-
-- rank: Duchy
-- exists: 1545..1859
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q165154 | Kingdom of Sardinia
 
@@ -193,6 +186,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q188586 | Kingdom of Sicily
+
+- rank: Kingdom
+- exists: 1130..1816
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

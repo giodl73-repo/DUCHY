@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q188586	Kingdom of Sicily	Kingdom	1130..1816	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q19083	Kingdom of Iberia	Kingdom	-299..580	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q191077	Kingdom of Yugoslavia	Kingdom	1929..1945	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q191484	Old Great Bulgaria	Empire	632..668	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -13,6 +12,7 @@ title-q200464	Portuguese Empire	Empire	1415..1999	0	root_or_successor_review	May
 title-q203493	Kingdom of Romania	Kingdom	1881..1947	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q203817	First Bulgarian Empire	Empire	681..1018	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2042616	Chalkidian League	Empire	-432..-348	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q204920	Crown of Aragon	Crown	1162..1715	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q2090473	Khazar Khaganate	Empire	650..969	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q209065	Kingdom of Greece	Kingdom	1832..1973	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q212278	Kingdom of Holland	Kingdom	1806..1810	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

@@ -15,7 +15,6 @@ title-q11750128	Kingdom of Poland	Kingdom	1830..1831	0	medium_parentage_review	F
 title-q1209822	Kingdom of Kakheti	Kingdom	1465..1762	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q1231403	Prince-Bishopric of Trent	Duchy	1027..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q1232887	County of Savoy	County	1003..1416	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
-title-q1233672	County of Barcelona	County	801..1164	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q1241847	Judicate of Arborea	Kingdom	800..1420	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q12544	Byzantine Empire	Empire	395..1453	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q12548	Holy Roman Empire	Empire	962..1806	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -88,6 +87,7 @@ title-q200464	Portuguese Empire	Empire	1415..1999	0	root_or_successor_review	May
 title-q203493	Kingdom of Romania	Kingdom	1881..1947	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q203817	First Bulgarian Empire	Empire	681..1018	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2042616	Chalkidian League	Empire	-432..-348	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q204920	Crown of Aragon	Crown	1162..1715	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q2090473	Khazar Khaganate	Empire	650..969	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q209065	Kingdom of Greece	Kingdom	1832..1973	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q212278	Kingdom of Holland	Kingdom	1806..1810	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

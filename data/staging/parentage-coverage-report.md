@@ -1,18 +1,18 @@
 # DUCHY Parentage Coverage Report
 
-sources: 335
-facts: 1128
-titles: 324
-parentage_facts: 156
-titles_with_parentage: 113
+sources: 336
+facts: 1132
+titles: 325
+parentage_facts: 157
+titles_with_parentage: 114
 titles_without_parentage: 211
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 28 | 13 | 15 |
-| Crown | 1 | 0 | 1 |
+| County | 28 | 14 | 14 |
+| Crown | 2 | 0 | 2 |
 | Duchy | 136 | 83 | 53 |
 | Empire | 39 | 0 | 39 |
 | Kingdom | 120 | 17 | 103 |
@@ -35,7 +35,6 @@ titles_without_parentage: 211
 - title-q1209822 | Kingdom of Kakheti | Kingdom | 1465..1762
 - title-q1231403 | Prince-Bishopric of Trent | Duchy | 1027..1803
 - title-q1232887 | County of Savoy | County | 1003..1416
-- title-q1233672 | County of Barcelona | County | 801..1164
 - title-q1241847 | Judicate of Arborea | Kingdom | 800..1420
 - title-q12544 | Byzantine Empire | Empire | 395..1453
 - title-q12548 | Holy Roman Empire | Empire | 962..1806
@@ -108,6 +107,7 @@ titles_without_parentage: 211
 - title-q203493 | Kingdom of Romania | Kingdom | 1881..1947
 - title-q203817 | First Bulgarian Empire | Empire | 681..1018
 - title-q2042616 | Chalkidian League | Empire | -432..-348
+- title-q204920 | Crown of Aragon | Crown | 1162..1715
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q212278 | Kingdom of Holland | Kingdom | 1806..1810

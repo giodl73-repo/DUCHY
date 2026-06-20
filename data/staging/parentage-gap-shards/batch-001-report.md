@@ -7,18 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 3 |
+| County | 2 |
 | Duchy | 3 |
 | Empire | 6 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -134,13 +134,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 
-### title-q1233672 | County of Barcelona
-
-- rank: County
-- exists: 801..1164
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q1241847 | Judicate of Arborea
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1561..1621
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q13590051 | Kingdom of the Burgundians
+
+- rank: Kingdom
+- exists: 411..534
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

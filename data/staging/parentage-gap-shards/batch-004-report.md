@@ -16,19 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Crown | 1 |
+| Crown | 2 |
 | Duchy | 4 |
 | Empire | 6 |
-| Kingdom | 13 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q188586 | Kingdom of Sicily
-
-- rank: Kingdom
-- exists: 1130..1816
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q19083 | Kingdom of Iberia
 
@@ -120,6 +113,13 @@ gap_rows: 25
 - exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q204920 | Crown of Aragon
+
+- rank: Crown
+- exists: 1162..1715
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2090473 | Khazar Khaganate
 

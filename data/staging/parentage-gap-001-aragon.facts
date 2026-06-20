@@ -1,0 +1,31 @@
+# Title and parentage facts from parentage-gap shard 001 review.
+
+fact_id: fact-q204920-name
+subject_id: title-q204920
+claim_kind: name
+value: Crown of Aragon
+source_ids: src-wikidata-q204920
+confidence: single_source
+---
+fact_id: fact-q204920-rank
+subject_id: title-q204920
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q204920
+confidence: single_source
+---
+fact_id: fact-q204920-exists
+subject_id: title-q204920
+claim_kind: title_exists
+span: 1162..1715
+value: exists
+source_ids: src-wikidata-q204920
+confidence: single_source
+---
+fact_id: fact-q1233672-parent-q204920
+subject_id: title-q1233672
+claim_kind: parentage
+span: 1162..1164
+value: title-q204920
+source_ids: src-wikidata-q1233672, src-wikidata-q204920
+confidence: multi_source

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 5 |
+| Duchy | 6 |
 | Empire | 4 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q13590051 | Kingdom of the Burgundians
-
-- rank: Kingdom
-- exists: 411..534
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q142417 | Kingdom of Valencia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1386..1569
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q165040 | Duchy of Parma and Piacenza
+
+- rank: Duchy
+- exists: 1545..1859
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 
