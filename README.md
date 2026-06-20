@@ -48,9 +48,8 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The first accepted imports are minimal Wikidata structured claims for
-  Q158445, Q20135, Q43287, Q27306, Q153015, Q151624, Q150981, Q154195,
-  Q159631, Q186320, Q164079, Q693669, and Q326029.
+  The accepted fixture catalog now contains 50 reviewed Wikidata structured
+  claim sources.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -70,8 +69,9 @@ Q151624, Q150981, Q154195, and Q159631, giving the reviewed mini-catalog
 kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
-The Oldenburg and Brunswick packet extends the accepted fixture set to 13
-reviewed sources and 63 reviewed facts.
+The mass title packet extends the accepted fixture set to 50 reviewed sources
+and 174 reviewed facts. It adds title identity, rank, and existence facts only;
+new parentage for that larger set remains a separate review step.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

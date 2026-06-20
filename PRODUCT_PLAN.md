@@ -97,7 +97,9 @@ Pulses:
 33. Oldenburg and Brunswick import. Complete for Q693669 Grand Duchy of
     Oldenburg and Q326029 Duchy of Brunswick source-backed title facts and
     parentage spans.
-34. Next reviewed import packet.
+34. Mass title source scale-up. Complete for 37 additional reviewed Wikidata
+    title sources, bringing the accepted source catalog to 50.
+35. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

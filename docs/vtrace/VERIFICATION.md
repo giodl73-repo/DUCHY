@@ -82,12 +82,13 @@ git diff --check
 | EVID-039 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-30.md` | Reviewed German bridge packet imports confederation-era parentage spans into accepted fixtures. | pass on 2026-06-20 |
 | EVID-040 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-31.md` | Reviewed Baden and Hanover packet imports title facts and parentage spans into accepted fixtures. | pass on 2026-06-20 |
 | EVID-041 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-32.md` | Reviewed Oldenburg and Brunswick packet imports title facts and parentage spans into accepted fixtures. | pass on 2026-06-20 |
+| EVID-042 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-33.md` | Reviewed mass title packet imports 37 additional title sources and reaches 50 accepted sources. | pass on 2026-06-20 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
 | Contested and split transfer query semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Fact-level contested packets exist; query-level contested answers remain deferred. |
-| Only thirteen concrete source records have passed the gate. | Historical import is real but intentionally small. | Expand through reviewed source packets only. |
+| Fifty concrete source records have passed the gate, but most source-backed titles still have no reviewed parentage. | Historical identity coverage is broader than hierarchy coverage. | Expand parentage through reviewed relation packets only. |
 | No real contested historical fixture has passed review yet. | The contested packet is proven with synthetic alternatives only. | Add real contested claims only through reviewed source packets. |
-| Only twenty-four real parentage fixtures have passed review. | Source-backed title paths remain sparse and incomplete. | Expand parentage only through reviewed source packets. |
+| Only twenty-four real parentage fixtures have passed review. | Source-backed title paths remain sparse relative to the 50-source title catalog. | Expand parentage only through reviewed source packets. |

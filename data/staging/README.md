@@ -57,6 +57,7 @@ Reviewed real packets can also be staged before fixture promotion:
 cargo run --bin duchy-promote -- --dry-run --report data/staging/german-bridge-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/german-bridge.sources data/staging/german-bridge.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/baden-hanover-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/baden-hanover.sources data/staging/baden-hanover.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/oldenburg-brunswick-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/oldenburg-brunswick.sources data/staging/oldenburg-brunswick.facts
+cargo run --bin duchy-promote -- --dry-run --report data/staging/mass-title-50-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/mass-title-50.sources data/staging/mass-title-50.facts
 ```
 
 Add `--report path/to/report.md` after the mode to produce a review artifact:
