@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 336
-facts: 1145
+facts: 1146
 titles: 325
-parentage_facts: 170
-titles_with_parentage: 127
-titles_without_parentage: 198
+parentage_facts: 171
+titles_with_parentage: 128
+titles_without_parentage: 197
 
 ## Coverage By Rank
 
@@ -15,7 +15,7 @@ titles_without_parentage: 198
 | Crown | 3 | 0 | 3 |
 | Duchy | 135 | 85 | 50 |
 | Empire | 39 | 0 | 39 |
-| Kingdom | 120 | 28 | 92 |
+| Kingdom | 120 | 29 | 91 |
 
 ## Titles Without Parentage
 
@@ -212,7 +212,6 @@ titles_without_parentage: 198
 - title-q858841 | Kingdom of Croatia | Kingdom | 925..1102
 - title-q870517 | Odrysian kingdom | Kingdom | -460..46
 - title-q87791 | Frisian Kingdom | Kingdom | 500..734
-- title-q8890160 | Kingdom of Poland | Kingdom | 1025..1569
 - title-q905131 | Kingdom of Breifne | Kingdom | 700..1256
 - title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045
 - title-q956451 | Kingdom of Dyfed | Kingdom | 410..920

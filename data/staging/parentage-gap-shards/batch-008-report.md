@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 23
+gap_rows: 22
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 7 |
-| medium_parentage_review | 15 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 23
 | County | 1 |
 | Duchy | 6 |
 | Empire | 1 |
-| Kingdom | 15 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -145,13 +145,6 @@ gap_rows: 23
 
 - rank: Kingdom
 - exists: 500..734
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q8890160 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1025..1569
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

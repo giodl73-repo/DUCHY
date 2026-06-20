@@ -192,7 +192,9 @@ Pulses:
 68. Commonwealth children parentage packet. Complete for Crown of the Kingdom
     of Poland and Grand Duchy of Lithuania under Polish-Lithuanian
     Commonwealth for 1569-1795.
-69. Next reviewed parentage packet.
+69. Commonwealth boundary parentage packet. Complete for the year-granular
+    Kingdom of Poland -> Polish-Lithuanian Commonwealth transition in 1569.
+70. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

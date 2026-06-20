@@ -8860,3 +8860,13 @@ span: 1569..1795
 value: title-q172107
 source_ids: src-wikidata-q49683, src-wikidata-q172107
 confidence: multi_source
+---
+# Reviewed boundary-year parentage packet for Kingdom of Poland under Polish-Lithuanian Commonwealth.
+
+fact_id: fact-q8890160-parent-q172107
+subject_id: title-q8890160
+claim_kind: parentage
+span: 1569..1569
+value: title-q172107
+source_ids: src-wikidata-q8890160, src-wikidata-q172107
+confidence: multi_source
