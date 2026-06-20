@@ -4,7 +4,7 @@
 candidate_id: cand-q389688
 source_id: src-wikidata-q389688
 source_url: https://www.wikidata.org/wiki/Q389688
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -60,7 +60,7 @@ notes: Candidate label: Alba Longa; description: ancient city of Latium in centr
 candidate_id: cand-q1048340
 source_id: src-wikidata-q1048340
 source_url: https://www.wikidata.org/wiki/Q1048340
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -88,7 +88,7 @@ notes: Candidate label: Albanian Republic; description: 1925-1928 sovereign stat
 candidate_id: cand-q199688
 source_id: src-wikidata-q199688
 source_url: https://www.wikidata.org/wiki/Q199688
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -130,7 +130,7 @@ notes: Candidate label: Anglo-Saxon England; description: historical land roughl
 candidate_id: cand-q278874
 source_id: src-wikidata-q278874
 source_url: https://www.wikidata.org/wiki/Q278874
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -144,7 +144,7 @@ notes: Candidate label: Anhalt-Dessau; description: principality of the Holy Rom
 candidate_id: cand-q264970
 source_id: src-wikidata-q264970
 source_url: https://www.wikidata.org/wiki/Q264970
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -158,7 +158,7 @@ notes: Candidate label: Anhalt-Köthen; description: principality of the Holy Ro
 candidate_id: cand-q3181749
 source_id: src-wikidata-q3181749
 source_url: https://www.wikidata.org/wiki/Q3181749
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -200,7 +200,7 @@ notes: Candidate label: Archbishopric of Riga; description: since 1186 to 1561, 
 candidate_id: cand-q699964
 source_id: src-wikidata-q699964
 source_url: https://www.wikidata.org/wiki/Q699964
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -228,7 +228,7 @@ notes: Candidate label: Austrasia; description: Medieval European territory; art
 candidate_id: cand-q131964
 source_id: src-wikidata-q131964
 source_url: https://www.wikidata.org/wiki/Q131964
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -270,7 +270,7 @@ notes: Candidate label: Austrian Netherlands; description: major part of the Sou
 candidate_id: cand-q28513
 source_id: src-wikidata-q28513
 source_url: https://www.wikidata.org/wiki/Q28513
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -396,7 +396,7 @@ notes: Candidate label: Batavian Republic; description: republic of the Netherla
 candidate_id: cand-q552033
 source_id: src-wikidata-q552033
 source_url: https://www.wikidata.org/wiki/Q552033
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -466,7 +466,7 @@ notes: Candidate label: Bosnia (early medieval); description: Bosnian state in t
 candidate_id: cand-q321371
 source_id: src-wikidata-q321371
 source_url: https://www.wikidata.org/wiki/Q321371
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -522,7 +522,7 @@ notes: Candidate label: Brittany; description: cultural area located in northwes
 candidate_id: cand-q556263
 source_id: src-wikidata-q556263
 source_url: https://www.wikidata.org/wiki/Q556263
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -536,7 +536,7 @@ notes: Candidate label: Brunswick-Lüneburg; description: former principality of
 candidate_id: cand-q830084
 source_id: src-wikidata-q830084
 source_url: https://www.wikidata.org/wiki/Q830084
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -550,7 +550,7 @@ notes: Candidate label: Brunswick-Wolfenbüttel; description: section of the Duc
 candidate_id: cand-q568473
 source_id: src-wikidata-q568473
 source_url: https://www.wikidata.org/wiki/Q568473
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -564,7 +564,7 @@ notes: Candidate label: Burgraviate of Nuremberg; description: state of the Holy
 candidate_id: cand-q157109
 source_id: src-wikidata-q157109
 source_url: https://www.wikidata.org/wiki/Q157109
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -606,7 +606,7 @@ notes: Candidate label: Byelorussian Soviet Socialist Republic; description: one
 candidate_id: cand-q12544
 source_id: src-wikidata-q12544
 source_url: https://www.wikidata.org/wiki/Q12544
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -634,7 +634,7 @@ notes: Candidate label: Calchfynydd; description: former country; article: https
 candidate_id: cand-q171740
 source_id: src-wikidata-q171740
 source_url: https://www.wikidata.org/wiki/Q171740
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -662,7 +662,7 @@ notes: Candidate label: Carantania; description: former country; article: https:
 candidate_id: cand-q31929
 source_id: src-wikidata-q31929
 source_url: https://www.wikidata.org/wiki/Q31929
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal

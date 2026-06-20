@@ -2,25 +2,13 @@
 
 source_manifest: data\staging\candidates-500.manifest
 candidates: 450
-pending: 450
+pending: 432
 reviewed: 0
-promoted: 0
+promoted: 18
 rejected: 0
 
 ## Pending
 
-- candidate_id: cand-q389688
-  source_id: src-wikidata-q389688
-  source_url: https://www.wikidata.org/wiki/Q389688
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Achaemenid Empire; description: Iranian (Persian) empire (550–330 BC); article: https://en.wikipedia.org/wiki/Achaemenid_Empire
 - candidate_id: cand-q207600
   source_id: src-wikidata-q207600
   source_url: https://www.wikidata.org/wiki/Q207600
@@ -57,18 +45,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Alba Longa; description: ancient city of Latium in central Italy; article: https://en.wikipedia.org/wiki/Alba_Longa
-- candidate_id: cand-q1048340
-  source_id: src-wikidata-q1048340
-  source_url: https://www.wikidata.org/wiki/Q1048340
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Albanian Kingdom; description: period in 20th century Albanian history; article: https://en.wikipedia.org/wiki/Albanian_Kingdom_(1928%E2%80%931939)
 - candidate_id: cand-q1923781
   source_id: src-wikidata-q1923781
   source_url: https://www.wikidata.org/wiki/Q1923781
@@ -81,18 +57,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Albanian Republic; description: 1925-1928 sovereign state in Europe, predecessor of modern Albania; article: https://en.wikipedia.org/wiki/Albanian_Republic_(1925%E2%80%931928)
-- candidate_id: cand-q199688
-  source_id: src-wikidata-q199688
-  source_url: https://www.wikidata.org/wiki/Q199688
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Almohad Caliphate; description: 1121–1269 Berber empire in North Africa and Iberia; article: https://en.wikipedia.org/wiki/Almohad_Caliphate
 - candidate_id: cand-q1463691
   source_id: src-wikidata-q1463691
   source_url: https://www.wikidata.org/wiki/Q1463691
@@ -117,42 +81,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Anglo-Saxon England; description: historical land roughly corresponding to present-day England; article: https://en.wikipedia.org/wiki/History_of_Anglo-Saxon_England
-- candidate_id: cand-q278874
-  source_id: src-wikidata-q278874
-  source_url: https://www.wikidata.org/wiki/Q278874
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Anhalt-Dessau; description: principality of the Holy Roman Empire and later a duchy of the German Confederation; article: https://en.wikipedia.org/wiki/Anhalt-Dessau
-- candidate_id: cand-q264970
-  source_id: src-wikidata-q264970
-  source_url: https://www.wikidata.org/wiki/Q264970
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: principality
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Anhalt-Köthen; description: principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Anhalt-K%C3%B6then
-- candidate_id: cand-q3181749
-  source_id: src-wikidata-q3181749
-  source_url: https://www.wikidata.org/wiki/Q3181749
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Arab Caliphate; description: Caliphate established by Arab people, 632–1258; article: https://en.wikipedia.org/wiki/Arab_Caliphate
 - candidate_id: cand-q636389
   source_id: src-wikidata-q636389
   source_url: https://www.wikidata.org/wiki/Q636389
@@ -177,18 +105,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Archbishopric of Riga; description: since 1186 to 1561, medieval archdiocese in Livonian confederation; article: https://en.wikipedia.org/wiki/Archbishopric_of_Riga
-- candidate_id: cand-q699964
-  source_id: src-wikidata-q699964
-  source_url: https://www.wikidata.org/wiki/Q699964
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Archduchy of Austria; description: fief of the Holy Roman Empire, 1453–1806; article: https://en.wikipedia.org/wiki/Archduchy_of_Austria
 - candidate_id: cand-q105098
   source_id: src-wikidata-q105098
   source_url: https://www.wikidata.org/wiki/Q105098
@@ -201,18 +117,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Austrasia; description: Medieval European territory; article: https://en.wikipedia.org/wiki/Austrasia
-- candidate_id: cand-q131964
-  source_id: src-wikidata-q131964
-  source_url: https://www.wikidata.org/wiki/Q131964
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Austrian Empire; description: Central European multinational Empire from 1804 to 1867; article: https://en.wikipedia.org/wiki/Austrian_Empire
 - candidate_id: cand-q306696
   source_id: src-wikidata-q306696
   source_url: https://www.wikidata.org/wiki/Q306696
@@ -237,18 +141,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Austrian Netherlands; description: major part of the Southern Netherlands region between 1714 and 1797; article: https://en.wikipedia.org/wiki/Austrian_Netherlands
-- candidate_id: cand-q28513
-  source_id: src-wikidata-q28513
-  source_url: https://www.wikidata.org/wiki/Q28513
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Austria–Hungary; description: 1867–1918 empire in Central Europe; article: https://en.wikipedia.org/wiki/Austria-Hungary
 - candidate_id: cand-q1028133
   source_id: src-wikidata-q1028133
   source_url: https://www.wikidata.org/wiki/Q1028133
@@ -345,18 +237,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Batavian Republic; description: republic of the Netherlands in Western Europe between 1795–1806; article: https://en.wikipedia.org/wiki/Batavian_Republic
-- candidate_id: cand-q552033
-  source_id: src-wikidata-q552033
-  source_url: https://www.wikidata.org/wiki/Q552033
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Bavaria-Munich; description: duchy part of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Bavaria-Munich
 - candidate_id: cand-q58738
   source_id: src-wikidata-q58738
   source_url: https://www.wikidata.org/wiki/Q58738
@@ -405,18 +285,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Bosnia (early medieval); description: Bosnian state in the Early Middle Ages; article: https://en.wikipedia.org/wiki/Bosnia_(early_medieval)
-- candidate_id: cand-q321371
-  source_id: src-wikidata-q321371
-  source_url: https://www.wikidata.org/wiki/Q321371
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Bosporan Kingdom; description: Greco-Scythian state near Sea of Azov (c.438 BC–c.527 AD); article: https://en.wikipedia.org/wiki/Bosporan_Kingdom
 - candidate_id: cand-q207162
   source_id: src-wikidata-q207162
   source_url: https://www.wikidata.org/wiki/Q207162
@@ -453,54 +321,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Brittany; description: cultural area located in northwestern France; article: https://en.wikipedia.org/wiki/Brittany
-- candidate_id: cand-q556263
-  source_id: src-wikidata-q556263
-  source_url: https://www.wikidata.org/wiki/Q556263
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: principality
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Brunswick-Lüneburg; description: former principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Brunswick-L%C3%BCneburg
-- candidate_id: cand-q830084
-  source_id: src-wikidata-q830084
-  source_url: https://www.wikidata.org/wiki/Q830084
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Brunswick-Wolfenbüttel; description: section of the Duchy of Brunswick-Lunenburg; article: https://en.wikipedia.org/wiki/Principality_of_Brunswick-Wolfenb%C3%BCttel
-- candidate_id: cand-q568473
-  source_id: src-wikidata-q568473
-  source_url: https://www.wikidata.org/wiki/Q568473
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Burgraviate of Nuremberg; description: state of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Burgraviate_of_Nuremberg
-- candidate_id: cand-q157109
-  source_id: src-wikidata-q157109
-  source_url: https://www.wikidata.org/wiki/Q157109
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Burgundian Netherlands; description: portion of the Low Countries ruled by the Dukes of Burgundy in the period from 1384 to 1482; article: https://en.wikipedia.org/wiki/Burgundian_Netherlands
 - candidate_id: cand-q7882199
   source_id: src-wikidata-q7882199
   source_url: https://www.wikidata.org/wiki/Q7882199
@@ -525,18 +345,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Byelorussian Soviet Socialist Republic; description: one of fifteen constituent republics of the Soviet Union (USSR); founding member of the United Nations Organization in 1945; now Belarus; article: https://en.wikipedia.org/wiki/Byelorussian_Soviet_Socialist_Republic
-- candidate_id: cand-q12544
-  source_id: src-wikidata-q12544
-  source_url: https://www.wikidata.org/wiki/Q12544
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Byzantine Empire; description: Roman Empire during Late Antiquity and the Middle Ages; article: https://en.wikipedia.org/wiki/Byzantine_Empire
 - candidate_id: cand-q1079109
   source_id: src-wikidata-q1079109
   source_url: https://www.wikidata.org/wiki/Q1079109
@@ -549,18 +357,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Calchfynydd; description: former country; article: https://en.wikipedia.org/wiki/Calchfynydd
-- candidate_id: cand-q171740
-  source_id: src-wikidata-q171740
-  source_url: https://www.wikidata.org/wiki/Q171740
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Caliphate of Córdoba; description: state in Islamic Iberia (929–1031); article: https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba
 - candidate_id: cand-q501754
   source_id: src-wikidata-q501754
   source_url: https://www.wikidata.org/wiki/Q501754
@@ -573,18 +369,6 @@ rejected: 0
   parentage_status: none_reviewed
   query_readiness: unsupported
   notes: Candidate label: Carantania; description: former country; article: https://en.wikipedia.org/wiki/Carantania
-- candidate_id: cand-q31929
-  source_id: src-wikidata-q31929
-  source_url: https://www.wikidata.org/wiki/Q31929
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: empire
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Carolingian Empire; description: 800–843 final stage in the history of the early medieval realm of the Franks, ruled by the Carolingian dynasty; article: https://en.wikipedia.org/wiki/Carolingian_Empire
 - candidate_id: cand-q950644
   source_id: src-wikidata-q950644
   source_url: https://www.wikidata.org/wiki/Q950644
@@ -5416,7 +5200,222 @@ none
 
 ## Promoted
 
-none
+- candidate_id: cand-q389688
+  source_id: src-wikidata-q389688
+  source_url: https://www.wikidata.org/wiki/Q389688
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Achaemenid Empire; description: Iranian (Persian) empire (550–330 BC); article: https://en.wikipedia.org/wiki/Achaemenid_Empire
+- candidate_id: cand-q1048340
+  source_id: src-wikidata-q1048340
+  source_url: https://www.wikidata.org/wiki/Q1048340
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Albanian Kingdom; description: period in 20th century Albanian history; article: https://en.wikipedia.org/wiki/Albanian_Kingdom_(1928%E2%80%931939)
+- candidate_id: cand-q199688
+  source_id: src-wikidata-q199688
+  source_url: https://www.wikidata.org/wiki/Q199688
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Almohad Caliphate; description: 1121–1269 Berber empire in North Africa and Iberia; article: https://en.wikipedia.org/wiki/Almohad_Caliphate
+- candidate_id: cand-q278874
+  source_id: src-wikidata-q278874
+  source_url: https://www.wikidata.org/wiki/Q278874
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Anhalt-Dessau; description: principality of the Holy Roman Empire and later a duchy of the German Confederation; article: https://en.wikipedia.org/wiki/Anhalt-Dessau
+- candidate_id: cand-q264970
+  source_id: src-wikidata-q264970
+  source_url: https://www.wikidata.org/wiki/Q264970
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: principality
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Anhalt-Köthen; description: principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Anhalt-K%C3%B6then
+- candidate_id: cand-q3181749
+  source_id: src-wikidata-q3181749
+  source_url: https://www.wikidata.org/wiki/Q3181749
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Arab Caliphate; description: Caliphate established by Arab people, 632–1258; article: https://en.wikipedia.org/wiki/Arab_Caliphate
+- candidate_id: cand-q699964
+  source_id: src-wikidata-q699964
+  source_url: https://www.wikidata.org/wiki/Q699964
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Archduchy of Austria; description: fief of the Holy Roman Empire, 1453–1806; article: https://en.wikipedia.org/wiki/Archduchy_of_Austria
+- candidate_id: cand-q131964
+  source_id: src-wikidata-q131964
+  source_url: https://www.wikidata.org/wiki/Q131964
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Austrian Empire; description: Central European multinational Empire from 1804 to 1867; article: https://en.wikipedia.org/wiki/Austrian_Empire
+- candidate_id: cand-q28513
+  source_id: src-wikidata-q28513
+  source_url: https://www.wikidata.org/wiki/Q28513
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Austria–Hungary; description: 1867–1918 empire in Central Europe; article: https://en.wikipedia.org/wiki/Austria-Hungary
+- candidate_id: cand-q552033
+  source_id: src-wikidata-q552033
+  source_url: https://www.wikidata.org/wiki/Q552033
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Bavaria-Munich; description: duchy part of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Bavaria-Munich
+- candidate_id: cand-q321371
+  source_id: src-wikidata-q321371
+  source_url: https://www.wikidata.org/wiki/Q321371
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Bosporan Kingdom; description: Greco-Scythian state near Sea of Azov (c.438 BC–c.527 AD); article: https://en.wikipedia.org/wiki/Bosporan_Kingdom
+- candidate_id: cand-q556263
+  source_id: src-wikidata-q556263
+  source_url: https://www.wikidata.org/wiki/Q556263
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: principality
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Brunswick-Lüneburg; description: former principality of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Duchy_of_Brunswick-L%C3%BCneburg
+- candidate_id: cand-q830084
+  source_id: src-wikidata-q830084
+  source_url: https://www.wikidata.org/wiki/Q830084
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Brunswick-Wolfenbüttel; description: section of the Duchy of Brunswick-Lunenburg; article: https://en.wikipedia.org/wiki/Principality_of_Brunswick-Wolfenb%C3%BCttel
+- candidate_id: cand-q568473
+  source_id: src-wikidata-q568473
+  source_url: https://www.wikidata.org/wiki/Q568473
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Burgraviate of Nuremberg; description: state of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Burgraviate_of_Nuremberg
+- candidate_id: cand-q157109
+  source_id: src-wikidata-q157109
+  source_url: https://www.wikidata.org/wiki/Q157109
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Burgundian Netherlands; description: portion of the Low Countries ruled by the Dukes of Burgundy in the period from 1384 to 1482; article: https://en.wikipedia.org/wiki/Burgundian_Netherlands
+- candidate_id: cand-q12544
+  source_id: src-wikidata-q12544
+  source_url: https://www.wikidata.org/wiki/Q12544
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Byzantine Empire; description: Roman Empire during Late Antiquity and the Middle Ages; article: https://en.wikipedia.org/wiki/Byzantine_Empire
+- candidate_id: cand-q171740
+  source_id: src-wikidata-q171740
+  source_url: https://www.wikidata.org/wiki/Q171740
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Caliphate of Córdoba; description: state in Islamic Iberia (929–1031); article: https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba
+- candidate_id: cand-q31929
+  source_id: src-wikidata-q31929
+  source_url: https://www.wikidata.org/wiki/Q31929
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: empire
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  notes: Candidate label: Carolingian Empire; description: 800–843 final stage in the history of the early medieval realm of the Franks, ruled by the Carolingian dynasty; article: https://en.wikipedia.org/wiki/Carolingian_Empire
 
 ## Rejected
 

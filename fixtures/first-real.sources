@@ -645,3 +645,239 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+---
+# Reviewed packet for 500-candidate batch 001 title import.
+
+source_id: src-wikidata-q389688
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q389688
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Achaemenid Empire (Q389688).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q1048340
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1048340
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Albanian Kingdom (Q1048340).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q199688
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q199688
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Almohad Caliphate (Q199688).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q278874
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q278874
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Anhalt-Dessau (Q278874).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q264970
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q264970
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Anhalt-Kothen (Q264970).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q3181749
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q3181749
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Arab Caliphate (Q3181749).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q699964
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q699964
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Archduchy of Austria (Q699964).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q131964
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q131964
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Austrian Empire (Q131964).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q28513
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q28513
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Austria-Hungary (Q28513).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q552033
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q552033
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Bavaria-Munich (Q552033).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q321371
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q321371
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Bosporan Kingdom (Q321371).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q556263
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q556263
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Brunswick-Luneburg (Q556263).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q830084
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q830084
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Brunswick-Wolfenbuttel (Q830084).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q568473
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q568473
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Burgraviate of Nuremberg (Q568473).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q157109
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q157109
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Burgundian Netherlands (Q157109).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q12544
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q12544
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Byzantine Empire (Q12544).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q171740
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q171740
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Caliphate of Cordoba (Q171740).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+
+source_id: src-wikidata-q31929
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q31929
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Carolingian Empire (Q31929).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---

@@ -1337,3 +1337,419 @@ value: exists
 source_ids: src-wikidata-q386496
 confidence: single_source
 ---
+---
+# Reviewed packet for 500-candidate batch 001 title import.
+
+fact_id: fact-q389688-name
+subject_id: title-q389688
+claim_kind: name
+value: Achaemenid Empire
+source_ids: src-wikidata-q389688
+confidence: single_source
+---
+fact_id: fact-q389688-rank
+subject_id: title-q389688
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q389688
+confidence: single_source
+---
+fact_id: fact-q389688-exists
+subject_id: title-q389688
+claim_kind: title_exists
+span: -550..-330
+value: exists
+source_ids: src-wikidata-q389688
+confidence: single_source
+---
+
+fact_id: fact-q1048340-name
+subject_id: title-q1048340
+claim_kind: name
+value: Albanian Kingdom
+source_ids: src-wikidata-q1048340
+confidence: single_source
+---
+fact_id: fact-q1048340-rank
+subject_id: title-q1048340
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q1048340
+confidence: single_source
+---
+fact_id: fact-q1048340-exists
+subject_id: title-q1048340
+claim_kind: title_exists
+span: 1928..1939
+value: exists
+source_ids: src-wikidata-q1048340
+confidence: single_source
+---
+
+fact_id: fact-q199688-name
+subject_id: title-q199688
+claim_kind: name
+value: Almohad Caliphate
+source_ids: src-wikidata-q199688
+confidence: single_source
+---
+fact_id: fact-q199688-rank
+subject_id: title-q199688
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q199688
+confidence: single_source
+---
+fact_id: fact-q199688-exists
+subject_id: title-q199688
+claim_kind: title_exists
+span: 1121..1269
+value: exists
+source_ids: src-wikidata-q199688
+confidence: single_source
+---
+
+fact_id: fact-q278874-name
+subject_id: title-q278874
+claim_kind: name
+value: Anhalt-Dessau
+source_ids: src-wikidata-q278874
+confidence: single_source
+---
+fact_id: fact-q278874-rank
+subject_id: title-q278874
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q278874
+confidence: single_source
+---
+fact_id: fact-q278874-exists
+subject_id: title-q278874
+claim_kind: title_exists
+span: 1396..1853
+value: exists
+source_ids: src-wikidata-q278874
+confidence: single_source
+---
+
+fact_id: fact-q264970-name
+subject_id: title-q264970
+claim_kind: name
+value: Anhalt-Kothen
+source_ids: src-wikidata-q264970
+confidence: single_source
+---
+fact_id: fact-q264970-rank
+subject_id: title-q264970
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q264970
+confidence: single_source
+---
+fact_id: fact-q264970-exists
+subject_id: title-q264970
+claim_kind: title_exists
+span: 1396..1863
+value: exists
+source_ids: src-wikidata-q264970
+confidence: single_source
+---
+
+fact_id: fact-q3181749-name
+subject_id: title-q3181749
+claim_kind: name
+value: Arab Caliphate
+source_ids: src-wikidata-q3181749
+confidence: single_source
+---
+fact_id: fact-q3181749-rank
+subject_id: title-q3181749
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q3181749
+confidence: single_source
+---
+fact_id: fact-q3181749-exists
+subject_id: title-q3181749
+claim_kind: title_exists
+span: 632..1517
+value: exists
+source_ids: src-wikidata-q3181749
+confidence: single_source
+---
+
+fact_id: fact-q699964-name
+subject_id: title-q699964
+claim_kind: name
+value: Archduchy of Austria
+source_ids: src-wikidata-q699964
+confidence: single_source
+---
+fact_id: fact-q699964-rank
+subject_id: title-q699964
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q699964
+confidence: single_source
+---
+fact_id: fact-q699964-exists
+subject_id: title-q699964
+claim_kind: title_exists
+span: 1358..1918
+value: exists
+source_ids: src-wikidata-q699964
+confidence: single_source
+---
+
+fact_id: fact-q131964-name
+subject_id: title-q131964
+claim_kind: name
+value: Austrian Empire
+source_ids: src-wikidata-q131964
+confidence: single_source
+---
+fact_id: fact-q131964-rank
+subject_id: title-q131964
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q131964
+confidence: single_source
+---
+fact_id: fact-q131964-exists
+subject_id: title-q131964
+claim_kind: title_exists
+span: 1804..1867
+value: exists
+source_ids: src-wikidata-q131964
+confidence: single_source
+---
+
+fact_id: fact-q28513-name
+subject_id: title-q28513
+claim_kind: name
+value: Austria-Hungary
+source_ids: src-wikidata-q28513
+confidence: single_source
+---
+fact_id: fact-q28513-rank
+subject_id: title-q28513
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q28513
+confidence: single_source
+---
+fact_id: fact-q28513-exists
+subject_id: title-q28513
+claim_kind: title_exists
+span: 1867..1918
+value: exists
+source_ids: src-wikidata-q28513
+confidence: single_source
+---
+
+fact_id: fact-q552033-name
+subject_id: title-q552033
+claim_kind: name
+value: Bavaria-Munich
+source_ids: src-wikidata-q552033
+confidence: single_source
+---
+fact_id: fact-q552033-rank
+subject_id: title-q552033
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q552033
+confidence: single_source
+---
+fact_id: fact-q552033-exists
+subject_id: title-q552033
+claim_kind: title_exists
+span: 1392..1505
+value: exists
+source_ids: src-wikidata-q552033
+confidence: single_source
+---
+
+fact_id: fact-q321371-name
+subject_id: title-q321371
+claim_kind: name
+value: Bosporan Kingdom
+source_ids: src-wikidata-q321371
+confidence: single_source
+---
+fact_id: fact-q321371-rank
+subject_id: title-q321371
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q321371
+confidence: single_source
+---
+fact_id: fact-q321371-exists
+subject_id: title-q321371
+claim_kind: title_exists
+span: -437..370
+value: exists
+source_ids: src-wikidata-q321371
+confidence: single_source
+---
+
+fact_id: fact-q556263-name
+subject_id: title-q556263
+claim_kind: name
+value: Brunswick-Luneburg
+source_ids: src-wikidata-q556263
+confidence: single_source
+---
+fact_id: fact-q556263-rank
+subject_id: title-q556263
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q556263
+confidence: single_source
+---
+fact_id: fact-q556263-exists
+subject_id: title-q556263
+claim_kind: title_exists
+span: 1235..1806
+value: exists
+source_ids: src-wikidata-q556263
+confidence: single_source
+---
+
+fact_id: fact-q830084-name
+subject_id: title-q830084
+claim_kind: name
+value: Brunswick-Wolfenbuttel
+source_ids: src-wikidata-q830084
+confidence: single_source
+---
+fact_id: fact-q830084-rank
+subject_id: title-q830084
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q830084
+confidence: single_source
+---
+fact_id: fact-q830084-exists
+subject_id: title-q830084
+claim_kind: title_exists
+span: 1269..1815
+value: exists
+source_ids: src-wikidata-q830084
+confidence: single_source
+---
+
+fact_id: fact-q568473-name
+subject_id: title-q568473
+claim_kind: name
+value: Burgraviate of Nuremberg
+source_ids: src-wikidata-q568473
+confidence: single_source
+---
+fact_id: fact-q568473-rank
+subject_id: title-q568473
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q568473
+confidence: single_source
+---
+fact_id: fact-q568473-exists
+subject_id: title-q568473
+claim_kind: title_exists
+span: 1105..1440
+value: exists
+source_ids: src-wikidata-q568473
+confidence: single_source
+---
+
+fact_id: fact-q157109-name
+subject_id: title-q157109
+claim_kind: name
+value: Burgundian Netherlands
+source_ids: src-wikidata-q157109
+confidence: single_source
+---
+fact_id: fact-q157109-rank
+subject_id: title-q157109
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q157109
+confidence: single_source
+---
+fact_id: fact-q157109-exists
+subject_id: title-q157109
+claim_kind: title_exists
+span: 1384..1482
+value: exists
+source_ids: src-wikidata-q157109
+confidence: single_source
+---
+
+fact_id: fact-q12544-name
+subject_id: title-q12544
+claim_kind: name
+value: Byzantine Empire
+source_ids: src-wikidata-q12544
+confidence: single_source
+---
+fact_id: fact-q12544-rank
+subject_id: title-q12544
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q12544
+confidence: single_source
+---
+fact_id: fact-q12544-exists
+subject_id: title-q12544
+claim_kind: title_exists
+span: 395..1453
+value: exists
+source_ids: src-wikidata-q12544
+confidence: single_source
+---
+
+fact_id: fact-q171740-name
+subject_id: title-q171740
+claim_kind: name
+value: Caliphate of Cordoba
+source_ids: src-wikidata-q171740
+confidence: single_source
+---
+fact_id: fact-q171740-rank
+subject_id: title-q171740
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q171740
+confidence: single_source
+---
+fact_id: fact-q171740-exists
+subject_id: title-q171740
+claim_kind: title_exists
+span: 929..1031
+value: exists
+source_ids: src-wikidata-q171740
+confidence: single_source
+---
+
+fact_id: fact-q31929-name
+subject_id: title-q31929
+claim_kind: name
+value: Carolingian Empire
+source_ids: src-wikidata-q31929
+confidence: single_source
+---
+fact_id: fact-q31929-rank
+subject_id: title-q31929
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q31929
+confidence: single_source
+---
+fact_id: fact-q31929-exists
+subject_id: title-q31929
+claim_kind: title_exists
+span: 800..887
+value: exists
+source_ids: src-wikidata-q31929
+confidence: single_source
+---

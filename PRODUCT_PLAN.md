@@ -104,7 +104,9 @@ Pulses:
     parentage status, query readiness, and exclusion reasons.
 36. 500-source candidate queue. Complete for 450 staged Wikidata candidates,
     bringing accepted plus staged source records to 500 under review.
-37. Next reviewed parentage packet.
+37. Batch 001 title promotion. Complete for 18 title-identity sources promoted
+    from the 500-source candidate queue.
+38. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

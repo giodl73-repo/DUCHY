@@ -51,6 +51,7 @@ records and validation.
 | 33 | Mass title source scale-up | complete | Import reviewed title facts until the accepted source catalog reaches 50 sources. |
 | 34 | Scale metadata manifest gate | complete | Require 500-source readiness metadata for reviewed/promoted manifest rows. |
 | 35 | 500-source candidate queue | complete | Stage 450 additional candidate sources so accepted plus staged sources reach 500 under review. |
+| 36 | Batch 001 title promotion | complete | Promote 18 reviewed title-identity sources from the 500-source candidate queue. |
 
 ## Success Criteria
 
