@@ -123,6 +123,14 @@ data/staging/ck3-counties-batch-005-structured-screen.tsv
 data/staging/ck3-counties-batch-005-structured-screen.md
 ```
 
+Batch 006 promotes one source-only record and skips Duklja because it is already
+accepted from the earlier candidate queue:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-006-source-resolution-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-006-source-resolution.sources data/staging/ck3-batch-006-source-resolution.facts
+cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-006-source-resolution-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-006-source-resolution.sources data/staging/ck3-batch-006-source-resolution.facts
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.

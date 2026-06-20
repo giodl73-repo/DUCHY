@@ -157,7 +157,10 @@ Pulses:
     deferred.
 55. CK3 batch 005 research screen. Complete for a fifth 50-row Wikidata search
     packet and structured screen, with no bounded top-lead candidates promoted.
-56. Next reviewed parentage packet.
+56. CK3 batch 006 source-resolution packet. Complete for a sixth 50-row
+    Wikidata search packet, structured screen, and one source-only Donji Kraji
+    record, while recognizing Duklja as already accepted.
+57. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
