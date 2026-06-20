@@ -48,7 +48,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 319 reviewed Wikidata structured
+  The accepted fixture catalog now contains 337 reviewed Wikidata structured
   claim sources.
 
 The first accepted capability target is the ability to ask which higher title
@@ -69,12 +69,10 @@ Q151624, Q150981, Q154195, and Q159631, giving the reviewed mini-catalog
 kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
-The remaining clean title-identity queue promotion extends the accepted fixture
-set to 319 reviewed sources. After follow-on German, Austrian, Holy Roman
-Empire, France, and residual German Confederation parentage packets, the
-accepted fact catalog contains 1097 reviewed facts. The title promotion adds
-title identity, rank, and existence facts only; parentage remains a separate
-review step.
+The title-identity queue promotions and follow-on parentage packets extend the
+accepted fixture set to 337 reviewed sources and 1150 reviewed facts. Title
+promotion adds title identity, rank, and existence facts only; parentage remains
+a separate review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
 relation-heavy, non-title, free-city, administrative-region, and otherwise
 unsupported candidates are archived as `scope_deferred` rejections, leaving only
@@ -89,8 +87,8 @@ Empire-era titles. The first Austrian parentage packet adds 15 reviewed spans
 for Austrian Empire and Austria-Hungary-era titles. The first Holy Roman Empire
 parentage packet adds 70 reviewed pre-1807 spans. The first Kingdom of France
 parentage packet adds 4 reviewed spans. The residual German Confederation
-packet adds 4 reviewed spans, raising reviewed real parentage coverage to 140
-facts.
+packet adds 4 reviewed spans, with later relation, crown, Commonwealth, and
+theocratic-state packets raising reviewed real parentage coverage to 172 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

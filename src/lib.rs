@@ -8,6 +8,7 @@ pub enum TitleRank {
     Duchy,
     Kingdom,
     Crown,
+    TheocraticState,
     Empire,
 }
 
@@ -18,6 +19,7 @@ impl TitleRank {
             Self::Duchy => Some(Self::Kingdom),
             Self::Kingdom => Some(Self::Crown),
             Self::Crown => Some(Self::Empire),
+            Self::TheocraticState => Some(Self::Empire),
             Self::Empire => None,
         }
     }
@@ -2225,6 +2227,9 @@ fn parse_title_rank(value: &str) -> Option<TitleRank> {
         "duchy" | "grand duchy" => Some(TitleRank::Duchy),
         "kingdom" => Some(TitleRank::Kingdom),
         "crown" | "composite crown" | "composite realm" => Some(TitleRank::Crown),
+        "theocratic state" | "papal state" | "ecclesiastical state" => {
+            Some(TitleRank::TheocraticState)
+        }
         "empire" => Some(TitleRank::Empire),
         _ => None,
     }
@@ -3659,6 +3664,16 @@ confidence: maybe
         assert_eq!(TitleRank::Crown.parent_rank(), Some(TitleRank::Empire));
         assert!(TitleRank::Kingdom < TitleRank::Crown);
         assert!(TitleRank::Crown < TitleRank::Empire);
+    }
+
+    #[test]
+    fn theocratic_state_rank_sits_below_empire() {
+        assert_eq!(
+            TitleRank::TheocraticState.parent_rank(),
+            Some(TitleRank::Empire)
+        );
+        assert!(TitleRank::Crown < TitleRank::TheocraticState);
+        assert!(TitleRank::TheocraticState < TitleRank::Empire);
     }
 
     fn test_structured_claim_catalog() -> SourceCatalog {

@@ -18,16 +18,10 @@ gap_rows: 25
 | County | 2 |
 | Duchy | 7 |
 | Empire | 4 |
-| Kingdom | 12 |
+| Kingdom | 11 |
+| TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q146246 | Francia
-
-- rank: Kingdom
-- exists: 481..843
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q1470101 | Kingdom of Hungary (1000-1301)
 
@@ -196,4 +190,11 @@ gap_rows: 25
 - exists: 1561..1721
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q170174 | Papal States
+
+- rank: TheocraticState
+- exists: 754..1870
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

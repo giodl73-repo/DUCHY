@@ -1,21 +1,22 @@
 # DUCHY Parentage Coverage Report
 
-sources: 336
-facts: 1146
-titles: 325
-parentage_facts: 171
-titles_with_parentage: 128
+sources: 337
+facts: 1150
+titles: 326
+parentage_facts: 172
+titles_with_parentage: 129
 titles_without_parentage: 197
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 28 | 14 | 14 |
+| County | 28 | 15 | 13 |
 | Crown | 3 | 0 | 3 |
 | Duchy | 135 | 85 | 50 |
 | Empire | 39 | 0 | 39 |
 | Kingdom | 120 | 29 | 91 |
+| TheocraticState | 1 | 0 | 1 |
 
 ## Titles Without Parentage
 
@@ -29,7 +30,6 @@ titles_without_parentage: 197
 - title-q1069959 | Kingdom of Imereti | Kingdom | 1260..1810
 - title-q107299 | Kingdom of Northumbria | Kingdom | 653..954
 - title-q110888 | Kingdom of Essex | Kingdom | 527..825
-- title-q1122980 | Comtat Venaissin | County | 1274..1791
 - title-q116080 | Polish Underground State | Empire | 1939..1945
 - title-q11750128 | Kingdom of Poland | Kingdom | 1830..1831
 - title-q1209822 | Kingdom of Kakheti | Kingdom | 1465..1762
@@ -69,6 +69,7 @@ titles_without_parentage: 197
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
 - title-q16835712 | Duchy of Estonia | Duchy | 1561..1721
+- title-q170174 | Papal States | TheocraticState | 754..1870
 - title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795

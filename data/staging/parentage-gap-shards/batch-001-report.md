@@ -7,18 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 3 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Duchy | 2 |
 | Empire | 6 |
-| Kingdom | 15 |
+| Kingdom | 16 |
 
 ## Review Rows
 
@@ -91,13 +91,6 @@ gap_rows: 25
 - exists: 527..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1122980 | Comtat Venaissin
-
-- rank: County
-- exists: 1274..1791
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q116080 | Polish Underground State
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1939..1943
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q146246 | Francia
+
+- rank: Kingdom
+- exists: 481..843
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

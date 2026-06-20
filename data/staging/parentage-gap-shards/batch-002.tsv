@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q146246	Francia	Kingdom	481..843	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q1470101	Kingdom of Hungary (1000-1301)	Kingdom	1000..1301	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q147909	Kingdom of Bulgaria	Kingdom	1908..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q150981	North German Confederation	Empire	1867..1870	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q165040	Duchy of Parma and Piacenza	Duchy	1545..1859	0	high_parentage_revi
 title-q165154	Kingdom of Sardinia	Kingdom	1720..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q1656775	Kingdom of Lithuania	Kingdom	1251..1263	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q16835712	Duchy of Estonia	Duchy	1561..1721	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q170174	Papal States	TheocraticState	754..1870	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
