@@ -9088,3 +9088,35 @@ span: 1058..1866
 value: title-q35
 source_ids: src-wikidata-q26167, src-wikidata-q35
 confidence: multi_source
+---
+# Reviewed title and parentage packet for Burgundian Netherlands under Burgundian State.
+
+fact_id: fact-q7882199-name
+subject_id: title-q7882199
+claim_kind: name
+value: Burgundian State
+source_ids: src-wikidata-q7882199
+confidence: single_source
+---
+fact_id: fact-q7882199-rank
+subject_id: title-q7882199
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q7882199
+confidence: single_source
+---
+fact_id: fact-q7882199-exists
+subject_id: title-q7882199
+claim_kind: title_exists
+span: 1363..1559
+value: exists
+source_ids: src-wikidata-q7882199
+confidence: single_source
+---
+fact_id: fact-q157109-parent-q7882199
+subject_id: title-q157109
+claim_kind: parentage
+span: 1384..1482
+value: title-q7882199
+source_ids: src-wikidata-q157109, src-wikidata-q7882199
+confidence: multi_source

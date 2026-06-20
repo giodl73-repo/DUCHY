@@ -1,0 +1,11 @@
+source_id: src-wikidata-q7882199
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q7882199
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Burgundian State (Q7882199).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, composite-state rank, inception, dissolution, and parentage context only.

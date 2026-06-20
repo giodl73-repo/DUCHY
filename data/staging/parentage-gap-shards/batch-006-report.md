@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
+| high_parentage_review | 9 |
 | medium_parentage_review | 13 |
-| root_or_successor_review | 4 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 5 |
-| Duchy | 3 |
-| Empire | 4 |
+| Duchy | 4 |
+| Empire | 3 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q43287 | German Empire
-
-- rank: Empire
-- exists: 1871..1918
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q435583 | Old Swiss Confederacy
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q641138 | Duchy of Cleves
+
+- rank: Duchy
+- exists: 1092..1795
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

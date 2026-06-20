@@ -225,7 +225,10 @@ Pulses:
     Duchy of Estonia -> Sweden for 1561-1721.
 81. Schleswig Denmark parentage packet. Complete for promoting Denmark and
     importing Duchy of Schleswig -> Denmark for 1058-1866.
-82. Next reviewed parentage packet.
+82. Burgundian Netherlands State parentage packet. Complete for promoting
+    Burgundian State and importing Burgundian Netherlands -> Burgundian State
+    for 1384-1482.
+83. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

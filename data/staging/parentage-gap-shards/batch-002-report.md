@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -16,7 +16,8 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 6 |
+| Crown | 1 |
+| Duchy | 5 |
 | Empire | 5 |
 | Kingdom | 11 |
 | TheocraticState | 1 |
@@ -107,13 +108,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q157109 | Burgundian Netherlands
-
-- rank: Duchy
-- exists: 1384..1482
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q160307 | Fatimid Egyptian Caliphate
 
 - rank: Empire
@@ -197,4 +191,11 @@ gap_rows: 25
 - exists: 929..1031
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q172107 | Polish-Lithuanian Commonwealth
+
+- rank: Crown
+- exists: 1569..1795
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

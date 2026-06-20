@@ -96,6 +96,7 @@ records and validation.
 | 78 | Courland Commonwealth parentage | complete | Import Duchy of Courland and Semigallia parentage under Polish-Lithuanian Commonwealth. |
 | 79 | Estonia Sweden parentage | complete | Promote Sweden and import Duchy of Estonia parentage under Sweden. |
 | 80 | Schleswig Denmark parentage | complete | Promote Denmark and import Duchy of Schleswig parentage under Denmark. |
+| 81 | Burgundian Netherlands State parentage | complete | Promote Burgundian State and import Burgundian Netherlands parentage under it. |
 
 ## Success Criteria
 

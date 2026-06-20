@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
+| high_parentage_review | 7 |
 | medium_parentage_review | 10 |
-| root_or_successor_review | 7 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 7 |
-| Empire | 7 |
+| Duchy | 6 |
+| Empire | 8 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q259511 | Prince-Bishopric of Freising
-
-- rank: Duchy
-- exists: 1294..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q2597352 | Kingdom of Norway
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 1642..1860
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q43287 | German Empire
+
+- rank: Empire
+- exists: 1871..1918
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

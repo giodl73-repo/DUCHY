@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 340
-facts: 1171
-titles: 329
-parentage_facts: 184
-titles_with_parentage: 140
+sources: 341
+facts: 1175
+titles: 330
+parentage_facts: 185
+titles_with_parentage: 141
 titles_without_parentage: 189
 
 ## Coverage By Rank
@@ -12,8 +12,8 @@ titles_without_parentage: 189
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
-| Crown | 3 | 0 | 3 |
-| Duchy | 136 | 91 | 45 |
+| Crown | 4 | 0 | 4 |
+| Duchy | 136 | 92 | 44 |
 | Empire | 35 | 0 | 35 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 122 | 30 | 92 |
@@ -59,7 +59,6 @@ titles_without_parentage: 189
 - title-q1541699 | County of Empuries | County | 812..1402
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
 - title-q154849 | Grand Duchy of Tuscany | Duchy | 1569..1860
-- title-q157109 | Burgundian Netherlands | Duchy | 1384..1482
 - title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
 - title-q160440 | Crimean Khanate | Empire | 1441..1783
 - title-q16056854 | Kingdom of Hungary | Kingdom | 1301..1526
@@ -195,6 +194,7 @@ titles_without_parentage: 189
 - title-q769782 | Kingdom of Powys | Kingdom | 500..1160
 - title-q771193 | Kingdom of Brittany | Kingdom | 851..939
 - title-q779011 | Principality of Montenegro | Duchy | 1852..1910
+- title-q7882199 | Burgundian State | Crown | 1363..1559
 - title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
 - title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
 - title-q83546 | Grand Principality of Vladimir | Duchy | 1125..1389

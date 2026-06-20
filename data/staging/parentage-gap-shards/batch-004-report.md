@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 16 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | Crown | 2 |
-| Duchy | 6 |
+| Duchy | 7 |
 | Empire | 3 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q203493 | Kingdom of Romania
-
-- rank: Kingdom
-- exists: 1881..1947
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q203817 | First Bulgarian Empire
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1720..1861
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q259511 | Prince-Bishopric of Freising
+
+- rank: Duchy
+- exists: 1294..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

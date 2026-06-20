@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 17 |
-| medium_parentage_review | 6 |
+| high_parentage_review | 16 |
+| medium_parentage_review | 7 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Duchy | 14 |
+| Crown | 1 |
+| Duchy | 13 |
 | Empire | 2 |
 | Kingdom | 6 |
 
 ## Review Rows
-
-### title-q641138 | Duchy of Cleves
-
-- rank: Duchy
-- exists: 1092..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q657241 | Duchy of Westphalia
 
@@ -182,6 +176,13 @@ gap_rows: 25
 - exists: 1852..1910
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q7882199 | Burgundian State
+
+- rank: Crown
+- exists: 1363..1559
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q816814 | Kingdom of Gwynedd
 

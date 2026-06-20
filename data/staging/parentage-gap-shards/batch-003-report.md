@@ -16,19 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Crown | 1 |
 | Duchy | 3 |
 | Empire | 8 |
-| Kingdom | 12 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q172107 | Polish-Lithuanian Commonwealth
-
-- rank: Crown
-- exists: 1569..1795
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q172579 | Kingdom of Italy
 
@@ -197,4 +189,11 @@ gap_rows: 25
 - exists: 1415..1999
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q203493 | Kingdom of Romania
+
+- rank: Kingdom
+- exists: 1881..1947
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
