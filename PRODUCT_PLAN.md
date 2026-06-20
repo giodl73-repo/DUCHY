@@ -136,7 +136,10 @@ Pulses:
 48. CK3 batch 001 source-resolution leads. Complete for a 50-row Wikidata
     search packet that records exact, fuzzy, and no-result external leads
     without treating search hits as accepted historical source records.
-49. Next reviewed parentage packet.
+49. CK3 batch 001 reviewed source-resolution packet. Complete for 7 reviewed
+    Wikidata source records promoted from the first CK3 research shard, with
+    facts explicitly deferred.
+50. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

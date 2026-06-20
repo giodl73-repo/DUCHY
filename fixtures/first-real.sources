@@ -4148,3 +4148,89 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+# Reviewed source-resolution records from CK3 batch 001 Wikidata leads.
+# These authorize structured-claim review only; facts are deferred.
+
+source_id: src-wikidata-q11972
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q11972
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_aargau / Aargau; Wikidata lead Canton of Aargau (Q11972), canton of Switzerland.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q1049854
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1049854
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_abauj / Abauj; Wikidata lead Abaúj county (Q1049854), historical county in the Kingdom of Hungary.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q1284
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1284
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_abruzzi / Abruzzi; Wikidata lead Abruzzo (Q1284), region in Italy.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q5689
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q5689
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_aland / Aland; Wikidata lead Åland (Q5689), autonomous region of Finland.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q209853
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q209853
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_angermanland / Ångermanland; Wikidata lead Ångermanland (Q209853), province in Sweden.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q16737361
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q16737361
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_antipatreia / Antipatreia; Wikidata lead Antipatreia (Q16737361), ancient Greek city.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.
+---
+source_id: src-wikidata-q53216
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q53216
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_aquileia / Aquileia; Wikidata lead Aquileia (Q53216), Italian comune based on the ancient Roman city.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. No title identity, date, parentage, holder, control, or territory facts are promoted in this packet.

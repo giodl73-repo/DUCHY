@@ -63,6 +63,7 @@ records and validation.
 | 45 | Residual German Confederation parentage packet | complete | Import remaining clean German Confederation parentage facts using accepted source records. |
 | 46 | CK3 Europe county discovery queue | complete | Stage 500 pending Europe-bucket CK3 county candidates as search leads, with no fact promotion. |
 | 47 | CK3 batch 001 source-resolution leads | complete | Query Wikidata for the first 50 CK3 county candidates and preserve exact/fuzzy/no-result leads for manual review. |
+| 48 | CK3 batch 001 reviewed source-resolution packet | complete | Promote 7 reviewed Wikidata source records from the first CK3 research shard, with no fact promotion. |
 
 ## Success Criteria
 

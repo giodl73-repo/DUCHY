@@ -62,6 +62,14 @@ data/staging/ck3-counties-batch-001-wikidata-research.md
 These files record search leads only. Exact label matches still require manual
 identity review before any source record or fact packet is created.
 
+The first reviewed source-resolution packet promotes selected source records
+from those leads without facts:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-001-source-resolution-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-source-resolution.sources data/staging/ck3-batch-001-source-resolution.facts
+cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-001-source-resolution-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-source-resolution.sources data/staging/ck3-batch-001-source-resolution.facts
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
