@@ -69,6 +69,7 @@ records and validation.
 | 51 | CK3 batch 002 source-resolution packet | complete | Query and screen the second CK3 shard, then promote Arbanon and Béarn as source-only records with title facts deferred. |
 | 52 | CK3 batch 003 research screen | complete | Query and screen the third CK3 shard; no top leads have bounded date pairs for promotion. |
 | 53 | CK3 batch 004 reviewed packet | complete | Query and screen the fourth CK3 shard, then promote 3 sources and 6 title facts while deferring Byzantium title facts. |
+| 54 | CK3 batch 005 research screen | complete | Query and screen the fifth CK3 shard; no top leads have bounded date pairs for promotion. |
 
 ## Success Criteria
 
