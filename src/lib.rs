@@ -6,6 +6,7 @@ pub type Year = i32;
 pub enum TitleRank {
     County,
     Duchy,
+    Province,
     Kingdom,
     Crown,
     TheocraticState,
@@ -17,6 +18,7 @@ impl TitleRank {
         match self {
             Self::County => Some(Self::Duchy),
             Self::Duchy => Some(Self::Kingdom),
+            Self::Province => Some(Self::Kingdom),
             Self::Kingdom => Some(Self::Crown),
             Self::Crown => Some(Self::Empire),
             Self::TheocraticState => Some(Self::Empire),
@@ -2225,6 +2227,7 @@ fn parse_title_rank(value: &str) -> Option<TitleRank> {
     match value.trim().to_ascii_lowercase().as_str() {
         "county" => Some(TitleRank::County),
         "duchy" | "grand duchy" => Some(TitleRank::Duchy),
+        "province" => Some(TitleRank::Province),
         "kingdom" => Some(TitleRank::Kingdom),
         "crown" | "composite crown" | "composite realm" => Some(TitleRank::Crown),
         "theocratic state" | "papal state" | "ecclesiastical state" => {
@@ -3664,6 +3667,14 @@ confidence: maybe
         assert_eq!(TitleRank::Crown.parent_rank(), Some(TitleRank::Empire));
         assert!(TitleRank::Kingdom < TitleRank::Crown);
         assert!(TitleRank::Crown < TitleRank::Empire);
+    }
+
+    #[test]
+    fn province_rank_sits_below_kingdom() {
+        assert_eq!(TitleRank::Province.parent_rank(), Some(TitleRank::Kingdom));
+        assert_eq!(TitleRank::Duchy.parent_rank(), Some(TitleRank::Kingdom));
+        assert!(TitleRank::Duchy < TitleRank::Province);
+        assert!(TitleRank::Province < TitleRank::Kingdom);
     }
 
     #[test]

@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 19
+gap_rows: 18
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 6 |
-| medium_parentage_review | 13 |
+| medium_parentage_review | 12 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 6 |
-| Kingdom | 13 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q769782 | Kingdom of Powys
-
-- rank: Kingdom
-- exists: 500..1160
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q771193 | Kingdom of Brittany
 

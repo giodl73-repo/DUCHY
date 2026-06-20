@@ -4275,7 +4275,7 @@ confidence: single_source
 fact_id: fact-q699923-rank
 subject_id: title-q699923
 claim_kind: rank
-value: Empire
+value: Province
 source_ids: src-wikidata-q699923
 confidence: single_source
 ---
@@ -8973,4 +8973,14 @@ claim_kind: parentage
 span: 1443..1631
 value: title-q170174
 source_ids: src-wikidata-q649202, src-wikidata-q170174
+confidence: multi_source
+---
+# Reviewed parentage packet for Illyrian Provinces under the First French Empire.
+
+fact_id: fact-q699923-parent-q71084
+subject_id: title-q699923
+claim_kind: parentage
+span: 1809..1815
+value: title-q71084
+source_ids: src-wikidata-q699923, src-wikidata-q71084
 confidence: multi_source

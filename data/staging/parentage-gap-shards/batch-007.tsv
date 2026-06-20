@@ -15,7 +15,6 @@ title-q684030	Principality of Serbia	Duchy	1815..1882	0	high_parentage_review	Fi
 title-q686312	Duchy of Amalfi	Duchy	839..1137	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q693570	Duchy of Ferrara	Duchy	1264..1597	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q698089	Grand Duchy of Wurzburg	Duchy	1806..1814	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q699923	Illyrian Provinces	Empire	1809..1816	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q702327	Duchy of Oswiecim	Duchy	1315..1564	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q704312	Grand Duchy of Frankfurt	Duchy	1810..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find 
 title-q71084	First French Empire	Empire	1804..1815	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q733799	Kingdom of the Hwicce	Kingdom	577..780	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q736029	Nassau-Siegen	County	1303..1743	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q769782	Kingdom of Powys	Kingdom	500..1160	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

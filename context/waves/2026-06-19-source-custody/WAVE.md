@@ -89,6 +89,7 @@ records and validation.
 | 71 | Russian Empire Finland parentage | complete | Promote Russian Empire and import Grand Duchy of Finland -> Russian Empire parentage. |
 | 72 | Gorizia and Gradisca Austrian parentage | complete | Correct Gorizia and Gradisca to County rank and import Austrian Empire/Austria-Hungary parentage. |
 | 73 | Duchy of Urbino Papal States parentage | complete | Import Duchy of Urbino -> Papal States parentage from an accepted structured relation. |
+| 74 | Illyrian Provinces French Empire parentage | complete | Add `Province` rank support, correct Illyrian Provinces rank, and import First French Empire parentage. |
 
 ## Success Criteria
 

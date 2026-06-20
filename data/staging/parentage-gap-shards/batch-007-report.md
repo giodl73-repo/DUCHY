@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 15 |
-| medium_parentage_review | 6 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 7 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 3 |
 | Duchy | 12 |
-| Empire | 4 |
-| Kingdom | 6 |
+| Empire | 3 |
+| Kingdom | 7 |
 
 ## Review Rows
 
@@ -134,13 +134,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q699923 | Illyrian Provinces
-
-- rank: Empire
-- exists: 1809..1816
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q701983 | Palatinate-Zweibrucken
 
 - rank: Empire
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1303..1743
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q769782 | Kingdom of Powys
+
+- rank: Kingdom
+- exists: 500..1160
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

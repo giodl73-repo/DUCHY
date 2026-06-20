@@ -207,7 +207,10 @@ Pulses:
     Empire for 1804-1866 and -> Austria-Hungary for 1867-1918.
 74. Duchy of Urbino Papal States parentage packet. Complete for importing the
     reviewed Duchy of Urbino -> Papal States relation for 1443-1631.
-75. Next reviewed parentage packet.
+75. Illyrian Provinces French Empire parentage packet. Complete for adding
+    `Province` rank support, correcting Q699923 to Province, and importing
+    Illyrian Provinces -> First French Empire for 1809-1815.
+76. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
