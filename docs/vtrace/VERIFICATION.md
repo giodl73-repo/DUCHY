@@ -83,6 +83,7 @@ git diff --check
 | EVID-040 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-31.md` | Reviewed Baden and Hanover packet imports title facts and parentage spans into accepted fixtures. | pass on 2026-06-20 |
 | EVID-041 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-32.md` | Reviewed Oldenburg and Brunswick packet imports title facts and parentage spans into accepted fixtures. | pass on 2026-06-20 |
 | EVID-042 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-33.md` | Reviewed mass title packet imports 37 additional title sources and reaches 50 accepted sources. | pass on 2026-06-20 |
+| EVID-043 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-import -- manifest`; `cargo run --bin duchy-import -- manifest-tsv`; `cargo run --bin duchy-import -- manifest-from-tsv`; `context/waves/2026-06-19-source-custody/pulses/pulse-34.md` | Reviewed/promoted candidate manifests require scale metadata and preserve it through report, shard, and TSV tooling. | pass on 2026-06-20 |
 
 ## Gaps
 
@@ -90,5 +91,6 @@ git diff --check
 |---|---|---|
 | Contested and split transfer query semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Fact-level contested packets exist; query-level contested answers remain deferred. |
 | Fifty concrete source records have passed the gate, but most source-backed titles still have no reviewed parentage. | Historical identity coverage is broader than hierarchy coverage. | Expand parentage through reviewed relation packets only. |
+| The accepted fixtures do not yet store import-scope metadata beside promoted facts. | Post-promotion audit relies on staging manifest/report artifacts. | Keep staging manifests committed until accepted fact metadata grows. |
 | No real contested historical fixture has passed review yet. | The contested packet is proven with synthetic alternatives only. | Add real contested claims only through reviewed source packets. |
 | Only twenty-four real parentage fixtures have passed review. | Source-backed title paths remain sparse relative to the 50-source title catalog. | Expand parentage only through reviewed source packets. |

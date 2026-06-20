@@ -1,0 +1,4 @@
+candidate_id	source_id	source_url	status	review_batch_id	import_scope	rank_basis	entity_class	source_claims_used	confidence_detail	parentage_status	query_readiness	exclusion_reason	notes
+cand-staging-one	src-staging-one	urn:duchy:staging-one	pending										First synthetic candidate.
+cand-staging-two	src-staging-two	urn:duchy:staging-two	reviewed	batch-example-scale	title_identity_only	normalized	duchy	label,inception,dissolution	wikidata_structured_single	none_reviewed	existence_only		Second synthetic candidate ready for fact extraction.
+cand-staging-three	src-staging-three	urn:duchy:staging-three	rejected									scope_deferred	Rejected synthetic candidate.

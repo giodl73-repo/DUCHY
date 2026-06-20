@@ -1,5 +1,4 @@
-# Synthetic candidate manifest; not accepted history.
-
+# Candidate manifest generated from TSV import.
 candidate_id: cand-staging-one
 source_id: src-staging-one
 source_url: urn:duchy:staging-one
@@ -14,7 +13,7 @@ review_batch_id: batch-example-scale
 import_scope: title_identity_only
 rank_basis: normalized
 entity_class: duchy
-source_claims_used: label, inception, dissolution
+source_claims_used: label,inception,dissolution
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only

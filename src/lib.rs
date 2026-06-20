@@ -230,6 +230,15 @@ pub struct CandidateRecord {
     pub source_id: String,
     pub source_url: String,
     pub status: CandidateStatus,
+    pub review_batch_id: Option<String>,
+    pub import_scope: Option<ImportScope>,
+    pub rank_basis: Option<RankBasis>,
+    pub entity_class: Option<EntityClass>,
+    pub source_claims_used: Vec<String>,
+    pub confidence_detail: Option<ConfidenceDetail>,
+    pub parentage_status: Option<ParentageStatus>,
+    pub query_readiness: Option<QueryReadiness>,
+    pub exclusion_reason: Option<ExclusionReason>,
     pub notes: Option<String>,
 }
 
@@ -239,6 +248,76 @@ pub enum CandidateStatus {
     Reviewed,
     Promoted,
     Rejected,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum ImportScope {
+    TitleIdentityOnly,
+    ParentageReady,
+    TerritoryReady,
+    HolderReady,
+    ContestedReview,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum RankBasis {
+    Literal,
+    Normalized,
+    Approximate,
+    Unsupported,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum EntityClass {
+    County,
+    Duchy,
+    Kingdom,
+    Principality,
+    FreeCity,
+    TheocraticState,
+    Confederation,
+    Empire,
+    AdministrativeRegion,
+    Other,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum ConfidenceDetail {
+    WikidataStructuredSingle,
+    WikidataPlusTextCrosscheck,
+    MultiSourceAgreement,
+    DateConflict,
+    Unsupported,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum ParentageStatus {
+    NoneReviewed,
+    CandidateAvailable,
+    AcceptedPartial,
+    AcceptedFull,
+    Contested,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum QueryReadiness {
+    ExistenceOnly,
+    TitlePath,
+    Transfer,
+    LineageEvent,
+    Unsupported,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum ExclusionReason {
+    UnsupportedRank,
+    NonTitlePolity,
+    AmbiguousEntity,
+    DateConflict,
+    SuccessorPredecessorIssue,
+    RightsBlocked,
+    QualityBlocked,
+    ScopeDeferred,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
@@ -1377,6 +1456,90 @@ fn parse_candidate_status(value: &str) -> Option<CandidateStatus> {
     }
 }
 
+fn parse_import_scope(value: &str) -> Option<ImportScope> {
+    match value {
+        "title_identity_only" => Some(ImportScope::TitleIdentityOnly),
+        "parentage_ready" => Some(ImportScope::ParentageReady),
+        "territory_ready" => Some(ImportScope::TerritoryReady),
+        "holder_ready" => Some(ImportScope::HolderReady),
+        "contested_review" => Some(ImportScope::ContestedReview),
+        _ => None,
+    }
+}
+
+fn parse_rank_basis(value: &str) -> Option<RankBasis> {
+    match value {
+        "literal" => Some(RankBasis::Literal),
+        "normalized" => Some(RankBasis::Normalized),
+        "approximate" => Some(RankBasis::Approximate),
+        "unsupported" => Some(RankBasis::Unsupported),
+        _ => None,
+    }
+}
+
+fn parse_entity_class(value: &str) -> Option<EntityClass> {
+    match value {
+        "county" => Some(EntityClass::County),
+        "duchy" => Some(EntityClass::Duchy),
+        "kingdom" => Some(EntityClass::Kingdom),
+        "principality" => Some(EntityClass::Principality),
+        "free_city" => Some(EntityClass::FreeCity),
+        "theocratic_state" => Some(EntityClass::TheocraticState),
+        "confederation" => Some(EntityClass::Confederation),
+        "empire" => Some(EntityClass::Empire),
+        "administrative_region" => Some(EntityClass::AdministrativeRegion),
+        "other" => Some(EntityClass::Other),
+        _ => None,
+    }
+}
+
+fn parse_confidence_detail(value: &str) -> Option<ConfidenceDetail> {
+    match value {
+        "wikidata_structured_single" => Some(ConfidenceDetail::WikidataStructuredSingle),
+        "wikidata_plus_text_crosscheck" => Some(ConfidenceDetail::WikidataPlusTextCrosscheck),
+        "multi_source_agreement" => Some(ConfidenceDetail::MultiSourceAgreement),
+        "date_conflict" => Some(ConfidenceDetail::DateConflict),
+        "unsupported" => Some(ConfidenceDetail::Unsupported),
+        _ => None,
+    }
+}
+
+fn parse_parentage_status(value: &str) -> Option<ParentageStatus> {
+    match value {
+        "none_reviewed" => Some(ParentageStatus::NoneReviewed),
+        "candidate_available" => Some(ParentageStatus::CandidateAvailable),
+        "accepted_partial" => Some(ParentageStatus::AcceptedPartial),
+        "accepted_full" => Some(ParentageStatus::AcceptedFull),
+        "contested" => Some(ParentageStatus::Contested),
+        _ => None,
+    }
+}
+
+fn parse_query_readiness(value: &str) -> Option<QueryReadiness> {
+    match value {
+        "existence_only" => Some(QueryReadiness::ExistenceOnly),
+        "title_path" => Some(QueryReadiness::TitlePath),
+        "transfer" => Some(QueryReadiness::Transfer),
+        "lineage_event" => Some(QueryReadiness::LineageEvent),
+        "unsupported" => Some(QueryReadiness::Unsupported),
+        _ => None,
+    }
+}
+
+fn parse_exclusion_reason(value: &str) -> Option<ExclusionReason> {
+    match value {
+        "unsupported_rank" => Some(ExclusionReason::UnsupportedRank),
+        "non_title_polity" => Some(ExclusionReason::NonTitlePolity),
+        "ambiguous_entity" => Some(ExclusionReason::AmbiguousEntity),
+        "date_conflict" => Some(ExclusionReason::DateConflict),
+        "successor_predecessor_issue" => Some(ExclusionReason::SuccessorPredecessorIssue),
+        "rights_blocked" => Some(ExclusionReason::RightsBlocked),
+        "quality_blocked" => Some(ExclusionReason::QualityBlocked),
+        "scope_deferred" => Some(ExclusionReason::ScopeDeferred),
+        _ => None,
+    }
+}
+
 fn parse_source_review_decision(value: &str) -> Result<SourceReviewDecision, String> {
     match value {
         "accepted_metadata_only" => Ok(SourceReviewDecision::AcceptedMetadataOnly),
@@ -1542,6 +1705,65 @@ pub fn validate_candidate_records(candidates: &[CandidateRecord]) -> Result<(), 
                 candidate.candidate_id, candidate.source_id, first_seen
             ));
         }
+        if matches!(
+            candidate.status,
+            CandidateStatus::Reviewed | CandidateStatus::Promoted
+        ) {
+            if candidate.review_batch_id.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires review_batch_id",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.import_scope.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires import_scope",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.rank_basis.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires rank_basis",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.entity_class.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires entity_class",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.source_claims_used.is_empty() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires source_claims_used",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.confidence_detail.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires confidence_detail",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.parentage_status.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires parentage_status",
+                    candidate.candidate_id
+                ));
+            }
+            if candidate.query_readiness.is_none() {
+                errors.push(format!(
+                    "{} reviewed/promoted candidate requires query_readiness",
+                    candidate.candidate_id
+                ));
+            }
+        }
+        if candidate.status == CandidateStatus::Rejected && candidate.exclusion_reason.is_none() {
+            errors.push(format!(
+                "{} rejected candidate requires exclusion_reason",
+                candidate.candidate_id
+            ));
+        }
     }
 
     if errors.is_empty() {
@@ -1622,6 +1844,48 @@ fn parse_candidate_record_block(block: &str) -> Result<CandidateRecord, Vec<Stri
     let source_id = take_required(&values, "source_id", &mut errors);
     let source_url = take_required(&values, "source_url", &mut errors);
     let status = parse_required_candidate_status(&values, "status", &mut errors);
+    let review_batch_id = optional_field(&values, "review_batch_id");
+    let import_scope =
+        parse_optional_candidate_field(&values, "import_scope", parse_import_scope, &mut errors);
+    let rank_basis =
+        parse_optional_candidate_field(&values, "rank_basis", parse_rank_basis, &mut errors);
+    let entity_class =
+        parse_optional_candidate_field(&values, "entity_class", parse_entity_class, &mut errors);
+    let source_claims_used = values
+        .get("source_claims_used")
+        .map(|value| {
+            value
+                .split(',')
+                .map(str::trim)
+                .filter(|claim| !claim.is_empty())
+                .map(ToString::to_string)
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+    let confidence_detail = parse_optional_candidate_field(
+        &values,
+        "confidence_detail",
+        parse_confidence_detail,
+        &mut errors,
+    );
+    let parentage_status = parse_optional_candidate_field(
+        &values,
+        "parentage_status",
+        parse_parentage_status,
+        &mut errors,
+    );
+    let query_readiness = parse_optional_candidate_field(
+        &values,
+        "query_readiness",
+        parse_query_readiness,
+        &mut errors,
+    );
+    let exclusion_reason = parse_optional_candidate_field(
+        &values,
+        "exclusion_reason",
+        parse_exclusion_reason,
+        &mut errors,
+    );
     let notes = values
         .get("notes")
         .filter(|value| !value.trim().is_empty())
@@ -1636,8 +1900,42 @@ fn parse_candidate_record_block(block: &str) -> Result<CandidateRecord, Vec<Stri
         source_id,
         source_url,
         status,
+        review_batch_id,
+        import_scope,
+        rank_basis,
+        entity_class,
+        source_claims_used,
+        confidence_detail,
+        parentage_status,
+        query_readiness,
+        exclusion_reason,
         notes,
     })
+}
+
+fn optional_field(values: &HashMap<String, String>, key: &str) -> Option<String> {
+    values
+        .get(key)
+        .filter(|value| !value.trim().is_empty())
+        .cloned()
+}
+
+fn parse_optional_candidate_field<T>(
+    values: &HashMap<String, String>,
+    key: &str,
+    parser: fn(&str) -> Option<T>,
+    errors: &mut Vec<String>,
+) -> Option<T> {
+    let Some(value) = values.get(key).filter(|value| !value.trim().is_empty()) else {
+        return None;
+    };
+    match parser(value) {
+        Some(parsed) => Some(parsed),
+        None => {
+            errors.push(format!("invalid {key} {value}"));
+            None
+        }
+    }
 }
 
 fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
@@ -2813,6 +3111,14 @@ candidate_id: cand-two
 source_id: src-two
 source_url: urn:duchy:candidate-two
 status: reviewed
+review_batch_id: batch-test
+import_scope: title_identity_only
+rank_basis: normalized
+entity_class: duchy
+source_claims_used: label, inception, dissolution
+confidence_detail: wikidata_structured_single
+parentage_status: none_reviewed
+query_readiness: existence_only
 "#;
 
         let candidates =
@@ -2822,6 +3128,24 @@ status: reviewed
         assert_eq!(candidates[0].candidate_id, "cand-one");
         assert_eq!(candidates[0].status, CandidateStatus::Pending);
         assert_eq!(candidates[1].status, CandidateStatus::Reviewed);
+        assert_eq!(
+            candidates[1].import_scope,
+            Some(ImportScope::TitleIdentityOnly)
+        );
+        assert_eq!(candidates[1].rank_basis, Some(RankBasis::Normalized));
+        assert_eq!(candidates[1].entity_class, Some(EntityClass::Duchy));
+        assert_eq!(
+            candidates[1].source_claims_used,
+            vec![
+                "label".to_string(),
+                "inception".to_string(),
+                "dissolution".to_string()
+            ]
+        );
+        assert_eq!(
+            candidates[1].query_readiness,
+            Some(QueryReadiness::ExistenceOnly)
+        );
         assert_eq!(validate_candidate_records(&candidates), Ok(()));
     }
 
@@ -2851,6 +3175,15 @@ status: pending
                 source_id: "src-one".to_string(),
                 source_url: "urn:duchy:candidate-one".to_string(),
                 status: CandidateStatus::Pending,
+                review_batch_id: None,
+                import_scope: None,
+                rank_basis: None,
+                entity_class: None,
+                source_claims_used: Vec::new(),
+                confidence_detail: None,
+                parentage_status: None,
+                query_readiness: None,
+                exclusion_reason: None,
                 notes: None,
             },
             CandidateRecord {
@@ -2858,6 +3191,15 @@ status: pending
                 source_id: "src-one".to_string(),
                 source_url: "urn:duchy:candidate-two".to_string(),
                 status: CandidateStatus::Reviewed,
+                review_batch_id: None,
+                import_scope: None,
+                rank_basis: None,
+                entity_class: None,
+                source_claims_used: Vec::new(),
+                confidence_detail: None,
+                parentage_status: None,
+                query_readiness: None,
+                exclusion_reason: None,
                 notes: None,
             },
         ];
@@ -2870,6 +3212,9 @@ status: pending
         assert!(validation_errors
             .iter()
             .any(|error| error.contains("duplicates source_id")));
+        assert!(validation_errors
+            .iter()
+            .any(|error| error.contains("requires import_scope")));
     }
 
     #[test]

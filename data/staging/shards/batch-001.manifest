@@ -1,5 +1,4 @@
-# Synthetic candidate manifest; not accepted history.
-
+# Candidate manifest shard generated from staging queue.
 candidate_id: cand-staging-one
 source_id: src-staging-one
 source_url: urn:duchy:staging-one
@@ -19,10 +18,3 @@ confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
 notes: Second synthetic candidate ready for fact extraction.
----
-candidate_id: cand-staging-three
-source_id: src-staging-three
-source_url: urn:duchy:staging-three
-status: rejected
-exclusion_reason: scope_deferred
-notes: Rejected synthetic candidate.

@@ -1,0 +1,7 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-staging-three
+source_id: src-staging-three
+source_url: urn:duchy:staging-three
+status: rejected
+exclusion_reason: scope_deferred
+notes: Rejected synthetic candidate.

@@ -195,6 +195,12 @@ fn rejected_report(manifest_path: &str, output_path: &str) -> Result<(), Vec<Str
         output.push_str(&format!("## {}\n\n", candidate.candidate_id));
         output.push_str(&format!("- source_id: {}\n", candidate.source_id));
         output.push_str(&format!("- source_url: {}\n", candidate.source_url));
+        if let Some(reason) = candidate.exclusion_reason {
+            output.push_str(&format!(
+                "- exclusion_reason: {}\n",
+                exclusion_reason_label(reason)
+            ));
+        }
         output.push_str(&format!(
             "- notes: {}\n\n",
             candidate.notes.as_deref().unwrap_or("none")
@@ -465,6 +471,18 @@ fn duplicate_url_report(manifest_path: &str, output_path: &str) -> Result<(), Ve
                     "  status: {}\n",
                     candidate_status_label(candidate.status)
                 ));
+                if let Some(entity_class) = candidate.entity_class {
+                    output.push_str(&format!(
+                        "  entity_class: {}\n",
+                        entity_class_label(entity_class)
+                    ));
+                }
+                if let Some(import_scope) = candidate.import_scope {
+                    output.push_str(&format!(
+                        "  import_scope: {}\n",
+                        import_scope_label(import_scope)
+                    ));
+                }
                 if let Some(notes) = &candidate.notes {
                     output.push_str(&format!("  notes: {notes}\n"));
                 }
@@ -494,7 +512,7 @@ fn manifest_tsv(manifest_path: &str, output_path: &str) -> Result<(), Vec<String
     }
 
     let mut output = String::new();
-    output.push_str("candidate_id\tsource_id\tsource_url\tstatus\tnotes\n");
+    output.push_str("candidate_id\tsource_id\tsource_url\tstatus\treview_batch_id\timport_scope\trank_basis\tentity_class\tsource_claims_used\tconfidence_detail\tparentage_status\tquery_readiness\texclusion_reason\tnotes\n");
     for candidate in &candidates {
         output.push_str(&tsv_cell(&candidate.candidate_id));
         output.push('\t');
@@ -503,6 +521,46 @@ fn manifest_tsv(manifest_path: &str, output_path: &str) -> Result<(), Vec<String
         output.push_str(&tsv_cell(&candidate.source_url));
         output.push('\t');
         output.push_str(candidate_status_label(candidate.status));
+        output.push('\t');
+        output.push_str(&tsv_cell(
+            candidate.review_batch_id.as_deref().unwrap_or(""),
+        ));
+        output.push('\t');
+        output.push_str(candidate.import_scope.map(import_scope_label).unwrap_or(""));
+        output.push('\t');
+        output.push_str(candidate.rank_basis.map(rank_basis_label).unwrap_or(""));
+        output.push('\t');
+        output.push_str(candidate.entity_class.map(entity_class_label).unwrap_or(""));
+        output.push('\t');
+        output.push_str(&tsv_cell(&candidate.source_claims_used.join(",")));
+        output.push('\t');
+        output.push_str(
+            candidate
+                .confidence_detail
+                .map(confidence_detail_label)
+                .unwrap_or(""),
+        );
+        output.push('\t');
+        output.push_str(
+            candidate
+                .parentage_status
+                .map(parentage_status_label)
+                .unwrap_or(""),
+        );
+        output.push('\t');
+        output.push_str(
+            candidate
+                .query_readiness
+                .map(query_readiness_label)
+                .unwrap_or(""),
+        );
+        output.push('\t');
+        output.push_str(
+            candidate
+                .exclusion_reason
+                .map(exclusion_reason_label)
+                .unwrap_or(""),
+        );
         output.push('\t');
         output.push_str(&tsv_cell(candidate.notes.as_deref().unwrap_or("")));
         output.push('\n');
@@ -525,7 +583,7 @@ fn manifest_from_tsv(input_path: &str, output_path: &str) -> Result<(), Vec<Stri
     let Some(header) = lines.next() else {
         return Err(vec![format!("{input_path} is empty")]);
     };
-    let expected_header = "candidate_id\tsource_id\tsource_url\tstatus\tnotes";
+    let expected_header = "candidate_id\tsource_id\tsource_url\tstatus\treview_batch_id\timport_scope\trank_basis\tentity_class\tsource_claims_used\tconfidence_detail\tparentage_status\tquery_readiness\texclusion_reason\tnotes";
     if header != expected_header {
         return Err(vec![format!(
             "invalid TSV header in {input_path}: expected {expected_header}"
@@ -541,9 +599,9 @@ fn manifest_from_tsv(input_path: &str, output_path: &str) -> Result<(), Vec<Stri
         }
         let fields = line.split('\t').collect::<Vec<_>>();
         let line_number = line_index + 2;
-        if fields.len() != 5 {
+        if fields.len() != 14 {
             return Err(vec![format!(
-                "line {line_number}: expected 5 TSV columns, found {}",
+                "line {line_number}: expected 14 TSV columns, found {}",
                 fields.len()
             )]);
         }
@@ -551,7 +609,16 @@ fn manifest_from_tsv(input_path: &str, output_path: &str) -> Result<(), Vec<Stri
         let source_id = manifest_tsv_cell(fields[1], line_number)?;
         let source_url = manifest_tsv_cell(fields[2], line_number)?;
         let status = manifest_tsv_cell(fields[3], line_number)?;
-        let notes = manifest_tsv_cell(fields[4], line_number)?;
+        let review_batch_id = manifest_tsv_cell(fields[4], line_number)?;
+        let import_scope = manifest_tsv_cell(fields[5], line_number)?;
+        let rank_basis = manifest_tsv_cell(fields[6], line_number)?;
+        let entity_class = manifest_tsv_cell(fields[7], line_number)?;
+        let source_claims_used = manifest_tsv_cell(fields[8], line_number)?;
+        let confidence_detail = manifest_tsv_cell(fields[9], line_number)?;
+        let parentage_status = manifest_tsv_cell(fields[10], line_number)?;
+        let query_readiness = manifest_tsv_cell(fields[11], line_number)?;
+        let exclusion_reason = manifest_tsv_cell(fields[12], line_number)?;
+        let notes = manifest_tsv_cell(fields[13], line_number)?;
 
         if candidate_count > 0 {
             output.push_str("---\n");
@@ -560,6 +627,15 @@ fn manifest_from_tsv(input_path: &str, output_path: &str) -> Result<(), Vec<Stri
         output.push_str(&format!("source_id: {source_id}\n"));
         output.push_str(&format!("source_url: {source_url}\n"));
         output.push_str(&format!("status: {status}\n"));
+        push_optional_manifest_line(&mut output, "review_batch_id", &review_batch_id);
+        push_optional_manifest_line(&mut output, "import_scope", &import_scope);
+        push_optional_manifest_line(&mut output, "rank_basis", &rank_basis);
+        push_optional_manifest_line(&mut output, "entity_class", &entity_class);
+        push_optional_manifest_line(&mut output, "source_claims_used", &source_claims_used);
+        push_optional_manifest_line(&mut output, "confidence_detail", &confidence_detail);
+        push_optional_manifest_line(&mut output, "parentage_status", &parentage_status);
+        push_optional_manifest_line(&mut output, "query_readiness", &query_readiness);
+        push_optional_manifest_line(&mut output, "exclusion_reason", &exclusion_reason);
         if !notes.is_empty() {
             output.push_str(&format!("notes: {notes}\n"));
         }
@@ -590,6 +666,54 @@ fn candidate_manifest_block(candidate: &duchy::CandidateRecord) -> String {
         "status: {}\n",
         candidate_status_label(candidate.status)
     ));
+    if let Some(review_batch_id) = &candidate.review_batch_id {
+        output.push_str(&format!("review_batch_id: {review_batch_id}\n"));
+    }
+    if let Some(import_scope) = candidate.import_scope {
+        output.push_str(&format!(
+            "import_scope: {}\n",
+            import_scope_label(import_scope)
+        ));
+    }
+    if let Some(rank_basis) = candidate.rank_basis {
+        output.push_str(&format!("rank_basis: {}\n", rank_basis_label(rank_basis)));
+    }
+    if let Some(entity_class) = candidate.entity_class {
+        output.push_str(&format!(
+            "entity_class: {}\n",
+            entity_class_label(entity_class)
+        ));
+    }
+    if !candidate.source_claims_used.is_empty() {
+        output.push_str(&format!(
+            "source_claims_used: {}\n",
+            candidate.source_claims_used.join(", ")
+        ));
+    }
+    if let Some(confidence_detail) = candidate.confidence_detail {
+        output.push_str(&format!(
+            "confidence_detail: {}\n",
+            confidence_detail_label(confidence_detail)
+        ));
+    }
+    if let Some(parentage_status) = candidate.parentage_status {
+        output.push_str(&format!(
+            "parentage_status: {}\n",
+            parentage_status_label(parentage_status)
+        ));
+    }
+    if let Some(query_readiness) = candidate.query_readiness {
+        output.push_str(&format!(
+            "query_readiness: {}\n",
+            query_readiness_label(query_readiness)
+        ));
+    }
+    if let Some(exclusion_reason) = candidate.exclusion_reason {
+        output.push_str(&format!(
+            "exclusion_reason: {}\n",
+            exclusion_reason_label(exclusion_reason)
+        ));
+    }
     if let Some(notes) = &candidate.notes {
         output.push_str(&format!("notes: {notes}\n"));
     }
@@ -622,6 +746,89 @@ fn candidate_status_label(status: duchy::CandidateStatus) -> &'static str {
         duchy::CandidateStatus::Reviewed => "reviewed",
         duchy::CandidateStatus::Promoted => "promoted",
         duchy::CandidateStatus::Rejected => "rejected",
+    }
+}
+
+fn import_scope_label(import_scope: duchy::ImportScope) -> &'static str {
+    match import_scope {
+        duchy::ImportScope::TitleIdentityOnly => "title_identity_only",
+        duchy::ImportScope::ParentageReady => "parentage_ready",
+        duchy::ImportScope::TerritoryReady => "territory_ready",
+        duchy::ImportScope::HolderReady => "holder_ready",
+        duchy::ImportScope::ContestedReview => "contested_review",
+    }
+}
+
+fn rank_basis_label(rank_basis: duchy::RankBasis) -> &'static str {
+    match rank_basis {
+        duchy::RankBasis::Literal => "literal",
+        duchy::RankBasis::Normalized => "normalized",
+        duchy::RankBasis::Approximate => "approximate",
+        duchy::RankBasis::Unsupported => "unsupported",
+    }
+}
+
+fn entity_class_label(entity_class: duchy::EntityClass) -> &'static str {
+    match entity_class {
+        duchy::EntityClass::County => "county",
+        duchy::EntityClass::Duchy => "duchy",
+        duchy::EntityClass::Kingdom => "kingdom",
+        duchy::EntityClass::Principality => "principality",
+        duchy::EntityClass::FreeCity => "free_city",
+        duchy::EntityClass::TheocraticState => "theocratic_state",
+        duchy::EntityClass::Confederation => "confederation",
+        duchy::EntityClass::Empire => "empire",
+        duchy::EntityClass::AdministrativeRegion => "administrative_region",
+        duchy::EntityClass::Other => "other",
+    }
+}
+
+fn confidence_detail_label(confidence_detail: duchy::ConfidenceDetail) -> &'static str {
+    match confidence_detail {
+        duchy::ConfidenceDetail::WikidataStructuredSingle => "wikidata_structured_single",
+        duchy::ConfidenceDetail::WikidataPlusTextCrosscheck => "wikidata_plus_text_crosscheck",
+        duchy::ConfidenceDetail::MultiSourceAgreement => "multi_source_agreement",
+        duchy::ConfidenceDetail::DateConflict => "date_conflict",
+        duchy::ConfidenceDetail::Unsupported => "unsupported",
+    }
+}
+
+fn parentage_status_label(parentage_status: duchy::ParentageStatus) -> &'static str {
+    match parentage_status {
+        duchy::ParentageStatus::NoneReviewed => "none_reviewed",
+        duchy::ParentageStatus::CandidateAvailable => "candidate_available",
+        duchy::ParentageStatus::AcceptedPartial => "accepted_partial",
+        duchy::ParentageStatus::AcceptedFull => "accepted_full",
+        duchy::ParentageStatus::Contested => "contested",
+    }
+}
+
+fn query_readiness_label(query_readiness: duchy::QueryReadiness) -> &'static str {
+    match query_readiness {
+        duchy::QueryReadiness::ExistenceOnly => "existence_only",
+        duchy::QueryReadiness::TitlePath => "title_path",
+        duchy::QueryReadiness::Transfer => "transfer",
+        duchy::QueryReadiness::LineageEvent => "lineage_event",
+        duchy::QueryReadiness::Unsupported => "unsupported",
+    }
+}
+
+fn exclusion_reason_label(exclusion_reason: duchy::ExclusionReason) -> &'static str {
+    match exclusion_reason {
+        duchy::ExclusionReason::UnsupportedRank => "unsupported_rank",
+        duchy::ExclusionReason::NonTitlePolity => "non_title_polity",
+        duchy::ExclusionReason::AmbiguousEntity => "ambiguous_entity",
+        duchy::ExclusionReason::DateConflict => "date_conflict",
+        duchy::ExclusionReason::SuccessorPredecessorIssue => "successor_predecessor_issue",
+        duchy::ExclusionReason::RightsBlocked => "rights_blocked",
+        duchy::ExclusionReason::QualityBlocked => "quality_blocked",
+        duchy::ExclusionReason::ScopeDeferred => "scope_deferred",
+    }
+}
+
+fn push_optional_manifest_line(output: &mut String, key: &str, value: &str) {
+    if !value.is_empty() {
+        output.push_str(&format!("{key}: {value}\n"));
     }
 }
 
@@ -670,6 +877,54 @@ fn push_manifest_report_section(
         output.push_str(&format!("- candidate_id: {}\n", candidate.candidate_id));
         output.push_str(&format!("  source_id: {}\n", candidate.source_id));
         output.push_str(&format!("  source_url: {}\n", candidate.source_url));
+        if let Some(review_batch_id) = &candidate.review_batch_id {
+            output.push_str(&format!("  review_batch_id: {review_batch_id}\n"));
+        }
+        if let Some(import_scope) = candidate.import_scope {
+            output.push_str(&format!(
+                "  import_scope: {}\n",
+                import_scope_label(import_scope)
+            ));
+        }
+        if let Some(rank_basis) = candidate.rank_basis {
+            output.push_str(&format!("  rank_basis: {}\n", rank_basis_label(rank_basis)));
+        }
+        if let Some(entity_class) = candidate.entity_class {
+            output.push_str(&format!(
+                "  entity_class: {}\n",
+                entity_class_label(entity_class)
+            ));
+        }
+        if !candidate.source_claims_used.is_empty() {
+            output.push_str(&format!(
+                "  source_claims_used: {}\n",
+                candidate.source_claims_used.join(", ")
+            ));
+        }
+        if let Some(confidence_detail) = candidate.confidence_detail {
+            output.push_str(&format!(
+                "  confidence_detail: {}\n",
+                confidence_detail_label(confidence_detail)
+            ));
+        }
+        if let Some(parentage_status) = candidate.parentage_status {
+            output.push_str(&format!(
+                "  parentage_status: {}\n",
+                parentage_status_label(parentage_status)
+            ));
+        }
+        if let Some(query_readiness) = candidate.query_readiness {
+            output.push_str(&format!(
+                "  query_readiness: {}\n",
+                query_readiness_label(query_readiness)
+            ));
+        }
+        if let Some(exclusion_reason) = candidate.exclusion_reason {
+            output.push_str(&format!(
+                "  exclusion_reason: {}\n",
+                exclusion_reason_label(exclusion_reason)
+            ));
+        }
         if let Some(notes) = &candidate.notes {
             output.push_str(&format!("  notes: {notes}\n"));
         }

@@ -99,7 +99,10 @@ Pulses:
     parentage spans.
 34. Mass title source scale-up. Complete for 37 additional reviewed Wikidata
     title sources, bringing the accepted source catalog to 50.
-35. Next reviewed parentage packet.
+35. Scale metadata manifest gate. Complete for 500-source readiness metadata:
+    import scope, rank basis, entity class, claim usage, confidence detail,
+    parentage status, query readiness, and exclusion reasons.
+36. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

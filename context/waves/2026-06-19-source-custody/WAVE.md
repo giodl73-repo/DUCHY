@@ -49,6 +49,7 @@ records and validation.
 | 31 | Baden and Hanover import | complete | Import reviewed Baden and Hanover title facts and parentage spans. |
 | 32 | Oldenburg and Brunswick import | complete | Import reviewed Oldenburg and Brunswick title facts and parentage spans. |
 | 33 | Mass title source scale-up | complete | Import reviewed title facts until the accepted source catalog reaches 50 sources. |
+| 34 | Scale metadata manifest gate | complete | Require 500-source readiness metadata for reviewed/promoted manifest rows. |
 
 ## Success Criteria
 

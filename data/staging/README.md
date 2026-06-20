@@ -45,6 +45,31 @@ candidate manifests.
 Manifest shards split larger queues into fixed-size, parseable review batches
 and write `INDEX.md` with per-shard status counts.
 
+Reviewed and promoted manifest rows must carry scale metadata before fact
+extraction:
+
+- `review_batch_id`: stable review batch identifier.
+- `import_scope`: one of `title_identity_only`, `parentage_ready`,
+  `territory_ready`, `holder_ready`, or `contested_review`.
+- `rank_basis`: one of `literal`, `normalized`, `approximate`, or
+  `unsupported`.
+- `entity_class`: one of `county`, `duchy`, `kingdom`, `principality`,
+  `free_city`, `theocratic_state`, `confederation`, `empire`,
+  `administrative_region`, or `other`.
+- `source_claims_used`: comma-separated structured claims accepted for import.
+- `confidence_detail`: one of `wikidata_structured_single`,
+  `wikidata_plus_text_crosscheck`, `multi_source_agreement`, `date_conflict`,
+  or `unsupported`.
+- `parentage_status`: one of `none_reviewed`, `candidate_available`,
+  `accepted_partial`, `accepted_full`, or `contested`.
+- `query_readiness`: one of `existence_only`, `title_path`, `transfer`,
+  `lineage_event`, or `unsupported`.
+
+Rejected rows must carry `exclusion_reason`: one of `unsupported_rank`,
+`non_title_polity`, `ambiguous_entity`, `date_conflict`,
+`successor_predecessor_issue`, `rights_blocked`, `quality_blocked`, or
+`scope_deferred`.
+
 Example dry run:
 
 ```powershell

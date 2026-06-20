@@ -1,0 +1,11 @@
+# Generated source stubs; review before promotion.
+source_id: src-staging-two
+source_kind: other
+source_url: urn:duchy:staging-two
+license: REVIEW_REQUIRED
+retrieved_on: REVIEW_REQUIRED
+allowed_use: blocked
+notes: Generated from reviewed candidate manifest; replace review fields before fact promotion.
+review_decision: blocked_scope
+reviewer: Source Custody Reviewer
+review_note: Generated stub only; source-custody review required before fact extraction.
