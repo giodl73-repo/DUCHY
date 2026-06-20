@@ -1,0 +1,199 @@
+# DUCHY Parentage Gap Review Report
+
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-001.tsv
+gap_rows: 25
+
+## Priority Counts
+
+| Priority | Rows |
+|---|---:|
+| high_parentage_review | 5 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 6 |
+
+## Rank Counts
+
+| Rank | Rows |
+|---|---:|
+| County | 3 |
+| Duchy | 2 |
+| Empire | 6 |
+| Kingdom | 14 |
+
+## Review Rows
+
+### title-q10295972 | Hunnic Empire
+
+- rank: Empire
+- exists: 316..484
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1048340 | Albanian Kingdom
+
+- rank: Kingdom
+- exists: 1928..1939
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q104863335 | Duchy of Poland
+
+- rank: Duchy
+- exists: 966..1025
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q1048918 | Kingdom of the Suebi
+
+- rank: Kingdom
+- exists: 411..585
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q105092 | Kingdom of Mercia
+
+- rank: Kingdom
+- exists: 527..918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q105313 | Kingdom of Wessex
+
+- rank: Kingdom
+- exists: 519..927
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q106577 | Neustria
+
+- rank: Kingdom
+- exists: 511..977
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1069959 | Kingdom of Imereti
+
+- rank: Kingdom
+- exists: 1260..1810
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q107299 | Kingdom of Northumbria
+
+- rank: Kingdom
+- exists: 653..954
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q110888 | Kingdom of Essex
+
+- rank: Kingdom
+- exists: 527..825
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1122980 | Comtat Venaissin
+
+- rank: County
+- exists: 1274..1791
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q116080 | Polish Underground State
+
+- rank: Empire
+- exists: 1939..1945
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1164500 | Kingdom of Murcia
+
+- rank: Kingdom
+- exists: 1258..1833
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q11750128 | Kingdom of Poland
+
+- rank: Kingdom
+- exists: 1830..1831
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1209822 | Kingdom of Kakheti
+
+- rank: Kingdom
+- exists: 1465..1762
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1231403 | Prince-Bishopric of Trent
+
+- rank: Duchy
+- exists: 1027..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q1232887 | County of Savoy
+
+- rank: County
+- exists: 1003..1416
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q1233672 | County of Barcelona
+
+- rank: County
+- exists: 801..1164
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q1241847 | Judicate of Arborea
+
+- rank: Kingdom
+- exists: 800..1420
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q12544 | Byzantine Empire
+
+- rank: Empire
+- exists: 395..1453
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q12548 | Holy Roman Empire
+
+- rank: Empire
+- exists: 962..1806
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q12560 | Ottoman Empire
+
+- rank: Empire
+- exists: 1302..1922
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q12714608 | Fascist Romania
+
+- rank: Kingdom
+- exists: 1937..1938
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q131964 | Austrian Empire
+
+- rank: Empire
+- exists: 1804..1867
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1333032 | Elmet
+
+- rank: Kingdom
+- exists: 500..627
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+

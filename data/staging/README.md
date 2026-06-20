@@ -247,3 +247,11 @@ Parentage gap queues can be regenerated as TSV for batch review:
 ```powershell
 cargo run --bin duchy-import -- parentage-gap-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-gap-targets.tsv
 ```
+
+Parentage gap queues can be split into fixed-size review shards and rendered as
+Markdown reports:
+
+```powershell
+cargo run --bin duchy-import -- parentage-gap-shard data/staging/parentage-gap-targets.tsv data/staging/parentage-gap-shards 25
+cargo run --bin duchy-import -- parentage-gap-report data/staging/parentage-gap-shards/batch-001.tsv data/staging/parentage-gap-shards/batch-001-report.md
+```

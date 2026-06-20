@@ -1,0 +1,26 @@
+title_id	name	rank	exists	parentage_count	review_priority	notes
+title-q10295972	Hunnic Empire	Empire	316..484	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q1048340	Albanian Kingdom	Kingdom	1928..1939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q104863335	Duchy of Poland	Duchy	966..1025	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q1048918	Kingdom of the Suebi	Kingdom	411..585	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q105092	Kingdom of Mercia	Kingdom	527..918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q105313	Kingdom of Wessex	Kingdom	519..927	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q106577	Neustria	Kingdom	511..977	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1069959	Kingdom of Imereti	Kingdom	1260..1810	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q107299	Kingdom of Northumbria	Kingdom	653..954	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q110888	Kingdom of Essex	Kingdom	527..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1122980	Comtat Venaissin	County	1274..1791	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q116080	Polish Underground State	Empire	1939..1945	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q1164500	Kingdom of Murcia	Kingdom	1258..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q11750128	Kingdom of Poland	Kingdom	1830..1831	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1209822	Kingdom of Kakheti	Kingdom	1465..1762	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1231403	Prince-Bishopric of Trent	Duchy	1027..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q1232887	County of Savoy	County	1003..1416	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q1233672	County of Barcelona	County	801..1164	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q1241847	Judicate of Arborea	Kingdom	800..1420	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q12544	Byzantine Empire	Empire	395..1453	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q12548	Holy Roman Empire	Empire	962..1806	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q12560	Ottoman Empire	Empire	1302..1922	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q12714608	Fascist Romania	Kingdom	1937..1938	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q131964	Austrian Empire	Empire	1804..1867	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q1333032	Elmet	Kingdom	500..627	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

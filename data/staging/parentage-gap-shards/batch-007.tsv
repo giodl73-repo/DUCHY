@@ -1,0 +1,26 @@
+title_id	name	rank	exists	parentage_count	review_priority	notes
+title-q568638	Duchy of Silesia	Duchy	1138..1742	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q573290	County of Ravensberg	County	1140..1807	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q58202	July Monarchy	Kingdom	1830..1848	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q583038	Ostrogothic Kingdom	Kingdom	493..553	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q589251	County of Montbeliard	County	1042..1793	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q599613	County of Namur	County	981..1795	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q600018	Kingdom of Hungary	Kingdom	1920..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q603771	Emirate of Crete	Empire	820..961	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q625380	Eastern Hungarian Kingdom	Kingdom	1526..1570	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q62623	Kalmar Union	Kingdom	1397..1523	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q62633	Grand Duchy of Finland	Duchy	1809..1917	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q641138	Duchy of Cleves	Duchy	1092..1795	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q649202	Duchy of Urbino	Duchy	1443..1631	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q657241	Duchy of Westphalia	Duchy	1180..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q660393	Lower Lotharingia	Duchy	959..1190	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q6673921	Lotharingia	Duchy	855..959	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q671899	Duchy of Teschen	Duchy	1281..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q675363	County of Geneva	County	900..1401	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q682001	Duchy of Bytom	Duchy	1281..1498	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

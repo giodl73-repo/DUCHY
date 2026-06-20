@@ -1,0 +1,26 @@
+title_id	name	rank	exists	parentage_count	review_priority	notes
+title-q1352878	Duchy of Livonia	Duchy	1561..1621	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q13590051	Kingdom of the Burgundians	Kingdom	411..534	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q142417	Kingdom of Valencia	Kingdom	1238..1707	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1448131	Italian protectorate of Albania	Kingdom	1939..1943	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q146246	Francia	Kingdom	481..843	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1470101	Kingdom of Hungary (1000-1301)	Kingdom	1000..1301	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q147909	Kingdom of Bulgaria	Kingdom	1908..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q150981	North German Confederation	Empire	1867..1870	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q151624	German Confederation	Empire	1815..1866	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q152115	Duchy of Warsaw	Duchy	1807..1815	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q15238138	Kingdom of Spain	Kingdom	1814..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q153091	Duchy of Prussia	Duchy	1525..1618	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q153943	Kingdom of Westphalia	Kingdom	1807..1813	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1541613	County of Astarac	County	920..1300	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q1541699	County of Empuries	County	812..1402	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q154667	Kingdom of Georgia	Kingdom	1008..1466	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q154849	Grand Duchy of Tuscany	Duchy	1569..1860	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q156038	Duchy of Courland and Semigallia	Duchy	1561..1795	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q157109	Burgundian Netherlands	Duchy	1384..1482	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q160307	Fatimid Egyptian Caliphate	Empire	909..1171	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q160440	Crimean Khanate	Empire	1441..1783	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q16056854	Kingdom of Hungary	Kingdom	1301..1526	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q16084290	Illyrian kingdom	Kingdom	-700..-135	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q1617495	Kingdom of Jaen	Kingdom	1246..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q161885	Kingdom of Great Britain	Kingdom	1707..1801	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

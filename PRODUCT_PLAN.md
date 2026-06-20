@@ -176,7 +176,9 @@ Pulses:
     summarizes parentage coverage by rank and lists title hierarchy gaps.
 62. Parentage gap TSV queue. Complete for a machine-readable 211-row queue of
     unparented accepted titles with rank-based review priority.
-63. Next reviewed parentage packet.
+63. Parentage gap sharding and reports. Complete for 9 fixed-size review
+    batches and Markdown reports across the 211-row parentage gap queue.
+64. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
