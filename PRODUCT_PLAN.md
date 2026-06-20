@@ -129,7 +129,11 @@ Pulses:
     using existing accepted source records and excluding overlapping HRE spans.
 46. Residual German Confederation parentage packet. Complete for 4
     parentage-only facts using existing accepted source records.
-47. Next reviewed parentage packet.
+47. CK3 Europe county discovery queue. Complete for 500 pending county
+    candidates generated from a saved CK3 wiki county list, filtered to
+    Europe-facing CK3 empire buckets, with no accepted historical facts
+    promoted.
+48. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

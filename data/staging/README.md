@@ -40,6 +40,18 @@ cargo run --bin duchy-import -- archive-manifest data/staging/candidates-500.man
 cargo run --bin duchy-import -- shard-manifest data/staging/candidates-500.manifest data/staging/candidates-500-shards 50
 ```
 
+The CK3 county discovery queue uses the saved CK3 wiki county list as a search
+driver for 500 Europe-bucket county candidates. CK3 rows are pending discovery
+records only; they cannot support accepted historical facts until each row is
+resolved to an independent reviewed historical source:
+
+```powershell
+cargo run --bin duchy-import -- manifest data/staging/ck3-counties-500.manifest
+cargo run --bin duchy-import -- manifest-report data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-report.md
+cargo run --bin duchy-import -- duplicate-url-report data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-duplicate-urls.md
+cargo run --bin duchy-import -- shard-manifest data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-shards 50
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.

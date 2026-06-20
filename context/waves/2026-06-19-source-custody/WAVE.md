@@ -61,6 +61,7 @@ records and validation.
 | 43 | Holy Roman Empire parentage packet | complete | Import Holy Roman Empire parentage facts using accepted source records. |
 | 44 | Kingdom of France parentage packet | complete | Import France parentage facts using accepted source records and non-overlapping spans. |
 | 45 | Residual German Confederation parentage packet | complete | Import remaining clean German Confederation parentage facts using accepted source records. |
+| 46 | CK3 Europe county discovery queue | complete | Stage 500 pending Europe-bucket CK3 county candidates as search leads, with no fact promotion. |
 
 ## Success Criteria
 

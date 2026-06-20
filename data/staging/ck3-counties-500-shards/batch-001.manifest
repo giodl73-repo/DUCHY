@@ -1,0 +1,700 @@
+# Candidate manifest shard generated from staging queue.
+candidate_id: cand-ck3-c_aachen
+source_id: src-ck3-county-c_aachen
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aachen
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aachen; Kingdoms: JÃ¼lich/Lotharingia/Lotharingia; Empires: Lotharingia/Germania/Holy Roman Empire; CK id: c_aachen
+---
+candidate_id: cand-ck3-c_aalborg
+source_id: src-ck3-county-c_aalborg
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aalborg
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aalborg; Kingdoms: Jylland/Denmark/Denmark; Empires: Denmark/Scandinavia/Scandinavia; CK id: c_aalborg
+---
+candidate_id: cand-ck3-c_aargau
+source_id: src-ck3-county-c_aargau
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aargau
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aargau; Kingdoms: Transjurania/Burgundy/Burgundy; Empires: Burgundy/Francia/Francia; CK id: c_aargau
+---
+candidate_id: cand-ck3-c_aarhus
+source_id: src-ck3-county-c_aarhus
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aarhus
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aarhus; Kingdoms: Jylland/Denmark/Denmark; Empires: Denmark/Scandinavia/Scandinavia; CK id: c_aarhus
+---
+candidate_id: cand-ck3-c_abauj
+source_id: src-ck3-county-c_abauj
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Abauj
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Abauj; Kingdoms: UngvÃ¡r/Hungary/Hungary; Empires: Hungary/Carpathia/Carpathia; CK id: c_abauj
+---
+candidate_id: cand-ck3-c_abkhazia
+source_id: src-ck3-county-c_abkhazia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Abkhazia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Abkhazia; Kingdoms: Abkhazia/Georgia/Georgia; Empires: Georgia/Byzantine Empire/Byzantine Empire; CK id: c_abkhazia
+---
+candidate_id: cand-ck3-c_ablastha
+source_id: src-ck3-county-c_ablastha
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Ablastha
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ablastha; Kingdoms: Sebasteia/Pontus/Pontus; Empires: Rum/Byzantine Empire/Byzantine Empire; CK id: c_ablastha
+---
+candidate_id: cand-ck3-c_abruzzi
+source_id: src-ck3-county-c_abruzzi
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Abruzzi
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Abruzzi; Kingdoms: Spoleto/Romagna/Romagna; Empires: Romagna/Italia/Italia; CK id: c_abruzzi
+---
+candidate_id: cand-ck3-c_abydos
+source_id: src-ck3-county-c_abydos
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Abydos
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Abydos; Kingdoms: Aegean Islands/Thessalonika/Thessalonika; Empires: Thessalonika/Byzantine Empire/Byzantine Empire; CK id: c_abydos
+---
+candidate_id: cand-ck3-c_acampse
+source_id: src-ck3-county-c_acampse
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Acampse
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Acampse; Kingdoms: Tao-Klarjeti/Georgia/Georgia; Empires: Georgia/Byzantine Empire/Byzantine Empire; CK id: c_acampse
+---
+candidate_id: cand-ck3-c_achaia
+source_id: src-ck3-county-c_achaia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Achaia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Achaia; Kingdoms: Achaia/Hellas/Hellas; Empires: Hellas/Byzantine Empire/Byzantine Empire; CK id: c_achaia
+---
+candidate_id: cand-ck3-c_adrianopolis
+source_id: src-ck3-county-c_adrianopolis
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Adrianopolis
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Adrianopolis; Kingdoms: Philippopolis/Bulgaria/Bulgaria; Empires: Bulgaria/Byzantine Empire/Byzantine Empire; CK id: c_adrianopolis
+---
+candidate_id: cand-ck3-c_aeolis
+source_id: src-ck3-county-c_aeolis
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aeolis
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aeolis; Kingdoms: Ephesos/Nikaea/Nikaea; Empires: Nikaea/Byzantine Empire/Byzantine Empire; CK id: c_aeolis
+---
+candidate_id: cand-ck3-c_aetolia
+source_id: src-ck3-county-c_aetolia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aetolia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aetolia; Kingdoms: Epirus/Epirus/Epirus; Empires: Epirus/Byzantine Empire/Byzantine Empire; CK id: c_aetolia
+---
+candidate_id: cand-ck3-c_agen
+source_id: src-ck3-county-c_agen
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Agen
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Agen; Kingdoms: Gascogne/Aquitaine/France; Empires: France/Francia/Francia; CK id: c_agen
+---
+candidate_id: cand-ck3-c_ailech
+source_id: src-ck3-county-c_ailech
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Ailech
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ailech; Kingdoms: Ulster/Ireland/Ireland; Empires: Ireland/Britannia/Britannia; CK id: c_ailech
+---
+candidate_id: cand-ck3-c_ajaccio
+source_id: src-ck3-county-c_ajaccio
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Ajaccio
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ajaccio; Kingdoms: Corsica/Sardinia/Sardinia; Empires: Sardinia/Italia/Italia; CK id: c_ajaccio
+---
+candidate_id: cand-ck3-c_akkel
+source_id: src-ck3-county-c_akkel
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Akkel
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Akkel; Kingdoms: Giemajohka/SÃ¡pmi/SÃ¡pmi; Empires: SÃ¡pmi/Scandinavia/Scandinavia; CK id: c_akkel
+---
+candidate_id: cand-ck3-c_aland
+source_id: src-ck3-county-c_aland
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aland
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aland; Kingdoms: Uppland/Sweden/Sweden; Empires: Sweden/Scandinavia/Scandinavia; CK id: c_aland
+---
+candidate_id: cand-ck3-c_alarcon
+source_id: src-ck3-county-c_alarcon
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alarcon
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alarcon; Kingdoms: Murcia/Valencia/Valencia; Empires: Valencia/Hispania/Hispania; CK id: c_alarcon
+---
+candidate_id: cand-ck3-c_alarcos
+source_id: src-ck3-county-c_alarcos
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alarcos
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alarcos; Kingdoms: Cordoba/Andalusia/Andalusia; Empires: Andalusia/Hispania/Hispania; CK id: c_alarcos
+---
+candidate_id: cand-ck3-c_albarracin
+source_id: src-ck3-county-c_albarracin
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Albarracin
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Albarracin; Kingdoms: Aragon/Valencia/Aragon; Empires: Aragon/Hispania/Hispania; CK id: c_albarracin
+---
+candidate_id: cand-ck3-c_albi
+source_id: src-ck3-county-c_albi
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Albi
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Albi; Kingdoms: Languedoc/Aquitaine/France; Empires: France/Francia/Francia; CK id: c_albi
+---
+candidate_id: cand-ck3-c_albret
+source_id: src-ck3-county-c_albret
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Albret
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Albret; Kingdoms: Gascogne/Aquitaine/France; Empires: France/Francia/Francia; CK id: c_albret
+---
+candidate_id: cand-ck3-c_alcacer_do_sal
+source_id: src-ck3-county-c_alcacer_do_sal
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alcacer_do_Sal
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alcacer do Sal; Kingdoms: Beja/Badajoz/Badajoz; Empires: Portugal/Hispania/Hispania; CK id: c_alcacer_do_sal
+---
+candidate_id: cand-ck3-c_alcaniz
+source_id: src-ck3-county-c_alcaniz
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alcaniz
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alcaniz; Kingdoms: Aragon/Valencia/Aragon; Empires: Aragon/Hispania/Hispania; CK id: c_alcaniz
+---
+candidate_id: cand-ck3-c_alcaraz
+source_id: src-ck3-county-c_alcaraz
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alcaraz
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alcaraz; Kingdoms: Murcia/Valencia/Valencia; Empires: Valencia/Hispania/Hispania; CK id: c_alcaraz
+---
+candidate_id: cand-ck3-c_alen_on
+source_id: src-ck3-county-c_alen_on
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alen%C3%83%C2%A7on
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: AlenÃ§on; Kingdoms: Normandy/France/France; Empires: France/Francia/Francia; CK id: c_alen_on
+---
+candidate_id: cand-ck3-c_algeciras
+source_id: src-ck3-county-c_algeciras
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Algeciras
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Algeciras; Kingdoms: Seville/Andalusia/Andalusia; Empires: Andalusia/Hispania/Hispania; CK id: c_algeciras
+---
+candidate_id: cand-ck3-c_alicante
+source_id: src-ck3-county-c_alicante
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alicante
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alicante; Kingdoms: ValÃ¨ncia/Valencia/Valencia; Empires: Valencia/Hispania/Hispania; CK id: c_alicante
+---
+candidate_id: cand-ck3-c_almeria
+source_id: src-ck3-county-c_almeria
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Almeria
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Almeria; Kingdoms: Granada/Andalusia/Andalusia; Empires: Andalusia/Hispania/Hispania; CK id: c_almeria
+---
+candidate_id: cand-ck3-c_alpsee
+source_id: src-ck3-county-c_alpsee
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alpsee
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alpsee; Kingdoms: Augsburg/Bavaria/Bavaria; Empires: Bavaria/Germania/Holy Roman Empire; CK id: c_alpsee
+---
+candidate_id: cand-ck3-c_alto_aragon
+source_id: src-ck3-county-c_alto_aragon
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Alto_Aragon
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Alto Aragon; Kingdoms: Aragon/Valencia/Aragon; Empires: Aragon/Hispania/Hispania; CK id: c_alto_aragon
+---
+candidate_id: cand-ck3-c_aluksne
+source_id: src-ck3-county-c_aluksne
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aluksne
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aluksne; Kingdoms: Latgalia/Lithuania/Lithuania; Empires: Lithuania/Baltic Empire/Baltic Empire; CK id: c_aluksne
+---
+candidate_id: cand-ck3-c_amaya
+source_id: src-ck3-county-c_amaya
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Amaya
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Amaya; Kingdoms: Cantabria/Castile/Castile; Empires: Castile/Hispania/Hispania; CK id: c_amaya
+---
+candidate_id: cand-ck3-c_amiens
+source_id: src-ck3-county-c_amiens
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Amiens
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Amiens; Kingdoms: Valois/France/France; Empires: France/Francia/Francia; CK id: c_amiens
+---
+candidate_id: cand-ck3-c_amstetten
+source_id: src-ck3-county-c_amstetten
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Amstetten
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Amstetten; Kingdoms: Austria/Bavaria/Bavaria; Empires: Bavaria/Germania/Holy Roman Empire; CK id: c_amstetten
+---
+candidate_id: cand-ck3-c_ancona
+source_id: src-ck3-county-c_ancona
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Ancona
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ancona; Kingdoms: Ancona/Romagna/Romagna; Empires: Romagna/Italia/Italia; CK id: c_ancona
+---
+candidate_id: cand-ck3-c_ngermanland
+source_id: src-ck3-county-c_ngermanland
+source_url: https://ck3.paradoxwikis.com/List_of_counties#%C3%83%C2%85ngermanland
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ã ngermanland; Kingdoms: Norrland/Sweden/Sweden; Empires: Sweden/Scandinavia/Scandinavia; CK id: c_ngermanland
+---
+candidate_id: cand-ck3-c_angoul_me
+source_id: src-ck3-county-c_angoul_me
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Angoul%C3%83%C2%AAme
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: AngoulÃªme; Kingdoms: Aquitaine/Aquitaine/France; Empires: France/Francia/Francia; CK id: c_angoul_me
+---
+candidate_id: cand-ck3-c_angus
+source_id: src-ck3-county-c_angus
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Angus
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Angus; Kingdoms: Albany/Scotland/Scotland; Empires: Scotland/Britannia/Britannia; CK id: c_angus
+---
+candidate_id: cand-ck3-c_anjou
+source_id: src-ck3-county-c_anjou
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Anjou
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Anjou; Kingdoms: Anjou/France/France; Empires: France/Francia/Francia; CK id: c_anjou
+---
+candidate_id: cand-ck3-c_annandale
+source_id: src-ck3-county-c_annandale
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Annandale
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Annandale; Kingdoms: Strathclyde/Scotland/Scotland; Empires: Scotland/Britannia/Britannia; CK id: c_annandale
+---
+candidate_id: cand-ck3-c_ansbach
+source_id: src-ck3-county-c_ansbach
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Ansbach
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Ansbach; Kingdoms: East Franconia/East Francia/East Francia; Empires: East Francia/Germania/Holy Roman Empire; CK id: c_ansbach
+---
+candidate_id: cand-ck3-c_antipatreia
+source_id: src-ck3-county-c_antipatreia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Antipatreia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Antipatreia; Kingdoms: Dyrrachion/Epirus/Epirus; Empires: Epirus/Byzantine Empire/Byzantine Empire; CK id: c_antipatreia
+---
+candidate_id: cand-ck3-c_antwerpen
+source_id: src-ck3-county-c_antwerpen
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Antwerpen
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Antwerpen; Kingdoms: Brabant/Lotharingia/Lotharingia; Empires: Lotharingia/Germania/Holy Roman Empire; CK id: c_antwerpen
+---
+candidate_id: cand-ck3-c_aosta
+source_id: src-ck3-county-c_aosta
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aosta
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aosta; Kingdoms: Savoy/Burgundy/Burgundy; Empires: Burgundy/Francia/Francia; CK id: c_aosta
+---
+candidate_id: cand-ck3-c_apahunik
+source_id: src-ck3-county-c_apahunik
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Apahunik
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Apahunik; Kingdoms: Vaspurakan/Armenia/Armenia; Empires: Armenia/Byzantine Empire/Byzantine Empire; CK id: c_apahunik
+---
+candidate_id: cand-ck3-c_apulia
+source_id: src-ck3-county-c_apulia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Apulia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Apulia; Kingdoms: Apulia/Sicily/Sicily; Empires: Sicily/Byzantine Empire/Byzantine Empire; CK id: c_apulia
+---
+candidate_id: cand-ck3-c_aquileia
+source_id: src-ck3-county-c_aquileia
+source_url: https://ck3.paradoxwikis.com/List_of_counties#Aquileia
+status: pending
+review_batch_id: batch-ck3-counties-500
+import_scope: title_identity_only
+rank_basis: approximate
+entity_class: county
+source_claims_used: ck3_county, ck3_duchy, ck3_kingdom, ck3_empire
+confidence_detail: unsupported
+parentage_status: candidate_available
+query_readiness: unsupported
+notes: CK3 Europe discovery row only; resolve to historical source before promotion. County: ; Duchy: Aquileia; Kingdoms: Friuli/Italy/Italy; Empires: Italy/Italia/Italia; CK id: c_aquileia
