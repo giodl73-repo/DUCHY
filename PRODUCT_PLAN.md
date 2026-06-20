@@ -121,7 +121,9 @@ Pulses:
 42. Additional German parentage packet. Complete for 23 parentage-only facts
     using existing accepted source records and merged-catalog promotion
     validation.
-43. Next reviewed parentage packet.
+43. Austrian parentage packet. Complete for 15 parentage-only facts under the
+    Austrian Empire and Austria-Hungary using existing accepted source records.
+44. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

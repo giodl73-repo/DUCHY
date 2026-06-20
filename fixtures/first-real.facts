@@ -7716,3 +7716,125 @@ span: 1815..1866
 value: title-q151624
 source_ids: src-wikidata-q630163, src-wikidata-q151624
 confidence: multi_source
+---
+# Reviewed parentage packet for Austrian Empire and Austria-Hungary titles.
+
+fact_id: fact-q1117051-parent-q131964
+subject_id: title-q1117051
+claim_kind: parentage
+span: 1816..1849
+value: title-q131964
+source_ids: src-wikidata-q1117051, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q171150-parent-q131964
+subject_id: title-q171150
+claim_kind: parentage
+span: 1804..1867
+value: title-q131964
+source_ids: src-wikidata-q171150, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q209857-parent-q131964
+subject_id: title-q209857
+claim_kind: parentage
+span: 1815..1866
+value: title-q131964
+source_ids: src-wikidata-q209857, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q2360973-parent-q131964
+subject_id: title-q2360973
+claim_kind: parentage
+span: 1804..1866
+value: title-q131964
+source_ids: src-wikidata-q2360973, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q2360973-parent-q28513
+subject_id: title-q2360973
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q2360973, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q2396442-parent-q131964
+subject_id: title-q2396442
+claim_kind: parentage
+span: 1804..1866
+value: title-q131964
+source_ids: src-wikidata-q2396442, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q2396442-parent-q28513
+subject_id: title-q2396442
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q2396442, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q25395037-parent-q28513
+subject_id: title-q25395037
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q25395037, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q2670751-parent-q28513
+subject_id: title-q2670751
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q2670751, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q42585-parent-q131964
+subject_id: title-q42585
+claim_kind: parentage
+span: 1804..1866
+value: title-q131964
+source_ids: src-wikidata-q42585, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q42585-parent-q28513
+subject_id: title-q42585
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q42585, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q533558-parent-q28513
+subject_id: title-q533558
+claim_kind: parentage
+span: 1868..1918
+value: title-q28513
+source_ids: src-wikidata-q533558, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q661340-parent-q28513
+subject_id: title-q661340
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q661340, src-wikidata-q28513
+confidence: multi_source
+---
+fact_id: fact-q699964-parent-q131964
+subject_id: title-q699964
+claim_kind: parentage
+span: 1804..1866
+value: title-q131964
+source_ids: src-wikidata-q699964, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q699964-parent-q28513
+subject_id: title-q699964
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q699964, src-wikidata-q28513
+confidence: multi_source

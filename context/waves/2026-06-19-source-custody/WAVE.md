@@ -57,6 +57,7 @@ records and validation.
 | 39 | Unsupported queue closure | complete | Archive unsupported and relation-heavy candidates as scope-deferred rejections. |
 | 40 | Date-problem queue closure | complete | Reject final date-problem candidates and close the 500-source queue. |
 | 41 | Additional German parentage packet | complete | Import parentage-only facts that cite already accepted source records. |
+| 42 | Austrian parentage packet | complete | Import Austrian Empire and Austria-Hungary parentage facts using accepted source records. |
 
 ## Success Criteria
 
