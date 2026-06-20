@@ -235,3 +235,9 @@ cargo run --bin duchy-promote -- --apply fixtures/first-real.sources fixtures/fi
 `--apply` rewrites the accepted fixture files with the validated merged content.
 Use it only for reviewed historical batches, then commit the accepted fixture
 diff separately from staging cleanup.
+
+Parentage coverage can be regenerated from the accepted fixture catalog:
+
+```powershell
+cargo run --bin duchy-import -- parentage-coverage-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-coverage-report.md
+```

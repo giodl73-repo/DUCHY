@@ -1,0 +1,343 @@
+# DUCHY Parentage Coverage Report
+
+sources: 334
+facts: 1124
+titles: 323
+parentage_facts: 155
+titles_with_parentage: 112
+titles_without_parentage: 211
+
+## Coverage By Rank
+
+| Rank | Titles | With Parentage | Without Parentage |
+|---|---:|---:|---:|
+| County | 28 | 13 | 15 |
+| Duchy | 136 | 83 | 53 |
+| Empire | 39 | 0 | 39 |
+| Kingdom | 120 | 16 | 104 |
+
+## Titles Without Parentage
+
+- title-q10295972 | Hunnic Empire | Empire | 316..484
+- title-q1048340 | Albanian Kingdom | Kingdom | 1928..1939
+- title-q104863335 | Duchy of Poland | Duchy | 966..1025
+- title-q1048918 | Kingdom of the Suebi | Kingdom | 411..585
+- title-q105092 | Kingdom of Mercia | Kingdom | 527..918
+- title-q105313 | Kingdom of Wessex | Kingdom | 519..927
+- title-q106577 | Neustria | Kingdom | 511..977
+- title-q1069959 | Kingdom of Imereti | Kingdom | 1260..1810
+- title-q107299 | Kingdom of Northumbria | Kingdom | 653..954
+- title-q110888 | Kingdom of Essex | Kingdom | 527..825
+- title-q1122980 | Comtat Venaissin | County | 1274..1791
+- title-q116080 | Polish Underground State | Empire | 1939..1945
+- title-q1164500 | Kingdom of Murcia | Kingdom | 1258..1833
+- title-q11750128 | Kingdom of Poland | Kingdom | 1830..1831
+- title-q1209822 | Kingdom of Kakheti | Kingdom | 1465..1762
+- title-q1231403 | Prince-Bishopric of Trent | Duchy | 1027..1803
+- title-q1232887 | County of Savoy | County | 1003..1416
+- title-q1233672 | County of Barcelona | County | 801..1164
+- title-q1241847 | Judicate of Arborea | Kingdom | 800..1420
+- title-q12544 | Byzantine Empire | Empire | 395..1453
+- title-q12548 | Holy Roman Empire | Empire | 962..1806
+- title-q12560 | Ottoman Empire | Empire | 1302..1922
+- title-q12714608 | Fascist Romania | Kingdom | 1937..1938
+- title-q131964 | Austrian Empire | Empire | 1804..1867
+- title-q1333032 | Elmet | Kingdom | 500..627
+- title-q1352878 | Duchy of Livonia | Duchy | 1561..1621
+- title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
+- title-q142417 | Kingdom of Valencia | Kingdom | 1238..1707
+- title-q1448131 | Italian protectorate of Albania | Kingdom | 1939..1943
+- title-q146246 | Francia | Kingdom | 481..843
+- title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
+- title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
+- title-q150981 | North German Confederation | Empire | 1867..1870
+- title-q151624 | German Confederation | Empire | 1815..1866
+- title-q152115 | Duchy of Warsaw | Duchy | 1807..1815
+- title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
+- title-q153091 | Duchy of Prussia | Duchy | 1525..1618
+- title-q153943 | Kingdom of Westphalia | Kingdom | 1807..1813
+- title-q1541613 | County of Astarac | County | 920..1300
+- title-q1541699 | County of Empuries | County | 812..1402
+- title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
+- title-q154849 | Grand Duchy of Tuscany | Duchy | 1569..1860
+- title-q156038 | Duchy of Courland and Semigallia | Duchy | 1561..1795
+- title-q157109 | Burgundian Netherlands | Duchy | 1384..1482
+- title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
+- title-q160440 | Crimean Khanate | Empire | 1441..1783
+- title-q16056854 | Kingdom of Hungary | Kingdom | 1301..1526
+- title-q16084290 | Illyrian kingdom | Kingdom | -700..-135
+- title-q1617495 | Kingdom of Jaen | Kingdom | 1246..1833
+- title-q161885 | Kingdom of Great Britain | Kingdom | 1707..1801
+- title-q1649871 | Kingdom of Poland | Kingdom | 1386..1569
+- title-q165040 | Duchy of Parma and Piacenza | Duchy | 1545..1859
+- title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
+- title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
+- title-q16835712 | Duchy of Estonia | Duchy | 1561..1721
+- title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
+- title-q171348 | Crown of the Kingdom of Poland | Kingdom | 1386..1795
+- title-q171740 | Caliphate of Cordoba | Empire | 929..1031
+- title-q172107 | Polish-Lithuanian Commonwealth | Duchy | 1569..1795
+- title-q172579 | Kingdom of Italy | Kingdom | 1861..1946
+- title-q173065 | Kingdom of Naples | Kingdom | 1282..1816
+- title-q173082 | Dacia | Kingdom | -60..106
+- title-q173863 | Prince-Bishopric of Augsburg | Duchy | 888..1803
+- title-q175276 | Kingdom of Leon | Kingdom | 910..1833
+- title-q178897 | Latin Empire | Empire | 1204..1261
+- title-q1789596 | Croatia in personal union with Hungary | Kingdom | 1102..1526
+- title-q179023 | French colonial empire | Empire | 1534..1980
+- title-q179293 | Kingdom of Castile | Kingdom | 1065..1715
+- title-q1796202 | Kingdom of Granada | Kingdom | 1492..1833
+- title-q179876 | Kingdom of England | Kingdom | 927..1707
+- title-q180393 | Kingdom of the Two Sicilies | Kingdom | 1738..1861
+- title-q181254 | Empire of Nicaea | Empire | 1204..1261
+- title-q18285930 | German Empire of 1848/1849 | Empire | 1848..1849
+- title-q186537 | Khanate of Qazan | Empire | 1438..1552
+- title-q187035 | Principality of Albania | Duchy | 1914..1925
+- title-q187461 | Kingdom of Hereti | Kingdom | 893..1020
+- title-q188586 | Kingdom of Sicily | Kingdom | 1130..1816
+- title-q19083 | Kingdom of Iberia | Kingdom | -299..580
+- title-q191077 | Kingdom of Yugoslavia | Kingdom | 1929..1945
+- title-q191484 | Old Great Bulgaria | Empire | 632..668
+- title-q1917014 | County of Sicily | County | 1071..1130
+- title-q195972 | Kingdom of Kartli | Kingdom | 1466..1762
+- title-q1991540 | Duchy of Courland and Semigallia | Duchy | 1918..1918
+- title-q199442 | Kingdom of Aragon | Kingdom | 1035..1707
+- title-q199688 | Almohad Caliphate | Empire | 1121..1269
+- title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
+- title-q200464 | Portuguese Empire | Empire | 1415..1999
+- title-q203493 | Kingdom of Romania | Kingdom | 1881..1947
+- title-q203817 | First Bulgarian Empire | Empire | 681..1018
+- title-q2042616 | Chalkidian League | Empire | -432..-348
+- title-q2090473 | Khazar Khaganate | Empire | 650..969
+- title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
+- title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
+- title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
+- title-q2162698 | Duchy of Bohemia | Duchy | 870..1198
+- title-q2183293 | Duchy of Belz | Duchy | 1170..1462
+- title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
+- title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
+- title-q223936 | Kingdom of Italy | Kingdom | 1805..1814
+- title-q2252973 | Duchy of Florence | Duchy | 1532..1569
+- title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
+- title-q2273304 | Moravian Serbia | Duchy | 1365..1403
+- title-q22880 | Electoral Palatinate | Empire | 1085..1803
+- title-q2301372 | Kingdom of Toledo | Kingdom | 1085..1833
+- title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
+- title-q231392 | Kingdom of Asturias | Kingdom | 718..910
+- title-q2346056 | Kingdom of Livonia | Kingdom | 1570..1578
+- title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
+- title-q241748 | Kingdom of Serbia | Kingdom | 1882..1918
+- title-q249428 | Grand Duchy of Berg | Duchy | 1806..1813
+- title-q252580 | Duchy of Modena and Reggio | Duchy | 1452..1859
+- title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
+- title-q259511 | Prince-Bishopric of Freising | Duchy | 1294..1803
+- title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
+- title-q26167 | Duchy of Schleswig | Duchy | 1058..1866
+- title-q2629137 | Free Imperial City of Aachen | Empire | 1306..1801
+- title-q283627 | Margraviate of Austria | Duchy | 976..1156
+- title-q28513 | Austria-Hungary | Empire | 1867..1918
+- title-q2980623 | Kingdom of Bosnia | Kingdom | 1377..1463
+- title-q2991474 | County of Wurttemberg | County | 1083..1495
+- title-q303421 | Kingdom of Galicia | Kingdom | 910..1833
+- title-q3181749 | Arab Caliphate | Empire | 632..1517
+- title-q31929 | Carolingian Empire | Empire | 800..887
+- title-q319586 | Prince-Bishopric of Basel | Duchy | 1032..1803
+- title-q321371 | Bosporan Kingdom | Kingdom | -437..370
+- title-q325461 | Kingdom of Thessalonica | Kingdom | 1204..1224
+- title-q328001 | Prince-Bishopric of Toul | Duchy | 1048..1801
+- title-q328818 | Kingdom of Kent | Kingdom | 450..871
+- title-q3324486 | Prince-Bishopric of Montenegro | Duchy | 1516..1852
+- title-q334714 | Duchy of Athens | Duchy | 1205..1458
+- title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
+- title-q3624335 | Duchy of Austria | Duchy | 1156..1453
+- title-q3755547 | Kingdom of Italy | Kingdom | 476..493
+- title-q377350 | Iberian Union | Empire | 1580..1640
+- title-q386496 | Kingdom of Montenegro | Kingdom | 1910..1918
+- title-q389688 | Achaemenid Empire | Empire | -550..-330
+- title-q4208290 | Kazikumukh Khanate | Empire | 1642..1860
+- title-q43287 | German Empire | Empire | 1871..1918
+- title-q435583 | Old Swiss Confederacy | Empire | 1291..1798
+- title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
+- title-q47261 | Duchy of Bavaria | Duchy | 907..1805
+- title-q48742118 | Fascist Italy | Kingdom | 1922..1943
+- title-q49683 | Grand Duchy of Lithuania | Duchy | 1236..1795
+- title-q506008 | Kingdom of Deira | Kingdom | 450..655
+- title-q50625 | Hordaland | County | 1919..2019
+- title-q5177890 | County of Luxembourg | County | 963..1354
+- title-q55599391 | Kingdom of Sardinia | Kingdom | 1324..1713
+- title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
+- title-q566639 | Duchy of Opava | Duchy | 1269..1918
+- title-q568473 | Burgraviate of Nuremberg | Empire | 1105..1440
+- title-q568638 | Duchy of Silesia | Duchy | 1138..1742
+- title-q573290 | County of Ravensberg | County | 1140..1807
+- title-q58202 | July Monarchy | Kingdom | 1830..1848
+- title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553
+- title-q589251 | County of Montbeliard | County | 1042..1793
+- title-q599613 | County of Namur | County | 981..1795
+- title-q600018 | Kingdom of Hungary | Kingdom | 1920..1946
+- title-q603771 | Emirate of Crete | Empire | 820..961
+- title-q612359 | Kingdom of Lithuania | Kingdom | 1918..1918
+- title-q623751 | Kingdom of Bernicia | Kingdom | 420..634
+- title-q625380 | Eastern Hungarian Kingdom | Kingdom | 1526..1570
+- title-q62567 | Kingdom of Iceland | Kingdom | 1918..1944
+- title-q62623 | Kalmar Union | Kingdom | 1397..1523
+- title-q62633 | Grand Duchy of Finland | Duchy | 1809..1917
+- title-q62651 | Denmark-Norway | Empire | 1536..1814
+- title-q633573 | Kingdom of Rheged | Kingdom | 500..650
+- title-q641138 | Duchy of Cleves | Duchy | 1092..1795
+- title-q649202 | Duchy of Urbino | Duchy | 1443..1631
+- title-q657241 | Duchy of Westphalia | Duchy | 1180..1803
+- title-q660393 | Lower Lotharingia | Duchy | 959..1190
+- title-q6673921 | Lotharingia | Duchy | 855..959
+- title-q671899 | Duchy of Teschen | Duchy | 1281..1918
+- title-q675363 | County of Geneva | County | 900..1401
+- title-q676184 | Kingdom of Sussex | Kingdom | 477..825
+- title-q682001 | Duchy of Bytom | Duchy | 1281..1498
+- title-q684030 | Principality of Serbia | Duchy | 1815..1882
+- title-q686312 | Duchy of Amalfi | Duchy | 839..1137
+- title-q692946 | Gorizia and Gradisca | Empire | 1754..1919
+- title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
+- title-q696908 | Kingdom of Poland | Kingdom | 1916..1918
+- title-q698089 | Grand Duchy of Wurzburg | Duchy | 1806..1814
+- title-q699923 | Illyrian Provinces | Empire | 1809..1816
+- title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
+- title-q702327 | Duchy of Oswiecim | Duchy | 1315..1564
+- title-q704312 | Grand Duchy of Frankfurt | Duchy | 1810..1813
+- title-q706553 | County of Nice | County | 1388..1818
+- title-q70972 | Kingdom of France | Kingdom | 987..1791
+- title-q71084 | First French Empire | Empire | 1804..1815
+- title-q733799 | Kingdom of the Hwicce | Kingdom | 577..780
+- title-q736029 | Nassau-Siegen | County | 1303..1743
+- title-q769782 | Kingdom of Powys | Kingdom | 500..1160
+- title-q771193 | Kingdom of Brittany | Kingdom | 851..939
+- title-q779011 | Principality of Montenegro | Duchy | 1852..1910
+- title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
+- title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
+- title-q83546 | Grand Principality of Vladimir | Duchy | 1125..1389
+- title-q836676 | Kingdom of Majorca | Kingdom | 1229..1715
+- title-q836937 | Duchy of Julich | Duchy | 1003..1794
+- title-q837136 | Kingdom of Deheubarth | Kingdom | 920..1197
+- title-q837998 | Kingdom of East Anglia | Kingdom | 501..917
+- title-q83958 | Macedonia | Kingdom | -808..-167
+- title-q842091 | Duchy of Normandy | Duchy | 911..1259
+- title-q854415 | Kingdom of the Lombards | Kingdom | 568..774
+- title-q858841 | Kingdom of Croatia | Kingdom | 925..1102
+- title-q870517 | Odrysian kingdom | Kingdom | -460..46
+- title-q87791 | Frisian Kingdom | Kingdom | 500..734
+- title-q8890160 | Kingdom of Poland | Kingdom | 1025..1569
+- title-q905131 | Kingdom of Breifne | Kingdom | 700..1256
+- title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045
+- title-q956451 | Kingdom of Dyfed | Kingdom | 410..920
+- title-q958291 | United Principalities of Moldavia and Wallachia | Duchy | 1859..1881
+
+## Titles With Multiple Parentage Facts
+
+- title-q1139807 | County of Portugal
+  - fact-q1139807-parent-q231392 | title-q231392 | 868..909
+  - fact-q1139807-parent-q303421 | title-q303421 | 910..1139
+- title-q14551680 | Principality of Lippe
+  - fact-q14551680-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q14551680-parent-q12548 | title-q12548 | 1789..1806
+- title-q153015 | Kingdom of Saxony
+  - fact-q153015-parent-q43287 | title-q43287 | 1871..1918
+  - fact-q153015-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q153015-parent-q150981 | title-q150981 | 1867..1870
+- title-q154195 | Kingdom of Bavaria
+  - fact-q154195-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q154195-parent-q43287 | title-q43287 | 1871..1918
+- title-q155570 | Saxe-Weimar-Eisenach
+  - fact-q155570-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q155570-parent-q150981 | title-q150981 | 1867..1870
+- title-q157013 | Hohenzollern-Sigmaringen
+  - fact-q157013-parent-q12548 | title-q12548 | 1576..1806
+  - fact-q157013-parent-q151624 | title-q151624 | 1815..1850
+- title-q157710 | Duchy of Saxe-Meiningen
+  - fact-q157710-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q157710-parent-q43287 | title-q43287 | 1871..1918
+  - fact-q157710-parent-q12548 | title-q12548 | 1675..1806
+- title-q158151 | Saxe-Altenburg
+  - fact-q158151-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q158151-parent-q12548 | title-q12548 | 1602..1806
+- title-q158445 | Grand Duchy of Mecklenburg-Schwerin
+  - fact-q158445-parent-q43287 | title-q43287 | 1871..1918
+  - fact-q158445-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q158445-parent-q150981 | title-q150981 | 1867..1870
+- title-q159631 | Kingdom of Wurttemberg
+  - fact-q159631-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q159631-parent-q43287 | title-q43287 | 1871..1918
+- title-q161215 | Grand Duchy of Mecklenburg-Strelitz
+  - fact-q161215-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q161215-parent-q150981 | title-q150981 | 1867..1870
+- title-q16550783 | Duchy of Anhalt
+  - fact-q16550783-parent-q151624 | title-q151624 | 1863..1866
+  - fact-q16550783-parent-q150981 | title-q150981 | 1867..1870
+  - fact-q16550783-parent-q43287 | title-q43287 | 1871..1918
+- title-q186320 | Grand Duchy of Baden
+  - fact-q186320-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q186320-parent-q43287 | title-q43287 | 1871..1918
+- title-q20135 | Grand Duchy of Hesse
+  - fact-q20135-parent-q43287 | title-q43287 | 1871..1918
+  - fact-q20135-parent-q151624 | title-q151624 | 1815..1866
+- title-q2360973 | Duchy of Carniola
+  - fact-q2360973-parent-q131964 | title-q131964 | 1804..1866
+  - fact-q2360973-parent-q28513 | title-q28513 | 1867..1918
+  - fact-q2360973-parent-q12548 | title-q12548 | 1364..1803
+- title-q2396442 | Kingdom of Galicia and Lodomeria
+  - fact-q2396442-parent-q131964 | title-q131964 | 1804..1866
+  - fact-q2396442-parent-q28513 | title-q28513 | 1867..1918
+- title-q264970 | Anhalt-Kothen
+  - fact-q264970-parent-q151624 | title-q151624 | 1815..1863
+  - fact-q264970-parent-q12548 | title-q12548 | 1396..1806
+- title-q27306 | Kingdom of Prussia
+  - fact-q27306-parent-q43287 | title-q43287 | 1871..1918
+  - fact-q27306-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q27306-parent-q150981 | title-q150981 | 1867..1870
+- title-q278874 | Anhalt-Dessau
+  - fact-q278874-parent-q151624 | title-q151624 | 1815..1853
+  - fact-q278874-parent-q12548 | title-q12548 | 1396..1806
+- title-q281005 | Saxe-Hildburghausen
+  - fact-q281005-parent-q151624 | title-q151624 | 1815..1826
+  - fact-q281005-parent-q12548 | title-q12548 | 1680..1806
+- title-q310650 | Schaumburg-Lippe
+  - fact-q310650-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q310650-parent-q12548 | title-q12548 | 1643..1806
+- title-q313175 | Saxe-Lauenburg
+  - fact-q313175-parent-q12548 | title-q12548 | 1296..1806
+  - fact-q313175-parent-q151624 | title-q151624 | 1815..1866
+- title-q326029 | Duchy of Brunswick
+  - fact-q326029-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q326029-parent-q150981 | title-q150981 | 1867..1870
+  - fact-q326029-parent-q43287 | title-q43287 | 1871..1918
+- title-q42585 | Kingdom of Bohemia
+  - fact-q42585-parent-q131964 | title-q131964 | 1804..1866
+  - fact-q42585-parent-q28513 | title-q28513 | 1867..1918
+  - fact-q42585-parent-q12548 | title-q12548 | 1198..1803
+- title-q630163 | Schwarzburg-Sondershausen
+  - fact-q630163-parent-q151624 | title-q151624 | 1815..1866
+  - fact-q630163-parent-q12548 | title-q12548 | 1599..1806
+- title-q673865 | Hohenzollern-Hechingen
+  - fact-q673865-parent-q12548 | title-q12548 | 1576..1806
+  - fact-q673865-parent-q151624 | title-q151624 | 1815..1850
+- title-q675085 | Saxe-Gotha-Altenburg
+  - fact-q675085-parent-q151624 | title-q151624 | 1815..1826
+  - fact-q675085-parent-q12548 | title-q12548 | 1680..1806
+- title-q686965 | Anhalt-Bernburg
+  - fact-q686965-parent-q151624 | title-q151624 | 1815..1863
+  - fact-q686965-parent-q12548 | title-q12548 | 1252..1806
+- title-q693669 | Grand Duchy of Oldenburg
+  - fact-q693669-parent-q151624 | title-q151624 | 1816..1866
+  - fact-q693669-parent-q150981 | title-q150981 | 1867..1870
+  - fact-q693669-parent-q43287 | title-q43287 | 1871..1918
+- title-q693980 | Duchy of Swabia
+  - fact-q693980-parent-q12548 | title-q12548 | 962..1313
+  - fact-q693980-parent-q153080 | title-q153080 | 917..961
+- title-q699964 | Archduchy of Austria
+  - fact-q699964-parent-q131964 | title-q131964 | 1804..1866
+  - fact-q699964-parent-q28513 | title-q28513 | 1867..1918
+  - fact-q699964-parent-q12548 | title-q12548 | 1358..1803
+- title-q700663 | Saxe-Coburg-Saalfeld
+  - fact-q700663-parent-q151624 | title-q151624 | 1815..1825
+  - fact-q700663-parent-q12548 | title-q12548 | 1699..1806
+- title-q704288 | Duchy of Holstein
+  - fact-q704288-parent-q12548 | title-q12548 | 1474..1806
+  - fact-q704288-parent-q151624 | title-q151624 | 1815..1866

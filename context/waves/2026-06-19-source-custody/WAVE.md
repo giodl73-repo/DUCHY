@@ -75,6 +75,7 @@ records and validation.
 | 57 | CK3 queue closure | complete | Query and screen final shards 008-010, promote Hordaland title facts, and close all 500 CK3 discovery rows as scope-deferred. |
 | 58 | Accepted relation bridges parentage packet | complete | Import 4 parentage-only facts using already accepted source records and structured relation review. |
 | 59 | Second accepted relation bridges parentage packet | complete | Import 11 non-overlapping parentage-only facts using accepted source records and structured relation review. |
+| 60 | Parentage coverage report | complete | Add a repeatable report for hierarchy coverage by rank, unparented titles, and multi-parentage review targets. |
 
 ## Success Criteria
 

@@ -172,7 +172,9 @@ Pulses:
 60. Second accepted relation bridges parentage packet. Complete for 11
     parentage-only facts using already accepted source records and non-
     overlapping structured `P17` relation review.
-61. Next reviewed parentage packet.
+61. Parentage coverage report. Complete for a repeatable CLI report that
+    summarizes parentage coverage by rank and lists title hierarchy gaps.
+62. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
