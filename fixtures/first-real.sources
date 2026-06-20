@@ -4276,3 +4276,41 @@ notes: CK3 candidate c_bearn / Béarn; Wikidata lead Béarn (Q213763), former pr
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted as a source-resolution record only. Title facts are deferred because former-province rank and identity semantics need manual review.
+---
+# Reviewed source-resolution records from CK3 batch 004 structured screen.
+
+source_id: src-wikidata-q954585
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q954585
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_brecknockshire / Brycheiniog; Wikidata lead Kingdom of Brycheiniog (Q954585), small kingdom in mid Wales with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, kingdom rank, inception, and dissolution only.
+---
+source_id: src-wikidata-q23725
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q23725
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_byzantion / Byzantion; Wikidata lead Byzantium (Q23725), ancient Greek city with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. Title facts are deferred because ancient-city rank semantics are not materialized in DUCHY.
+---
+source_id: src-wikidata-q8273263
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q8273263
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_cetatea_alba / Cetatea Albă; Wikidata lead Cetatea-Albă County (Q8273263), county of the Kingdom of Romania with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, county rank, inception, and dissolution only.

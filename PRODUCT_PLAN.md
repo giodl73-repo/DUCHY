@@ -151,7 +151,11 @@ Pulses:
     Arbanon and Béarn with title facts deferred for rank semantics.
 53. CK3 batch 003 research screen. Complete for a third 50-row Wikidata search
     packet and structured screen, with no bounded top-lead candidates promoted.
-54. Next reviewed parentage packet.
+54. CK3 batch 004 reviewed packet. Complete for a fourth 50-row Wikidata
+    search packet, structured screen, 3 reviewed source records, and 6 title
+    facts for Brycheiniog and Cetatea-Albă County, with Byzantium title facts
+    deferred.
+55. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -8492,3 +8492,49 @@ span: 1201..1881
 value: exists
 source_ids: src-wikidata-q1049854
 confidence: single_source
+---
+# Title facts from CK3 batch 004 reviewed source-resolution records.
+
+fact_id: fact-q954585-name
+subject_id: title-q954585
+claim_kind: name
+value: Kingdom of Brycheiniog
+source_ids: src-wikidata-q954585
+confidence: single_source
+---
+fact_id: fact-q954585-rank
+subject_id: title-q954585
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q954585
+confidence: single_source
+---
+fact_id: fact-q954585-exists
+subject_id: title-q954585
+claim_kind: title_exists
+span: 450..1045
+value: exists
+source_ids: src-wikidata-q954585
+confidence: single_source
+---
+fact_id: fact-q8273263-name
+subject_id: title-q8273263
+claim_kind: name
+value: Cetatea-Albă County
+source_ids: src-wikidata-q8273263
+confidence: single_source
+---
+fact_id: fact-q8273263-rank
+subject_id: title-q8273263
+claim_kind: rank
+value: County
+source_ids: src-wikidata-q8273263
+confidence: single_source
+---
+fact_id: fact-q8273263-exists
+subject_id: title-q8273263
+claim_kind: title_exists
+span: 1925..1944
+value: exists
+source_ids: src-wikidata-q8273263
+confidence: single_source

@@ -68,6 +68,7 @@ records and validation.
 | 50 | CK3 batch 001 structured screen and Ailech source record | complete | Screen first-shard leads for bounded structured dates and promote Ailech as source-only with rank facts deferred. |
 | 51 | CK3 batch 002 source-resolution packet | complete | Query and screen the second CK3 shard, then promote Arbanon and Béarn as source-only records with title facts deferred. |
 | 52 | CK3 batch 003 research screen | complete | Query and screen the third CK3 shard; no top leads have bounded date pairs for promotion. |
+| 53 | CK3 batch 004 reviewed packet | complete | Query and screen the fourth CK3 shard, then promote 3 sources and 6 title facts while deferring Byzantium title facts. |
 
 ## Success Criteria
 

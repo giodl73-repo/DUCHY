@@ -106,6 +106,13 @@ data/staging/ck3-counties-batch-003-structured-screen.tsv
 data/staging/ck3-counties-batch-003-structured-screen.md
 ```
 
+Batch 004 promotes reviewed source records and selected title facts:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-004-reviewed-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-004-reviewed.sources data/staging/ck3-batch-004-reviewed.facts
+cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-004-reviewed-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-004-reviewed.sources data/staging/ck3-batch-004-reviewed.facts
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
