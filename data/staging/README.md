@@ -22,6 +22,7 @@ cargo run --bin duchy-import -- active-manifest data/staging/example.manifest da
 cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest data/staging/archive.manifest
 cargo run --bin duchy-import -- manifest-report data/staging/example.manifest data/staging/manifest-report.md
 cargo run --bin duchy-import -- duplicate-url-report data/staging/example.manifest data/staging/duplicate-urls.md
+cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/staging/manifest.tsv
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 ```
 
@@ -36,6 +37,8 @@ Manifest reports list every candidate grouped by queue status for reviewer
 inspection.
 Duplicate URL reports flag repeated source pointers before source-custody
 review.
+Manifest TSV exports provide a machine-readable queue summary for batch
+tooling.
 Manifest shards split larger queues into fixed-size, parseable review batches
 and write `INDEX.md` with per-shard status counts.
 

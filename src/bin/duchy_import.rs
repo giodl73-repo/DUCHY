@@ -39,6 +39,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "duplicate-url-report" {
             return duplicate_url_report(manifest_path, output_path);
         }
+        if command == "manifest-tsv" {
+            return manifest_tsv(manifest_path, output_path);
+        }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
         if command == "shard-manifest" {
@@ -54,7 +57,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | shard-manifest manifest-file output-dir chunk-size".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | shard-manifest manifest-file output-dir chunk-size".to_string(),
             ])
         }
     };
@@ -478,6 +481,40 @@ fn duplicate_url_report(manifest_path: &str, output_path: &str) -> Result<(), Ve
     Ok(())
 }
 
+fn manifest_tsv(manifest_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let manifest_text = fs::read_to_string(manifest_path)
+        .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
+    let candidates = duchy::candidate_records_from_text(&manifest_text)?;
+    duchy::validate_candidate_records(&candidates)?;
+    if candidates.is_empty() {
+        return Err(vec!["manifest has no candidates to export".to_string()]);
+    }
+
+    let mut output = String::new();
+    output.push_str("candidate_id\tsource_id\tsource_url\tstatus\tnotes\n");
+    for candidate in &candidates {
+        output.push_str(&tsv_cell(&candidate.candidate_id));
+        output.push('\t');
+        output.push_str(&tsv_cell(&candidate.source_id));
+        output.push('\t');
+        output.push_str(&tsv_cell(&candidate.source_url));
+        output.push('\t');
+        output.push_str(candidate_status_label(candidate.status));
+        output.push('\t');
+        output.push_str(&tsv_cell(candidate.notes.as_deref().unwrap_or("")));
+        output.push('\n');
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY manifest TSV");
+    println!("- candidates: {}", candidates.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn candidate_manifest_block(candidate: &duchy::CandidateRecord) -> String {
     let mut output = String::new();
     output.push_str(&format!("candidate_id: {}\n", candidate.candidate_id));
@@ -572,4 +609,12 @@ fn push_manifest_report_section(
         }
     }
     output.push('\n');
+}
+
+fn tsv_cell(value: &str) -> String {
+    value
+        .replace('\\', "\\\\")
+        .replace('\t', "\\t")
+        .replace('\r', "\\r")
+        .replace('\n', "\\n")
 }
