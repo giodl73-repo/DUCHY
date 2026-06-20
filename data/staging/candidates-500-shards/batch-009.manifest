@@ -467,7 +467,7 @@ notes: Candidate label: Prince-Archbishopric of Salzburg; description: prince-ar
 candidate_id: cand-q15852601
 source_id: src-wikidata-q15852601
 source_url: https://www.wikidata.org/wiki/Q15852601
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -476,6 +476,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Prince-Bishopric and Duchy of Verden; description: former prince-bishopric (later principality) in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Verden
 ---
 candidate_id: cand-q173863
@@ -537,7 +538,7 @@ notes: Candidate label: Prince-Bishopric of Liège; description: ecclesiastic st
 candidate_id: cand-q4918043
 source_id: src-wikidata-q4918043
 source_url: https://www.wikidata.org/wiki/Q4918043
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -546,6 +547,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Prince-Bishopric of Metz; description: Prince-bishopric of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Metz
 ---
 candidate_id: cand-q650645

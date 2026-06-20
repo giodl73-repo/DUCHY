@@ -78,6 +78,10 @@ The 500-source candidate queue is now closed for unsupported rows: 167
 relation-heavy, non-title, free-city, administrative-region, and otherwise
 unsupported candidates are archived as `scope_deferred` rejections, leaving only
 the fourteen date-problem title candidates active.
+Those fourteen date-problem title candidates are also closed: thirteen are
+`quality_blocked` because the structured Wikidata date gate could not provide a
+complete span, and one is `date_conflict` because the extracted span was
+reversed. The 500-source candidate queue now has no active pending rows.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

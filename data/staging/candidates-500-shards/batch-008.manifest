@@ -72,7 +72,7 @@ notes: Candidate label: Kingdom of the Burgundians; description: kingdom establi
 candidate_id: cand-q60614780
 source_id: src-wikidata-q60614780
 source_url: https://www.wikidata.org/wiki/Q60614780
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -81,6 +81,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Kingdom of the Heruli; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Heruli
 ---
 candidate_id: cand-q733799
@@ -128,7 +129,7 @@ notes: Candidate label: Kingdom of the Suebi; description: Germanic kingdom in w
 candidate_id: cand-q3568009
 source_id: src-wikidata-q3568009
 source_url: https://www.wikidata.org/wiki/Q3568009
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -137,6 +138,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom within Anglo-Saxon Britain on the Isle of Wight; article: https://en.wikipedia.org/wiki/Wihtwara
 ---
 candidate_id: cand-q2510537

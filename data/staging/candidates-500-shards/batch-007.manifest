@@ -254,7 +254,7 @@ notes: Candidate label: Kingdom of Leon; description: independent medieval kingd
 candidate_id: cand-q886986
 source_id: src-wikidata-q886986
 source_url: https://www.wikidata.org/wiki/Q886986
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -263,6 +263,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Kingdom of Lindsey; description: minor Angle-Saxon kingdom soon to be a part of Northumbia.; article: https://en.wikipedia.org/wiki/Kingdom_of_Lindsey
 ---
 candidate_id: cand-q1656775
@@ -632,7 +633,7 @@ notes: Candidate label: Kingdom of Sicily; description: former state in southern
 candidate_id: cand-q3572492
 source_id: src-wikidata-q3572492
 source_url: https://www.wikidata.org/wiki/Q3572492
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -641,6 +642,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Kingdom of Sobrarbe; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_Sobrarbe
 ---
 candidate_id: cand-q15238138

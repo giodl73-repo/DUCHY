@@ -299,7 +299,7 @@ notes: Candidate label: German Reich; description: official name for the German 
 candidate_id: cand-q1345964
 source_id: src-wikidata-q1345964
 source_url: https://www.wikidata.org/wiki/Q1345964
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -308,6 +308,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Gododdin; description: kingdom of Britons native to north-eastern Britain; article: https://en.wikipedia.org/wiki/Gododdin
 ---
 candidate_id: cand-q692946

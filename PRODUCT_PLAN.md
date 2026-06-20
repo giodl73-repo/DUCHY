@@ -115,7 +115,10 @@ Pulses:
 40. Unsupported queue closure. Complete for 167 unsupported or relation-heavy
     candidates archived as `scope_deferred`, leaving fourteen date-problem title
     candidates active.
-41. Next reviewed parentage packet.
+41. Date-problem queue closure. Complete for the remaining fourteen
+    title-identity candidates rejected as `quality_blocked` or `date_conflict`,
+    closing the 500-source candidate queue with no pending rows.
+42. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

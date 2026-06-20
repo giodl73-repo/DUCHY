@@ -1,6 +1,6 @@
 # DUCHY Rejected Candidate Report
 
-rejected_candidates: 167
+rejected_candidates: 181
 
 ## cand-q207600
 
@@ -296,6 +296,34 @@ rejected_candidates: 167
 - exclusion_reason: scope_deferred
 - notes: Candidate label: Corsican Republic; description: unrecognized European state (1755–1769); article: https://en.wikipedia.org/wiki/Corsican_Republic
 
+## cand-q3688464
+
+- source_id: src-wikidata-q3688464
+- source_url: https://www.wikidata.org/wiki/Q3688464
+- exclusion_reason: quality_blocked
+- notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
+
+## cand-q517940
+
+- source_id: src-wikidata-q517940
+- source_url: https://www.wikidata.org/wiki/Q517940
+- exclusion_reason: quality_blocked
+- notes: Candidate label: County of Sponheim; description: countship; article: https://en.wikipedia.org/wiki/County_of_Sponheim
+
+## cand-q881030
+
+- source_id: src-wikidata-q881030
+- source_url: https://www.wikidata.org/wiki/Q881030
+- exclusion_reason: quality_blocked
+- notes: Candidate label: County of Tecklenburg; description: countship; article: https://en.wikipedia.org/wiki/County_of_Tecklenburg
+
+## cand-q110133597
+
+- source_id: src-wikidata-q110133597
+- source_url: https://www.wikidata.org/wiki/Q110133597
+- exclusion_reason: quality_blocked
+- notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
+
 ## cand-q953432
 
 - source_id: src-wikidata-q953432
@@ -414,6 +442,13 @@ rejected_candidates: 167
 - source_url: https://www.wikidata.org/wiki/Q3738649
 - exclusion_reason: scope_deferred
 - notes: Candidate label: Dual monarchy of England and France; description: period in the Middle Ages where Charles VII of France and Henry VI of England disputed the succession to the throne of France; article: https://en.wikipedia.org/wiki/Dual_monarchy_of_England_and_France
+
+## cand-q2295939
+
+- source_id: src-wikidata-q2295939
+- source_url: https://www.wikidata.org/wiki/Q2295939
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Duchy of Gascony; description: medieval duchy of the Aquitaine region; article: https://en.wikipedia.org/wiki/Duchy_of_Gascony
 
 ## cand-q170072
 
@@ -688,6 +723,13 @@ rejected_candidates: 167
 - exclusion_reason: scope_deferred
 - notes: Candidate label: German Reich; description: official name for the German nation state from 1871 to 1945, and name of Germany until 1949; article: https://en.wikipedia.org/wiki/German_Reich
 
+## cand-q1345964
+
+- source_id: src-wikidata-q1345964
+- source_url: https://www.wikidata.org/wiki/Q1345964
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Gododdin; description: kingdom of Britons native to north-eastern Britain; article: https://en.wikipedia.org/wiki/Gododdin
+
 ## cand-q616992
 
 - source_id: src-wikidata-q616992
@@ -890,6 +932,48 @@ rejected_candidates: 167
 - source_url: https://www.wikidata.org/wiki/Q1108445
 - exclusion_reason: scope_deferred
 - notes: Candidate label: Kievan Rus'; description: former federation of East Slavic tribes; article: https://en.wikipedia.org/wiki/Kievan_Rus%27
+
+## cand-q530670
+
+- source_id: src-wikidata-q530670
+- source_url: https://www.wikidata.org/wiki/Q530670
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Kingdom of Burgundy; description: history of all the kingdoms and others states named Burgundy; article: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
+
+## cand-q175211
+
+- source_id: src-wikidata-q175211
+- source_url: https://www.wikidata.org/wiki/Q175211
+- exclusion_reason: date_conflict
+- notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of Germany; article: https://en.wikipedia.org/wiki/Kingdom_of_Germany
+
+## cand-q886986
+
+- source_id: src-wikidata-q886986
+- source_url: https://www.wikidata.org/wiki/Q886986
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Kingdom of Lindsey; description: minor Angle-Saxon kingdom soon to be a part of Northumbia.; article: https://en.wikipedia.org/wiki/Kingdom_of_Lindsey
+
+## cand-q3572492
+
+- source_id: src-wikidata-q3572492
+- source_url: https://www.wikidata.org/wiki/Q3572492
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Kingdom of Sobrarbe; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_Sobrarbe
+
+## cand-q60614780
+
+- source_id: src-wikidata-q60614780
+- source_url: https://www.wikidata.org/wiki/Q60614780
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Kingdom of the Heruli; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Heruli
+
+## cand-q3568009
+
+- source_id: src-wikidata-q3568009
+- source_url: https://www.wikidata.org/wiki/Q3568009
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom within Anglo-Saxon Britain on the Isle of Wight; article: https://en.wikipedia.org/wiki/Wihtwara
 
 ## cand-q2510537
 
@@ -1170,4 +1254,18 @@ rejected_candidates: 167
 - source_url: https://www.wikidata.org/wiki/Q211274
 - exclusion_reason: scope_deferred
 - notes: Candidate label: Polish People's Republic; description: country of the Warsaw Pact and Eastern Bloc from 1947 to 1989; article: https://en.wikipedia.org/wiki/Polish_People%27s_Republic
+
+## cand-q15852601
+
+- source_id: src-wikidata-q15852601
+- source_url: https://www.wikidata.org/wiki/Q15852601
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Prince-Bishopric and Duchy of Verden; description: former prince-bishopric (later principality) in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Verden
+
+## cand-q4918043
+
+- source_id: src-wikidata-q4918043
+- source_url: https://www.wikidata.org/wiki/Q4918043
+- exclusion_reason: quality_blocked
+- notes: Candidate label: Prince-Bishopric of Metz; description: Prince-bishopric of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Metz
 

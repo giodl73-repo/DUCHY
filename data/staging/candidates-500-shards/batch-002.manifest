@@ -376,7 +376,7 @@ notes: Candidate label: County of Nice; description: county of Savoy; article: h
 candidate_id: cand-q3688464
 source_id: src-wikidata-q3688464
 source_url: https://www.wikidata.org/wiki/Q3688464
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -385,6 +385,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
 ---
 candidate_id: cand-q1139807
@@ -474,7 +475,7 @@ notes: Candidate label: County of Sicily; description: Norman state comprising t
 candidate_id: cand-q517940
 source_id: src-wikidata-q517940
 source_url: https://www.wikidata.org/wiki/Q517940
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -483,12 +484,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: County of Sponheim; description: countship; article: https://en.wikipedia.org/wiki/County_of_Sponheim
 ---
 candidate_id: cand-q881030
 source_id: src-wikidata-q881030
 source_url: https://www.wikidata.org/wiki/Q881030
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -497,12 +499,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: County of Tecklenburg; description: countship; article: https://en.wikipedia.org/wiki/County_of_Tecklenburg
 ---
 candidate_id: cand-q110133597
 source_id: src-wikidata-q110133597
 source_url: https://www.wikidata.org/wiki/Q110133597
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -511,6 +514,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
 ---
 candidate_id: cand-q2991474

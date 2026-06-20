@@ -392,7 +392,7 @@ notes: Candidate label: Kingdom of Bulgaria; description: state on the Balkan Pe
 candidate_id: cand-q530670
 source_id: src-wikidata-q530670
 source_url: https://www.wikidata.org/wiki/Q530670
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -401,6 +401,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Kingdom of Burgundy; description: history of all the kingdoms and others states named Burgundy; article: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
 ---
 candidate_id: cand-q179293
@@ -588,7 +589,7 @@ notes: Candidate label: Kingdom of Georgia; description: medieval state in Easte
 candidate_id: cand-q175211
 source_id: src-wikidata-q175211
 source_url: https://www.wikidata.org/wiki/Q175211
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -597,6 +598,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: date_conflict
 notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of Germany; article: https://en.wikipedia.org/wiki/Kingdom_of_Germany
 ---
 candidate_id: cand-q2253783

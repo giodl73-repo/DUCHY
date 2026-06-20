@@ -2,181 +2,14 @@
 
 source_manifest: data\staging\candidates-500.manifest
 candidates: 450
-pending: 14
+pending: 0
 reviewed: 0
 promoted: 269
-rejected: 167
+rejected: 181
 
 ## Pending
 
-- candidate_id: cand-q3688464
-  source_id: src-wikidata-q3688464
-  source_url: https://www.wikidata.org/wiki/Q3688464
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
-- candidate_id: cand-q517940
-  source_id: src-wikidata-q517940
-  source_url: https://www.wikidata.org/wiki/Q517940
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Sponheim; description: countship; article: https://en.wikipedia.org/wiki/County_of_Sponheim
-- candidate_id: cand-q881030
-  source_id: src-wikidata-q881030
-  source_url: https://www.wikidata.org/wiki/Q881030
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Tecklenburg; description: countship; article: https://en.wikipedia.org/wiki/County_of_Tecklenburg
-- candidate_id: cand-q110133597
-  source_id: src-wikidata-q110133597
-  source_url: https://www.wikidata.org/wiki/Q110133597
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: county
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
-- candidate_id: cand-q2295939
-  source_id: src-wikidata-q2295939
-  source_url: https://www.wikidata.org/wiki/Q2295939
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Duchy of Gascony; description: medieval duchy of the Aquitaine region; article: https://en.wikipedia.org/wiki/Duchy_of_Gascony
-- candidate_id: cand-q1345964
-  source_id: src-wikidata-q1345964
-  source_url: https://www.wikidata.org/wiki/Q1345964
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Gododdin; description: kingdom of Britons native to north-eastern Britain; article: https://en.wikipedia.org/wiki/Gododdin
-- candidate_id: cand-q530670
-  source_id: src-wikidata-q530670
-  source_url: https://www.wikidata.org/wiki/Q530670
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kingdom of Burgundy; description: history of all the kingdoms and others states named Burgundy; article: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
-- candidate_id: cand-q175211
-  source_id: src-wikidata-q175211
-  source_url: https://www.wikidata.org/wiki/Q175211
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of Germany; article: https://en.wikipedia.org/wiki/Kingdom_of_Germany
-- candidate_id: cand-q886986
-  source_id: src-wikidata-q886986
-  source_url: https://www.wikidata.org/wiki/Q886986
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kingdom of Lindsey; description: minor Angle-Saxon kingdom soon to be a part of Northumbia.; article: https://en.wikipedia.org/wiki/Kingdom_of_Lindsey
-- candidate_id: cand-q3572492
-  source_id: src-wikidata-q3572492
-  source_url: https://www.wikidata.org/wiki/Q3572492
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kingdom of Sobrarbe; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_Sobrarbe
-- candidate_id: cand-q60614780
-  source_id: src-wikidata-q60614780
-  source_url: https://www.wikidata.org/wiki/Q60614780
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kingdom of the Heruli; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Heruli
-- candidate_id: cand-q3568009
-  source_id: src-wikidata-q3568009
-  source_url: https://www.wikidata.org/wiki/Q3568009
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: literal
-  entity_class: kingdom
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom within Anglo-Saxon Britain on the Isle of Wight; article: https://en.wikipedia.org/wiki/Wihtwara
-- candidate_id: cand-q15852601
-  source_id: src-wikidata-q15852601
-  source_url: https://www.wikidata.org/wiki/Q15852601
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: duchy
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Prince-Bishopric and Duchy of Verden; description: former prince-bishopric (later principality) in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Verden
-- candidate_id: cand-q4918043
-  source_id: src-wikidata-q4918043
-  source_url: https://www.wikidata.org/wiki/Q4918043
-  review_batch_id: batch-500-candidates
-  import_scope: title_identity_only
-  rank_basis: normalized
-  entity_class: principality
-  source_claims_used: label, description, enwiki_sitelink, continent
-  confidence_detail: wikidata_structured_single
-  parentage_status: none_reviewed
-  query_readiness: existence_only
-  notes: Candidate label: Prince-Bishopric of Metz; description: Prince-bishopric of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Metz
+none
 
 ## Reviewed
 
@@ -3961,6 +3794,58 @@ none
   query_readiness: unsupported
   exclusion_reason: scope_deferred
   notes: Candidate label: Corsican Republic; description: unrecognized European state (1755–1769); article: https://en.wikipedia.org/wiki/Corsican_Republic
+- candidate_id: cand-q3688464
+  source_id: src-wikidata-q3688464
+  source_url: https://www.wikidata.org/wiki/Q3688464
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: County of Novellara and Bagnolo; description: former independent state in Northern Italy; article: https://en.wikipedia.org/wiki/County_of_Novellara_and_Bagnolo
+- candidate_id: cand-q517940
+  source_id: src-wikidata-q517940
+  source_url: https://www.wikidata.org/wiki/Q517940
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: County of Sponheim; description: countship; article: https://en.wikipedia.org/wiki/County_of_Sponheim
+- candidate_id: cand-q881030
+  source_id: src-wikidata-q881030
+  source_url: https://www.wikidata.org/wiki/Q881030
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: County of Tecklenburg; description: countship; article: https://en.wikipedia.org/wiki/County_of_Tecklenburg
+- candidate_id: cand-q110133597
+  source_id: src-wikidata-q110133597
+  source_url: https://www.wikidata.org/wiki/Q110133597
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: county
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: County of Vianden; description: ; article: https://en.wikipedia.org/wiki/County_of_Vianden
 - candidate_id: cand-q953432
   source_id: src-wikidata-q953432
   source_url: https://www.wikidata.org/wiki/Q953432
@@ -4182,6 +4067,19 @@ none
   query_readiness: unsupported
   exclusion_reason: scope_deferred
   notes: Candidate label: Dual monarchy of England and France; description: period in the Middle Ages where Charles VII of France and Henry VI of England disputed the succession to the throne of France; article: https://en.wikipedia.org/wiki/Dual_monarchy_of_England_and_France
+- candidate_id: cand-q2295939
+  source_id: src-wikidata-q2295939
+  source_url: https://www.wikidata.org/wiki/Q2295939
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Duchy of Gascony; description: medieval duchy of the Aquitaine region; article: https://en.wikipedia.org/wiki/Duchy_of_Gascony
 - candidate_id: cand-q170072
   source_id: src-wikidata-q170072
   source_url: https://www.wikidata.org/wiki/Q170072
@@ -4689,6 +4587,19 @@ none
   query_readiness: unsupported
   exclusion_reason: scope_deferred
   notes: Candidate label: German Reich; description: official name for the German nation state from 1871 to 1945, and name of Germany until 1949; article: https://en.wikipedia.org/wiki/German_Reich
+- candidate_id: cand-q1345964
+  source_id: src-wikidata-q1345964
+  source_url: https://www.wikidata.org/wiki/Q1345964
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Gododdin; description: kingdom of Britons native to north-eastern Britain; article: https://en.wikipedia.org/wiki/Gododdin
 - candidate_id: cand-q616992
   source_id: src-wikidata-q616992
   source_url: https://www.wikidata.org/wiki/Q616992
@@ -5066,6 +4977,84 @@ none
   query_readiness: unsupported
   exclusion_reason: scope_deferred
   notes: Candidate label: Kievan Rus'; description: former federation of East Slavic tribes; article: https://en.wikipedia.org/wiki/Kievan_Rus%27
+- candidate_id: cand-q530670
+  source_id: src-wikidata-q530670
+  source_url: https://www.wikidata.org/wiki/Q530670
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Kingdom of Burgundy; description: history of all the kingdoms and others states named Burgundy; article: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
+- candidate_id: cand-q175211
+  source_id: src-wikidata-q175211
+  source_url: https://www.wikidata.org/wiki/Q175211
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: date_conflict
+  notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of Germany; article: https://en.wikipedia.org/wiki/Kingdom_of_Germany
+- candidate_id: cand-q886986
+  source_id: src-wikidata-q886986
+  source_url: https://www.wikidata.org/wiki/Q886986
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Kingdom of Lindsey; description: minor Angle-Saxon kingdom soon to be a part of Northumbia.; article: https://en.wikipedia.org/wiki/Kingdom_of_Lindsey
+- candidate_id: cand-q3572492
+  source_id: src-wikidata-q3572492
+  source_url: https://www.wikidata.org/wiki/Q3572492
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Kingdom of Sobrarbe; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_Sobrarbe
+- candidate_id: cand-q60614780
+  source_id: src-wikidata-q60614780
+  source_url: https://www.wikidata.org/wiki/Q60614780
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Kingdom of the Heruli; description: ; article: https://en.wikipedia.org/wiki/Kingdom_of_the_Heruli
+- candidate_id: cand-q3568009
+  source_id: src-wikidata-q3568009
+  source_url: https://www.wikidata.org/wiki/Q3568009
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: literal
+  entity_class: kingdom
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom within Anglo-Saxon Britain on the Isle of Wight; article: https://en.wikipedia.org/wiki/Wihtwara
 - candidate_id: cand-q2510537
   source_id: src-wikidata-q2510537
   source_url: https://www.wikidata.org/wiki/Q2510537
@@ -5586,4 +5575,30 @@ none
   query_readiness: unsupported
   exclusion_reason: scope_deferred
   notes: Candidate label: Polish People's Republic; description: country of the Warsaw Pact and Eastern Bloc from 1947 to 1989; article: https://en.wikipedia.org/wiki/Polish_People%27s_Republic
+- candidate_id: cand-q15852601
+  source_id: src-wikidata-q15852601
+  source_url: https://www.wikidata.org/wiki/Q15852601
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: duchy
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Prince-Bishopric and Duchy of Verden; description: former prince-bishopric (later principality) in the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Verden
+- candidate_id: cand-q4918043
+  source_id: src-wikidata-q4918043
+  source_url: https://www.wikidata.org/wiki/Q4918043
+  review_batch_id: batch-500-candidates
+  import_scope: title_identity_only
+  rank_basis: normalized
+  entity_class: principality
+  source_claims_used: label, description, enwiki_sitelink, continent
+  confidence_detail: wikidata_structured_single
+  parentage_status: none_reviewed
+  query_readiness: existence_only
+  exclusion_reason: quality_blocked
+  notes: Candidate label: Prince-Bishopric of Metz; description: Prince-bishopric of the Holy Roman Empire; article: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Metz
 

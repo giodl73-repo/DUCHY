@@ -429,7 +429,7 @@ notes: Candidate label: Duchy of Florence; description: (1532-1569) former Itali
 candidate_id: cand-q2295939
 source_id: src-wikidata-q2295939
 source_url: https://www.wikidata.org/wiki/Q2295939
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -438,6 +438,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: existence_only
+exclusion_reason: quality_blocked
 notes: Candidate label: Duchy of Gascony; description: medieval duchy of the Aquitaine region; article: https://en.wikipedia.org/wiki/Duchy_of_Gascony
 ---
 candidate_id: cand-q152420

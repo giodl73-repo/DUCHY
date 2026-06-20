@@ -55,6 +55,7 @@ records and validation.
 | 37 | Batch 002 title promotion | complete | Promote 26 reviewed title-identity sources from the 500-source candidate queue. |
 | 38 | Remaining title queue promotion | complete | Promote all remaining clean title-identity sources from the 500-source candidate queue. |
 | 39 | Unsupported queue closure | complete | Archive unsupported and relation-heavy candidates as scope-deferred rejections. |
+| 40 | Date-problem queue closure | complete | Reject final date-problem candidates and close the 500-source queue. |
 
 ## Success Criteria
 
