@@ -65,6 +65,7 @@ records and validation.
 | 47 | CK3 batch 001 source-resolution leads | complete | Query Wikidata for the first 50 CK3 county candidates and preserve exact/fuzzy/no-result leads for manual review. |
 | 48 | CK3 batch 001 reviewed source-resolution packet | complete | Promote 7 reviewed Wikidata source records from the first CK3 research shard, with no fact promotion. |
 | 49 | CK3 batch 001 first title fact packet | complete | Promote Abaúj county name, rank, and existence facts from an accepted source-resolution record. |
+| 50 | CK3 batch 001 structured screen and Ailech source record | complete | Screen first-shard leads for bounded structured dates and promote Ailech as source-only with rank facts deferred. |
 
 ## Success Criteria
 

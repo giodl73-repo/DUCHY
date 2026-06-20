@@ -1,0 +1,49 @@
+ck_id	county	duchy	top_qid	top_label	top_description	p31	inception	dissolution	start_time	end_time	screen_status	notes
+c_aachen	Aachen	Jülich	Q1017	Aachen	city in North Rhine-Westphalia, Germany	Q1549591; Q1187811; Q902814; Q4946461; Q42744322; Q57318; Q85635630; Q1780389					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aalborg	Aalborg	Jylland	Q25410	Aalborg	city in Denmark	Q1549591	1342				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aargau	Aargau	Transjurania	Q11972	Canton of Aargau	canton of Switzerland	Q23058; Q56061	1803				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aarhus	Aarhus	Jylland	Q25319	Aarhus	city in Central Denmark Region	Q1549591	800				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_abauj	Abauj	Ungvár	Q1049854	Abaúj county	Historical county in the Kingdom of Hungary	Q852231	1201	1881			bounded_candidate	Has structured inception and dissolution claims; verify rank/entity semantics before fact promotion.
+c_abkhazia	Abkhazia	Abkhazia	Q31354462	Republic of Abkhazia	state with limited recognition in the Caucasus	Q10711424	1994				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_abruzzi	Abruzzi	Spoleto	Q1284	Abruzzo	region in Italy	Q16110					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_abydos	Abydos	Aegean Islands	Q23849061	Abydos	article in Otto's encyclopedia	Q13433827					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_achaia	Achaia	Achaia	Q2495811	Achaea Regional Unit	regional unit in Western Greece, Greece	Q1234255	2011				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_adrianopolis	Adrianopolis	Philippopolis	Q43387	Edirne	central district and city in Edirne Province, Turkey	Q515; Q1549591; Q15284	125				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aeolis	Aeolis	Ephesos	Q26213066	Aeolis	genus of molluscs	Q16521					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aetolia	Aetolia	Epirus	Q4688763	Aetolia	2001 video game	Q7889					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_agenais	Agen	Gascogne	Q6625	Agen	commune in Lot-et-Garonne, France	Q484170					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_ailech	Ailech	Ulster	Q15104874	Ailech		Q3024240	600	780			bounded_candidate	Has structured inception and dissolution claims; verify rank/entity semantics before fact promotion.
+c_ajaccio	Ajaccio	Corsica	Q40104	Ajaccio	French commune and prefecture of Corse-du-Sud and Corsica	Q484170; Q515					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_akkel	Akkel	Giemajohka	Q24934204	Akkyol	lake in Makhachkala, Russia	Q23397					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aland	Aland	Uppland	Q5689	Åland	autonomous region of Finland	Q193512; Q782614; Q41691; Q15212617; Q406957; Q853697					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alarcon	Alarcon	Murcia	Q37262384	Alarcon	family name	Q101352					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_almader	Alarcos	Cordoba	Q2830654	Alarcos	human settlement in Ciudad Real Province, Castile-La Mancha, Spain	Q3257686; Q15661340; Q21751582					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_albarracin	Albarracin	Aragon	Q695488	Albarracín	municipality of Spain	Q2074737					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_albi	Albi	Languedoc	Q132801	Albi	French commune in Tarn, Occitania	Q484170					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_albret	Albret	Gascogne	Q2608761	Albret	royal family of Navarre	Q13417114		1789			defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alcacer_do_sal	Alcacer do Sal	Beja	Q850697	Alcácer do Sal	municipality in Portugal	Q13217644					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alcaniz	Alcaniz	Aragon	Q24015190	Alcañiz	capital of Alcañiz Municipality, Spain	Q11939023; Q121289819					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alcaraz	Alcaraz	Murcia	Q24008382	Alcaraz	capital of Alcaraz Municipality, Spain	Q121289819					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alencon	Alençon	Normandy	Q181269	Alençon	commune in Orne, France	Q484170					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_algeciras	Algeciras	Seville	Q484552	Algeciras	municipality and city in the province of Cádiz, Spain	Q2074737					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alicante	Alicante	València	Q11959	Alicante	city in Valencian Community, Spain	Q2074737; Q515; Q1549591; Q123754112	-231				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_almeria	Almeria	Granada	Q10400	Almería	municipality and capital of the province of Almeria, Spain	Q2074737					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alpsee	Alpsee	Augsburg	Q546344	Großer Alpsee	lake in the municipality of Immenstadt im Allgäu, Bavaria, Germany	Q23397; Q47524436					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_alto_aragon	Alto Aragon	Aragon	Q47006056	Alto Aragón en Común		Q7210356					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aluksne	Aluksne	Latgalia	Q291333	Alūksne	city and capital of Alūksne Municipality, Latvia	Q15584664	1284				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_amaya	Amaya	Cantabria	Q30601767	Amaya	family name	Q101352					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_amiens	Amiens	Valois	Q41604	Amiens	commune in Somme, France	Q484170; Q1549591					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_amstetten	Amstetten	Austria	Q251231	Amstetten	capital of Amstetten District, Lower Austria, Austria	Q667509; Q13539802					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_ancona	Ancona	Ancona	Q3415	Ancona	Italian city in the Marches region	Q747074; Q515; Q1549591	-387				defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_angermanland	Ångermanland	Norrland	Q209853	Ångermanland	province in Sweden	Q193556					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_angouleme	Angoulême	Aquitaine	Q134346	Angoulême	commune in Charente, France	Q484170					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_angus	Angus	Albany	Q591929	Angus	male given name	Q12308941					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_anjou	Anjou	Anjou	Q960503	Anjou	commune in Isère, France	Q484170					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_annandale	Annandale	Strathclyde	Q1375477	Annandale	census designated place in Virginia, United Stetes	Q498162					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_ansbach	Ansbach	East Franconia	Q14859	Ansbach	town in Bavaria, Germany	Q42744322; Q85631896; Q134626					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_antipatreia	Antipatreia	Dyrrachion	Q16737361	Antipatreia	ancient Greek city	Q15661340					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_antwerpen	Antwerpen	Brabant	Q12892	Antwerp	municipality in the province of Antwerp, Belgium	Q15273785; Q493522; Q902814; Q1549591; Q2264924					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aosta	Aosta	Savoy	Q3367	Aosta	comune in Aosta Valley, Italy	Q747074					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_apahunik	Apahunik	Vaspurakan	Q4067918	Apahunik		Q4131030					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_apulia	Apulia	Apulia	Q10416467	Apulia	genus of insects	Q16521					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.
+c_aquileia	Aquileia	Friuli	Q53216	Aquileia	Italian comune based on the ancient Roman city in Italy, at the head of the Adriatic at the edge of the lagoons	Q747074					defer	No bounded inception/dissolution pair or entity remains ambiguous for DUCHY title materialization.

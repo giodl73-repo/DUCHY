@@ -78,6 +78,15 @@ cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-001-t
 cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-001-title-facts-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-001-title-facts.sources data/staging/ck3-batch-001-title-facts.facts
 ```
 
+The first-shard structured screen records which Wikidata leads have bounded
+date claims. Bounded dates alone are not enough for promotion when rank or
+identity semantics remain unclear:
+
+```text
+data/staging/ck3-counties-batch-001-structured-screen.tsv
+data/staging/ck3-counties-batch-001-structured-screen.md
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.

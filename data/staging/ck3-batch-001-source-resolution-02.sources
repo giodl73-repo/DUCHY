@@ -1,0 +1,14 @@
+# Additional reviewed source-resolution record from CK3 batch 001 structured screen.
+# Facts are deferred because rank semantics are unresolved.
+
+source_id: src-wikidata-q15104874
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q15104874
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_ailech / Ailech; Wikidata lead Ailech (Q15104874), instance of historical country with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. Title facts are deferred because DUCHY rank semantics are unresolved for a historical-country entity discovered from a CK3 county row.

@@ -142,7 +142,11 @@ Pulses:
 50. CK3 batch 001 first title fact packet. Complete for Abaúj county
     source-backed name, county rank, and 1201-1881 existence span from the
     reviewed Wikidata source record.
-51. Next reviewed parentage packet.
+51. CK3 batch 001 structured screen and Ailech source record. Complete for
+    structured-claim screening across first-shard Wikidata leads and one
+    additional source-only Ailech record with title facts deferred for rank
+    semantics.
+52. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
