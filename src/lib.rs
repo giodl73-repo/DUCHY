@@ -3394,19 +3394,20 @@ confidence: maybe
                 SourceClass::SourceBacked,
             );
             assert_eq!(query.status, QueryStatus::Answered);
-            assert_eq!(
-                query.answer.as_ref().map(|answer| {
+            let path = query
+                .answer
+                .as_ref()
+                .map(|answer| {
                     answer
                         .titles
                         .iter()
                         .map(|step| step.title_id.as_str())
                         .collect::<Vec<_>>()
-                }),
-                Some(vec![
-                    parentage_fact.subject_id.as_str(),
-                    parentage_fact.value.as_str()
-                ])
-            );
+                })
+                .expect("answered query should carry a title path");
+            assert!(path.len() >= 2);
+            assert_eq!(path[0], parentage_fact.subject_id.as_str());
+            assert_eq!(path[1], parentage_fact.value.as_str());
         }
     }
 

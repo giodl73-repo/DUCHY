@@ -1,0 +1,33 @@
+# Reviewed parentage packet for accepted structured relation bridges.
+
+fact_id: fact-q253094-parent-q131964
+subject_id: title-q253094
+claim_kind: parentage
+span: 1804..1867
+value: title-q131964
+source_ids: src-wikidata-q253094, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q45670-parent-q377350
+subject_id: title-q45670
+claim_kind: parentage
+span: 1580..1640
+value: title-q377350
+source_ids: src-wikidata-q45670, src-wikidata-q377350
+confidence: multi_source
+---
+fact_id: fact-q1049854-parent-q171150
+subject_id: title-q1049854
+claim_kind: parentage
+span: 1201..1881
+value: title-q171150
+source_ids: src-wikidata-q1049854, src-wikidata-q171150
+confidence: multi_source
+---
+fact_id: fact-q1235737-parent-q3446210
+subject_id: title-q1235737
+claim_kind: parentage
+span: 824..1035
+value: title-q3446210
+source_ids: src-wikidata-q1235737, src-wikidata-q3446210
+confidence: multi_source

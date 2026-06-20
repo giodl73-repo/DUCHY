@@ -166,7 +166,10 @@ Pulses:
 58. CK3 queue closure. Complete for batches 008-010 research screens, Hordaland
     title promotion, and closure of the 500 CK3 discovery rows with zero pending
     candidates.
-59. Next reviewed parentage packet.
+59. Accepted relation bridges parentage packet. Complete for 4 parentage-only
+    facts using already accepted source records and structured `P17`/`P361`
+    relation review.
+60. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
