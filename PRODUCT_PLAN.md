@@ -133,7 +133,10 @@ Pulses:
     candidates generated from a saved CK3 wiki county list, filtered to
     Europe-facing CK3 empire buckets, with no accepted historical facts
     promoted.
-48. Next reviewed parentage packet.
+48. CK3 batch 001 source-resolution leads. Complete for a 50-row Wikidata
+    search packet that records exact, fuzzy, and no-result external leads
+    without treating search hits as accepted historical source records.
+49. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

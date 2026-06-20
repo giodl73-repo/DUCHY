@@ -52,6 +52,16 @@ cargo run --bin duchy-import -- duplicate-url-report data/staging/ck3-counties-5
 cargo run --bin duchy-import -- shard-manifest data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-shards 50
 ```
 
+The first CK3 shard has an external source-resolution lead packet:
+
+```text
+data/staging/ck3-counties-batch-001-wikidata-research.tsv
+data/staging/ck3-counties-batch-001-wikidata-research.md
+```
+
+These files record search leads only. Exact label matches still require manual
+identity review before any source record or fact packet is created.
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
