@@ -8,75 +8,19 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 10 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 9 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
-| Duchy | 7 |
-| Empire | 6 |
-| Kingdom | 10 |
+| County | 5 |
+| Duchy | 4 |
+| Empire | 7 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q325461 | Kingdom of Thessalonica
-
-- rank: Kingdom
-- exists: 1204..1224
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q328001 | Prince-Bishopric of Toul
-
-- rank: Duchy
-- exists: 1048..1801
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q328818 | Kingdom of Kent
-
-- rank: Kingdom
-- exists: 450..871
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q3324486 | Prince-Bishopric of Montenegro
-
-- rank: Duchy
-- exists: 1516..1852
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q334714 | Duchy of Athens
-
-- rank: Duchy
-- exists: 1205..1458
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q3446210 | Kingdom of Pamplona
-
-- rank: Kingdom
-- exists: 824..1162
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q3624335 | Duchy of Austria
-
-- rank: Duchy
-- exists: 1156..1453
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q3755547 | Kingdom of Italy
-
-- rank: Kingdom
-- exists: 476..493
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q377350 | Iberian Union
 
@@ -169,13 +113,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 
-### title-q55599391 | Kingdom of Sardinia
-
-- rank: Kingdom
-- exists: 1324..1713
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q56089236 | Kingdom of Western Georgia
 
 - rank: Kingdom
@@ -196,4 +133,67 @@ gap_rows: 25
 - exists: 1105..1440
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q568638 | Duchy of Silesia
+
+- rank: Duchy
+- exists: 1138..1742
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q573290 | County of Ravensberg
+
+- rank: County
+- exists: 1140..1807
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q58202 | July Monarchy
+
+- rank: Kingdom
+- exists: 1830..1848
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q583038 | Ostrogothic Kingdom
+
+- rank: Kingdom
+- exists: 493..553
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q589251 | County of Montbeliard
+
+- rank: County
+- exists: 1042..1793
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q599613 | County of Namur
+
+- rank: County
+- exists: 981..1795
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q600018 | Kingdom of Hungary
+
+- rank: Kingdom
+- exists: 1920..1946
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q603771 | Emirate of Crete
+
+- rank: Empire
+- exists: 820..961
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q612359 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

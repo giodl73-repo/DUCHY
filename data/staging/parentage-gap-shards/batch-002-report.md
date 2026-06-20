@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q142417 | Kingdom of Valencia
-
-- rank: Kingdom
-- exists: 1238..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q1448131 | Italian protectorate of Albania
 
 - rank: Kingdom
@@ -169,13 +162,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q1617495 | Kingdom of Jaen
-
-- rank: Kingdom
-- exists: 1246..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q161885 | Kingdom of Great Britain
 
 - rank: Kingdom
@@ -196,4 +182,18 @@ gap_rows: 25
 - exists: 1545..1859
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q165154 | Kingdom of Sardinia
+
+- rank: Kingdom
+- exists: 1720..1861
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1656775 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1251..1263
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

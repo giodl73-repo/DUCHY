@@ -1,12 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q325461	Kingdom of Thessalonica	Kingdom	1204..1224	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q328001	Prince-Bishopric of Toul	Duchy	1048..1801	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q334714	Duchy of Athens	Duchy	1205..1458	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q3624335	Duchy of Austria	Duchy	1156..1453	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q3755547	Kingdom of Italy	Kingdom	476..493	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q377350	Iberian Union	Empire	1580..1640	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q386496	Kingdom of Montenegro	Kingdom	1910..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q389688	Achaemenid Empire	Empire	-550..-330	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -20,7 +12,15 @@ title-q49683	Grand Duchy of Lithuania	Duchy	1236..1795	0	high_parentage_review	F
 title-q506008	Kingdom of Deira	Kingdom	450..655	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q50625	Hordaland	County	1919..2019	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q5177890	County of Luxembourg	County	963..1354	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
-title-q55599391	Kingdom of Sardinia	Kingdom	1324..1713	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q56089236	Kingdom of Western Georgia	Kingdom	1259..1330	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q566639	Duchy of Opava	Duchy	1269..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q568473	Burgraviate of Nuremberg	Empire	1105..1440	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q568638	Duchy of Silesia	Duchy	1138..1742	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q573290	County of Ravensberg	County	1140..1807	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q58202	July Monarchy	Kingdom	1830..1848	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q583038	Ostrogothic Kingdom	Kingdom	493..553	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q589251	County of Montbeliard	County	1042..1793	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q599613	County of Namur	County	981..1795	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q600018	Kingdom of Hungary	Kingdom	1920..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q603771	Emirate of Crete	Empire	820..961	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

@@ -7,83 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 13 |
-| medium_parentage_review | 10 |
-| root_or_successor_review | 2 |
+| high_parentage_review | 14 |
+| medium_parentage_review | 7 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 4 |
-| Duchy | 9 |
-| Empire | 2 |
-| Kingdom | 10 |
+| County | 1 |
+| Duchy | 13 |
+| Empire | 4 |
+| Kingdom | 7 |
 
 ## Review Rows
-
-### title-q568638 | Duchy of Silesia
-
-- rank: Duchy
-- exists: 1138..1742
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q573290 | County of Ravensberg
-
-- rank: County
-- exists: 1140..1807
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q58202 | July Monarchy
-
-- rank: Kingdom
-- exists: 1830..1848
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q583038 | Ostrogothic Kingdom
-
-- rank: Kingdom
-- exists: 493..553
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q589251 | County of Montbeliard
-
-- rank: County
-- exists: 1042..1793
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q599613 | County of Namur
-
-- rank: County
-- exists: 981..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q600018 | Kingdom of Hungary
-
-- rank: Kingdom
-- exists: 1920..1946
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q603771 | Emirate of Crete
-
-- rank: Empire
-- exists: 820..961
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q612359 | Kingdom of Lithuania
-
-- rank: Kingdom
-- exists: 1918..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q623751 | Kingdom of Bernicia
 
@@ -194,6 +131,69 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1281..1498
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q684030 | Principality of Serbia
+
+- rank: Duchy
+- exists: 1815..1882
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q686312 | Duchy of Amalfi
+
+- rank: Duchy
+- exists: 839..1137
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q692946 | Gorizia and Gradisca
+
+- rank: Empire
+- exists: 1754..1919
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q693570 | Duchy of Ferrara
+
+- rank: Duchy
+- exists: 1264..1597
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q696908 | Kingdom of Poland
+
+- rank: Kingdom
+- exists: 1916..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q698089 | Grand Duchy of Wurzburg
+
+- rank: Duchy
+- exists: 1806..1814
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q699923 | Illyrian Provinces
+
+- rank: Empire
+- exists: 1809..1816
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q701983 | Palatinate-Zweibrucken
+
+- rank: Empire
+- exists: 1444..1801
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q702327 | Duchy of Oswiecim
+
+- rank: Duchy
+- exists: 1315..1564
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

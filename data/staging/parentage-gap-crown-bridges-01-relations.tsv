@@ -1,0 +1,11 @@
+child	child_label	child_rank	child_span	prop	parent	parent_label	parent_rank	parent_span	parentage_span
+Q142417	Kingdom of Valencia	Kingdom	1238..1707	P17/P361	Q204920	Crown of Aragon	Crown	1162..1715	1238..1707
+Q1617495	Kingdom of Jaen	Kingdom	1246..1833	P17/P361	Q217196	Crown of Castile	Crown	1230..1715	1246..1715
+Q175276	Kingdom of Leon	Kingdom	910..1833	P361	Q217196	Crown of Castile	Crown	1230..1715	1230..1715
+Q179293	Kingdom of Castile	Kingdom	1065..1715	P17/P361	Q217196	Crown of Castile	Crown	1230..1715	1230..1715
+Q1796202	Kingdom of Granada	Kingdom	1492..1833	P17/P361	Q217196	Crown of Castile	Crown	1230..1715	1492..1715
+Q199442	Kingdom of Aragon	Kingdom	1035..1707	P361	Q204920	Crown of Aragon	Crown	1162..1715	1162..1707
+Q2301372	Kingdom of Toledo	Kingdom	1085..1833	P361	Q217196	Crown of Castile	Crown	1230..1715	1230..1715
+Q303421	Kingdom of Galicia	Kingdom	910..1833	P17/P361	Q217196	Crown of Castile	Crown	1230..1715	1230..1715
+Q55599391	Kingdom of Sardinia	Kingdom	1324..1713	P17/P361	Q204920	Crown of Aragon	Crown	1162..1715	1324..1713
+Q836676	Kingdom of Majorca	Kingdom	1229..1715	P17/P361	Q204920	Crown of Aragon	Crown	1162..1715	1229..1715

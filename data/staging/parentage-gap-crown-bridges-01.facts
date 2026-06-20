@@ -1,0 +1,81 @@
+# Reviewed parentage packet for accepted crown relation bridge set.
+
+fact_id: fact-q142417-parent-q204920
+subject_id: title-q142417
+claim_kind: parentage
+span: 1238..1707
+value: title-q204920
+source_ids: src-wikidata-q142417, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q1617495-parent-q217196
+subject_id: title-q1617495
+claim_kind: parentage
+span: 1246..1715
+value: title-q217196
+source_ids: src-wikidata-q1617495, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q175276-parent-q217196
+subject_id: title-q175276
+claim_kind: parentage
+span: 1230..1715
+value: title-q217196
+source_ids: src-wikidata-q175276, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q179293-parent-q217196
+subject_id: title-q179293
+claim_kind: parentage
+span: 1230..1715
+value: title-q217196
+source_ids: src-wikidata-q179293, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q1796202-parent-q217196
+subject_id: title-q1796202
+claim_kind: parentage
+span: 1492..1715
+value: title-q217196
+source_ids: src-wikidata-q1796202, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q199442-parent-q204920
+subject_id: title-q199442
+claim_kind: parentage
+span: 1162..1707
+value: title-q204920
+source_ids: src-wikidata-q199442, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q2301372-parent-q217196
+subject_id: title-q2301372
+claim_kind: parentage
+span: 1230..1715
+value: title-q217196
+source_ids: src-wikidata-q2301372, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q303421-parent-q217196
+subject_id: title-q303421
+claim_kind: parentage
+span: 1230..1715
+value: title-q217196
+source_ids: src-wikidata-q303421, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q55599391-parent-q204920
+subject_id: title-q55599391
+claim_kind: parentage
+span: 1324..1713
+value: title-q204920
+source_ids: src-wikidata-q55599391, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q836676-parent-q204920
+subject_id: title-q836676
+claim_kind: parentage
+span: 1229..1715
+value: title-q204920
+source_ids: src-wikidata-q836676, src-wikidata-q204920
+confidence: multi_source

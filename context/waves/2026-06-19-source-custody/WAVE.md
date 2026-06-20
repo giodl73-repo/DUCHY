@@ -80,6 +80,7 @@ records and validation.
 | 62 | Parentage gap sharding and reports | complete | Split the 211-row gap queue into 9 review shards and render Markdown reports for each shard. |
 | 63 | Composite crown parentage packet | complete | Add a composite `Crown` rank and import the reviewed Kingdom of Murcia -> Crown of Castile bridge from parentage-gap shard 001. |
 | 64 | Crown of Aragon parentage packet | complete | Import the reviewed County of Barcelona -> Crown of Aragon bridge from parentage-gap shard 001. |
+| 65 | Crown bridge parentage packet | complete | Import 10 parentage-only kingdom -> crown bridges using already accepted source records. |
 
 ## Success Criteria
 

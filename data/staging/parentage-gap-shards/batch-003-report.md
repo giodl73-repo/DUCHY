@@ -7,33 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
-| medium_parentage_review | 14 |
-| root_or_successor_review | 6 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
+| County | 1 |
 | Duchy | 5 |
-| Empire | 6 |
-| Kingdom | 14 |
+| Empire | 7 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q165154 | Kingdom of Sardinia
-
-- rank: Kingdom
-- exists: 1720..1861
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1656775 | Kingdom of Lithuania
-
-- rank: Kingdom
-- exists: 1251..1263
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q16835712 | Duchy of Estonia
 
@@ -98,13 +85,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q175276 | Kingdom of Leon
-
-- rank: Kingdom
-- exists: 910..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q178897 | Latin Empire
 
 - rank: Empire
@@ -125,20 +105,6 @@ gap_rows: 25
 - exists: 1534..1980
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q179293 | Kingdom of Castile
-
-- rank: Kingdom
-- exists: 1065..1715
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1796202 | Kingdom of Granada
-
-- rank: Kingdom
-- exists: 1492..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q179876 | Kingdom of England
 
@@ -193,6 +159,41 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1130..1816
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q19083 | Kingdom of Iberia
+
+- rank: Kingdom
+- exists: -299..580
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q191077 | Kingdom of Yugoslavia
+
+- rank: Kingdom
+- exists: 1929..1945
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q191484 | Old Great Bulgaria
+
+- rank: Empire
+- exists: 632..668
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1917014 | County of Sicily
+
+- rank: County
+- exists: 1071..1130
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q195972 | Kingdom of Kartli
+
+- rank: Kingdom
+- exists: 1466..1762
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 336
-facts: 1132
+facts: 1142
 titles: 325
-parentage_facts: 157
-titles_with_parentage: 114
-titles_without_parentage: 211
+parentage_facts: 167
+titles_with_parentage: 124
+titles_without_parentage: 201
 
 ## Coverage By Rank
 
@@ -15,7 +15,7 @@ titles_without_parentage: 211
 | Crown | 2 | 0 | 2 |
 | Duchy | 136 | 83 | 53 |
 | Empire | 39 | 0 | 39 |
-| Kingdom | 120 | 17 | 103 |
+| Kingdom | 120 | 27 | 93 |
 
 ## Titles Without Parentage
 
@@ -44,7 +44,6 @@ titles_without_parentage: 211
 - title-q1333032 | Elmet | Kingdom | 500..627
 - title-q1352878 | Duchy of Livonia | Duchy | 1561..1621
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
-- title-q142417 | Kingdom of Valencia | Kingdom | 1238..1707
 - title-q1448131 | Italian protectorate of Albania | Kingdom | 1939..1943
 - title-q146246 | Francia | Kingdom | 481..843
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
@@ -65,7 +64,6 @@ titles_without_parentage: 211
 - title-q160440 | Crimean Khanate | Empire | 1441..1783
 - title-q16056854 | Kingdom of Hungary | Kingdom | 1301..1526
 - title-q16084290 | Illyrian kingdom | Kingdom | -700..-135
-- title-q1617495 | Kingdom of Jaen | Kingdom | 1246..1833
 - title-q161885 | Kingdom of Great Britain | Kingdom | 1707..1801
 - title-q1649871 | Kingdom of Poland | Kingdom | 1386..1569
 - title-q165040 | Duchy of Parma and Piacenza | Duchy | 1545..1859
@@ -80,12 +78,9 @@ titles_without_parentage: 211
 - title-q173065 | Kingdom of Naples | Kingdom | 1282..1816
 - title-q173082 | Dacia | Kingdom | -60..106
 - title-q173863 | Prince-Bishopric of Augsburg | Duchy | 888..1803
-- title-q175276 | Kingdom of Leon | Kingdom | 910..1833
 - title-q178897 | Latin Empire | Empire | 1204..1261
 - title-q1789596 | Croatia in personal union with Hungary | Kingdom | 1102..1526
 - title-q179023 | French colonial empire | Empire | 1534..1980
-- title-q179293 | Kingdom of Castile | Kingdom | 1065..1715
-- title-q1796202 | Kingdom of Granada | Kingdom | 1492..1833
 - title-q179876 | Kingdom of England | Kingdom | 927..1707
 - title-q180393 | Kingdom of the Two Sicilies | Kingdom | 1738..1861
 - title-q181254 | Empire of Nicaea | Empire | 1204..1261
@@ -100,7 +95,6 @@ titles_without_parentage: 211
 - title-q1917014 | County of Sicily | County | 1071..1130
 - title-q195972 | Kingdom of Kartli | Kingdom | 1466..1762
 - title-q1991540 | Duchy of Courland and Semigallia | Duchy | 1918..1918
-- title-q199442 | Kingdom of Aragon | Kingdom | 1035..1707
 - title-q199688 | Almohad Caliphate | Empire | 1121..1269
 - title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
 - title-q200464 | Portuguese Empire | Empire | 1415..1999
@@ -122,7 +116,6 @@ titles_without_parentage: 211
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q2273304 | Moravian Serbia | Duchy | 1365..1403
 - title-q22880 | Electoral Palatinate | Empire | 1085..1803
-- title-q2301372 | Kingdom of Toledo | Kingdom | 1085..1833
 - title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2346056 | Kingdom of Livonia | Kingdom | 1570..1578
@@ -139,7 +132,6 @@ titles_without_parentage: 211
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2980623 | Kingdom of Bosnia | Kingdom | 1377..1463
 - title-q2991474 | County of Wurttemberg | County | 1083..1495
-- title-q303421 | Kingdom of Galicia | Kingdom | 910..1833
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q319586 | Prince-Bishopric of Basel | Duchy | 1032..1803
@@ -165,7 +157,6 @@ titles_without_parentage: 211
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
 - title-q50625 | Hordaland | County | 1919..2019
 - title-q5177890 | County of Luxembourg | County | 963..1354
-- title-q55599391 | Kingdom of Sardinia | Kingdom | 1324..1713
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q566639 | Duchy of Opava | Duchy | 1269..1918
 - title-q568473 | Burgraviate of Nuremberg | Empire | 1105..1440
@@ -215,7 +206,6 @@ titles_without_parentage: 211
 - title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
 - title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
 - title-q83546 | Grand Principality of Vladimir | Duchy | 1125..1389
-- title-q836676 | Kingdom of Majorca | Kingdom | 1229..1715
 - title-q836937 | Duchy of Julich | Duchy | 1003..1794
 - title-q837136 | Kingdom of Deheubarth | Kingdom | 920..1197
 - title-q837998 | Kingdom of East Anglia | Kingdom | 501..917

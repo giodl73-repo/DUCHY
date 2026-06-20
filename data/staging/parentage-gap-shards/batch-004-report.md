@@ -15,48 +15,12 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Crown | 2 |
-| Duchy | 4 |
+| Duchy | 5 |
 | Empire | 6 |
 | Kingdom | 12 |
 
 ## Review Rows
-
-### title-q19083 | Kingdom of Iberia
-
-- rank: Kingdom
-- exists: -299..580
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q191077 | Kingdom of Yugoslavia
-
-- rank: Kingdom
-- exists: 1929..1945
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q191484 | Old Great Bulgaria
-
-- rank: Empire
-- exists: 632..668
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q1917014 | County of Sicily
-
-- rank: County
-- exists: 1071..1130
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q195972 | Kingdom of Kartli
-
-- rank: Kingdom
-- exists: 1466..1762
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q1991540 | Duchy of Courland and Semigallia
 
@@ -64,13 +28,6 @@ gap_rows: 25
 - exists: 1918..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
-
-### title-q199442 | Kingdom of Aragon
-
-- rank: Kingdom
-- exists: 1035..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q199688 | Almohad Caliphate
 
@@ -197,4 +154,46 @@ gap_rows: 25
 - exists: 1532..1569
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2253783 | Kingdom of Glywysing
+
+- rank: Kingdom
+- exists: 500..1063
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2273304 | Moravian Serbia
+
+- rank: Duchy
+- exists: 1365..1403
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q22880 | Electoral Palatinate
+
+- rank: Empire
+- exists: 1085..1803
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q230791 | Kingdom of Scotland
+
+- rank: Kingdom
+- exists: 843..1707
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q231392 | Kingdom of Asturias
+
+- rank: Kingdom
+- exists: 718..910
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2346056 | Kingdom of Livonia
+
+- rank: Kingdom
+- exists: 1570..1578
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

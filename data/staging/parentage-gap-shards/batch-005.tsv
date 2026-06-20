@@ -1,11 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q2253783	Kingdom of Glywysing	Kingdom	500..1063	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q2273304	Moravian Serbia	Duchy	1365..1403	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q22880	Electoral Palatinate	Empire	1085..1803	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q2301372	Kingdom of Toledo	Kingdom	1085..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q230791	Kingdom of Scotland	Kingdom	843..1707	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q231392	Kingdom of Asturias	Kingdom	718..910	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q2346056	Kingdom of Livonia	Kingdom	1570..1578	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2415003	Kingdom of Serbia	Kingdom	1217..1346	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q241748	Kingdom of Serbia	Kingdom	1882..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q249428	Grand Duchy of Berg	Duchy	1806..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -19,8 +12,15 @@ title-q283627	Margraviate of Austria	Duchy	976..1156	0	high_parentage_review	Fin
 title-q28513	Austria-Hungary	Empire	1867..1918	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2980623	Kingdom of Bosnia	Kingdom	1377..1463	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2991474	County of Wurttemberg	County	1083..1495	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
-title-q303421	Kingdom of Galicia	Kingdom	910..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3181749	Arab Caliphate	Empire	632..1517	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q31929	Carolingian Empire	Empire	800..887	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q319586	Prince-Bishopric of Basel	Duchy	1032..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q325461	Kingdom of Thessalonica	Kingdom	1204..1224	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q328001	Prince-Bishopric of Toul	Duchy	1048..1801	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q334714	Duchy of Athens	Duchy	1205..1458	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q3624335	Duchy of Austria	Duchy	1156..1453	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q3755547	Kingdom of Italy	Kingdom	476..493	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

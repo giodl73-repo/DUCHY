@@ -7,83 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 12 |
-| medium_parentage_review | 9 |
-| root_or_successor_review | 4 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 10 |
-| Empire | 4 |
-| Kingdom | 9 |
+| Duchy | 6 |
+| Empire | 1 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q684030 | Principality of Serbia
-
-- rank: Duchy
-- exists: 1815..1882
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q686312 | Duchy of Amalfi
-
-- rank: Duchy
-- exists: 839..1137
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q692946 | Gorizia and Gradisca
-
-- rank: Empire
-- exists: 1754..1919
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q693570 | Duchy of Ferrara
-
-- rank: Duchy
-- exists: 1264..1597
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q696908 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1916..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q698089 | Grand Duchy of Wurzburg
-
-- rank: Duchy
-- exists: 1806..1814
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q699923 | Illyrian Provinces
-
-- rank: Empire
-- exists: 1809..1816
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q701983 | Palatinate-Zweibrucken
-
-- rank: Empire
-- exists: 1444..1801
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q702327 | Duchy of Oswiecim
-
-- rank: Duchy
-- exists: 1315..1564
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q704312 | Grand Duchy of Frankfurt
 
@@ -169,13 +106,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q836676 | Kingdom of Majorca
-
-- rank: Kingdom
-- exists: 1229..1715
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q836937 | Duchy of Julich
 
 - rank: Duchy
@@ -194,6 +124,76 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 501..917
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q83958 | Macedonia
+
+- rank: Kingdom
+- exists: -808..-167
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q842091 | Duchy of Normandy
+
+- rank: Duchy
+- exists: 911..1259
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q854415 | Kingdom of the Lombards
+
+- rank: Kingdom
+- exists: 568..774
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q858841 | Kingdom of Croatia
+
+- rank: Kingdom
+- exists: 925..1102
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q870517 | Odrysian kingdom
+
+- rank: Kingdom
+- exists: -460..46
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q87791 | Frisian Kingdom
+
+- rank: Kingdom
+- exists: 500..734
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q8890160 | Kingdom of Poland
+
+- rank: Kingdom
+- exists: 1025..1569
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q905131 | Kingdom of Breifne
+
+- rank: Kingdom
+- exists: 700..1256
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q954585 | Kingdom of Brycheiniog
+
+- rank: Kingdom
+- exists: 450..1045
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q956451 | Kingdom of Dyfed
+
+- rank: Kingdom
+- exists: 410..920
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

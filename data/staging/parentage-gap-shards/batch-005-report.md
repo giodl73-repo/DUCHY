@@ -7,69 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 5 |
+| high_parentage_review | 11 |
+| medium_parentage_review | 10 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 7 |
-| Empire | 5 |
-| Kingdom | 12 |
+| Duchy | 10 |
+| Empire | 4 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q2253783 | Kingdom of Glywysing
-
-- rank: Kingdom
-- exists: 500..1063
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2273304 | Moravian Serbia
-
-- rank: Duchy
-- exists: 1365..1403
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q22880 | Electoral Palatinate
-
-- rank: Empire
-- exists: 1085..1803
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2301372 | Kingdom of Toledo
-
-- rank: Kingdom
-- exists: 1085..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q230791 | Kingdom of Scotland
-
-- rank: Kingdom
-- exists: 843..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q231392 | Kingdom of Asturias
-
-- rank: Kingdom
-- exists: 718..910
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2346056 | Kingdom of Livonia
-
-- rank: Kingdom
-- exists: 1570..1578
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q2415003 | Kingdom of Serbia
 
@@ -162,13 +113,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 
-### title-q303421 | Kingdom of Galicia
-
-- rank: Kingdom
-- exists: 910..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q3181749 | Arab Caliphate
 
 - rank: Empire
@@ -194,6 +138,62 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q325461 | Kingdom of Thessalonica
+
+- rank: Kingdom
+- exists: 1204..1224
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q328001 | Prince-Bishopric of Toul
+
+- rank: Duchy
+- exists: 1048..1801
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q328818 | Kingdom of Kent
+
+- rank: Kingdom
+- exists: 450..871
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q3324486 | Prince-Bishopric of Montenegro
+
+- rank: Duchy
+- exists: 1516..1852
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q334714 | Duchy of Athens
+
+- rank: Duchy
+- exists: 1205..1458
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q3446210 | Kingdom of Pamplona
+
+- rank: Kingdom
+- exists: 824..1162
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q3624335 | Duchy of Austria
+
+- rank: Duchy
+- exists: 1156..1453
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q3755547 | Kingdom of Italy
+
+- rank: Kingdom
+- exists: 476..493
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
