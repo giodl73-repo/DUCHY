@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
+| high_parentage_review | 8 |
 | medium_parentage_review | 12 |
-| root_or_successor_review | 4 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 7 |
-| Empire | 4 |
+| Duchy | 6 |
+| Empire | 5 |
 | Kingdom | 11 |
 | TheocraticState | 1 |
 
@@ -177,13 +177,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q16835712 | Duchy of Estonia
-
-- rank: Duchy
-- exists: 1561..1721
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q170174 | Papal States
 
 - rank: TheocraticState
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1263..1478
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q171740 | Caliphate of Cordoba
+
+- rank: Empire
+- exists: 929..1031
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

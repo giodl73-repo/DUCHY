@@ -1,0 +1,31 @@
+# Reviewed title and parentage packet for Duchy of Estonia under Sweden.
+
+fact_id: fact-q34-name
+subject_id: title-q34
+claim_kind: name
+value: Sweden
+source_ids: src-wikidata-q34
+confidence: single_source
+---
+fact_id: fact-q34-rank
+subject_id: title-q34
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q34
+confidence: single_source
+---
+fact_id: fact-q34-exists
+subject_id: title-q34
+claim_kind: title_exists
+span: 900..
+value: exists
+source_ids: src-wikidata-q34
+confidence: single_source
+---
+fact_id: fact-q16835712-parent-q34
+subject_id: title-q16835712
+claim_kind: parentage
+span: 1561..1721
+value: title-q34
+source_ids: src-wikidata-q16835712, src-wikidata-q34
+confidence: multi_source

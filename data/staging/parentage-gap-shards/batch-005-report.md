@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2577303 | Kingdom of Sardinia
-
-- rank: Kingdom
-- exists: 1720..1861
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q259511 | Prince-Bishopric of Freising
 
 - rank: Duchy
@@ -140,6 +133,13 @@ gap_rows: 25
 - exists: 1205..1458
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q34 | Sweden
+
+- rank: Kingdom
+- exists: 900..
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q34266 | Russian Empire
 

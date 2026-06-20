@@ -94,6 +94,7 @@ records and validation.
 | 76 | Free Imperial City of Aachen HRE parentage | complete | Add `FreeCity` rank support, correct Free Imperial City of Aachen rank, and import Holy Roman Empire parentage. |
 | 77 | Burgraviate of Nuremberg HRE parentage | complete | Correct Burgraviate of Nuremberg rank to County and import Holy Roman Empire parentage. |
 | 78 | Courland Commonwealth parentage | complete | Import Duchy of Courland and Semigallia parentage under Polish-Lithuanian Commonwealth. |
+| 79 | Estonia Sweden parentage | complete | Promote Sweden and import Duchy of Estonia parentage under Sweden. |
 
 ## Success Criteria
 

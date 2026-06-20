@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q171740 | Caliphate of Cordoba
-
-- rank: Empire
-- exists: 929..1031
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q172107 | Polish-Lithuanian Commonwealth
 
 - rank: Crown
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1162..1841
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q200464 | Portuguese Empire
+
+- rank: Empire
+- exists: 1415..1999
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

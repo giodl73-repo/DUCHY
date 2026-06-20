@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 338
-facts: 1163
-titles: 327
-parentage_facts: 182
-titles_with_parentage: 138
+sources: 339
+facts: 1167
+titles: 328
+parentage_facts: 183
+titles_with_parentage: 139
 titles_without_parentage: 189
 
 ## Coverage By Rank
@@ -13,10 +13,10 @@ titles_without_parentage: 189
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 136 | 89 | 47 |
+| Duchy | 136 | 90 | 46 |
 | Empire | 35 | 0 | 35 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 120 | 30 | 90 |
+| Kingdom | 121 | 30 | 91 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -69,7 +69,6 @@ titles_without_parentage: 189
 - title-q165040 | Duchy of Parma and Piacenza | Duchy | 1545..1859
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
-- title-q16835712 | Duchy of Estonia | Duchy | 1561..1721
 - title-q170174 | Papal States | TheocraticState | 754..1870
 - title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
@@ -139,6 +138,7 @@ titles_without_parentage: 189
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
 - title-q3324486 | Prince-Bishopric of Montenegro | Duchy | 1516..1852
 - title-q334714 | Duchy of Athens | Duchy | 1205..1458
+- title-q34 | Sweden | Kingdom | 900..
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q3624335 | Duchy of Austria | Duchy | 1156..1453

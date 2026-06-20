@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 6 |
-| medium_parentage_review | 15 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | Crown | 2 |
 | Duchy | 6 |
-| Empire | 4 |
-| Kingdom | 13 |
+| Empire | 3 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q200464 | Portuguese Empire
-
-- rank: Empire
-- exists: 1415..1999
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q203493 | Kingdom of Romania
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1452..1859
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2577303 | Kingdom of Sardinia
+
+- rank: Kingdom
+- exists: 1720..1861
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

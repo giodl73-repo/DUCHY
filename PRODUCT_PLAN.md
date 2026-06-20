@@ -221,7 +221,9 @@ Pulses:
     Empire for 1105-1440.
 79. Courland Commonwealth parentage packet. Complete for importing Duchy of
     Courland and Semigallia -> Polish-Lithuanian Commonwealth for 1569-1795.
-80. Next reviewed parentage packet.
+80. Estonia Sweden parentage packet. Complete for promoting Sweden and importing
+    Duchy of Estonia -> Sweden for 1561-1721.
+81. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

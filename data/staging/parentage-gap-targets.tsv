@@ -46,7 +46,6 @@ title-q1649871	Kingdom of Poland	Kingdom	1386..1569	0	medium_parentage_review	Fi
 title-q165040	Duchy of Parma and Piacenza	Duchy	1545..1859	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q165154	Kingdom of Sardinia	Kingdom	1720..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q1656775	Kingdom of Lithuania	Kingdom	1251..1263	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q16835712	Duchy of Estonia	Duchy	1561..1721	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q170174	Papal States	TheocraticState	754..1870	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q170770	Grand Principality of Moscow	Duchy	1263..1478	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q171740	Caliphate of Cordoba	Empire	929..1031	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -116,6 +115,7 @@ title-q328001	Prince-Bishopric of Toul	Duchy	1048..1801	0	high_parentage_review	
 title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q334714	Duchy of Athens	Duchy	1205..1458	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q34	Sweden	Kingdom	900..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3624335	Duchy of Austria	Duchy	1156..1453	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
