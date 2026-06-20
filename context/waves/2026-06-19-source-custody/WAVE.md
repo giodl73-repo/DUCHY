@@ -78,6 +78,7 @@ records and validation.
 | 60 | Parentage coverage report | complete | Add a repeatable report for hierarchy coverage by rank, unparented titles, and multi-parentage review targets. |
 | 61 | Parentage gap TSV queue | complete | Export the 211 unparented accepted titles as a machine-readable review queue with rank-based priority. |
 | 62 | Parentage gap sharding and reports | complete | Split the 211-row gap queue into 9 review shards and render Markdown reports for each shard. |
+| 63 | Composite crown parentage packet | complete | Add a composite `Crown` rank and import the reviewed Kingdom of Murcia -> Crown of Castile bridge from parentage-gap shard 001. |
 
 ## Success Criteria
 

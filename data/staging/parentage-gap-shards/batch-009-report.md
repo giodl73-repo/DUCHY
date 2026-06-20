@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-009.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-009.tsv
 gap_rows: 11
 
 ## Priority Counts

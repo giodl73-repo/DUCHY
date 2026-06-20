@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-004.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-004.tsv
 gap_rows: 25
 
 ## Priority Counts
@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
+| Crown | 1 |
 | Duchy | 4 |
 | Empire | 6 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q187461 | Kingdom of Hereti
-
-- rank: Kingdom
-- exists: 893..1020
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q188586 | Kingdom of Sicily
 
@@ -161,6 +155,13 @@ gap_rows: 25
 - exists: 870..1198
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q217196 | Crown of Castile
+
+- rank: Crown
+- exists: 1230..1715
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2183293 | Duchy of Belz
 

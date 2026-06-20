@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-003.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-003.tsv
 gap_rows: 25
 
 ## Priority Counts
@@ -20,13 +20,6 @@ gap_rows: 25
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q1649871 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1386..1569
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q165040 | Duchy of Parma and Piacenza
 
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 1914..1925
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q187461 | Kingdom of Hereti
+
+- rank: Kingdom
+- exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

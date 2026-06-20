@@ -1173,6 +1173,7 @@ fn title_rank_label(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::County => "County",
         duchy::TitleRank::Duchy => "Duchy",
         duchy::TitleRank::Kingdom => "Kingdom",
+        duchy::TitleRank::Crown => "Crown",
         duchy::TitleRank::Empire => "Empire",
     }
 }
@@ -1189,6 +1190,7 @@ fn parentage_gap_priority(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::County => "high_parentage_review",
         duchy::TitleRank::Duchy => "high_parentage_review",
         duchy::TitleRank::Kingdom => "medium_parentage_review",
+        duchy::TitleRank::Crown => "medium_parentage_review",
         duchy::TitleRank::Empire => "root_or_successor_review",
     }
 }
@@ -1200,6 +1202,7 @@ fn parentage_gap_note(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::Kingdom => {
             "Find reviewed empire, union, confederation, or successor-context source."
         }
+        duchy::TitleRank::Crown => "Find reviewed empire, union, or successor-context source.",
         duchy::TitleRank::Empire => {
             "May be a root title; review only if successor, union, or super-entity claim exists."
         }

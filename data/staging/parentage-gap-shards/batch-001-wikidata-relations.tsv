@@ -1,0 +1,29 @@
+child	child_label	prop	parent	parent_label	parent_accepted	parent_inception	parent_dissolution
+Q105092	Kingdom of Mercia	P361	Q237945	Heptarchy	False	unknown	unknown
+Q105313	Kingdom of Wessex	P361	Q237945	Heptarchy	False	unknown	unknown
+Q106577	Neustria	P17	Q142	France	False	0481	unknown
+Q106577	Neustria	P17	Q142	France	False	0843-08	unknown
+Q106577	Neustria	P17	Q142	France	False	1804-05-18	unknown
+Q107299	Kingdom of Northumbria	P17	Q145	United Kingdom	False	1801	unknown
+Q107299	Kingdom of Northumbria	P361	Q237945	Heptarchy	False	unknown	unknown
+Q110888	Kingdom of Essex	P361	Q237945	Heptarchy	False	unknown	unknown
+Q1122980	Comtat Venaissin	P17	Q170174	Papal States	False	0754	1870-09-20
+Q116080	Polish Underground State	P17	Q36	Poland	False	1918-11-11	unknown
+Q1164500	Kingdom of Murcia	P17	Q217196	Crown of Castile	False	1230	1715
+Q1164500	Kingdom of Murcia	P361	Q217196	Crown of Castile	False	1230	1715
+Q1231403	Prince-Bishopric of Trent	P17	Q38	Italy	False	1946-06-18	unknown
+Q1231403	Prince-Bishopric of Trent	P17	Q38	Italy	False	1861-03-17	unknown
+Q1231403	Prince-Bishopric of Trent	P17	Q38	Italy	False	0476	unknown
+Q1233672	County of Barcelona	P17	Q1233672	County of Barcelona	True	0801	1164
+Q1233672	County of Barcelona	P17	Q15581	Principality of Catalonia	False	1173	1714-09-18
+Q1233672	County of Barcelona	P361	Q1232459	Catalan counties	False	1162	unknown
+Q1233672	County of Barcelona	P361	Q204920	Crown of Aragon	False	1162-08-13	1715
+Q12544	Byzantine Empire	P131	Q2277	Roman Empire	False		0395-01-18
+Q12544	Byzantine Empire	P17	Q2277	Roman Empire	False		0395-01-18
+Q12544	Byzantine Empire	P361	Q2277	Roman Empire	False		0395-01-18
+Q12544	Byzantine Empire	P361	Q3940476	Rome in the Middle Ages	False	unknown	unknown
+Q12548	Holy Roman Empire	P17	Q12548	Holy Roman Empire	True	0962-02-07	1806-08-06
+Q12560	Ottoman Empire	P17	Q12560	Ottoman Empire	True	1299-08-05	1922-11-17
+Q12560	Ottoman Empire	P361	Q152283	Central Powers	False	unknown	unknown
+Q12714608	Fascist Romania	P17	Q218	Romania	False	1859-02-05	unknown
+Q131964	Austrian Empire	P17	Q131964	Austrian Empire	True	1804-08-11	1867-06-08

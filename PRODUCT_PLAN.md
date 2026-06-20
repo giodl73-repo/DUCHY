@@ -178,7 +178,10 @@ Pulses:
     unparented accepted titles with rank-based review priority.
 63. Parentage gap sharding and reports. Complete for 9 fixed-size review
     batches and Markdown reports across the 211-row parentage gap queue.
-64. Next reviewed parentage packet.
+64. Composite crown parentage packet. Complete for a `Crown` rank between
+    kingdom and empire, plus the reviewed Kingdom of Murcia -> Crown of Castile
+    parentage bridge from parentage-gap shard 001.
+65. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

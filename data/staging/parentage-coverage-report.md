@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 334
-facts: 1124
-titles: 323
-parentage_facts: 155
-titles_with_parentage: 112
+sources: 335
+facts: 1128
+titles: 324
+parentage_facts: 156
+titles_with_parentage: 113
 titles_without_parentage: 211
 
 ## Coverage By Rank
@@ -12,9 +12,10 @@ titles_without_parentage: 211
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 28 | 13 | 15 |
+| Crown | 1 | 0 | 1 |
 | Duchy | 136 | 83 | 53 |
 | Empire | 39 | 0 | 39 |
-| Kingdom | 120 | 16 | 104 |
+| Kingdom | 120 | 17 | 103 |
 
 ## Titles Without Parentage
 
@@ -30,7 +31,6 @@ titles_without_parentage: 211
 - title-q110888 | Kingdom of Essex | Kingdom | 527..825
 - title-q1122980 | Comtat Venaissin | County | 1274..1791
 - title-q116080 | Polish Underground State | Empire | 1939..1945
-- title-q1164500 | Kingdom of Murcia | Kingdom | 1258..1833
 - title-q11750128 | Kingdom of Poland | Kingdom | 1830..1831
 - title-q1209822 | Kingdom of Kakheti | Kingdom | 1465..1762
 - title-q1231403 | Prince-Bishopric of Trent | Duchy | 1027..1803
@@ -113,6 +113,7 @@ titles_without_parentage: 211
 - title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
 - title-q2162698 | Duchy of Bohemia | Duchy | 870..1198
+- title-q217196 | Crown of Castile | Crown | 1230..1715
 - title-q2183293 | Duchy of Belz | Duchy | 1170..1462
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807

@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-002.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-002.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 6 |
+| Duchy | 5 |
 | Empire | 4 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q1352878 | Duchy of Livonia
-
-- rank: Duchy
-- exists: 1561..1621
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q13590051 | Kingdom of the Burgundians
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1707..1801
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1649871 | Kingdom of Poland
+
+- rank: Kingdom
+- exists: 1386..1569
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

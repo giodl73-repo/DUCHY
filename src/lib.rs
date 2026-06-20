@@ -7,6 +7,7 @@ pub enum TitleRank {
     County,
     Duchy,
     Kingdom,
+    Crown,
     Empire,
 }
 
@@ -15,7 +16,8 @@ impl TitleRank {
         match self {
             Self::County => Some(Self::Duchy),
             Self::Duchy => Some(Self::Kingdom),
-            Self::Kingdom => Some(Self::Empire),
+            Self::Kingdom => Some(Self::Crown),
+            Self::Crown => Some(Self::Empire),
             Self::Empire => None,
         }
     }
@@ -2222,6 +2224,7 @@ fn parse_title_rank(value: &str) -> Option<TitleRank> {
         "county" => Some(TitleRank::County),
         "duchy" | "grand duchy" => Some(TitleRank::Duchy),
         "kingdom" => Some(TitleRank::Kingdom),
+        "crown" | "composite crown" | "composite realm" => Some(TitleRank::Crown),
         "empire" => Some(TitleRank::Empire),
         _ => None,
     }
@@ -3648,6 +3651,14 @@ confidence: maybe
         assert!(errors
             .iter()
             .any(|error| error.contains("expects temporal parent rank Duchy")));
+    }
+
+    #[test]
+    fn crown_rank_sits_between_kingdom_and_empire() {
+        assert_eq!(TitleRank::Kingdom.parent_rank(), Some(TitleRank::Crown));
+        assert_eq!(TitleRank::Crown.parent_rank(), Some(TitleRank::Empire));
+        assert!(TitleRank::Kingdom < TitleRank::Crown);
+        assert!(TitleRank::Crown < TitleRank::Empire);
     }
 
     fn test_structured_claim_catalog() -> SourceCatalog {
