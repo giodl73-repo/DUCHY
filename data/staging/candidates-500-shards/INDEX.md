@@ -9,10 +9,10 @@ shards: 9
 |---|---:|---:|---:|---:|---:|
 | batch-001.manifest | 50 | 32 | 0 | 18 | 0 |
 | batch-002.manifest | 50 | 24 | 0 | 26 | 0 |
-| batch-003.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-004.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-005.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-006.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-007.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-008.manifest | 50 | 50 | 0 | 0 | 0 |
-| batch-009.manifest | 50 | 50 | 0 | 0 | 0 |
+| batch-003.manifest | 50 | 8 | 0 | 42 | 0 |
+| batch-004.manifest | 50 | 22 | 0 | 28 | 0 |
+| batch-005.manifest | 50 | 35 | 0 | 15 | 0 |
+| batch-006.manifest | 50 | 14 | 0 | 36 | 0 |
+| batch-007.manifest | 50 | 2 | 0 | 48 | 0 |
+| batch-008.manifest | 50 | 25 | 0 | 25 | 0 |
+| batch-009.manifest | 50 | 19 | 0 | 31 | 0 |

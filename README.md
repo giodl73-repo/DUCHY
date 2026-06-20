@@ -48,7 +48,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 94 reviewed Wikidata structured
+  The accepted fixture catalog now contains 319 reviewed Wikidata structured
   claim sources.
 
 The first accepted capability target is the ability to ask which higher title
@@ -69,10 +69,11 @@ Q151624, Q150981, Q154195, and Q159631, giving the reviewed mini-catalog
 kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
-The second 500-candidate review promotion extends the accepted fixture set to
-94 reviewed sources and 306 reviewed facts. It adds title identity, rank, and
-existence facts only; new parentage for that larger set remains a separate
-review step.
+The remaining clean title-identity queue promotion extends the accepted fixture
+set to 319 reviewed sources and 981 reviewed facts. It adds title identity,
+rank, and existence facts only; fourteen title candidates remain deferred for
+missing or invalid date claims, and new parentage for the larger set remains a
+separate review step.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

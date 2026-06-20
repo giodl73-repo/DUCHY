@@ -53,6 +53,7 @@ records and validation.
 | 35 | 500-source candidate queue | complete | Stage 450 additional candidate sources so accepted plus staged sources reach 500 under review. |
 | 36 | Batch 001 title promotion | complete | Promote 18 reviewed title-identity sources from the 500-source candidate queue. |
 | 37 | Batch 002 title promotion | complete | Promote 26 reviewed title-identity sources from the 500-source candidate queue. |
+| 38 | Remaining title queue promotion | complete | Promote all remaining clean title-identity sources from the 500-source candidate queue. |
 
 ## Success Criteria
 

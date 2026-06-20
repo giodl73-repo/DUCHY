@@ -114,7 +114,7 @@ notes: Candidate label: Italian United Provinces; description: 1831 republic in 
 candidate_id: cand-q1448131
 source_id: src-wikidata-q1448131
 source_url: https://www.wikidata.org/wiki/Q1448131
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -142,7 +142,7 @@ notes: Candidate label: Jorvik; description: state; article: https://en.wikipedi
 candidate_id: cand-q1241847
 source_id: src-wikidata-q1241847
 source_url: https://www.wikidata.org/wiki/Q1241847
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -156,7 +156,7 @@ notes: Candidate label: Judicate of Arborea; description: historical kingdom of 
 candidate_id: cand-q58202
 source_id: src-wikidata-q58202
 source_url: https://www.wikidata.org/wiki/Q58202
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -184,7 +184,7 @@ notes: Candidate label: Kabardia; description: historical country in the North C
 candidate_id: cand-q62623
 source_id: src-wikidata-q62623
 source_url: https://www.wikidata.org/wiki/Q62623
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -198,7 +198,7 @@ notes: Candidate label: Kalmar Union; description: former country. personal unio
 candidate_id: cand-q4208290
 source_id: src-wikidata-q4208290
 source_url: https://www.wikidata.org/wiki/Q4208290
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -212,7 +212,7 @@ notes: Candidate label: Kazikumukh Khanate; description: Feudal formation create
 candidate_id: cand-q186537
 source_id: src-wikidata-q186537
 source_url: https://www.wikidata.org/wiki/Q186537
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -226,7 +226,7 @@ notes: Candidate label: Khanate of Qazan; description: former country; article: 
 candidate_id: cand-q2090473
 source_id: src-wikidata-q2090473
 source_url: https://www.wikidata.org/wiki/Q2090473
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -268,7 +268,7 @@ notes: Candidate label: Kievan Rus'; description: former federation of East Slav
 candidate_id: cand-q199442
 source_id: src-wikidata-q199442
 source_url: https://www.wikidata.org/wiki/Q199442
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -282,7 +282,7 @@ notes: Candidate label: Kingdom of Aragon; description: medieval and early moder
 candidate_id: cand-q231392
 source_id: src-wikidata-q231392
 source_url: https://www.wikidata.org/wiki/Q231392
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -296,7 +296,7 @@ notes: Candidate label: Kingdom of Asturias; description: former kingdom on the 
 candidate_id: cand-q623751
 source_id: src-wikidata-q623751
 source_url: https://www.wikidata.org/wiki/Q623751
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -310,7 +310,7 @@ notes: Candidate label: Kingdom of Bernicia; description: Anglo-Saxon kingdom in
 candidate_id: cand-q42585
 source_id: src-wikidata-q42585
 source_url: https://www.wikidata.org/wiki/Q42585
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -324,7 +324,7 @@ notes: Candidate label: Kingdom of Bohemia; description: monarchy in Central Eur
 candidate_id: cand-q2980623
 source_id: src-wikidata-q2980623
 source_url: https://www.wikidata.org/wiki/Q2980623
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -338,7 +338,7 @@ notes: Candidate label: Kingdom of Bosnia; description: 1377–1463 Bosnian medi
 candidate_id: cand-q905131
 source_id: src-wikidata-q905131
 source_url: https://www.wikidata.org/wiki/Q905131
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -352,7 +352,7 @@ notes: Candidate label: Kingdom of Breifne; description: former country; article
 candidate_id: cand-q771193
 source_id: src-wikidata-q771193
 source_url: https://www.wikidata.org/wiki/Q771193
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -366,7 +366,7 @@ notes: Candidate label: Kingdom of Brittany; description: short-lived vassal-sta
 candidate_id: cand-q147909
 source_id: src-wikidata-q147909
 source_url: https://www.wikidata.org/wiki/Q147909
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -394,7 +394,7 @@ notes: Candidate label: Kingdom of Burgundy; description: history of all the kin
 candidate_id: cand-q179293
 source_id: src-wikidata-q179293
 source_url: https://www.wikidata.org/wiki/Q179293
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -408,7 +408,7 @@ notes: Candidate label: Kingdom of Castile; description: European sovereign stat
 candidate_id: cand-q858841
 source_id: src-wikidata-q858841
 source_url: https://www.wikidata.org/wiki/Q858841
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -422,7 +422,7 @@ notes: Candidate label: Kingdom of Croatia; description: (925–1102) a medieval
 candidate_id: cand-q533558
 source_id: src-wikidata-q533558
 source_url: https://www.wikidata.org/wiki/Q533558
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -436,7 +436,7 @@ notes: Candidate label: Kingdom of Croatia-Slavonia; description: administrative
 candidate_id: cand-q837136
 source_id: src-wikidata-q837136
 source_url: https://www.wikidata.org/wiki/Q837136
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -450,7 +450,7 @@ notes: Candidate label: Kingdom of Deheubarth; description: kingdom in west Brit
 candidate_id: cand-q506008
 source_id: src-wikidata-q506008
 source_url: https://www.wikidata.org/wiki/Q506008
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -464,7 +464,7 @@ notes: Candidate label: Kingdom of Deira; description: kingdom in the north of e
 candidate_id: cand-q436994
 source_id: src-wikidata-q436994
 source_url: https://www.wikidata.org/wiki/Q436994
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -478,7 +478,7 @@ notes: Candidate label: Kingdom of Dublin; description: former country (839-1171
 candidate_id: cand-q956451
 source_id: src-wikidata-q956451
 source_url: https://www.wikidata.org/wiki/Q956451
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -492,7 +492,7 @@ notes: Candidate label: Kingdom of Dyfed; description: kingdom in west of Wales;
 candidate_id: cand-q837998
 source_id: src-wikidata-q837998
 source_url: https://www.wikidata.org/wiki/Q837998
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -506,7 +506,7 @@ notes: Candidate label: Kingdom of East Anglia; description: Anglo-Saxon kingdom
 candidate_id: cand-q179876
 source_id: src-wikidata-q179876
 source_url: https://www.wikidata.org/wiki/Q179876
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -520,7 +520,7 @@ notes: Candidate label: Kingdom of England; description: historic kingdom on the
 candidate_id: cand-q110888
 source_id: src-wikidata-q110888
 source_url: https://www.wikidata.org/wiki/Q110888
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -534,7 +534,7 @@ notes: Candidate label: Kingdom of Essex; description: former kingdom on the isl
 candidate_id: cand-q70972
 source_id: src-wikidata-q70972
 source_url: https://www.wikidata.org/wiki/Q70972
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -548,7 +548,7 @@ notes: Candidate label: Kingdom of France; description: monarchical state that r
 candidate_id: cand-q303421
 source_id: src-wikidata-q303421
 source_url: https://www.wikidata.org/wiki/Q303421
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -562,7 +562,7 @@ notes: Candidate label: Kingdom of Galicia; description: kingdom in Iberia; arti
 candidate_id: cand-q154667
 source_id: src-wikidata-q154667
 source_url: https://www.wikidata.org/wiki/Q154667
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -590,7 +590,7 @@ notes: Candidate label: Kingdom of Germany; description: 10th-century kingdom of
 candidate_id: cand-q2253783
 source_id: src-wikidata-q2253783
 source_url: https://www.wikidata.org/wiki/Q2253783
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -604,7 +604,7 @@ notes: Candidate label: Kingdom of Glywysing; description: early medieval petty 
 candidate_id: cand-q1796202
 source_id: src-wikidata-q1796202
 source_url: https://www.wikidata.org/wiki/Q1796202
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -618,7 +618,7 @@ notes: Candidate label: Kingdom of Granada; description: former state (1492-1833
 candidate_id: cand-q161885
 source_id: src-wikidata-q161885
 source_url: https://www.wikidata.org/wiki/Q161885
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -632,7 +632,7 @@ notes: Candidate label: Kingdom of Great Britain; description: constitutional mo
 candidate_id: cand-q209065
 source_id: src-wikidata-q209065
 source_url: https://www.wikidata.org/wiki/Q209065
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -646,7 +646,7 @@ notes: Candidate label: Kingdom of Greece; description: period of Greek statehoo
 candidate_id: cand-q816814
 source_id: src-wikidata-q816814
 source_url: https://www.wikidata.org/wiki/Q816814
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -660,7 +660,7 @@ notes: Candidate label: Kingdom of Gwynedd; description: kingdom in northwest Wa
 candidate_id: cand-q187461
 source_id: src-wikidata-q187461
 source_url: https://www.wikidata.org/wiki/Q187461
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -674,7 +674,7 @@ notes: Candidate label: Kingdom of Hereti; description: former country; article:
 candidate_id: cand-q212278
 source_id: src-wikidata-q212278
 source_url: https://www.wikidata.org/wiki/Q212278
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -688,7 +688,7 @@ notes: Candidate label: Kingdom of Holland; description: French client states in
 candidate_id: cand-q253094
 source_id: src-wikidata-q253094
 source_url: https://www.wikidata.org/wiki/Q253094
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal

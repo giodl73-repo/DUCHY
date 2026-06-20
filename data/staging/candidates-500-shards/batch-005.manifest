@@ -114,7 +114,7 @@ notes: Candidate label: French Third Republic; description: nation of France fro
 candidate_id: cand-q179023
 source_id: src-wikidata-q179023
 source_url: https://www.wikidata.org/wiki/Q179023
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -142,7 +142,7 @@ notes: Candidate label: French constitutional monarchy; description: Constitutio
 candidate_id: cand-q87791
 source_id: src-wikidata-q87791
 source_url: https://www.wikidata.org/wiki/Q87791
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -254,7 +254,7 @@ notes: Candidate label: German Democratic Republic; description: 1949–1990 cou
 candidate_id: cand-q18285930
 source_id: src-wikidata-q18285930
 source_url: https://www.wikidata.org/wiki/Q18285930
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -296,7 +296,7 @@ notes: Candidate label: Gododdin; description: kingdom of Britons native to nort
 candidate_id: cand-q692946
 source_id: src-wikidata-q692946
 source_url: https://www.wikidata.org/wiki/Q692946
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -338,7 +338,7 @@ notes: Candidate label: Gozo; description: independent state of Gozo (1798–180
 candidate_id: cand-q62633
 source_id: src-wikidata-q62633
 source_url: https://www.wikidata.org/wiki/Q62633
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -352,7 +352,7 @@ notes: Candidate label: Grand Duchy of Finland; description: predecessor state o
 candidate_id: cand-q49683
 source_id: src-wikidata-q49683
 source_url: https://www.wikidata.org/wiki/Q49683
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -366,7 +366,7 @@ notes: Candidate label: Grand Duchy of Lithuania; description: Eastern European 
 candidate_id: cand-q170770
 source_id: src-wikidata-q170770
 source_url: https://www.wikidata.org/wiki/Q170770
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -380,7 +380,7 @@ notes: Candidate label: Grand Principality of Moscow; description: Russian princ
 candidate_id: cand-q83546
 source_id: src-wikidata-q83546
 source_url: https://www.wikidata.org/wiki/Q83546
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -520,7 +520,7 @@ notes: Candidate label: Hispanic Monarchy; description: (1479-1716) set of terri
 candidate_id: cand-q673865
 source_id: src-wikidata-q673865
 source_url: https://www.wikidata.org/wiki/Q673865
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -534,7 +534,7 @@ notes: Candidate label: Hohenzollern-Hechingen; description: Historical German p
 candidate_id: cand-q157013
 source_id: src-wikidata-q157013
 source_url: https://www.wikidata.org/wiki/Q157013
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -548,7 +548,7 @@ notes: Candidate label: Hohenzollern-Sigmaringen; description: historical princi
 candidate_id: cand-q12548
 source_id: src-wikidata-q12548
 source_url: https://www.wikidata.org/wiki/Q12548
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -618,7 +618,7 @@ notes: Candidate label: Hungarian State; description: former Central European st
 candidate_id: cand-q10295972
 source_id: src-wikidata-q10295972
 source_url: https://www.wikidata.org/wiki/Q10295972
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -632,7 +632,7 @@ notes: Candidate label: Hunnic Empire; description: nomadic empire in Europe in 
 candidate_id: cand-q377350
 source_id: src-wikidata-q377350
 source_url: https://www.wikidata.org/wiki/Q377350
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: approximate
@@ -660,7 +660,7 @@ notes: Candidate label: Idel-Ural State; description: former state; article: htt
 candidate_id: cand-q699923
 source_id: src-wikidata-q699923
 source_url: https://www.wikidata.org/wiki/Q699923
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -674,7 +674,7 @@ notes: Candidate label: Illyrian Provinces; description: province of the First F
 candidate_id: cand-q16084290
 source_id: src-wikidata-q16084290
 source_url: https://www.wikidata.org/wiki/Q16084290
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal

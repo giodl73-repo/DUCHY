@@ -1,0 +1,917 @@
+# DUCHY Promotion Report
+
+mode: dry-run
+candidate_sources: 225
+candidate_facts: 675
+candidate_titles: 225
+merged_sources: 319
+merged_facts: 981
+
+## Candidate Titles
+
+- title-q10295972 | Empire | 316..484
+- title-q104863335 | Duchy | 966..1025
+- title-q1048918 | Kingdom | 411..585
+- title-q105092 | Kingdom | 527..918
+- title-q105313 | Kingdom | 519..927
+- title-q106577 | Kingdom | 511..977
+- title-q1069959 | Kingdom | 1260..1810
+- title-q107299 | Kingdom | 653..954
+- title-q11024667 | Duchy | 1701..1815
+- title-q110888 | Kingdom | 527..825
+- title-q1117051 | Kingdom | 1816..1849
+- title-q116080 | Empire | 1939..1945
+- title-q1164500 | Kingdom | 1258..1833
+- title-q11750128 | Kingdom | 1830..1831
+- title-q1209822 | Kingdom | 1465..1762
+- title-q1231403 | Duchy | 1027..1803
+- title-q1241847 | Kingdom | 800..1420
+- title-q1252942 | Duchy | 854..1252
+- title-q12548 | Empire | 962..1806
+- title-q12560 | Empire | 1302..1922
+- title-q12714608 | Kingdom | 1937..1938
+- title-q1333032 | Kingdom | 500..627
+- title-q1352878 | Duchy | 1561..1621
+- title-q13590051 | Kingdom | 411..534
+- title-q142417 | Kingdom | 1238..1707
+- title-q1448131 | Kingdom | 1939..1943
+- title-q146246 | Kingdom | 481..843
+- title-q1470101 | Kingdom | 1000..1301
+- title-q147909 | Kingdom | 1908..1946
+- title-q148499 | Duchy | 1157..1806
+- title-q151095 | Duchy | 1380..1806
+- title-q15238138 | Kingdom | 1814..1833
+- title-q152420 | County | 1096..1795
+- title-q153080 | Kingdom | 843..962
+- title-q153091 | Duchy | 1525..1618
+- title-q153529 | Duchy | 1395..1797
+- title-q154667 | Kingdom | 1008..1466
+- title-q155019 | Duchy | 959..1766
+- title-q156038 | Duchy | 1561..1795
+- title-q156199 | Duchy | 1356..1806
+- title-q157013 | Duchy | 1576..1850
+- title-q158835 | Duchy | 985..1795
+- title-q159856 | Duchy | 1183..1795
+- title-q160307 | Empire | 909..1171
+- title-q16056854 | Kingdom | 1301..1526
+- title-q16084290 | Kingdom | -700..-135
+- title-q1615455 | County | 1310..1710
+- title-q1617495 | Kingdom | 1246..1833
+- title-q161885 | Kingdom | 1707..1801
+- title-q164092 | Duchy | 804..1296
+- title-q1649871 | Kingdom | 1386..1569
+- title-q1656775 | Kingdom | 1251..1263
+- title-q16835712 | Duchy | 1561..1721
+- title-q168651 | Duchy | 1567..1803
+- title-q17015016 | Duchy | 997..1552
+- title-q170180 | Duchy | 965..1423
+- title-q170770 | Duchy | 1263..1478
+- title-q171150 | Kingdom | 1000..1946
+- title-q172107 | Duchy | 1569..1795
+- title-q173065 | Kingdom | 1282..1816
+- title-q173082 | Kingdom | -60..106
+- title-q173863 | Duchy | 888..1803
+- title-q175276 | Kingdom | 910..1833
+- title-q178897 | Empire | 1204..1261
+- title-q179023 | Empire | 1534..1980
+- title-q179293 | Kingdom | 1065..1715
+- title-q1796202 | Kingdom | 1492..1833
+- title-q179876 | Kingdom | 927..1707
+- title-q181254 | Empire | 1204..1261
+- title-q18285930 | Empire | 1848..1849
+- title-q186537 | Empire | 1438..1552
+- title-q1867844 | Duchy | 846..1197
+- title-q187035 | Duchy | 1914..1925
+- title-q187461 | Kingdom | 893..1020
+- title-q188586 | Kingdom | 1130..1816
+- title-q19083 | Kingdom | -299..580
+- title-q191077 | Kingdom | 1929..1945
+- title-q191484 | Empire | 632..668
+- title-q195972 | Kingdom | 1466..1762
+- title-q1991540 | Duchy | 1918..1918
+- title-q199442 | Kingdom | 1035..1707
+- title-q200262 | Kingdom | 1162..1841
+- title-q200464 | Empire | 1415..1999
+- title-q203493 | Kingdom | 1881..1947
+- title-q203817 | Empire | 681..1018
+- title-q2090473 | Empire | 650..969
+- title-q209065 | Kingdom | 1832..1973
+- title-q209857 | Kingdom | 1815..1866
+- title-q212278 | Kingdom | 1806..1810
+- title-q215530 | Kingdom | 1542..1801
+- title-q2162698 | Duchy | 870..1198
+- title-q2172530 | Duchy | 1803..1806
+- title-q2183293 | Duchy | 1170..1462
+- title-q2196956 | Kingdom | 872..1397
+- title-q2227570 | Duchy | 1495..1803
+- title-q223936 | Kingdom | 1805..1814
+- title-q2252973 | Duchy | 1532..1569
+- title-q2253783 | Kingdom | 500..1063
+- title-q2273304 | Duchy | 1365..1403
+- title-q22880 | Empire | 1085..1803
+- title-q2301372 | Kingdom | 1085..1833
+- title-q230791 | Kingdom | 843..1707
+- title-q231392 | Kingdom | 718..910
+- title-q2346056 | Kingdom | 1570..1578
+- title-q2360973 | Duchy | 1364..1918
+- title-q2415003 | Kingdom | 1217..1346
+- title-q253094 | Kingdom | 1526..1867
+- title-q25395037 | Kingdom | 1867..1918
+- title-q256961 | Duchy | 1623..1805
+- title-q2577303 | Kingdom | 1720..1861
+- title-q259511 | Duchy | 1294..1803
+- title-q2597352 | Kingdom | 1814..1814
+- title-q2629137 | Empire | 1306..1801
+- title-q2670751 | Duchy | 1182..1918
+- title-q2719360 | Duchy | 1353..1795
+- title-q283627 | Duchy | 976..1156
+- title-q284667 | Duchy | 780..1803
+- title-q2980623 | Kingdom | 1377..1463
+- title-q303421 | Kingdom | 910..1833
+- title-q319586 | Duchy | 1032..1803
+- title-q325461 | Kingdom | 1204..1224
+- title-q328001 | Duchy | 1048..1801
+- title-q328818 | Kingdom | 450..871
+- title-q3324486 | Duchy | 1516..1852
+- title-q334714 | Duchy | 1205..1458
+- title-q3446210 | Kingdom | 824..1162
+- title-q3624335 | Duchy | 1156..1453
+- title-q3755547 | Kingdom | 476..493
+- title-q377350 | Empire | 1580..1640
+- title-q4208290 | Empire | 1642..1860
+- title-q42585 | Kingdom | 1198..1918
+- title-q426025 | Duchy | 1416..1860
+- title-q426488 | Duchy | 964..1091
+- title-q435583 | Empire | 1291..1798
+- title-q436994 | Kingdom | 839..1171
+- title-q454436 | Duchy | 1557..1808
+- title-q45670 | Kingdom | 1139..1910
+- title-q4712 | Duchy | 880..1477
+- title-q47261 | Duchy | 907..1805
+- title-q477035 | Duchy | 1225..1803
+- title-q48742118 | Kingdom | 1922..1943
+- title-q49683 | Duchy | 1236..1795
+- title-q506008 | Kingdom | 450..655
+- title-q506218 | Duchy | 1243..1772
+- title-q533558 | Kingdom | 1868..1918
+- title-q552822 | Duchy | 1520..1695
+- title-q55599391 | Kingdom | 1324..1713
+- title-q56089236 | Kingdom | 1259..1330
+- title-q566639 | Duchy | 1269..1918
+- title-q568638 | Duchy | 1138..1742
+- title-q570702 | Duchy | 1290..1850
+- title-q58202 | Kingdom | 1830..1848
+- title-q583038 | Kingdom | 493..553
+- title-q58942549 | Duchy | 1200..1700
+- title-q600018 | Kingdom | 1920..1946
+- title-q603771 | Empire | 820..961
+- title-q612359 | Kingdom | 1918..1918
+- title-q623751 | Kingdom | 420..634
+- title-q625380 | Kingdom | 1526..1570
+- title-q62567 | Kingdom | 1918..1944
+- title-q62623 | Kingdom | 1397..1523
+- title-q62633 | Duchy | 1809..1917
+- title-q62651 | Empire | 1536..1814
+- title-q633573 | Kingdom | 500..650
+- title-q637238 | Duchy | 1803..1806
+- title-q641138 | Duchy | 1092..1795
+- title-q649192 | Duchy | 1281..1802
+- title-q649202 | Duchy | 1443..1631
+- title-q650645 | Duchy | 1180..1648
+- title-q657241 | Duchy | 1180..1803
+- title-q660393 | Duchy | 959..1190
+- title-q661340 | Duchy | 1849..1918
+- title-q6673921 | Duchy | 855..959
+- title-q671899 | Duchy | 1281..1918
+- title-q673837 | Duchy | 1458..1604
+- title-q673865 | Duchy | 1576..1850
+- title-q676184 | Kingdom | 477..825
+- title-q682001 | Duchy | 1281..1498
+- title-q686312 | Duchy | 839..1137
+- title-q692946 | Empire | 1754..1919
+- title-q693551 | Duchy | 1567..1806
+- title-q693570 | Duchy | 1264..1597
+- title-q693980 | Duchy | 917..1313
+- title-q694594 | Duchy | 1648..1823
+- title-q695322 | Duchy | 1264..1567
+- title-q696640 | Duchy | 1121..1637
+- title-q696908 | Kingdom | 1916..1918
+- title-q697254 | Duchy | 1180..1802
+- title-q699923 | Empire | 1809..1816
+- title-q701614 | Duchy | 1278..1803
+- title-q701983 | Empire | 1444..1801
+- title-q702327 | Duchy | 1315..1564
+- title-q706018 | Duchy | 1692..1814
+- title-q707767 | Duchy | 1024..1528
+- title-q70972 | Kingdom | 987..1791
+- title-q71084 | Empire | 1804..1815
+- title-q71747 | Duchy | 939..1547
+- title-q733799 | Kingdom | 577..780
+- title-q736029 | County | 1303..1743
+- title-q751868 | Duchy | 1085..1183
+- title-q766501 | Duchy | 1530..1797
+- title-q769782 | Kingdom | 500..1160
+- title-q7703611 | Duchy | 841..1449
+- title-q771193 | Kingdom | 851..939
+- title-q771332 | Duchy | 982..1803
+- title-q7904317 | Duchy | 953..1803
+- title-q816814 | Kingdom | 401..1216
+- title-q825902 | Duchy | 1385..1569
+- title-q83546 | Duchy | 1125..1389
+- title-q836676 | Kingdom | 1229..1715
+- title-q836937 | Duchy | 1003..1794
+- title-q837136 | Kingdom | 920..1197
+- title-q837998 | Kingdom | 501..917
+- title-q838931 | Kingdom | 961..1806
+- title-q83958 | Kingdom | -808..-167
+- title-q842091 | Duchy | 911..1259
+- title-q854415 | Kingdom | 568..774
+- title-q858841 | Kingdom | 925..1102
+- title-q870517 | Kingdom | -460..46
+- title-q87791 | Kingdom | 500..734
+- title-q8890160 | Kingdom | 1025..1569
+- title-q905131 | Kingdom | 700..1256
+- title-q933592 | Duchy | 1473..1829
+- title-q956451 | Kingdom | 410..920
+- title-q95950649 | Duchy | 700..800
+
+## Candidate Parentage
+
+
+## Candidate Fact IDs
+
+- fact-q173082-name
+- fact-q173082-rank
+- fact-q173082-exists
+- fact-q62651-name
+- fact-q62651-rank
+- fact-q62651-exists
+- fact-q95950649-name
+- fact-q95950649-rank
+- fact-q95950649-exists
+- fact-q686312-name
+- fact-q686312-rank
+- fact-q686312-exists
+- fact-q7703611-name
+- fact-q7703611-rank
+- fact-q7703611-exists
+- fact-q334714-name
+- fact-q334714-rank
+- fact-q334714-exists
+- fact-q3624335-name
+- fact-q3624335-rank
+- fact-q3624335-exists
+- fact-q47261-name
+- fact-q47261-rank
+- fact-q47261-exists
+- fact-q2183293-name
+- fact-q2183293-rank
+- fact-q2183293-exists
+- fact-q151095-name
+- fact-q151095-rank
+- fact-q151095-exists
+- fact-q2162698-name
+- fact-q2162698-rank
+- fact-q2162698-exists
+- fact-q159856-name
+- fact-q159856-rank
+- fact-q159856-exists
+- fact-q694594-name
+- fact-q694594-rank
+- fact-q694594-exists
+- fact-q71747-name
+- fact-q71747-rank
+- fact-q71747-exists
+- fact-q4712-name
+- fact-q4712-rank
+- fact-q4712-exists
+- fact-q682001-name
+- fact-q682001-rank
+- fact-q682001-exists
+- fact-q2360973-name
+- fact-q2360973-rank
+- fact-q2360973-exists
+- fact-q641138-name
+- fact-q641138-rank
+- fact-q641138-exists
+- fact-q1991540-name
+- fact-q1991540-rank
+- fact-q1991540-exists
+- fact-q156038-name
+- fact-q156038-rank
+- fact-q156038-exists
+- fact-q16835712-name
+- fact-q16835712-rank
+- fact-q16835712-exists
+- fact-q693570-name
+- fact-q693570-rank
+- fact-q693570-exists
+- fact-q2252973-name
+- fact-q2252973-rank
+- fact-q2252973-exists
+- fact-q152420-name
+- fact-q152420-rank
+- fact-q152420-exists
+- fact-q836937-name
+- fact-q836937-rank
+- fact-q836937-exists
+- fact-q1352878-name
+- fact-q1352878-rank
+- fact-q1352878-exists
+- fact-q155019-name
+- fact-q155019-rank
+- fact-q155019-exists
+- fact-q2719360-name
+- fact-q2719360-rank
+- fact-q2719360-exists
+- fact-q766501-name
+- fact-q766501-rank
+- fact-q766501-exists
+- fact-q933592-name
+- fact-q933592-rank
+- fact-q933592-exists
+- fact-q11024667-name
+- fact-q11024667-rank
+- fact-q11024667-exists
+- fact-q153529-name
+- fact-q153529-rank
+- fact-q153529-exists
+- fact-q1615455-name
+- fact-q1615455-rank
+- fact-q1615455-exists
+- fact-q842091-name
+- fact-q842091-rank
+- fact-q842091-exists
+- fact-q570702-name
+- fact-q570702-rank
+- fact-q570702-exists
+- fact-q566639-name
+- fact-q566639-rank
+- fact-q566639-exists
+- fact-q702327-name
+- fact-q702327-rank
+- fact-q702327-exists
+- fact-q104863335-name
+- fact-q104863335-rank
+- fact-q104863335-exists
+- fact-q696640-name
+- fact-q696640-rank
+- fact-q696640-exists
+- fact-q153091-name
+- fact-q153091-rank
+- fact-q153091-exists
+- fact-q661340-name
+- fact-q661340-rank
+- fact-q661340-exists
+- fact-q426025-name
+- fact-q426025-rank
+- fact-q426025-exists
+- fact-q164092-name
+- fact-q164092-rank
+- fact-q164092-exists
+- fact-q568638-name
+- fact-q568638-rank
+- fact-q568638-exists
+- fact-q693980-name
+- fact-q693980-rank
+- fact-q693980-exists
+- fact-q671899-name
+- fact-q671899-rank
+- fact-q671899-exists
+- fact-q649202-name
+- fact-q649202-rank
+- fact-q649202-exists
+- fact-q657241-name
+- fact-q657241-rank
+- fact-q657241-exists
+- fact-q2227570-name
+- fact-q2227570-rank
+- fact-q2227570-exists
+- fact-q1252942-name
+- fact-q1252942-rank
+- fact-q1252942-exists
+- fact-q153080-name
+- fact-q153080-rank
+- fact-q153080-exists
+- fact-q625380-name
+- fact-q625380-rank
+- fact-q625380-exists
+- fact-q22880-name
+- fact-q22880-rank
+- fact-q22880-exists
+- fact-q637238-name
+- fact-q637238-rank
+- fact-q637238-exists
+- fact-q256961-name
+- fact-q256961-rank
+- fact-q256961-exists
+- fact-q7904317-name
+- fact-q7904317-rank
+- fact-q7904317-exists
+- fact-q706018-name
+- fact-q706018-rank
+- fact-q706018-exists
+- fact-q284667-name
+- fact-q284667-rank
+- fact-q284667-exists
+- fact-q156199-name
+- fact-q156199-rank
+- fact-q156199-exists
+- fact-q2172530-name
+- fact-q2172530-rank
+- fact-q2172530-exists
+- fact-q1333032-name
+- fact-q1333032-rank
+- fact-q1333032-exists
+- fact-q603771-name
+- fact-q603771-rank
+- fact-q603771-exists
+- fact-q181254-name
+- fact-q181254-rank
+- fact-q181254-exists
+- fact-q48742118-name
+- fact-q48742118-rank
+- fact-q48742118-exists
+- fact-q12714608-name
+- fact-q12714608-rank
+- fact-q12714608-exists
+- fact-q160307-name
+- fact-q160307-rank
+- fact-q160307-exists
+- fact-q203817-name
+- fact-q203817-rank
+- fact-q203817-exists
+- fact-q71084-name
+- fact-q71084-rank
+- fact-q71084-exists
+- fact-q146246-name
+- fact-q146246-rank
+- fact-q146246-exists
+- fact-q2629137-name
+- fact-q2629137-rank
+- fact-q2629137-exists
+- fact-q179023-name
+- fact-q179023-rank
+- fact-q179023-exists
+- fact-q87791-name
+- fact-q87791-rank
+- fact-q87791-exists
+- fact-q18285930-name
+- fact-q18285930-rank
+- fact-q18285930-exists
+- fact-q692946-name
+- fact-q692946-rank
+- fact-q692946-exists
+- fact-q62633-name
+- fact-q62633-rank
+- fact-q62633-exists
+- fact-q49683-name
+- fact-q49683-rank
+- fact-q49683-exists
+- fact-q170770-name
+- fact-q170770-rank
+- fact-q170770-exists
+- fact-q83546-name
+- fact-q83546-rank
+- fact-q83546-exists
+- fact-q673865-name
+- fact-q673865-rank
+- fact-q673865-exists
+- fact-q157013-name
+- fact-q157013-rank
+- fact-q157013-exists
+- fact-q12548-name
+- fact-q12548-rank
+- fact-q12548-exists
+- fact-q10295972-name
+- fact-q10295972-rank
+- fact-q10295972-exists
+- fact-q377350-name
+- fact-q377350-rank
+- fact-q377350-exists
+- fact-q699923-name
+- fact-q699923-rank
+- fact-q699923-exists
+- fact-q16084290-name
+- fact-q16084290-rank
+- fact-q16084290-exists
+- fact-q1448131-name
+- fact-q1448131-rank
+- fact-q1448131-exists
+- fact-q1241847-name
+- fact-q1241847-rank
+- fact-q1241847-exists
+- fact-q58202-name
+- fact-q58202-rank
+- fact-q58202-exists
+- fact-q62623-name
+- fact-q62623-rank
+- fact-q62623-exists
+- fact-q4208290-name
+- fact-q4208290-rank
+- fact-q4208290-exists
+- fact-q186537-name
+- fact-q186537-rank
+- fact-q186537-exists
+- fact-q2090473-name
+- fact-q2090473-rank
+- fact-q2090473-exists
+- fact-q199442-name
+- fact-q199442-rank
+- fact-q199442-exists
+- fact-q231392-name
+- fact-q231392-rank
+- fact-q231392-exists
+- fact-q623751-name
+- fact-q623751-rank
+- fact-q623751-exists
+- fact-q42585-name
+- fact-q42585-rank
+- fact-q42585-exists
+- fact-q2980623-name
+- fact-q2980623-rank
+- fact-q2980623-exists
+- fact-q905131-name
+- fact-q905131-rank
+- fact-q905131-exists
+- fact-q771193-name
+- fact-q771193-rank
+- fact-q771193-exists
+- fact-q147909-name
+- fact-q147909-rank
+- fact-q147909-exists
+- fact-q179293-name
+- fact-q179293-rank
+- fact-q179293-exists
+- fact-q858841-name
+- fact-q858841-rank
+- fact-q858841-exists
+- fact-q533558-name
+- fact-q533558-rank
+- fact-q533558-exists
+- fact-q837136-name
+- fact-q837136-rank
+- fact-q837136-exists
+- fact-q506008-name
+- fact-q506008-rank
+- fact-q506008-exists
+- fact-q436994-name
+- fact-q436994-rank
+- fact-q436994-exists
+- fact-q956451-name
+- fact-q956451-rank
+- fact-q956451-exists
+- fact-q837998-name
+- fact-q837998-rank
+- fact-q837998-exists
+- fact-q179876-name
+- fact-q179876-rank
+- fact-q179876-exists
+- fact-q110888-name
+- fact-q110888-rank
+- fact-q110888-exists
+- fact-q70972-name
+- fact-q70972-rank
+- fact-q70972-exists
+- fact-q303421-name
+- fact-q303421-rank
+- fact-q303421-exists
+- fact-q154667-name
+- fact-q154667-rank
+- fact-q154667-exists
+- fact-q2253783-name
+- fact-q2253783-rank
+- fact-q2253783-exists
+- fact-q1796202-name
+- fact-q1796202-rank
+- fact-q1796202-exists
+- fact-q161885-name
+- fact-q161885-rank
+- fact-q161885-exists
+- fact-q209065-name
+- fact-q209065-rank
+- fact-q209065-exists
+- fact-q816814-name
+- fact-q816814-rank
+- fact-q816814-exists
+- fact-q187461-name
+- fact-q187461-rank
+- fact-q187461-exists
+- fact-q212278-name
+- fact-q212278-rank
+- fact-q212278-exists
+- fact-q253094-name
+- fact-q253094-rank
+- fact-q253094-exists
+- fact-q600018-name
+- fact-q600018-rank
+- fact-q600018-exists
+- fact-q171150-name
+- fact-q171150-rank
+- fact-q171150-exists
+- fact-q16056854-name
+- fact-q16056854-rank
+- fact-q16056854-exists
+- fact-q25395037-name
+- fact-q25395037-rank
+- fact-q25395037-exists
+- fact-q1470101-name
+- fact-q1470101-rank
+- fact-q1470101-exists
+- fact-q19083-name
+- fact-q19083-rank
+- fact-q19083-exists
+- fact-q62567-name
+- fact-q62567-rank
+- fact-q62567-exists
+- fact-q1117051-name
+- fact-q1117051-rank
+- fact-q1117051-exists
+- fact-q1069959-name
+- fact-q1069959-rank
+- fact-q1069959-exists
+- fact-q215530-name
+- fact-q215530-rank
+- fact-q215530-exists
+- fact-q223936-name
+- fact-q223936-rank
+- fact-q223936-exists
+- fact-q838931-name
+- fact-q838931-rank
+- fact-q838931-exists
+- fact-q3755547-name
+- fact-q3755547-rank
+- fact-q3755547-exists
+- fact-q1617495-name
+- fact-q1617495-rank
+- fact-q1617495-exists
+- fact-q1209822-name
+- fact-q1209822-rank
+- fact-q1209822-exists
+- fact-q195972-name
+- fact-q195972-rank
+- fact-q195972-exists
+- fact-q328818-name
+- fact-q328818-rank
+- fact-q328818-exists
+- fact-q175276-name
+- fact-q175276-rank
+- fact-q175276-exists
+- fact-q1656775-name
+- fact-q1656775-rank
+- fact-q1656775-exists
+- fact-q612359-name
+- fact-q612359-rank
+- fact-q612359-exists
+- fact-q2346056-name
+- fact-q2346056-rank
+- fact-q2346056-exists
+- fact-q209857-name
+- fact-q209857-rank
+- fact-q209857-exists
+- fact-q836676-name
+- fact-q836676-rank
+- fact-q836676-exists
+- fact-q105092-name
+- fact-q105092-rank
+- fact-q105092-exists
+- fact-q1164500-name
+- fact-q1164500-rank
+- fact-q1164500-exists
+- fact-q173065-name
+- fact-q173065-rank
+- fact-q173065-exists
+- fact-q200262-name
+- fact-q200262-rank
+- fact-q200262-exists
+- fact-q107299-name
+- fact-q107299-rank
+- fact-q107299-exists
+- fact-q2196956-name
+- fact-q2196956-rank
+- fact-q2196956-exists
+- fact-q2597352-name
+- fact-q2597352-rank
+- fact-q2597352-exists
+- fact-q3446210-name
+- fact-q3446210-rank
+- fact-q3446210-exists
+- fact-q1649871-name
+- fact-q1649871-rank
+- fact-q1649871-exists
+- fact-q696908-name
+- fact-q696908-rank
+- fact-q696908-exists
+- fact-q8890160-name
+- fact-q8890160-rank
+- fact-q8890160-exists
+- fact-q11750128-name
+- fact-q11750128-rank
+- fact-q11750128-exists
+- fact-q45670-name
+- fact-q45670-rank
+- fact-q45670-exists
+- fact-q769782-name
+- fact-q769782-rank
+- fact-q769782-exists
+- fact-q633573-name
+- fact-q633573-rank
+- fact-q633573-exists
+- fact-q203493-name
+- fact-q203493-rank
+- fact-q203493-exists
+- fact-q2577303-name
+- fact-q2577303-rank
+- fact-q2577303-exists
+- fact-q55599391-name
+- fact-q55599391-rank
+- fact-q55599391-exists
+- fact-q230791-name
+- fact-q230791-rank
+- fact-q230791-exists
+- fact-q2415003-name
+- fact-q2415003-rank
+- fact-q2415003-exists
+- fact-q188586-name
+- fact-q188586-rank
+- fact-q188586-exists
+- fact-q15238138-name
+- fact-q15238138-rank
+- fact-q15238138-exists
+- fact-q676184-name
+- fact-q676184-rank
+- fact-q676184-exists
+- fact-q325461-name
+- fact-q325461-rank
+- fact-q325461-exists
+- fact-q2301372-name
+- fact-q2301372-rank
+- fact-q2301372-exists
+- fact-q142417-name
+- fact-q142417-rank
+- fact-q142417-exists
+- fact-q105313-name
+- fact-q105313-rank
+- fact-q105313-exists
+- fact-q56089236-name
+- fact-q56089236-rank
+- fact-q56089236-exists
+- fact-q191077-name
+- fact-q191077-rank
+- fact-q191077-exists
+- fact-q13590051-name
+- fact-q13590051-rank
+- fact-q13590051-exists
+- fact-q733799-name
+- fact-q733799-rank
+- fact-q733799-exists
+- fact-q854415-name
+- fact-q854415-rank
+- fact-q854415-exists
+- fact-q1048918-name
+- fact-q1048918-rank
+- fact-q1048918-exists
+- fact-q751868-name
+- fact-q751868-rank
+- fact-q751868-exists
+- fact-q695322-name
+- fact-q695322-rank
+- fact-q695322-exists
+- fact-q693551-name
+- fact-q693551-rank
+- fact-q693551-exists
+- fact-q168651-name
+- fact-q168651-rank
+- fact-q168651-exists
+- fact-q673837-name
+- fact-q673837-rank
+- fact-q673837-exists
+- fact-q58942549-name
+- fact-q58942549-rank
+- fact-q58942549-exists
+- fact-q178897-name
+- fact-q178897-rank
+- fact-q178897-exists
+- fact-q6673921-name
+- fact-q6673921-rank
+- fact-q6673921-exists
+- fact-q660393-name
+- fact-q660393-rank
+- fact-q660393-exists
+- fact-q83958-name
+- fact-q83958-rank
+- fact-q83958-exists
+- fact-q426488-name
+- fact-q426488-rank
+- fact-q426488-exists
+- fact-q1867844-name
+- fact-q1867844-rank
+- fact-q1867844-exists
+- fact-q283627-name
+- fact-q283627-rank
+- fact-q283627-exists
+- fact-q148499-name
+- fact-q148499-rank
+- fact-q148499-exists
+- fact-q170180-name
+- fact-q170180-rank
+- fact-q170180-exists
+- fact-q2670751-name
+- fact-q2670751-rank
+- fact-q2670751-exists
+- fact-q552822-name
+- fact-q552822-rank
+- fact-q552822-exists
+- fact-q2273304-name
+- fact-q2273304-rank
+- fact-q2273304-exists
+- fact-q736029-name
+- fact-q736029-rank
+- fact-q736029-exists
+- fact-q106577-name
+- fact-q106577-rank
+- fact-q106577-exists
+- fact-q870517-name
+- fact-q870517-rank
+- fact-q870517-exists
+- fact-q191484-name
+- fact-q191484-rank
+- fact-q191484-exists
+- fact-q435583-name
+- fact-q435583-rank
+- fact-q435583-exists
+- fact-q583038-name
+- fact-q583038-rank
+- fact-q583038-exists
+- fact-q12560-name
+- fact-q12560-rank
+- fact-q12560-exists
+- fact-q454436-name
+- fact-q454436-rank
+- fact-q454436-exists
+- fact-q701983-name
+- fact-q701983-rank
+- fact-q701983-exists
+- fact-q116080-name
+- fact-q116080-rank
+- fact-q116080-exists
+- fact-q172107-name
+- fact-q172107-rank
+- fact-q172107-exists
+- fact-q825902-name
+- fact-q825902-rank
+- fact-q825902-exists
+- fact-q200464-name
+- fact-q200464-rank
+- fact-q200464-exists
+- fact-q701614-name
+- fact-q701614-rank
+- fact-q701614-exists
+- fact-q173863-name
+- fact-q173863-rank
+- fact-q173863-exists
+- fact-q319586-name
+- fact-q319586-rank
+- fact-q319586-exists
+- fact-q259511-name
+- fact-q259511-rank
+- fact-q259511-exists
+- fact-q158835-name
+- fact-q158835-rank
+- fact-q158835-exists
+- fact-q650645-name
+- fact-q650645-rank
+- fact-q650645-exists
+- fact-q3324486-name
+- fact-q3324486-rank
+- fact-q3324486-exists
+- fact-q697254-name
+- fact-q697254-rank
+- fact-q697254-exists
+- fact-q477035-name
+- fact-q477035-rank
+- fact-q477035-exists
+- fact-q649192-name
+- fact-q649192-rank
+- fact-q649192-exists
+- fact-q771332-name
+- fact-q771332-rank
+- fact-q771332-exists
+- fact-q328001-name
+- fact-q328001-rank
+- fact-q328001-exists
+- fact-q1231403-name
+- fact-q1231403-rank
+- fact-q1231403-exists
+- fact-q707767-name
+- fact-q707767-rank
+- fact-q707767-exists
+- fact-q17015016-name
+- fact-q17015016-rank
+- fact-q17015016-exists
+- fact-q506218-name
+- fact-q506218-rank
+- fact-q506218-exists
+- fact-q187035-name
+- fact-q187035-rank
+- fact-q187035-exists

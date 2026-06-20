@@ -44,7 +44,7 @@ notes: Candidate label: Moldavian Democratic Republic; description: former count
 candidate_id: cand-q2273304
 source_id: src-wikidata-q2273304
 source_url: https://www.wikidata.org/wiki/Q2273304
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -86,7 +86,7 @@ notes: Candidate label: Muslim Sicily; description: history of Islam in medieval
 candidate_id: cand-q736029
 source_id: src-wikidata-q736029
 source_url: https://www.wikidata.org/wiki/Q736029
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -128,7 +128,7 @@ notes: Candidate label: Nazi Germany; description: Germany from 1933 to 1945 whi
 candidate_id: cand-q106577
 source_id: src-wikidata-q106577
 source_url: https://www.wikidata.org/wiki/Q106577
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -170,7 +170,7 @@ notes: Candidate label: Odesa Soviet Republic; description: short-lived Soviet r
 candidate_id: cand-q870517
 source_id: src-wikidata-q870517
 source_url: https://www.wikidata.org/wiki/Q870517
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -184,7 +184,7 @@ notes: Candidate label: Odrysian kingdom; description: union of Thracian tribes 
 candidate_id: cand-q191484
 source_id: src-wikidata-q191484
 source_url: https://www.wikidata.org/wiki/Q191484
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -198,7 +198,7 @@ notes: Candidate label: Old Great Bulgaria; description: 632–668 nomadic empir
 candidate_id: cand-q435583
 source_id: src-wikidata-q435583
 source_url: https://www.wikidata.org/wiki/Q435583
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: approximate
@@ -212,7 +212,7 @@ notes: Candidate label: Old Swiss Confederacy; description: confederation of can
 candidate_id: cand-q583038
 source_id: src-wikidata-q583038
 source_url: https://www.wikidata.org/wiki/Q583038
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -226,7 +226,7 @@ notes: Candidate label: Ostrogothic Kingdom; description: kingdom established by
 candidate_id: cand-q12560
 source_id: src-wikidata-q12560
 source_url: https://www.wikidata.org/wiki/Q12560
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -240,7 +240,7 @@ notes: Candidate label: Ottoman Empire; description: multiethnic empire with the
 candidate_id: cand-q454436
 source_id: src-wikidata-q454436
 source_url: https://www.wikidata.org/wiki/Q454436
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -254,7 +254,7 @@ notes: Candidate label: Palatinate-Sulzbach; description: principality; article:
 candidate_id: cand-q701983
 source_id: src-wikidata-q701983
 source_url: https://www.wikidata.org/wiki/Q701983
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -380,7 +380,7 @@ notes: Candidate label: Polish People's Republic; description: country of the Wa
 candidate_id: cand-q116080
 source_id: src-wikidata-q116080
 source_url: https://www.wikidata.org/wiki/Q116080
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: approximate
@@ -394,7 +394,7 @@ notes: Candidate label: Polish Underground State; description: single political 
 candidate_id: cand-q172107
 source_id: src-wikidata-q172107
 source_url: https://www.wikidata.org/wiki/Q172107
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -408,7 +408,7 @@ notes: Candidate label: Polish–Lithuanian Commonwealth; description: historica
 candidate_id: cand-q825902
 source_id: src-wikidata-q825902
 source_url: https://www.wikidata.org/wiki/Q825902
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -422,7 +422,7 @@ notes: Candidate label: Polish–Lithuanian union; description: former union bet
 candidate_id: cand-q200464
 source_id: src-wikidata-q200464
 source_url: https://www.wikidata.org/wiki/Q200464
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: literal
@@ -436,7 +436,7 @@ notes: Candidate label: Portuguese Empire; description: global empire centered i
 candidate_id: cand-q701614
 source_id: src-wikidata-q701614
 source_url: https://www.wikidata.org/wiki/Q701614
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -464,7 +464,7 @@ notes: Candidate label: Prince-Bishopric and Duchy of Verden; description: forme
 candidate_id: cand-q173863
 source_id: src-wikidata-q173863
 source_url: https://www.wikidata.org/wiki/Q173863
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -478,7 +478,7 @@ notes: Candidate label: Prince-Bishopric of Augsburg; description: State of the 
 candidate_id: cand-q319586
 source_id: src-wikidata-q319586
 source_url: https://www.wikidata.org/wiki/Q319586
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -492,7 +492,7 @@ notes: Candidate label: Prince-Bishopric of Basel; description: principality; ar
 candidate_id: cand-q259511
 source_id: src-wikidata-q259511
 source_url: https://www.wikidata.org/wiki/Q259511
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -506,7 +506,7 @@ notes: Candidate label: Prince-Bishopric of Freising; description: ecclesiastica
 candidate_id: cand-q158835
 source_id: src-wikidata-q158835
 source_url: https://www.wikidata.org/wiki/Q158835
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -534,7 +534,7 @@ notes: Candidate label: Prince-Bishopric of Metz; description: Prince-bishopric 
 candidate_id: cand-q650645
 source_id: src-wikidata-q650645
 source_url: https://www.wikidata.org/wiki/Q650645
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -548,7 +548,7 @@ notes: Candidate label: Prince-Bishopric of Minden; description: principality of
 candidate_id: cand-q3324486
 source_id: src-wikidata-q3324486
 source_url: https://www.wikidata.org/wiki/Q3324486
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -562,7 +562,7 @@ notes: Candidate label: Prince-Bishopric of Montenegro; description: Balkan theo
 candidate_id: cand-q697254
 source_id: src-wikidata-q697254
 source_url: https://www.wikidata.org/wiki/Q697254
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -576,7 +576,7 @@ notes: Candidate label: Prince-Bishopric of Münster; description: ecclesiastica
 candidate_id: cand-q477035
 source_id: src-wikidata-q477035
 source_url: https://www.wikidata.org/wiki/Q477035
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -590,7 +590,7 @@ notes: Candidate label: Prince-Bishopric of Osnabrück; description: ecclesiasti
 candidate_id: cand-q649192
 source_id: src-wikidata-q649192
 source_url: https://www.wikidata.org/wiki/Q649192
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -604,7 +604,7 @@ notes: Candidate label: Prince-Bishopric of Paderborn; description: Ecclesiastic
 candidate_id: cand-q771332
 source_id: src-wikidata-q771332
 source_url: https://www.wikidata.org/wiki/Q771332
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -618,7 +618,7 @@ notes: Candidate label: Prince-Bishopric of Strasbourg; description: Ecclesiasti
 candidate_id: cand-q328001
 source_id: src-wikidata-q328001
 source_url: https://www.wikidata.org/wiki/Q328001
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -632,7 +632,7 @@ notes: Candidate label: Prince-Bishopric of Toul; description: former Roman Cath
 candidate_id: cand-q1231403
 source_id: src-wikidata-q1231403
 source_url: https://www.wikidata.org/wiki/Q1231403
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -646,7 +646,7 @@ notes: Candidate label: Prince-Bishopric of Trent; description: ecclesiastical p
 candidate_id: cand-q707767
 source_id: src-wikidata-q707767
 source_url: https://www.wikidata.org/wiki/Q707767
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -660,7 +660,7 @@ notes: Candidate label: Prince-Bishopric of Utrecht; description: ecclesiastic s
 candidate_id: cand-q17015016
 source_id: src-wikidata-q17015016
 source_url: https://www.wikidata.org/wiki/Q17015016
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -674,7 +674,7 @@ notes: Candidate label: Prince-Bishopric of Verdun; description: former state of
 candidate_id: cand-q506218
 source_id: src-wikidata-q506218
 source_url: https://www.wikidata.org/wiki/Q506218
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
@@ -688,7 +688,7 @@ notes: Candidate label: Prince-Bishopric of Warmia; description: former prince-b
 candidate_id: cand-q187035
 source_id: src-wikidata-q187035
 source_url: https://www.wikidata.org/wiki/Q187035
-status: pending
+status: promoted
 review_batch_id: batch-500-candidates
 import_scope: title_identity_only
 rank_basis: normalized
