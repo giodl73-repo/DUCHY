@@ -80,12 +80,13 @@ git diff --check
 | EVID-037 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-tsv`; `context/waves/2026-06-19-source-custody/pulses/pulse-28.md` | Candidate manifests generate fixed-column TSV exports for batch tooling. | pass on 2026-06-19 |
 | EVID-038 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-from-tsv`; `context/waves/2026-06-19-source-custody/pulses/pulse-29.md` | Fixed-column TSV candidate queues generate validated manifests. | pass on 2026-06-19 |
 | EVID-039 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-30.md` | Reviewed German bridge packet imports confederation-era parentage spans into accepted fixtures. | pass on 2026-06-20 |
+| EVID-040 | test/demo/review | `cargo test --quiet`; `cargo run --bin duchy-promote -- --dry-run --report`; `cargo run --bin duchy-promote -- --apply`; `context/waves/2026-06-19-source-custody/pulses/pulse-31.md` | Reviewed Baden and Hanover packet imports title facts and parentage spans into accepted fixtures. | pass on 2026-06-20 |
 
 ## Gaps
 
 | Gap | Impact | Disposition |
 |---|---|---|
 | Contested and split transfer query semantics are not modeled yet. | Transfer answers cover clear ordered parent changes only. | Fact-level contested packets exist; query-level contested answers remain deferred. |
-| Only nine concrete source records have passed the gate. | Historical import is real but intentionally small. | Expand through reviewed source packets only. |
+| Only eleven concrete source records have passed the gate. | Historical import is real but intentionally small. | Expand through reviewed source packets only. |
 | No real contested historical fixture has passed review yet. | The contested packet is proven with synthetic alternatives only. | Add real contested claims only through reviewed source packets. |
-| Only fifteen real parentage fixtures have passed review. | Source-backed title paths remain sparse and incomplete. | Expand parentage only through reviewed source packets. |
+| Only eighteen real parentage fixtures have passed review. | Source-backed title paths remain sparse and incomplete. | Expand parentage only through reviewed source packets. |

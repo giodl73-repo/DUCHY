@@ -46,6 +46,7 @@ records and validation.
 | 28 | Manifest TSV export | complete | Write fixed-column candidate queue exports for batch tooling. |
 | 29 | Manifest TSV import | complete | Convert fixed-column TSV candidate queues into validated manifests. |
 | 30 | German bridge import | complete | Import reviewed 1815-1866, 1867-1870, and 1871-1918 German parentage spans. |
+| 31 | Baden and Hanover import | complete | Import reviewed Baden and Hanover title facts and parentage spans. |
 
 ## Success Criteria
 

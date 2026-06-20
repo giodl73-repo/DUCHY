@@ -50,7 +50,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
   The first accepted imports are minimal Wikidata structured claims for
   Q158445, Q20135, Q43287, Q27306, Q153015, Q151624, Q150981, Q154195,
-  and Q159631.
+  Q159631, Q186320, and Q164079.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -70,6 +70,8 @@ Q151624, Q150981, Q154195, and Q159631, giving the reviewed mini-catalog
 kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
+The Baden and Hanover packet extends the accepted fixture set to 11 reviewed
+sources and 51 reviewed facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

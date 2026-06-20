@@ -92,7 +92,9 @@ Pulses:
 30. Manifest TSV import. Complete for fixed-column batch queue intake.
 31. German bridge import. Complete for German Confederation, North German
     Confederation, Bavaria, and Wurttemberg source-backed parentage spans.
-32. Next reviewed import packet.
+32. Baden and Hanover import. Complete for Q186320 Grand Duchy of Baden and
+    Q164079 Kingdom of Hanover source-backed title facts and parentage spans.
+33. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

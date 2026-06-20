@@ -320,3 +320,73 @@ span: 1871..1918
 value: title-q43287
 source_ids: src-wikidata-q159631
 confidence: single_source
+---
+# Reviewed packet for Baden and Hanover import.
+
+fact_id: fact-q186320-name
+subject_id: title-q186320
+claim_kind: name
+value: Grand Duchy of Baden
+source_ids: src-wikidata-q186320
+confidence: single_source
+---
+fact_id: fact-q186320-rank
+subject_id: title-q186320
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q186320
+confidence: single_source
+---
+fact_id: fact-q186320-exists
+subject_id: title-q186320
+claim_kind: title_exists
+span: 1806..1918
+value: exists
+source_ids: src-wikidata-q186320
+confidence: single_source
+---
+fact_id: fact-q164079-name
+subject_id: title-q164079
+claim_kind: name
+value: Kingdom of Hanover
+source_ids: src-wikidata-q164079
+confidence: single_source
+---
+fact_id: fact-q164079-rank
+subject_id: title-q164079
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q164079
+confidence: single_source
+---
+fact_id: fact-q164079-exists
+subject_id: title-q164079
+claim_kind: title_exists
+span: 1814..1866
+value: exists
+source_ids: src-wikidata-q164079
+confidence: single_source
+---
+fact_id: fact-q186320-parent-q151624
+subject_id: title-q186320
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q186320
+confidence: single_source
+---
+fact_id: fact-q186320-parent-q43287
+subject_id: title-q186320
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q186320
+confidence: single_source
+---
+fact_id: fact-q164079-parent-q151624
+subject_id: title-q164079
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q164079
+confidence: single_source
