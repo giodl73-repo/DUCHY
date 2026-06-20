@@ -47,6 +47,7 @@ records and validation.
 | 29 | Manifest TSV import | complete | Convert fixed-column TSV candidate queues into validated manifests. |
 | 30 | German bridge import | complete | Import reviewed 1815-1866, 1867-1870, and 1871-1918 German parentage spans. |
 | 31 | Baden and Hanover import | complete | Import reviewed Baden and Hanover title facts and parentage spans. |
+| 32 | Oldenburg and Brunswick import | complete | Import reviewed Oldenburg and Brunswick title facts and parentage spans. |
 
 ## Success Criteria
 

@@ -136,3 +136,29 @@ notes: Kingdom of Hanover (Q164079).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and bridge relation to German Confederation only.
+---
+# Reviewed packet for Oldenburg and Brunswick import.
+
+source_id: src-wikidata-q693669
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q693669
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Grand Duchy of Oldenburg (Q693669).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and bridge relations to German Confederation, North German Confederation, and German Empire only.
+---
+source_id: src-wikidata-q326029
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q326029
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Duchy of Brunswick (Q326029).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and bridge relations to German Confederation, North German Confederation, and German Empire only.

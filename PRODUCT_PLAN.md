@@ -94,7 +94,10 @@ Pulses:
     Confederation, Bavaria, and Wurttemberg source-backed parentage spans.
 32. Baden and Hanover import. Complete for Q186320 Grand Duchy of Baden and
     Q164079 Kingdom of Hanover source-backed title facts and parentage spans.
-33. Next reviewed import packet.
+33. Oldenburg and Brunswick import. Complete for Q693669 Grand Duchy of
+    Oldenburg and Q326029 Duchy of Brunswick source-backed title facts and
+    parentage spans.
+34. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
