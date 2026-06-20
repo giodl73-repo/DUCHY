@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 339
-facts: 1167
-titles: 328
-parentage_facts: 183
-titles_with_parentage: 139
+sources: 340
+facts: 1171
+titles: 329
+parentage_facts: 184
+titles_with_parentage: 140
 titles_without_parentage: 189
 
 ## Coverage By Rank
@@ -13,10 +13,10 @@ titles_without_parentage: 189
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 136 | 90 | 46 |
+| Duchy | 136 | 91 | 45 |
 | Empire | 35 | 0 | 35 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 30 | 91 |
+| Kingdom | 122 | 30 | 92 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -124,7 +124,6 @@ titles_without_parentage: 189
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q259511 | Prince-Bishopric of Freising | Duchy | 1294..1803
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
-- title-q26167 | Duchy of Schleswig | Duchy | 1058..1866
 - title-q283627 | Margraviate of Austria | Duchy | 976..1156
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2980623 | Kingdom of Bosnia | Kingdom | 1377..1463
@@ -141,6 +140,7 @@ titles_without_parentage: 189
 - title-q34 | Sweden | Kingdom | 900..
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
+- title-q35 | Denmark | Kingdom | 800..
 - title-q3624335 | Duchy of Austria | Duchy | 1156..1453
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
 - title-q377350 | Iberian Union | Empire | 1580..1640

@@ -95,6 +95,7 @@ records and validation.
 | 77 | Burgraviate of Nuremberg HRE parentage | complete | Correct Burgraviate of Nuremberg rank to County and import Holy Roman Empire parentage. |
 | 78 | Courland Commonwealth parentage | complete | Import Duchy of Courland and Semigallia parentage under Polish-Lithuanian Commonwealth. |
 | 79 | Estonia Sweden parentage | complete | Promote Sweden and import Duchy of Estonia parentage under Sweden. |
+| 80 | Schleswig Denmark parentage | complete | Promote Denmark and import Duchy of Schleswig parentage under Denmark. |
 
 ## Success Criteria
 

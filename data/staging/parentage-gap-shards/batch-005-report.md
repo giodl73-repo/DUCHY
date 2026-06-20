@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 9 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 7 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 8 |
+| Duchy | 7 |
 | Empire | 7 |
-| Kingdom | 9 |
+| Kingdom | 10 |
 
 ## Review Rows
 
@@ -35,13 +35,6 @@ gap_rows: 25
 - exists: 1814..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q26167 | Duchy of Schleswig
-
-- rank: Duchy
-- exists: 1058..1866
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q283627 | Margraviate of Austria
 
@@ -152,6 +145,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 824..1162
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q35 | Denmark
+
+- rank: Kingdom
+- exists: 800..
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
