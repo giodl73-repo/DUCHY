@@ -45,6 +45,7 @@ records and validation.
 | 27 | Duplicate URL report | complete | Report repeated candidate source URLs before source review. |
 | 28 | Manifest TSV export | complete | Write fixed-column candidate queue exports for batch tooling. |
 | 29 | Manifest TSV import | complete | Convert fixed-column TSV candidate queues into validated manifests. |
+| 30 | German bridge import | complete | Import reviewed 1815-1866, 1867-1870, and 1871-1918 German parentage spans. |
 
 ## Success Criteria
 

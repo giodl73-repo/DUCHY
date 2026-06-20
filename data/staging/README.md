@@ -51,6 +51,12 @@ Example dry run:
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
 ```
 
+Reviewed real packets can also be staged before fixture promotion:
+
+```powershell
+cargo run --bin duchy-promote -- --dry-run --report data/staging/german-bridge-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/german-bridge.sources data/staging/german-bridge.facts
+```
+
 Add `--report path/to/report.md` after the mode to produce a review artifact:
 
 ```powershell
