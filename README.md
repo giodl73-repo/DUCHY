@@ -70,10 +70,10 @@ kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The remaining clean title-identity queue promotion extends the accepted fixture
-set to 319 reviewed sources and 981 reviewed facts. It adds title identity,
-rank, and existence facts only; fourteen title candidates remain deferred for
-missing or invalid date claims, and new parentage for the larger set remains a
-separate review step.
+set to 319 reviewed sources. After the follow-on German parentage packet, the
+accepted fact catalog contains 1004 reviewed facts. The title promotion adds
+title identity, rank, and existence facts only; parentage remains a separate
+review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
 relation-heavy, non-title, free-city, administrative-region, and otherwise
 unsupported candidates are archived as `scope_deferred` rejections, leaving only
@@ -82,6 +82,9 @@ Those fourteen date-problem title candidates are also closed: thirteen are
 `quality_blocked` because the structured Wikidata date gate could not provide a
 complete span, and one is `date_conflict` because the extracted span was
 reversed. The 500-source candidate queue now has no active pending rows.
+The second German parentage packet adds 23 reviewed parentage spans for
+additional accepted German Confederation, North German Confederation, and German
+Empire-era titles, raising reviewed real parentage coverage to 47 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

@@ -7530,3 +7530,189 @@ value: exists
 source_ids: src-wikidata-q187035
 confidence: single_source
 ---
+---
+# Reviewed parentage packet for additional German Confederation-era titles.
+
+fact_id: fact-q686965-parent-q151624
+subject_id: title-q686965
+claim_kind: parentage
+span: 1815..1863
+value: title-q151624
+source_ids: src-wikidata-q686965, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q278874-parent-q151624
+subject_id: title-q278874
+claim_kind: parentage
+span: 1815..1853
+value: title-q151624
+source_ids: src-wikidata-q278874, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q264970-parent-q151624
+subject_id: title-q264970
+claim_kind: parentage
+span: 1815..1863
+value: title-q151624
+source_ids: src-wikidata-q264970, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q16550783-parent-q151624
+subject_id: title-q16550783
+claim_kind: parentage
+span: 1863..1866
+value: title-q151624
+source_ids: src-wikidata-q16550783, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q16550783-parent-q150981
+subject_id: title-q16550783
+claim_kind: parentage
+span: 1867..1870
+value: title-q150981
+source_ids: src-wikidata-q16550783, src-wikidata-q150981
+confidence: multi_source
+---
+fact_id: fact-q16550783-parent-q43287
+subject_id: title-q16550783
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q16550783, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q836680-parent-q151624
+subject_id: title-q836680
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q836680, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q157710-parent-q151624
+subject_id: title-q157710
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q157710, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q157710-parent-q43287
+subject_id: title-q157710
+claim_kind: parentage
+span: 1871..1918
+value: title-q43287
+source_ids: src-wikidata-q157710, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q529605-parent-q151624
+subject_id: title-q529605
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q529605, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q161215-parent-q151624
+subject_id: title-q161215
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q161215, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q161215-parent-q150981
+subject_id: title-q161215
+claim_kind: parentage
+span: 1867..1870
+value: title-q150981
+source_ids: src-wikidata-q161215, src-wikidata-q150981
+confidence: multi_source
+---
+fact_id: fact-q14551680-parent-q151624
+subject_id: title-q14551680
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q14551680, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q158151-parent-q151624
+subject_id: title-q158151
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q158151, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q3462133-parent-q151624
+subject_id: title-q3462133
+claim_kind: parentage
+span: 1826..1866
+value: title-q151624
+source_ids: src-wikidata-q3462133, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q700663-parent-q151624
+subject_id: title-q700663
+claim_kind: parentage
+span: 1815..1825
+value: title-q151624
+source_ids: src-wikidata-q700663, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q675085-parent-q151624
+subject_id: title-q675085
+claim_kind: parentage
+span: 1815..1826
+value: title-q151624
+source_ids: src-wikidata-q675085, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q281005-parent-q151624
+subject_id: title-q281005
+claim_kind: parentage
+span: 1815..1826
+value: title-q151624
+source_ids: src-wikidata-q281005, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q155570-parent-q151624
+subject_id: title-q155570
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q155570, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q155570-parent-q150981
+subject_id: title-q155570
+claim_kind: parentage
+span: 1867..1870
+value: title-q150981
+source_ids: src-wikidata-q155570, src-wikidata-q150981
+confidence: multi_source
+---
+fact_id: fact-q310650-parent-q151624
+subject_id: title-q310650
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q310650, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q695316-parent-q151624
+subject_id: title-q695316
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q695316, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q630163-parent-q151624
+subject_id: title-q630163
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q630163, src-wikidata-q151624
+confidence: multi_source

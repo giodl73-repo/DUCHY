@@ -34,9 +34,9 @@ fn run() -> Result<(), Vec<String>> {
 
     let candidate_catalog = duchy::SourceCatalog::from_metadata_text(&candidate_source_text)?;
     let candidate_facts = duchy::fact_records_from_text(&candidate_fact_text)?;
-    duchy::validate_fact_records(&candidate_catalog, &candidate_facts)?;
 
     let merged_catalog = duchy::SourceCatalog::from_metadata_text(&merged_source_text)?;
+    duchy::validate_fact_records(&merged_catalog, &candidate_facts)?;
     let merged_facts = duchy::fact_records_from_text(&merged_fact_text)?;
     duchy::validate_fact_records(&merged_catalog, &merged_facts)?;
     let merged_timeline = duchy::source_backed_timeline_from_facts(&merged_catalog, &merged_facts)?;
