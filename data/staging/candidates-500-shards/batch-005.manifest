@@ -2,7 +2,7 @@
 candidate_id: cand-q694858
 source_id: src-wikidata-q694858
 source_url: https://www.wikidata.org/wiki/Q694858
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -11,12 +11,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free State Bottleneck; description: former quasi-state in western Germany; article: https://en.wikipedia.org/wiki/Free_State_of_Bottleneck
 ---
 candidate_id: cand-q548114
 source_id: src-wikidata-q548114
 source_url: https://www.wikidata.org/wiki/Q548114
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -25,12 +26,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free State of Fiume; description: former state between 1920 and 1924; article: https://en.wikipedia.org/wiki/Free_State_of_Fiume
 ---
 candidate_id: cand-q1131500
 source_id: src-wikidata-q1131500
 source_url: https://www.wikidata.org/wiki/Q1131500
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -39,12 +41,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free State of Icaria; description: former country; article: https://en.wikipedia.org/wiki/Free_State_of_Ikaria
 ---
 candidate_id: cand-q391980
 source_id: src-wikidata-q391980
 source_url: https://www.wikidata.org/wiki/Q391980
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -53,12 +56,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free Territory of Trieste; description: former country; article: https://en.wikipedia.org/wiki/Free_Territory_of_Trieste
 ---
 candidate_id: cand-q877619
 source_id: src-wikidata-q877619
 source_url: https://www.wikidata.org/wiki/Q877619
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -67,12 +71,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: French Consulate; description: former government of France; article: https://en.wikipedia.org/wiki/French_Consulate
 ---
 candidate_id: cand-q69829
 source_id: src-wikidata-q69829
 source_url: https://www.wikidata.org/wiki/Q69829
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -81,12 +86,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: French Fourth Republic; description: government of France between 1946 and 1958; article: https://en.wikipedia.org/wiki/French_Fourth_Republic
 ---
 candidate_id: cand-q58326
 source_id: src-wikidata-q58326
 source_url: https://www.wikidata.org/wiki/Q58326
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -95,12 +101,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: French Second Republic; description: government of France between 1848-1852; article: https://en.wikipedia.org/wiki/French_Second_Republic
 ---
 candidate_id: cand-q70802
 source_id: src-wikidata-q70802
 source_url: https://www.wikidata.org/wiki/Q70802
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -109,6 +116,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: French Third Republic; description: nation of France from 1870 to 1940; article: https://en.wikipedia.org/wiki/French_Third_Republic
 ---
 candidate_id: cand-q179023
@@ -128,7 +136,7 @@ notes: Candidate label: French colonial empire; description: set of territories 
 candidate_id: cand-q69323
 source_id: src-wikidata-q69323
 source_url: https://www.wikidata.org/wiki/Q69323
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -137,6 +145,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: French constitutional monarchy; description: Constitutional monarchy of France (1791–1792); article: https://en.wikipedia.org/wiki/Kingdom_of_France_(1791%E2%80%9392)
 ---
 candidate_id: cand-q87791
@@ -156,7 +165,7 @@ notes: Candidate label: Frisian Kingdom; description: early medieval chiefdom in
 candidate_id: cand-q3327860
 source_id: src-wikidata-q3327860
 source_url: https://www.wikidata.org/wiki/Q3327860
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -165,12 +174,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Gaelic Ireland; description: Gaelic political and social order that existed in Ireland from the prehistoric era until the early 17th century; article: https://en.wikipedia.org/wiki/Gaelic_Ireland
 ---
 candidate_id: cand-q2504040
 source_id: src-wikidata-q2504040
 source_url: https://www.wikidata.org/wiki/Q2504040
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -179,12 +189,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Gagauz Republic; description: 1989–1995 self-proclaimed political entity in Eastern Europe; article: https://en.wikipedia.org/wiki/Gagauz_Republic
 ---
 candidate_id: cand-q61385
 source_id: src-wikidata-q61385
 source_url: https://www.wikidata.org/wiki/Q61385
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -193,12 +204,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Galician Soviet Socialist Republic; description: self-declared and short-lived communist state; article: https://en.wikipedia.org/wiki/Galician_Soviet_Socialist_Republic
 ---
 candidate_id: cand-q1415162
 source_id: src-wikidata-q1415162
 source_url: https://www.wikidata.org/wiki/Q1415162
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -207,12 +219,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Garðaríki; description: former country; article: https://en.wikipedia.org/wiki/Gar%C3%B0ar%C3%ADki
 ---
 candidate_id: cand-q156111
 source_id: src-wikidata-q156111
 source_url: https://www.wikidata.org/wiki/Q156111
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -221,12 +234,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: General Government; description: German-occupied zone in Poland in World War II; article: https://en.wikipedia.org/wiki/General_Government
 ---
 candidate_id: cand-q16595757
 source_id: src-wikidata-q16595757
 source_url: https://www.wikidata.org/wiki/Q16595757
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -235,12 +249,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Genoese Republic; description: European state (1814-1815); article: https://en.wikipedia.org/wiki/Republic_of_Genoa_(1814)
 ---
 candidate_id: cand-q16957
 source_id: src-wikidata-q16957
 source_url: https://www.wikidata.org/wiki/Q16957
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -249,6 +264,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: German Democratic Republic; description: 1949–1990 country in central Europe, unified into modern Germany; article: https://en.wikipedia.org/wiki/East_Germany
 ---
 candidate_id: cand-q18285930
@@ -268,7 +284,7 @@ notes: Candidate label: German Empire of 1848/1849; description: German national
 candidate_id: cand-q1206012
 source_id: src-wikidata-q1206012
 source_url: https://www.wikidata.org/wiki/Q1206012
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -277,6 +293,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: German Reich; description: official name for the German nation state from 1871 to 1945, and name of Germany until 1949; article: https://en.wikipedia.org/wiki/German_Reich
 ---
 candidate_id: cand-q1345964
@@ -310,7 +327,7 @@ notes: Candidate label: Gorizia and Gradisca; description: Crown land of the emp
 candidate_id: cand-q616992
 source_id: src-wikidata-q616992
 source_url: https://www.wikidata.org/wiki/Q616992
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -319,12 +336,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Governorate of Montenegro; description: short-lived territory on the Balkan Peninsula between 1941–1943; article: https://en.wikipedia.org/wiki/Italian_governorate_of_Montenegro
 ---
 candidate_id: cand-q1540575
 source_id: src-wikidata-q1540575
 source_url: https://www.wikidata.org/wiki/Q1540575
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -333,6 +351,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Gozo; description: independent state of Gozo (1798–1801); article: https://en.wikipedia.org/wiki/Gozo_(1798%E2%80%931800)
 ---
 candidate_id: cand-q62633
@@ -394,7 +413,7 @@ notes: Candidate label: Grand Principality of Vladimir; description: Russian duc
 candidate_id: cand-q193152
 source_id: src-wikidata-q193152
 source_url: https://www.wikidata.org/wiki/Q193152
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -403,12 +422,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Great Moravia; description: 9th-century Slavic state; article: https://en.wikipedia.org/wiki/Great_Moravia
 ---
 candidate_id: cand-q2028318
 source_id: src-wikidata-q2028318
 source_url: https://www.wikidata.org/wiki/Q2028318
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -417,12 +437,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Gurian Republic; description: peasant insurrection in Russian Georgia, 1902–06; article: https://en.wikipedia.org/wiki/Gurian_Republic
 ---
 candidate_id: cand-q600093
 source_id: src-wikidata-q600093
 source_url: https://www.wikidata.org/wiki/Q600093
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -431,12 +452,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Habsburg Spain; description: period of Spain under rule by the Spanish Branch of the House of Habsburg in the 16th and 17th centuries; article: https://en.wikipedia.org/wiki/Habsburg_Spain
 ---
 candidate_id: cand-q153136
 source_id: src-wikidata-q153136
 source_url: https://www.wikidata.org/wiki/Q153136
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -445,12 +467,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Habsburg monarchy; description: monarchy in Europe (1282–1918); article: https://en.wikipedia.org/wiki/Habsburg_monarchy
 ---
 candidate_id: cand-q1055
 source_id: src-wikidata-q1055
 source_url: https://www.wikidata.org/wiki/Q1055
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -459,12 +482,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hamburg; description: city and state in the North of Germany; article: https://en.wikipedia.org/wiki/Hamburg
 ---
 candidate_id: cand-q1033421
 source_id: src-wikidata-q1033421
 source_url: https://www.wikidata.org/wiki/Q1033421
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -473,12 +497,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hammudid dynasty; description: dynasty; article: https://en.wikipedia.org/wiki/Hammudid_dynasty
 ---
 candidate_id: cand-q3013827
 source_id: src-wikidata-q3013827
 source_url: https://www.wikidata.org/wiki/Q3013827
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -487,12 +512,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hellenic State; description: 1941-1944 client state of the Axis Powers; article: https://en.wikipedia.org/wiki/Hellenic_State_(1941%E2%80%931944)
 ---
 candidate_id: cand-q206696
 source_id: src-wikidata-q206696
 source_url: https://www.wikidata.org/wiki/Q206696
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -501,12 +527,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Helvetic Republic; description: former Swiss polity under Napoleonic domination; article: https://en.wikipedia.org/wiki/Helvetic_Republic
 ---
 candidate_id: cand-q766543
 source_id: src-wikidata-q766543
 source_url: https://www.wikidata.org/wiki/Q766543
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -515,6 +542,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hispanic Monarchy; description: (1479-1716) set of territories distributed throughout the world, which were governed equally by the Spanish monarch and corresponding to the period of the House of Habsburg; article: https://en.wikipedia.org/wiki/Hispanic_Monarchy_(political_entity)
 ---
 candidate_id: cand-q673865
@@ -562,7 +590,7 @@ notes: Candidate label: Holy Roman Empire; description: multi-ethnic complex of 
 candidate_id: cand-q960681
 source_id: src-wikidata-q960681
 source_url: https://www.wikidata.org/wiki/Q960681
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -571,12 +599,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Humska zemlja; description: zemlja of medieval Bosnian state, historical region of Bosnia and Herzegovina; article: https://en.wikipedia.org/wiki/Humska_zemlja
 ---
 candidate_id: cand-q16410
 source_id: src-wikidata-q16410
 source_url: https://www.wikidata.org/wiki/Q16410
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -585,12 +614,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hungarian People's Republic; description: 1949–1989 socialist republic in Central Europe; article: https://en.wikipedia.org/wiki/Hungarian_People%27s_Republic
 ---
 candidate_id: cand-q243652
 source_id: src-wikidata-q243652
 source_url: https://www.wikidata.org/wiki/Q243652
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -599,12 +629,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hungarian Soviet Republic; description: 1919 socialist state in Central Europe; article: https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic
 ---
 candidate_id: cand-q18331029
 source_id: src-wikidata-q18331029
 source_url: https://www.wikidata.org/wiki/Q18331029
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -613,6 +644,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Hungarian State; description: former Central European state in 1849; article: https://en.wikipedia.org/wiki/Hungarian_State
 ---
 candidate_id: cand-q10295972
@@ -646,7 +678,7 @@ notes: Candidate label: Iberian Union; description: personal union of Castile, A
 candidate_id: cand-q1649290
 source_id: src-wikidata-q1649290
 source_url: https://www.wikidata.org/wiki/Q1649290
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -655,6 +687,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Idel-Ural State; description: former state; article: https://en.wikipedia.org/wiki/Idel-Ural_State
 ---
 candidate_id: cand-q699923
@@ -688,7 +721,7 @@ notes: Candidate label: Illyrian kingdom; description: ancient illyrian kingdom;
 candidate_id: cand-q153128
 source_id: src-wikidata-q153128
 source_url: https://www.wikidata.org/wiki/Q153128
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -697,4 +730,5 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Independent State of Croatia; description: World War II-era puppet state of Nazi Germany and Fascist Italy (April 1941-May 1945); article: https://en.wikipedia.org/wiki/Independent_State_of_Croatia

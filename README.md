@@ -74,6 +74,10 @@ set to 319 reviewed sources and 981 reviewed facts. It adds title identity,
 rank, and existence facts only; fourteen title candidates remain deferred for
 missing or invalid date claims, and new parentage for the larger set remains a
 separate review step.
+The 500-source candidate queue is now closed for unsupported rows: 167
+relation-heavy, non-title, free-city, administrative-region, and otherwise
+unsupported candidates are archived as `scope_deferred` rejections, leaving only
+the fourteen date-problem title candidates active.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

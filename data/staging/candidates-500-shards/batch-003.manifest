@@ -16,7 +16,7 @@ notes: Candidate label: Dacia; description: Balkan kingdom of the Dacians (168 B
 candidate_id: cand-q1277557
 source_id: src-wikidata-q1277557
 source_url: https://www.wikidata.org/wiki/Q1277557
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -25,6 +25,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Democratic Federal Yugoslavia; description: former state in Southeast Europe between November 1943 and November 1945; article: https://en.wikipedia.org/wiki/Democratic_Federal_Yugoslavia
 ---
 candidate_id: cand-q62651
@@ -44,7 +45,7 @@ notes: Candidate label: Denmark–Norway; description: political union (1524–1
 candidate_id: cand-q187684
 source_id: src-wikidata-q187684
 source_url: https://www.wikidata.org/wiki/Q187684
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -53,12 +54,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Despotate of Epirus; description: former country; article: https://en.wikipedia.org/wiki/Despotate_of_Epirus
 ---
 candidate_id: cand-q113614156
 source_id: src-wikidata-q113614156
 source_url: https://www.wikidata.org/wiki/Q113614156
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -67,12 +69,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Despotate of Lovech; description: Medieval Bulgarian state centered in Lovech (1330–1446); article: https://en.wikipedia.org/wiki/Despotate_of_Lovech
 ---
 candidate_id: cand-q3623202
 source_id: src-wikidata-q3623202
 source_url: https://www.wikidata.org/wiki/Q3623202
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -81,12 +84,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: District of Branković; description: medieval Serbian state; article: https://en.wikipedia.org/wiki/District_of_Brankovi%C4%87
 ---
 candidate_id: cand-q2453974
 source_id: src-wikidata-q2453974
 source_url: https://www.wikidata.org/wiki/Q2453974
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -95,12 +99,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Don Republic; description: independent self-proclaimed anti-Bolshevik republic formed by the Armed Forces of South Russia on the territory of Don Cossacks against another self-proclaimed Don Soviet Republic; article: https://en.wikipedia.org/wiki/Don_Republic
 ---
 candidate_id: cand-q61427
 source_id: src-wikidata-q61427
 source_url: https://www.wikidata.org/wiki/Q61427
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -109,12 +114,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Donetsk-Krivoy Rog Soviet Republic; description: self-declared Soviet republic of the Russian SFSR; article: https://en.wikipedia.org/wiki/Donetsk%E2%80%93Krivoy_Rog_Soviet_Republic
 ---
 candidate_id: cand-q3738649
 source_id: src-wikidata-q3738649
 source_url: https://www.wikidata.org/wiki/Q3738649
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -123,6 +129,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Dual monarchy of England and France; description: period in the Middle Ages where Charles VII of France and Henry VI of England disputed the succession to the throne of France; article: https://en.wikipedia.org/wiki/Dual_monarchy_of_England_and_France
 ---
 candidate_id: cand-q95950649

@@ -2,7 +2,7 @@
 candidate_id: cand-q31747
 source_id: src-wikidata-q31747
 source_url: https://www.wikidata.org/wiki/Q31747
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -11,12 +11,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Irish Free State; description: state on the island of Ireland between December 1922 and December 1937; article: https://en.wikipedia.org/wiki/Irish_Free_State
 ---
 candidate_id: cand-q2712121
 source_id: src-wikidata-q2712121
 source_url: https://www.wikidata.org/wiki/Q2712121
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -25,12 +26,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Irish Republic; description: short-lived revolutionary state in 1798; article: https://en.wikipedia.org/wiki/Irish_Republic_(1798)
 ---
 candidate_id: cand-q1140152
 source_id: src-wikidata-q1140152
 source_url: https://www.wikidata.org/wiki/Q1140152
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -39,12 +41,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Irish Republic; description: revolutionary state that declared its independence from Great Britain (UKGBI); 1919-1922; article: https://en.wikipedia.org/wiki/Irish_Republic
 ---
 candidate_id: cand-q3802443
 source_id: src-wikidata-q3802443
 source_url: https://www.wikidata.org/wiki/Q3802443
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -53,12 +56,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Isenburg-Wächtersbach; description: ; article: https://en.wikipedia.org/wiki/Isenburg-W%C3%A4chtersbach
 ---
 candidate_id: cand-q1423581
 source_id: src-wikidata-q1423581
 source_url: https://www.wikidata.org/wiki/Q1423581
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -67,12 +71,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Italian Regency of Carnaro; description: former country; article: https://en.wikipedia.org/wiki/Italian_Regency_of_Carnaro
 ---
 candidate_id: cand-q723118
 source_id: src-wikidata-q723118
 source_url: https://www.wikidata.org/wiki/Q723118
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -81,12 +86,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Italian Republic; description: French republic in Northern Italy between 1802 and 1805; article: https://en.wikipedia.org/wiki/Italian_Republic_(Napoleonic)
 ---
 candidate_id: cand-q153660
 source_id: src-wikidata-q153660
 source_url: https://www.wikidata.org/wiki/Q153660
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -95,12 +101,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Italian Social Republic; description: 1943–1945 German puppet state in northern Italy; article: https://en.wikipedia.org/wiki/Italian_Social_Republic
 ---
 candidate_id: cand-q3968612
 source_id: src-wikidata-q3968612
 source_url: https://www.wikidata.org/wiki/Q3968612
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -109,6 +116,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Italian United Provinces; description: 1831 republic in parts of Italy; article: https://en.wikipedia.org/wiki/Italian_United_Provinces
 ---
 candidate_id: cand-q1448131
@@ -128,7 +136,7 @@ notes: Candidate label: Italian protectorate of Albania; description: kingdom in
 candidate_id: cand-q889970
 source_id: src-wikidata-q889970
 source_url: https://www.wikidata.org/wiki/Q889970
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -137,6 +145,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Jorvik; description: state; article: https://en.wikipedia.org/wiki/Scandinavian_York
 ---
 candidate_id: cand-q1241847
@@ -170,7 +179,7 @@ notes: Candidate label: July Monarchy; description: kingdom governing France, 18
 candidate_id: cand-q2640598
 source_id: src-wikidata-q2640598
 source_url: https://www.wikidata.org/wiki/Q2640598
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -179,6 +188,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kabardia; description: historical country in the North Caucasus; article: https://en.wikipedia.org/wiki/Kabardia
 ---
 candidate_id: cand-q62623
@@ -240,7 +250,7 @@ notes: Candidate label: Khazar Khaganate; description: khanate, c. 650–969; ar
 candidate_id: cand-q12167518
 source_id: src-wikidata-q12167518
 source_url: https://www.wikidata.org/wiki/Q12167518
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -249,12 +259,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kholodny Yar Republic; description: Ukrainian partisan state (1919–1922); article: https://en.wikipedia.org/wiki/Kholodny_Yar_Republic
 ---
 candidate_id: cand-q1108445
 source_id: src-wikidata-q1108445
 source_url: https://www.wikidata.org/wiki/Q1108445
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -263,6 +274,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kievan Rus'; description: former federation of East Slavic tribes; article: https://en.wikipedia.org/wiki/Kievan_Rus%27
 ---
 candidate_id: cand-q199442

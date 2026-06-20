@@ -1,16 +1,18 @@
 # DUCHY 500-Source Candidate Summary
 
 accepted_sources: 319
-candidate_sources: 181
+candidate_sources: 14
 promoted_candidate_sources: 269
+rejected_candidate_sources: 167
 total_unique_source_universe: 500
 source_query: Wikidata historical-country entities with English Wikipedia sitelinks and Europe continent metadata
 review_boundary: Pending candidates are not accepted facts and must be reviewed before source stubs or promotion.
 
 ## Candidate Status
 
-- pending: 181
+- pending: 14
 - promoted: 269
+- rejected: 167
 
 ## Entity Classes
 
@@ -41,4 +43,7 @@ review_boundary: Pending candidates are not accepted facts and must be reviewed 
 - data/staging/candidates-500-report.md
 - data/staging/candidates-500.tsv
 - data/staging/candidates-500-duplicate-urls.md
+- data/staging/candidates-500-rejected.md
+- data/staging/candidates-500-active.manifest
+- data/staging/candidates-500-archive.manifest
 - data/staging/candidates-500-shards/INDEX.md

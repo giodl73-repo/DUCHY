@@ -142,7 +142,7 @@ notes: Candidate label: Kings of the Isle of Wight; description: Jutish kingdom 
 candidate_id: cand-q2510537
 source_id: src-wikidata-q2510537
 source_url: https://www.wikidata.org/wiki/Q2510537
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -151,12 +151,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Komancza Republic; description: short-lived state; article: https://en.wikipedia.org/wiki/Koma%C5%84cza_Republic
 ---
 candidate_id: cand-q1771831
 source_id: src-wikidata-q1771831
 source_url: https://www.wikidata.org/wiki/Q1771831
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -165,12 +166,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kruševo Republic; description: Rebel state in North Macedonia, 1903; article: https://en.wikipedia.org/wiki/Kru%C5%A1evo_Republic
 ---
 candidate_id: cand-q1778994
 source_id: src-wikidata-q1778994
 source_url: https://www.wikidata.org/wiki/Q1778994
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -179,12 +181,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kuban People's Republic; description: short-lived country in Eastern Europe (1918-1920); article: https://en.wikipedia.org/wiki/Kuban_People%27s_Republic
 ---
 candidate_id: cand-q1761355
 source_id: src-wikidata-q1761355
 source_url: https://www.wikidata.org/wiki/Q1761355
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -193,6 +196,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Kuban-Black Sea Soviet Republic; description: Soviet republic; article: https://en.wikipedia.org/wiki/Kuban%E2%80%93Black_Sea_Soviet_Republic
 ---
 candidate_id: cand-q751868
@@ -282,7 +286,7 @@ notes: Candidate label: Landgraviate of Lower Alsace; description: historical re
 candidate_id: cand-q686971
 source_id: src-wikidata-q686971
 source_url: https://www.wikidata.org/wiki/Q686971
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -291,6 +295,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lands of the Bohemian Crown; description: monarchy in Central Europe, predecessor of modern Czech Republic; article: https://en.wikipedia.org/wiki/Lands_of_the_Bohemian_Crown
 ---
 candidate_id: cand-q178897
@@ -310,7 +315,7 @@ notes: Candidate label: Latin Empire; description: feudal Crusader state founded
 candidate_id: cand-q874283
 source_id: src-wikidata-q874283
 source_url: https://www.wikidata.org/wiki/Q874283
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -319,12 +324,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Latin League; description: ancient confederation of Latin city-states for mutual defense; article: https://en.wikipedia.org/wiki/Latin_League
 ---
 candidate_id: cand-q136884
 source_id: src-wikidata-q136884
 source_url: https://www.wikidata.org/wiki/Q136884
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -333,12 +339,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lazica; description: former country; article: https://en.wikipedia.org/wiki/Lazica
 ---
 candidate_id: cand-q2308885
 source_id: src-wikidata-q2308885
 source_url: https://www.wikidata.org/wiki/Q2308885
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -347,12 +354,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lemko Republic; description: short-lived state; article: https://en.wikipedia.org/wiki/Lemko_Republic
 ---
 candidate_id: cand-q1247020
 source_id: src-wikidata-q1247020
 source_url: https://www.wikidata.org/wiki/Q1247020
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -361,12 +369,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Liburnia; description: ancient country in Croatia; article: https://en.wikipedia.org/wiki/Liburnia
 ---
 candidate_id: cand-q659312
 source_id: src-wikidata-q659312
 source_url: https://www.wikidata.org/wiki/Q659312
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -375,12 +384,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Ligurian Republic; description: former nation in Europe; article: https://en.wikipedia.org/wiki/Ligurian_Republic
 ---
 candidate_id: cand-q80211
 source_id: src-wikidata-q80211
 source_url: https://www.wikidata.org/wiki/Q80211
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -389,12 +399,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lithuanian Soviet Socialist Republic; description: independent 1918-1919 republic; article: https://en.wikipedia.org/wiki/Lithuanian_Soviet_Socialist_Republic_(1918%E2%80%931919)
 ---
 candidate_id: cand-q76236
 source_id: src-wikidata-q76236
 source_url: https://www.wikidata.org/wiki/Q76236
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -403,12 +414,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lithuanian–Byelorussian Soviet Socialist Republic; description: former country; article: https://en.wikipedia.org/wiki/Socialist_Soviet_Republic_of_Lithuania_and_Belorussia
 ---
 candidate_id: cand-q30573
 source_id: src-wikidata-q30573
 source_url: https://www.wikidata.org/wiki/Q30573
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -417,12 +429,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lokot Autonomy; description: semi-autonomous region in Nazi German-occupied Central Russia; article: https://en.wikipedia.org/wiki/Lokot_Autonomy
 ---
 candidate_id: cand-q3572054
 source_id: src-wikidata-q3572054
 source_url: https://www.wikidata.org/wiki/Q3572054
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -431,12 +444,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lordship of Albarracin; description: Independent lordship (1167- ); article: https://en.wikipedia.org/wiki/Lordship_of_Albarrac%C3%ADn
 ---
 candidate_id: cand-q6680233
 source_id: src-wikidata-q6680233
 source_url: https://www.wikidata.org/wiki/Q6680233
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -445,12 +459,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lordship of Chios; description: autonomous lordship the Aegean Sea; article: https://en.wikipedia.org/wiki/Lordship_of_Chios
 ---
 candidate_id: cand-q844250
 source_id: src-wikidata-q844250
 source_url: https://www.wikidata.org/wiki/Q844250
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -459,12 +474,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lordship of Ireland; description: 1171–1542 English-ruled territory in Ireland; article: https://en.wikipedia.org/wiki/Lordship_of_Ireland
 ---
 candidate_id: cand-q1614435
 source_id: src-wikidata-q1614435
 source_url: https://www.wikidata.org/wiki/Q1614435
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -473,6 +489,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lordship of Rostock; description: former country; article: https://en.wikipedia.org/wiki/Lordship_of_Rostock
 ---
 candidate_id: cand-q6673921
@@ -492,7 +509,7 @@ notes: Candidate label: Lotharingia; description: Former medieval kingdom and du
 candidate_id: cand-q33242
 source_id: src-wikidata-q33242
 source_url: https://www.wikidata.org/wiki/Q33242
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -501,6 +518,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Lower Burgundy; description: former country; article: https://en.wikipedia.org/wiki/Lower_Burgundy
 ---
 candidate_id: cand-q660393
@@ -534,7 +552,7 @@ notes: Candidate label: Macedonia; description: ancient Hellenic kingdom; articl
 candidate_id: cand-q1436243
 source_id: src-wikidata-q1436243
 source_url: https://www.wikidata.org/wiki/Q1436243
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -543,12 +561,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Makhnovshchina; description: Ukrainian anarchist movement; article: https://en.wikipedia.org/wiki/Makhnovshchina
 ---
 candidate_id: cand-q6753657
 source_id: src-wikidata-q6753657
 source_url: https://www.wikidata.org/wiki/Q6753657
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -557,6 +576,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Maona of Chios and Phocaea; description: ; article: https://en.wikipedia.org/wiki/Maona_of_Chios_and_Phocaea
 ---
 candidate_id: cand-q426488
@@ -646,7 +666,7 @@ notes: Candidate label: Margraviate of Moravia; description: historic state; art
 candidate_id: cand-q2280660
 source_id: src-wikidata-q2280660
 source_url: https://www.wikidata.org/wiki/Q2280660
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -655,6 +675,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Marquisate of Finale; description: Italian state (967–1797); article: https://en.wikipedia.org/wiki/Marquisate_of_Finale
 ---
 candidate_id: cand-q552822
@@ -674,7 +695,7 @@ notes: Candidate label: Mecklenburg-Güstrow; description: duchy; article: https
 candidate_id: cand-q124003554
 source_id: src-wikidata-q124003554
 source_url: https://www.wikidata.org/wiki/Q124003554
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -683,12 +704,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Medo-Persia; description: ; article: https://en.wikipedia.org/wiki/Medo-persia
 ---
 candidate_id: cand-q468902
 source_id: src-wikidata-q468902
 source_url: https://www.wikidata.org/wiki/Q468902
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -697,4 +719,5 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Middle Francia; description: former country; article: https://en.wikipedia.org/wiki/Middle_Francia

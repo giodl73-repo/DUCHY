@@ -34,6 +34,9 @@ size:
 cargo run --bin duchy-import -- manifest data/staging/candidates-500.manifest
 cargo run --bin duchy-import -- manifest-report data/staging/candidates-500.manifest data/staging/candidates-500-report.md
 cargo run --bin duchy-import -- duplicate-url-report data/staging/candidates-500.manifest data/staging/candidates-500-duplicate-urls.md
+cargo run --bin duchy-import -- rejected-report data/staging/candidates-500.manifest data/staging/candidates-500-rejected.md
+cargo run --bin duchy-import -- active-manifest data/staging/candidates-500.manifest data/staging/candidates-500-active.manifest
+cargo run --bin duchy-import -- archive-manifest data/staging/candidates-500.manifest data/staging/candidates-500-archive.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/candidates-500.manifest data/staging/candidates-500-shards 50
 ```
 

@@ -112,7 +112,10 @@ Pulses:
 39. Remaining title queue promotion. Complete for 225 title-identity sources
     promoted from the remaining 500-source candidate queue, with fourteen title
     candidates deferred for missing or invalid date claims.
-40. Next reviewed parentage packet.
+40. Unsupported queue closure. Complete for 167 unsupported or relation-heavy
+    candidates archived as `scope_deferred`, leaving fourteen date-problem title
+    candidates active.
+41. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

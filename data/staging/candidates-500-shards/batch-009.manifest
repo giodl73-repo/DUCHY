@@ -2,7 +2,7 @@
 candidate_id: cand-q490
 source_id: src-wikidata-q490
 source_url: https://www.wikidata.org/wiki/Q490
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -11,12 +11,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Milan; description: Italian commune and capital city of Lombardy; article: https://en.wikipedia.org/wiki/Milan
 ---
 candidate_id: cand-q4114520
 source_id: src-wikidata-q4114520
 source_url: https://www.wikidata.org/wiki/Q4114520
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -25,12 +26,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Military Council; description: former national security body of Georgia; article: https://en.wikipedia.org/wiki/Military_Council_(Georgia)
 ---
 candidate_id: cand-q964024
 source_id: src-wikidata-q964024
 source_url: https://www.wikidata.org/wiki/Q964024
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -39,6 +41,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Moldavian Democratic Republic; description: former country; article: https://en.wikipedia.org/wiki/Moldavian_Democratic_Republic
 ---
 candidate_id: cand-q2273304
@@ -58,7 +61,7 @@ notes: Candidate label: Moravian Serbia; description: Serbian principality betwe
 candidate_id: cand-q1639475
 source_id: src-wikidata-q1639475
 source_url: https://www.wikidata.org/wiki/Q1639475
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -67,12 +70,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Mountainous Republic of the Northern Caucasus; description: former country; article: https://en.wikipedia.org/wiki/Mountainous_Republic_of_the_Northern_Caucasus
 ---
 candidate_id: cand-q1250763
 source_id: src-wikidata-q1250763
 source_url: https://www.wikidata.org/wiki/Q1250763
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -81,6 +85,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Muslim Sicily; description: history of Islam in medieval Sicily (827-1091); article: https://en.wikipedia.org/wiki/Muslim_Sicily
 ---
 candidate_id: cand-q736029
@@ -100,7 +105,7 @@ notes: Candidate label: Nassau-Siegen; description: German county; article: http
 candidate_id: cand-q5560770
 source_id: src-wikidata-q5560770
 source_url: https://www.wikidata.org/wiki/Q5560770
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -109,12 +114,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Nationalist zone; description: area controlled by the Nationalist faction in the Spanish Civil War (1936-1939); article: https://en.wikipedia.org/wiki/Nationalist_zone_(Spanish_Civil_War)
 ---
 candidate_id: cand-q7318
 source_id: src-wikidata-q7318
 source_url: https://www.wikidata.org/wiki/Q7318
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -123,6 +129,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Nazi Germany; description: Germany from 1933 to 1945 while under control of the Nazi Party; article: https://en.wikipedia.org/wiki/Nazi_Germany
 ---
 candidate_id: cand-q106577
@@ -142,7 +149,7 @@ notes: Candidate label: Neustria; description: western part of the Kingdom of th
 candidate_id: cand-q151536
 source_id: src-wikidata-q151536
 source_url: https://www.wikidata.org/wiki/Q151536
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -151,12 +158,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Novgorod Republic; description: Russian city-state (1136–1478); article: https://en.wikipedia.org/wiki/Novgorod_Republic
 ---
 candidate_id: cand-q2078820
 source_id: src-wikidata-q2078820
 source_url: https://www.wikidata.org/wiki/Q2078820
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -165,6 +173,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Odesa Soviet Republic; description: short-lived Soviet republic; article: https://en.wikipedia.org/wiki/Odessa_Soviet_Republic
 ---
 candidate_id: cand-q870517
@@ -268,7 +277,7 @@ notes: Candidate label: Palatinate-Zweibrücken; description: former state of th
 candidate_id: cand-q170174
 source_id: src-wikidata-q170174
 source_url: https://www.wikidata.org/wiki/Q170174
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -277,12 +286,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Papal States; description: territories mostly in the Appenine Peninsula under the sovereign direct rule of the pope between 756–1870; article: https://en.wikipedia.org/wiki/Papal_States
 ---
 candidate_id: cand-q514423
 source_id: src-wikidata-q514423
 source_url: https://www.wikidata.org/wiki/Q514423
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -291,12 +301,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Parthenopean Republic; description: Republic of Naples of 1799; article: https://en.wikipedia.org/wiki/Parthenopean_Republic
 ---
 candidate_id: cand-q23731257
 source_id: src-wikidata-q23731257
 source_url: https://www.wikidata.org/wiki/Q23731257
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -305,12 +316,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Patria del Friuli; description: territory under the temporal rule of the Patriarch of Aquileia and one of the ecclesiastical states of the Holy Roman Empire; acqured in 1420 by the Republic of Venice; article: https://en.wikipedia.org/wiki/Patria_del_Friuli
 ---
 candidate_id: cand-q1027122
 source_id: src-wikidata-q1027122
 source_url: https://www.wikidata.org/wiki/Q1027122
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -319,12 +331,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Pengwern; description: Settlement in sub-Roman Britain; article: https://en.wikipedia.org/wiki/Pengwern
 ---
 candidate_id: cand-q121932
 source_id: src-wikidata-q121932
 source_url: https://www.wikidata.org/wiki/Q121932
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -333,12 +346,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: People's Republic of Bulgaria; description: Socialist republic ruled by the Bulgarian Communist Party (1946–1990); article: https://en.wikipedia.org/wiki/People%27s_Republic_of_Bulgaria
 ---
 candidate_id: cand-q467864
 source_id: src-wikidata-q467864
 source_url: https://www.wikidata.org/wiki/Q467864
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -347,12 +361,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: People's Socialist Republic of Albania; description: Marxist-Leninist government of Albania (1946–1992); article: https://en.wikipedia.org/wiki/People%27s_Socialist_Republic_of_Albania
 ---
 candidate_id: cand-q1054910
 source_id: src-wikidata-q1054910
 source_url: https://www.wikidata.org/wiki/Q1054910
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -361,12 +376,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Piedmontese Republic; description: French Sister Republic in Piedmont, Italy; article: https://en.wikipedia.org/wiki/Piedmontese_Republic
 ---
 candidate_id: cand-q211274
 source_id: src-wikidata-q211274
 source_url: https://www.wikidata.org/wiki/Q211274
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -375,6 +391,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Polish People's Republic; description: country of the Warsaw Pact and Eastern Bloc from 1947 to 1989; article: https://en.wikipedia.org/wiki/Polish_People%27s_Republic
 ---
 candidate_id: cand-q116080

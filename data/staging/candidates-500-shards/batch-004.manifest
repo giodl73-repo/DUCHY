@@ -114,7 +114,7 @@ notes: Candidate label: Duklja; description: Medieval principality in Eastern/So
 candidate_id: cand-q170072
 source_id: src-wikidata-q170072
 source_url: https://www.wikidata.org/wiki/Q170072
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -123,6 +123,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Dutch Republic; description: predecessor state of the Netherlands (1581–1795); article: https://en.wikipedia.org/wiki/Dutch_Republic
 ---
 candidate_id: cand-q153080
@@ -296,7 +297,7 @@ notes: Candidate label: Emirate of Crete; description: Muslim state that existed
 candidate_id: cand-q1337854
 source_id: src-wikidata-q1337854
 source_url: https://www.wikidata.org/wiki/Q1337854
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -305,12 +306,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Emirate of Córdoba; description: independent emirate in the Iberian Peninsula (756–929); article: https://en.wikipedia.org/wiki/Umayyad_state_of_C%C3%B3rdoba
 ---
 candidate_id: cand-q238445
 source_id: src-wikidata-q238445
 source_url: https://www.wikidata.org/wiki/Q238445
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -319,6 +321,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Emirate of Granada; description: historic Iberian state (1238–1492); article: https://en.wikipedia.org/wiki/Emirate_of_Granada
 ---
 candidate_id: cand-q181254
@@ -338,7 +341,7 @@ notes: Candidate label: Empire of Nicaea; description: successor state of the By
 candidate_id: cand-q130280
 source_id: src-wikidata-q130280
 source_url: https://www.wikidata.org/wiki/Q130280
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -347,6 +350,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Estonian Soviet Socialist Republic; description: republic of the Soviet Union (1940–1991); article: https://en.wikipedia.org/wiki/Estonian_Soviet_Socialist_Republic
 ---
 candidate_id: cand-q48742118
@@ -394,7 +398,7 @@ notes: Candidate label: Fatimid Egyptian Caliphate; description: Shia Islamic ca
 candidate_id: cand-q1290149
 source_id: src-wikidata-q1290149
 source_url: https://www.wikidata.org/wiki/Q1290149
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -403,12 +407,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Federal People's Republic of Yugoslavia; description: the official name of Yugoslavia in the period of 1945-1963; article: https://en.wikipedia.org/wiki/Federal_People%27s_Republic_of_Yugoslavia
 ---
 candidate_id: cand-q838261
 source_id: src-wikidata-q838261
 source_url: https://www.wikidata.org/wiki/Q838261
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -417,12 +422,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Federal Republic of Yugoslavia; description: former Balkan republic (1992–2003); article: https://en.wikipedia.org/wiki/Federal_Republic_of_Yugoslavia
 ---
 candidate_id: cand-q176495
 source_id: src-wikidata-q176495
 source_url: https://www.wikidata.org/wiki/Q176495
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -431,12 +437,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Federal State of Austria; description: sovereign state in Central Europe (1934–1938); article: https://en.wikipedia.org/wiki/Federal_State_of_Austria
 ---
 candidate_id: cand-q62519
 source_id: src-wikidata-q62519
 source_url: https://www.wikidata.org/wiki/Q62519
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -445,6 +452,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Finnish Democratic Republic; description: short-lived puppet government created and recognised only by the Soviet Union; article: https://en.wikipedia.org/wiki/Finnish_Democratic_Republic
 ---
 candidate_id: cand-q203817
@@ -464,7 +472,7 @@ notes: Candidate label: First Bulgarian Empire; description: medieval Bulgar-Sla
 candidate_id: cand-q140359
 source_id: src-wikidata-q140359
 source_url: https://www.wikidata.org/wiki/Q140359
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -473,6 +481,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Czechoslovak Republic; description: 1918–1938 republic in Central/Eastern Europe; article: https://en.wikipedia.org/wiki/First_Czechoslovak_Republic
 ---
 candidate_id: cand-q71084
@@ -492,7 +501,7 @@ notes: Candidate label: First French Empire; description: empire of Napoleon I o
 candidate_id: cand-q528546
 source_id: src-wikidata-q528546
 source_url: https://www.wikidata.org/wiki/Q528546
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -501,12 +510,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Hellenic Republic; description: historiographical concept of Greece (1822–1833); article: https://en.wikipedia.org/wiki/First_Hellenic_Republic
 ---
 candidate_id: cand-q516160
 source_id: src-wikidata-q516160
 source_url: https://www.wikidata.org/wiki/Q516160
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -515,12 +525,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Hungarian Republic; description: former country (1918–1919); article: https://en.wikipedia.org/wiki/First_Hungarian_Republic
 ---
 candidate_id: cand-q167360
 source_id: src-wikidata-q167360
 source_url: https://www.wikidata.org/wiki/Q167360
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -529,12 +540,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Portuguese Republic; description: 1910–1926 republic in Southwestern Europe; article: https://en.wikipedia.org/wiki/First_Portuguese_Republic
 ---
 candidate_id: cand-q518101
 source_id: src-wikidata-q518101
 source_url: https://www.wikidata.org/wiki/Q518101
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -543,12 +555,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Republic of Austria; description: sovereign state in Europe (1919–1934); article: https://en.wikipedia.org/wiki/First_Austrian_Republic
 ---
 candidate_id: cand-q497777
 source_id: src-wikidata-q497777
 source_url: https://www.wikidata.org/wiki/Q497777
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -557,12 +570,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: First Spanish Republic; description: political regime that existed in Spain between 11 February 1873 and 29 December 1874; article: https://en.wikipedia.org/wiki/First_Spanish_Republic
 ---
 candidate_id: cand-q2044
 source_id: src-wikidata-q2044
 source_url: https://www.wikidata.org/wiki/Q2044
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -571,6 +585,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Florence; description: Italian city and commune, located in Tuscany; article: https://en.wikipedia.org/wiki/Florence
 ---
 candidate_id: cand-q146246
@@ -590,7 +605,7 @@ notes: Candidate label: Francia; description: Frankish Kingdom from 481 to 843; 
 candidate_id: cand-q13474305
 source_id: src-wikidata-q13474305
 source_url: https://www.wikidata.org/wiki/Q13474305
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -599,12 +614,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Francoist Spain; description: 1939–1975 dictature period of Spain; article: https://en.wikipedia.org/wiki/Francoist_Spain
 ---
 candidate_id: cand-q901974
 source_id: src-wikidata-q901974
 source_url: https://www.wikidata.org/wiki/Q901974
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -613,12 +629,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free City of Danzig; description: Napoleonic semi-independent city state; article: https://en.wikipedia.org/wiki/Free_City_of_Danzig_(Napoleonic)
 ---
 candidate_id: cand-q216173
 source_id: src-wikidata-q216173
 source_url: https://www.wikidata.org/wiki/Q216173
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -627,12 +644,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free City of Danzig; description: semi-autonomous city-state that existed between 1920 and 1939; article: https://en.wikipedia.org/wiki/Free_City_of_Danzig
 ---
 candidate_id: cand-q704300
 source_id: src-wikidata-q704300
 source_url: https://www.wikidata.org/wiki/Q704300
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -641,12 +659,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free City of Frankfurt; description: historical city-state, today part of Germany; article: https://en.wikipedia.org/wiki/Free_City_of_Frankfurt
 ---
 candidate_id: cand-q501303
 source_id: src-wikidata-q501303
 source_url: https://www.wikidata.org/wiki/Q501303
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -655,6 +674,7 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free City of Kraków; description: former city-state; article: https://en.wikipedia.org/wiki/Free_City_of_Cracow
 ---
 candidate_id: cand-q2629137
@@ -674,7 +694,7 @@ notes: Candidate label: Free Imperial City of Aachen; description: was a Free Im
 candidate_id: cand-q117020
 source_id: src-wikidata-q117020
 source_url: https://www.wikidata.org/wiki/Q117020
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -683,12 +703,13 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free Imperial City of Nuremberg; description: quasi-independent city state within the Holy Roman Empire, 1219–1806; article: https://en.wikipedia.org/wiki/Free_Imperial_City_of_Nuremberg
 ---
 candidate_id: cand-q569871
 source_id: src-wikidata-q569871
 source_url: https://www.wikidata.org/wiki/Q569871
-status: pending
+status: rejected
 review_batch_id: batch-500-candidates
 import_scope: contested_review
 rank_basis: unsupported
@@ -697,4 +718,5 @@ source_claims_used: label, description, enwiki_sitelink, continent
 confidence_detail: wikidata_structured_single
 parentage_status: none_reviewed
 query_readiness: unsupported
+exclusion_reason: scope_deferred
 notes: Candidate label: Free People's State of Württemberg; description: former state of Germany; article: https://en.wikipedia.org/wiki/Free_People%27s_State_of_W%C3%BCrttemberg
