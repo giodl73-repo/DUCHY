@@ -1173,6 +1173,7 @@ fn title_rank_label(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::County => "County",
         duchy::TitleRank::Duchy => "Duchy",
         duchy::TitleRank::Province => "Province",
+        duchy::TitleRank::FreeCity => "FreeCity",
         duchy::TitleRank::Kingdom => "Kingdom",
         duchy::TitleRank::Crown => "Crown",
         duchy::TitleRank::TheocraticState => "TheocraticState",
@@ -1192,6 +1193,7 @@ fn parentage_gap_priority(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::County => "high_parentage_review",
         duchy::TitleRank::Duchy => "high_parentage_review",
         duchy::TitleRank::Province => "high_parentage_review",
+        duchy::TitleRank::FreeCity => "medium_parentage_review",
         duchy::TitleRank::Kingdom => "medium_parentage_review",
         duchy::TitleRank::Crown => "medium_parentage_review",
         duchy::TitleRank::TheocraticState => "medium_parentage_review",
@@ -1204,6 +1206,7 @@ fn parentage_gap_note(rank: duchy::TitleRank) -> &'static str {
         duchy::TitleRank::County => "Find reviewed duchy, kingdom, or empire parentage source.",
         duchy::TitleRank::Duchy => "Find reviewed kingdom or empire parentage source.",
         duchy::TitleRank::Province => "Find reviewed kingdom or empire parentage source.",
+        duchy::TitleRank::FreeCity => "Find reviewed empire, union, or successor-context source.",
         duchy::TitleRank::Kingdom => {
             "Find reviewed empire, union, confederation, or successor-context source."
         }

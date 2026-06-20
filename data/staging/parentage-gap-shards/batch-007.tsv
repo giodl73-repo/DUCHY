@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q62623	Kalmar Union	Kingdom	1397..1523	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q641138	Duchy of Cleves	Duchy	1092..1795	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q733799	Kingdom of the Hwicce	Kingdom	577..780	0	medium_parentage_review	F
 title-q736029	Nassau-Siegen	County	1303..1743	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q769782	Kingdom of Powys	Kingdom	500..1160	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q771193	Kingdom of Brittany	Kingdom	851..939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q779011	Principality of Montenegro	Duchy	1852..1910	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

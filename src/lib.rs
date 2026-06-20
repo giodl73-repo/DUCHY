@@ -7,6 +7,7 @@ pub enum TitleRank {
     County,
     Duchy,
     Province,
+    FreeCity,
     Kingdom,
     Crown,
     TheocraticState,
@@ -19,6 +20,7 @@ impl TitleRank {
             Self::County => Some(Self::Duchy),
             Self::Duchy => Some(Self::Kingdom),
             Self::Province => Some(Self::Kingdom),
+            Self::FreeCity => Some(Self::Empire),
             Self::Kingdom => Some(Self::Crown),
             Self::Crown => Some(Self::Empire),
             Self::TheocraticState => Some(Self::Empire),
@@ -2228,6 +2230,9 @@ fn parse_title_rank(value: &str) -> Option<TitleRank> {
         "county" => Some(TitleRank::County),
         "duchy" | "grand duchy" => Some(TitleRank::Duchy),
         "province" => Some(TitleRank::Province),
+        "freecity" | "free city" | "free imperial city" | "imperial city" => {
+            Some(TitleRank::FreeCity)
+        }
         "kingdom" => Some(TitleRank::Kingdom),
         "crown" | "composite crown" | "composite realm" => Some(TitleRank::Crown),
         "theocratic state" | "papal state" | "ecclesiastical state" => {
@@ -3675,6 +3680,13 @@ confidence: maybe
         assert_eq!(TitleRank::Duchy.parent_rank(), Some(TitleRank::Kingdom));
         assert!(TitleRank::Duchy < TitleRank::Province);
         assert!(TitleRank::Province < TitleRank::Kingdom);
+    }
+
+    #[test]
+    fn free_city_rank_sits_below_kingdom_with_empire_parent() {
+        assert_eq!(TitleRank::FreeCity.parent_rank(), Some(TitleRank::Empire));
+        assert!(TitleRank::Province < TitleRank::FreeCity);
+        assert!(TitleRank::FreeCity < TitleRank::Kingdom);
     }
 
     #[test]

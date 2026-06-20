@@ -3953,7 +3953,7 @@ confidence: single_source
 fact_id: fact-q2629137-rank
 subject_id: title-q2629137
 claim_kind: rank
-value: Empire
+value: FreeCity
 source_ids: src-wikidata-q2629137
 confidence: single_source
 ---
@@ -8993,4 +8993,14 @@ claim_kind: parentage
 span: 1085..1803
 value: title-q12548
 source_ids: src-wikidata-q22880, src-wikidata-q12548
+confidence: multi_source
+---
+# Reviewed parentage packet for Free Imperial City of Aachen under the Holy Roman Empire.
+
+fact_id: fact-q2629137-parent-q12548
+subject_id: title-q2629137
+claim_kind: parentage
+span: 1306..1801
+value: title-q12548
+source_ids: src-wikidata-q2629137, src-wikidata-q12548
 confidence: multi_source

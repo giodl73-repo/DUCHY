@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 15 |
-| medium_parentage_review | 7 |
+| high_parentage_review | 16 |
+| medium_parentage_review | 6 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Duchy | 12 |
+| Duchy | 13 |
 | Empire | 3 |
-| Kingdom | 7 |
+| Kingdom | 6 |
 
 ## Review Rows
-
-### title-q62623 | Kalmar Union
-
-- rank: Kingdom
-- exists: 1397..1523
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62651 | Denmark-Norway
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 851..939
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q779011 | Principality of Montenegro
+
+- rank: Duchy
+- exists: 1852..1910
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

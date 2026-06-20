@@ -57,13 +57,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q2629137 | Free Imperial City of Aachen
-
-- rank: Empire
-- exists: 1306..1801
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q283627 | Margraviate of Austria
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1910..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q389688 | Achaemenid Empire
+
+- rank: Empire
+- exists: -550..-330
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

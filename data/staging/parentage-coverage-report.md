@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 338
-facts: 1160
+facts: 1161
 titles: 327
-parentage_facts: 179
-titles_with_parentage: 135
-titles_without_parentage: 192
+parentage_facts: 180
+titles_with_parentage: 136
+titles_without_parentage: 191
 
 ## Coverage By Rank
 
@@ -14,7 +14,8 @@ titles_without_parentage: 192
 | County | 29 | 16 | 13 |
 | Crown | 3 | 0 | 3 |
 | Duchy | 136 | 88 | 48 |
-| Empire | 37 | 0 | 37 |
+| Empire | 36 | 0 | 36 |
+| FreeCity | 1 | 1 | 0 |
 | Kingdom | 120 | 30 | 90 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
@@ -126,7 +127,6 @@ titles_without_parentage: 192
 - title-q259511 | Prince-Bishopric of Freising | Duchy | 1294..1803
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
 - title-q26167 | Duchy of Schleswig | Duchy | 1058..1866
-- title-q2629137 | Free Imperial City of Aachen | Empire | 1306..1801
 - title-q283627 | Margraviate of Austria | Duchy | 976..1156
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2980623 | Kingdom of Bosnia | Kingdom | 1377..1463

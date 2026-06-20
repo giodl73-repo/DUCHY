@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 17
+gap_rows: 16
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
+| high_parentage_review | 5 |
 | medium_parentage_review | 11 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 6 |
+| Duchy | 5 |
 | Kingdom | 11 |
 
 ## Review Rows
-
-### title-q779011 | Principality of Montenegro
-
-- rank: Duchy
-- exists: 1852..1910
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q816814 | Kingdom of Gwynedd
 

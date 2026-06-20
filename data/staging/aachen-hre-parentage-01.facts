@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Free Imperial City of Aachen under the Holy Roman Empire.
+
+fact_id: fact-q2629137-parent-q12548
+subject_id: title-q2629137
+claim_kind: parentage
+span: 1306..1801
+value: title-q12548
+source_ids: src-wikidata-q2629137, src-wikidata-q12548
+confidence: multi_source

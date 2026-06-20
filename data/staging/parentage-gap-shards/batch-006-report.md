@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 8 |
-| medium_parentage_review | 11 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 5 |
 | Duchy | 3 |
-| Empire | 6 |
-| Kingdom | 11 |
+| Empire | 5 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q389688 | Achaemenid Empire
-
-- rank: Empire
-- exists: -550..-330
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q4208290 | Kazikumukh Khanate
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1918..1944
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62623 | Kalmar Union
+
+- rank: Kingdom
+- exists: 1397..1523
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -213,7 +213,10 @@ Pulses:
 76. Electoral Palatinate HRE parentage packet. Complete for correcting Q22880
     to Duchy rank and importing Electoral Palatinate -> Holy Roman Empire for
     1085-1803.
-77. Next reviewed parentage packet.
+77. Free Imperial City of Aachen HRE parentage packet. Complete for adding
+    `FreeCity` rank support, correcting Q2629137 to FreeCity, and importing
+    Free Imperial City of Aachen -> Holy Roman Empire for 1306-1801.
+78. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
