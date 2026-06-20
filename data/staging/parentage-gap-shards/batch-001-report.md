@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 4 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 3 |
+| Duchy | 2 |
 | Empire | 6 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -183,17 +183,17 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q1352878 | Duchy of Livonia
-
-- rank: Duchy
-- exists: 1561..1621
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q13590051 | Kingdom of the Burgundians
 
 - rank: Kingdom
 - exists: 411..534
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1448131 | Italian protectorate of Albania
+
+- rank: Kingdom
+- exists: 1939..1943
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q704312	Grand Duchy of Frankfurt	Duchy	1810..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q706553	County of Nice	County	1388..1818	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q71084	First French Empire	Empire	1804..1815	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q8890160	Kingdom of Poland	Kingdom	1025..1569	0	medium_parentage_review	Fi
 title-q905131	Kingdom of Breifne	Kingdom	700..1256	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q954585	Kingdom of Brycheiniog	Kingdom	450..1045	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q956451	Kingdom of Dyfed	Kingdom	410..920	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q958291	United Principalities of Moldavia and Wallachia	Duchy	1859..1881	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

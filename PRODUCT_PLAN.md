@@ -186,7 +186,10 @@ Pulses:
 66. Crown bridge parentage packet. Complete for 10 parentage-only kingdom ->
     crown bridges using already accepted Crown of Aragon and Crown of Castile
     source records.
-67. Next reviewed parentage packet.
+67. Polish-Lithuanian Commonwealth rank correction and Livonia parentage.
+    Complete for correcting Q172107 to `Crown` and importing Duchy of Livonia
+    -> Polish-Lithuanian Commonwealth for 1569-1621.
+68. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

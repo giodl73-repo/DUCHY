@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
 sources: 336
-facts: 1142
+facts: 1143
 titles: 325
-parentage_facts: 167
-titles_with_parentage: 124
-titles_without_parentage: 201
+parentage_facts: 168
+titles_with_parentage: 125
+titles_without_parentage: 200
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 28 | 14 | 14 |
-| Crown | 2 | 0 | 2 |
-| Duchy | 136 | 83 | 53 |
+| Crown | 3 | 0 | 3 |
+| Duchy | 135 | 84 | 51 |
 | Empire | 39 | 0 | 39 |
 | Kingdom | 120 | 27 | 93 |
 
@@ -42,7 +42,6 @@ titles_without_parentage: 201
 - title-q12714608 | Fascist Romania | Kingdom | 1937..1938
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
-- title-q1352878 | Duchy of Livonia | Duchy | 1561..1621
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
 - title-q1448131 | Italian protectorate of Albania | Kingdom | 1939..1943
 - title-q146246 | Francia | Kingdom | 481..843
@@ -73,7 +72,7 @@ titles_without_parentage: 201
 - title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
 - title-q171348 | Crown of the Kingdom of Poland | Kingdom | 1386..1795
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
-- title-q172107 | Polish-Lithuanian Commonwealth | Duchy | 1569..1795
+- title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
 - title-q172579 | Kingdom of Italy | Kingdom | 1861..1946
 - title-q173065 | Kingdom of Naples | Kingdom | 1282..1816
 - title-q173082 | Dacia | Kingdom | -60..106

@@ -7081,7 +7081,7 @@ confidence: single_source
 fact_id: fact-q172107-rank
 subject_id: title-q172107
 claim_kind: rank
-value: Duchy
+value: Crown
 source_ids: src-wikidata-q172107
 confidence: single_source
 ---
@@ -8831,4 +8831,14 @@ claim_kind: parentage
 span: 1229..1715
 value: title-q204920
 source_ids: src-wikidata-q836676, src-wikidata-q204920
+confidence: multi_source
+---
+# Reviewed parentage packet for Duchy of Livonia under Polish-Lithuanian Commonwealth.
+
+fact_id: fact-q1352878-parent-q172107
+subject_id: title-q1352878
+claim_kind: parentage
+span: 1569..1621
+value: title-q172107
+source_ids: src-wikidata-q1352878, src-wikidata-q172107
 confidence: multi_source

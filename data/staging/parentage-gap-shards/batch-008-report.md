@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q704312 | Grand Duchy of Frankfurt
-
-- rank: Duchy
-- exists: 1810..1813
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q706553 | County of Nice
 
 - rank: County
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 410..920
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q958291 | United Principalities of Moldavia and Wallachia
+
+- rank: Duchy
+- exists: 1859..1881
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

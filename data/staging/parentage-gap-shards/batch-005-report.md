@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 11 |
-| medium_parentage_review | 10 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 9 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 10 |
-| Empire | 4 |
-| Kingdom | 10 |
+| Empire | 5 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q2415003 | Kingdom of Serbia
-
-- rank: Kingdom
-- exists: 1217..1346
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q241748 | Kingdom of Serbia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 476..493
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q377350 | Iberian Union
+
+- rank: Empire
+- exists: 1580..1640
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

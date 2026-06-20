@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 14 |
-| medium_parentage_review | 7 |
+| high_parentage_review | 15 |
+| medium_parentage_review | 6 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 13 |
+| Duchy | 14 |
 | Empire | 4 |
-| Kingdom | 7 |
+| Kingdom | 6 |
 
 ## Review Rows
-
-### title-q623751 | Kingdom of Bernicia
-
-- rank: Kingdom
-- exists: 420..634
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q625380 | Eastern Hungarian Kingdom
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1315..1564
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q704312 | Grand Duchy of Frankfurt
+
+- rank: Duchy
+- exists: 1810..1813
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

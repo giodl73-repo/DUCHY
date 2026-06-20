@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 9 |
-| root_or_successor_review | 7 |
+| medium_parentage_review | 10 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 5 |
 | Duchy | 4 |
-| Empire | 7 |
-| Kingdom | 9 |
+| Empire | 6 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q377350 | Iberian Union
-
-- rank: Empire
-- exists: 1580..1640
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q386496 | Kingdom of Montenegro
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q623751 | Kingdom of Bernicia
+
+- rank: Kingdom
+- exists: 420..634
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

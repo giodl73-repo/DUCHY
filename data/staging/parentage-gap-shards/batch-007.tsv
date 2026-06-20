@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q625380	Eastern Hungarian Kingdom	Kingdom	1526..1570	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62623	Kalmar Union	Kingdom	1397..1523	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q698089	Grand Duchy of Wurzburg	Duchy	1806..1814	0	high_parentage_review	F
 title-q699923	Illyrian Provinces	Empire	1809..1816	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q702327	Duchy of Oswiecim	Duchy	1315..1564	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q704312	Grand Duchy of Frankfurt	Duchy	1810..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

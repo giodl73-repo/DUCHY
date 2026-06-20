@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 12 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 6 |
+| Duchy | 7 |
 | Empire | 4 |
-| Kingdom | 13 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q1448131 | Italian protectorate of Albania
-
-- rank: Kingdom
-- exists: 1939..1943
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q146246 | Francia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1251..1263
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q16835712 | Duchy of Estonia
+
+- rank: Duchy
+- exists: 1561..1721
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

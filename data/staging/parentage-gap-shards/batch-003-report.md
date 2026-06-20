@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 7 |
 
 ## Rank Counts
@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 5 |
+| Crown | 1 |
+| Duchy | 4 |
 | Empire | 7 |
 | Kingdom | 12 |
 
 ## Review Rows
-
-### title-q16835712 | Duchy of Estonia
-
-- rank: Duchy
-- exists: 1561..1721
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q170770 | Grand Principality of Moscow
 
@@ -52,10 +46,10 @@ gap_rows: 25
 
 ### title-q172107 | Polish-Lithuanian Commonwealth
 
-- rank: Duchy
+- rank: Crown
 - exists: 1569..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q172579 | Kingdom of Italy
 
@@ -196,4 +190,11 @@ gap_rows: 25
 - exists: 1466..1762
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1991540 | Duchy of Courland and Semigallia
+
+- rank: Duchy
+- exists: 1918..1918
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 
