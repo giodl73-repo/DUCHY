@@ -1,0 +1,33 @@
+# Reviewed parentage packet for Kingdom of France titles.
+
+fact_id: fact-q2991382-parent-q70972
+subject_id: title-q2991382
+claim_kind: parentage
+span: 987..1487
+value: title-q70972
+source_ids: src-wikidata-q2991382, src-wikidata-q70972
+confidence: multi_source
+---
+fact_id: fact-q7703611-parent-q70972
+subject_id: title-q7703611
+claim_kind: parentage
+span: 987..1449
+value: title-q70972
+source_ids: src-wikidata-q7703611, src-wikidata-q70972
+confidence: multi_source
+---
+fact_id: fact-q71747-parent-q70972
+subject_id: title-q71747
+claim_kind: parentage
+span: 987..1547
+value: title-q70972
+source_ids: src-wikidata-q71747, src-wikidata-q70972
+confidence: multi_source
+---
+fact_id: fact-q4712-parent-q70972
+subject_id: title-q4712
+claim_kind: parentage
+span: 987..1477
+value: title-q70972
+source_ids: src-wikidata-q4712, src-wikidata-q70972
+confidence: multi_source

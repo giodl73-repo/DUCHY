@@ -59,6 +59,7 @@ records and validation.
 | 41 | Additional German parentage packet | complete | Import parentage-only facts that cite already accepted source records. |
 | 42 | Austrian parentage packet | complete | Import Austrian Empire and Austria-Hungary parentage facts using accepted source records. |
 | 43 | Holy Roman Empire parentage packet | complete | Import Holy Roman Empire parentage facts using accepted source records. |
+| 44 | Kingdom of France parentage packet | complete | Import France parentage facts using accepted source records and non-overlapping spans. |
 
 ## Success Criteria
 
