@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q241748 | Kingdom of Serbia
-
-- rank: Kingdom
-- exists: 1882..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q249428 | Grand Duchy of Berg
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1580..1640
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q386496 | Kingdom of Montenegro
+
+- rank: Kingdom
+- exists: 1910..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

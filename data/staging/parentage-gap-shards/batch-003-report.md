@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 5 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 7 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
@@ -18,8 +18,8 @@ gap_rows: 25
 | County | 1 |
 | Crown | 1 |
 | Duchy | 4 |
-| Empire | 7 |
-| Kingdom | 12 |
+| Empire | 8 |
+| Kingdom | 11 |
 
 ## Review Rows
 
@@ -29,13 +29,6 @@ gap_rows: 25
 - exists: 1263..1478
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
-
-### title-q171348 | Crown of the Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1386..1795
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q171740 | Caliphate of Cordoba
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1918..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q199688 | Almohad Caliphate
+
+- rank: Empire
+- exists: 1121..1269
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

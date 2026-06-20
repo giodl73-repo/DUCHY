@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 336
-facts: 1143
+facts: 1145
 titles: 325
-parentage_facts: 168
-titles_with_parentage: 125
-titles_without_parentage: 200
+parentage_facts: 170
+titles_with_parentage: 127
+titles_without_parentage: 198
 
 ## Coverage By Rank
 
@@ -13,9 +13,9 @@ titles_without_parentage: 200
 |---|---:|---:|---:|
 | County | 28 | 14 | 14 |
 | Crown | 3 | 0 | 3 |
-| Duchy | 135 | 84 | 51 |
+| Duchy | 135 | 85 | 50 |
 | Empire | 39 | 0 | 39 |
-| Kingdom | 120 | 27 | 93 |
+| Kingdom | 120 | 28 | 92 |
 
 ## Titles Without Parentage
 
@@ -70,7 +70,6 @@ titles_without_parentage: 200
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
 - title-q16835712 | Duchy of Estonia | Duchy | 1561..1721
 - title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
-- title-q171348 | Crown of the Kingdom of Poland | Kingdom | 1386..1795
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
 - title-q172579 | Kingdom of Italy | Kingdom | 1861..1946
@@ -152,7 +151,6 @@ titles_without_parentage: 200
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
 - title-q47261 | Duchy of Bavaria | Duchy | 907..1805
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
-- title-q49683 | Grand Duchy of Lithuania | Duchy | 1236..1795
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
 - title-q50625 | Hordaland | County | 1919..2019
 - title-q5177890 | County of Luxembourg | County | 963..1354

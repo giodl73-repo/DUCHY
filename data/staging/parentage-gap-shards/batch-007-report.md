@@ -7,34 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 15 |
-| medium_parentage_review | 6 |
+| high_parentage_review | 16 |
+| medium_parentage_review | 5 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
+| County | 2 |
 | Duchy | 14 |
 | Empire | 4 |
-| Kingdom | 6 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q625380 | Eastern Hungarian Kingdom
-
-- rank: Kingdom
-- exists: 1526..1570
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q62567 | Kingdom of Iceland
-
-- rank: Kingdom
-- exists: 1918..1944
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62623 | Kalmar Union
 
@@ -196,4 +182,18 @@ gap_rows: 25
 - exists: 1810..1813
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q706553 | County of Nice
+
+- rank: County
+- exists: 1388..1818
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q70972 | Kingdom of France
+
+- rank: Kingdom
+- exists: 987..1791
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

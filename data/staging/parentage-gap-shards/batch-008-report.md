@@ -1,40 +1,26 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 25
+gap_rows: 23
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 16 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Duchy | 6 |
 | Empire | 1 |
-| Kingdom | 16 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q706553 | County of Nice
-
-- rank: County
-- exists: 1388..1818
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q70972 | Kingdom of France
-
-- rank: Kingdom
-- exists: 987..1791
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q71084 | First French Empire
 

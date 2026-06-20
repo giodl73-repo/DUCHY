@@ -8842,3 +8842,21 @@ span: 1569..1621
 value: title-q172107
 source_ids: src-wikidata-q1352878, src-wikidata-q172107
 confidence: multi_source
+---
+# Reviewed parentage packet for accepted Polish-Lithuanian Commonwealth child titles.
+
+fact_id: fact-q171348-parent-q172107
+subject_id: title-q171348
+claim_kind: parentage
+span: 1569..1795
+value: title-q172107
+source_ids: src-wikidata-q171348, src-wikidata-q172107
+confidence: multi_source
+---
+fact_id: fact-q49683-parent-q172107
+subject_id: title-q49683
+claim_kind: parentage
+span: 1569..1795
+value: title-q172107
+source_ids: src-wikidata-q49683, src-wikidata-q172107
+confidence: multi_source
