@@ -202,7 +202,10 @@ Pulses:
 72. Russian Empire Finland parentage packet. Complete for promoting Russian
     Empire and importing Grand Duchy of Finland -> Russian Empire for
     1809-1917.
-73. Next reviewed parentage packet.
+73. Gorizia and Gradisca Austrian parentage packet. Complete for correcting
+    Q692946 to County rank and importing Gorizia and Gradisca -> Austrian
+    Empire for 1804-1866 and -> Austria-Hungary for 1867-1918.
+74. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -87,6 +87,7 @@ records and validation.
 | 69 | Theocratic state parentage packet | complete | Add `TheocraticState` rank support, promote Papal States, and import Comtat Venaissin -> Papal States parentage. |
 | 70 | Kingdom of Poland German Empire parentage | complete | Import the reviewed 1916-1918 Kingdom of Poland -> German Empire relation. |
 | 71 | Russian Empire Finland parentage | complete | Promote Russian Empire and import Grand Duchy of Finland -> Russian Empire parentage. |
+| 72 | Gorizia and Gradisca Austrian parentage | complete | Correct Gorizia and Gradisca to County rank and import Austrian Empire/Austria-Hungary parentage. |
 
 ## Success Criteria
 

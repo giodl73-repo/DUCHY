@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 15 |
-| medium_parentage_review | 5 |
-| root_or_successor_review | 5 |
+| medium_parentage_review | 6 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Duchy | 13 |
-| Empire | 5 |
-| Kingdom | 5 |
+| Empire | 4 |
+| Kingdom | 6 |
 
 ## Review Rows
 
@@ -127,13 +127,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q692946 | Gorizia and Gradisca
-
-- rank: Empire
-- exists: 1754..1919
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q693570 | Duchy of Ferrara
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1804..1815
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q733799 | Kingdom of the Hwicce
+
+- rank: Kingdom
+- exists: 577..780
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

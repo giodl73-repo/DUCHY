@@ -1,0 +1,17 @@
+# Reviewed parentage packet for Gorizia and Gradisca under Austrian parent titles.
+
+fact_id: fact-q692946-parent-q131964
+subject_id: title-q692946
+claim_kind: parentage
+span: 1804..1866
+value: title-q131964
+source_ids: src-wikidata-q692946, src-wikidata-q131964
+confidence: multi_source
+---
+fact_id: fact-q692946-parent-q28513
+subject_id: title-q692946
+claim_kind: parentage
+span: 1867..1918
+value: title-q28513
+source_ids: src-wikidata-q692946, src-wikidata-q28513
+confidence: multi_source

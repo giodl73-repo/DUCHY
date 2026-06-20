@@ -1,20 +1,20 @@
 # DUCHY Parentage Coverage Report
 
 sources: 338
-facts: 1155
+facts: 1157
 titles: 327
-parentage_facts: 174
-titles_with_parentage: 131
-titles_without_parentage: 196
+parentage_facts: 176
+titles_with_parentage: 132
+titles_without_parentage: 195
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 28 | 15 | 13 |
+| County | 29 | 16 | 13 |
 | Crown | 3 | 0 | 3 |
 | Duchy | 135 | 86 | 49 |
-| Empire | 40 | 0 | 40 |
+| Empire | 39 | 0 | 39 |
 | Kingdom | 120 | 30 | 90 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -185,7 +185,6 @@ titles_without_parentage: 196
 - title-q682001 | Duchy of Bytom | Duchy | 1281..1498
 - title-q684030 | Principality of Serbia | Duchy | 1815..1882
 - title-q686312 | Duchy of Amalfi | Duchy | 839..1137
-- title-q692946 | Gorizia and Gradisca | Empire | 1754..1919
 - title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
 - title-q698089 | Grand Duchy of Wurzburg | Duchy | 1806..1814
 - title-q699923 | Illyrian Provinces | Empire | 1809..1816
@@ -311,6 +310,9 @@ titles_without_parentage: 196
 - title-q686965 | Anhalt-Bernburg
   - fact-q686965-parent-q151624 | title-q151624 | 1815..1863
   - fact-q686965-parent-q12548 | title-q12548 | 1252..1806
+- title-q692946 | Gorizia and Gradisca
+  - fact-q692946-parent-q131964 | title-q131964 | 1804..1866
+  - fact-q692946-parent-q28513 | title-q28513 | 1867..1918
 - title-q693669 | Grand Duchy of Oldenburg
   - fact-q693669-parent-q151624 | title-q151624 | 1816..1866
   - fact-q693669-parent-q150981 | title-q150981 | 1867..1870
