@@ -141,6 +141,17 @@ data/staging/ck3-counties-batch-007-structured-screen.tsv
 data/staging/ck3-counties-batch-007-structured-screen.md
 ```
 
+Batches 008-010 complete the first CK3 queue pass. Batch 008 promotes Hordaland
+title facts; batch 009 defers a false-positive Isle de France top hit; batch
+010 has no bounded top-lead candidates. The canonical CK3 manifest is now
+closed with zero pending rows:
+
+```powershell
+cargo run --bin duchy-import -- manifest data/staging/ck3-counties-500.manifest
+cargo run --bin duchy-import -- rejected-report data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-rejected.md
+cargo run --bin duchy-import -- shard-manifest data/staging/ck3-counties-500.manifest data/staging/ck3-counties-500-shards 50
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.

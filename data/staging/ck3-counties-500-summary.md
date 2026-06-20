@@ -5,7 +5,7 @@ source_page: `https://ck3.paradoxwikis.com/List_of_counties`
 parsed_county_rows: 3476
 europe_bucket_rows: 1069
 selected_candidates: 500
-status: pending
+status: closed
 
 ## Boundary
 
@@ -41,13 +41,24 @@ Europe-facing buckets:
 - `data/staging/ck3-counties-500.manifest`
 - `data/staging/ck3-counties-500-report.md`
 - `data/staging/ck3-counties-500-duplicate-urls.md`
+- `data/staging/ck3-counties-500-rejected.md`
+- `data/staging/ck3-counties-500-closed.manifest`
 - `data/staging/ck3-counties-500-shards/INDEX.md`
 
 ## Validation Snapshot
 
 - candidates: 500
-- pending: 500
+- pending: 0
 - reviewed: 0
 - promoted: 0
-- rejected: 0
+- rejected: 500
 - duplicate source URLs: 0
+
+## Closure
+
+All 10 shards have Wikidata top-lead research and structured-claim screens.
+The CK3 rows themselves are archived as `scope_deferred` discovery records,
+because CK3 is a search driver rather than an accepted historical source.
+
+Reviewed independent sources and facts promoted from those screens live in the
+accepted source/fact fixtures and their packet-specific staging reports.

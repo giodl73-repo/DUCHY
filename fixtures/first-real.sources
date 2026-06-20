@@ -4329,3 +4329,17 @@ notes: CK3 candidate c_donjikraji / Donji Kraji; Wikidata lead Donji Kraji (Q529
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted as a source-resolution record only. Title facts are deferred because region/zemlja rank semantics are not materialized in DUCHY.
+---
+# Reviewed source-resolution record from CK3 batch 008 structured screen.
+
+source_id: src-wikidata-q50625
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q50625
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_hordalandi / Hörðaland; Wikidata lead Hordaland (Q50625), former county of Norway with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, county rank, inception, and dissolution only.

@@ -1,4 +1,3 @@
-# Archived candidate manifest generated from staging queue.
 candidate_id: cand-ck3-c_aachen
 source_id: src-ck3-county-c_aachen
 source_url: https://ck3.paradoxwikis.com/List_of_counties#Aachen
@@ -7498,3 +7497,5 @@ parentage_status: candidate_available
 query_readiness: unsupported
 exclusion_reason: scope_deferred
 notes: CK3 Europe discovery row screened as search driver; direct CK3 row archived after shard research. Resolve to independent historical source before any future promotion. County: Linlithgowshire; Duchy: Lothian; Kingdoms: Scotland/Scotland/Scotland; Empires: Britannia/Britannia/Britannia; CK id: c_linlithgowshire
+---
+
