@@ -71,9 +71,10 @@ for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The remaining clean title-identity queue promotion extends the accepted fixture
 set to 319 reviewed sources. After follow-on German, Austrian, Holy Roman
-Empire, and France parentage packets, the accepted fact catalog contains 1093
-reviewed facts. The title promotion adds title identity, rank, and existence
-facts only; parentage remains a separate review step.
+Empire, France, and residual German Confederation parentage packets, the
+accepted fact catalog contains 1097 reviewed facts. The title promotion adds
+title identity, rank, and existence facts only; parentage remains a separate
+review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
 relation-heavy, non-title, free-city, administrative-region, and otherwise
 unsupported candidates are archived as `scope_deferred` rejections, leaving only
@@ -87,8 +88,9 @@ additional accepted German Confederation, North German Confederation, and German
 Empire-era titles. The first Austrian parentage packet adds 15 reviewed spans
 for Austrian Empire and Austria-Hungary-era titles. The first Holy Roman Empire
 parentage packet adds 70 reviewed pre-1807 spans. The first Kingdom of France
-parentage packet adds 4 reviewed spans, raising reviewed real parentage
-coverage to 136 facts.
+parentage packet adds 4 reviewed spans. The residual German Confederation
+packet adds 4 reviewed spans, raising reviewed real parentage coverage to 140
+facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

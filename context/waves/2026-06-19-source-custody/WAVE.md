@@ -60,6 +60,7 @@ records and validation.
 | 42 | Austrian parentage packet | complete | Import Austrian Empire and Austria-Hungary parentage facts using accepted source records. |
 | 43 | Holy Roman Empire parentage packet | complete | Import Holy Roman Empire parentage facts using accepted source records. |
 | 44 | Kingdom of France parentage packet | complete | Import France parentage facts using accepted source records and non-overlapping spans. |
+| 45 | Residual German Confederation parentage packet | complete | Import remaining clean German Confederation parentage facts using accepted source records. |
 
 ## Success Criteria
 

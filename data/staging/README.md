@@ -103,6 +103,7 @@ cargo run --bin duchy-promote -- --dry-run --report data/staging/german-parentag
 cargo run --bin duchy-promote -- --dry-run --report data/staging/austrian-parentage-01-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/austrian-parentage-01.sources data/staging/austrian-parentage-01.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/hre-parentage-01-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/hre-parentage-01.sources data/staging/hre-parentage-01.facts
 cargo run --bin duchy-promote -- --dry-run --report data/staging/france-parentage-01-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/france-parentage-01.sources data/staging/france-parentage-01.facts
+cargo run --bin duchy-promote -- --dry-run --report data/staging/german-parentage-03-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/german-parentage-03.sources data/staging/german-parentage-03.facts
 ```
 
 Add `--report path/to/report.md` after the mode to produce a review artifact:

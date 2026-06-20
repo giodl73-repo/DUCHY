@@ -127,7 +127,9 @@ Pulses:
     under the Holy Roman Empire using existing accepted source records.
 45. Kingdom of France parentage packet. Complete for 4 parentage-only facts
     using existing accepted source records and excluding overlapping HRE spans.
-46. Next reviewed parentage packet.
+46. Residual German Confederation parentage packet. Complete for 4
+    parentage-only facts using existing accepted source records.
+47. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

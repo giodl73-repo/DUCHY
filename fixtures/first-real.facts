@@ -8434,3 +8434,37 @@ span: 987..1477
 value: title-q70972
 source_ids: src-wikidata-q4712, src-wikidata-q70972
 confidence: multi_source
+---
+# Reviewed residual parentage packet for German Confederation titles.
+
+fact_id: fact-q704288-parent-q151624
+subject_id: title-q704288
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q704288, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q673865-parent-q151624
+subject_id: title-q673865
+claim_kind: parentage
+span: 1815..1850
+value: title-q151624
+source_ids: src-wikidata-q673865, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q157013-parent-q151624
+subject_id: title-q157013
+claim_kind: parentage
+span: 1815..1850
+value: title-q151624
+source_ids: src-wikidata-q157013, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q313175-parent-q151624
+subject_id: title-q313175
+claim_kind: parentage
+span: 1815..1866
+value: title-q151624
+source_ids: src-wikidata-q313175, src-wikidata-q151624
+confidence: multi_source
