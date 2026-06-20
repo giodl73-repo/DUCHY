@@ -76,6 +76,7 @@ records and validation.
 | 58 | Accepted relation bridges parentage packet | complete | Import 4 parentage-only facts using already accepted source records and structured relation review. |
 | 59 | Second accepted relation bridges parentage packet | complete | Import 11 non-overlapping parentage-only facts using accepted source records and structured relation review. |
 | 60 | Parentage coverage report | complete | Add a repeatable report for hierarchy coverage by rank, unparented titles, and multi-parentage review targets. |
+| 61 | Parentage gap TSV queue | complete | Export the 211 unparented accepted titles as a machine-readable review queue with rank-based priority. |
 
 ## Success Criteria
 

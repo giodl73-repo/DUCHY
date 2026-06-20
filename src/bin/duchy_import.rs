@@ -50,6 +50,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-coverage-report" {
             return parentage_coverage_report(sources_path, facts_path, output_path);
         }
+        if command == "parentage-gap-tsv" {
+            return parentage_gap_tsv(sources_path, facts_path, output_path);
+        }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
         if command == "shard-manifest" {
@@ -65,7 +68,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv".to_string(),
             ])
         }
     };
@@ -224,6 +227,74 @@ fn parentage_coverage_report(
     println!("- titles: {}", titles.len());
     println!("- parentage facts: {}", parentage_facts.len());
     println!("- titles without parentage: {}", unparented.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn parentage_gap_tsv(
+    sources_path: &str,
+    facts_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let source_text = fs::read_to_string(sources_path)
+        .map_err(|error| vec![format!("failed to read {sources_path}: {error}")])?;
+    let fact_text = fs::read_to_string(facts_path)
+        .map_err(|error| vec![format!("failed to read {facts_path}: {error}")])?;
+
+    let catalog = duchy::SourceCatalog::from_metadata_text(&source_text)?;
+    let facts = duchy::fact_records_from_text(&fact_text)?;
+    duchy::validate_fact_records(&catalog, &facts)?;
+    let titles = duchy::source_backed_titles_from_facts(&catalog, &facts)?;
+    let timeline = duchy::source_backed_timeline_from_facts(&catalog, &facts)?;
+    timeline.validate().map_err(|errors| {
+        errors
+            .into_iter()
+            .map(|error| format!("timeline: {error}"))
+            .collect::<Vec<_>>()
+    })?;
+
+    let mut parentage_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
+    {
+        parentage_by_child
+            .entry(fact.subject_id.as_str())
+            .or_default()
+            .push(fact);
+    }
+
+    let mut output = String::new();
+    output.push_str("title_id\tname\trank\texists\tparentage_count\treview_priority\tnotes\n");
+    let mut gap_count = 0;
+    for title in titles
+        .iter()
+        .filter(|title| !parentage_by_child.contains_key(title.id.as_str()))
+    {
+        output.push_str(&tsv_escape(&title.id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&title.name));
+        output.push('\t');
+        output.push_str(title_rank_label(title.rank));
+        output.push('\t');
+        output.push_str(&year_span_label(&title.exists));
+        output.push('\t');
+        output.push('0');
+        output.push('\t');
+        output.push_str(parentage_gap_priority(title.rank));
+        output.push('\t');
+        output.push_str(parentage_gap_note(title.rank));
+        output.push('\n');
+        gap_count += 1;
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage gap TSV");
+    println!("- titles: {}", titles.len());
+    println!("- gap rows: {gap_count}");
     println!("- output: {output_path}");
 
     Ok(())
@@ -894,6 +965,32 @@ fn year_span_label(span: &duchy::YearSpan) -> String {
         Some(end) => format!("{}..{end}", span.start),
         None => format!("{}..", span.start),
     }
+}
+
+fn parentage_gap_priority(rank: duchy::TitleRank) -> &'static str {
+    match rank {
+        duchy::TitleRank::County => "high_parentage_review",
+        duchy::TitleRank::Duchy => "high_parentage_review",
+        duchy::TitleRank::Kingdom => "medium_parentage_review",
+        duchy::TitleRank::Empire => "root_or_successor_review",
+    }
+}
+
+fn parentage_gap_note(rank: duchy::TitleRank) -> &'static str {
+    match rank {
+        duchy::TitleRank::County => "Find reviewed duchy, kingdom, or empire parentage source.",
+        duchy::TitleRank::Duchy => "Find reviewed kingdom or empire parentage source.",
+        duchy::TitleRank::Kingdom => {
+            "Find reviewed empire, union, confederation, or successor-context source."
+        }
+        duchy::TitleRank::Empire => {
+            "May be a root title; review only if successor, union, or super-entity claim exists."
+        }
+    }
+}
+
+fn tsv_escape(value: &str) -> String {
+    value.replace(['\t', '\r', '\n'], " ").trim().to_string()
 }
 
 fn import_scope_label(import_scope: duchy::ImportScope) -> &'static str {

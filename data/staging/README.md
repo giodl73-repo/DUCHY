@@ -241,3 +241,9 @@ Parentage coverage can be regenerated from the accepted fixture catalog:
 ```powershell
 cargo run --bin duchy-import -- parentage-coverage-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-coverage-report.md
 ```
+
+Parentage gap queues can be regenerated as TSV for batch review:
+
+```powershell
+cargo run --bin duchy-import -- parentage-gap-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-gap-targets.tsv
+```

@@ -174,7 +174,9 @@ Pulses:
     overlapping structured `P17` relation review.
 61. Parentage coverage report. Complete for a repeatable CLI report that
     summarizes parentage coverage by rank and lists title hierarchy gaps.
-62. Next reviewed parentage packet.
+62. Parentage gap TSV queue. Complete for a machine-readable 211-row queue of
+    unparented accepted titles with rank-based review priority.
+63. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
