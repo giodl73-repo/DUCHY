@@ -131,6 +131,16 @@ cargo run --bin duchy-promote -- --dry-run --report data/staging/ck3-batch-006-s
 cargo run --bin duchy-promote -- --apply --report data/staging/ck3-batch-006-source-resolution-apply-report.md fixtures/first-real.sources fixtures/first-real.facts data/staging/ck3-batch-006-source-resolution.sources data/staging/ck3-batch-006-source-resolution.facts
 ```
 
+Batch 007 currently has research and structured-screen artifacts only; no top
+lead had bounded date claims suitable for promotion:
+
+```text
+data/staging/ck3-counties-batch-007-wikidata-research.tsv
+data/staging/ck3-counties-batch-007-wikidata-research.md
+data/staging/ck3-counties-batch-007-structured-screen.tsv
+data/staging/ck3-counties-batch-007-structured-screen.md
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
