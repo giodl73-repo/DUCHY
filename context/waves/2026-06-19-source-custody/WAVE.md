@@ -44,6 +44,7 @@ records and validation.
 | 26 | Manifest review report | complete | List every candidate grouped by queue status for inspection. |
 | 27 | Duplicate URL report | complete | Report repeated candidate source URLs before source review. |
 | 28 | Manifest TSV export | complete | Write fixed-column candidate queue exports for batch tooling. |
+| 29 | Manifest TSV import | complete | Convert fixed-column TSV candidate queues into validated manifests. |
 
 ## Success Criteria
 

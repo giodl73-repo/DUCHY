@@ -78,6 +78,7 @@ git diff --check
 | EVID-035 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-report`; `context/waves/2026-06-19-source-custody/pulses/pulse-26.md` | Candidate manifests generate Markdown review reports grouped by queue status. | pass on 2026-06-19 |
 | EVID-036 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- duplicate-url-report`; `context/waves/2026-06-19-source-custody/pulses/pulse-27.md` | Candidate manifests generate duplicate source URL hygiene reports. | pass on 2026-06-19 |
 | EVID-037 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-tsv`; `context/waves/2026-06-19-source-custody/pulses/pulse-28.md` | Candidate manifests generate fixed-column TSV exports for batch tooling. | pass on 2026-06-19 |
+| EVID-038 | test/demo/review | `cargo test --quiet`; temp `cargo run --bin duchy-import -- manifest-from-tsv`; `context/waves/2026-06-19-source-custody/pulses/pulse-29.md` | Fixed-column TSV candidate queues generate validated manifests. | pass on 2026-06-19 |
 
 ## Gaps
 

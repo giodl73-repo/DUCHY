@@ -23,6 +23,7 @@ cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest d
 cargo run --bin duchy-import -- manifest-report data/staging/example.manifest data/staging/manifest-report.md
 cargo run --bin duchy-import -- duplicate-url-report data/staging/example.manifest data/staging/duplicate-urls.md
 cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/staging/manifest.tsv
+cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data/staging/from-tsv.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 ```
 
@@ -39,6 +40,8 @@ Duplicate URL reports flag repeated source pointers before source-custody
 review.
 Manifest TSV exports provide a machine-readable queue summary for batch
 tooling.
+Manifest TSV imports convert fixed-column batch files back into validated
+candidate manifests.
 Manifest shards split larger queues into fixed-size, parseable review batches
 and write `INDEX.md` with per-shard status counts.
 

@@ -28,6 +28,7 @@ cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest d
 cargo run --bin duchy-import -- manifest-report data/staging/example.manifest data/staging/manifest-report.md
 cargo run --bin duchy-import -- duplicate-url-report data/staging/example.manifest data/staging/duplicate-urls.md
 cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/staging/manifest.tsv
+cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data/staging/from-tsv.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 ```
 

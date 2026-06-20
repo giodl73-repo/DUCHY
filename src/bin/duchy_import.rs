@@ -42,6 +42,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "manifest-tsv" {
             return manifest_tsv(manifest_path, output_path);
         }
+        if command == "manifest-from-tsv" {
+            return manifest_from_tsv(manifest_path, output_path);
+        }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
         if command == "shard-manifest" {
@@ -57,7 +60,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | shard-manifest manifest-file output-dir chunk-size".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size".to_string(),
             ])
         }
     };
@@ -515,6 +518,69 @@ fn manifest_tsv(manifest_path: &str, output_path: &str) -> Result<(), Vec<String
     Ok(())
 }
 
+fn manifest_from_tsv(input_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let mut lines = input_text.lines();
+    let Some(header) = lines.next() else {
+        return Err(vec![format!("{input_path} is empty")]);
+    };
+    let expected_header = "candidate_id\tsource_id\tsource_url\tstatus\tnotes";
+    if header != expected_header {
+        return Err(vec![format!(
+            "invalid TSV header in {input_path}: expected {expected_header}"
+        )]);
+    }
+
+    let mut output = String::new();
+    output.push_str("# Candidate manifest generated from TSV import.\n");
+    let mut candidate_count = 0;
+    for (line_index, line) in lines.enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+        let fields = line.split('\t').collect::<Vec<_>>();
+        let line_number = line_index + 2;
+        if fields.len() != 5 {
+            return Err(vec![format!(
+                "line {line_number}: expected 5 TSV columns, found {}",
+                fields.len()
+            )]);
+        }
+        let candidate_id = manifest_tsv_cell(fields[0], line_number)?;
+        let source_id = manifest_tsv_cell(fields[1], line_number)?;
+        let source_url = manifest_tsv_cell(fields[2], line_number)?;
+        let status = manifest_tsv_cell(fields[3], line_number)?;
+        let notes = manifest_tsv_cell(fields[4], line_number)?;
+
+        if candidate_count > 0 {
+            output.push_str("---\n");
+        }
+        output.push_str(&format!("candidate_id: {candidate_id}\n"));
+        output.push_str(&format!("source_id: {source_id}\n"));
+        output.push_str(&format!("source_url: {source_url}\n"));
+        output.push_str(&format!("status: {status}\n"));
+        if !notes.is_empty() {
+            output.push_str(&format!("notes: {notes}\n"));
+        }
+        candidate_count += 1;
+    }
+    if candidate_count == 0 {
+        return Err(vec![format!("{input_path} has no candidate rows")]);
+    }
+
+    let parsed_output = duchy::candidate_records_from_text(&output)?;
+    duchy::validate_candidate_records(&parsed_output)?;
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY manifest from TSV");
+    println!("- candidates: {candidate_count}");
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn candidate_manifest_block(candidate: &duchy::CandidateRecord) -> String {
     let mut output = String::new();
     output.push_str(&format!("candidate_id: {}\n", candidate.candidate_id));
@@ -617,4 +683,33 @@ fn tsv_cell(value: &str) -> String {
         .replace('\t', "\\t")
         .replace('\r', "\\r")
         .replace('\n', "\\n")
+}
+
+fn manifest_tsv_cell(value: &str, line_number: usize) -> Result<String, Vec<String>> {
+    let mut output = String::new();
+    let mut chars = value.chars();
+    while let Some(character) = chars.next() {
+        if character != '\\' {
+            output.push(character);
+            continue;
+        }
+        let Some(escaped) = chars.next() else {
+            return Err(vec![format!("line {line_number}: trailing TSV escape")]);
+        };
+        match escaped {
+            '\\' => output.push('\\'),
+            't' => output.push('\t'),
+            'r' | 'n' => {
+                return Err(vec![format!(
+                    "line {line_number}: escaped line breaks are not supported by manifest import"
+                )])
+            }
+            other => {
+                return Err(vec![format!(
+                    "line {line_number}: unsupported TSV escape \\{other}"
+                )])
+            }
+        }
+    }
+    Ok(output)
 }

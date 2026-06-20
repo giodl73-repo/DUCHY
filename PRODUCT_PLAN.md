@@ -89,7 +89,8 @@ Pulses:
 27. Manifest review report. Complete for status-grouped candidate inspection.
 28. Duplicate URL report. Complete for repeated candidate source URL hygiene.
 29. Manifest TSV export. Complete for machine-readable candidate queues.
-30. Next reviewed import packet.
+30. Manifest TSV import. Complete for fixed-column batch queue intake.
+31. Next reviewed import packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

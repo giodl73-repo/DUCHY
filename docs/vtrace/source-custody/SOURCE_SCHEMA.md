@@ -129,6 +129,7 @@ cargo run --bin duchy-import -- archive-manifest data/staging/example.manifest d
 cargo run --bin duchy-import -- manifest-report data/staging/example.manifest data/staging/manifest-report.md
 cargo run --bin duchy-import -- duplicate-url-report data/staging/example.manifest data/staging/duplicate-urls.md
 cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/staging/manifest.tsv
+cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data/staging/from-tsv.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 cargo run --bin duchy-import -- status fixtures/first-real.sources fixtures/first-real.facts
 cargo run --bin duchy-promote -- --dry-run fixtures/first-real.sources fixtures/first-real.facts data/staging/example.sources data/staging/example.facts
@@ -175,6 +176,8 @@ candidate grouped by queue status.
 `duchy-import duplicate-url-report` writes a Markdown hygiene report for
 repeated candidate source URLs.
 `duchy-import manifest-tsv` writes a fixed-column TSV export for batch tooling.
+`duchy-import manifest-from-tsv` writes a validated candidate manifest from the
+same fixed-column TSV shape.
 `duchy-import shard-manifest` writes fixed-size parseable manifest shards for
 large candidate queues that need smaller source-custody review batches. It also
 writes `INDEX.md` with per-shard candidate and status counts.
