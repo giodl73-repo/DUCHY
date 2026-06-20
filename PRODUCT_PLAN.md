@@ -149,7 +149,9 @@ Pulses:
 52. CK3 batch 002 source-resolution packet. Complete for a second 50-row
     Wikidata search packet, structured screen, and 2 source-only records for
     Arbanon and Béarn with title facts deferred for rank semantics.
-53. Next reviewed parentage packet.
+53. CK3 batch 003 research screen. Complete for a third 50-row Wikidata search
+    packet and structured screen, with no bounded top-lead candidates promoted.
+54. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

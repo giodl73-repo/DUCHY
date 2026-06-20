@@ -96,6 +96,16 @@ data/staging/ck3-counties-batch-002-structured-screen.tsv
 data/staging/ck3-counties-batch-002-structured-screen.md
 ```
 
+Batch 003 currently has research and structured-screen artifacts only; no top
+lead had bounded date claims suitable for promotion:
+
+```text
+data/staging/ck3-counties-batch-003-wikidata-research.tsv
+data/staging/ck3-counties-batch-003-wikidata-research.md
+data/staging/ck3-counties-batch-003-structured-screen.tsv
+data/staging/ck3-counties-batch-003-structured-screen.md
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
