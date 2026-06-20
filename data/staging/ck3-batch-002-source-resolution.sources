@@ -1,0 +1,26 @@
+# Reviewed source-resolution records from CK3 batch 002 structured screen.
+# Facts are deferred because rank semantics are unresolved.
+
+source_id: src-wikidata-q2454379
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2454379
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_arbanon / Arbanon; Wikidata lead Principality of Arbanon (Q2454379), Albanian principality with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. Title facts are deferred because DUCHY rank semantics for principality are not materialized yet.
+---
+source_id: src-wikidata-q213763
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q213763
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: CK3 candidate c_bearn / Béarn; Wikidata lead Béarn (Q213763), former province of France with structured inception and dissolution claims.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as a source-resolution record only. Title facts are deferred because former-province rank and identity semantics need manual review.

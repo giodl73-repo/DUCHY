@@ -87,6 +87,15 @@ data/staging/ck3-counties-batch-001-structured-screen.tsv
 data/staging/ck3-counties-batch-001-structured-screen.md
 ```
 
+Batch 002 repeats the same research and structured-screen workflow:
+
+```text
+data/staging/ck3-counties-batch-002-wikidata-research.tsv
+data/staging/ck3-counties-batch-002-wikidata-research.md
+data/staging/ck3-counties-batch-002-structured-screen.tsv
+data/staging/ck3-counties-batch-002-structured-screen.md
+```
+
 Generated source stubs are blocked by default and must be reviewed before they
 can support fact promotion.
 Rejected reports preserve rejected candidates and notes for audit.
