@@ -73,7 +73,8 @@ records and validation.
 | 55 | CK3 batch 006 source-resolution packet | complete | Query and screen the sixth CK3 shard, then promote Donji Kraji as source-only while skipping already accepted Duklja. |
 | 56 | CK3 batch 007 research screen | complete | Query and screen the seventh CK3 shard; no top leads have bounded date pairs for promotion. |
 | 57 | CK3 queue closure | complete | Query and screen final shards 008-010, promote Hordaland title facts, and close all 500 CK3 discovery rows as scope-deferred. |
-| 58 | Accepted relation bridges parentage packet | complete | Import 6 parentage-only facts using already accepted source records and structured relation review. |
+| 58 | Accepted relation bridges parentage packet | complete | Import 4 parentage-only facts using already accepted source records and structured relation review. |
+| 59 | Second accepted relation bridges parentage packet | complete | Import 11 non-overlapping parentage-only facts using accepted source records and structured relation review. |
 
 ## Success Criteria
 
