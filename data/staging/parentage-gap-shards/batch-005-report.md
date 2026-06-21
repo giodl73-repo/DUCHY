@@ -44,13 +44,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 
-### title-q5177890 | County of Luxembourg
-
-- rank: County
-- exists: 963..1354
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q56089236 | Kingdom of Western Georgia
 
 - rank: Kingdom
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1281..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q675363 | County of Geneva
+
+- rank: County
+- exists: 900..1401
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

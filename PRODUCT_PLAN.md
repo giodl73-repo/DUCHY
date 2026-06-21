@@ -320,7 +320,10 @@ Pulses:
 113. Duchy of Cleves HRE parentage packet. Complete for adding a reviewed
      Wikimedia text source and importing Duchy of Cleves -> Holy Roman Empire
      for 1092-1795.
-114. Next reviewed parentage packet.
+114. County of Luxembourg HRE parentage packet. Complete for adding a reviewed
+     Wikimedia text source and importing County of Luxembourg -> Holy Roman
+     Empire for 963-1354.
+115. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

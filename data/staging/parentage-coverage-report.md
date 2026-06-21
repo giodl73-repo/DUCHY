@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
-sources: 374
-facts: 1222
+sources: 375
+facts: 1223
 titles: 335
-parentage_facts: 217
-titles_with_parentage: 173
-titles_without_parentage: 162
+parentage_facts: 218
+titles_with_parentage: 174
+titles_without_parentage: 161
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 21 | 9 |
+| County | 30 | 22 | 8 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 110 | 27 |
 | Empire | 38 | 0 | 38 |
@@ -125,7 +125,6 @@ titles_without_parentage: 162
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
 - title-q50625 | Hordaland | County | 1919..2019
-- title-q5177890 | County of Luxembourg | County | 963..1354
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q566639 | Duchy of Opava | Duchy | 1269..1918
 - title-q568638 | Duchy of Silesia | Duchy | 1138..1742

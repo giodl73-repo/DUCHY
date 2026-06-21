@@ -70,7 +70,7 @@ kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The title-identity queue promotions and follow-on parentage packets extend the
-accepted fixture set to 374 reviewed sources and 1222 reviewed facts. Title
+accepted fixture set to 375 reviewed sources and 1223 reviewed facts. Title
 promotion adds title identity, rank, and existence facts only; parentage remains
 a separate review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
@@ -107,7 +107,8 @@ packets, then the Margraviate of Austria HRE, Grand Duchy of Berg Rhine
 Confederation, Duchy of Modena and Reggio HRE, County of Wurttemberg HRE,
 Duchy of Austria HRE, Duchy of Athens Thessalonica, Kingdom of Thessalonica
 Latin Empire, and Duchy of Cleves HRE packets, raising reviewed real parentage
-coverage to 217 facts.
+coverage to 217 facts, followed by the County of Luxembourg HRE packet,
+raising reviewed real parentage coverage to 218 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

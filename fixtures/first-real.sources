@@ -4833,3 +4833,15 @@ notes: Duchy of Cleves article; used only for textual parentage context that ide
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Duchy of Cleves parentage context only; no Lower Lotharingia predecessor detail, counts or dukes genealogy, union with Mark, elevation to duchy detail, United Duchies of Julich-Cleves-Berg continuation, Brandenburg succession, Grand Duchy of Berg transfer, Prussian province, or post-1795 settlement imported.
+---
+source_id: src-wikipedia-county-luxembourg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Luxembourg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Luxembourg article; used only for textual parentage context that identifies the county as a state of the Holy Roman Empire from 963 until elevation to Duchy of Luxembourg in the mid-14th century.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Luxembourg parentage context only; no Ardennes genealogy, Luxembourg dynasty, imperial elections, Duchy of Luxembourg continuation, Burgundian or Habsburg Netherlands, French annexation, grand-duchy, or later Luxembourg claims imported.

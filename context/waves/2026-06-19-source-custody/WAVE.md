@@ -128,6 +128,7 @@ records and validation.
 | 110 | Duchy of Athens Thessalonica parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Athens parentage under the Kingdom of Thessalonica. |
 | 111 | Kingdom of Thessalonica Latin Empire parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Thessalonica parentage under the Latin Empire. |
 | 112 | Duchy of Cleves HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Cleves parentage under the Holy Roman Empire. |
+| 113 | County of Luxembourg HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Luxembourg parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

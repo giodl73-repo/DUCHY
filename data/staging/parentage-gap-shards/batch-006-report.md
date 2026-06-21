@@ -7,28 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 14 |
-| medium_parentage_review | 8 |
+| high_parentage_review | 13 |
+| medium_parentage_review | 9 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 3 |
+| County | 2 |
 | Crown | 1 |
 | Duchy | 11 |
 | Empire | 3 |
-| Kingdom | 7 |
+| Kingdom | 8 |
 
 ## Review Rows
-
-### title-q675363 | County of Geneva
-
-- rank: County
-- exists: 900..1401
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q676184 | Kingdom of Sussex
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 920..1197
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q837998 | Kingdom of East Anglia
+
+- rank: Kingdom
+- exists: 501..917
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

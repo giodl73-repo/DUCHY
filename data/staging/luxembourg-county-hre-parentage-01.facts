@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for County of Luxembourg under the Holy Roman Empire.
+
+fact_id: fact-q5177890-parent-q12548
+subject_id: title-q5177890
+claim_kind: parentage
+span: 963..1354
+value: title-q12548
+source_ids: src-wikidata-q5177890, src-wikidata-q12548, src-wikipedia-county-luxembourg
+confidence: multi_source

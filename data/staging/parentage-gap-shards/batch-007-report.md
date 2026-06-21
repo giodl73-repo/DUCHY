@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 12
+gap_rows: 11
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 2 |
-| medium_parentage_review | 9 |
+| medium_parentage_review | 8 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
@@ -17,16 +17,9 @@ gap_rows: 12
 |---|---:|
 | Duchy | 2 |
 | Empire | 1 |
-| Kingdom | 9 |
+| Kingdom | 8 |
 
 ## Review Rows
-
-### title-q837998 | Kingdom of East Anglia
-
-- rank: Kingdom
-- exists: 501..917
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q83958 | Macedonia
 
