@@ -191,10 +191,10 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q188586 | Kingdom of Sicily
+### title-q19083 | Kingdom of Iberia
 
 - rank: Kingdom
-- exists: 1130..1816
+- exists: -299..580
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

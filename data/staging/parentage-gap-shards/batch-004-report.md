@@ -7,24 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 16 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 17 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 9 |
-| Kingdom | 16 |
+| Empire | 8 |
+| Kingdom | 17 |
 
 ## Review Rows
-
-### title-q3181749 | Arab Caliphate
-
-- rank: Empire
-- exists: 632..1517
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q31929 | Carolingian Empire
 
@@ -191,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1526..1570
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62567 | Kingdom of Iceland
+
+- rank: Kingdom
+- exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

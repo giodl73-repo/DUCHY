@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 126
+gap_rows: 125
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 86 |
+| medium_parentage_review | 85 |
 | root_or_successor_review | 38 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 126
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 38 |
-| Kingdom | 82 |
+| Kingdom | 81 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -363,13 +363,6 @@ gap_rows: 126
 
 - rank: Kingdom
 - exists: 893..1020
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q188586 | Kingdom of Sicily
-
-- rank: Kingdom
-- exists: 1130..1816
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

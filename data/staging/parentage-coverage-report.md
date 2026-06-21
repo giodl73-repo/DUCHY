@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 413
-facts: 1263
+sources: 414
+facts: 1264
 titles: 336
-parentage_facts: 255
-titles_with_parentage: 210
-titles_without_parentage: 126
+parentage_facts: 256
+titles_with_parentage: 211
+titles_without_parentage: 125
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 126
 | Duchy | 137 | 135 | 2 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 40 | 82 |
+| Kingdom | 122 | 41 | 81 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -71,7 +71,6 @@ titles_without_parentage: 126
 - title-q186537 | Khanate of Qazan | Empire | 1438..1552
 - title-q187035 | Principality of Albania | Duchy | 1914..1925
 - title-q187461 | Kingdom of Hereti | Kingdom | 893..1020
-- title-q188586 | Kingdom of Sicily | Kingdom | 1130..1816
 - title-q19083 | Kingdom of Iberia | Kingdom | -299..580
 - title-q191077 | Kingdom of Yugoslavia | Kingdom | 1929..1945
 - title-q191484 | Old Great Bulgaria | Empire | 632..668

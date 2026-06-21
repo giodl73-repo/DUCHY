@@ -5305,3 +5305,17 @@ notes: Kingdom of Italy (Napoleonic) article; used only for textual parentage co
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed parentage context only; no viceroyalty administration, Italian Republic predecessor mechanics, borders, or post-1814 settlement claims imported.
+---
+# Reviewed text-backed parentage packet for Kingdom of Sicily under the Crown of Aragon.
+
+source_id: src-wikipedia-kingdom-sicily-aragon
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Sicily
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Sicily article; used only for textual parentage context that identifies Sicily as a semi-independent viceroyalty and then part of the Crown of Aragon after the 1282 Sicilian Vespers.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Kingdom of Sicily parentage context only; no Norman foundation, Angevin split, Naples relation, Spanish Habsburg succession, Savoyard period, Austrian rule, Malta fief, borders, or monarch list imported.

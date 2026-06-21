@@ -361,6 +361,8 @@ Pulses:
 127. Medium-priority Napoleonic parentage batch 01. Complete for adding Kingdom
     of Holland, Kingdom of Etruria, and Napoleonic Kingdom of Italy parentage
     under the First French Empire.
+128. Medium-priority Sicily Aragon parentage batch 02. Complete for adding
+    Kingdom of Sicily parentage under the Crown of Aragon.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
