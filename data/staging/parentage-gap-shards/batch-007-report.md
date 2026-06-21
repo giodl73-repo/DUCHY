@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 19
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-007.tsv
+gap_rows: 18
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
+| high_parentage_review | 5 |
 | medium_parentage_review | 12 |
 | root_or_successor_review | 1 |
 
@@ -16,18 +16,11 @@ gap_rows: 19
 | Rank | Rows |
 |---|---:|
 | Crown | 1 |
-| Duchy | 6 |
+| Duchy | 5 |
 | Empire | 1 |
 | Kingdom | 11 |
 
 ## Review Rows
-
-### title-q779011 | Principality of Montenegro
-
-- rank: Duchy
-- exists: 1852..1910
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q7882199 | Burgundian State
 

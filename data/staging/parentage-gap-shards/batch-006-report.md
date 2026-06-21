@@ -1,33 +1,26 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-006.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 15 |
+| high_parentage_review | 16 |
 | medium_parentage_review | 6 |
-| root_or_successor_review | 4 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Duchy | 12 |
-| Empire | 4 |
+| Duchy | 13 |
+| Empire | 3 |
 | Kingdom | 6 |
 
 ## Review Rows
-
-### title-q62651 | Denmark-Norway
-
-- rank: Empire
-- exists: 1536..1814
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q633573 | Kingdom of Rheged
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 851..939
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q779011 | Principality of Montenegro
+
+- rank: Duchy
+- exists: 1852..1910
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

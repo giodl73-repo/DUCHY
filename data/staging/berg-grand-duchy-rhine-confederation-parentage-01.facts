@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Grand Duchy of Berg under the Confederation of the Rhine.
+
+fact_id: fact-q249428-parent-q154741
+subject_id: title-q249428
+claim_kind: parentage
+span: 1806..1813
+value: title-q154741
+source_ids: src-wikidata-q249428, src-wikidata-q154741, src-wikipedia-duchy-berg
+confidence: multi_source

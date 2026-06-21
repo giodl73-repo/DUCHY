@@ -1,23 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-004.tsv
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-004.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
+| high_parentage_review | 5 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 5 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 5 |
-| Empire | 5 |
+| Duchy | 4 |
+| Empire | 6 |
 | Kingdom | 14 |
 
 ## Review Rows
@@ -49,13 +49,6 @@ gap_rows: 25
 - exists: 1882..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q249428 | Grand Duchy of Berg
-
-- rank: Duchy
-- exists: 1806..1813
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q252580 | Duchy of Modena and Reggio
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1910..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q389688 | Achaemenid Empire
+
+- rank: Empire
+- exists: -550..-330
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

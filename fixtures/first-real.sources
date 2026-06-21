@@ -4749,3 +4749,15 @@ notes: Margraviate of Austria article; used only for textual parentage context t
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Margraviate of Austria parentage context only; no Frankish frontier, Bavarian ducal subordination, Babenberg genealogy, Hungarian border, Duchy of Austria continuation, Privilegium Minus detail, or later Austrian claims imported.
+---
+source_id: src-wikipedia-duchy-berg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Berg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Berg article; used only for textual parentage context that identifies Berg's 1806 reorganization as the Grand Duchy of Berg and its short existence ending with Napoleon's defeat in 1813.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Berg parentage context only; no earlier County or Duchy of Berg lineage, Jülich-Cleves-Berg union, Wittelsbach rule, French annexation detail, rulers, Napoleonic administration detail, or post-1813 Prussian settlement imported.

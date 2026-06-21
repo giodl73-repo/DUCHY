@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-005.tsv
 gap_rows: 25
 
 ## Priority Counts
@@ -22,13 +22,6 @@ gap_rows: 25
 | Kingdom | 11 |
 
 ## Review Rows
-
-### title-q389688 | Achaemenid Empire
-
-- rank: Empire
-- exists: -550..-330
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q4208290 | Kazikumukh Khanate
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1397..1523
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q62651 | Denmark-Norway
+
+- rank: Empire
+- exists: 1536..1814
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
