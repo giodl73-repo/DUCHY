@@ -14,8 +14,9 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
+| Crown | 1 |
 | Empire | 8 |
-| Kingdom | 17 |
+| Kingdom | 16 |
 
 ## Review Rows
 
@@ -180,17 +181,17 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q625380 | Eastern Hungarian Kingdom
-
-- rank: Kingdom
-- exists: 1526..1570
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q62567 | Kingdom of Iceland
 
 - rank: Kingdom
 - exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62623 | Kalmar Union
+
+- rank: Crown
+- exists: 1397..1523
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

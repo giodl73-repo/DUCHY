@@ -9911,3 +9911,13 @@ span: 1282..1707
 value: title-q204920
 source_ids: src-wikidata-q188586, src-wikidata-q204920, src-wikipedia-kingdom-sicily-aragon
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Eastern Hungarian Kingdom under the Ottoman Empire.
+
+fact_id: fact-q625380-parent-q12560
+subject_id: title-q625380
+claim_kind: parentage
+span: 1529..1570
+value: title-q12560
+source_ids: src-wikidata-q625380, src-wikidata-q12560, src-wikipedia-eastern-hungarian-kingdom
+confidence: multi_source

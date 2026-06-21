@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 125
+gap_rows: 124
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 85 |
+| medium_parentage_review | 84 |
 | root_or_successor_review | 38 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 125
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 38 |
-| Kingdom | 81 |
+| Kingdom | 80 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -706,13 +706,6 @@ gap_rows: 125
 
 - rank: Kingdom
 - exists: 420..634
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q625380 | Eastern Hungarian Kingdom
-
-- rank: Kingdom
-- exists: 1526..1570
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

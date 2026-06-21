@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 414
-facts: 1264
+sources: 415
+facts: 1265
 titles: 336
-parentage_facts: 256
-titles_with_parentage: 211
-titles_without_parentage: 125
+parentage_facts: 257
+titles_with_parentage: 212
+titles_without_parentage: 124
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 125
 | Duchy | 137 | 135 | 2 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 41 | 81 |
+| Kingdom | 122 | 42 | 80 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -120,7 +120,6 @@ titles_without_parentage: 125
 - title-q603771 | Emirate of Crete | Empire | 820..961
 - title-q612359 | Kingdom of Lithuania | Kingdom | 1918..1918
 - title-q623751 | Kingdom of Bernicia | Kingdom | 420..634
-- title-q625380 | Eastern Hungarian Kingdom | Kingdom | 1526..1570
 - title-q62567 | Kingdom of Iceland | Kingdom | 1918..1944
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814

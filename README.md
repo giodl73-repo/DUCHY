@@ -143,6 +143,9 @@ Etruria, and Napoleonic Kingdom of Italy client-state spans under the First
 French Empire, raising reviewed real parentage coverage to 255 facts.
 The second medium-priority parentage batch adds a Kingdom of Sicily span under
 the Crown of Aragon, raising reviewed real parentage coverage to 256 facts.
+The third medium-priority parentage batch adds Eastern Hungarian Kingdom
+parentage under the Ottoman Empire, raising reviewed real parentage coverage to
+257 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

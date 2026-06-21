@@ -363,6 +363,8 @@ Pulses:
     under the First French Empire.
 128. Medium-priority Sicily Aragon parentage batch 02. Complete for adding
     Kingdom of Sicily parentage under the Crown of Aragon.
+129. Medium-priority Eastern Hungary Ottoman parentage batch 03. Complete for
+    adding Eastern Hungarian Kingdom parentage under the Ottoman Empire.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

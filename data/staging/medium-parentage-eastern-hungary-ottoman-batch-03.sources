@@ -1,0 +1,13 @@
+# Reviewed text-backed parentage packet for Eastern Hungarian Kingdom under the Ottoman Empire.
+
+source_id: src-wikipedia-eastern-hungarian-kingdom
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Eastern_Hungarian_Kingdom
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Eastern Hungarian Kingdom article; used only for textual parentage context that identifies the polity as an Ottoman vassal after John I swore fealty to the Sultan in 1529 and before the 1570 Treaty of Speyer.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Eastern Hungarian Kingdom parentage context only; no Habsburg counterclaim, unsettled territorial extent, Royal Hungary division, Transylvania public-law continuity, borders, holders, or post-1570 principality claims imported.

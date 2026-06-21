@@ -1,33 +1,26 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 25
+gap_rows: 24
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 19 |
+| medium_parentage_review | 18 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 2 |
+| Crown | 1 |
 | Duchy | 1 |
 | Empire | 5 |
 | Kingdom | 17 |
 
 ## Review Rows
-
-### title-q62623 | Kalmar Union
-
-- rank: Crown
-- exists: 1397..1523
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q62651 | Denmark-Norway
 
