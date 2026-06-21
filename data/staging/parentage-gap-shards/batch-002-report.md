@@ -16,10 +16,10 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Crown | 1 |
+| Crown | 2 |
 | Duchy | 4 |
 | Empire | 5 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -52,13 +52,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q153943 | Kingdom of Westphalia
-
-- rank: Kingdom
-- exists: 1807..1813
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q1541613 | County of Astarac
 
 - rank: County
@@ -79,6 +72,13 @@ gap_rows: 25
 - exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q154741 | Confederation of the Rhine
+
+- rank: Crown
+- exists: 1806..1813
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q154849 | Grand Duchy of Tuscany
 

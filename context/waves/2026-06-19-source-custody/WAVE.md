@@ -102,6 +102,7 @@ records and validation.
 | 84 | Prince-Bishopric of Trent HRE parentage | complete | Add a reviewed Wikimedia text source and import Trent parentage under the Holy Roman Empire. |
 | 85 | County of Savoy HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Savoy parentage under the Holy Roman Empire. |
 | 86 | Duchy of Warsaw French Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Warsaw parentage under the First French Empire. |
+| 87 | Confederation of the Rhine Westphalia parentage | complete | Promote Confederation of the Rhine and import Kingdom of Westphalia parentage under it. |
 
 ## Success Criteria
 

@@ -242,7 +242,10 @@ Pulses:
 87. Duchy of Warsaw French Empire parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Duchy of Warsaw -> First
     French Empire for 1807-1815.
-88. Next reviewed parentage packet.
+88. Confederation of the Rhine Westphalia parentage packet. Complete for
+    promoting Confederation of the Rhine and importing Kingdom of Westphalia ->
+    Confederation of the Rhine for 1807-1813.
+89. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

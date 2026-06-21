@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 345
-facts: 1184
-titles: 331
-parentage_facts: 191
-titles_with_parentage: 147
+sources: 346
+facts: 1188
+titles: 332
+parentage_facts: 192
+titles_with_parentage: 148
 titles_without_parentage: 184
 
 ## Coverage By Rank
@@ -12,11 +12,11 @@ titles_without_parentage: 184
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 30 | 18 | 12 |
-| Crown | 5 | 2 | 3 |
+| Crown | 6 | 2 | 4 |
 | Duchy | 136 | 94 | 42 |
 | Empire | 36 | 0 | 36 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 31 | 90 |
+| Kingdom | 121 | 32 | 89 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -51,10 +51,10 @@ titles_without_parentage: 184
 - title-q151624 | German Confederation | Empire | 1815..1866
 - title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
 - title-q153091 | Duchy of Prussia | Duchy | 1525..1618
-- title-q153943 | Kingdom of Westphalia | Kingdom | 1807..1813
 - title-q1541613 | County of Astarac | County | 920..1300
 - title-q1541699 | County of Empuries | County | 812..1402
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
+- title-q154741 | Confederation of the Rhine | Crown | 1806..1813
 - title-q154849 | Grand Duchy of Tuscany | Duchy | 1569..1860
 - title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
 - title-q160440 | Crimean Khanate | Empire | 1441..1783
