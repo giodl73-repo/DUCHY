@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q5177890	County of Luxembourg	County	963..1354	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q56089236	Kingdom of Western Georgia	Kingdom	1259..1330	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q566639	Duchy of Opava	Duchy	1269..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q568638	Duchy of Silesia	Duchy	1138..1742	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q6673921	Lotharingia	Duchy	855..959	0	high_parentage_review	Find reviewed 
 title-q671899	Duchy of Teschen	Duchy	1281..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q675363	County of Geneva	County	900..1401	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q682001	Duchy of Bytom	Duchy	1281..1498	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

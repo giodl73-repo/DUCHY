@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -16,8 +16,8 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Crown | 2 |
-| Duchy | 4 |
+| Crown | 1 |
+| Duchy | 5 |
 | Empire | 5 |
 | Kingdom | 11 |
 | TheocraticState | 1 |
@@ -72,13 +72,6 @@ gap_rows: 25
 - exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q154741 | Confederation of the Rhine
-
-- rank: Crown
-- exists: 1806..1813
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q154849 | Grand Duchy of Tuscany
 
@@ -198,4 +191,11 @@ gap_rows: 25
 - exists: -60..106
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q173863 | Prince-Bishopric of Augsburg
+
+- rank: Duchy
+- exists: 888..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

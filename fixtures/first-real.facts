@@ -9232,3 +9232,13 @@ span: 1807..1813
 value: title-q154741
 source_ids: src-wikidata-q153943, src-wikidata-q154741
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Confederation of the Rhine under the First French Empire.
+
+fact_id: fact-q154741-parent-q71084
+subject_id: title-q154741
+claim_kind: parentage
+span: 1806..1813
+value: title-q71084
+source_ids: src-wikidata-q154741, src-wikidata-q71084, src-wikipedia-confederation-rhine
+confidence: multi_source

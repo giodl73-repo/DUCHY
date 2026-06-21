@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 9
+gap_rows: 8
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
+| high_parentage_review | 1 |
 | medium_parentage_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 2 |
+| Duchy | 1 |
 | Kingdom | 7 |
 
 ## Review Rows
-
-### title-q842091 | Duchy of Normandy
-
-- rank: Duchy
-- exists: 911..1259
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q854415 | Kingdom of the Lombards
 

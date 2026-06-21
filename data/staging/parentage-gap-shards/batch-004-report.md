@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 15 |
-| root_or_successor_review | 1 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 8 |
-| Empire | 1 |
-| Kingdom | 15 |
+| Empire | 2 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q209065 | Kingdom of Greece
-
-- rank: Kingdom
-- exists: 1832..1973
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q212278 | Kingdom of Holland
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1083..1495
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q3181749 | Arab Caliphate
+
+- rank: Empire
+- exists: 632..1517
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

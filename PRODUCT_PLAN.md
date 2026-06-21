@@ -245,7 +245,10 @@ Pulses:
 88. Confederation of the Rhine Westphalia parentage packet. Complete for
     promoting Confederation of the Rhine and importing Kingdom of Westphalia ->
     Confederation of the Rhine for 1807-1813.
-89. Next reviewed parentage packet.
+89. Confederation of the Rhine French Empire parentage packet. Complete for
+    adding a reviewed Wikimedia text source and importing Confederation of the
+    Rhine -> First French Empire for 1806-1813.
+90. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -15,20 +15,13 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 5 |
+| County | 4 |
 | Crown | 1 |
-| Duchy | 7 |
+| Duchy | 8 |
 | Empire | 2 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q5177890 | County of Luxembourg
-
-- rank: County
-- exists: 963..1354
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q56089236 | Kingdom of Western Georgia
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 477..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q682001 | Duchy of Bytom
+
+- rank: Duchy
+- exists: 1281..1498
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 8 |
 | medium_parentage_review | 10 |
-| root_or_successor_review | 8 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
+| County | 2 |
 | Duchy | 6 |
-| Empire | 8 |
+| Empire | 7 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q3181749 | Arab Caliphate
-
-- rank: Empire
-- exists: 632..1517
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q31929 | Carolingian Empire
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: County
 - exists: 1919..2019
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q5177890 | County of Luxembourg
+
+- rank: County
+- exists: 963..1354
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 

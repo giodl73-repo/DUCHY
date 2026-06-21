@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q682001 | Duchy of Bytom
-
-- rank: Duchy
-- exists: 1281..1498
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q684030 | Principality of Serbia
 
 - rank: Duchy
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: -808..-167
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q842091 | Duchy of Normandy
+
+- rank: Duchy
+- exists: 911..1259
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

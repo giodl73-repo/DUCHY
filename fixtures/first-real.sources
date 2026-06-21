@@ -4495,3 +4495,15 @@ notes: Confederation of the Rhine (Q154741).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, composite rank, inception, dissolution, and parentage context only.
+---
+source_id: src-wikipedia-confederation-rhine
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Confederation_of_the_Rhine
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Confederation of the Rhine article; used only for textual parentage context that identifies it as a confederation of client states of the First French Empire in 1806-1813.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no member inventory, military obligations, borders, constitutional acts, or dissolution details imported.

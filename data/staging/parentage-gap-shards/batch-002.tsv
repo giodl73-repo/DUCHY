@@ -6,7 +6,6 @@ title-q153091	Duchy of Prussia	Duchy	1525..1618	0	high_parentage_review	Find rev
 title-q1541613	County of Astarac	County	920..1300	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q1541699	County of Empuries	County	812..1402	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q154667	Kingdom of Georgia	Kingdom	1008..1466	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q154741	Confederation of the Rhine	Crown	1806..1813	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q154849	Grand Duchy of Tuscany	Duchy	1569..1860	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q160307	Fatimid Egyptian Caliphate	Empire	909..1171	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q160440	Crimean Khanate	Empire	1441..1783	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q172107	Polish-Lithuanian Commonwealth	Crown	1569..1795	0	medium_parentage
 title-q172579	Kingdom of Italy	Kingdom	1861..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q173065	Kingdom of Naples	Kingdom	1282..1816	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q173082	Dacia	Kingdom	-60..106	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q173863	Prince-Bishopric of Augsburg	Duchy	888..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

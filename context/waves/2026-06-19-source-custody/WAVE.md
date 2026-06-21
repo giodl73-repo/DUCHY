@@ -103,6 +103,7 @@ records and validation.
 | 85 | County of Savoy HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Savoy parentage under the Holy Roman Empire. |
 | 86 | Duchy of Warsaw French Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Warsaw parentage under the First French Empire. |
 | 87 | Confederation of the Rhine Westphalia parentage | complete | Promote Confederation of the Rhine and import Kingdom of Westphalia parentage under it. |
+| 88 | Confederation of the Rhine French Empire parentage | complete | Add a reviewed Wikimedia text source and import Confederation of the Rhine parentage under the First French Empire. |
 
 ## Success Criteria
 
