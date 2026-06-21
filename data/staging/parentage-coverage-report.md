@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 398
-facts: 1247
+sources: 403
+facts: 1252
 titles: 335
-parentage_facts: 242
-titles_with_parentage: 197
-titles_without_parentage: 138
+parentage_facts: 247
+titles_with_parentage: 202
+titles_without_parentage: 133
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 138
 |---|---:|---:|---:|
 | County | 30 | 27 | 3 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 128 | 9 |
+| Duchy | 137 | 133 | 4 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -78,7 +78,6 @@ titles_without_parentage: 138
 - title-q191484 | Old Great Bulgaria | Empire | 632..668
 - title-q1917014 | County of Sicily | County | 1071..1130
 - title-q195972 | Kingdom of Kartli | Kingdom | 1466..1762
-- title-q1991540 | Duchy of Courland and Semigallia | Duchy | 1918..1918
 - title-q199688 | Almohad Caliphate | Empire | 1121..1269
 - title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
 - title-q200464 | Portuguese Empire | Empire | 1415..1999
@@ -93,8 +92,6 @@ titles_without_parentage: 138
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
 - title-q223936 | Kingdom of Italy | Kingdom | 1805..1814
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
-- title-q2273304 | Moravian Serbia | Duchy | 1365..1403
-- title-q2295939 | Duchy of Gascony | Duchy | 602..1453
 - title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2346056 | Kingdom of Livonia | Kingdom | 1570..1578
@@ -135,8 +132,6 @@ titles_without_parentage: 138
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
-- title-q686312 | Duchy of Amalfi | Duchy | 839..1137
-- title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q706553 | County of Nice | County | 1388..1818
 - title-q70972 | Kingdom of France | Kingdom | 987..1791

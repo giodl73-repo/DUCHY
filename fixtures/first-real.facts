@@ -9765,3 +9765,45 @@ span: 1516..1696
 value: title-q12560
 source_ids: src-wikidata-q3324486, src-wikidata-q12560, src-wikipedia-prince-bishopric-montenegro
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for endpoint and vassalage gaps.
+
+fact_id: fact-q1991540-parent-q43287
+subject_id: title-q1991540
+claim_kind: parentage
+span: 1918..1918
+value: title-q43287
+source_ids: src-wikidata-q1991540, src-wikidata-q43287, src-wikipedia-courland-semigallia-1918
+confidence: multi_source
+---
+fact_id: fact-q2273304-parent-q12560
+subject_id: title-q2273304
+claim_kind: parentage
+span: 1390..1402
+value: title-q12560
+source_ids: src-wikidata-q2273304, src-wikidata-q12560, src-wikipedia-moravian-serbia
+confidence: multi_source
+---
+fact_id: fact-q686312-parent-q12544
+subject_id: title-q686312
+claim_kind: parentage
+span: 839..958
+value: title-q12544
+source_ids: src-wikidata-q686312, src-wikidata-q12544, src-wikipedia-duchy-amalfi
+confidence: multi_source
+---
+fact_id: fact-q693570-parent-q170174
+subject_id: title-q693570
+claim_kind: parentage
+span: 1597..1597
+value: title-q170174
+source_ids: src-wikidata-q693570, src-wikidata-q170174, src-wikipedia-duchy-ferrara
+confidence: multi_source
+---
+fact_id: fact-q2295939-parent-q70972
+subject_id: title-q2295939
+claim_kind: parentage
+span: 1453..1453
+value: title-q70972
+source_ids: src-wikidata-q2295939, src-wikidata-q70972, src-wikipedia-duchy-gascony
+confidence: multi_source

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
-| medium_parentage_review | 16 |
+| high_parentage_review | 3 |
+| medium_parentage_review | 17 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -17,32 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Crown | 2 |
-| Duchy | 3 |
+| Duchy | 2 |
 | Empire | 5 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q56089236 | Kingdom of Western Georgia
-
-- rank: Kingdom
-- exists: 1259..1330
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q58202 | July Monarchy
-
-- rank: Kingdom
-- exists: 1830..1848
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q583038 | Ostrogothic Kingdom
-
-- rank: Kingdom
-- exists: 493..553
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q600018 | Kingdom of Hungary
 
@@ -114,20 +93,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q686312 | Duchy of Amalfi
-
-- rank: Duchy
-- exists: 839..1137
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q693570 | Duchy of Ferrara
-
-- rank: Duchy
-- exists: 1264..1597
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q701983 | Palatinate-Zweibrucken
 
 - rank: Empire
@@ -197,4 +162,39 @@ gap_rows: 25
 - exists: 1363..1559
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q816814 | Kingdom of Gwynedd
+
+- rank: Kingdom
+- exists: 401..1216
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q825902 | Polish-Lithuanian union
+
+- rank: Duchy
+- exists: 1385..1569
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q837136 | Kingdom of Deheubarth
+
+- rank: Kingdom
+- exists: 920..1197
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q837998 | Kingdom of East Anglia
+
+- rank: Kingdom
+- exists: 501..917
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q83958 | Macedonia
+
+- rank: Kingdom
+- exists: -808..-167
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

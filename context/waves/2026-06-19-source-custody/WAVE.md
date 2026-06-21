@@ -135,6 +135,7 @@ records and validation.
 | 117 | High-priority Bohemian/Silesian batch 04 | complete | Add five reviewed Wikimedia text sources and import Opava, Silesia, Teschen, Bytom, and Oswiecim parentage under the Kingdom of Bohemia. |
 | 118 | High-priority mixed parentage batch 05 | complete | Add two reviewed Wikimedia text sources and import Nassau-Siegen HRE spans plus Grand Principality of Vladimir Golden Horde parentage. |
 | 119 | High-priority mixed parentage batch 06 | complete | Add five reviewed Wikimedia text sources and import Belz, Lotharingia, Serbia, United Principalities, and Prince-Bishopric of Montenegro parentage spans. |
+| 120 | High-priority mixed parentage batch 07 | complete | Add five reviewed Wikimedia text sources and import Courland, Moravian Serbia, Amalfi, Ferrara, and Gascony endpoint/vassalage parentage spans. |
 
 ## Success Criteria
 

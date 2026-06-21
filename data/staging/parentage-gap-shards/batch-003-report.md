@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 18 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,9 +16,8 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 3 |
 | Empire | 6 |
-| Kingdom | 15 |
+| Kingdom | 18 |
 
 ## Review Rows
 
@@ -63,13 +62,6 @@ gap_rows: 25
 - exists: 1466..1762
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1991540 | Duchy of Courland and Semigallia
-
-- rank: Duchy
-- exists: 1918..1918
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q199688 | Almohad Caliphate
 
@@ -169,20 +161,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2273304 | Moravian Serbia
-
-- rank: Duchy
-- exists: 1365..1403
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q2295939 | Duchy of Gascony
-
-- rank: Duchy
-- exists: 602..1453
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q230791 | Kingdom of Scotland
 
 - rank: Kingdom
@@ -194,6 +172,27 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 718..910
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2346056 | Kingdom of Livonia
+
+- rank: Kingdom
+- exists: 1570..1578
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2415003 | Kingdom of Serbia
+
+- rank: Kingdom
+- exists: 1217..1346
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q241748 | Kingdom of Serbia
+
+- rank: Kingdom
+- exists: 1882..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

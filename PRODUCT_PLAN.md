@@ -342,7 +342,10 @@ Pulses:
 120. High-priority mixed parentage batch 06. Complete for adding Belz,
     Lotharingia, Serbia, United Principalities, and Prince-Bishopric of
     Montenegro parentage spans.
-121. Continue high-priority parentage closure.
+121. High-priority mixed parentage batch 07. Complete for adding Courland,
+    Moravian Serbia, Amalfi, Ferrara, and Gascony endpoint/vassalage parentage
+    spans.
+122. Resolve remaining high-priority parentage blockers.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -21,27 +21,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2346056 | Kingdom of Livonia
-
-- rank: Kingdom
-- exists: 1570..1578
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2415003 | Kingdom of Serbia
-
-- rank: Kingdom
-- exists: 1217..1346
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q241748 | Kingdom of Serbia
-
-- rank: Kingdom
-- exists: 1882..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q2577303 | Kingdom of Sardinia
 
 - rank: Kingdom
@@ -195,4 +174,25 @@ gap_rows: 25
 - exists: 1919..2019
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q56089236 | Kingdom of Western Georgia
+
+- rank: Kingdom
+- exists: 1259..1330
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q58202 | July Monarchy
+
+- rank: Kingdom
+- exists: 1830..1848
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q583038 | Ostrogothic Kingdom
+
+- rank: Kingdom
+- exists: 493..553
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

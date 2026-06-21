@@ -1,0 +1,60 @@
+source_id: src-wikipedia-courland-semigallia-1918
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia_(1918)
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Courland and Semigallia 1918 article; used only for textual parentage context that identifies the proposed duchy as a client state of the German Empire in 1918.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed 1918 Courland parentage context only; no earlier Courland duchy, Baltic German council politics, Brest-Litovsk detail, United Baltic Duchy successor, or Latvian state transition imported.
+---
+source_id: src-wikipedia-moravian-serbia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Moravian_Serbia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Moravian Serbia article; used only for textual parentage context that identifies Moravian Serbia as a vassal state of the Ottoman Empire from 1390 until 1402.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Moravian Serbia Ottoman parentage context only; no Serbian Empire predecessor, independent 1371-1389 period, Kosovo campaign detail, or Serbian Despotate successor imported.
+---
+source_id: src-wikipedia-duchy-amalfi
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Amalfi
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Amalfi article; used only for textual parentage context that identifies Amalfi as extracting itself from Byzantine vassalage and first electing a duke in 958.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Amalfi Byzantine parentage context only; no Duchy of Naples intermediate parentage, Lombard capture, later independence, Norman conquest, Pisa sack, or maritime-republic claims imported.
+---
+source_id: src-wikipedia-duchy-ferrara
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Ferrara
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Ferrara article; used only for textual parentage context that identifies Ferrara as coming under direct papal rule in 1597 at the endpoint of the accepted duchy span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for endpoint text-backed Duchy of Ferrara Papal States parentage context only; no Este rule, Modena/Reggio relation, quasi-sovereign status, papal fief analysis, or post-1597 claims imported.
+---
+source_id: src-wikipedia-duchy-gascony
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Gascony
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Gascony article; used only for textual parentage context that identifies Gascony as annexed by the Kingdom of France in 1453 at the endpoint of the accepted duchy span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for endpoint text-backed Duchy of Gascony Kingdom of France parentage context only; no Frankish march detail, Aquitaine intermediate parentage, Plantagenet administration, English rule, Hundred Years' War campaign detail, Navarre remnants, or post-1453 province claims imported.
+---
