@@ -1,7 +1,7 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 24
+gap_rows: 23
 
 ## Priority Counts
 
@@ -9,7 +9,7 @@ gap_rows: 24
 |---|---:|
 | blocked_parentage_review | 1 |
 | medium_parentage_review | 18 |
-| root_or_successor_review | 5 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 24
 |---|---:|
 | Crown | 1 |
 | Duchy | 1 |
-| Empire | 5 |
+| Empire | 4 |
 | Kingdom | 17 |
 
 ## Review Rows
-
-### title-q62651 | Denmark-Norway
-
-- rank: Empire
-- exists: 1536..1814
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q633573 | Kingdom of Rheged
 

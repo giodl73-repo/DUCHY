@@ -9953,3 +9953,13 @@ span: 1570..1578
 value: title-q186096
 source_ids: src-wikidata-q2346056, src-wikidata-q186096, src-wikipedia-kingdom-livonia
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Kingdom of Bosnia under the Ottoman Empire.
+
+fact_id: fact-q2980623-parent-q12560
+subject_id: title-q2980623
+claim_kind: parentage
+span: 1463..1463
+value: title-q12560
+source_ids: src-wikidata-q2980623, src-wikidata-q12560, src-wikipedia-kingdom-bosnia-ottoman
+confidence: multi_source

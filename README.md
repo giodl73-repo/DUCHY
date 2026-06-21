@@ -149,6 +149,9 @@ parentage under the Ottoman Empire, raising reviewed real parentage coverage to
 The fourth medium-priority parentage batch promotes Tsardom of Russia and adds
 Kingdom of Livonia parentage under it, raising the catalog to 337 titles and
 reviewed real parentage coverage to 258 facts.
+The fifth medium-priority parentage batch adds a Kingdom of Bosnia endpoint
+span under the Ottoman Empire, raising reviewed real parentage coverage to 259
+facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

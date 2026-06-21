@@ -1,0 +1,13 @@
+# Reviewed text-backed parentage packet for Kingdom of Bosnia under the Ottoman Empire.
+
+source_id: src-wikipedia-kingdom-bosnia-ottoman
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Bosnia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Bosnia article; used only for endpoint parentage context that identifies the kingdom's 1463 Ottoman conquest and fall.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded endpoint Kingdom of Bosnia parentage context only; no earlier Ottoman attacks, Hungarian claims, Banate of Jajce restoration, Herzegovina conquest, borders, rulers, or later Ottoman administrative claims imported.

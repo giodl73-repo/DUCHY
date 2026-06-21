@@ -20,13 +20,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q31929 | Carolingian Empire
-
-- rank: Empire
-- exists: 800..887
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q321371 | Bosporan Kingdom
 
 - rank: Kingdom
@@ -194,4 +187,11 @@ gap_rows: 25
 - exists: 1397..1523
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q62651 | Denmark-Norway
+
+- rank: Empire
+- exists: 1536..1814
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

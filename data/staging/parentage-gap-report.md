@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 124
+gap_rows: 123
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 83 |
+| medium_parentage_review | 82 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 124
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 39 |
-| Kingdom | 79 |
+| Kingdom | 78 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -533,13 +533,6 @@ gap_rows: 124
 - exists: 1867..1918
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2980623 | Kingdom of Bosnia
-
-- rank: Kingdom
-- exists: 1377..1463
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q3181749 | Arab Caliphate
 
