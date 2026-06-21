@@ -4737,3 +4737,15 @@ notes: Diocese of Toul article; used only for textual parentage context that ide
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Prince-Bishopric of Toul parentage context only; no diocesan foundation, Free Imperial City of Toul, Three Bishoprics administration, French provincial, Concordat, Nancy-Toul, or suffragan claims imported.
+---
+source_id: src-wikipedia-margraviate-austria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Margraviate_of_Austria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Margraviate of Austria article; used only for textual parentage context that identifies the margraviate as a southeastern frontier march of the Holy Roman Empire from 976 until elevation to Duchy of Austria in 1156.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Margraviate of Austria parentage context only; no Frankish frontier, Bavarian ducal subordination, Babenberg genealogy, Hungarian border, Duchy of Austria continuation, Privilegium Minus detail, or later Austrian claims imported.

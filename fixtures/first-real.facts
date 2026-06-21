@@ -9471,3 +9471,13 @@ span: 1048..1648
 value: title-q12548
 source_ids: src-wikidata-q328001, src-wikidata-q12548, src-wikipedia-diocese-toul
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Margraviate of Austria under the Holy Roman Empire.
+
+fact_id: fact-q283627-parent-q12548
+subject_id: title-q283627
+claim_kind: parentage
+span: 976..1156
+value: title-q12548
+source_ids: src-wikidata-q283627, src-wikidata-q12548, src-wikipedia-margraviate-austria
+confidence: multi_source

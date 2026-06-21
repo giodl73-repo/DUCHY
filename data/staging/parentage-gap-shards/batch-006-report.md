@@ -16,19 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Crown | 1 |
 | Duchy | 12 |
 | Empire | 4 |
-| Kingdom | 5 |
+| Kingdom | 6 |
 
 ## Review Rows
-
-### title-q62623 | Kalmar Union
-
-- rank: Crown
-- exists: 1397..1523
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q62651 | Denmark-Norway
 
@@ -195,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 500..1160
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q771193 | Kingdom of Brittany
+
+- rank: Kingdom
+- exists: 851..939
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

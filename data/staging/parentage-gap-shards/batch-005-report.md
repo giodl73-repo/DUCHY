@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 5 |
+| Crown | 1 |
 | Duchy | 3 |
 | Empire | 5 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q386496 | Kingdom of Montenegro
-
-- rank: Kingdom
-- exists: 1910..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q389688 | Achaemenid Empire
 
@@ -196,4 +190,11 @@ gap_rows: 25
 - exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62623 | Kalmar Union
+
+- rank: Crown
+- exists: 1397..1523
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

@@ -120,6 +120,7 @@ records and validation.
 | 102 | Prince-Bishopric of Freising HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Freising parentage under the Holy Roman Empire. |
 | 103 | Prince-Bishopric of Basel HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Basel parentage under the Holy Roman Empire. |
 | 104 | Prince-Bishopric of Toul HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Toul parentage under the Holy Roman Empire. |
+| 105 | Margraviate of Austria HRE parentage | complete | Add a reviewed Wikimedia text source and import Margraviate of Austria parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

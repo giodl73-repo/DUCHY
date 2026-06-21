@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 6 |
+| Duchy | 5 |
 | Empire | 5 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -77,13 +77,6 @@ gap_rows: 25
 - exists: 1814..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q283627 | Margraviate of Austria
-
-- rank: Duchy
-- exists: 976..1156
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q28513 | Austria-Hungary
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1580..1640
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q386496 | Kingdom of Montenegro
+
+- rank: Kingdom
+- exists: 1910..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
