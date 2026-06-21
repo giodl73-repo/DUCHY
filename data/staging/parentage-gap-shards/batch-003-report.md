@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 13 |
-| root_or_successor_review | 7 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 4 |
-| Empire | 7 |
+| Duchy | 5 |
+| Empire | 6 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q186537 | Khanate of Qazan
-
-- rank: Empire
-- exists: 1438..1552
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q187035 | Principality of Albania
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1805..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2252973 | Duchy of Florence
+
+- rank: Duchy
+- exists: 1532..1569
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

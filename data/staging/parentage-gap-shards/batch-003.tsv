@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q186537	Khanate of Qazan	Empire	1438..1552	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q187035	Principality of Albania	Duchy	1914..1925	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q187461	Kingdom of Hereti	Kingdom	893..1020	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q188586	Kingdom of Sicily	Kingdom	1130..1816	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q2183293	Duchy of Belz	Duchy	1170..1462	0	high_parentage_review	Find revie
 title-q2196956	Kingdom of Norway	Kingdom	872..1397	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q223793	Kingdom of Etruria	Kingdom	1801..1807	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q223936	Kingdom of Italy	Kingdom	1805..1814	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q2252973	Duchy of Florence	Duchy	1532..1569	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

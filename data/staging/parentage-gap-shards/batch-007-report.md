@@ -7,28 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Crown | 1 |
 | Duchy | 5 |
 | Empire | 3 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q706553 | County of Nice
-
-- rank: County
-- exists: 1388..1818
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q70972 | Kingdom of France
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 450..1045
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q956451 | Kingdom of Dyfed
+
+- rank: Kingdom
+- exists: 410..920
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

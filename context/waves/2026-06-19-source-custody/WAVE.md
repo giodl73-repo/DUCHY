@@ -111,6 +111,7 @@ records and validation.
 | 93 | Duchy of Prussia Polish Crown parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Prussia parentage under the Crown of the Kingdom of Poland. |
 | 94 | County of Empuries Crown of Aragon parentage | complete | Add a reviewed Wikimedia text source and import County of Empuries parentage under the Crown of Aragon. |
 | 95 | Grand Duchy of Tuscany HRE parentage | complete | Add a reviewed Wikimedia text source and import Grand Duchy of Tuscany parentage under the Holy Roman Empire. |
+| 96 | Duchy of Parma and Piacenza Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Parma and Piacenza parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

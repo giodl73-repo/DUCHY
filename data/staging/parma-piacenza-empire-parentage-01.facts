@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Duchy of Parma and Piacenza under the Empire.
+
+fact_id: fact-q165040-parent-q12548
+subject_id: title-q165040
+claim_kind: parentage
+span: 1748..1801
+value: title-q12548
+source_ids: src-wikidata-q165040, src-wikidata-q12548, src-wikipedia-history-duchy-parma-piacenza
+confidence: multi_source

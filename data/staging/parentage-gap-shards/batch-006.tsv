@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q599613	County of Namur	County	981..1795	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q600018	Kingdom of Hungary	Kingdom	1920..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q603771	Emirate of Crete	Empire	820..961	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q698089	Grand Duchy of Wurzburg	Duchy	1806..1814	0	high_parentage_review	F
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q702327	Duchy of Oswiecim	Duchy	1315..1564	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q704312	Grand Duchy of Frankfurt	Duchy	1810..1813	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q706553	County of Nice	County	1388..1818	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.

@@ -15,19 +15,12 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 4 |
-| Duchy | 5 |
+| County | 5 |
+| Duchy | 4 |
 | Empire | 6 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q334714 | Duchy of Athens
-
-- rank: Duchy
-- exists: 1205..1458
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q34266 | Russian Empire
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: County
 - exists: 1042..1793
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q599613 | County of Namur
+
+- rank: County
+- exists: 981..1795
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 

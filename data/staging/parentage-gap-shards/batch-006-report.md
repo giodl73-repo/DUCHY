@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q599613 | County of Namur
-
-- rank: County
-- exists: 981..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q600018 | Kingdom of Hungary
 
 - rank: Kingdom
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1810..1813
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q706553 | County of Nice
+
+- rank: County
+- exists: 1388..1818
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

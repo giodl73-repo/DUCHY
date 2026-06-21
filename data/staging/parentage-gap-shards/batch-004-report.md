@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2252973 | Duchy of Florence
-
-- rank: Duchy
-- exists: 1532..1569
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q2253783 | Kingdom of Glywysing
 
 - rank: Kingdom
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1516..1852
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q334714 | Duchy of Athens
+
+- rank: Duchy
+- exists: 1205..1458
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

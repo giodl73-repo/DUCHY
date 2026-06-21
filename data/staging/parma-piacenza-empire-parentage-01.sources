@@ -1,0 +1,11 @@
+source_id: src-wikipedia-history-duchy-parma-piacenza
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/History_of_the_Duchy_of_Parma_and_Piacenza
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: History of the Duchy of Parma and Piacenza article; used only for textual parentage context that identifies the Farnese duchies as placed under the protection of the Empire by the 1748 Treaty of Aix-la-Chapelle, with the accepted span ending before the 1801 French-control transfer.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Parma and Piacenza parentage context only; no papal creation, Farnese succession, Austrian administration, Bourbon-Parma succession, French protectorate, Napoleonic department, Restoration, or Italian unification claims imported.
