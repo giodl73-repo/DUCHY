@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 19 |
-| root_or_successor_review | 5 |
+| medium_parentage_review | 20 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -17,10 +17,25 @@ gap_rows: 25
 |---|---:|
 | Crown | 2 |
 | Duchy | 1 |
-| Empire | 5 |
+| Empire | 4 |
 | Kingdom | 17 |
+| TheocraticState | 1 |
 
 ## Review Rows
+
+### title-q623751 | Kingdom of Bernicia
+
+- rank: Kingdom
+- exists: 420..634
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62567 | Kingdom of Iceland
+
+- rank: Kingdom
+- exists: 1918..1944
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62623 | Kalmar Union
 
@@ -42,6 +57,13 @@ gap_rows: 25
 - exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q661240 | Princely Abbey of Fulda
+
+- rank: TheocraticState
+- exists: 1221..1802
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 
@@ -169,31 +191,10 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q905131 | Kingdom of Breifne
+### title-q904346 | Kingdom of Desmond
 
 - rank: Kingdom
-- exists: 700..1256
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q926295 | Italian Empire
-
-- rank: Empire
-- exists: 1882..1946
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q954585 | Kingdom of Brycheiniog
-
-- rank: Kingdom
-- exists: 450..1045
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q956451 | Kingdom of Dyfed
-
-- rank: Kingdom
-- exists: 410..920
+- exists: 1118..1596
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

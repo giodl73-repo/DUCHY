@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 422
-facts: 1280
-titles: 340
+sources: 426
+facts: 1292
+titles: 344
 parentage_facts: 260
 titles_with_parentage: 215
-titles_without_parentage: 125
+titles_without_parentage: 129
 
 ## Coverage By Rank
 
@@ -13,12 +13,12 @@ titles_without_parentage: 125
 |---|---:|---:|---:|
 | County | 32 | 30 | 2 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 135 | 2 |
+| Duchy | 138 | 135 | 3 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 45 | 77 |
+| Kingdom | 124 | 45 | 79 |
 | Province | 1 | 1 | 0 |
-| TheocraticState | 2 | 0 | 2 |
+| TheocraticState | 3 | 0 | 3 |
 
 ## Titles Without Parentage
 
@@ -92,8 +92,10 @@ titles_without_parentage: 125
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
 - title-q241748 | Kingdom of Serbia | Kingdom | 1882..1918
+- title-q252323 | Taifa of Denia | Kingdom | 1010..1227
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
+- title-q267816 | Duchy of Benevento | Duchy | 577..774
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2992329 | County Palatine of Durham | TheocraticState | 883..1836
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
@@ -125,6 +127,7 @@ titles_without_parentage: 125
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
+- title-q661240 | Princely Abbey of Fulda | TheocraticState | 1221..1802
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
@@ -143,6 +146,7 @@ titles_without_parentage: 125
 - title-q858841 | Kingdom of Croatia | Kingdom | 925..1102
 - title-q870517 | Odrysian kingdom | Kingdom | -460..46
 - title-q87791 | Frisian Kingdom | Kingdom | 500..734
+- title-q904346 | Kingdom of Desmond | Kingdom | 1118..1596
 - title-q905131 | Kingdom of Breifne | Kingdom | 700..1256
 - title-q926295 | Italian Empire | Empire | 1882..1946
 - title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045

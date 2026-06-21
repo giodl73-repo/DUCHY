@@ -1,25 +1,27 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 122
+gap_rows: 129
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 81 |
+| high_parentage_review | 3 |
+| medium_parentage_review | 85 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
+| County | 2 |
 | Crown | 3 |
-| Duchy | 2 |
+| Duchy | 3 |
 | Empire | 39 |
-| Kingdom | 77 |
-| TheocraticState | 1 |
+| Kingdom | 79 |
+| TheocraticState | 3 |
 
 ## Review Rows
 
@@ -429,6 +431,13 @@ gap_rows: 122
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q2037817 | County of Girona
+
+- rank: County
+- exists: 785..897
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
 ### title-q203817 | First Bulgarian Empire
 
 - rank: Empire
@@ -506,6 +515,13 @@ gap_rows: 122
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q252323 | Taifa of Denia
+
+- rank: Kingdom
+- exists: 1010..1227
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
 ### title-q2577303 | Kingdom of Sardinia
 
 - rank: Kingdom
@@ -520,12 +536,26 @@ gap_rows: 122
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q267816 | Duchy of Benevento
+
+- rank: Duchy
+- exists: 577..774
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
 ### title-q28513 | Austria-Hungary
 
 - rank: Empire
 - exists: 1867..1918
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q2992329 | County Palatine of Durham
+
+- rank: TheocraticState
+- exists: 883..1836
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q3181749 | Arab Caliphate
 
@@ -646,6 +676,13 @@ gap_rows: 122
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q5298169 | Dorohoi County
+
+- rank: County
+- exists: 1859..1950
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
 ### title-q56089236 | Kingdom of Western Georgia
 
 - rank: Kingdom
@@ -722,6 +759,13 @@ gap_rows: 122
 - exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q661240 | Princely Abbey of Fulda
+
+- rank: TheocraticState
+- exists: 1221..1802
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 
@@ -846,6 +890,13 @@ gap_rows: 122
 
 - rank: Kingdom
 - exists: 500..734
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q904346 | Kingdom of Desmond
+
+- rank: Kingdom
+- exists: 1118..1596
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

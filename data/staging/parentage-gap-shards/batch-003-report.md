@@ -7,18 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
+| high_parentage_review | 2 |
 | medium_parentage_review | 16 |
-| root_or_successor_review | 8 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Empire | 8 |
-| Kingdom | 15 |
-| TheocraticState | 1 |
+| Duchy | 1 |
+| Empire | 7 |
+| Kingdom | 16 |
 
 ## Review Rows
 
@@ -162,6 +162,13 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q252323 | Taifa of Denia
+
+- rank: Kingdom
+- exists: 1010..1227
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
 ### title-q2577303 | Kingdom of Sardinia
 
 - rank: Kingdom
@@ -176,24 +183,17 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q267816 | Duchy of Benevento
+
+- rank: Duchy
+- exists: 577..774
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
 ### title-q28513 | Austria-Hungary
 
 - rank: Empire
 - exists: 1867..1918
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2992329 | County Palatine of Durham
-
-- rank: TheocraticState
-- exists: 883..1836
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
-
-### title-q3181749 | Arab Caliphate
-
-- rank: Empire
-- exists: 632..1517
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

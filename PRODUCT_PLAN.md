@@ -391,6 +391,9 @@ Pulses:
 138. County title harvest batch 01. Complete for promoting Dorohoi County,
     County Palatine of Durham, and County of Girona title-only facts from the
     county-scale farm while deferring conflicted or under-sourced candidates.
+139. County title harvest batch 02. Complete for promoting Duchy of Benevento,
+    Taifa of Denia, Kingdom of Desmond, and Princely Abbey of Fulda title-only
+    facts while correcting spans to the opened source evidence.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

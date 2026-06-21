@@ -1,0 +1,47 @@
+source_id: src-wikipedia-duchy-benevento
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Benevento
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Benevento page gives duchy identity, status as a Lombard duchy, established 577, and disestablished 774.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no vassalage, successor-state, borders, rulers, or Lombard kingdom parentage promoted.
+---
+source_id: src-wikipedia-taifa-denia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Taifa_of_D%C3%A9nia
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Taifa of Denia page gives Islamic kingdom identity, 1010-1227 span, and monarchy government wording.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no parentage, predecessor/successor graph, Balearic control, or conquest claims promoted.
+---
+source_id: src-wikipedia-kingdom-desmond
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Desmond
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Desmond page gives kingdom identity, established 1118, and disestablished 1596.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no parentage, partition, clan polity, territory, or successor claims promoted.
+---
+source_id: src-wikipedia-princely-abbey-fulda
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Princely_Abbey_of_Fulda
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Princely Abbey of Fulda page gives Princely Abbey and Prince-Bishopric identity, ecclesiastical principality wording, 1221-1802 state span, and mediation in 1802.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no Holy Roman Empire parentage, imperial immediacy relation, mediatisation target, offices, or abbey history promoted.

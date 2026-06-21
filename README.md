@@ -182,6 +182,11 @@ that farm: Dorohoi County, County Palatine of Durham, and County of Girona. The
 accepted catalog now has 422 reviewed sources, 1280 facts, 340 titles, and 260
 parentage facts; parentage remains intentionally unchanged until direct
 relation sources are reviewed.
+The second county title harvest promotes four more reviewed title-only packets:
+Duchy of Benevento, Taifa of Denia, Kingdom of Desmond, and Princely Abbey of
+Fulda. The accepted catalog now has 426 reviewed sources, 1292 facts, 344
+titles, and 260 parentage facts; the parentage gap queue now has 129 rows split
+across six shards.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

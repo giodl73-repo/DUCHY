@@ -10041,3 +10041,93 @@ span: 785..897
 value: exists
 source_ids: src-wikidata-q2037817
 confidence: single_source
+---
+# Reviewed title-only packet from county-scale ready-title harvest batch 02.
+
+fact_id: fact-q267816-name
+subject_id: title-q267816
+claim_kind: name
+value: Duchy of Benevento
+source_ids: src-wikipedia-duchy-benevento
+confidence: single_source
+---
+fact_id: fact-q267816-rank
+subject_id: title-q267816
+claim_kind: rank
+value: Duchy
+source_ids: src-wikipedia-duchy-benevento
+confidence: single_source
+---
+fact_id: fact-q267816-exists
+subject_id: title-q267816
+claim_kind: title_exists
+span: 577..774
+value: exists
+source_ids: src-wikipedia-duchy-benevento
+confidence: single_source
+---
+fact_id: fact-q252323-name
+subject_id: title-q252323
+claim_kind: name
+value: Taifa of Denia
+source_ids: src-wikipedia-taifa-denia
+confidence: single_source
+---
+fact_id: fact-q252323-rank
+subject_id: title-q252323
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikipedia-taifa-denia
+confidence: single_source
+---
+fact_id: fact-q252323-exists
+subject_id: title-q252323
+claim_kind: title_exists
+span: 1010..1227
+value: exists
+source_ids: src-wikipedia-taifa-denia
+confidence: single_source
+---
+fact_id: fact-q904346-name
+subject_id: title-q904346
+claim_kind: name
+value: Kingdom of Desmond
+source_ids: src-wikipedia-kingdom-desmond
+confidence: single_source
+---
+fact_id: fact-q904346-rank
+subject_id: title-q904346
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikipedia-kingdom-desmond
+confidence: single_source
+---
+fact_id: fact-q904346-exists
+subject_id: title-q904346
+claim_kind: title_exists
+span: 1118..1596
+value: exists
+source_ids: src-wikipedia-kingdom-desmond
+confidence: single_source
+---
+fact_id: fact-q661240-name
+subject_id: title-q661240
+claim_kind: name
+value: Princely Abbey of Fulda
+source_ids: src-wikipedia-princely-abbey-fulda
+confidence: single_source
+---
+fact_id: fact-q661240-rank
+subject_id: title-q661240
+claim_kind: rank
+value: Theocratic State
+source_ids: src-wikipedia-princely-abbey-fulda
+confidence: single_source
+---
+fact_id: fact-q661240-exists
+subject_id: title-q661240
+claim_kind: title_exists
+span: 1221..1802
+value: exists
+source_ids: src-wikipedia-princely-abbey-fulda
+confidence: single_source
