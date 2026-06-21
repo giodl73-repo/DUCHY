@@ -260,7 +260,10 @@ Pulses:
 93. Francia Carolingian Empire parentage packet. Complete for adding a reviewed
     Wikimedia text source and importing Francia -> Carolingian Empire for
     800-843.
-94. Next reviewed parentage packet.
+94. Duchy of Prussia Polish Crown parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing Duchy of Prussia -> Crown of
+    the Kingdom of Poland for 1525-1618.
+95. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

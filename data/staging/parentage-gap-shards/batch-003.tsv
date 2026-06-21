@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q180393	Kingdom of the Two Sicilies	Kingdom	1738..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q181254	Empire of Nicaea	Empire	1204..1261	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q18285930	German Empire of 1848/1849	Empire	1848..1849	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q186537	Khanate of Qazan	Empire	1438..1552	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q212278	Kingdom of Holland	Kingdom	1806..1810	0	medium_parentage_review	Fi
 title-q215530	Kingdom of Ireland	Kingdom	1542..1801	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2162698	Duchy of Bohemia	Duchy	870..1198	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q2183293	Duchy of Belz	Duchy	1170..1462	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q2196956	Kingdom of Norway	Kingdom	872..1397	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

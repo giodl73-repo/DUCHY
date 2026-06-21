@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q180393 | Kingdom of the Two Sicilies
-
-- rank: Kingdom
-- exists: 1738..1861
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q181254 | Empire of Nicaea
 
 - rank: Empire
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1170..1462
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2196956 | Kingdom of Norway
+
+- rank: Kingdom
+- exists: 872..1397
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

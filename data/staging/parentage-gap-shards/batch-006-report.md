@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 13 |
-| medium_parentage_review | 10 |
-| root_or_successor_review | 2 |
+| medium_parentage_review | 9 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -18,17 +18,10 @@ gap_rows: 25
 | County | 3 |
 | Crown | 1 |
 | Duchy | 10 |
-| Empire | 2 |
-| Kingdom | 9 |
+| Empire | 3 |
+| Kingdom | 8 |
 
 ## Review Rows
-
-### title-q58202 | July Monarchy
-
-- rank: Kingdom
-- exists: 1830..1848
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q583038 | Ostrogothic Kingdom
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1806..1814
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q701983 | Palatinate-Zweibrucken
+
+- rank: Empire
+- exists: 1444..1801
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

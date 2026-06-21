@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 3 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
@@ -18,17 +18,10 @@ gap_rows: 25
 | County | 2 |
 | Crown | 1 |
 | Duchy | 7 |
-| Empire | 3 |
-| Kingdom | 12 |
+| Empire | 2 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q701983 | Palatinate-Zweibrucken
-
-- rank: Empire
-- exists: 1444..1801
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q702327 | Duchy of Oswiecim
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 500..734
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q905131 | Kingdom of Breifne
+
+- rank: Kingdom
+- exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

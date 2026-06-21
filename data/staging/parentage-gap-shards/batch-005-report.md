@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 10 |
-| medium_parentage_review | 9 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
-| Duchy | 7 |
+| Duchy | 6 |
 | Empire | 6 |
-| Kingdom | 9 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q328001 | Prince-Bishopric of Toul
-
-- rank: Duchy
-- exists: 1048..1801
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q328818 | Kingdom of Kent
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1140..1807
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q58202 | July Monarchy
+
+- rank: Kingdom
+- exists: 1830..1848
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

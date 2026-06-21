@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 352
-facts: 1196
+sources: 353
+facts: 1197
 titles: 333
-parentage_facts: 197
-titles_with_parentage: 153
-titles_without_parentage: 180
+parentage_facts: 198
+titles_with_parentage: 154
+titles_without_parentage: 179
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 180
 |---|---:|---:|---:|
 | County | 30 | 18 | 12 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 136 | 95 | 41 |
+| Duchy | 136 | 96 | 40 |
 | Empire | 37 | 0 | 37 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 35 | 86 |
@@ -47,7 +47,6 @@ titles_without_parentage: 180
 - title-q150981 | North German Confederation | Empire | 1867..1870
 - title-q151624 | German Confederation | Empire | 1815..1866
 - title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
-- title-q153091 | Duchy of Prussia | Duchy | 1525..1618
 - title-q1541613 | County of Astarac | County | 920..1300
 - title-q1541699 | County of Empuries | County | 812..1402
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466

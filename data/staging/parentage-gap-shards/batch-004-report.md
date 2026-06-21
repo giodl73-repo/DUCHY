@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 7 |
+| Duchy | 8 |
 | Empire | 3 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q2196956 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 872..1397
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q223793 | Kingdom of Etruria
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1204..1224
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q328001 | Prince-Bishopric of Toul
+
+- rank: Duchy
+- exists: 1048..1801
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 
