@@ -8,8 +8,8 @@ gap_rows: 124
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 84 |
-| root_or_successor_review | 38 |
+| medium_parentage_review | 83 |
+| root_or_successor_review | 39 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 124
 |---|---:|
 | Crown | 3 |
 | Duchy | 2 |
-| Empire | 38 |
-| Kingdom | 80 |
+| Empire | 39 |
+| Kingdom | 79 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -345,6 +345,13 @@ gap_rows: 124
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
+### title-q186096 | Tsardom of Russia
+
+- rank: Empire
+- exists: 1547..1721
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
 ### title-q186537 | Khanate of Qazan
 
 - rank: Empire
@@ -489,13 +496,6 @@ gap_rows: 124
 
 - rank: Kingdom
 - exists: 718..910
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2346056 | Kingdom of Livonia
-
-- rank: Kingdom
-- exists: 1570..1578
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -365,6 +365,8 @@ Pulses:
     Kingdom of Sicily parentage under the Crown of Aragon.
 129. Medium-priority Eastern Hungary Ottoman parentage batch 03. Complete for
     adding Eastern Hungarian Kingdom parentage under the Ottoman Empire.
+130. Medium-priority Livonia Russia parentage batch 04. Complete for promoting
+    Tsardom of Russia and adding Kingdom of Livonia parentage under it.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

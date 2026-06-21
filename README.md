@@ -146,6 +146,9 @@ the Crown of Aragon, raising reviewed real parentage coverage to 256 facts.
 The third medium-priority parentage batch adds Eastern Hungarian Kingdom
 parentage under the Ottoman Empire, raising reviewed real parentage coverage to
 257 facts.
+The fourth medium-priority parentage batch promotes Tsardom of Russia and adds
+Kingdom of Livonia parentage under it, raising the catalog to 337 titles and
+reviewed real parentage coverage to 258 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

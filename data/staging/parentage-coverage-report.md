@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 415
-facts: 1265
-titles: 336
-parentage_facts: 257
-titles_with_parentage: 212
+sources: 417
+facts: 1269
+titles: 337
+parentage_facts: 258
+titles_with_parentage: 213
 titles_without_parentage: 124
 
 ## Coverage By Rank
@@ -14,9 +14,9 @@ titles_without_parentage: 124
 | County | 30 | 30 | 0 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 135 | 2 |
-| Empire | 38 | 0 | 38 |
+| Empire | 39 | 0 | 39 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 42 | 80 |
+| Kingdom | 122 | 43 | 79 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -68,6 +68,7 @@ titles_without_parentage: 124
 - title-q180393 | Kingdom of the Two Sicilies | Kingdom | 1738..1861
 - title-q181254 | Empire of Nicaea | Empire | 1204..1261
 - title-q18285930 | German Empire of 1848/1849 | Empire | 1848..1849
+- title-q186096 | Tsardom of Russia | Empire | 1547..1721
 - title-q186537 | Khanate of Qazan | Empire | 1438..1552
 - title-q187035 | Principality of Albania | Duchy | 1914..1925
 - title-q187461 | Kingdom of Hereti | Kingdom | 893..1020
@@ -89,7 +90,6 @@ titles_without_parentage: 124
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
-- title-q2346056 | Kingdom of Livonia | Kingdom | 1570..1578
 - title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
 - title-q241748 | Kingdom of Serbia | Kingdom | 1882..1918
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861

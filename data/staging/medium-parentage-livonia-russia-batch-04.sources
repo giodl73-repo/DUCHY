@@ -1,0 +1,25 @@
+# Reviewed Tsardom of Russia source import and Kingdom of Livonia parentage packet.
+
+source_id: src-wikidata-q186096
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q186096
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Tsardom of Russia (Q186096).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, empire rank, inception, dissolution, and parentage context only.
+---
+source_id: src-wikipedia-kingdom-livonia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Livonia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Livonia article; used only for textual parentage context that identifies the kingdom as a Russian client state and records Magnus taking an oath of allegiance to Ivan IV as overlord.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Kingdom of Livonia parentage context only; no Livonian War campaign detail, Danish support, Reval siege, territorial control claims, Magnus biography, or post-1578 settlement imported.
