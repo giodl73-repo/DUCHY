@@ -24,13 +24,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q151624 | German Confederation
-
-- rank: Empire
-- exists: 1815..1866
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q15238138 | Kingdom of Spain
 
 - rank: Kingdom
@@ -198,4 +191,11 @@ gap_rows: 25
 - exists: 1102..1526
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q179023 | French colonial empire
+
+- rank: Empire
+- exists: 1534..1980
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

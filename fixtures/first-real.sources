@@ -4531,3 +4531,29 @@ notes: Georgia within the Russian Empire article; used only for textual parentag
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Imereti-Russian Empire parentage context only; no Georgian territorial, dynastic, occupation, or later province details imported.
+---
+# Reviewed Italian Empire source import for Albania parentage.
+
+source_id: src-wikidata-q926295
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q926295
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-20
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Italian Empire (Q926295).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, empire rank, inception, and dissolution only.
+---
+source_id: src-wikipedia-kingdom-albania-personal-union-italy
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Albania_in_personal_union_with_Italy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Albania in personal union with Italy article; used only for textual parentage context that identifies Albania as officially part of the Italian Empire in 1939-1943.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Italian protectorate of Albania parentage context only; no occupation administration, military, Greater Albania, or personal-union mechanics imported.

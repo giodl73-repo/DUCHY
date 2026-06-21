@@ -1,0 +1,32 @@
+# Reviewed Italian Empire source import and Italian protectorate of Albania parentage packet.
+
+fact_id: fact-q926295-name
+subject_id: title-q926295
+claim_kind: name
+value: Italian Empire
+source_ids: src-wikidata-q926295
+confidence: single_source
+---
+fact_id: fact-q926295-rank
+subject_id: title-q926295
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q926295
+confidence: single_source
+---
+fact_id: fact-q926295-exists
+subject_id: title-q926295
+claim_kind: title_exists
+span: 1882..1946
+value: exists
+source_ids: src-wikidata-q926295
+confidence: single_source
+---
+
+fact_id: fact-q1448131-parent-q926295
+subject_id: title-q1448131
+claim_kind: parentage
+span: 1939..1943
+value: title-q926295
+source_ids: src-wikidata-q1448131, src-wikidata-q926295, src-wikipedia-kingdom-albania-personal-union-italy
+confidence: multi_source

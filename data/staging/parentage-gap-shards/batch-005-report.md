@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 11 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 2 |
-| Duchy | 6 |
+| Duchy | 7 |
 | Empire | 6 |
-| Kingdom | 11 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q321371 | Bosporan Kingdom
-
-- rank: Kingdom
-- exists: -437..370
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q325461 | Kingdom of Thessalonica
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1269..1918
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q568638 | Duchy of Silesia
+
+- rank: Duchy
+- exists: 1138..1742
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

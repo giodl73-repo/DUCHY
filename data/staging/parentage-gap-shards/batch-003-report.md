@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
+| high_parentage_review | 4 |
 | medium_parentage_review | 12 |
-| root_or_successor_review | 10 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 2 |
-| Empire | 10 |
+| Duchy | 3 |
+| Empire | 9 |
 | Kingdom | 12 |
 
 ## Review Rows
-
-### title-q179023 | French colonial empire
-
-- rank: Empire
-- exists: 1534..1980
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q179876 | Kingdom of England
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1542..1801
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2162698 | Duchy of Bohemia
+
+- rank: Duchy
+- exists: 870..1198
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

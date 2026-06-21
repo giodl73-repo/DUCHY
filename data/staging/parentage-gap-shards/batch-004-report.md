@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 10 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 9 |
+| Duchy | 8 |
 | Empire | 3 |
-| Kingdom | 12 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q2162698 | Duchy of Bohemia
-
-- rank: Duchy
-- exists: 870..1198
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q2183293 | Duchy of Belz
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1032..1803
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q321371 | Bosporan Kingdom
+
+- rank: Kingdom
+- exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

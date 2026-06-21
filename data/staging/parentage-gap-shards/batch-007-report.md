@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 11 |
-| medium_parentage_review | 11 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 12 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 9 |
+| Duchy | 8 |
 | Empire | 3 |
-| Kingdom | 10 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q693570 | Duchy of Ferrara
-
-- rank: Duchy
-- exists: 1264..1597
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q698089 | Grand Duchy of Wurzburg
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 925..1102
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q870517 | Odrysian kingdom
+
+- rank: Kingdom
+- exists: -460..46
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 349
-facts: 1191
-titles: 332
-parentage_facts: 195
-titles_with_parentage: 151
+sources: 351
+facts: 1195
+titles: 333
+parentage_facts: 196
+titles_with_parentage: 152
 titles_without_parentage: 181
 
 ## Coverage By Rank
@@ -14,9 +14,9 @@ titles_without_parentage: 181
 | County | 30 | 18 | 12 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 136 | 95 | 41 |
-| Empire | 36 | 0 | 36 |
+| Empire | 37 | 0 | 37 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 33 | 88 |
+| Kingdom | 121 | 34 | 87 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -42,7 +42,6 @@ titles_without_parentage: 181
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
-- title-q1448131 | Italian protectorate of Albania | Kingdom | 1939..1943
 - title-q146246 | Francia | Kingdom | 481..843
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
 - title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
@@ -200,6 +199,7 @@ titles_without_parentage: 181
 - title-q870517 | Odrysian kingdom | Kingdom | -460..46
 - title-q87791 | Frisian Kingdom | Kingdom | 500..734
 - title-q905131 | Kingdom of Breifne | Kingdom | 700..1256
+- title-q926295 | Italian Empire | Empire | 1882..1946
 - title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045
 - title-q956451 | Kingdom of Dyfed | Kingdom | 410..920
 - title-q958291 | United Principalities of Moldavia and Wallachia | Duchy | 1859..1881

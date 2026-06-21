@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q568638 | Duchy of Silesia
-
-- rank: Duchy
-- exists: 1138..1742
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q573290 | County of Ravensberg
 
 - rank: County
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 839..1137
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q693570 | Duchy of Ferrara
+
+- rank: Duchy
+- exists: 1264..1597
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
