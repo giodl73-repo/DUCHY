@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 8 |
+| Duchy | 7 |
 | Empire | 3 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q2183293 | Duchy of Belz
-
-- rank: Duchy
-- exists: 1170..1462
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q2196956 | Kingdom of Norway
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q325461 | Kingdom of Thessalonica
+
+- rank: Kingdom
+- exists: 1204..1224
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

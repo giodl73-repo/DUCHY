@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Francia under the Carolingian Empire.
+
+fact_id: fact-q146246-parent-q31929
+subject_id: title-q146246
+claim_kind: parentage
+span: 800..843
+value: title-q31929
+source_ids: src-wikidata-q146246, src-wikidata-q31929, src-wikipedia-carolingian-empire
+confidence: multi_source

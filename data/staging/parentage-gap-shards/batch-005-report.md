@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 10 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 9 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 3 |
 | Duchy | 7 |
 | Empire | 6 |
-| Kingdom | 10 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q325461 | Kingdom of Thessalonica
-
-- rank: Kingdom
-- exists: 1204..1224
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q328001 | Prince-Bishopric of Toul
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1138..1742
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q573290 | County of Ravensberg
+
+- rank: County
+- exists: 1140..1807
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

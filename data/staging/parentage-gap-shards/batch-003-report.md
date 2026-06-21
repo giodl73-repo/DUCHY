@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 3 |
+| Duchy | 4 |
 | Empire | 9 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q179876 | Kingdom of England
-
-- rank: Kingdom
-- exists: 927..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q180393 | Kingdom of the Two Sicilies
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 870..1198
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2183293 | Duchy of Belz
+
+- rank: Duchy
+- exists: 1170..1462
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

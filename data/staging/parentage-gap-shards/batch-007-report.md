@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 10 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 8 |
+| Duchy | 7 |
 | Empire | 3 |
-| Kingdom | 11 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q698089 | Grand Duchy of Wurzburg
-
-- rank: Duchy
-- exists: 1806..1814
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q701983 | Palatinate-Zweibrucken
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -460..46
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q87791 | Frisian Kingdom
+
+- rank: Kingdom
+- exists: 500..734
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -257,7 +257,10 @@ Pulses:
 92. Italian protectorate of Albania Italian Empire parentage packet. Complete
     for promoting Italian Empire and importing Italian protectorate of Albania ->
     Italian Empire for 1939-1943.
-93. Next reviewed parentage packet.
+93. Francia Carolingian Empire parentage packet. Complete for adding a reviewed
+    Wikimedia text source and importing Francia -> Carolingian Empire for
+    800-843.
+94. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

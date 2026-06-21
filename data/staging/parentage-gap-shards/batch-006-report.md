@@ -15,20 +15,13 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 4 |
+| County | 3 |
 | Crown | 1 |
-| Duchy | 9 |
+| Duchy | 10 |
 | Empire | 2 |
 | Kingdom | 9 |
 
 ## Review Rows
-
-### title-q573290 | County of Ravensberg
-
-- rank: County
-- exists: 1140..1807
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q58202 | July Monarchy
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1264..1597
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q698089 | Grand Duchy of Wurzburg
+
+- rank: Duchy
+- exists: 1806..1814
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

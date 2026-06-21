@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 351
-facts: 1195
+sources: 352
+facts: 1196
 titles: 333
-parentage_facts: 196
-titles_with_parentage: 152
-titles_without_parentage: 181
+parentage_facts: 197
+titles_with_parentage: 153
+titles_without_parentage: 180
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 181
 | Duchy | 136 | 95 | 41 |
 | Empire | 37 | 0 | 37 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 34 | 87 |
+| Kingdom | 121 | 35 | 86 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -42,7 +42,6 @@ titles_without_parentage: 181
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
-- title-q146246 | Francia | Kingdom | 481..843
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
 - title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
 - title-q150981 | North German Confederation | Empire | 1867..1870

@@ -1,0 +1,11 @@
+source_id: src-wikipedia-carolingian-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Carolingian_Empire
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Carolingian Empire article; used only for textual parentage context that identifies the Carolingian Empire as a Frankish-dominated empire from 800, with Francia as a predecessor and division after the Treaty of Verdun in 843.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Francia-Carolingian Empire parentage context only; no dynastic holder sequence, imperial title theology, partition details, borders, or successor kingdoms imported.
