@@ -7,34 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 10 |
-| root_or_successor_review | 8 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 6 |
-| Empire | 8 |
+| Duchy | 5 |
+| Empire | 9 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q2597352 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 1814..1814
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q283627 | Margraviate of Austria
-
-- rank: Duchy
-- exists: 976..1156
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q28513 | Austria-Hungary
 
@@ -196,4 +182,18 @@ gap_rows: 25
 - exists: 1871..1918
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q435583 | Old Swiss Confederacy
+
+- rank: Empire
+- exists: 1291..1798
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q436994 | Kingdom of Dublin
+
+- rank: Kingdom
+- exists: 839..1171
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

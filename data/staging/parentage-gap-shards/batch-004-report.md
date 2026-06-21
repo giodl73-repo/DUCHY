@@ -7,18 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 2 |
-| Duchy | 7 |
+| Duchy | 8 |
 | Empire | 3 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -35,13 +34,6 @@ gap_rows: 25
 - exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q204920 | Crown of Aragon
-
-- rank: Crown
-- exists: 1162..1715
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2090473 | Khazar Khaganate
 
@@ -77,13 +69,6 @@ gap_rows: 25
 - exists: 870..1198
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
-
-### title-q217196 | Crown of Castile
-
-- rank: Crown
-- exists: 1230..1715
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2183293 | Duchy of Belz
 
@@ -194,6 +179,20 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1294..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2597352 | Kingdom of Norway
+
+- rank: Kingdom
+- exists: 1814..1814
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q283627 | Margraviate of Austria
+
+- rank: Duchy
+- exists: 976..1156
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

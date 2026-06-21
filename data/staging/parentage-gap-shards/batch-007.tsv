@@ -1,6 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q657241	Duchy of Westphalia	Duchy	1180..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q660393	Lower Lotharingia	Duchy	959..1190	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q6673921	Lotharingia	Duchy	855..959	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q671899	Duchy of Teschen	Duchy	1281..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q675363	County of Geneva	County	900..1401	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
@@ -18,9 +16,11 @@ title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find 
 title-q71084	First French Empire	Empire	1804..1815	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q733799	Kingdom of the Hwicce	Kingdom	577..780	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q736029	Nassau-Siegen	County	1303..1743	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q766543	Hispanic Monarchy	Empire	1479..1700	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q769782	Kingdom of Powys	Kingdom	500..1160	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q771193	Kingdom of Brittany	Kingdom	851..939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q779011	Principality of Montenegro	Duchy	1852..1910	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q7882199	Burgundian State	Crown	1363..1559	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q816814	Kingdom of Gwynedd	Kingdom	401..1216	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q825902	Polish-Lithuanian union	Duchy	1385..1569	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q83546	Grand Principality of Vladimir	Duchy	1125..1389	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

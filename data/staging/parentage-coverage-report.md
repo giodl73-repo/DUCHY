@@ -1,20 +1,20 @@
 # DUCHY Parentage Coverage Report
 
-sources: 341
-facts: 1175
-titles: 330
-parentage_facts: 185
-titles_with_parentage: 141
-titles_without_parentage: 189
+sources: 342
+facts: 1180
+titles: 331
+parentage_facts: 187
+titles_with_parentage: 143
+titles_without_parentage: 188
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
-| Crown | 4 | 0 | 4 |
+| Crown | 4 | 2 | 2 |
 | Duchy | 136 | 92 | 44 |
-| Empire | 35 | 0 | 35 |
+| Empire | 36 | 0 | 36 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 122 | 30 | 92 |
 | Province | 1 | 1 | 0 |
@@ -99,13 +99,11 @@ titles_without_parentage: 189
 - title-q203493 | Kingdom of Romania | Kingdom | 1881..1947
 - title-q203817 | First Bulgarian Empire | Empire | 681..1018
 - title-q2042616 | Chalkidian League | Empire | -432..-348
-- title-q204920 | Crown of Aragon | Crown | 1162..1715
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
 - title-q2162698 | Duchy of Bohemia | Duchy | 870..1198
-- title-q217196 | Crown of Castile | Crown | 1230..1715
 - title-q2183293 | Duchy of Belz | Duchy | 1170..1462
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
@@ -191,6 +189,7 @@ titles_without_parentage: 189
 - title-q71084 | First French Empire | Empire | 1804..1815
 - title-q733799 | Kingdom of the Hwicce | Kingdom | 577..780
 - title-q736029 | Nassau-Siegen | County | 1303..1743
+- title-q766543 | Hispanic Monarchy | Empire | 1479..1700
 - title-q769782 | Kingdom of Powys | Kingdom | 500..1160
 - title-q771193 | Kingdom of Brittany | Kingdom | 851..939
 - title-q779011 | Principality of Montenegro | Duchy | 1852..1910

@@ -228,7 +228,10 @@ Pulses:
 82. Burgundian Netherlands State parentage packet. Complete for promoting
     Burgundian State and importing Burgundian Netherlands -> Burgundian State
     for 1384-1482.
-83. Next reviewed parentage packet.
+83. Hispanic Monarchy crown parentage packet. Complete for promoting Hispanic
+    Monarchy and importing Crown of Aragon/Crown of Castile -> Hispanic
+    Monarchy for 1479-1700.
+84. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -1,0 +1,39 @@
+# Reviewed title and parentage packet for crowns under Hispanic Monarchy.
+
+fact_id: fact-q766543-name
+subject_id: title-q766543
+claim_kind: name
+value: Hispanic Monarchy
+source_ids: src-wikidata-q766543
+confidence: single_source
+---
+fact_id: fact-q766543-rank
+subject_id: title-q766543
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q766543
+confidence: single_source
+---
+fact_id: fact-q766543-exists
+subject_id: title-q766543
+claim_kind: title_exists
+span: 1479..1700
+value: exists
+source_ids: src-wikidata-q766543
+confidence: single_source
+---
+fact_id: fact-q204920-parent-q766543
+subject_id: title-q204920
+claim_kind: parentage
+span: 1479..1700
+value: title-q766543
+source_ids: src-wikidata-q204920, src-wikidata-q766543
+confidence: multi_source
+---
+fact_id: fact-q217196-parent-q766543
+subject_id: title-q217196
+claim_kind: parentage
+span: 1479..1700
+value: title-q766543
+source_ids: src-wikidata-q217196, src-wikidata-q766543
+confidence: multi_source

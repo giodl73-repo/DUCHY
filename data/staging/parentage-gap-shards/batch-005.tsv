@@ -1,6 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q2597352	Kingdom of Norway	Kingdom	1814..1814	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q283627	Margraviate of Austria	Duchy	976..1156	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q28513	Austria-Hungary	Empire	1867..1918	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2980623	Kingdom of Bosnia	Kingdom	1377..1463	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2991474	County of Wurttemberg	County	1083..1495	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
@@ -24,3 +22,5 @@ title-q386496	Kingdom of Montenegro	Kingdom	1910..1918	0	medium_parentage_review
 title-q389688	Achaemenid Empire	Empire	-550..-330	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q4208290	Kazikumukh Khanate	Empire	1642..1860	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q43287	German Empire	Empire	1871..1918	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q435583	Old Swiss Confederacy	Empire	1291..1798	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q436994	Kingdom of Dublin	Kingdom	839..1171	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

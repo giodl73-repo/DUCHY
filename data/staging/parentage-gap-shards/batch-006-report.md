@@ -7,34 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 3 |
+| high_parentage_review | 11 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 5 |
-| Duchy | 4 |
-| Empire | 3 |
-| Kingdom | 13 |
+| Duchy | 6 |
+| Empire | 2 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q435583 | Old Swiss Confederacy
-
-- rank: Empire
-- exists: 1291..1798
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q436994 | Kingdom of Dublin
-
-- rank: Kingdom
-- exists: 839..1171
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q47261 | Duchy of Bavaria
 
@@ -194,6 +180,20 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1092..1795
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q657241 | Duchy of Westphalia
+
+- rank: Duchy
+- exists: 1180..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q660393 | Lower Lotharingia
+
+- rank: Duchy
+- exists: 959..1190
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
