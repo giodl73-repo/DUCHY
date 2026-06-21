@@ -137,6 +137,8 @@ records and validation.
 | 119 | High-priority mixed parentage batch 06 | complete | Add five reviewed Wikimedia text sources and import Belz, Lotharingia, Serbia, United Principalities, and Prince-Bishopric of Montenegro parentage spans. |
 | 120 | High-priority mixed parentage batch 07 | complete | Add five reviewed Wikimedia text sources and import Courland, Moravian Serbia, Amalfi, Ferrara, and Gascony endpoint/vassalage parentage spans. |
 | 121 | High-priority mixed parentage batch 08 | complete | Add three reviewed Wikimedia text sources and import County of Sicily and County of Nice endpoint parentage spans. |
+| 122 | High-priority endpoint batch 09 | complete | Add two reviewed Wikimedia text sources and import Duchy of Poland and Polish-Lithuanian union endpoint parentage spans. |
+| 123 | Remaining high-priority blocker review | complete | Record Albania, Hordaland, and Montenegro blockers that need modern Norway coverage or contested/de facto relation modeling. |
 
 ## Success Criteria
 

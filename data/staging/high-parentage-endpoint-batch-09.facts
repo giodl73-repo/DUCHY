@@ -1,0 +1,17 @@
+# Reviewed text-backed high-priority parentage batch for endpoint successor transitions.
+
+fact_id: fact-q104863335-parent-q8890160
+subject_id: title-q104863335
+claim_kind: parentage
+span: 1025..1025
+value: title-q8890160
+source_ids: src-wikidata-q104863335, src-wikidata-q8890160, src-wikipedia-kingdom-poland
+confidence: multi_source
+---
+fact_id: fact-q825902-parent-q172107
+subject_id: title-q825902
+claim_kind: parentage
+span: 1569..1569
+value: title-q172107
+source_ids: src-wikidata-q825902, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth
+confidence: multi_source

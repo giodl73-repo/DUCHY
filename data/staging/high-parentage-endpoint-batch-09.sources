@@ -1,0 +1,23 @@
+source_id: src-wikipedia-kingdom-poland
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Poland
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Poland article; used only for textual parentage context that identifies the 1025 coronation of Boleslaw I as elevating Poland from a duchy to a kingdom.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for endpoint text-backed Duchy of Poland to Kingdom of Poland transition context only; no Piast genealogy, later Polish monarchy periods, feudal fragmentation, or post-1025 claims imported.
+---
+source_id: src-wikipedia-polish-lithuanian-commonwealth
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Polish-Lithuanian Commonwealth article; used only for textual parentage context that identifies the 1569 Union of Lublin as replacing the personal union of Poland and Lithuania with the Polish-Lithuanian Commonwealth.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for endpoint text-backed Polish-Lithuanian union to Commonwealth transition context only; no Sejm mechanics, federal structure, elective monarchy detail, partitions, or post-1569 Commonwealth history imported.

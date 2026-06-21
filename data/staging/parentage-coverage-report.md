@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 406
-facts: 1254
+sources: 408
+facts: 1256
 titles: 335
-parentage_facts: 249
-titles_with_parentage: 204
-titles_without_parentage: 131
+parentage_facts: 251
+titles_with_parentage: 206
+titles_without_parentage: 129
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 131
 |---|---:|---:|---:|
 | County | 30 | 29 | 1 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 133 | 4 |
+| Duchy | 137 | 135 | 2 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -24,7 +24,6 @@ titles_without_parentage: 131
 
 - title-q10295972 | Hunnic Empire | Empire | 316..484
 - title-q1048340 | Albanian Kingdom | Kingdom | 1928..1939
-- title-q104863335 | Duchy of Poland | Duchy | 966..1025
 - title-q1048918 | Kingdom of the Suebi | Kingdom | 411..585
 - title-q105092 | Kingdom of Mercia | Kingdom | 527..918
 - title-q105313 | Kingdom of Wessex | Kingdom | 519..927
@@ -141,7 +140,6 @@ titles_without_parentage: 131
 - title-q779011 | Principality of Montenegro | Duchy | 1852..1910
 - title-q7882199 | Burgundian State | Crown | 1363..1559
 - title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
-- title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
 - title-q837136 | Kingdom of Deheubarth | Kingdom | 920..1197
 - title-q837998 | Kingdom of East Anglia | Kingdom | 501..917
 - title-q83958 | Macedonia | Kingdom | -808..-167

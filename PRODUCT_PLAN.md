@@ -348,7 +348,12 @@ Pulses:
 122. High-priority mixed parentage batch 08. Complete for adding County of
     Sicily Kingdom of Sicily and County of Nice Kingdom of Sardinia endpoint
     spans.
-123. Resolve remaining high-priority parentage blockers.
+123. High-priority endpoint parentage batch 09. Complete for adding Duchy of
+    Poland Kingdom of Poland and Polish-Lithuanian union Commonwealth endpoint
+    spans.
+124. Remaining high-priority blocker review. Complete for recording Albania,
+    Hordaland, and Montenegro blockers that need new parent coverage or
+    contested/de facto relation modeling.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

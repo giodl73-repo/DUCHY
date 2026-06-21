@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q15238138 | Kingdom of Spain
-
-- rank: Kingdom
-- exists: 1814..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q154667 | Kingdom of Georgia
 
 - rank: Kingdom
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q188586 | Kingdom of Sicily
+
+- rank: Kingdom
+- exists: 1130..1816
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

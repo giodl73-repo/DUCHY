@@ -8,25 +8,18 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 15 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Empire | 9 |
-| Kingdom | 15 |
+| Empire | 10 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q2597352 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 1814..1814
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q28513 | Austria-Hungary
 
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 1920..1946
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q603771 | Emirate of Crete
+
+- rank: Empire
+- exists: 820..961
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

@@ -1,7 +1,6 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
 title-q10295972	Hunnic Empire	Empire	316..484	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q1048340	Albanian Kingdom	Kingdom	1928..1939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q104863335	Duchy of Poland	Duchy	966..1025	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q1048918	Kingdom of the Suebi	Kingdom	411..585	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q105092	Kingdom of Mercia	Kingdom	527..918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q105313	Kingdom of Wessex	Kingdom	519..927	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -118,7 +117,6 @@ title-q771193	Kingdom of Brittany	Kingdom	851..939	0	medium_parentage_review	Fin
 title-q779011	Principality of Montenegro	Duchy	1852..1910	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q7882199	Burgundian State	Crown	1363..1559	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q816814	Kingdom of Gwynedd	Kingdom	401..1216	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q825902	Polish-Lithuanian union	Duchy	1385..1569	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q837136	Kingdom of Deheubarth	Kingdom	920..1197	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q837998	Kingdom of East Anglia	Kingdom	501..917	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q83958	Macedonia	Kingdom	-808..-167	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

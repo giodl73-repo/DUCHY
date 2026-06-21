@@ -7,27 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 18 |
-| root_or_successor_review | 5 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 20 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Crown | 2 |
-| Duchy | 2 |
-| Empire | 5 |
-| Kingdom | 16 |
+| Duchy | 1 |
+| Empire | 4 |
+| Kingdom | 18 |
 
 ## Review Rows
-
-### title-q603771 | Emirate of Crete
-
-- rank: Empire
-- exists: 820..961
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q612359 | Kingdom of Lithuania
 
@@ -155,13 +148,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q825902 | Polish-Lithuanian union
-
-- rank: Duchy
-- exists: 1385..1569
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q837136 | Kingdom of Deheubarth
 
 - rank: Kingdom
@@ -194,6 +180,20 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 925..1102
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q870517 | Odrysian kingdom
+
+- rank: Kingdom
+- exists: -460..46
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q87791 | Frisian Kingdom
+
+- rank: Kingdom
+- exists: 500..734
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

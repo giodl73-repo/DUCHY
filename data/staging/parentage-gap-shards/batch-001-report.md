@@ -7,17 +7,15 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
-| medium_parentage_review | 15 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 1 |
 | Empire | 9 |
-| Kingdom | 15 |
+| Kingdom | 16 |
 
 ## Review Rows
 
@@ -34,13 +32,6 @@ gap_rows: 25
 - exists: 1928..1939
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q104863335 | Duchy of Poland
-
-- rank: Duchy
-- exists: 966..1025
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q1048918 | Kingdom of the Suebi
 
@@ -195,4 +186,11 @@ gap_rows: 25
 - exists: 1815..1866
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q15238138 | Kingdom of Spain
+
+- rank: Kingdom
+- exists: 1814..1833
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -19,13 +19,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q188586 | Kingdom of Sicily
-
-- rank: Kingdom
-- exists: 1130..1816
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q19083 | Kingdom of Iberia
 
 - rank: Kingdom
@@ -191,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1720..1861
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2597352 | Kingdom of Norway
+
+- rank: Kingdom
+- exists: 1814..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
