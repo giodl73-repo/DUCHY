@@ -9655,3 +9655,45 @@ span: 987..1204
 value: title-q70972
 source_ids: src-wikidata-q842091, src-wikidata-q70972, src-wikipedia-duchy-normandy
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for Bohemian Silesian duchy gaps.
+
+fact_id: fact-q566639-parent-q42585
+subject_id: title-q566639
+claim_kind: parentage
+span: 1269..1918
+value: title-q42585
+source_ids: src-wikidata-q566639, src-wikidata-q42585, src-wikipedia-duchy-troppau
+confidence: multi_source
+---
+fact_id: fact-q568638-parent-q42585
+subject_id: title-q568638
+claim_kind: parentage
+span: 1335..1742
+value: title-q42585
+source_ids: src-wikidata-q568638, src-wikidata-q42585, src-wikipedia-duchies-silesia
+confidence: multi_source
+---
+fact_id: fact-q671899-parent-q42585
+subject_id: title-q671899
+claim_kind: parentage
+span: 1327..1918
+value: title-q42585
+source_ids: src-wikidata-q671899, src-wikidata-q42585, src-wikipedia-duchy-teschen
+confidence: multi_source
+---
+fact_id: fact-q682001-parent-q42585
+subject_id: title-q682001
+claim_kind: parentage
+span: 1289..1498
+value: title-q42585
+source_ids: src-wikidata-q682001, src-wikidata-q42585, src-wikipedia-duchy-bytom
+confidence: multi_source
+---
+fact_id: fact-q702327-parent-q42585
+subject_id: title-q702327
+claim_kind: parentage
+span: 1327..1457
+value: title-q42585
+source_ids: src-wikidata-q702327, src-wikidata-q42585, src-wikipedia-duchy-oswiecim
+confidence: multi_source

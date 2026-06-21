@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 386
-facts: 1234
+sources: 391
+facts: 1239
 titles: 335
-parentage_facts: 229
-titles_with_parentage: 185
-titles_without_parentage: 150
+parentage_facts: 234
+titles_with_parentage: 190
+titles_without_parentage: 145
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 150
 |---|---:|---:|---:|
 | County | 30 | 26 | 4 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 117 | 20 |
+| Duchy | 137 | 122 | 15 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -125,8 +125,6 @@ titles_without_parentage: 150
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
 - title-q50625 | Hordaland | County | 1919..2019
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
-- title-q566639 | Duchy of Opava | Duchy | 1269..1918
-- title-q568638 | Duchy of Silesia | Duchy | 1138..1742
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
 - title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553
 - title-q600018 | Kingdom of Hungary | Kingdom | 1920..1946
@@ -139,14 +137,11 @@ titles_without_parentage: 150
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q6673921 | Lotharingia | Duchy | 855..959
-- title-q671899 | Duchy of Teschen | Duchy | 1281..1918
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
-- title-q682001 | Duchy of Bytom | Duchy | 1281..1498
 - title-q684030 | Principality of Serbia | Duchy | 1815..1882
 - title-q686312 | Duchy of Amalfi | Duchy | 839..1137
 - title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
-- title-q702327 | Duchy of Oswiecim | Duchy | 1315..1564
 - title-q706553 | County of Nice | County | 1388..1818
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815

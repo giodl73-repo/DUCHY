@@ -49,7 +49,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 386 reviewed source records.
+  The accepted fixture catalog now contains 391 reviewed source records.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -70,7 +70,7 @@ kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The title-identity queue promotions and follow-on parentage packets extend the
-accepted fixture set to 386 reviewed sources and 1234 reviewed facts. Title
+accepted fixture set to 391 reviewed sources and 1239 reviewed facts. Title
 promotion adds title identity, rank, and existence facts only; parentage remains
 a separate review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
@@ -113,7 +113,9 @@ high-priority HRE county/duchy closure batch, raising reviewed real parentage
 coverage to 225 facts. The third high-priority mixed parentage batch adds
 Jülich HRE, Würzburg Rhine Confederation, Frankfurt Rhine Confederation, and
 Normandy Kingdom of France spans, raising reviewed real parentage coverage to
-229 facts.
+229 facts. The fourth high-priority Bohemian/Silesian batch adds Opava,
+Silesia, Teschen, Bytom, and Oswiecim Kingdom of Bohemia spans, raising
+reviewed real parentage coverage to 234 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

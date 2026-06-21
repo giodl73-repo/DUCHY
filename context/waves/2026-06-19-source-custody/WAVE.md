@@ -132,6 +132,7 @@ records and validation.
 | 114 | High-priority HRE county/duchy batch 01 | complete | Add four reviewed Wikimedia text sources and import Westphalia, Ravensberg, Montbeliard, and Namur parentage under the Holy Roman Empire. |
 | 115 | High-priority HRE county/duchy batch 02 | complete | Add three reviewed Wikimedia text sources and import Bavaria, Geneva, and Lower Lotharingia parentage under the Holy Roman Empire. |
 | 116 | High-priority mixed parentage batch 03 | complete | Add four reviewed Wikimedia text sources and import Julich, Wurzburg, Frankfurt, and Normandy parentage spans. |
+| 117 | High-priority Bohemian/Silesian batch 04 | complete | Add five reviewed Wikimedia text sources and import Opava, Silesia, Teschen, Bytom, and Oswiecim parentage under the Kingdom of Bohemia. |
 
 ## Success Criteria
 

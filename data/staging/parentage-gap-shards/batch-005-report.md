@@ -7,19 +7,19 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 10 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 3 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
+| County | 3 |
 | Crown | 1 |
-| Duchy | 9 |
-| Empire | 3 |
-| Kingdom | 11 |
+| Duchy | 4 |
+| Empire | 4 |
+| Kingdom | 13 |
 
 ## Review Rows
 
@@ -43,20 +43,6 @@ gap_rows: 25
 - exists: 1259..1330
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q566639 | Duchy of Opava
-
-- rank: Duchy
-- exists: 1269..1918
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q568638 | Duchy of Silesia
-
-- rank: Duchy
-- exists: 1138..1742
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q58202 | July Monarchy
 
@@ -142,26 +128,12 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q671899 | Duchy of Teschen
-
-- rank: Duchy
-- exists: 1281..1918
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q676184 | Kingdom of Sussex
 
 - rank: Kingdom
 - exists: 477..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q682001 | Duchy of Bytom
-
-- rank: Duchy
-- exists: 1281..1498
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q684030 | Principality of Serbia
 
@@ -191,10 +163,38 @@ gap_rows: 25
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
-### title-q702327 | Duchy of Oswiecim
+### title-q706553 | County of Nice
 
-- rank: Duchy
-- exists: 1315..1564
+- rank: County
+- exists: 1388..1818
 - review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q70972 | Kingdom of France
+
+- rank: Kingdom
+- exists: 987..1791
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q71084 | First French Empire
+
+- rank: Empire
+- exists: 1804..1815
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q733799 | Kingdom of the Hwicce
+
+- rank: Kingdom
+- exists: 577..780
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q736029 | Nassau-Siegen
+
+- rank: County
+- exists: 1303..1743
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

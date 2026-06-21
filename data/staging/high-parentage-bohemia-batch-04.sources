@@ -1,0 +1,59 @@
+source_id: src-wikipedia-duchy-troppau
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Troppau
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Troppau article; used only for textual parentage context that identifies Opava/Troppau as a fiefdom of Bohemia and part of the Lands of the Bohemian Crown from the medieval period until 1918.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Opava/Troppau parentage context only; no Moravian predecessor detail, Premyslid genealogy, Raciborz union, partitions, Liechtenstein title continuity, Prussian share, or post-1918 claims imported.
+---
+source_id: src-wikipedia-duchies-silesia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchies_of_Silesia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchies of Silesia article; used only for textual parentage context that identifies the Silesian duchies as ceded to the Kingdom of Bohemia in 1335 and within the Bohemian crown lands until 1742, with some remnants remaining after Prussian annexation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Silesian duchy parentage context only; no full duchy inventory, Piast branch succession, Hungarian interlude, Habsburg administration, Prussian annexation detail, or post-1742 Austrian Silesia claims imported.
+---
+source_id: src-wikipedia-duchy-teschen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Teschen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Teschen article; used only for textual parentage context that identifies Teschen as a fiefdom of Bohemia from 1327 and part of the Bohemian Crown from 1348 until 1918.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Teschen parentage context only; no Opole-Raciborz predecessor detail, Oswiecim split, Habsburg-Lorraine title succession, Austrian Silesia administration, or post-1918 partition claims imported.
+---
+source_id: src-wikipedia-duchy-bytom
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Bytom
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Bytom article; used only for textual parentage context that identifies Bytom as a Silesian duchy vassalized by Bohemia from 1289 until its merger with Opole in 1498.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Bytom parentage context only; no Opole-Raciborz partition detail, Kozle or Toszek splits, Olesnica or Cieszyn divided rule, Hungarian pledge, Hohenzollern claims, or later state-country claims imported.
+---
+source_id: src-wikipedia-duchy-oswiecim
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_O%C5%9Bwi%C4%99cim
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Oswiecim article; used only for textual parentage context that identifies Oswiecim as a Silesian duchy vassalized by Bohemia in 1327 and sold to the Kingdom of Poland in 1457.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Oswiecim parentage context only; no Lesser Poland predecessor detail, Zator split, sale mechanics, Polish Crown incorporation, Austrian Galicia, residual title, or post-1457 parentage claims imported.

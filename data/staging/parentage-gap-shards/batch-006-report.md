@@ -1,62 +1,26 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 25
+gap_rows: 20
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 16 |
-| root_or_successor_review | 3 |
+| high_parentage_review | 4 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
 | Crown | 1 |
 | Duchy | 4 |
-| Empire | 3 |
-| Kingdom | 15 |
+| Empire | 2 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q706553 | County of Nice
-
-- rank: County
-- exists: 1388..1818
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q70972 | Kingdom of France
-
-- rank: Kingdom
-- exists: 987..1791
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q71084 | First French Empire
-
-- rank: Empire
-- exists: 1804..1815
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q733799 | Kingdom of the Hwicce
-
-- rank: Kingdom
-- exists: 577..780
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q736029 | Nassau-Siegen
-
-- rank: County
-- exists: 1303..1743
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q766543 | Hispanic Monarchy
 
