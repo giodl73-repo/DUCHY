@@ -302,7 +302,10 @@ Pulses:
 107. Grand Duchy of Berg Rhine Confederation parentage packet. Complete for
      adding a reviewed Wikimedia text source and importing Grand Duchy of Berg
      -> Confederation of the Rhine for 1806-1813.
-108. Next reviewed parentage packet.
+108. Duchy of Modena and Reggio HRE parentage packet. Complete for adding a
+     reviewed Wikimedia text source and importing Duchy of Modena and Reggio
+     -> Holy Roman Empire for 1452-1796.
+109. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

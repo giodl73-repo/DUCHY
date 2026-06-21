@@ -122,6 +122,7 @@ records and validation.
 | 104 | Prince-Bishopric of Toul HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Toul parentage under the Holy Roman Empire. |
 | 105 | Margraviate of Austria HRE parentage | complete | Add a reviewed Wikimedia text source and import Margraviate of Austria parentage under the Holy Roman Empire. |
 | 106 | Grand Duchy of Berg Rhine Confederation parentage | complete | Add a reviewed Wikimedia text source and import Grand Duchy of Berg parentage under the Confederation of the Rhine. |
+| 107 | Duchy of Modena and Reggio HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Modena and Reggio parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

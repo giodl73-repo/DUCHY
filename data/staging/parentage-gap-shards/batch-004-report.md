@@ -1,23 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-004.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-004.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
+| high_parentage_review | 4 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 6 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 4 |
-| Empire | 6 |
+| Duchy | 3 |
+| Empire | 7 |
 | Kingdom | 14 |
 
 ## Review Rows
@@ -49,13 +49,6 @@ gap_rows: 25
 - exists: 1882..1918
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q252580 | Duchy of Modena and Reggio
-
-- rank: Duchy
-- exists: 1452..1859
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q2577303 | Kingdom of Sardinia
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: -550..-330
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q4208290 | Kazikumukh Khanate
+
+- rank: Empire
+- exists: 1642..1860
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

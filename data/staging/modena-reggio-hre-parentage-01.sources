@@ -1,0 +1,11 @@
+source_id: src-wikipedia-duchy-modena-reggio
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Modena_and_Reggio
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Modena and Reggio article; used only for textual parentage context that identifies the duchy as created by Holy Roman Emperor Frederick III in 1452, retained as Imperial fiefs by Cesare d'Este, and occupied by France in 1796.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Modena and Reggio parentage context only; no Ferrara papal succession, Este genealogy, Mantuan or Spanish Succession wars, Mirandola absorption, Austria-Este restoration, Congress of Vienna settlement, Italian unification, or post-1814 parentage imported.

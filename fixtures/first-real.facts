@@ -9491,3 +9491,13 @@ span: 1806..1813
 value: title-q154741
 source_ids: src-wikidata-q249428, src-wikidata-q154741, src-wikipedia-duchy-berg
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Duchy of Modena and Reggio under the Holy Roman Empire.
+
+fact_id: fact-q252580-parent-q12548
+subject_id: title-q252580
+claim_kind: parentage
+span: 1452..1796
+value: title-q12548
+source_ids: src-wikidata-q252580, src-wikidata-q12548, src-wikipedia-duchy-modena-reggio
+confidence: multi_source

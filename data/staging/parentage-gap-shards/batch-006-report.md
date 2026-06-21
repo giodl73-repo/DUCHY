@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-006.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
 gap_rows: 25
 
 ## Priority Counts
@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 3 |
+| Crown | 1 |
 | Duchy | 13 |
 | Empire | 3 |
-| Kingdom | 6 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q633573 | Kingdom of Rheged
-
-- rank: Kingdom
-- exists: 500..650
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q641138 | Duchy of Cleves
 
@@ -196,4 +190,11 @@ gap_rows: 25
 - exists: 1852..1910
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q7882199 | Burgundian State
+
+- rank: Crown
+- exists: 1363..1559
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

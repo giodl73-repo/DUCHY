@@ -1,33 +1,25 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 18
+source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
+gap_rows: 17
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 5 |
-| medium_parentage_review | 12 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 1 |
 | Duchy | 5 |
 | Empire | 1 |
 | Kingdom | 11 |
 
 ## Review Rows
-
-### title-q7882199 | Burgundian State
-
-- rank: Crown
-- exists: 1363..1559
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q816814 | Kingdom of Gwynedd
 
