@@ -1,0 +1,51 @@
+ck_id	county	decision	recommended_source_id	recommended_source_url	recommended_title_id	recommended_title_label	recommended_rank	recommended_exists	recommended_parent_id	recommended_parent_label	recommended_parent_span	confidence	next_action	notes
+c_aachen	Aachen	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced bounded county/title packet found in this pass.
+c_aalborg	Aalborg	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced bounded county/title packet found in this pass.
+c_aargau	Aargau	source_resolution_blocked										medium	find_bounded_title_source	Top lead is the modern Canton of Aargau; possible medieval Aargau/landgraviate material needs separate bounded source custody.
+c_aarhus	Aarhus	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced bounded county/title packet found in this pass.
+c_abauj	Abauj	already_accepted	src-wikidata-q1049854	https://www.wikidata.org/wiki/Q1049854	title-q1049854	Abaúj county	County	1201..1881	title-q171150	Kingdom of Hungary	1201..1881	high	metrics_seed	Accepted parentage row from fixtures and pilot; do not re-import.
+c_abkhazia	Abkhazia	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern state with limited recognition; no bounded medieval title packet ready.
+c_ablastha	Ablastha	source_resolution_blocked										low	resolve_historical_identity	No useful local lead; CK3 seed needs historical identity resolution before any title or parentage work.
+c_abruzzi	Abruzzi	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern Italian region; possible Abruzzo/Abruzzi provincial or kingdom-era material needs separate sourcing.
+c_abydos	Abydos	reject_bad_lead										high	find_better_historical_title_source	Top lead is an encyclopedia article item, not an importable title entity.
+c_acampse	Acampse	source_resolution_blocked										low	resolve_historical_identity	No useful local lead; CK3 seed needs historical identity resolution before any title or parentage work.
+c_achaia	Achaia	rank_policy_blocked	src-byzantinelegacy-achaia	https://www.thebyzantinelegacy.com/achaia	title-q204772	Principality of Achaea	unmaterialized	1205..1430				medium	define_principality_rank_or_defer	Independent source supports the Principality of Achaea as a Frankish polity, but principality rank is not materialized for this county workflow.
+c_adrianopolis	Adrianopolis	source_resolution_blocked										medium	define_city_rank_or_find_title	Top lead is modern Edirne; ancient/Byzantine city material is not a county-like title packet.
+c_aeolis	Aeolis	reject_bad_lead										high	find_better_historical_title_source	Top lead is a mollusc genus, not the historical Aeolis region.
+c_aetolia	Aetolia	reject_bad_lead										high	find_better_historical_title_source	Top lead is a video game, not the historical Aetolia region.
+c_agenais	Agen	source_resolution_blocked	src-wikisource-britannica-agenais	https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Agenais	title-q2825683	Agenais	County					medium	find_bounded_title_and_parent_source	Better lead found: Britannica 1911 treats Agenais as a former province and hereditary countship, but this pass did not establish safe bounded title_exists or parentage.
+c_ailech	Ailech	rank_policy_blocked	src-wikidata-q15104874	https://www.wikidata.org/wiki/Q15104874	title-q15104874	Ailech	unmaterialized	600..780				high	define_historical_country_rank_or_defer	Local source-resolution record treats Ailech as a historical-country entity; not a materialized county rank under current policy.
+c_ajaccio	Ajaccio	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern commune; no independently sourced bounded title packet found.
+c_akkel	Akkel	reject_bad_lead										high	find_better_historical_title_source	Top lead resolves to Akkyol lake in Russia, a wrong-place/wrong-type lead for this CK3 seed.
+c_aland	Aland	source_resolution_blocked										medium	find_bounded_title_source	Top lead is the modern autonomous Åland region; no bounded medieval title packet ready.
+c_alarcon	Alarcon	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_almader	Alarcos	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a settlement/battle-site lead; no bounded title packet ready.
+c_albarracin	Albarracin	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality; possible taifa/lordship material needs separate source custody.
+c_albi	Albi	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern French commune; possible county/viscounty material needs separate sourcing.
+c_albret	Albret	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a royal family; possible lordship material needs a separate title source.
+c_alcacer_do_sal	Alcacer do Sal	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern municipality; no bounded historical title packet ready.
+c_alcaniz	Alcaniz	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipal capital; no bounded title packet ready.
+c_alcaraz	Alcaraz	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipal capital; no bounded title packet ready.
+c_alencon	Alençon	source_resolution_blocked	src-britannica-alencon	https://www.britannica.com/place/Alencon	title-q2875357	Alençon	County/Duchy					medium	find_bounded_title_and_parent_source	Britannica supports Alençon as capital of the county and duchy, but this pass did not establish safe bounded title_exists or parentage.
+c_algeciras	Algeciras	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern municipality/city; no bounded title packet ready.
+c_alicante	Alicante	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no bounded title packet ready.
+c_almeria	Almeria	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern municipality/capital; taifa or city material needs separate sourcing.
+c_alpsee	Alpsee	reject_bad_lead										high	find_better_historical_title_source	Top lead is a lake, not importable title material.
+c_alto_aragon	Alto Aragon	reject_bad_lead										high	find_better_historical_title_source	Top lead is a modern political organization, not the historical Upper Aragon region.
+c_aluksne	Aluksne	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern Latvian city; no bounded historical title packet ready.
+c_amaya	Amaya	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_amiens	Amiens	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern commune; possible county/bishopric material needs separate source custody.
+c_amstetten	Amstetten	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern district capital; no bounded title packet ready.
+c_ancona	Ancona	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; possible March/Republic/communal material needs separate sourcing.
+c_angermanland	Ångermanland	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a Swedish province; no materialized title rank/date packet ready.
+c_angouleme	Angoulême	source_resolution_blocked	src-britannica-angouleme	https://www.britannica.com/place/Angouleme	title-q105532476	Angoulême	County					medium	find_bounded_title_and_parent_source	Britannica supports Angoulême as seat of counts from the 9th century, but no safe bounded title_exists or parentage packet is ready.
+c_angus	Angus	reject_bad_lead										high	find_better_historical_title_source	Top lead is a given-name item; possible Scottish county/earldom material requires a different sourced lead.
+c_anjou	Anjou	source_resolution_blocked	src-fordham-anjou-chronicle	https://sourcebooks.web.fordham.edu/source/Anjou.asp	title-q551476	County of Anjou	County	861..1360				medium	find_parentage_source	Fordham sourcebook provides a historical counts-of-Anjou source lead and Wikidata has a bounded county candidate, but parentage is not established here.
+c_annandale	Annandale	reject_bad_lead										high	find_better_historical_title_source	Top lead resolves to a United States census-designated place, a wrong-place lead for this CK3 seed.
+c_ansbach	Ansbach	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern town; principality/margraviate material needs separate bounded source custody.
+c_antipatreia	Antipatreia	rank_policy_blocked										medium	define_ancient_city_rank_or_defer	Top lead is an ancient Greek city; not a materialized county-like title under current ranks.
+c_antwerpen	Antwerpen	source_resolution_blocked										medium	find_reviewed_margraviate_source	Top lead is modern Antwerp; possible Margraviate of Antwerp lead needs reviewed source custody before promotion.
+c_aosta	Aosta	source_resolution_blocked	src-britannica-aosta	https://www.britannica.com/place/Aosta-Italy	title-q1222	Aosta Valley	unmaterialized					medium	find_bounded_title_source	Britannica supports Aosta city and bishopric context but not a bounded county/title packet for this workflow.
+c_apahunik	Apahunik	source_resolution_blocked										low	find_bounded_title_source	Top lead has insufficient local description; historical Armenian district identity needs better source custody.
+c_apulia	Apulia	reject_bad_lead										high	find_better_historical_title_source	Top lead is an insect genus, not the historical Apulia region/duchy.
+c_aquileia	Aquileia	source_resolution_blocked										medium	find_bounded_title_source	Top lead is an ancient/modern city; possible Patria del Friuli or patriarchal temporal-state material is already scope-deferred locally and needs separate review.

@@ -382,6 +382,9 @@ Pulses:
     farmed shard output: 50 rows reviewed, with Brycheiniog and Byzantion
     blocked by relation/rank policy and Cetatea-Alba retained as an accepted
     metrics seed.
+136. County-scale priority shard farm review. Complete for recording shard
+    reviews 001, 002, 006, and 009, raising farm-reviewed rows to 250 and
+    surfacing six title/title-follow-up candidates.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -167,6 +167,11 @@ source-resolution rows, and 27 rows needing fresh source resolution.
 The first farmed shard review covers `county-scale-004`: 50 rows reviewed with
 1 already accepted seed, 3 rank-policy blockers, 31 source-resolution blockers,
 and 15 rejected bad leads. No accepted fixtures changed in that shard review.
+The next priority farm reviews cover shards `001`, `002`, `006`, and `009`,
+bringing reviewed county-scale shard rows to 250. Across those reviewed shards,
+agents recorded 5 already accepted seeds, 6 ready title/title-follow-up
+candidates, 18 rank-policy blockers, 178 source-resolution blockers, and 43
+rejected bad leads.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
