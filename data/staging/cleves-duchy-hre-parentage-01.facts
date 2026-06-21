@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Duchy of Cleves under the Holy Roman Empire.
+
+fact_id: fact-q641138-parent-q12548
+subject_id: title-q641138
+claim_kind: parentage
+span: 1092..1795
+value: title-q12548
+source_ids: src-wikidata-q641138, src-wikidata-q12548, src-wikipedia-duchy-cleves
+confidence: multi_source

@@ -170,13 +170,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q641138 | Duchy of Cleves
-
-- rank: Duchy
-- exists: 1092..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q657241 | Duchy of Westphalia
 
 - rank: Duchy
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 855..959
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q671899 | Duchy of Teschen
+
+- rank: Duchy
+- exists: 1281..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

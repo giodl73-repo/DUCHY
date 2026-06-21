@@ -4821,3 +4821,15 @@ notes: Kingdom of Thessalonica article; used only for textual parentage context 
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Kingdom of Thessalonica parentage context only; no Fourth Crusade narrative, Byzantine predecessor, Boniface succession, Lombard rebellion, Epirus conquest detail, titular claimants, or post-1224 successor claims imported.
+---
+source_id: src-wikipedia-duchy-cleves
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Cleves
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Cleves article; used only for textual parentage context that identifies Cleves as a state of the Holy Roman Empire from its county period through French annexation in 1795.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Cleves parentage context only; no Lower Lotharingia predecessor detail, counts or dukes genealogy, union with Mark, elevation to duchy detail, United Duchies of Julich-Cleves-Berg continuation, Brandenburg succession, Grand Duchy of Berg transfer, Prussian province, or post-1795 settlement imported.
