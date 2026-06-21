@@ -177,6 +177,11 @@ completing the 500-row farm pass. The aggregate review set now has 13 accepted
 seeds, 21 ready title/title-follow-up candidates, 50 rank-policy blockers, 329
 source-resolution blockers, and 87 rejected bad leads, with zero ready
 parentage packets.
+The first county title harvest promotes three reviewed title-only packets from
+that farm: Dorohoi County, County Palatine of Durham, and County of Girona. The
+accepted catalog now has 422 reviewed sources, 1280 facts, 340 titles, and 260
+parentage facts; parentage remains intentionally unchanged until direct
+relation sources are reviewed.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

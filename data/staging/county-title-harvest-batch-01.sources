@@ -1,0 +1,35 @@
+source_id: src-wikipedia-dorohoi-county
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Dorohoi_County
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Dorohoi County page gives county identity, county rank wording, established 1859, and ceased to exist under the administrative reform of 1950.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no parentage, borders, holders, demographic claims, or territorial succession promoted.
+---
+source_id: src-wikipedia-county-palatine-durham
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_Palatine_of_Durham
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County Palatine of Durham page gives county palatine identity, prince-bishopric/ecclesiastical principality status, start 883, and formal dissolution in 1836.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no parentage, borders, jurisdictional powers, or territorial succession promoted.
+---
+source_id: src-wikidata-q2037817
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2037817
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: County of Girona (Q2037817) gives label, county-like instance, inception 785, and dissolution/replacement point 897.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no parentage, borders, holder sequence, or succession claim promoted.

@@ -1,4 +1,7 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
+title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
+title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

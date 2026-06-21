@@ -1,24 +1,39 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-004.tsv
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-004.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 17 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 1 |
+| County | 1 |
 | Empire | 8 |
 | Kingdom | 16 |
 
 ## Review Rows
+
+### title-q31929 | Carolingian Empire
+
+- rank: Empire
+- exists: 800..887
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q321371 | Bosporan Kingdom
+
+- rank: Kingdom
+- exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q328818 | Kingdom of Kent
 
@@ -118,6 +133,13 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q5298169 | Dorohoi County
+
+- rank: County
+- exists: 1859..1950
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
+
 ### title-q56089236 | Kingdom of Western Georgia
 
 - rank: Kingdom
@@ -171,27 +193,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1918..1944
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q62623 | Kalmar Union
-
-- rank: Crown
-- exists: 1397..1523
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
-
-### title-q62651 | Denmark-Norway
-
-- rank: Empire
-- exists: 1536..1814
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q633573 | Kingdom of Rheged
-
-- rank: Kingdom
-- exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,24 +1,24 @@
 # DUCHY Parentage Coverage Report
 
-sources: 419
-facts: 1271
-titles: 337
+sources: 422
+facts: 1280
+titles: 340
 parentage_facts: 260
 titles_with_parentage: 215
-titles_without_parentage: 122
+titles_without_parentage: 125
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 30 | 0 |
+| County | 32 | 30 | 2 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 135 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 122 | 45 | 77 |
 | Province | 1 | 1 | 0 |
-| TheocraticState | 1 | 0 | 1 |
+| TheocraticState | 2 | 0 | 2 |
 
 ## Titles Without Parentage
 
@@ -80,6 +80,7 @@ titles_without_parentage: 122
 - title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
 - title-q200464 | Portuguese Empire | Empire | 1415..1999
 - title-q203493 | Kingdom of Romania | Kingdom | 1881..1947
+- title-q2037817 | County of Girona | County | 785..897
 - title-q203817 | First Bulgarian Empire | Empire | 681..1018
 - title-q2042616 | Chalkidian League | Empire | -432..-348
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
@@ -94,6 +95,7 @@ titles_without_parentage: 122
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
+- title-q2992329 | County Palatine of Durham | TheocraticState | 883..1836
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
@@ -111,6 +113,7 @@ titles_without_parentage: 122
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
+- title-q5298169 | Dorohoi County | County | 1859..1950
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
 - title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553

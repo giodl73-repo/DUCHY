@@ -1,26 +1,47 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 22
+source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-005.tsv
+gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 17 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 19 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 1 |
+| Crown | 2 |
 | Duchy | 1 |
-| Empire | 4 |
-| Kingdom | 16 |
+| Empire | 5 |
+| Kingdom | 17 |
 
 ## Review Rows
+
+### title-q62623 | Kalmar Union
+
+- rank: Crown
+- exists: 1397..1523
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
+### title-q62651 | Denmark-Norway
+
+- rank: Empire
+- exists: 1536..1814
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q633573 | Kingdom of Rheged
+
+- rank: Kingdom
+- exists: 500..650
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 

@@ -1,0 +1,67 @@
+# Reviewed title-only packet from county-scale ready-title harvest batch 01.
+
+fact_id: fact-q5298169-name
+subject_id: title-q5298169
+claim_kind: name
+value: Dorohoi County
+source_ids: src-wikipedia-dorohoi-county
+confidence: single_source
+---
+fact_id: fact-q5298169-rank
+subject_id: title-q5298169
+claim_kind: rank
+value: County
+source_ids: src-wikipedia-dorohoi-county
+confidence: single_source
+---
+fact_id: fact-q5298169-exists
+subject_id: title-q5298169
+claim_kind: title_exists
+span: 1859..1950
+value: exists
+source_ids: src-wikipedia-dorohoi-county
+confidence: single_source
+---
+fact_id: fact-q2992329-name
+subject_id: title-q2992329
+claim_kind: name
+value: County Palatine of Durham
+source_ids: src-wikipedia-county-palatine-durham
+confidence: single_source
+---
+fact_id: fact-q2992329-rank
+subject_id: title-q2992329
+claim_kind: rank
+value: Theocratic State
+source_ids: src-wikipedia-county-palatine-durham
+confidence: single_source
+---
+fact_id: fact-q2992329-exists
+subject_id: title-q2992329
+claim_kind: title_exists
+span: 883..1836
+value: exists
+source_ids: src-wikipedia-county-palatine-durham
+confidence: single_source
+---
+fact_id: fact-q2037817-name
+subject_id: title-q2037817
+claim_kind: name
+value: County of Girona
+source_ids: src-wikidata-q2037817
+confidence: single_source
+---
+fact_id: fact-q2037817-rank
+subject_id: title-q2037817
+claim_kind: rank
+value: County
+source_ids: src-wikidata-q2037817
+confidence: single_source
+---
+fact_id: fact-q2037817-exists
+subject_id: title-q2037817
+claim_kind: title_exists
+span: 785..897
+value: exists
+source_ids: src-wikidata-q2037817
+confidence: single_source
