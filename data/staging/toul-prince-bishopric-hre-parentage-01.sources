@@ -1,0 +1,11 @@
+source_id: src-wikipedia-diocese-toul
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Diocese_of_Toul
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Diocese of Toul article; used only for textual parentage context that identifies the Toul prince-bishopric as a state of the Holy Roman Empire from 1048 until French annexation in 1552, de jure recognized by the Empire in 1648.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Prince-Bishopric of Toul parentage context only; no diocesan foundation, Free Imperial City of Toul, Three Bishoprics administration, French provincial, Concordat, Nancy-Toul, or suffragan claims imported.

@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
+| high_parentage_review | 7 |
 | medium_parentage_review | 13 |
-| root_or_successor_review | 4 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 7 |
-| Empire | 4 |
+| Duchy | 6 |
+| Empire | 5 |
 | Kingdom | 13 |
 
 ## Review Rows
@@ -134,13 +134,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q328001 | Prince-Bishopric of Toul
-
-- rank: Duchy
-- exists: 1048..1801
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q328818 | Kingdom of Kent
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 476..493
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q377350 | Iberian Union
+
+- rank: Empire
+- exists: 1580..1640
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

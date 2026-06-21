@@ -293,7 +293,10 @@ Pulses:
 104. Prince-Bishopric of Basel HRE parentage packet. Complete for adding a
      reviewed Wikimedia text source and importing Prince-Bishopric of Basel ->
      Holy Roman Empire for 1032-1803.
-105. Next reviewed parentage packet.
+105. Prince-Bishopric of Toul HRE parentage packet. Complete for adding a
+     reviewed Wikimedia text source and importing Prince-Bishopric of Toul ->
+     Holy Roman Empire for 1048-1648.
+106. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

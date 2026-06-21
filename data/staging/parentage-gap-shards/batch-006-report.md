@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q62567 | Kingdom of Iceland
-
-- rank: Kingdom
-- exists: 1918..1944
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q62623 | Kalmar Union
 
 - rank: Crown
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1479..1700
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q769782 | Kingdom of Powys
+
+- rank: Kingdom
+- exists: 500..1160
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

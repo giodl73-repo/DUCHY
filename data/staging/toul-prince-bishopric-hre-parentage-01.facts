@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Prince-Bishopric of Toul under the Holy Roman Empire.
+
+fact_id: fact-q328001-parent-q12548
+subject_id: title-q328001
+claim_kind: parentage
+span: 1048..1648
+value: title-q12548
+source_ids: src-wikidata-q328001, src-wikidata-q12548, src-wikipedia-diocese-toul
+confidence: multi_source
