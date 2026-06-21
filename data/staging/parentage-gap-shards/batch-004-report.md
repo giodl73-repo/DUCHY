@@ -21,13 +21,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2577303 | Kingdom of Sardinia
-
-- rank: Kingdom
-- exists: 1720..1861
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q2597352 | Kingdom of Norway
 
 - rank: Kingdom
@@ -193,6 +186,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 493..553
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q600018 | Kingdom of Hungary
+
+- rank: Kingdom
+- exists: 1920..1946
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

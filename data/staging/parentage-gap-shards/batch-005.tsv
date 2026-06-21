@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q600018	Kingdom of Hungary	Kingdom	1920..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q603771	Emirate of Crete	Empire	820..961	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -10,7 +9,6 @@ title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be 
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q706553	County of Nice	County	1388..1818	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q71084	First French Empire	Empire	1804..1815	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q733799	Kingdom of the Hwicce	Kingdom	577..780	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +22,5 @@ title-q825902	Polish-Lithuanian union	Duchy	1385..1569	0	high_parentage_review	F
 title-q837136	Kingdom of Deheubarth	Kingdom	920..1197	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q837998	Kingdom of East Anglia	Kingdom	501..917	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q83958	Macedonia	Kingdom	-808..-167	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q854415	Kingdom of the Lombards	Kingdom	568..774	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q858841	Kingdom of Croatia	Kingdom	925..1102	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

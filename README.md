@@ -49,7 +49,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 403 reviewed source records.
+  The accepted fixture catalog now contains 406 reviewed source records.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -70,7 +70,7 @@ kingdoms and grand duchies. The Rust crate treats those fixtures as canonical
 for reviewed historical imports; source-backed historical IDs, names, and spans
 must not be duplicated as Rust literals.
 The title-identity queue promotions and follow-on parentage packets extend the
-accepted fixture set to 403 reviewed sources and 1252 reviewed facts. Title
+accepted fixture set to 406 reviewed sources and 1254 reviewed facts. Title
 promotion adds title identity, rank, and existence facts only; parentage remains
 a separate review step.
 The 500-source candidate queue is now closed for unsupported rows: 167
@@ -124,7 +124,9 @@ Montenegro Ottoman spans, raising reviewed real parentage coverage to 242 facts.
 The seventh high-priority mixed batch adds Courland German Empire, Moravian
 Serbia Ottoman, Amalfi Byzantine, Ferrara Papal States, and Gascony Kingdom of
 France endpoint/vassalage spans, raising reviewed real parentage coverage to
-247 facts.
+247 facts. The eighth high-priority mixed batch adds County of Sicily Kingdom
+of Sicily and County of Nice Kingdom of Sardinia endpoint spans, raising
+reviewed real parentage coverage to 249 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

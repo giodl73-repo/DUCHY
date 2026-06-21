@@ -345,7 +345,10 @@ Pulses:
 121. High-priority mixed parentage batch 07. Complete for adding Courland,
     Moravian Serbia, Amalfi, Ferrara, and Gascony endpoint/vassalage parentage
     spans.
-122. Resolve remaining high-priority parentage blockers.
+122. High-priority mixed parentage batch 08. Complete for adding County of
+    Sicily Kingdom of Sicily and County of Nice Kingdom of Sardinia endpoint
+    spans.
+123. Resolve remaining high-priority parentage blockers.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -7,17 +7,15 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
-| medium_parentage_review | 18 |
+| medium_parentage_review | 19 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Empire | 6 |
-| Kingdom | 18 |
+| Kingdom | 19 |
 
 ## Review Rows
 
@@ -48,13 +46,6 @@ gap_rows: 25
 - exists: 632..668
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q1917014 | County of Sicily
-
-- rank: County
-- exists: 1071..1130
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q195972 | Kingdom of Kartli
 
@@ -193,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1882..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2577303 | Kingdom of Sardinia
+
+- rank: Kingdom
+- exists: 1720..1861
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

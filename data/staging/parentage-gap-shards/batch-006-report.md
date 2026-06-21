@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 8
+gap_rows: 6
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 7 |
+| medium_parentage_review | 5 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
@@ -15,23 +15,9 @@ gap_rows: 8
 | Rank | Rows |
 |---|---:|
 | Empire | 1 |
-| Kingdom | 7 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q854415 | Kingdom of the Lombards
-
-- rank: Kingdom
-- exists: 568..774
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q858841 | Kingdom of Croatia
-
-- rank: Kingdom
-- exists: 925..1102
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q870517 | Odrysian kingdom
 

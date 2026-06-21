@@ -9807,3 +9807,21 @@ span: 1453..1453
 value: title-q70972
 source_ids: src-wikidata-q2295939, src-wikidata-q70972, src-wikipedia-duchy-gascony
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for Sicily and Sardinia endpoint gaps.
+
+fact_id: fact-q1917014-parent-q188586
+subject_id: title-q1917014
+claim_kind: parentage
+span: 1130..1130
+value: title-q188586
+source_ids: src-wikidata-q1917014, src-wikidata-q188586, src-wikipedia-kingdom-sicily
+confidence: multi_source
+---
+fact_id: fact-q706553-parent-q2577303
+subject_id: title-q706553
+claim_kind: parentage
+span: 1814..1818
+value: title-q2577303
+source_ids: src-wikidata-q706553, src-wikidata-q2577303, src-wikipedia-county-nice, src-wikipedia-kingdom-sardinia
+confidence: multi_source

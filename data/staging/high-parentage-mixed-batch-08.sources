@@ -1,0 +1,35 @@
+source_id: src-wikipedia-kingdom-sicily
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Sicily
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Sicily article; used only for textual parentage context that identifies the Kingdom of Sicily as the 1130 successor state of the County of Sicily.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for endpoint text-backed County of Sicily to Kingdom of Sicily parentage context only; no Norman conquest detail, Roger II biography, Apulia/Calabria relation, papal recognition dispute, or post-1130 kingdom history imported.
+---
+source_id: src-wikipedia-kingdom-sardinia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Sardinia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Sardinia article; used only for textual parentage context for the Savoyard kingdom period that overlaps the accepted County of Nice restoration period.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Nice Kingdom of Sardinia parentage context only; no wider Savoyard State inventory, Genoa annexation, Piedmont-Sardinia diplomatic history, Italian unification, or post-1818 claims imported.
+---
+source_id: src-wikipedia-county-nice
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Nice
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Nice article; used only for textual parentage context that identifies Nice as returned under the control of the King of Sardinia in 1814 after the French occupation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Nice Kingdom of Sardinia parentage context only; no Provence predecessor, Savoyard State continuity, French occupation details, Monaco protectorate, Treaty of Turin, or post-1818 claims imported.

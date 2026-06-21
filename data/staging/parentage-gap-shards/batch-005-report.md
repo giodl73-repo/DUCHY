@@ -7,28 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
-| medium_parentage_review | 17 |
+| high_parentage_review | 2 |
+| medium_parentage_review | 18 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Crown | 2 |
 | Duchy | 2 |
 | Empire | 5 |
-| Kingdom | 15 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q600018 | Kingdom of Hungary
-
-- rank: Kingdom
-- exists: 1920..1946
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q603771 | Emirate of Crete
 
@@ -99,13 +91,6 @@ gap_rows: 25
 - exists: 1444..1801
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q706553 | County of Nice
-
-- rank: County
-- exists: 1388..1818
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q70972 | Kingdom of France
 
@@ -195,6 +180,20 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -808..-167
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q854415 | Kingdom of the Lombards
+
+- rank: Kingdom
+- exists: 568..774
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q858841 | Kingdom of Croatia
+
+- rank: Kingdom
+- exists: 925..1102
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

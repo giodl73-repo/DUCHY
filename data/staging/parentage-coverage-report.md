@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
-sources: 403
-facts: 1252
+sources: 406
+facts: 1254
 titles: 335
-parentage_facts: 247
-titles_with_parentage: 202
-titles_without_parentage: 133
+parentage_facts: 249
+titles_with_parentage: 204
+titles_without_parentage: 131
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 27 | 3 |
+| County | 30 | 29 | 1 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 133 | 4 |
 | Empire | 38 | 0 | 38 |
@@ -76,7 +76,6 @@ titles_without_parentage: 133
 - title-q19083 | Kingdom of Iberia | Kingdom | -299..580
 - title-q191077 | Kingdom of Yugoslavia | Kingdom | 1929..1945
 - title-q191484 | Old Great Bulgaria | Empire | 632..668
-- title-q1917014 | County of Sicily | County | 1071..1130
 - title-q195972 | Kingdom of Kartli | Kingdom | 1466..1762
 - title-q199688 | Almohad Caliphate | Empire | 1121..1269
 - title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
@@ -133,7 +132,6 @@ titles_without_parentage: 133
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
-- title-q706553 | County of Nice | County | 1388..1818
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815
 - title-q733799 | Kingdom of the Hwicce | Kingdom | 577..780
