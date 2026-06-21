@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q660393 | Lower Lotharingia
-
-- rank: Duchy
-- exists: 959..1190
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q6673921 | Lotharingia
 
 - rank: Duchy
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1385..1569
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q83546 | Grand Principality of Vladimir
+
+- rank: Duchy
+- exists: 1125..1389
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

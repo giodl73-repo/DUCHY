@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 15
+gap_rows: 14
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
+| high_parentage_review | 3 |
 | medium_parentage_review | 10 |
 | root_or_successor_review | 1 |
 
@@ -15,18 +15,11 @@ gap_rows: 15
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 4 |
+| Duchy | 3 |
 | Empire | 1 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q83546 | Grand Principality of Vladimir
-
-- rank: Duchy
-- exists: 1125..1389
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q836937 | Duchy of Julich
 

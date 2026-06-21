@@ -1,0 +1,11 @@
+source_id: src-wikipedia-duchy-athens
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Athens
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Athens article; used only for textual parentage context that identifies Athens as originally a vassal state of the Kingdom of Thessalonica until Thessalonica was captured in 1224.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Athens parentage context only; no Fourth Crusade narrative, Byzantine predecessor, Achaea suzerainty dispute, Sicilian or Aragonese suzerainty, Venetian control, Morea tributary status, Ottoman conquest, titular claims, or post-1224 parentage imported.

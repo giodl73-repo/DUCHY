@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 2 |
+| Duchy | 1 |
 | Empire | 9 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -119,13 +119,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q334714 | Duchy of Athens
-
-- rank: Duchy
-- exists: 1205..1458
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q34266 | Russian Empire
 
 - rank: Empire
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 1291..1798
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q436994 | Kingdom of Dublin
+
+- rank: Kingdom
+- exists: 839..1171
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

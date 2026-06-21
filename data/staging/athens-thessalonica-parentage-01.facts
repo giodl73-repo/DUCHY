@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Duchy of Athens under the Kingdom of Thessalonica.
+
+fact_id: fact-q334714-parent-q325461
+subject_id: title-q334714
+claim_kind: parentage
+span: 1205..1224
+value: title-q325461
+source_ids: src-wikidata-q334714, src-wikidata-q325461, src-wikipedia-duchy-athens
+confidence: multi_source
