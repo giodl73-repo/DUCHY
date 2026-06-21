@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q6673921 | Lotharingia
-
-- rank: Duchy
-- exists: 855..959
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q671899 | Duchy of Teschen
 
 - rank: Duchy
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1125..1389
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q836937 | Duchy of Julich
+
+- rank: Duchy
+- exists: 1003..1794
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

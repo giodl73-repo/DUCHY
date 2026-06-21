@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 10 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 9 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 5 |
+| Duchy | 6 |
 | Empire | 9 |
-| Kingdom | 10 |
+| Kingdom | 9 |
 
 ## Review Rows
 
@@ -106,13 +106,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q34 | Sweden
-
-- rank: Kingdom
-- exists: 900..
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q34266 | Russian Empire
 
 - rank: Empire
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 839..1171
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q47261 | Duchy of Bavaria
+
+- rank: Duchy
+- exists: 907..1805
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

@@ -111,7 +111,6 @@ title-q328001	Prince-Bishopric of Toul	Duchy	1048..1801	0	high_parentage_review	
 title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q334714	Duchy of Athens	Duchy	1205..1458	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q34	Sweden	Kingdom	900..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q35	Denmark	Kingdom	800..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -143,7 +142,7 @@ title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	
 title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q625380	Eastern Hungarian Kingdom	Kingdom	1526..1570	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q62623	Kalmar Union	Kingdom	1397..1523	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q641138	Duchy of Cleves	Duchy	1092..1795	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

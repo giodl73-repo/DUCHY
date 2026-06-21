@@ -231,7 +231,9 @@ Pulses:
 83. Hispanic Monarchy crown parentage packet. Complete for promoting Hispanic
     Monarchy and importing Crown of Aragon/Crown of Castile -> Hispanic
     Monarchy for 1479-1700.
-84. Next reviewed parentage packet.
+84. Kalmar Union Sweden parentage packet. Complete for correcting Kalmar Union
+    to composite Crown rank and importing Sweden -> Kalmar Union for 1397-1523.
+85. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

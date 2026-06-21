@@ -16,18 +16,12 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 5 |
+| Crown | 1 |
 | Duchy | 6 |
 | Empire | 2 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q47261 | Duchy of Bavaria
-
-- rank: Duchy
-- exists: 907..1805
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q48742118 | Fascist Italy
 
@@ -157,10 +151,10 @@ gap_rows: 25
 
 ### title-q62623 | Kalmar Union
 
-- rank: Kingdom
+- rank: Crown
 - exists: 1397..1523
 - review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q62651 | Denmark-Norway
 
@@ -194,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 959..1190
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q6673921 | Lotharingia
+
+- rank: Duchy
+- exists: 855..959
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

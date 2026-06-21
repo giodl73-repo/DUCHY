@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Sweden under Kalmar Union after rank correction.
+
+fact_id: fact-q34-parent-q62623
+subject_id: title-q34
+claim_kind: parentage
+span: 1397..1523
+value: title-q62623
+source_ids: src-wikidata-q34, src-wikidata-q62623
+confidence: multi_source

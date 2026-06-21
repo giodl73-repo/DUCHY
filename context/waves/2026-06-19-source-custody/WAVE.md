@@ -98,6 +98,7 @@ records and validation.
 | 80 | Schleswig Denmark parentage | complete | Promote Denmark and import Duchy of Schleswig parentage under Denmark. |
 | 81 | Burgundian Netherlands State parentage | complete | Promote Burgundian State and import Burgundian Netherlands parentage under it. |
 | 82 | Hispanic Monarchy crown parentage | complete | Promote Hispanic Monarchy and import Crown of Aragon and Crown of Castile parentage under it. |
+| 83 | Kalmar Union Sweden parentage | complete | Correct Kalmar Union to Crown rank and import Sweden parentage under it. |
 
 ## Success Criteria
 
