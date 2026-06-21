@@ -7,17 +7,16 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
+| high_parentage_review | 3 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 7 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Duchy | 3 |
-| Empire | 7 |
+| Empire | 8 |
 | Kingdom | 14 |
 
 ## Review Rows
@@ -77,13 +76,6 @@ gap_rows: 25
 - exists: 1377..1463
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2991474 | County of Wurttemberg
-
-- rank: County
-- exists: 1083..1495
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q3181749 | Arab Caliphate
 
@@ -194,6 +186,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 1642..1860
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q43287 | German Empire
+
+- rank: Empire
+- exists: 1871..1918
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

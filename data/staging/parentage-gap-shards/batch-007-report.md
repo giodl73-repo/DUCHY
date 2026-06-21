@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 17
+gap_rows: 16
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 5 |
-| medium_parentage_review | 11 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
@@ -17,16 +17,9 @@ gap_rows: 17
 |---|---:|
 | Duchy | 5 |
 | Empire | 1 |
-| Kingdom | 11 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q816814 | Kingdom of Gwynedd
-
-- rank: Kingdom
-- exists: 401..1216
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q825902 | Polish-Lithuanian union
 

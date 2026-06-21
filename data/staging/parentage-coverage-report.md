@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
-sources: 369
-facts: 1217
+sources: 370
+facts: 1218
 titles: 335
-parentage_facts: 212
-titles_with_parentage: 168
-titles_without_parentage: 167
+parentage_facts: 213
+titles_with_parentage: 169
+titles_without_parentage: 166
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 20 | 10 |
+| County | 30 | 21 | 9 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 107 | 30 |
 | Empire | 38 | 0 | 38 |
@@ -105,7 +105,6 @@ titles_without_parentage: 167
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2980623 | Kingdom of Bosnia | Kingdom | 1377..1463
-- title-q2991474 | County of Wurttemberg | County | 1083..1495
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370

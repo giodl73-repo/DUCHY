@@ -4773,3 +4773,15 @@ notes: Duchy of Modena and Reggio article; used only for textual parentage conte
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Duchy of Modena and Reggio parentage context only; no Ferrara papal succession, Este genealogy, Mantuan or Spanish Succession wars, Mirandola absorption, Austria-Este restoration, Congress of Vienna settlement, Italian unification, or post-1814 parentage imported.
+---
+source_id: src-wikipedia-county-wurttemberg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_W%C3%BCrttemberg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Wurttemberg article; used only for textual parentage context that identifies the county as a historical territory of the Holy Roman Empire from the 12th century until its elevation to Duchy of Wurttemberg in 1495.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Wurttemberg parentage context only; no House of Wurttemberg genealogy, Duchy of Swabia succession, Treaty of Nurtingen division, Treaty of Munsingen reunification, Duchy of Wurttemberg continuation, electorate, kingdom, or post-HRE claims imported.
