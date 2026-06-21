@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q230791 | Kingdom of Scotland
-
-- rank: Kingdom
-- exists: 843..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q231392 | Kingdom of Asturias
 
 - rank: Kingdom
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 824..1162
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q35 | Denmark
+
+- rank: Kingdom
+- exists: 800..
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

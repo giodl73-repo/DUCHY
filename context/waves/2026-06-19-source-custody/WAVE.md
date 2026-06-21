@@ -116,6 +116,7 @@ records and validation.
 | 98 | Grand Principality of Moscow Golden Horde parentage | complete | Promote Golden Horde and import Grand Principality of Moscow parentage under it. |
 | 99 | County of Astarac Duchy of Gascony parentage | complete | Promote Duchy of Gascony and import County of Astarac parentage under it. |
 | 100 | Duchy of Bohemia HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Bohemia parentage under the Holy Roman Empire. |
+| 101 | Duchy of Florence HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Florence parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

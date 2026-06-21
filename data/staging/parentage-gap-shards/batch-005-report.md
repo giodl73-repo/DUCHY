@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q35 | Denmark
-
-- rank: Kingdom
-- exists: 800..
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q3624335 | Duchy of Austria
 
 - rank: Duchy
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 820..961
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q612359 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

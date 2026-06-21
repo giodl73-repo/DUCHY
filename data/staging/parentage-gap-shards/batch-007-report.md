@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 24
+gap_rows: 23
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 7 |
-| medium_parentage_review | 15 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
@@ -19,16 +19,9 @@ gap_rows: 24
 | Crown | 1 |
 | Duchy | 6 |
 | Empire | 2 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q733799 | Kingdom of the Hwicce
-
-- rank: Kingdom
-- exists: 577..780
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q736029 | Nassau-Siegen
 

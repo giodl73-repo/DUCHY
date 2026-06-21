@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 5 |
+| Duchy | 4 |
 | Empire | 6 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -169,13 +169,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2252973 | Duchy of Florence
-
-- rank: Duchy
-- exists: 1532..1569
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q2253783 | Kingdom of Glywysing
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 602..1453
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q230791 | Kingdom of Scotland
+
+- rank: Kingdom
+- exists: 843..1707
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

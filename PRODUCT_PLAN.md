@@ -284,7 +284,10 @@ Pulses:
 101. Duchy of Bohemia HRE parentage packet. Complete for adding a reviewed
      Wikimedia text source and importing Duchy of Bohemia -> Holy Roman Empire
      for 1002-1198.
-102. Next reviewed parentage packet.
+102. Duchy of Florence HRE parentage packet. Complete for adding a reviewed
+     Wikimedia text source and importing Duchy of Florence -> Holy Roman Empire
+     for 1532-1569.
+103. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -1,0 +1,11 @@
+source_id: src-wikipedia-duchy-florence
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Florence
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Florence article; used only for textual parentage context that ties the duchy's creation to Charles V, Holy Roman Emperor, and imperial determination of Florence's government.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Florence parentage context only; no Medici genealogy, Florentine republican constitution, Siena conquest, Elba purchase, naval, succession, or Grand Duchy of Tuscany continuation claims imported.

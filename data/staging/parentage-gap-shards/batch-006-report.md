@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q612359 | Kingdom of Lithuania
-
-- rank: Kingdom
-- exists: 1918..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q623751 | Kingdom of Bernicia
 
 - rank: Kingdom
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1804..1815
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q733799 | Kingdom of the Hwicce
+
+- rank: Kingdom
+- exists: 577..780
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

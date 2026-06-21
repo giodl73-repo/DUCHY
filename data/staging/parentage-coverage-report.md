@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 362
-facts: 1210
+sources: 363
+facts: 1211
 titles: 335
-parentage_facts: 205
-titles_with_parentage: 161
-titles_without_parentage: 174
+parentage_facts: 206
+titles_with_parentage: 162
+titles_without_parentage: 173
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 174
 |---|---:|---:|---:|
 | County | 30 | 20 | 10 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 100 | 37 |
+| Duchy | 137 | 101 | 36 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -93,7 +93,6 @@ titles_without_parentage: 174
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
 - title-q223936 | Kingdom of Italy | Kingdom | 1805..1814
-- title-q2252973 | Duchy of Florence | Duchy | 1532..1569
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q2273304 | Moravian Serbia | Duchy | 1365..1403
 - title-q2295939 | Duchy of Gascony | Duchy | 602..1453
