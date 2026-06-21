@@ -1,0 +1,5 @@
+child	child_label	child_rank	child_exists	basis	parent	parent_label	parent_rank	parent_exists	parentage_span
+Q657241	Duchy of Westphalia	Duchy	1180..1803	Wikimedia text: historic territory/state of the Holy Roman Empire until 1803	Q12548	Holy Roman Empire	Empire	962..1806	1180..1803
+Q573290	County of Ravensberg	County	1140..1807	Wikimedia text: historical county of the Holy Roman Empire; parentage bounded by HRE end	Q12548	Holy Roman Empire	Empire	962..1806	1140..1806
+Q589251	County of Montbeliard	County	1042..1793	Wikimedia text: state/princely county of the Holy Roman Empire until French occupation in 1793	Q12548	Holy Roman Empire	Empire	962..1806	1042..1793
+Q599613	County of Namur	County	981..1795	Wikimedia text: county of the Holy Roman Empire until French Revolutionary-era end	Q12548	Holy Roman Empire	Empire	962..1806	981..1795

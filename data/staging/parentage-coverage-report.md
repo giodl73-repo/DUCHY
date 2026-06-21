@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
-sources: 375
-facts: 1223
+sources: 379
+facts: 1227
 titles: 335
-parentage_facts: 218
-titles_with_parentage: 174
-titles_without_parentage: 161
+parentage_facts: 222
+titles_with_parentage: 178
+titles_without_parentage: 157
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 22 | 8 |
+| County | 30 | 25 | 5 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 110 | 27 |
+| Duchy | 137 | 111 | 26 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -128,11 +128,8 @@ titles_without_parentage: 161
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q566639 | Duchy of Opava | Duchy | 1269..1918
 - title-q568638 | Duchy of Silesia | Duchy | 1138..1742
-- title-q573290 | County of Ravensberg | County | 1140..1807
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
 - title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553
-- title-q589251 | County of Montbeliard | County | 1042..1793
-- title-q599613 | County of Namur | County | 981..1795
 - title-q600018 | Kingdom of Hungary | Kingdom | 1920..1946
 - title-q603771 | Emirate of Crete | Empire | 820..961
 - title-q612359 | Kingdom of Lithuania | Kingdom | 1918..1918
@@ -142,7 +139,6 @@ titles_without_parentage: 161
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
-- title-q657241 | Duchy of Westphalia | Duchy | 1180..1803
 - title-q660393 | Lower Lotharingia | Duchy | 959..1190
 - title-q6673921 | Lotharingia | Duchy | 855..959
 - title-q671899 | Duchy of Teschen | Duchy | 1281..1918

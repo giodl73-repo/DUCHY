@@ -129,6 +129,7 @@ records and validation.
 | 111 | Kingdom of Thessalonica Latin Empire parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Thessalonica parentage under the Latin Empire. |
 | 112 | Duchy of Cleves HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Cleves parentage under the Holy Roman Empire. |
 | 113 | County of Luxembourg HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Luxembourg parentage under the Holy Roman Empire. |
+| 114 | High-priority HRE county/duchy batch 01 | complete | Add four reviewed Wikimedia text sources and import Westphalia, Ravensberg, Montbeliard, and Namur parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 

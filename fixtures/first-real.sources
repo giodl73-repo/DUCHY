@@ -4845,3 +4845,51 @@ notes: County of Luxembourg article; used only for textual parentage context tha
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed County of Luxembourg parentage context only; no Ardennes genealogy, Luxembourg dynasty, imperial elections, Duchy of Luxembourg continuation, Burgundian or Habsburg Netherlands, French annexation, grand-duchy, or later Luxembourg claims imported.
+---
+source_id: src-wikipedia-duchy-westphalia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Westphalia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Westphalia article; used only for textual parentage context that identifies the duchy as a historic territory/state of the Holy Roman Empire from 1180 until 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Westphalia parentage context only; no Saxon predecessor detail, Electorate of Cologne administration, regional Westphalia claims, secularization detail, Hesse-Darmstadt transfer, or post-1803 claims imported.
+---
+source_id: src-wikipedia-county-ravensberg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Ravensberg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Ravensberg article; used only for textual parentage context that identifies Ravensberg as a historical county of the Holy Roman Empire from 1140, with parentage bounded by the Holy Roman Empire end in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Ravensberg parentage context only; no Calvelage predecessor, Berg personal union, Westphalian Circle detail, Julich-Cleves-Berg succession, Brandenburg-Prussia transfer, Minden-Ravensberg administration, or post-1806 claims imported.
+---
+source_id: src-wikipedia-county-montbeliard
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Montb%C3%A9liard
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Montbeliard article; used only for textual parentage context that identifies Montbeliard as a state/princely county of the Holy Roman Empire from 1042 until French occupation in 1793.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Montbeliard parentage context only; no County of Burgundy predecessor, Wurttemberg acquisition, Reichstag voting rights, religious history, French cession, or post-1793 claims imported.
+---
+source_id: src-wikipedia-county-namur
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Namur
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Namur article; used only for textual parentage context that identifies Namur as a county of the Holy Roman Empire from the late 10th century until its French Revolutionary-era end.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Namur parentage context only; no Roman or Frankish prehistory, Burgundian Netherlands, Spanish or Austrian possession, French Revolutionary conquest detail, modern province boundaries, or post-1795 claims imported.

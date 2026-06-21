@@ -7,19 +7,19 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 11 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 5 |
+| County | 2 |
 | Crown | 1 |
-| Duchy | 6 |
+| Duchy | 8 |
 | Empire | 2 |
-| Kingdom | 11 |
+| Kingdom | 12 |
 
 ## Review Rows
 
@@ -65,13 +65,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q573290 | County of Ravensberg
-
-- rank: County
-- exists: 1140..1807
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q58202 | July Monarchy
 
 - rank: Kingdom
@@ -85,20 +78,6 @@ gap_rows: 25
 - exists: 493..553
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q589251 | County of Montbeliard
-
-- rank: County
-- exists: 1042..1793
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q599613 | County of Namur
-
-- rank: County
-- exists: 981..1795
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q600018 | Kingdom of Hungary
 
@@ -163,13 +142,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q657241 | Duchy of Westphalia
-
-- rank: Duchy
-- exists: 1180..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q660393 | Lower Lotharingia
 
 - rank: Duchy
@@ -197,4 +169,32 @@ gap_rows: 25
 - exists: 900..1401
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q676184 | Kingdom of Sussex
+
+- rank: Kingdom
+- exists: 477..825
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q682001 | Duchy of Bytom
+
+- rank: Duchy
+- exists: 1281..1498
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q684030 | Principality of Serbia
+
+- rank: Duchy
+- exists: 1815..1882
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q686312 | Duchy of Amalfi
+
+- rank: Duchy
+- exists: 839..1137
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

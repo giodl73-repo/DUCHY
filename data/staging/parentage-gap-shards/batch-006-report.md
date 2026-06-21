@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 13 |
-| medium_parentage_review | 9 |
+| high_parentage_review | 11 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,39 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 11 |
+| Duchy | 9 |
 | Empire | 3 |
-| Kingdom | 8 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q676184 | Kingdom of Sussex
-
-- rank: Kingdom
-- exists: 477..825
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q682001 | Duchy of Bytom
-
-- rank: Duchy
-- exists: 1281..1498
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q684030 | Principality of Serbia
-
-- rank: Duchy
-- exists: 1815..1882
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q686312 | Duchy of Amalfi
-
-- rank: Duchy
-- exists: 839..1137
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q693570 | Duchy of Ferrara
 
@@ -195,6 +167,34 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 501..917
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q83958 | Macedonia
+
+- rank: Kingdom
+- exists: -808..-167
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q842091 | Duchy of Normandy
+
+- rank: Duchy
+- exists: 911..1259
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q854415 | Kingdom of the Lombards
+
+- rank: Kingdom
+- exists: 568..774
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q858841 | Kingdom of Croatia
+
+- rank: Kingdom
+- exists: 925..1102
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

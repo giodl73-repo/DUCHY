@@ -9561,3 +9561,37 @@ span: 963..1354
 value: title-q12548
 source_ids: src-wikidata-q5177890, src-wikidata-q12548, src-wikipedia-county-luxembourg
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for HRE county and duchy gaps.
+
+fact_id: fact-q657241-parent-q12548
+subject_id: title-q657241
+claim_kind: parentage
+span: 1180..1803
+value: title-q12548
+source_ids: src-wikidata-q657241, src-wikidata-q12548, src-wikipedia-duchy-westphalia
+confidence: multi_source
+---
+fact_id: fact-q573290-parent-q12548
+subject_id: title-q573290
+claim_kind: parentage
+span: 1140..1806
+value: title-q12548
+source_ids: src-wikidata-q573290, src-wikidata-q12548, src-wikipedia-county-ravensberg
+confidence: multi_source
+---
+fact_id: fact-q589251-parent-q12548
+subject_id: title-q589251
+claim_kind: parentage
+span: 1042..1793
+value: title-q12548
+source_ids: src-wikidata-q589251, src-wikidata-q12548, src-wikipedia-county-montbeliard
+confidence: multi_source
+---
+fact_id: fact-q599613-parent-q12548
+subject_id: title-q599613
+claim_kind: parentage
+span: 981..1795
+value: title-q12548
+source_ids: src-wikidata-q599613, src-wikidata-q12548, src-wikipedia-county-namur
+confidence: multi_source

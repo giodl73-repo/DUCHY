@@ -323,7 +323,11 @@ Pulses:
 114. County of Luxembourg HRE parentage packet. Complete for adding a reviewed
      Wikimedia text source and importing County of Luxembourg -> Holy Roman
      Empire for 963-1354.
-115. Next reviewed parentage packet.
+115. High-priority HRE county/duchy parentage batch 01. Complete for adding
+     four reviewed Wikimedia text sources and importing Duchy of Westphalia,
+     County of Ravensberg, County of Montbeliard, and County of Namur under the
+     Holy Roman Empire.
+116. Continue high-priority parentage closure.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

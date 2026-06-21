@@ -1,53 +1,25 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 11
+gap_rows: 7
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 8 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 5 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 2 |
+| Duchy | 1 |
 | Empire | 1 |
-| Kingdom | 8 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q83958 | Macedonia
-
-- rank: Kingdom
-- exists: -808..-167
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q842091 | Duchy of Normandy
-
-- rank: Duchy
-- exists: 911..1259
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q854415 | Kingdom of the Lombards
-
-- rank: Kingdom
-- exists: 568..774
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q858841 | Kingdom of Croatia
-
-- rank: Kingdom
-- exists: 925..1102
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q870517 | Odrysian kingdom
 
