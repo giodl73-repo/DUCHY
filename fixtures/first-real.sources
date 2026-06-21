@@ -5037,3 +5037,28 @@ notes: Duchy of Oswiecim article; used only for textual parentage context that i
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Duchy of Oswiecim parentage context only; no Lesser Poland predecessor detail, Zator split, sale mechanics, Polish Crown incorporation, Austrian Galicia, residual title, or post-1457 parentage claims imported.
+---
+source_id: src-wikipedia-nassau-siegen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Nassau-Siegen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Nassau-Siegen article; used only for textual parentage context that identifies Nassau-Siegen as a state/principality of the Holy Roman Empire in 1303-1328 and again in 1606-1743.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Nassau-Siegen parentage context only; no Nassau-Dillenburg genealogy, Catholic/Protestant subdivision detail, Orange-Nassau-Dietz succession, principality-versus-county rank correction, or post-1743 claims imported.
+---
+source_id: src-wikipedia-vladimir-suzdal
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Vladimir-Suzdal
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Vladimir-Suzdal article; used only for textual parentage context that identifies Vladimir as a vassal under Mongol suzerainty, later succeeded by the Golden Horde, with the imported Golden Horde span beginning after the Horde's emergence as a functionally independent khanate.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Principality of Vladimir parentage context only; no initial Mongol Empire parentage, appanage fragmentation, grand-princely appointment mechanics, Moscow transfer, tax-system detail, or post-1389 claims imported.
+---

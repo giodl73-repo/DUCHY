@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
-sources: 391
-facts: 1239
+sources: 393
+facts: 1242
 titles: 335
-parentage_facts: 234
-titles_with_parentage: 190
-titles_without_parentage: 145
+parentage_facts: 237
+titles_with_parentage: 192
+titles_without_parentage: 143
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 26 | 4 |
+| County | 30 | 27 | 3 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 122 | 15 |
+| Duchy | 137 | 123 | 14 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -146,7 +146,6 @@ titles_without_parentage: 145
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815
 - title-q733799 | Kingdom of the Hwicce | Kingdom | 577..780
-- title-q736029 | Nassau-Siegen | County | 1303..1743
 - title-q766543 | Hispanic Monarchy | Empire | 1479..1700
 - title-q769782 | Kingdom of Powys | Kingdom | 500..1160
 - title-q771193 | Kingdom of Brittany | Kingdom | 851..939
@@ -154,7 +153,6 @@ titles_without_parentage: 145
 - title-q7882199 | Burgundian State | Crown | 1363..1559
 - title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
 - title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
-- title-q83546 | Grand Principality of Vladimir | Duchy | 1125..1389
 - title-q837136 | Kingdom of Deheubarth | Kingdom | 920..1197
 - title-q837998 | Kingdom of East Anglia | Kingdom | 501..917
 - title-q83958 | Macedonia | Kingdom | -808..-167
@@ -282,3 +280,6 @@ titles_without_parentage: 145
 - title-q704288 | Duchy of Holstein
   - fact-q704288-parent-q12548 | title-q12548 | 1474..1806
   - fact-q704288-parent-q151624 | title-q151624 | 1815..1866
+- title-q736029 | Nassau-Siegen
+  - fact-q736029-parent-q12548-1303 | title-q12548 | 1303..1328
+  - fact-q736029-parent-q12548-1606 | title-q12548 | 1606..1743

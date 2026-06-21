@@ -336,7 +336,10 @@ Pulses:
 118. High-priority Bohemian/Silesian parentage batch 04. Complete for adding
     Opava, Silesia, Teschen, Bytom, and Oswiecim parentage spans under the
     Kingdom of Bohemia.
-119. Continue high-priority parentage closure.
+119. High-priority mixed parentage batch 05. Complete for adding Nassau-Siegen
+    Holy Roman Empire spans and Grand Principality of Vladimir Golden Horde
+    parentage.
+120. Continue high-priority parentage closure.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

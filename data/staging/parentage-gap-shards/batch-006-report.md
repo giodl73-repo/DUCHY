@@ -1,33 +1,26 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 20
+gap_rows: 18
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
+| high_parentage_review | 3 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 2 |
+| root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Crown | 1 |
-| Duchy | 4 |
-| Empire | 2 |
+| Duchy | 3 |
+| Empire | 1 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q766543 | Hispanic Monarchy
-
-- rank: Empire
-- exists: 1479..1700
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q769782 | Kingdom of Powys
 
@@ -68,13 +61,6 @@ gap_rows: 20
 
 - rank: Duchy
 - exists: 1385..1569
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q83546 | Grand Principality of Vladimir
-
-- rank: Duchy
-- exists: 1125..1389
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

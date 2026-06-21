@@ -7,18 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 4 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 3 |
+| County | 2 |
 | Crown | 1 |
 | Duchy | 4 |
-| Empire | 4 |
+| Empire | 5 |
 | Kingdom | 13 |
 
 ## Review Rows
@@ -191,10 +191,10 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q736029 | Nassau-Siegen
+### title-q766543 | Hispanic Monarchy
 
-- rank: County
-- exists: 1303..1743
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
+- rank: Empire
+- exists: 1479..1700
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

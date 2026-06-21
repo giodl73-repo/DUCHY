@@ -9697,3 +9697,29 @@ span: 1327..1457
 value: title-q42585
 source_ids: src-wikidata-q702327, src-wikidata-q42585, src-wikipedia-duchy-oswiecim
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for HRE and Golden Horde gaps.
+
+fact_id: fact-q736029-parent-q12548-1303
+subject_id: title-q736029
+claim_kind: parentage
+span: 1303..1328
+value: title-q12548
+source_ids: src-wikidata-q736029, src-wikidata-q12548, src-wikipedia-nassau-siegen
+confidence: multi_source
+---
+fact_id: fact-q736029-parent-q12548-1606
+subject_id: title-q736029
+claim_kind: parentage
+span: 1606..1743
+value: title-q12548
+source_ids: src-wikidata-q736029, src-wikidata-q12548, src-wikipedia-nassau-siegen
+confidence: multi_source
+---
+fact_id: fact-q83546-parent-q141472
+subject_id: title-q83546
+claim_kind: parentage
+span: 1259..1389
+value: title-q141472
+source_ids: src-wikidata-q83546, src-wikidata-q141472, src-wikipedia-vladimir-suzdal
+confidence: multi_source
