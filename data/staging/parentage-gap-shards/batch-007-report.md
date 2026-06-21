@@ -7,9 +7,9 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
+| high_parentage_review | 8 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 2 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 7 |
-| Empire | 2 |
+| Duchy | 6 |
+| Empire | 3 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q702327 | Duchy of Oswiecim
-
-- rank: Duchy
-- exists: 1315..1564
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q704312 | Grand Duchy of Frankfurt
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q926295 | Italian Empire
+
+- rank: Empire
+- exists: 1882..1946
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

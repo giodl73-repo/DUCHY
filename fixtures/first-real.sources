@@ -4581,3 +4581,15 @@ notes: Duchy of Prussia article; used only for textual parentage context that id
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Duchy of Prussia parentage context only; no Brandenburg-Prussia, sovereignty emancipation, Polish suzerainty after 1618, estate politics, or later Kingdom of Prussia claims imported.
+---
+source_id: src-wikipedia-county-empuries
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Emp%C3%BAries
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Empuries article; used only for textual parentage context that identifies Empuries as an apanage of the Crown of Aragon from 1341 until its 1402 annexation into the Principality of Catalonia.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Empuries parentage context only; no earlier Frankish, Girona, Barcelona, Peralada, Prades exchange, Catalan institutional, or later Principality of Catalonia claims imported.

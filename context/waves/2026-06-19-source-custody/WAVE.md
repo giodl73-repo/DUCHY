@@ -109,6 +109,7 @@ records and validation.
 | 91 | Italian protectorate of Albania Italian Empire parentage | complete | Promote Italian Empire and import Italian protectorate of Albania parentage under it. |
 | 92 | Francia Carolingian Empire parentage | complete | Add a reviewed Wikimedia text source and import Francia parentage under the Carolingian Empire. |
 | 93 | Duchy of Prussia Polish Crown parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Prussia parentage under the Crown of the Kingdom of Poland. |
+| 94 | County of Empuries Crown of Aragon parentage | complete | Add a reviewed Wikimedia text source and import County of Empuries parentage under the Crown of Aragon. |
 
 ## Success Criteria
 

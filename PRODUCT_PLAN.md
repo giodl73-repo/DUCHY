@@ -263,7 +263,10 @@ Pulses:
 94. Duchy of Prussia Polish Crown parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Duchy of Prussia -> Crown of
     the Kingdom of Poland for 1525-1618.
-95. Next reviewed parentage packet.
+95. County of Empuries Crown of Aragon parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing County of Empuries -> Crown of
+    Aragon for 1341-1402.
+96. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

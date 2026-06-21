@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q328818 | Kingdom of Kent
-
-- rank: Kingdom
-- exists: 450..871
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q3324486 | Prince-Bishopric of Montenegro
 
 - rank: Duchy
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1830..1848
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q583038 | Ostrogothic Kingdom
+
+- rank: Kingdom
+- exists: 493..553
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

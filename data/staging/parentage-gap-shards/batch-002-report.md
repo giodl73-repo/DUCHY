@@ -7,18 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
+| high_parentage_review | 4 |
 | medium_parentage_review | 15 |
-| root_or_successor_review | 5 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Crown | 1 |
 | Duchy | 3 |
-| Empire | 5 |
+| Empire | 6 |
 | Kingdom | 13 |
 | TheocraticState | 1 |
 
@@ -28,13 +28,6 @@ gap_rows: 25
 
 - rank: County
 - exists: 920..1300
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
-### title-q1541699 | County of Empuries
-
-- rank: County
-- exists: 812..1402
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
 
@@ -198,4 +191,11 @@ gap_rows: 25
 - exists: 1738..1861
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q181254 | Empire of Nicaea
+
+- rank: Empire
+- exists: 1204..1261
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

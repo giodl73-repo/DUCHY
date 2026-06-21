@@ -1,7 +1,7 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 4
+gap_rows: 3
 
 ## Priority Counts
 
@@ -9,24 +9,15 @@ gap_rows: 4
 |---|---:|
 | high_parentage_review | 1 |
 | medium_parentage_review | 2 |
-| root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 1 |
-| Empire | 1 |
 | Kingdom | 2 |
 
 ## Review Rows
-
-### title-q926295 | Italian Empire
-
-- rank: Empire
-- exists: 1882..1946
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q954585 | Kingdom of Brycheiniog
 

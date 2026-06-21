@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 5 |
-| medium_parentage_review | 11 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 4 |
-| Empire | 9 |
-| Kingdom | 11 |
+| Empire | 8 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q181254 | Empire of Nicaea
-
-- rank: Empire
-- exists: 1204..1261
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q18285930 | German Empire of 1848/1849
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 872..1397
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q223793 | Kingdom of Etruria
+
+- rank: Kingdom
+- exists: 1801..1807
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

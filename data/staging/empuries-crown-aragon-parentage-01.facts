@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for County of Empuries under the Crown of Aragon.
+
+fact_id: fact-q1541699-parent-q204920
+subject_id: title-q1541699
+claim_kind: parentage
+span: 1341..1402
+value: title-q204920
+source_ids: src-wikidata-q1541699, src-wikidata-q204920, src-wikipedia-county-empuries
+confidence: multi_source

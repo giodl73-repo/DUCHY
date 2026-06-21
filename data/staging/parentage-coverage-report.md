@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
-sources: 353
-facts: 1197
+sources: 354
+facts: 1198
 titles: 333
-parentage_facts: 198
-titles_with_parentage: 154
-titles_without_parentage: 179
+parentage_facts: 199
+titles_with_parentage: 155
+titles_without_parentage: 178
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 18 | 12 |
+| County | 30 | 19 | 11 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 136 | 96 | 40 |
 | Empire | 37 | 0 | 37 |
@@ -48,7 +48,6 @@ titles_without_parentage: 179
 - title-q151624 | German Confederation | Empire | 1815..1866
 - title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
 - title-q1541613 | County of Astarac | County | 920..1300
-- title-q1541699 | County of Empuries | County | 812..1402
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
 - title-q154849 | Grand Duchy of Tuscany | Duchy | 1569..1860
 - title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
