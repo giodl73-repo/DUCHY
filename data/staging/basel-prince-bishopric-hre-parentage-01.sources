@@ -1,0 +1,11 @@
+source_id: src-wikipedia-prince-bishopric-basel
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Basel
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Basel article; used only for textual parentage context that identifies Basel as an ecclesiastical principality within the Holy Roman Empire, ruled by prince-bishops from 1032 until dissolution in 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Prince-Bishopric of Basel parentage context only; no diocese origin, Moutier-Grandval, Imperial Diet seat, Upper Rhenish Circle, city of Basel, Swiss Confederacy, Reformation, French annexation, Baden mediation, or territorial list claims imported.

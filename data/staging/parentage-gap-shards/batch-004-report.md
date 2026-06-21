@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 12 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 8 |
+| Duchy | 7 |
 | Empire | 4 |
-| Kingdom | 12 |
+| Kingdom | 13 |
 
 ## Review Rows
 
@@ -120,13 +120,6 @@ gap_rows: 25
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
-### title-q319586 | Prince-Bishopric of Basel
-
-- rank: Duchy
-- exists: 1032..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q321371 | Bosporan Kingdom
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1156..1453
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q3755547 | Kingdom of Italy
+
+- rank: Kingdom
+- exists: 476..493
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

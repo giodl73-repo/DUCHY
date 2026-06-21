@@ -1,7 +1,7 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 22
+gap_rows: 21
 
 ## Priority Counts
 
@@ -9,7 +9,7 @@ gap_rows: 22
 |---|---:|
 | high_parentage_review | 6 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 2 |
+| root_or_successor_review | 1 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 22
 |---|---:|
 | Crown | 1 |
 | Duchy | 6 |
-| Empire | 2 |
+| Empire | 1 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q766543 | Hispanic Monarchy
-
-- rank: Empire
-- exists: 1479..1700
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q769782 | Kingdom of Powys
 

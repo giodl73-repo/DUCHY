@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 364
-facts: 1212
+sources: 365
+facts: 1213
 titles: 335
-parentage_facts: 207
-titles_with_parentage: 163
-titles_without_parentage: 172
+parentage_facts: 208
+titles_with_parentage: 164
+titles_without_parentage: 171
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 172
 |---|---:|---:|---:|
 | County | 30 | 20 | 10 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 102 | 35 |
+| Duchy | 137 | 103 | 34 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -111,7 +111,6 @@ titles_without_parentage: 172
 - title-q2991474 | County of Wurttemberg | County | 1083..1495
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
 - title-q31929 | Carolingian Empire | Empire | 800..887
-- title-q319586 | Prince-Bishopric of Basel | Duchy | 1032..1803
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
 - title-q325461 | Kingdom of Thessalonica | Kingdom | 1204..1224
 - title-q328001 | Prince-Bishopric of Toul | Duchy | 1048..1801

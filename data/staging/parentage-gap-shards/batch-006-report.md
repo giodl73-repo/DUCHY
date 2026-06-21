@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 15 |
-| medium_parentage_review | 7 |
-| root_or_successor_review | 3 |
+| medium_parentage_review | 6 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -18,17 +18,10 @@ gap_rows: 25
 | County | 3 |
 | Crown | 1 |
 | Duchy | 12 |
-| Empire | 3 |
-| Kingdom | 6 |
+| Empire | 4 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q625380 | Eastern Hungarian Kingdom
-
-- rank: Kingdom
-- exists: 1526..1570
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62567 | Kingdom of Iceland
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1303..1743
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q766543 | Hispanic Monarchy
+
+- rank: Empire
+- exists: 1479..1700
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

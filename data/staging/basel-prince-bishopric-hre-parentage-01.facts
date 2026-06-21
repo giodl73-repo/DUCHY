@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Prince-Bishopric of Basel under the Holy Roman Empire.
+
+fact_id: fact-q319586-parent-q12548
+subject_id: title-q319586
+claim_kind: parentage
+span: 1032..1803
+value: title-q12548
+source_ids: src-wikidata-q319586, src-wikidata-q12548, src-wikipedia-prince-bishopric-basel
+confidence: multi_source

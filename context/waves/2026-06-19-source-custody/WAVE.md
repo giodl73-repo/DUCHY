@@ -118,6 +118,7 @@ records and validation.
 | 100 | Duchy of Bohemia HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Bohemia parentage under the Holy Roman Empire. |
 | 101 | Duchy of Florence HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Florence parentage under the Holy Roman Empire. |
 | 102 | Prince-Bishopric of Freising HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Freising parentage under the Holy Roman Empire. |
+| 103 | Prince-Bishopric of Basel HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Basel parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 
