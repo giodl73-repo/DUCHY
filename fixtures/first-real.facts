@@ -9595,3 +9595,29 @@ span: 981..1795
 value: title-q12548
 source_ids: src-wikidata-q599613, src-wikidata-q12548, src-wikipedia-county-namur
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for HRE duchy and county gaps.
+
+fact_id: fact-q47261-parent-q12548
+subject_id: title-q47261
+claim_kind: parentage
+span: 962..1805
+value: title-q12548
+source_ids: src-wikidata-q47261, src-wikidata-q12548, src-wikipedia-duchy-bavaria
+confidence: multi_source
+---
+fact_id: fact-q675363-parent-q12548
+subject_id: title-q675363
+claim_kind: parentage
+span: 1032..1401
+value: title-q12548
+source_ids: src-wikidata-q675363, src-wikidata-q12548, src-wikipedia-county-geneva
+confidence: multi_source
+---
+fact_id: fact-q660393-parent-q12548
+subject_id: title-q660393
+claim_kind: parentage
+span: 962..1190
+value: title-q12548
+source_ids: src-wikidata-q660393, src-wikidata-q12548, src-wikipedia-lower-lotharingia
+confidence: multi_source

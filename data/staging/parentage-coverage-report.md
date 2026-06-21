@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
-sources: 379
-facts: 1227
+sources: 382
+facts: 1230
 titles: 335
-parentage_facts: 222
-titles_with_parentage: 178
-titles_without_parentage: 157
+parentage_facts: 225
+titles_with_parentage: 181
+titles_without_parentage: 154
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 25 | 5 |
+| County | 30 | 26 | 4 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 111 | 26 |
+| Duchy | 137 | 113 | 24 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -121,7 +121,6 @@ titles_without_parentage: 157
 - title-q43287 | German Empire | Empire | 1871..1918
 - title-q435583 | Old Swiss Confederacy | Empire | 1291..1798
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
-- title-q47261 | Duchy of Bavaria | Duchy | 907..1805
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
 - title-q50625 | Hordaland | County | 1919..2019
@@ -139,10 +138,8 @@ titles_without_parentage: 157
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
-- title-q660393 | Lower Lotharingia | Duchy | 959..1190
 - title-q6673921 | Lotharingia | Duchy | 855..959
 - title-q671899 | Duchy of Teschen | Duchy | 1281..1918
-- title-q675363 | County of Geneva | County | 900..1401
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
 - title-q682001 | Duchy of Bytom | Duchy | 1281..1498
 - title-q684030 | Principality of Serbia | Duchy | 1815..1882

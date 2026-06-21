@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 2 |
+| Duchy | 1 |
 | Empire | 9 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -189,10 +189,10 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q47261 | Duchy of Bavaria
+### title-q48742118 | Fascist Italy
 
-- rank: Duchy
-- exists: 907..1805
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
+- rank: Kingdom
+- exists: 1922..1943
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

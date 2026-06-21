@@ -8,27 +8,20 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 10 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 2 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Crown | 1 |
-| Duchy | 8 |
-| Empire | 2 |
-| Kingdom | 12 |
+| Duchy | 9 |
+| Empire | 3 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q48742118 | Fascist Italy
-
-- rank: Kingdom
-- exists: 1922..1943
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q506008 | Kingdom of Deira
 
@@ -142,13 +135,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q660393 | Lower Lotharingia
-
-- rank: Duchy
-- exists: 959..1190
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q6673921 | Lotharingia
 
 - rank: Duchy
@@ -162,13 +148,6 @@ gap_rows: 25
 - exists: 1281..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
-
-### title-q675363 | County of Geneva
-
-- rank: County
-- exists: 900..1401
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q676184 | Kingdom of Sussex
 
@@ -197,4 +176,25 @@ gap_rows: 25
 - exists: 839..1137
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q693570 | Duchy of Ferrara
+
+- rank: Duchy
+- exists: 1264..1597
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q698089 | Grand Duchy of Wurzburg
+
+- rank: Duchy
+- exists: 1806..1814
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q701983 | Palatinate-Zweibrucken
+
+- rank: Empire
+- exists: 1444..1801
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

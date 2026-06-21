@@ -327,7 +327,10 @@ Pulses:
      four reviewed Wikimedia text sources and importing Duchy of Westphalia,
      County of Ravensberg, County of Montbeliard, and County of Namur under the
      Holy Roman Empire.
-116. Continue high-priority parentage closure.
+116. High-priority HRE county/duchy parentage batch 02. Complete for adding
+    Bavaria, Geneva, and Lower Lotharingia parentage under the Holy Roman
+    Empire.
+117. Continue high-priority parentage closure.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

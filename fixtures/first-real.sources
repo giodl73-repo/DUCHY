@@ -4893,3 +4893,39 @@ notes: County of Namur article; used only for textual parentage context that ide
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed County of Namur parentage context only; no Roman or Frankish prehistory, Burgundian Netherlands, Spanish or Austrian possession, French Revolutionary conquest detail, modern province boundaries, or post-1795 claims imported.
+---
+source_id: src-wikipedia-duchy-bavaria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Bavaria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Bavaria article; used only for textual parentage context that identifies Bavaria as a state of the Holy Roman Empire from 962 until 1805.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Bavaria parentage context only; no Agilolfing predecessor, stem-duchy detail, electoral dignity, territorial partitions, Napoleonic alliance detail, kingdom transition, or post-1805 claims imported.
+---
+source_id: src-wikipedia-county-geneva
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Geneva
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Geneva article; used only for textual parentage context that identifies Geneva as a county of the Holy Roman Empire after the Kingdom of Arles fell to the empire in 1032, until the county ended in 1401.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Geneva parentage context only; no Burgundian predecessor detail, Savoyard succession, city-bishop conflict, Genevan municipal history, or post-1401 claims imported.
+---
+source_id: src-wikipedia-lower-lotharingia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Lower_Lotharingia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Lower Lotharingia article; used only for textual parentage context that identifies Lower Lotharingia as part of East Francia until 962 and part of the Holy Roman Empire thereafter until 1190.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Lower Lotharingia parentage context only; no Middle Frankish predecessor detail, Upper Lotharingian split, ducal succession, Brabant inheritance, Lower Lorraine titulature, or post-1190 claims imported.

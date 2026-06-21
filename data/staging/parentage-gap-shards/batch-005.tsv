@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q48742118	Fascist Italy	Kingdom	1922..1943	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q506008	Kingdom of Deira	Kingdom	450..655	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q50625	Hordaland	County	1919..2019	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q56089236	Kingdom of Western Georgia	Kingdom	1259..1330	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -16,11 +15,12 @@ title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Fin
 title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q660393	Lower Lotharingia	Duchy	959..1190	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q6673921	Lotharingia	Duchy	855..959	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q671899	Duchy of Teschen	Duchy	1281..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q675363	County of Geneva	County	900..1401	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q682001	Duchy of Bytom	Duchy	1281..1498	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q684030	Principality of Serbia	Duchy	1815..1882	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q686312	Duchy of Amalfi	Duchy	839..1137	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q693570	Duchy of Ferrara	Duchy	1264..1597	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q698089	Grand Duchy of Wurzburg	Duchy	1806..1814	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.

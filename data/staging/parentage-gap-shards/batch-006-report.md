@@ -7,9 +7,9 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 11 |
-| medium_parentage_review | 11 |
-| root_or_successor_review | 3 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
@@ -17,32 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 9 |
-| Empire | 3 |
-| Kingdom | 10 |
+| Duchy | 7 |
+| Empire | 2 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q693570 | Duchy of Ferrara
-
-- rank: Duchy
-- exists: 1264..1597
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q698089 | Grand Duchy of Wurzburg
-
-- rank: Duchy
-- exists: 1806..1814
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q701983 | Palatinate-Zweibrucken
-
-- rank: Empire
-- exists: 1444..1801
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q702327 | Duchy of Oswiecim
 
@@ -195,6 +174,27 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 925..1102
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q870517 | Odrysian kingdom
+
+- rank: Kingdom
+- exists: -460..46
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q87791 | Frisian Kingdom
+
+- rank: Kingdom
+- exists: 500..734
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q905131 | Kingdom of Breifne
+
+- rank: Kingdom
+- exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
