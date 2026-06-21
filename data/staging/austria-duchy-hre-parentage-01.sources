@@ -1,0 +1,11 @@
+source_id: src-wikipedia-duchy-austria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Austria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Austria article; used only for textual parentage context that identifies the duchy as a medieval principality/state within the Holy Roman Empire from its 1156 establishment by the Privilegium Minus until recognition of the archduchy in 1453.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Austria parentage context only; no Margraviate of Austria continuation detail, Bavarian detachment politics, Babenberg succession dispute, Habsburg dynastic claims, Privilegium Maius detail, Archduchy of Austria continuation, Habsburg monarchy, Austrian Empire, or later Austrian claims imported.

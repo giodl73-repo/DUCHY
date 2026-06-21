@@ -7,16 +7,16 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
+| high_parentage_review | 2 |
 | medium_parentage_review | 14 |
-| root_or_successor_review | 8 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 3 |
-| Empire | 8 |
+| Duchy | 2 |
+| Empire | 9 |
 | Kingdom | 14 |
 
 ## Review Rows
@@ -147,13 +147,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q3624335 | Duchy of Austria
-
-- rank: Duchy
-- exists: 1156..1453
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q3755547 | Kingdom of Italy
 
 - rank: Kingdom
@@ -193,6 +186,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 1871..1918
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q435583 | Old Swiss Confederacy
+
+- rank: Empire
+- exists: 1291..1798
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

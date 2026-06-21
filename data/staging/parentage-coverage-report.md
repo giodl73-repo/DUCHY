@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 370
-facts: 1218
+sources: 371
+facts: 1219
 titles: 335
-parentage_facts: 213
-titles_with_parentage: 169
-titles_without_parentage: 166
+parentage_facts: 214
+titles_with_parentage: 170
+titles_without_parentage: 165
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 166
 |---|---:|---:|---:|
 | County | 30 | 21 | 9 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 107 | 30 |
+| Duchy | 137 | 108 | 29 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -115,7 +115,6 @@ titles_without_parentage: 166
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q35 | Denmark | Kingdom | 800..
-- title-q3624335 | Duchy of Austria | Duchy | 1156..1453
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
 - title-q377350 | Iberian Union | Empire | 1580..1640
 - title-q386496 | Kingdom of Montenegro | Kingdom | 1910..1918

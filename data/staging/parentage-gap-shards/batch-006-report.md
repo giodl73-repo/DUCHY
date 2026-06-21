@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q657241 | Duchy of Westphalia
-
-- rank: Duchy
-- exists: 1180..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q660393 | Lower Lotharingia
 
 - rank: Duchy
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 401..1216
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q825902 | Polish-Lithuanian union
+
+- rank: Duchy
+- exists: 1385..1569
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

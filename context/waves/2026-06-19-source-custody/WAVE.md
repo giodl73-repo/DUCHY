@@ -124,6 +124,7 @@ records and validation.
 | 106 | Grand Duchy of Berg Rhine Confederation parentage | complete | Add a reviewed Wikimedia text source and import Grand Duchy of Berg parentage under the Confederation of the Rhine. |
 | 107 | Duchy of Modena and Reggio HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Modena and Reggio parentage under the Holy Roman Empire. |
 | 108 | County of Wurttemberg HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Wurttemberg parentage under the Holy Roman Empire. |
+| 109 | Duchy of Austria HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Austria parentage under the Holy Roman Empire. |
 
 ## Success Criteria
 
