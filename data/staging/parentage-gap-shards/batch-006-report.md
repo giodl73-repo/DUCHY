@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q603771 | Emirate of Crete
-
-- rank: Empire
-- exists: 820..961
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q612359 | Kingdom of Lithuania
 
 - rank: Kingdom
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 987..1791
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q71084 | First French Empire
+
+- rank: Empire
+- exists: 1804..1815
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

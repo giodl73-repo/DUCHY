@@ -141,13 +141,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2162698 | Duchy of Bohemia
-
-- rank: Duchy
-- exists: 870..1198
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q2183293 | Duchy of Belz
 
 - rank: Duchy
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1365..1403
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2295939 | Duchy of Gascony
+
+- rank: Duchy
+- exists: 602..1453
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

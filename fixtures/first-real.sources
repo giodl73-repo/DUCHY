@@ -4677,3 +4677,15 @@ notes: Astarac article; used only for textual parentage context that identifies 
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed County of Astarac parentage context only; no later province, Armagnac, House of Astarac, Gascon stronghold, border, or lordship sequence claims imported.
+---
+source_id: src-wikipedia-duchy-bohemia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Bohemia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Bohemia article; used only for textual parentage context that identifies the duchy as a state/principality of the Holy Roman Empire from 1002 until its elevation to kingdom in 1198.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Bohemia parentage context only; no dynastic, diocesan, Moravian, Polish occupation, royal confirmation, Golden Bull of Sicily, elector, Crown of Bohemia, or later Habsburg claims imported.

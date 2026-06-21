@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 10 |
-| medium_parentage_review | 11 |
+| high_parentage_review | 9 |
+| medium_parentage_review | 12 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 9 |
+| Duchy | 8 |
 | Empire | 4 |
-| Kingdom | 11 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q2295939 | Duchy of Gascony
-
-- rank: Duchy
-- exists: 602..1453
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q230791 | Kingdom of Scotland
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1721..1917
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q3446210 | Kingdom of Pamplona
+
+- rank: Kingdom
+- exists: 824..1162
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

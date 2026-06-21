@@ -1,7 +1,7 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 25
+gap_rows: 24
 
 ## Priority Counts
 
@@ -9,7 +9,7 @@ gap_rows: 25
 |---|---:|
 | high_parentage_review | 7 |
 | medium_parentage_review | 15 |
-| root_or_successor_review | 3 |
+| root_or_successor_review | 2 |
 
 ## Rank Counts
 
@@ -18,17 +18,10 @@ gap_rows: 25
 | County | 1 |
 | Crown | 1 |
 | Duchy | 6 |
-| Empire | 3 |
+| Empire | 2 |
 | Kingdom | 14 |
 
 ## Review Rows
-
-### title-q71084 | First French Empire
-
-- rank: Empire
-- exists: 1804..1815
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q733799 | Kingdom of the Hwicce
 

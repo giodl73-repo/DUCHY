@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 361
-facts: 1209
+sources: 362
+facts: 1210
 titles: 335
-parentage_facts: 204
-titles_with_parentage: 160
-titles_without_parentage: 175
+parentage_facts: 205
+titles_with_parentage: 161
+titles_without_parentage: 174
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 175
 |---|---:|---:|---:|
 | County | 30 | 20 | 10 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 99 | 38 |
+| Duchy | 137 | 100 | 37 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -89,7 +89,6 @@ titles_without_parentage: 175
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
-- title-q2162698 | Duchy of Bohemia | Duchy | 870..1198
 - title-q2183293 | Duchy of Belz | Duchy | 1170..1462
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807

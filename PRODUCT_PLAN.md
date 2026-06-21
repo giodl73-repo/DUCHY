@@ -281,7 +281,10 @@ Pulses:
 100. County of Astarac Duchy of Gascony parentage packet. Complete for
      promoting Duchy of Gascony and importing County of Astarac -> Duchy of
      Gascony for 920-1300.
-101. Next reviewed parentage packet.
+101. Duchy of Bohemia HRE parentage packet. Complete for adding a reviewed
+     Wikimedia text source and importing Duchy of Bohemia -> Holy Roman Empire
+     for 1002-1198.
+102. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

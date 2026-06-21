@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Duchy of Bohemia under the Holy Roman Empire.
+
+fact_id: fact-q2162698-parent-q12548
+subject_id: title-q2162698
+claim_kind: parentage
+span: 1002..1198
+value: title-q12548
+source_ids: src-wikidata-q2162698, src-wikidata-q12548, src-wikipedia-duchy-bohemia
+confidence: multi_source
