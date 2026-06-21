@@ -1,0 +1,41 @@
+# Reviewed text-backed high-priority parentage batch for Poland, East Francia, and Ottoman gaps.
+
+fact_id: fact-q2183293-parent-q171348
+subject_id: title-q2183293
+claim_kind: parentage
+span: 1387..1462
+value: title-q171348
+source_ids: src-wikidata-q2183293, src-wikidata-q171348, src-wikipedia-duchy-belz
+confidence: multi_source
+---
+fact_id: fact-q6673921-parent-q153080
+subject_id: title-q6673921
+claim_kind: parentage
+span: 880..959
+value: title-q153080
+source_ids: src-wikidata-q6673921, src-wikidata-q153080, src-wikipedia-lotharingia
+confidence: multi_source
+---
+fact_id: fact-q684030-parent-q12560
+subject_id: title-q684030
+claim_kind: parentage
+span: 1815..1867
+value: title-q12560
+source_ids: src-wikidata-q684030, src-wikidata-q12560, src-wikipedia-principality-serbia
+confidence: multi_source
+---
+fact_id: fact-q958291-parent-q12560
+subject_id: title-q958291
+claim_kind: parentage
+span: 1859..1877
+value: title-q12560
+source_ids: src-wikidata-q958291, src-wikidata-q12560, src-wikipedia-united-principalities
+confidence: multi_source
+---
+fact_id: fact-q3324486-parent-q12560
+subject_id: title-q3324486
+claim_kind: parentage
+span: 1516..1696
+value: title-q12560
+source_ids: src-wikidata-q3324486, src-wikidata-q12560, src-wikipedia-prince-bishopric-montenegro
+confidence: multi_source

@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q231392	Kingdom of Asturias	Kingdom	718..910	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2346056	Kingdom of Livonia	Kingdom	1570..1578	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2415003	Kingdom of Serbia	Kingdom	1217..1346	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q241748	Kingdom of Serbia	Kingdom	1882..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -11,7 +10,6 @@ title-q3181749	Arab Caliphate	Empire	632..1517	0	root_or_successor_review	May be
 title-q31929	Carolingian Empire	Empire	800..887	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q35	Denmark	Kingdom	800..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +22,5 @@ title-q43287	German Empire	Empire	1871..1918	0	root_or_successor_review	May be a
 title-q435583	Old Swiss Confederacy	Empire	1291..1798	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q436994	Kingdom of Dublin	Kingdom	839..1171	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q48742118	Fascist Italy	Kingdom	1922..1943	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q506008	Kingdom of Deira	Kingdom	450..655	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q50625	Hordaland	County	1919..2019	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.

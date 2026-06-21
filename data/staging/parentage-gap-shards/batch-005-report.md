@@ -7,35 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 4 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
-| Crown | 1 |
-| Duchy | 4 |
+| County | 1 |
+| Crown | 2 |
+| Duchy | 3 |
 | Empire | 5 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q506008 | Kingdom of Deira
-
-- rank: Kingdom
-- exists: 450..655
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q50625 | Hordaland
-
-- rank: County
-- exists: 1919..2019
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q56089236 | Kingdom of Western Georgia
 
@@ -121,26 +107,12 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q6673921 | Lotharingia
-
-- rank: Duchy
-- exists: 855..959
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q676184 | Kingdom of Sussex
 
 - rank: Kingdom
 - exists: 477..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q684030 | Principality of Serbia
-
-- rank: Duchy
-- exists: 1815..1882
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q686312 | Duchy of Amalfi
 
@@ -197,4 +169,32 @@ gap_rows: 25
 - exists: 1479..1700
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q769782 | Kingdom of Powys
+
+- rank: Kingdom
+- exists: 500..1160
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q771193 | Kingdom of Brittany
+
+- rank: Kingdom
+- exists: 851..939
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q779011 | Principality of Montenegro
+
+- rank: Duchy
+- exists: 1852..1910
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q7882199 | Burgundian State
+
+- rank: Crown
+- exists: 1363..1559
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 

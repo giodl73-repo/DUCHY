@@ -66,7 +66,6 @@ title-q2090473	Khazar Khaganate	Empire	650..969	0	root_or_successor_review	May b
 title-q209065	Kingdom of Greece	Kingdom	1832..1973	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q212278	Kingdom of Holland	Kingdom	1806..1810	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q215530	Kingdom of Ireland	Kingdom	1542..1801	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q2183293	Duchy of Belz	Duchy	1170..1462	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q2196956	Kingdom of Norway	Kingdom	872..1397	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q223793	Kingdom of Etruria	Kingdom	1801..1807	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q223936	Kingdom of Italy	Kingdom	1805..1814	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -86,7 +85,6 @@ title-q3181749	Arab Caliphate	Empire	632..1517	0	root_or_successor_review	May be
 title-q31929	Carolingian Empire	Empire	800..887	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q3324486	Prince-Bishopric of Montenegro	Duchy	1516..1852	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q35	Denmark	Kingdom	800..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -113,9 +111,7 @@ title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Fin
 title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q6673921	Lotharingia	Duchy	855..959	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q684030	Principality of Serbia	Duchy	1815..1882	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q686312	Duchy of Amalfi	Duchy	839..1137	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q693570	Duchy of Ferrara	Duchy	1264..1597	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -141,4 +137,3 @@ title-q905131	Kingdom of Breifne	Kingdom	700..1256	0	medium_parentage_review	Fin
 title-q926295	Italian Empire	Empire	1882..1946	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q954585	Kingdom of Brycheiniog	Kingdom	450..1045	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q956451	Kingdom of Dyfed	Kingdom	410..920	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q958291	United Principalities of Moldavia and Wallachia	Duchy	1859..1881	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

@@ -5062,3 +5062,63 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Grand Principality of Vladimir parentage context only; no initial Mongol Empire parentage, appanage fragmentation, grand-princely appointment mechanics, Moscow transfer, tax-system detail, or post-1389 claims imported.
 ---
+---
+source_id: src-wikipedia-duchy-belz
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Belz
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Belz article; used only for textual parentage context that identifies Belz as taken by the Kingdom of Poland in 1387 and later incorporated into Poland in 1462.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Belz Polish Crown parentage context only; no Kievan Rus, Galicia-Volhynia, Lithuanian, Hungarian, or Masovian intermediate parentage imported.
+---
+source_id: src-wikipedia-lotharingia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Lotharingia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Lotharingia article; used only for textual parentage context that identifies Lotharingia as reunited under East Francia by the 880 Treaty of Ribemont before its 959 division into Upper and Lower Lotharingia.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Lotharingia East Francia parentage context only; no independent kingdom period, West Frankish division, Middle Francia predecessor, 895-900 kingdom restoration, or post-959 successor parentage imported.
+---
+source_id: src-wikipedia-principality-serbia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Principality_of_Serbia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Principality of Serbia article; used only for textual parentage context that identifies Serbia as an autonomous province under Ottoman suzerainty until the 1867 withdrawal of the remaining Ottoman garrison.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Principality of Serbia Ottoman parentage context only; no revolutionary predecessor, internal constitutional history, de facto/de jure independence debate after 1867, war detail, or post-1878 kingdom transition imported.
+---
+source_id: src-wikipedia-united-principalities
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/United_Principalities_of_Moldavia_and_Wallachia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: United Principalities article; used only for textual parentage context that identifies the United Principalities as a vassal state of the Ottoman Empire from 1859 until 1877.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed United Principalities Ottoman parentage context only; no Moldavia or Wallachia predecessor detail, 1862 administrative union, 1866 Romania naming, independence recognition detail, or post-1877 claims imported.
+---
+source_id: src-wikipedia-prince-bishopric-montenegro
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Montenegro
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Montenegro article; used only for textual parentage context that identifies the prince-bishopric as an Ottoman vassal state from 1516 until 1696 before its independent-state period.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Prince-Bishopric of Montenegro Ottoman parentage context only; no Zeta predecessor, Cetinje ecclesiastical transformation, post-1696 independence, tribal unification, Petrović-Njegoš succession, or 1852 secularisation detail imported.

@@ -1,8 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q769782	Kingdom of Powys	Kingdom	500..1160	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q771193	Kingdom of Brittany	Kingdom	851..939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q779011	Principality of Montenegro	Duchy	1852..1910	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q7882199	Burgundian State	Crown	1363..1559	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q816814	Kingdom of Gwynedd	Kingdom	401..1216	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q825902	Polish-Lithuanian union	Duchy	1385..1569	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q837136	Kingdom of Deheubarth	Kingdom	920..1197	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -16,4 +12,3 @@ title-q905131	Kingdom of Breifne	Kingdom	700..1256	0	medium_parentage_review	Fin
 title-q926295	Italian Empire	Empire	1882..1946	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q954585	Kingdom of Brycheiniog	Kingdom	450..1045	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q956451	Kingdom of Dyfed	Kingdom	410..920	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q958291	United Principalities of Moldavia and Wallachia	Duchy	1859..1881	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

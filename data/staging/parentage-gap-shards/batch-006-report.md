@@ -1,54 +1,25 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 18
+gap_rows: 13
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 1 |
-| Duchy | 3 |
+| Duchy | 1 |
 | Empire | 1 |
-| Kingdom | 13 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q769782 | Kingdom of Powys
-
-- rank: Kingdom
-- exists: 500..1160
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q771193 | Kingdom of Brittany
-
-- rank: Kingdom
-- exists: 851..939
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q779011 | Principality of Montenegro
-
-- rank: Duchy
-- exists: 1852..1910
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q7882199 | Burgundian State
-
-- rank: Crown
-- exists: 1363..1559
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q816814 | Kingdom of Gwynedd
 
@@ -140,11 +111,4 @@ gap_rows: 18
 - exists: 410..920
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q958291 | United Principalities of Moldavia and Wallachia
-
-- rank: Duchy
-- exists: 1859..1881
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 

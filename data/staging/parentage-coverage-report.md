@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 393
-facts: 1242
+sources: 398
+facts: 1247
 titles: 335
-parentage_facts: 237
-titles_with_parentage: 192
-titles_without_parentage: 143
+parentage_facts: 242
+titles_with_parentage: 197
+titles_without_parentage: 138
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 143
 |---|---:|---:|---:|
 | County | 30 | 27 | 3 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 123 | 14 |
+| Duchy | 137 | 128 | 9 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -89,7 +89,6 @@ titles_without_parentage: 143
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
-- title-q2183293 | Duchy of Belz | Duchy | 1170..1462
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
 - title-q223936 | Kingdom of Italy | Kingdom | 1805..1814
@@ -109,7 +108,6 @@ titles_without_parentage: 143
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
-- title-q3324486 | Prince-Bishopric of Montenegro | Duchy | 1516..1852
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q35 | Denmark | Kingdom | 800..
@@ -136,9 +134,7 @@ titles_without_parentage: 143
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
-- title-q6673921 | Lotharingia | Duchy | 855..959
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
-- title-q684030 | Principality of Serbia | Duchy | 1815..1882
 - title-q686312 | Duchy of Amalfi | Duchy | 839..1137
 - title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
@@ -164,7 +160,6 @@ titles_without_parentage: 143
 - title-q926295 | Italian Empire | Empire | 1882..1946
 - title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045
 - title-q956451 | Kingdom of Dyfed | Kingdom | 410..920
-- title-q958291 | United Principalities of Moldavia and Wallachia | Duchy | 1859..1881
 
 ## Titles With Multiple Parentage Facts
 

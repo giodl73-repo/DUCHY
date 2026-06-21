@@ -15,18 +15,11 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 1 |
+| County | 1 |
 | Empire | 9 |
 | Kingdom | 15 |
 
 ## Review Rows
-
-### title-q231392 | Kingdom of Asturias
-
-- rank: Kingdom
-- exists: 718..910
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q2346056 | Kingdom of Livonia
 
@@ -104,13 +97,6 @@ gap_rows: 25
 - exists: 450..871
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q3324486 | Prince-Bishopric of Montenegro
-
-- rank: Duchy
-- exists: 1516..1852
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q34266 | Russian Empire
 
@@ -195,4 +181,18 @@ gap_rows: 25
 - exists: 1922..1943
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q506008 | Kingdom of Deira
+
+- rank: Kingdom
+- exists: 450..655
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q50625 | Hordaland
+
+- rank: County
+- exists: 1919..2019
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

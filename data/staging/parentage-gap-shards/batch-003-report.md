@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 4 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 4 |
+| Duchy | 3 |
 | Empire | 6 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -141,13 +141,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2183293 | Duchy of Belz
-
-- rank: Duchy
-- exists: 1170..1462
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q2196956 | Kingdom of Norway
 
 - rank: Kingdom
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 843..1707
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q231392 | Kingdom of Asturias
+
+- rank: Kingdom
+- exists: 718..910
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
