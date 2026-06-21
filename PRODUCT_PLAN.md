@@ -233,7 +233,10 @@ Pulses:
     Monarchy for 1479-1700.
 84. Kalmar Union Sweden parentage packet. Complete for correcting Kalmar Union
     to composite Crown rank and importing Sweden -> Kalmar Union for 1397-1523.
-85. Next reviewed parentage packet.
+85. Prince-Bishopric of Trent HRE parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing Prince-Bishopric of Trent ->
+    Holy Roman Empire for 1027-1803.
+86. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

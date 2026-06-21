@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 342
-facts: 1181
+sources: 343
+facts: 1182
 titles: 331
-parentage_facts: 188
-titles_with_parentage: 144
-titles_without_parentage: 187
+parentage_facts: 189
+titles_with_parentage: 145
+titles_without_parentage: 186
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 187
 |---|---:|---:|---:|
 | County | 30 | 17 | 13 |
 | Crown | 5 | 2 | 3 |
-| Duchy | 136 | 92 | 44 |
+| Duchy | 136 | 93 | 43 |
 | Empire | 36 | 0 | 36 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 31 | 90 |
@@ -35,7 +35,6 @@ titles_without_parentage: 187
 - title-q116080 | Polish Underground State | Empire | 1939..1945
 - title-q11750128 | Kingdom of Poland | Kingdom | 1830..1831
 - title-q1209822 | Kingdom of Kakheti | Kingdom | 1465..1762
-- title-q1231403 | Prince-Bishopric of Trent | Duchy | 1027..1803
 - title-q1232887 | County of Savoy | County | 1003..1416
 - title-q1241847 | Judicate of Arborea | Kingdom | 800..1420
 - title-q12544 | Byzantine Empire | Empire | 395..1453

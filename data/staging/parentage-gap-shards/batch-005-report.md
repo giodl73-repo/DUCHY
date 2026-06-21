@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 7 |
-| medium_parentage_review | 9 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 10 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 6 |
-| Empire | 9 |
-| Kingdom | 9 |
+| Empire | 8 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q28513 | Austria-Hungary
-
-- rank: Empire
-- exists: 1867..1918
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q2980623 | Kingdom of Bosnia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 907..1805
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q48742118 | Fascist Italy
+
+- rank: Kingdom
+- exists: 1922..1943
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 4 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 8 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 3 |
-| Empire | 8 |
-| Kingdom | 13 |
+| Empire | 9 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q172579 | Kingdom of Italy
-
-- rank: Kingdom
-- exists: 1861..1946
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q173065 | Kingdom of Naples
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1881..1947
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q203817 | First Bulgarian Empire
+
+- rank: Empire
+- exists: 681..1018
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

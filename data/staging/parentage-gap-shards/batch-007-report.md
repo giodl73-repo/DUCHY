@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 15 |
-| medium_parentage_review | 7 |
+| high_parentage_review | 14 |
+| medium_parentage_review | 8 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 3 |
 | Crown | 1 |
-| Duchy | 12 |
+| Duchy | 11 |
 | Empire | 3 |
-| Kingdom | 6 |
+| Kingdom | 7 |
 
 ## Review Rows
-
-### title-q671899 | Duchy of Teschen
-
-- rank: Duchy
-- exists: 1281..1918
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q675363 | County of Geneva
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1003..1794
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q837136 | Kingdom of Deheubarth
+
+- rank: Kingdom
+- exists: 920..1197
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

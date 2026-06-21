@@ -9170,3 +9170,13 @@ span: 1397..1523
 value: title-q62623
 source_ids: src-wikidata-q34, src-wikidata-q62623
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Prince-Bishopric of Trent under the Holy Roman Empire.
+
+fact_id: fact-q1231403-parent-q12548
+subject_id: title-q1231403
+claim_kind: parentage
+span: 1027..1803
+value: title-q12548
+source_ids: src-wikidata-q1231403, src-wikidata-q12548, src-wikipedia-prince-bishopric-trent
+confidence: multi_source

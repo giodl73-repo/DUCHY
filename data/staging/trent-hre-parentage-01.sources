@@ -1,0 +1,11 @@
+source_id: src-wikipedia-prince-bishopric-trent
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Trent
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Trent article; used only for textual parentage context that identifies Trent as an Imperial estate/state of the Holy Roman Empire in 1027-1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no holders, borders, or narrative chronology imported.

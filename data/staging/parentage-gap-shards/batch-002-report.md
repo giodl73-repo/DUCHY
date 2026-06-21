@@ -24,13 +24,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q1470101 | Kingdom of Hungary (1000-1301)
-
-- rank: Kingdom
-- exists: 1000..1301
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q147909 | Kingdom of Bulgaria
 
 - rank: Kingdom
@@ -198,4 +191,11 @@ gap_rows: 25
 - exists: 1569..1795
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q172579 | Kingdom of Italy
+
+- rank: Kingdom
+- exists: 1861..1946
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

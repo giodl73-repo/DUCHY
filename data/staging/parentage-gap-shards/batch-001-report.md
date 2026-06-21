@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
-| medium_parentage_review | 16 |
+| high_parentage_review | 2 |
+| medium_parentage_review | 17 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,9 +16,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 2 |
+| Duchy | 1 |
 | Empire | 6 |
-| Kingdom | 16 |
+| Kingdom | 17 |
 
 ## Review Rows
 
@@ -113,13 +113,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q1231403 | Prince-Bishopric of Trent
-
-- rank: Duchy
-- exists: 1027..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q1232887 | County of Savoy
 
 - rank: County
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 481..843
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1470101 | Kingdom of Hungary (1000-1301)
+
+- rank: Kingdom
+- exists: 1000..1301
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

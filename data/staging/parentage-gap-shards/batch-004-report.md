@@ -21,13 +21,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q203817 | First Bulgarian Empire
-
-- rank: Empire
-- exists: 681..1018
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
 ### title-q2042616 | Chalkidian League
 
 - rank: Empire
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 976..1156
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q28513 | Austria-Hungary
+
+- rank: Empire
+- exists: 1867..1918
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

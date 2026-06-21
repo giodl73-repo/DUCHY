@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 12
+gap_rows: 11
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 2 |
-| medium_parentage_review | 10 |
+| medium_parentage_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 2 |
-| Kingdom | 10 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q837136 | Kingdom of Deheubarth
-
-- rank: Kingdom
-- exists: 920..1197
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q837998 | Kingdom of East Anglia
 
