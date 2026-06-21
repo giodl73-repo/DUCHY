@@ -139,6 +139,8 @@ records and validation.
 | 121 | High-priority mixed parentage batch 08 | complete | Add three reviewed Wikimedia text sources and import County of Sicily and County of Nice endpoint parentage spans. |
 | 122 | High-priority endpoint batch 09 | complete | Add two reviewed Wikimedia text sources and import Duchy of Poland and Polish-Lithuanian union endpoint parentage spans. |
 | 123 | Remaining high-priority blocker review | complete | Record Albania, Hordaland, and Montenegro blockers that need modern Norway coverage or contested/de facto relation modeling. |
+| 124 | High-priority Norway batch 10 | complete | Add modern Kingdom of Norway coverage and import Hordaland parentage under it. |
+| 125 | Remaining high-priority blocker review update | complete | Reduce the blocker set to Albania and Montenegro after Hordaland closure. |
 
 ## Success Criteria
 

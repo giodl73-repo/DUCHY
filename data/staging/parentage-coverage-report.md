@@ -1,22 +1,22 @@
 # DUCHY Parentage Coverage Report
 
-sources: 408
-facts: 1256
-titles: 335
-parentage_facts: 251
-titles_with_parentage: 206
+sources: 410
+facts: 1260
+titles: 336
+parentage_facts: 252
+titles_with_parentage: 207
 titles_without_parentage: 129
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 29 | 1 |
+| County | 30 | 30 | 0 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 137 | 135 | 2 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 37 | 84 |
+| Kingdom | 122 | 37 | 85 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -77,6 +77,7 @@ titles_without_parentage: 129
 - title-q191484 | Old Great Bulgaria | Empire | 632..668
 - title-q195972 | Kingdom of Kartli | Kingdom | 1466..1762
 - title-q199688 | Almohad Caliphate | Empire | 1121..1269
+- title-q20 | Kingdom of Norway | Kingdom | 1905..2026
 - title-q200262 | Kingdom of Navarre | Kingdom | 1162..1841
 - title-q200464 | Portuguese Empire | Empire | 1415..1999
 - title-q203493 | Kingdom of Romania | Kingdom | 1881..1947
@@ -116,7 +117,6 @@ titles_without_parentage: 129
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
-- title-q50625 | Hordaland | County | 1919..2019
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
 - title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553

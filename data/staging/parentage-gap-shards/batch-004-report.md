@@ -7,19 +7,24 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
-| medium_parentage_review | 14 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Empire | 10 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 
 ## Review Rows
+
+### title-q2597352 | Kingdom of Norway
+
+- rank: Kingdom
+- exists: 1814..1814
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q28513 | Austria-Hungary
 
@@ -153,13 +158,6 @@ gap_rows: 25
 - exists: 450..655
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q50625 | Hordaland
-
-- rank: County
-- exists: 1919..2019
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q56089236 | Kingdom of Western Georgia
 

@@ -5243,3 +5243,27 @@ notes: Polish-Lithuanian Commonwealth article; used only for textual parentage c
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for endpoint text-backed Polish-Lithuanian union to Commonwealth transition context only; no Sejm mechanics, federal structure, elective monarchy detail, partitions, or post-1569 Commonwealth history imported.
+---
+source_id: src-wikidata-q20
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q20
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Norway (Q20), with English alias Kingdom of Norway and modern sovereign-state inception in 1905.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded modern Kingdom of Norway parent coverage only; no constitutional detail, medieval continuity claim, union-with-Sweden detail, occupation status, overseas territories, or post-2026 continuation claims imported.
+---
+source_id: src-wikipedia-norway
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Norway
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Norway article; used only for textual parentage context that identifies Norway as a constitutional monarchy/Kingdom of Norway and states that the country has counties and municipalities as administrative subdivisions.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Hordaland parentage context only; no current political officeholder, constitutional detail, medieval kingdom continuity, union history, occupation status, or post-2026 continuation claims imported.

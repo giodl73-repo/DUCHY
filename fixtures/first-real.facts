@@ -9843,3 +9843,35 @@ span: 1569..1569
 value: title-q172107
 source_ids: src-wikidata-q825902, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth
 confidence: multi_source
+---
+# Reviewed text-backed high-priority parentage batch for modern Norway coverage.
+
+fact_id: fact-q20-name
+subject_id: title-q20
+claim_kind: name
+value: Kingdom of Norway
+source_ids: src-wikidata-q20, src-wikipedia-norway
+confidence: multi_source
+---
+fact_id: fact-q20-rank
+subject_id: title-q20
+claim_kind: rank
+value: Kingdom
+source_ids: src-wikidata-q20, src-wikipedia-norway
+confidence: multi_source
+---
+fact_id: fact-q20-exists
+subject_id: title-q20
+claim_kind: title_exists
+span: 1905..2026
+value: exists
+source_ids: src-wikidata-q20, src-wikipedia-norway
+confidence: multi_source
+---
+fact_id: fact-q50625-parent-q20
+subject_id: title-q50625
+claim_kind: parentage
+span: 1919..2019
+value: title-q20
+source_ids: src-wikidata-q50625, src-wikidata-q20, src-wikipedia-norway
+confidence: multi_source

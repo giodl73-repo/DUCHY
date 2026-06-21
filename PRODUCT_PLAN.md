@@ -351,9 +351,10 @@ Pulses:
 123. High-priority endpoint parentage batch 09. Complete for adding Duchy of
     Poland Kingdom of Poland and Polish-Lithuanian union Commonwealth endpoint
     spans.
-124. Remaining high-priority blocker review. Complete for recording Albania,
-    Hordaland, and Montenegro blockers that need new parent coverage or
-    contested/de facto relation modeling.
+124. High-priority Norway parentage batch 10. Complete for adding modern
+    Kingdom of Norway coverage and Hordaland parentage.
+125. Remaining high-priority blocker review. Complete for recording Albania and
+    Montenegro blockers that need contested/de facto relation modeling.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
