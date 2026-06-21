@@ -236,7 +236,10 @@ Pulses:
 85. Prince-Bishopric of Trent HRE parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Prince-Bishopric of Trent ->
     Holy Roman Empire for 1027-1803.
-86. Next reviewed parentage packet.
+86. County of Savoy HRE parentage packet. Complete for adding a reviewed
+    Wikimedia text source and importing County of Savoy -> Holy Roman Empire
+    for 1003-1416.
+87. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

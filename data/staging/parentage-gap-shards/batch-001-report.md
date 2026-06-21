@@ -7,18 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 17 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 18 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Duchy | 1 |
 | Empire | 6 |
-| Kingdom | 17 |
+| Kingdom | 18 |
 
 ## Review Rows
 
@@ -113,13 +112,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q1232887 | County of Savoy
-
-- rank: County
-- exists: 1003..1416
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q1241847 | Judicate of Arborea
 
 - rank: Kingdom
@@ -194,6 +186,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1000..1301
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q147909 | Kingdom of Bulgaria
+
+- rank: Kingdom
+- exists: 1908..1946
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

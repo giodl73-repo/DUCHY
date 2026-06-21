@@ -24,13 +24,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q147909 | Kingdom of Bulgaria
-
-- rank: Kingdom
-- exists: 1908..1946
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q150981 | North German Confederation
 
 - rank: Empire
@@ -196,6 +189,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1861..1946
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q173065 | Kingdom of Naples
+
+- rank: Kingdom
+- exists: 1282..1816
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

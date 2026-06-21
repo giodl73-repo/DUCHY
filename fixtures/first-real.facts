@@ -9180,3 +9180,13 @@ span: 1027..1803
 value: title-q12548
 source_ids: src-wikidata-q1231403, src-wikidata-q12548, src-wikipedia-prince-bishopric-trent
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for County of Savoy under the Holy Roman Empire.
+
+fact_id: fact-q1232887-parent-q12548
+subject_id: title-q1232887
+claim_kind: parentage
+span: 1003..1416
+value: title-q12548
+source_ids: src-wikidata-q1232887, src-wikidata-q12548, src-wikipedia-county-savoy
+confidence: multi_source

@@ -7,28 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 12 |
-| medium_parentage_review | 11 |
+| high_parentage_review | 13 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 5 |
+| County | 6 |
 | Crown | 1 |
 | Duchy | 7 |
 | Empire | 2 |
-| Kingdom | 10 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q506008 | Kingdom of Deira
-
-- rank: Kingdom
-- exists: 450..655
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q50625 | Hordaland
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1281..1918
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q675363 | County of Geneva
+
+- rank: County
+- exists: 900..1401
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

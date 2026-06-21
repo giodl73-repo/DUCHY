@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2980623 | Kingdom of Bosnia
-
-- rank: Kingdom
-- exists: 1377..1463
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q2991474 | County of Wurttemberg
 
 - rank: County
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1922..1943
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q506008 | Kingdom of Deira
+
+- rank: Kingdom
+- exists: 450..655
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

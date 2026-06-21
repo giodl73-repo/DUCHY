@@ -1,0 +1,11 @@
+source_id: src-wikipedia-county-savoy
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Savoy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Savoy article; used only for textual parentage context that identifies the county as a state of the Holy Roman Empire in 1003-1416.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no holders, borders, or narrative chronology imported.

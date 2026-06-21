@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 4 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 11 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 3 |
-| Empire | 9 |
-| Kingdom | 12 |
+| Empire | 10 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q173065 | Kingdom of Naples
-
-- rank: Kingdom
-- exists: 1282..1816
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q173082 | Dacia
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 681..1018
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q2042616 | Chalkidian League
+
+- rank: Empire
+- exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
