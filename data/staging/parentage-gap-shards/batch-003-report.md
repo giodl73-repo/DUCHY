@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 5 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 8 |
+| medium_parentage_review | 13 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 4 |
-| Empire | 8 |
-| Kingdom | 12 |
+| Empire | 7 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q18285930 | German Empire of 1848/1849
-
-- rank: Empire
-- exists: 1848..1849
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q186537 | Khanate of Qazan
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1801..1807
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q223936 | Kingdom of Italy
+
+- rank: Kingdom
+- exists: 1805..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 12 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 8 |
+| Duchy | 9 |
 | Empire | 3 |
-| Kingdom | 13 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q223936 | Kingdom of Italy
-
-- rank: Kingdom
-- exists: 1805..1814
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q2252973 | Duchy of Florence
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 450..871
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q3324486 | Prince-Bishopric of Montenegro
+
+- rank: Duchy
+- exists: 1516..1852
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

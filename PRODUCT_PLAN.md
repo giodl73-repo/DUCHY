@@ -266,7 +266,10 @@ Pulses:
 95. County of Empuries Crown of Aragon parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing County of Empuries -> Crown of
     Aragon for 1341-1402.
-96. Next reviewed parentage packet.
+96. Grand Duchy of Tuscany HRE parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing Grand Duchy of Tuscany -> Holy
+    Roman Empire for 1575-1801.
+97. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

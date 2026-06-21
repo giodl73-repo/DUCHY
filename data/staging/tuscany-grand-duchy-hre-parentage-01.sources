@@ -1,0 +1,11 @@
+source_id: src-wikipedia-grand-duchy-tuscany
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Tuscany
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Tuscany article; used only for textual parentage context that identifies Florence as an Imperial fief, records imperial confirmation of the grand-ducal elevation in 1575, and bounds the first Grand Duchy period before dissolution into the Kingdom of Etruria in 1801.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Tuscany parentage context only; no papal-bull validity dispute, Medici succession, Habsburg-Lorraine secundogeniture, Napoleonic client-state, restoration, Italian unification, or later Tuscany claims imported.

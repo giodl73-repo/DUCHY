@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 3
+gap_rows: 2
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 2 |
+| medium_parentage_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 1 |
-| Kingdom | 2 |
+| Kingdom | 1 |
 
 ## Review Rows
-
-### title-q954585 | Kingdom of Brycheiniog
-
-- rank: Kingdom
-- exists: 450..1045
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q956451 | Kingdom of Dyfed
 

@@ -1,7 +1,6 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
 title-q1541613	County of Astarac	County	920..1300	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q154667	Kingdom of Georgia	Kingdom	1008..1466	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q154849	Grand Duchy of Tuscany	Duchy	1569..1860	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q160307	Fatimid Egyptian Caliphate	Empire	909..1171	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q160440	Crimean Khanate	Empire	1441..1783	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q16056854	Kingdom of Hungary	Kingdom	1301..1526	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q179023	French colonial empire	Empire	1534..1980	0	root_or_successor_revie
 title-q179876	Kingdom of England	Kingdom	927..1707	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q180393	Kingdom of the Two Sicilies	Kingdom	1738..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q181254	Empire of Nicaea	Empire	1204..1261	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q18285930	German Empire of 1848/1849	Empire	1848..1849	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.

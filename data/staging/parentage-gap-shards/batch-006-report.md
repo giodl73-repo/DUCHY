@@ -15,20 +15,13 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| County | 3 |
+| County | 2 |
 | Crown | 1 |
-| Duchy | 11 |
+| Duchy | 12 |
 | Empire | 3 |
 | Kingdom | 7 |
 
 ## Review Rows
-
-### title-q589251 | County of Montbeliard
-
-- rank: County
-- exists: 1042..1793
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q599613 | County of Namur
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1315..1564
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q704312 | Grand Duchy of Frankfurt
+
+- rank: Duchy
+- exists: 1810..1813
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

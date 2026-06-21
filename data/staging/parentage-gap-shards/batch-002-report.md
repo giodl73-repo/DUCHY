@@ -7,9 +7,9 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 4 |
+| high_parentage_review | 3 |
 | medium_parentage_review | 15 |
-| root_or_successor_review | 6 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Crown | 1 |
-| Duchy | 3 |
-| Empire | 6 |
+| Duchy | 2 |
+| Empire | 7 |
 | Kingdom | 13 |
 | TheocraticState | 1 |
 
@@ -37,13 +37,6 @@ gap_rows: 25
 - exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q154849 | Grand Duchy of Tuscany
-
-- rank: Duchy
-- exists: 1569..1860
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q160307 | Fatimid Egyptian Caliphate
 
@@ -196,6 +189,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 1204..1261
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q18285930 | German Empire of 1848/1849
+
+- rank: Empire
+- exists: 1848..1849
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

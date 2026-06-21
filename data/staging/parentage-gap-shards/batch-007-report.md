@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 6 |
+| Duchy | 5 |
 | Empire | 3 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q704312 | Grand Duchy of Frankfurt
-
-- rank: Duchy
-- exists: 1810..1813
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q706553 | County of Nice
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1882..1946
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q954585 | Kingdom of Brycheiniog
+
+- rank: Kingdom
+- exists: 450..1045
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
