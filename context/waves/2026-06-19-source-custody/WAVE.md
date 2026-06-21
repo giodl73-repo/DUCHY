@@ -114,6 +114,7 @@ records and validation.
 | 96 | Duchy of Parma and Piacenza Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Parma and Piacenza parentage under the Holy Roman Empire. |
 | 97 | Kingdom of Naples Crown of Aragon parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Naples parentage under the Crown of Aragon. |
 | 98 | Grand Principality of Moscow Golden Horde parentage | complete | Promote Golden Horde and import Grand Principality of Moscow parentage under it. |
+| 99 | County of Astarac Duchy of Gascony parentage | complete | Promote Duchy of Gascony and import County of Astarac parentage under it. |
 
 ## Success Criteria
 

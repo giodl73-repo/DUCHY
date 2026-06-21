@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 5 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 13 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 4 |
+| Duchy | 5 |
 | Empire | 6 |
-| Kingdom | 14 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q187461 | Kingdom of Hereti
-
-- rank: Kingdom
-- exists: 893..1020
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q188586 | Kingdom of Sicily
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 500..1063
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2273304 | Moravian Serbia
+
+- rank: Duchy
+- exists: 1365..1403
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

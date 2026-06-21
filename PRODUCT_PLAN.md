@@ -278,7 +278,10 @@ Pulses:
 99. Grand Principality of Moscow Golden Horde parentage packet. Complete for
     promoting Golden Horde and importing Grand Principality of Moscow -> Golden
     Horde for 1263-1478.
-100. Next reviewed parentage packet.
+100. County of Astarac Duchy of Gascony parentage packet. Complete for
+     promoting Duchy of Gascony and importing County of Astarac -> Duchy of
+     Gascony for 920-1300.
+101. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

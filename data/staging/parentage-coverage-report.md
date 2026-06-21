@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
-sources: 359
-facts: 1205
-titles: 334
-parentage_facts: 203
-titles_with_parentage: 159
+sources: 361
+facts: 1209
+titles: 335
+parentage_facts: 204
+titles_with_parentage: 160
 titles_without_parentage: 175
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 30 | 19 | 11 |
+| County | 30 | 20 | 10 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 136 | 99 | 37 |
+| Duchy | 137 | 99 | 38 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -48,7 +48,6 @@ titles_without_parentage: 175
 - title-q150981 | North German Confederation | Empire | 1867..1870
 - title-q151624 | German Confederation | Empire | 1815..1866
 - title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
-- title-q1541613 | County of Astarac | County | 920..1300
 - title-q154667 | Kingdom of Georgia | Kingdom | 1008..1466
 - title-q160307 | Fatimid Egyptian Caliphate | Empire | 909..1171
 - title-q160440 | Crimean Khanate | Empire | 1441..1783
@@ -98,6 +97,7 @@ titles_without_parentage: 175
 - title-q2252973 | Duchy of Florence | Duchy | 1532..1569
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q2273304 | Moravian Serbia | Duchy | 1365..1403
+- title-q2295939 | Duchy of Gascony | Duchy | 602..1453
 - title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2346056 | Kingdom of Livonia | Kingdom | 1570..1578

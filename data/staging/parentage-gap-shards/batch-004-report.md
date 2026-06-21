@@ -22,10 +22,10 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2273304 | Moravian Serbia
+### title-q2295939 | Duchy of Gascony
 
 - rank: Duchy
-- exists: 1365..1403
+- exists: 602..1453
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

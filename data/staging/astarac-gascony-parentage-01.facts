@@ -1,0 +1,32 @@
+# Reviewed Duchy of Gascony source import and County of Astarac parentage packet.
+
+fact_id: fact-q2295939-name
+subject_id: title-q2295939
+claim_kind: name
+value: Duchy of Gascony
+source_ids: src-wikidata-q2295939
+confidence: single_source
+---
+fact_id: fact-q2295939-rank
+subject_id: title-q2295939
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q2295939
+confidence: single_source
+---
+fact_id: fact-q2295939-exists
+subject_id: title-q2295939
+claim_kind: title_exists
+span: 602..1453
+value: exists
+source_ids: src-wikidata-q2295939
+confidence: single_source
+---
+
+fact_id: fact-q1541613-parent-q2295939
+subject_id: title-q1541613
+claim_kind: parentage
+span: 920..1300
+value: title-q2295939
+source_ids: src-wikidata-q1541613, src-wikidata-q2295939, src-wikipedia-astarac
+confidence: multi_source

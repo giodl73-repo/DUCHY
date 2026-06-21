@@ -7,19 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 2 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 1 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Crown | 1 |
 | Duchy | 1 |
 | Empire | 8 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -30,13 +29,6 @@ gap_rows: 25
 - exists: 1814..1833
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1541613 | County of Astarac
-
-- rank: County
-- exists: 920..1300
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q154667 | Kingdom of Georgia
 
@@ -198,4 +190,11 @@ gap_rows: 25
 - exists: 1914..1925
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q187461 | Kingdom of Hereti
+
+- rank: Kingdom
+- exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

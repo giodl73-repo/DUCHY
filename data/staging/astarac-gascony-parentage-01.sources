@@ -1,0 +1,23 @@
+source_id: src-wikidata-q2295939
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q2295939
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Duchy of Gascony (Q2295939).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, duchy rank, inception, and dissolution only.
+---
+source_id: src-wikipedia-astarac
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Astarac
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Astarac article; used only for textual parentage context that identifies Astarac as a county formed out of the partition of the Duchy of Gascony after the death of Garcia II Sanchez of Gascony.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Astarac parentage context only; no later province, Armagnac, House of Astarac, Gascon stronghold, border, or lordship sequence claims imported.
