@@ -372,6 +372,9 @@ Pulses:
 132. Medium-priority Albanian Kingdom Italian Empire parentage batch 06.
     Complete for adding an Albanian Kingdom endpoint parentage span under the
     Italian Empire.
+133. Parentage change metrics report. Complete for adding a source-backed
+    report that counts parent changes by child rank and parent rank, including
+    the county baseline needed before scaling county import.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

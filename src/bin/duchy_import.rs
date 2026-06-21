@@ -53,6 +53,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-coverage-report" {
             return parentage_coverage_report(sources_path, facts_path, output_path);
         }
+        if command == "parentage-change-report" {
+            return parentage_change_report(sources_path, facts_path, output_path);
+        }
         if command == "parentage-gap-tsv" {
             return parentage_gap_tsv(sources_path, facts_path, output_path, None);
         }
@@ -79,7 +82,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -115,6 +118,108 @@ fn run() -> Result<(), Vec<String>> {
     println!("- timeline: valid");
 
     Ok(())
+}
+
+fn parentage_change_report(
+    sources_path: &str,
+    facts_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let source_text = fs::read_to_string(sources_path)
+        .map_err(|error| vec![format!("failed to read {sources_path}: {error}")])?;
+    let fact_text = fs::read_to_string(facts_path)
+        .map_err(|error| vec![format!("failed to read {facts_path}: {error}")])?;
+
+    let catalog = duchy::SourceCatalog::from_metadata_text(&source_text)?;
+    let facts = duchy::fact_records_from_text(&fact_text)?;
+    duchy::validate_fact_records(&catalog, &facts)?;
+    let titles = duchy::source_backed_titles_from_facts(&catalog, &facts)?;
+    let timeline = duchy::source_backed_timeline_from_facts(&catalog, &facts)?;
+    timeline.validate().map_err(|errors| {
+        errors
+            .into_iter()
+            .map(|error| format!("timeline: {error}"))
+            .collect::<Vec<_>>()
+    })?;
+
+    let rows = parentage_change_rows(&facts, &titles);
+    let changed_rows = rows
+        .iter()
+        .filter(|row| row.distinct_parent_count > 1)
+        .collect::<Vec<_>>();
+    let total_changes = rows.iter().map(|row| row.change_count).sum::<usize>();
+    let county_rows = rows
+        .iter()
+        .filter(|row| row.child_rank == duchy::TitleRank::County)
+        .collect::<Vec<_>>();
+    let county_changes = county_rows
+        .iter()
+        .map(|row| row.change_count)
+        .sum::<usize>();
+    let county_changed_titles = county_rows
+        .iter()
+        .filter(|row| row.distinct_parent_count > 1)
+        .count();
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Change Report\n\n");
+    output.push_str(&format!("sources: {}\n", catalog.record_count()));
+    output.push_str(&format!("facts: {}\n", facts.len()));
+    output.push_str(&format!("titles: {}\n", titles.len()));
+    output.push_str(&format!("parentage_titles: {}\n", rows.len()));
+    output.push_str(&format!(
+        "titles_with_parent_changes: {}\n",
+        changed_rows.len()
+    ));
+    output.push_str(&format!("parent_changes: {total_changes}\n"));
+    output.push_str(&format!("county_parentage_titles: {}\n", county_rows.len()));
+    output.push_str(&format!(
+        "county_titles_with_parent_changes: {county_changed_titles}\n"
+    ));
+    output.push_str(&format!("county_parent_changes: {county_changes}\n\n"));
+
+    output.push_str("## Changes By Child Rank\n\n");
+    output.push_str("| Child Rank | Titles | Changed Titles | Parent Changes |\n");
+    output.push_str("|---|---:|---:|---:|\n");
+    for (rank, totals) in parentage_change_rank_totals(&rows) {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} |\n",
+            title_rank_label(rank),
+            totals.titles,
+            totals.changed_titles,
+            totals.parent_changes
+        ));
+    }
+
+    output.push_str("\n## County Parentage By Parent Rank\n\n");
+    output.push_str("| Parent Rank | Facts | Changed Titles | Parent Changes |\n");
+    output.push_str("|---|---:|---:|---:|\n");
+    for (rank, totals) in parentage_change_parent_rank_totals(&rows, duchy::TitleRank::County) {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} |\n",
+            title_rank_label(rank),
+            totals.facts,
+            totals.changed_titles,
+            totals.parent_changes
+        ));
+    }
+
+    output.push_str("\n## Top Parent Changes\n\n");
+    output.push_str("| Changes | Facts | Child | Rank | Parent Spans |\n");
+    output.push_str("|---:|---:|---|---|---|\n");
+    for row in rows.iter().take(25) {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} | {} |\n",
+            row.change_count,
+            row.fact_count,
+            markdown_escape(&format!("{} ({})", row.child_name, row.child_id)),
+            title_rank_label(row.child_rank),
+            markdown_escape(&row.parent_spans.join("; "))
+        ));
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])
 }
 
 fn parentage_coverage_report(
@@ -1122,6 +1227,150 @@ fn parentage_gap_blocker_tsv_header() -> &'static str {
     "title_id\treview_priority\tnotes"
 }
 
+#[derive(Debug, Clone)]
+struct ParentageChangeRow {
+    child_id: String,
+    child_name: String,
+    child_rank: duchy::TitleRank,
+    fact_count: usize,
+    distinct_parent_count: usize,
+    change_count: usize,
+    parent_spans: Vec<String>,
+    parent_ranks: Vec<duchy::TitleRank>,
+}
+
+#[derive(Default)]
+struct ParentageChangeRankTotals {
+    titles: usize,
+    changed_titles: usize,
+    parent_changes: usize,
+}
+
+#[derive(Default)]
+struct ParentageChangeParentRankTotals {
+    facts: usize,
+    changed_titles: usize,
+    parent_changes: usize,
+}
+
+fn parentage_change_rows(
+    facts: &[duchy::FactRecord],
+    titles: &[duchy::Title],
+) -> Vec<ParentageChangeRow> {
+    let title_by_id = titles
+        .iter()
+        .map(|title| (title.id.as_str(), title))
+        .collect::<BTreeMap<_, _>>();
+    let mut parentage_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
+    {
+        parentage_by_child
+            .entry(fact.subject_id.as_str())
+            .or_default()
+            .push(fact);
+    }
+
+    let mut rows = Vec::new();
+    for (child_id, mut child_facts) in parentage_by_child {
+        let Some(child) = title_by_id.get(child_id) else {
+            continue;
+        };
+        child_facts.sort_by_key(|fact| {
+            fact.span
+                .as_ref()
+                .map(|span| span.start)
+                .unwrap_or(i32::MIN)
+        });
+
+        let mut distinct_parents = Vec::<&str>::new();
+        let mut parent_spans = Vec::new();
+        let mut parent_ranks = Vec::new();
+        for fact in &child_facts {
+            let Some(parent) = title_by_id.get(fact.value.as_str()) else {
+                continue;
+            };
+            if !distinct_parents
+                .iter()
+                .any(|parent_id| *parent_id == parent.id.as_str())
+            {
+                distinct_parents.push(parent.id.as_str());
+            }
+            parent_ranks.push(parent.rank);
+            parent_spans.push(format!(
+                "{}: {} [{}]",
+                fact.span
+                    .as_ref()
+                    .map(year_span_label)
+                    .unwrap_or_else(|| "unspanned".to_string()),
+                parent.name,
+                title_rank_label(parent.rank)
+            ));
+        }
+        let distinct_parent_count = distinct_parents.len();
+        rows.push(ParentageChangeRow {
+            child_id: child.id.clone(),
+            child_name: child.name.clone(),
+            child_rank: child.rank,
+            fact_count: child_facts.len(),
+            distinct_parent_count,
+            change_count: distinct_parent_count.saturating_sub(1),
+            parent_spans,
+            parent_ranks,
+        });
+    }
+
+    rows.sort_by(|left, right| {
+        right
+            .change_count
+            .cmp(&left.change_count)
+            .then_with(|| right.fact_count.cmp(&left.fact_count))
+            .then_with(|| left.child_name.cmp(&right.child_name))
+    });
+    rows
+}
+
+fn parentage_change_rank_totals(
+    rows: &[ParentageChangeRow],
+) -> BTreeMap<duchy::TitleRank, ParentageChangeRankTotals> {
+    let mut totals: BTreeMap<duchy::TitleRank, ParentageChangeRankTotals> = BTreeMap::new();
+    for row in rows {
+        let entry = totals.entry(row.child_rank).or_default();
+        entry.titles += 1;
+        if row.distinct_parent_count > 1 {
+            entry.changed_titles += 1;
+        }
+        entry.parent_changes += row.change_count;
+    }
+    totals
+}
+
+fn parentage_change_parent_rank_totals(
+    rows: &[ParentageChangeRow],
+    child_rank: duchy::TitleRank,
+) -> BTreeMap<duchy::TitleRank, ParentageChangeParentRankTotals> {
+    let mut totals: BTreeMap<duchy::TitleRank, ParentageChangeParentRankTotals> = BTreeMap::new();
+    for row in rows.iter().filter(|row| row.child_rank == child_rank) {
+        for parent_rank in &row.parent_ranks {
+            totals.entry(*parent_rank).or_default().facts += 1;
+        }
+        if row.distinct_parent_count > 1 {
+            for parent_rank in row
+                .parent_ranks
+                .iter()
+                .copied()
+                .collect::<std::collections::BTreeSet<_>>()
+            {
+                let entry = totals.entry(parent_rank).or_default();
+                entry.changed_titles += 1;
+                entry.parent_changes += row.change_count;
+            }
+        }
+    }
+    totals
+}
+
 fn parentage_gap_blockers_from_file(
     blockers_path: &str,
 ) -> Result<BTreeMap<String, ParentageGapBlocker>, Vec<String>> {
@@ -1332,6 +1581,16 @@ fn parentage_gap_note(rank: duchy::TitleRank) -> &'static str {
 
 fn tsv_escape(value: &str) -> String {
     value.replace(['\t', '\r', '\n'], " ").trim().to_string()
+}
+
+fn markdown_escape(value: &str) -> String {
+    value
+        .replace('\\', "\\\\")
+        .replace('|', "\\|")
+        .replace('\r', " ")
+        .replace('\n', " ")
+        .trim()
+        .to_string()
 }
 
 fn import_scope_label(import_scope: duchy::ImportScope) -> &'static str {
@@ -1622,5 +1881,110 @@ mod tests {
 
         assert_eq!(counts.blocked, 1);
         assert_eq!(counts.high, 1);
+    }
+
+    #[test]
+    fn counts_parentage_changes_by_distinct_parent() {
+        let titles = vec![
+            title("title-demo-child", "Demo Child", duchy::TitleRank::County),
+            title("title-demo-a", "Demo Parent A", duchy::TitleRank::Duchy),
+            title("title-demo-b", "Demo Parent B", duchy::TitleRank::Duchy),
+        ];
+        let facts = vec![
+            parentage_fact("fact-demo-1", "title-demo-child", "title-demo-a", 1, 10),
+            parentage_fact("fact-demo-2", "title-demo-child", "title-demo-b", 11, 20),
+        ];
+
+        let rows = parentage_change_rows(&facts, &titles);
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].child_rank, duchy::TitleRank::County);
+        assert_eq!(rows[0].fact_count, 2);
+        assert_eq!(rows[0].distinct_parent_count, 2);
+        assert_eq!(rows[0].change_count, 1);
+    }
+
+    #[test]
+    fn parent_rank_totals_are_limited_to_requested_child_rank() {
+        let titles = vec![
+            title("title-demo-county", "Demo County", duchy::TitleRank::County),
+            title("title-demo-duchy", "Demo Duchy", duchy::TitleRank::Duchy),
+            title(
+                "title-demo-kingdom",
+                "Demo Kingdom",
+                duchy::TitleRank::Kingdom,
+            ),
+            title("title-demo-peer", "Demo Peer", duchy::TitleRank::Duchy),
+        ];
+        let facts = vec![
+            parentage_fact(
+                "fact-demo-1",
+                "title-demo-county",
+                "title-demo-duchy",
+                1,
+                10,
+            ),
+            parentage_fact(
+                "fact-demo-2",
+                "title-demo-county",
+                "title-demo-kingdom",
+                11,
+                20,
+            ),
+            parentage_fact(
+                "fact-demo-3",
+                "title-demo-peer",
+                "title-demo-kingdom",
+                1,
+                20,
+            ),
+        ];
+
+        let rows = parentage_change_rows(&facts, &titles);
+        let totals = parentage_change_parent_rank_totals(&rows, duchy::TitleRank::County);
+
+        assert_eq!(
+            totals
+                .get(&duchy::TitleRank::Duchy)
+                .expect("duchy parent total")
+                .facts,
+            1
+        );
+        assert_eq!(
+            totals
+                .get(&duchy::TitleRank::Kingdom)
+                .expect("kingdom parent total")
+                .facts,
+            1
+        );
+    }
+
+    fn title(id: &str, name: &str, rank: duchy::TitleRank) -> duchy::Title {
+        duchy::Title {
+            id: id.to_string(),
+            name: name.to_string(),
+            rank,
+            exists: duchy::YearSpan::new(1, Some(20)),
+            de_jure_parent: None,
+        }
+    }
+
+    fn parentage_fact(
+        fact_id: &str,
+        child_id: &str,
+        parent_id: &str,
+        start: duchy::Year,
+        end: duchy::Year,
+    ) -> duchy::FactRecord {
+        duchy::FactRecord {
+            fact_id: fact_id.to_string(),
+            subject_id: child_id.to_string(),
+            claim_kind: duchy::ClaimKind::Parentage,
+            span: Some(duchy::YearSpan::new(start, Some(end))),
+            value: parent_id.to_string(),
+            source_ids: vec!["src-demo".to_string()],
+            confidence: duchy::ConfidenceLabel::SingleSource,
+            conflict_group: None,
+        }
     }
 }

@@ -31,6 +31,7 @@ cargo run --bin duchy-import -- duplicate-url-report data/staging/example.manife
 cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/staging/manifest.tsv
 cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data/staging/from-tsv.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
+cargo run --bin duchy-import -- parentage-change-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-change-report.md
 ```
 
 ## Product Shape
@@ -155,6 +156,10 @@ facts.
 The sixth medium-priority parentage batch adds an Albanian Kingdom endpoint
 span under the Italian Empire, raising reviewed real parentage coverage to 260
 facts.
+The county scaling pilot adds a parentage change report over accepted fixtures;
+the current baseline has 215 titles with parentage, 34 titles with modeled
+parent changes, 44 modeled parent changes, 30 county parentage titles, and 2
+county titles with modeled parent changes.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
