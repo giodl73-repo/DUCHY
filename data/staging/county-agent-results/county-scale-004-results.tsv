@@ -1,0 +1,51 @@
+ck_id	county	decision	recommended_source_id	recommended_source_url	recommended_title_id	recommended_title_label	recommended_rank	recommended_exists	recommended_parent_id	recommended_parent_label	recommended_parent_span	confidence	next_action	notes
+c_bresse	Bresse	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_brie_francaise	Brie Francaise	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a natural region; no bounded title source found in this pass.
+c_briey	Briey	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern/former commune; no independently sourced title packet ready.
+c_brixen	Brixen	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern commune; possible ecclesiastical or county material needs separate sourcing.
+c_brno	Brno	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a city; no DUCHY materialized title rank/date source found.
+c_brugge	Brugge	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a city; no county-like historical title packet ready.
+c_brecknockshire	Brycheiniog	rank_policy_blocked	src-encyclopedia-brycheiniog	https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/brycheiniog	title-q954585	Kingdom of Brycheiniog	Kingdom	450..1045	title-q837136	Kingdom of Deheubarth	c.940..1045	medium	define_equal_rank_subkingdom_relation	Accepted title exists from src-wikidata-q954585. Independent source says Brycheiniog fell under Deheubarth influence c.940; this is kingdom to kingdom and blocked by current parent-rank policy.
+c_brysis	Brysis	source_resolution_blocked										low	find_bounded_title_source	Top lead has insufficient description and no bounded importable title evidence in local artifacts.
+c_brzeg	Brzeg	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independent historical title packet ready.
+c_buchan	Buchan	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item; possible Buchan district/earldom requires a different sourced lead.
+c_buckinghamshire	Buckinghamshire	source_resolution_blocked	src-vch-buckinghamshire	https://www.history.ac.uk/research/victoria-county-history/counties-z/buckinghamshire	title-q67285329	Buckinghamshire	County				medium		find_bounded_title_and_parent_source	VCH confirms county-history source coverage including Domesday material, but this pass did not establish safe bounded title_exists or parentage.
+c_burgas	Burgas	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced historical title packet ready.
+c_burgau	Burgau	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality; possible margraviate lead needs separate sourcing.
+c_burgos	Burgos	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality; no safe county/title packet found in this pass.
+c_buthrotum	Buthrotum	source_resolution_blocked										medium	define_city_or_site_rank_or_defer	Top lead is an ancient city/site, not a materialized DUCHY title rank.
+c_buzau	Buzau	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced title packet ready.
+c_byzantion	Byzantion	rank_policy_blocked	src-history-constantinople	https://www.history.com/articles/constantinople	title-q23725	Byzantium	unmaterialized	-657..330				high	define_city_rank_or_defer	Independent source supports Byzantium/Byzantion as an ancient Greek city founded in 657 BC and refounded as Constantinople in AD 330; not a county-like title under current ranks.
+c_cabra	Cabra	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_caceres	Caceres	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a town/municipality; no bounded historical title packet ready.
+c_cadiz	Cadiz	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality/capital city; ancient-city material would need rank policy and sourcing.
+c_cagliari	Cagliari	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern municipality; no title packet ready.
+c_caithness	Caithness	source_resolution_blocked	src-britannica-caithness	https://www.britannica.com/place/Caithness	title-q864668	Caithness	County				medium		find_bounded_county_or_earldom_source	Britannica supports Caithness as a Scottish county area and medieval earldom context, but this pass did not establish safe bounded county title_exists or parentage.
+c_calafat	Calafat	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_calarasi	Calarasi	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no independently sourced title packet ready.
+c_calatayud	Calatayud	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality; no bounded historical title packet ready.
+c_calatrava	Calatrava	reject_bad_lead										high	find_better_historical_title_source	Top lead resolves to a Philippines municipality, a wrong-place lead for this CK3 seed.
+c_camarda	Camarda	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_cambray	Cambray	source_resolution_blocked										medium	find_bounded_title_source	Top lead is modern Cambrai commune; possible ecclesiastical/imperial title material needs separate sourcing.
+c_cambridgeshire	Cambridgeshire	source_resolution_blocked	src-britannica-cambridgeshire	https://www.britannica.com/place/Cambridgeshire	title-q30612390	Cambridgeshire	County				medium		find_bounded_title_and_parent_source	Britannica supports historic county context and medieval administration, but not a safe bounded title_exists or parentage packet.
+c_canavese	Canavese	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item; possible regional title material requires a different source lead.
+c_cappadocia	Cappadocia	rank_policy_blocked										medium	define_region_rank_or_defer	Top lead is a historical region, not a materialized title rank under current policy.
+c_capua	Capua	reject_bad_lead										high	find_better_historical_title_source	Top lead is a genus item, a bad lead for the CK3 place.
+c_carcassonne	Carcassonne	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern commune; county/viscounty material needs separate sourcing.
+c_caria	Caria	reject_bad_lead										high	find_better_historical_title_source	Top lead is a genus item, a bad lead for the CK3 place.
+c_carrick	Carrick	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item; possible Carrick district/earldom requires a different sourced lead.
+c_casentino	Casentino	source_resolution_blocked										medium	define_region_rank_or_defer	Top lead is a valley/region; no materialized title rank/date packet ready.
+c_caslav	Caslav	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern town; no bounded historical title packet ready.
+c_castellon	Castellon	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern city; no bounded historical title packet ready.
+c_castelo_branco	Castelo Branco	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a municipality; no bounded historical title packet ready.
+c_agrigento	Castrogiovanni	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.
+c_soldin	Cedynia	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern town; no bounded historical title packet ready.
+c_cephalonia	Cephalonia	source_resolution_blocked										medium	find_bounded_title_source	Top lead is an island; county/palatinate material needs separate sourcing.
+c_cerasus	Cerasus	reject_bad_lead										high	find_better_historical_title_source	Top lead is a genus item, a bad lead for the CK3 place.
+c_puigcerda	Cerdana	reject_bad_lead										high	find_better_historical_title_source	Top lead is a genus item; possible Cerdanya/Cerdagne title material requires a different sourced lead.
+c_cardiganshire	Ceredigion	source_resolution_blocked	src-discover-ceredigion-story	https://www.discoverceredigion.wales/heritage-and-culture-to-explore/the-story-of-ceredigion/	title-q2578706	Kingdom of Ceredigion	Kingdom				medium		resolve_conflicting_dates_before_packet	Better historical title candidate found. County source supports Ceredigion/Seisyllwg/Deheubarth context, but date custody conflicts across leads, so no title_exists or parentage recommendation yet.
+c_cetatea_alba	Cetatea Alba	already_accepted	src-wikidata-q8273263	https://www.wikidata.org/wiki/Q8273263	title-q8273263	Cetatea-Alba County	County	1925..1944	title-q203493	Kingdom of Romania	1925..1944	high	metrics_seed	Accepted parentage row from fixtures and pilot; do not re-import.
+c_cetina	Cetina	reject_bad_lead										high	find_better_historical_title_source	Top lead resolves to a Spanish municipal capital, a wrong-place lead for this CK3 seed.
+c_chalkidike	Chalkidike	source_resolution_blocked										low	find_better_historical_title_source	Top lead is an encyclopedia article item, not a title entity.
+c_chalon	Chalon	source_resolution_blocked										medium	find_bounded_title_source	Top lead is a modern commune; county material needs separate sourcing.
+c_chalons	Chalons	reject_bad_lead										high	find_better_historical_title_source	Top lead is a family-name item, not importable title material.

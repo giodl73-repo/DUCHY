@@ -375,6 +375,13 @@ Pulses:
 133. Parentage change metrics report. Complete for adding a source-backed
     report that counts parent changes by child rank and parent rank, including
     the county baseline needed before scaling county import.
+134. County parentage scale queue. Complete for classifying 500 CK3 Europe
+    county search-driver rows into agent-ready shards with source-custody
+    statuses and shard worker instructions.
+135. County-scale shard 004 farm review. Complete for recording the first
+    farmed shard output: 50 rows reviewed, with Brycheiniog and Byzantion
+    blocked by relation/rank policy and Cetatea-Alba retained as an accepted
+    metrics seed.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -160,6 +160,13 @@ The county scaling pilot adds a parentage change report over accepted fixtures;
 the current baseline has 215 titles with parentage, 34 titles with modeled
 parent changes, 44 modeled parent changes, 30 county parentage titles, and 2
 county titles with modeled parent changes.
+The first county scaling queue classifies 500 CK3 Europe county search-driver
+rows into agent-ready shard statuses: 4 accepted parentage seeds, 1 accepted
+title needing parentage review, 6 rank-semantics review rows, 462 deferred
+source-resolution rows, and 27 rows needing fresh source resolution.
+The first farmed shard review covers `county-scale-004`: 50 rows reviewed with
+1 already accepted seed, 3 rank-policy blockers, 31 source-resolution blockers,
+and 15 rejected bad leads. No accepted fixtures changed in that shard review.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
