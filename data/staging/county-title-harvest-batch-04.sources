@@ -1,0 +1,11 @@
+source_id: src-wikipedia-county-la-marche
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_La_Marche
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of La Marche page gives medieval county identity, first listed count Boso I at 958-988, and seizure into the French crown in 1527.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no Aquitaine parentage, French crown parentage, appanage status, territorial extent, or later province jurisdiction promoted.

@@ -191,6 +191,9 @@ The third county title harvest promotes Free imperial city of Dortmund with a
 corrected `1220..1803` span from Britannica. The accepted catalog now has 427
 reviewed sources, 1295 facts, 345 titles, and 260 parentage facts; the parentage
 gap queue now has 130 rows.
+The fourth county title harvest promotes County of La Marche with a corrected
+`958..1527` span. The accepted catalog now has 428 reviewed sources, 1298 facts,
+346 titles, and 260 parentage facts; the parentage gap queue now has 131 rows.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

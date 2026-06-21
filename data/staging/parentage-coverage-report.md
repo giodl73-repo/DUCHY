@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
-sources: 427
-facts: 1295
-titles: 345
+sources: 428
+facts: 1298
+titles: 346
 parentage_facts: 260
 titles_with_parentage: 215
-titles_without_parentage: 130
+titles_without_parentage: 131
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 32 | 30 | 2 |
+| County | 33 | 30 | 3 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 138 | 135 | 3 |
 | Empire | 39 | 0 | 39 |
@@ -149,6 +149,7 @@ titles_without_parentage: 130
 - title-q87791 | Frisian Kingdom | Kingdom | 500..734
 - title-q904346 | Kingdom of Desmond | Kingdom | 1118..1596
 - title-q905131 | Kingdom of Breifne | Kingdom | 700..1256
+- title-q921473 | County of La Marche | County | 958..1527
 - title-q926295 | Italian Empire | Empire | 1882..1946
 - title-q954585 | Kingdom of Brycheiniog | Kingdom | 450..1045
 - title-q956451 | Kingdom of Dyfed | Kingdom | 410..920

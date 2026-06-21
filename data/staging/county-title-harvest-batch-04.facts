@@ -1,0 +1,23 @@
+# Reviewed title-only packet from county-scale ready-title harvest batch 04.
+
+fact_id: fact-q921473-name
+subject_id: title-q921473
+claim_kind: name
+value: County of La Marche
+source_ids: src-wikipedia-county-la-marche
+confidence: single_source
+---
+fact_id: fact-q921473-rank
+subject_id: title-q921473
+claim_kind: rank
+value: County
+source_ids: src-wikipedia-county-la-marche
+confidence: single_source
+---
+fact_id: fact-q921473-exists
+subject_id: title-q921473
+claim_kind: title_exists
+span: 958..1527
+value: exists
+source_ids: src-wikipedia-county-la-marche
+confidence: single_source
