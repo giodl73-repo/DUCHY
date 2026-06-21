@@ -8,16 +8,16 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 16 |
-| root_or_successor_review | 8 |
+| medium_parentage_review | 15 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 1 |
-| Empire | 8 |
-| Kingdom | 16 |
+| Empire | 9 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -161,6 +161,13 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q141472 | Golden Horde
+
+- rank: Empire
+- exists: 1242..1502
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
 ### title-q1470101 | Kingdom of Hungary (1000-1301)
 
 - rank: Kingdom
@@ -188,11 +195,4 @@ gap_rows: 25
 - exists: 1815..1866
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q15238138 | Kingdom of Spain
-
-- rank: Kingdom
-- exists: 1814..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
-| medium_parentage_review | 14 |
+| high_parentage_review | 2 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 8 |
 
 ## Rank Counts
@@ -17,12 +17,19 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Crown | 1 |
-| Duchy | 2 |
+| Duchy | 1 |
 | Empire | 8 |
-| Kingdom | 12 |
+| Kingdom | 13 |
 | TheocraticState | 1 |
 
 ## Review Rows
+
+### title-q15238138 | Kingdom of Spain
+
+- rank: Kingdom
+- exists: 1814..1833
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q1541613 | County of Astarac
 
@@ -100,13 +107,6 @@ gap_rows: 25
 - exists: 754..1870
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
-
-### title-q170770 | Grand Principality of Moscow
-
-- rank: Duchy
-- exists: 1263..1478
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q171740 | Caliphate of Cordoba
 

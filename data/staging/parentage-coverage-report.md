@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 357
-facts: 1201
-titles: 333
-parentage_facts: 202
-titles_with_parentage: 158
+sources: 359
+facts: 1205
+titles: 334
+parentage_facts: 203
+titles_with_parentage: 159
 titles_without_parentage: 175
 
 ## Coverage By Rank
@@ -13,8 +13,8 @@ titles_without_parentage: 175
 |---|---:|---:|---:|
 | County | 30 | 19 | 11 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 136 | 98 | 38 |
-| Empire | 37 | 0 | 37 |
+| Duchy | 136 | 99 | 37 |
+| Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
 | Province | 1 | 1 | 0 |
@@ -42,6 +42,7 @@ titles_without_parentage: 175
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
+- title-q141472 | Golden Horde | Empire | 1242..1502
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
 - title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
 - title-q150981 | North German Confederation | Empire | 1867..1870
@@ -58,7 +59,6 @@ titles_without_parentage: 175
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
 - title-q170174 | Papal States | TheocraticState | 754..1870
-- title-q170770 | Grand Principality of Moscow | Duchy | 1263..1478
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
 - title-q172579 | Kingdom of Italy | Kingdom | 1861..1946

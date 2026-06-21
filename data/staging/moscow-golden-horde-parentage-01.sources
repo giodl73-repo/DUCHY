@@ -1,0 +1,23 @@
+source_id: src-wikidata-q141472
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q141472
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Golden Horde (Q141472).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for minimal structured-claim import: label, empire rank, inception, and dissolution only.
+---
+source_id: src-wikipedia-grand-principality-moscow
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Principality_of_Moscow
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Principality of Moscow article; used only for textual parentage context that identifies Golden Horde suzerainty over Moscow and the 1480 end of Tatar suzerainty, with the imported span bounded by the accepted Moscow title span ending in 1478.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Principality of Moscow parentage context only; no tribute mechanics, grand-princely patent competition, internal Muscovite succession, Novgorod annexation, Russian state formation, or later Tsardom claims imported.

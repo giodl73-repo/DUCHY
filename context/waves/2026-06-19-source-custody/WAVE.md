@@ -113,6 +113,7 @@ records and validation.
 | 95 | Grand Duchy of Tuscany HRE parentage | complete | Add a reviewed Wikimedia text source and import Grand Duchy of Tuscany parentage under the Holy Roman Empire. |
 | 96 | Duchy of Parma and Piacenza Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Parma and Piacenza parentage under the Holy Roman Empire. |
 | 97 | Kingdom of Naples Crown of Aragon parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Naples parentage under the Crown of Aragon. |
+| 98 | Grand Principality of Moscow Golden Horde parentage | complete | Promote Golden Horde and import Grand Principality of Moscow parentage under it. |
 
 ## Success Criteria
 

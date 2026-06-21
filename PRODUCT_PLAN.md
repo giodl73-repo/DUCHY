@@ -275,7 +275,10 @@ Pulses:
 98. Kingdom of Naples Crown of Aragon parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Kingdom of Naples -> Crown of
     Aragon for 1442-1458.
-99. Next reviewed parentage packet.
+99. Grand Principality of Moscow Golden Horde parentage packet. Complete for
+    promoting Golden Horde and importing Grand Principality of Moscow -> Golden
+    Horde for 1263-1478.
+100. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
