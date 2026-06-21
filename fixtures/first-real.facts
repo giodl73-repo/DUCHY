@@ -10131,3 +10131,27 @@ span: 1221..1802
 value: exists
 source_ids: src-wikipedia-princely-abbey-fulda
 confidence: single_source
+---
+# Reviewed title-only packet from county-scale ready-title harvest batch 03.
+
+fact_id: fact-q2055974-name
+subject_id: title-q2055974
+claim_kind: name
+value: Free imperial city of Dortmund
+source_ids: src-britannica-dortmund
+confidence: single_source
+---
+fact_id: fact-q2055974-rank
+subject_id: title-q2055974
+claim_kind: rank
+value: FreeCity
+source_ids: src-britannica-dortmund
+confidence: single_source
+---
+fact_id: fact-q2055974-exists
+subject_id: title-q2055974
+claim_kind: title_exists
+span: 1220..1803
+value: exists
+source_ids: src-britannica-dortmund
+confidence: single_source

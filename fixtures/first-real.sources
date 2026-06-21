@@ -5471,3 +5471,15 @@ notes: Princely Abbey of Fulda page gives Princely Abbey and Prince-Bishopric id
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded title identity only; no Holy Roman Empire parentage, imperial immediacy relation, mediatisation target, offices, or abbey history promoted.
+---
+source_id: src-britannica-dortmund
+source_kind: other
+source_url: https://www.britannica.com/place/Dortmund
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-21
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Dortmund article gives free imperial city status beginning in 1220 and loss of imperial rights in 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded title identity only; no city demographics, trade history, Hanseatic status, war damage, or later municipal history promoted.

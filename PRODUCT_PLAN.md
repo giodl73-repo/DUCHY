@@ -394,6 +394,8 @@ Pulses:
 139. County title harvest batch 02. Complete for promoting Duchy of Benevento,
     Taifa of Denia, Kingdom of Desmond, and Princely Abbey of Fulda title-only
     facts while correcting spans to the opened source evidence.
+140. County title harvest batch 03. Complete for promoting Free imperial city
+    of Dortmund as a corrected title-only packet from Britannica evidence.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

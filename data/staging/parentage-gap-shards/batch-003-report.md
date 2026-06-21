@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 2 |
-| medium_parentage_review | 16 |
-| root_or_successor_review | 7 |
+| medium_parentage_review | 17 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
@@ -17,7 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 1 |
-| Empire | 7 |
+| Empire | 6 |
+| FreeCity | 1 |
 | Kingdom | 16 |
 
 ## Review Rows
@@ -98,6 +99,13 @@ gap_rows: 25
 - exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q2055974 | Free imperial city of Dortmund
+
+- rank: FreeCity
+- exists: 1220..1803
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2090473 | Khazar Khaganate
 
@@ -189,11 +197,4 @@ gap_rows: 25
 - exists: 577..774
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
-
-### title-q28513 | Austria-Hungary
-
-- rank: Empire
-- exists: 1867..1918
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

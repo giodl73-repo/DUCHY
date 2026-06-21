@@ -23,6 +23,13 @@ gap_rows: 25
 
 ## Review Rows
 
+### title-q612359 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
 ### title-q623751 | Kingdom of Bernicia
 
 - rank: Kingdom
@@ -188,13 +195,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 500..734
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q904346 | Kingdom of Desmond
-
-- rank: Kingdom
-- exists: 1118..1596
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

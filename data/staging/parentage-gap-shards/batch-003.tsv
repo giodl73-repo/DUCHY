@@ -10,6 +10,7 @@ title-q203493	Kingdom of Romania	Kingdom	1881..1947	0	medium_parentage_review	Fi
 title-q2037817	County of Girona	County	785..897	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q203817	First Bulgarian Empire	Empire	681..1018	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2042616	Chalkidian League	Empire	-432..-348	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q2055974	Free imperial city of Dortmund	FreeCity	1220..1803	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q2090473	Khazar Khaganate	Empire	650..969	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q209065	Kingdom of Greece	Kingdom	1832..1973	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q215530	Kingdom of Ireland	Kingdom	1542..1801	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -23,4 +24,3 @@ title-q252323	Taifa of Denia	Kingdom	1010..1227	0	medium_parentage_review	Find r
 title-q2577303	Kingdom of Sardinia	Kingdom	1720..1861	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q2597352	Kingdom of Norway	Kingdom	1814..1814	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q267816	Duchy of Benevento	Duchy	577..774	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
-title-q28513	Austria-Hungary	Empire	1867..1918	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.

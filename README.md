@@ -187,6 +187,10 @@ Duchy of Benevento, Taifa of Denia, Kingdom of Desmond, and Princely Abbey of
 Fulda. The accepted catalog now has 426 reviewed sources, 1292 facts, 344
 titles, and 260 parentage facts; the parentage gap queue now has 129 rows split
 across six shards.
+The third county title harvest promotes Free imperial city of Dortmund with a
+corrected `1220..1803` span from Britannica. The accepted catalog now has 427
+reviewed sources, 1295 facts, 345 titles, and 260 parentage facts; the parentage
+gap queue now has 130 rows.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

@@ -8,19 +8,26 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 15 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Empire | 9 |
-| Kingdom | 14 |
+| Empire | 10 |
+| Kingdom | 13 |
 | TheocraticState | 1 |
 
 ## Review Rows
+
+### title-q28513 | Austria-Hungary
+
+- rank: Empire
+- exists: 1867..1918
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q2992329 | County Palatine of Durham
 
@@ -189,11 +196,4 @@ gap_rows: 25
 - exists: 820..961
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q612359 | Kingdom of Lithuania
-
-- rank: Kingdom
-- exists: 1918..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 426
-facts: 1292
-titles: 344
+sources: 427
+facts: 1295
+titles: 345
 parentage_facts: 260
 titles_with_parentage: 215
-titles_without_parentage: 129
+titles_without_parentage: 130
 
 ## Coverage By Rank
 
@@ -15,7 +15,7 @@ titles_without_parentage: 129
 | Crown | 6 | 3 | 3 |
 | Duchy | 138 | 135 | 3 |
 | Empire | 39 | 0 | 39 |
-| FreeCity | 1 | 1 | 0 |
+| FreeCity | 2 | 1 | 1 |
 | Kingdom | 124 | 45 | 79 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 0 | 3 |
@@ -83,6 +83,7 @@ titles_without_parentage: 129
 - title-q2037817 | County of Girona | County | 785..897
 - title-q203817 | First Bulgarian Empire | Empire | 681..1018
 - title-q2042616 | Chalkidian League | Empire | -432..-348
+- title-q2055974 | Free imperial city of Dortmund | FreeCity | 1220..1803
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
