@@ -126,6 +126,7 @@ records and validation.
 | 108 | County of Wurttemberg HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Wurttemberg parentage under the Holy Roman Empire. |
 | 109 | Duchy of Austria HRE parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Austria parentage under the Holy Roman Empire. |
 | 110 | Duchy of Athens Thessalonica parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Athens parentage under the Kingdom of Thessalonica. |
+| 111 | Kingdom of Thessalonica Latin Empire parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Thessalonica parentage under the Latin Empire. |
 
 ## Success Criteria
 

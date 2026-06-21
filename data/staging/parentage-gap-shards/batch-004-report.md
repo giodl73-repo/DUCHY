@@ -7,17 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
-| medium_parentage_review | 15 |
+| high_parentage_review | 2 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 1 |
+| Duchy | 2 |
 | Empire | 9 |
-| Kingdom | 15 |
+| Kingdom | 14 |
 
 ## Review Rows
 
@@ -95,13 +95,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -437..370
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q325461 | Kingdom of Thessalonica
-
-- rank: Kingdom
-- exists: 1204..1224
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 839..1171
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q47261 | Duchy of Bavaria
+
+- rank: Duchy
+- exists: 907..1805
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

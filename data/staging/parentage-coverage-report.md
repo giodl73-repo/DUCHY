@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 372
-facts: 1220
+sources: 373
+facts: 1221
 titles: 335
-parentage_facts: 215
-titles_with_parentage: 171
-titles_without_parentage: 164
+parentage_facts: 216
+titles_with_parentage: 172
+titles_without_parentage: 163
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 164
 | Duchy | 137 | 109 | 28 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 36 | 85 |
+| Kingdom | 121 | 37 | 84 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -108,7 +108,6 @@ titles_without_parentage: 164
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
-- title-q325461 | Kingdom of Thessalonica | Kingdom | 1204..1224
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
 - title-q3324486 | Prince-Bishopric of Montenegro | Duchy | 1516..1852
 - title-q34266 | Russian Empire | Empire | 1721..1917

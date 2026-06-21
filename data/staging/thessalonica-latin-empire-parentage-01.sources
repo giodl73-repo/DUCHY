@@ -1,0 +1,11 @@
+source_id: src-wikipedia-kingdom-thessalonica
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Thessalonica
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Thessalonica article; used only for textual parentage context that identifies the kingdom as a vassal of the Latin Empire from its 1204 establishment until its 1224 fall to Epirus.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Kingdom of Thessalonica parentage context only; no Fourth Crusade narrative, Byzantine predecessor, Boniface succession, Lombard rebellion, Epirus conquest detail, titular claimants, or post-1224 successor claims imported.

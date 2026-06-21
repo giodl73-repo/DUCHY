@@ -314,7 +314,10 @@ Pulses:
 111. Duchy of Athens Thessalonica parentage packet. Complete for adding a
      reviewed Wikimedia text source and importing Duchy of Athens -> Kingdom of
      Thessalonica for 1205-1224.
-112. Next reviewed parentage packet.
+112. Kingdom of Thessalonica Latin Empire parentage packet. Complete for adding
+     a reviewed Wikimedia text source and importing Kingdom of Thessalonica ->
+     Latin Empire for 1204-1224.
+113. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

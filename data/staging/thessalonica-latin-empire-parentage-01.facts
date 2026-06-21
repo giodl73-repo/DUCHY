@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Kingdom of Thessalonica under the Latin Empire.
+
+fact_id: fact-q325461-parent-q178897
+subject_id: title-q325461
+claim_kind: parentage
+span: 1204..1224
+value: title-q178897
+source_ids: src-wikidata-q325461, src-wikidata-q178897, src-wikipedia-kingdom-thessalonica
+confidence: multi_source

@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q47261 | Duchy of Bavaria
-
-- rank: Duchy
-- exists: 907..1805
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q48742118 | Fascist Italy
 
 - rank: Kingdom
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 959..1190
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q6673921 | Lotharingia
+
+- rank: Duchy
+- exists: 855..959
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

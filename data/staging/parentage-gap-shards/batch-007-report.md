@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 14
+gap_rows: 13
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 3 |
+| high_parentage_review | 2 |
 | medium_parentage_review | 10 |
 | root_or_successor_review | 1 |
 
@@ -15,18 +15,11 @@ gap_rows: 14
 
 | Rank | Rows |
 |---|---:|
-| Duchy | 3 |
+| Duchy | 2 |
 | Empire | 1 |
 | Kingdom | 10 |
 
 ## Review Rows
-
-### title-q836937 | Duchy of Julich
-
-- rank: Duchy
-- exists: 1003..1794
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q837136 | Kingdom of Deheubarth
 
