@@ -1,0 +1,25 @@
+# Reviewed text-backed parentage packet for Napoleonic client kingdoms under the First French Empire.
+
+fact_id: fact-q212278-parent-q71084
+subject_id: title-q212278
+claim_kind: parentage
+span: 1806..1810
+value: title-q71084
+source_ids: src-wikidata-q212278, src-wikidata-q71084, src-wikipedia-kingdom-holland
+confidence: multi_source
+---
+fact_id: fact-q223793-parent-q71084
+subject_id: title-q223793
+claim_kind: parentage
+span: 1804..1807
+value: title-q71084
+source_ids: src-wikidata-q223793, src-wikidata-q71084, src-wikipedia-kingdom-etruria
+confidence: multi_source
+---
+fact_id: fact-q223936-parent-q71084
+subject_id: title-q223936
+claim_kind: parentage
+span: 1805..1814
+value: title-q71084
+source_ids: src-wikidata-q223936, src-wikidata-q71084, src-wikipedia-kingdom-italy-napoleonic
+confidence: multi_source

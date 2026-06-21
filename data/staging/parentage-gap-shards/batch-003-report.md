@@ -7,15 +7,15 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 19 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 18 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 6 |
-| Kingdom | 19 |
+| Empire | 7 |
+| Kingdom | 18 |
 
 ## Review Rows
 
@@ -110,13 +110,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q212278 | Kingdom of Holland
-
-- rank: Kingdom
-- exists: 1806..1810
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q215530 | Kingdom of Ireland
 
 - rank: Kingdom
@@ -128,20 +121,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 872..1397
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q223793 | Kingdom of Etruria
-
-- rank: Kingdom
-- exists: 1801..1807
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q223936 | Kingdom of Italy
-
-- rank: Kingdom
-- exists: 1805..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
@@ -191,6 +170,27 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1720..1861
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2597352 | Kingdom of Norway
+
+- rank: Kingdom
+- exists: 1814..1814
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q28513 | Austria-Hungary
+
+- rank: Empire
+- exists: 1867..1918
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q2980623 | Kingdom of Bosnia
+
+- rank: Kingdom
+- exists: 1377..1463
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

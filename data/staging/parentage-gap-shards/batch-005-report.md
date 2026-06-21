@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data/staging/parentage-gap-shards/batch-005.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
 gap_rows: 25
 
 ## Priority Counts
@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 20 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 19 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,31 +17,10 @@ gap_rows: 25
 |---|---:|
 | Crown | 2 |
 | Duchy | 1 |
-| Empire | 4 |
-| Kingdom | 18 |
+| Empire | 5 |
+| Kingdom | 17 |
 
 ## Review Rows
-
-### title-q612359 | Kingdom of Lithuania
-
-- rank: Kingdom
-- exists: 1918..1918
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q623751 | Kingdom of Bernicia
-
-- rank: Kingdom
-- exists: 420..634
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q625380 | Eastern Hungarian Kingdom
-
-- rank: Kingdom
-- exists: 1526..1570
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62567 | Kingdom of Iceland
 
@@ -194,6 +173,27 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 500..734
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q905131 | Kingdom of Breifne
+
+- rank: Kingdom
+- exists: 700..1256
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q926295 | Italian Empire
+
+- rank: Empire
+- exists: 1882..1946
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q954585 | Kingdom of Brycheiniog
+
+- rank: Kingdom
+- exists: 450..1045
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

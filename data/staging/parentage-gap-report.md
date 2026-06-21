@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 129
+source_tsv: data\staging\parentage-gap-targets.tsv
+gap_rows: 126
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 89 |
+| medium_parentage_review | 86 |
 | root_or_successor_review | 38 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 129
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 38 |
-| Kingdom | 85 |
+| Kingdom | 82 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -464,13 +464,6 @@ gap_rows: 129
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q212278 | Kingdom of Holland
-
-- rank: Kingdom
-- exists: 1806..1810
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q215530 | Kingdom of Ireland
 
 - rank: Kingdom
@@ -482,20 +475,6 @@ gap_rows: 129
 
 - rank: Kingdom
 - exists: 872..1397
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q223793 | Kingdom of Etruria
-
-- rank: Kingdom
-- exists: 1801..1807
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q223936 | Kingdom of Italy
-
-- rank: Kingdom
-- exists: 1805..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

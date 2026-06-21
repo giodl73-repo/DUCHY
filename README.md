@@ -138,6 +138,9 @@ real parentage coverage to 252 facts. The high-priority parentage queue now has
 no active rows; Albania and Montenegro remain visible as
 `blocked_parentage_review` because they need contested/de facto relation
 modeling before safe parentage import.
+The first medium-priority parentage batch adds Kingdom of Holland, Kingdom of
+Etruria, and Napoleonic Kingdom of Italy client-state spans under the First
+French Empire, raising reviewed real parentage coverage to 255 facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

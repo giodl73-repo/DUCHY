@@ -1,0 +1,37 @@
+# Reviewed text-backed parentage packet for Napoleonic client kingdoms under the First French Empire.
+
+source_id: src-wikipedia-kingdom-holland
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Holland
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Holland article; used only for textual parentage context that identifies the kingdom as a client state of the French Empire in 1806-1810.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no annexation mechanics, royal household detail, borders, or Dutch successor claims imported.
+---
+source_id: src-wikipedia-kingdom-etruria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Etruria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Etruria article; used only for textual parentage context that identifies the kingdom as a client state of the French Empire in 1801-1807.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no Treaty of Aranjuez detail, Bourbon-Parma compensation mechanics, borders, or successor departments imported.
+---
+source_id: src-wikipedia-kingdom-italy-napoleonic
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Napoleonic)
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Italy (Napoleonic) article; used only for textual parentage context that identifies the kingdom as a client state of Napoleon's French Empire in 1805-1814.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no viceroyalty administration, Italian Republic predecessor mechanics, borders, or post-1814 settlement claims imported.

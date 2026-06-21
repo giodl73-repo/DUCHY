@@ -1,0 +1,4 @@
+child	child_label	child_rank	child_exists	basis	parent	parent_label	parent_rank	parent_exists	parentage_span
+Q212278	Kingdom of Holland	Kingdom	1806..1810	Wikimedia text: client state of the French Empire	Q71084	First French Empire	Empire	1804..1815	1806..1810
+Q223793	Kingdom of Etruria	Kingdom	1801..1807	Wikimedia text: client state of the French Empire	Q71084	First French Empire	Empire	1804..1815	1804..1807
+Q223936	Kingdom of Italy (Napoleonic)	Kingdom	1805..1814	Wikimedia text: client state of Napoleon's French Empire	Q71084	First French Empire	Empire	1804..1815	1805..1814

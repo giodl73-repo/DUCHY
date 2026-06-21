@@ -1,6 +1,6 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data/staging/parentage-gap-shards/batch-002.tsv
+source_tsv: data\staging\parentage-gap-shards\batch-002.tsv
 gap_rows: 25
 
 ## Priority Counts

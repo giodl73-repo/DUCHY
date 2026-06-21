@@ -358,6 +358,9 @@ Pulses:
 126. Parentage gap blocker queue. Complete for adding a machine-readable
     blocker TSV and optional gap-queue input so reviewed blockers remain
     visible without counting as active high-priority parentage imports.
+127. Medium-priority Napoleonic parentage batch 01. Complete for adding Kingdom
+    of Holland, Kingdom of Etruria, and Napoleonic Kingdom of Italy parentage
+    under the First French Empire.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

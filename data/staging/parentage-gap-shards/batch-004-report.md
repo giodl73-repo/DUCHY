@@ -7,38 +7,17 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 15 |
-| root_or_successor_review | 10 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 10 |
-| Kingdom | 15 |
+| Empire | 9 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q2597352 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 1814..1814
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q28513 | Austria-Hungary
-
-- rank: Empire
-- exists: 1867..1918
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2980623 | Kingdom of Bosnia
-
-- rank: Kingdom
-- exists: 1377..1463
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q3181749 | Arab Caliphate
 
@@ -193,4 +172,25 @@ gap_rows: 25
 - exists: 820..961
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q612359 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q623751 | Kingdom of Bernicia
+
+- rank: Kingdom
+- exists: 420..634
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q625380 | Eastern Hungarian Kingdom
+
+- rank: Kingdom
+- exists: 1526..1570
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

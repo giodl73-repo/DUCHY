@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 410
-facts: 1260
+sources: 413
+facts: 1263
 titles: 336
-parentage_facts: 252
-titles_with_parentage: 207
-titles_without_parentage: 129
+parentage_facts: 255
+titles_with_parentage: 210
+titles_without_parentage: 126
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 129
 | Duchy | 137 | 135 | 2 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 37 | 85 |
+| Kingdom | 122 | 40 | 82 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -85,11 +85,8 @@ titles_without_parentage: 129
 - title-q2042616 | Chalkidian League | Empire | -432..-348
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
-- title-q212278 | Kingdom of Holland | Kingdom | 1806..1810
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
-- title-q223793 | Kingdom of Etruria | Kingdom | 1801..1807
-- title-q223936 | Kingdom of Italy | Kingdom | 1805..1814
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
