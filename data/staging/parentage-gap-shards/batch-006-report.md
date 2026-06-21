@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q600018 | Kingdom of Hungary
-
-- rank: Kingdom
-- exists: 1920..1946
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q603771 | Emirate of Crete
 
 - rank: Empire
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 1388..1818
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q70972 | Kingdom of France
+
+- rank: Kingdom
+- exists: 987..1791
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

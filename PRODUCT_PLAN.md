@@ -272,7 +272,10 @@ Pulses:
 97. Duchy of Parma and Piacenza Empire parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Duchy of Parma and Piacenza ->
     Holy Roman Empire for 1748-1801.
-98. Next reviewed parentage packet.
+98. Kingdom of Naples Crown of Aragon parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing Kingdom of Naples -> Crown of
+    Aragon for 1442-1458.
+99. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

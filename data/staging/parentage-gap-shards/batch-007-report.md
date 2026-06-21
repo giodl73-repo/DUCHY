@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 16 |
+| high_parentage_review | 7 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Crown | 1 |
-| Duchy | 5 |
+| Duchy | 6 |
 | Empire | 3 |
-| Kingdom | 15 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q70972 | Kingdom of France
-
-- rank: Kingdom
-- exists: 987..1791
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q71084 | First French Empire
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 410..920
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q958291 | United Principalities of Moldavia and Wallachia
+
+- rank: Duchy
+- exists: 1859..1881
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

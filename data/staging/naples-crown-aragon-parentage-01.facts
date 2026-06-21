@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Kingdom of Naples under the Crown of Aragon.
+
+fact_id: fact-q173065-parent-q204920
+subject_id: title-q173065
+claim_kind: parentage
+span: 1442..1458
+value: title-q204920
+source_ids: src-wikidata-q173065, src-wikidata-q204920, src-wikipedia-kingdom-naples
+confidence: multi_source

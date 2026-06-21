@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 6 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 5 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 5 |
+| Duchy | 4 |
 | Empire | 6 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 
 ## Review Rows
-
-### title-q187035 | Principality of Albania
-
-- rank: Duchy
-- exists: 1914..1925
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q187461 | Kingdom of Hereti
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1532..1569
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q2253783 | Kingdom of Glywysing
+
+- rank: Kingdom
+- exists: 500..1063
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

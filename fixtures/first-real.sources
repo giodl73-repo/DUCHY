@@ -4617,3 +4617,15 @@ notes: History of the Duchy of Parma and Piacenza article; used only for textual
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Duchy of Parma and Piacenza parentage context only; no papal creation, Farnese succession, Austrian administration, Bourbon-Parma succession, French protectorate, Napoleonic department, Restoration, or Italian unification claims imported.
+---
+source_id: src-wikipedia-kingdom-naples
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Naples
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Naples article; used only for textual parentage context that identifies Naples as part of the Crown of Aragon in 1442-1458 after Alfonso V's conquest and before the kingdom separated again under Ferdinand I.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Kingdom of Naples parentage context only; no Angevin claim, French personal union, Spanish viceroyalty, Habsburg monarchy, Bourbon restoration, Napoleonic rule, or Two Sicilies merger claims imported.

@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q35	Denmark	Kingdom	800..	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3624335	Duchy of Austria	Duchy	1156..1453	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q58202	July Monarchy	Kingdom	1830..1848	0	medium_parentage_review	Find rev
 title-q583038	Ostrogothic Kingdom	Kingdom	493..553	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q589251	County of Montbeliard	County	1042..1793	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q599613	County of Namur	County	981..1795	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q600018	Kingdom of Hungary	Kingdom	1920..1946	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 10 |
-| medium_parentage_review | 12 |
-| root_or_successor_review | 3 |
+| medium_parentage_review | 11 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 9 |
-| Empire | 3 |
-| Kingdom | 12 |
+| Empire | 4 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q2253783 | Kingdom of Glywysing
-
-- rank: Kingdom
-- exists: 500..1063
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q2273304 | Moravian Serbia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1205..1458
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q34266 | Russian Empire
+
+- rank: Empire
+- exists: 1721..1917
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

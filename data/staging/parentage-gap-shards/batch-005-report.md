@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 10 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 11 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 5 |
 | Duchy | 4 |
-| Empire | 6 |
-| Kingdom | 10 |
+| Empire | 5 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q34266 | Russian Empire
-
-- rank: Empire
-- exists: 1721..1917
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q3446210 | Kingdom of Pamplona
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 981..1795
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q600018 | Kingdom of Hungary
+
+- rank: Kingdom
+- exists: 1920..1946
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

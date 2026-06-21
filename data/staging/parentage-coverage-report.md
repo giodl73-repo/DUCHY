@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 356
-facts: 1200
+sources: 357
+facts: 1201
 titles: 333
-parentage_facts: 201
-titles_with_parentage: 157
-titles_without_parentage: 176
+parentage_facts: 202
+titles_with_parentage: 158
+titles_without_parentage: 175
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 176
 | Duchy | 136 | 98 | 38 |
 | Empire | 37 | 0 | 37 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 35 | 86 |
+| Kingdom | 121 | 36 | 85 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -62,7 +62,6 @@ titles_without_parentage: 176
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
 - title-q172579 | Kingdom of Italy | Kingdom | 1861..1946
-- title-q173065 | Kingdom of Naples | Kingdom | 1282..1816
 - title-q173082 | Dacia | Kingdom | -60..106
 - title-q178897 | Latin Empire | Empire | 1204..1261
 - title-q1789596 | Croatia in personal union with Hungary | Kingdom | 1102..1526
