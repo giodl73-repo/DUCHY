@@ -21,6 +21,6 @@ title-q180393	Kingdom of the Two Sicilies	Kingdom	1738..1861	0	medium_parentage_
 title-q181254	Empire of Nicaea	Empire	1204..1261	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q18285930	German Empire of 1848/1849	Empire	1848..1849	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q186537	Khanate of Qazan	Empire	1438..1552	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q187035	Principality of Albania	Duchy	1914..1925	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q187035	Principality of Albania	Duchy	1914..1925	0	blocked_parentage_review	Reviewed blocker: World War I protectorate and occupation sources are partial or outside the accepted title span; needs contested/de facto or split-control relation modeling before parentage import.
 title-q187461	Kingdom of Hereti	Kingdom	893..1020	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q188586	Kingdom of Sicily	Kingdom	1130..1816	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

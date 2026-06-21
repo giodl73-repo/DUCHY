@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-shards\batch-002.tsv
+source_tsv: data/staging/parentage-gap-shards/batch-002.tsv
 gap_rows: 25
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
+| blocked_parentage_review | 1 |
 | medium_parentage_review | 16 |
 | root_or_successor_review | 8 |
 
@@ -181,8 +181,8 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1914..1925
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
+- review_priority: blocked_parentage_review
+- notes: Reviewed blocker: World War I protectorate and occupation sources are partial or outside the accepted title span; needs contested/de facto or split-control relation modeling before parentage import.
 
 ### title-q187461 | Kingdom of Hereti
 

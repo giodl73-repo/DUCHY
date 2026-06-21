@@ -1,14 +1,16 @@
 # Remaining High-Priority Parentage Blockers
 
-Reviewed on 2026-06-21 after high-priority parentage batches 01-10.
+Reviewed on 2026-06-21 after high-priority parentage batches 01-10 and the
+machine-readable blocker queue update.
 
 ## Summary
 
-- High-priority parentage gaps remaining: 2.
-- These rows are not promoted because the currently accepted fixture catalog
-  lacks a reviewed higher-rank parent that overlaps the title span, or the
-  source-backed relation is not a de jure parentage claim under the current
-  model.
+- Active high-priority parentage gaps remaining: 0.
+- Reviewed blocker rows remaining: 2.
+- These rows are no longer active parentage-import work because the currently
+  accepted fixture catalog lacks a reviewed higher-rank parent that overlaps the
+  title span, or the source-backed relation is not a de jure parentage claim
+  under the current model.
 
 ## Blockers
 
@@ -21,5 +23,6 @@ Reviewed on 2026-06-21 after high-priority parentage batches 01-10.
 
 - Add contested/de facto/de jure relation semantics before importing Montenegro
   or partial Albania occupation/protectorate claims.
-- Keep these rows in the generated gap queue until those modeling gaps are
-  resolved.
+- Keep these rows visible as `blocked_parentage_review` in
+  `data/staging/parentage-gap-blockers.tsv` and the generated gap queue until
+  those modeling gaps are resolved.

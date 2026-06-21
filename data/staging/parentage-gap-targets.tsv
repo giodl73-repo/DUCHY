@@ -46,7 +46,7 @@ title-q180393	Kingdom of the Two Sicilies	Kingdom	1738..1861	0	medium_parentage_
 title-q181254	Empire of Nicaea	Empire	1204..1261	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q18285930	German Empire of 1848/1849	Empire	1848..1849	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q186537	Khanate of Qazan	Empire	1438..1552	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q187035	Principality of Albania	Duchy	1914..1925	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q187035	Principality of Albania	Duchy	1914..1925	0	blocked_parentage_review	Reviewed blocker: World War I protectorate and occupation sources are partial or outside the accepted title span; needs contested/de facto or split-control relation modeling before parentage import.
 title-q187461	Kingdom of Hereti	Kingdom	893..1020	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q188586	Kingdom of Sicily	Kingdom	1130..1816	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q19083	Kingdom of Iberia	Kingdom	-299..580	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -114,7 +114,7 @@ title-q733799	Kingdom of the Hwicce	Kingdom	577..780	0	medium_parentage_review	F
 title-q766543	Hispanic Monarchy	Empire	1479..1700	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q769782	Kingdom of Powys	Kingdom	500..1160	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q771193	Kingdom of Brittany	Kingdom	851..939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
-title-q779011	Principality of Montenegro	Duchy	1852..1910	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
+title-q779011	Principality of Montenegro	Duchy	1852..1910	0	blocked_parentage_review	Reviewed blocker: sources support de facto independence and later recognition rather than clean Ottoman parentage; needs contested/de facto relation modeling before parentage import.
 title-q7882199	Burgundian State	Crown	1363..1559	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q816814	Kingdom of Gwynedd	Kingdom	401..1216	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q837136	Kingdom of Deheubarth	Kingdom	920..1197	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

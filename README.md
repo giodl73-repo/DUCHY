@@ -134,8 +134,10 @@ tracked as explicit blockers because they need modern Norway coverage or
 contested/de facto relation modeling.
 The tenth high-priority Norway batch adds modern Kingdom of Norway coverage and
 Hordaland parentage, raising the accepted catalog to 336 titles and reviewed
-real parentage coverage to 252 facts. The remaining high-priority rows are
-Albania and Montenegro, both blocked on contested/de facto relation modeling.
+real parentage coverage to 252 facts. The high-priority parentage queue now has
+no active rows; Albania and Montenegro remain visible as
+`blocked_parentage_review` because they need contested/de facto relation
+modeling before safe parentage import.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

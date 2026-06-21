@@ -355,6 +355,9 @@ Pulses:
     Kingdom of Norway coverage and Hordaland parentage.
 125. Remaining high-priority blocker review. Complete for recording Albania and
     Montenegro blockers that need contested/de facto relation modeling.
+126. Parentage gap blocker queue. Complete for adding a machine-readable
+    blocker TSV and optional gap-queue input so reviewed blockers remain
+    visible without counting as active high-priority parentage imports.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

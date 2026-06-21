@@ -54,7 +54,12 @@ fn run() -> Result<(), Vec<String>> {
             return parentage_coverage_report(sources_path, facts_path, output_path);
         }
         if command == "parentage-gap-tsv" {
-            return parentage_gap_tsv(sources_path, facts_path, output_path);
+            return parentage_gap_tsv(sources_path, facts_path, output_path, None);
+        }
+    }
+    if let [command, sources_path, facts_path, output_path, blockers_path] = args.as_slice() {
+        if command == "parentage-gap-tsv" {
+            return parentage_gap_tsv(sources_path, facts_path, output_path, Some(blockers_path));
         }
     }
     if let [command, manifest_path, output_dir, chunk_size] = args.as_slice() {
@@ -74,7 +79,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -242,6 +247,7 @@ fn parentage_gap_tsv(
     sources_path: &str,
     facts_path: &str,
     output_path: &str,
+    blockers_path: Option<&String>,
 ) -> Result<(), Vec<String>> {
     let source_text = fs::read_to_string(sources_path)
         .map_err(|error| vec![format!("failed to read {sources_path}: {error}")])?;
@@ -270,6 +276,10 @@ fn parentage_gap_tsv(
             .or_default()
             .push(fact);
     }
+    let blockers = match blockers_path {
+        Some(path) => parentage_gap_blockers_from_file(path)?,
+        None => BTreeMap::new(),
+    };
 
     let mut output = String::new();
     output.push_str(parentage_gap_tsv_header());
@@ -279,6 +289,7 @@ fn parentage_gap_tsv(
         .iter()
         .filter(|title| !parentage_by_child.contains_key(title.id.as_str()))
     {
+        let blocker = blockers.get(title.id.as_str());
         output.push_str(&tsv_escape(&title.id));
         output.push('\t');
         output.push_str(&tsv_escape(&title.name));
@@ -289,9 +300,17 @@ fn parentage_gap_tsv(
         output.push('\t');
         output.push('0');
         output.push('\t');
-        output.push_str(parentage_gap_priority(title.rank));
+        output.push_str(
+            blocker
+                .map(|blocker| blocker.review_priority.as_str())
+                .unwrap_or_else(|| parentage_gap_priority(title.rank)),
+        );
         output.push('\t');
-        output.push_str(parentage_gap_note(title.rank));
+        output.push_str(
+            &blocker
+                .map(|blocker| blocker.notes.as_str())
+                .unwrap_or_else(|| parentage_gap_note(title.rank)),
+        );
         output.push('\n');
         gap_count += 1;
     }
@@ -302,6 +321,9 @@ fn parentage_gap_tsv(
     println!("DUCHY parentage gap TSV");
     println!("- titles: {}", titles.len());
     println!("- gap rows: {gap_count}");
+    if let Some(path) = blockers_path {
+        println!("- blocker review: {path}");
+    }
     println!("- output: {output_path}");
 
     Ok(())
@@ -334,8 +356,8 @@ fn parentage_gap_shard(
     index.push_str(&format!("source_tsv: {input_path}\n"));
     index.push_str(&format!("gap_rows: {}\n", rows.len()));
     index.push_str(&format!("chunk_size: {chunk_size}\n\n"));
-    index.push_str("| Shard | Rows | High | Medium | Root |\n");
-    index.push_str("|---|---:|---:|---:|---:|\n");
+    index.push_str("| Shard | Rows | High | Medium | Root | Blocked |\n");
+    index.push_str("|---|---:|---:|---:|---:|---:|\n");
 
     let header = parentage_gap_tsv_header();
     for (index_number, chunk) in rows.chunks(chunk_size).enumerate() {
@@ -347,11 +369,12 @@ fn parentage_gap_shard(
 
         let counts = parentage_gap_priority_counts(chunk);
         index.push_str(&format!(
-            "| {shard_name} | {} | {} | {} | {} |\n",
+            "| {shard_name} | {} | {} | {} | {} | {} |\n",
             chunk.len(),
             counts.high,
             counts.medium,
-            counts.root
+            counts.root,
+            counts.blocked
         ));
     }
 
@@ -1082,11 +1105,97 @@ struct ParentageGapRow {
     notes: String,
 }
 
+struct ParentageGapBlocker {
+    review_priority: String,
+    notes: String,
+}
+
 #[derive(Default)]
 struct ParentageGapPriorityCounts {
     high: usize,
     medium: usize,
     root: usize,
+    blocked: usize,
+}
+
+fn parentage_gap_blocker_tsv_header() -> &'static str {
+    "title_id\treview_priority\tnotes"
+}
+
+fn parentage_gap_blockers_from_file(
+    blockers_path: &str,
+) -> Result<BTreeMap<String, ParentageGapBlocker>, Vec<String>> {
+    let blocker_text = fs::read_to_string(blockers_path)
+        .map_err(|error| vec![format!("failed to read {blockers_path}: {error}")])?;
+    parentage_gap_blockers_from_tsv(&blocker_text)
+}
+
+fn parentage_gap_blockers_from_tsv(
+    input: &str,
+) -> Result<BTreeMap<String, ParentageGapBlocker>, Vec<String>> {
+    let mut lines = input.lines();
+    let Some(header) = lines.next() else {
+        return Err(vec!["parentage gap blocker TSV is empty".to_string()]);
+    };
+    let expected_header = parentage_gap_blocker_tsv_header();
+    if header != expected_header {
+        return Err(vec![format!(
+            "invalid parentage gap blocker TSV header: expected {expected_header}"
+        )]);
+    }
+
+    let mut blockers = BTreeMap::new();
+    let mut errors = Vec::new();
+    for (line_index, line) in lines.enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+        let line_number = line_index + 2;
+        let fields = line.split('\t').collect::<Vec<_>>();
+        if fields.len() != 3 {
+            errors.push(format!(
+                "line {line_number}: expected 3 TSV columns, found {}",
+                fields.len()
+            ));
+            continue;
+        }
+        let title_id = fields[0].trim();
+        let review_priority = fields[1].trim();
+        let notes = fields[2].trim();
+        let mut line_errors = Vec::new();
+        if title_id.is_empty() {
+            line_errors.push(format!("line {line_number}: title_id is required"));
+        }
+        if review_priority != "blocked_parentage_review" {
+            line_errors.push(format!(
+                "line {line_number}: unsupported blocker review_priority {review_priority}"
+            ));
+        }
+        if notes.is_empty() {
+            line_errors.push(format!("line {line_number}: notes are required"));
+        }
+        if !line_errors.is_empty() {
+            errors.extend(line_errors);
+            continue;
+        }
+        if blockers
+            .insert(
+                title_id.to_string(),
+                ParentageGapBlocker {
+                    review_priority: review_priority.to_string(),
+                    notes: notes.to_string(),
+                },
+            )
+            .is_some()
+        {
+            errors.push(format!("line {line_number}: duplicate blocker {title_id}"));
+        }
+    }
+    if errors.is_empty() {
+        Ok(blockers)
+    } else {
+        Err(errors)
+    }
 }
 
 fn parentage_gap_rows_from_tsv(input: &str) -> Result<Vec<ParentageGapRow>, Vec<String>> {
@@ -1158,6 +1267,7 @@ fn parentage_gap_priority_counts(rows: &[ParentageGapRow]) -> ParentageGapPriori
             "high_parentage_review" => counts.high += 1,
             "medium_parentage_review" => counts.medium += 1,
             "root_or_successor_review" => counts.root += 1,
+            "blocked_parentage_review" => counts.blocked += 1,
             _ => {}
         }
     }
@@ -1442,4 +1552,75 @@ fn manifest_tsv_cell(value: &str, line_number: usize) -> Result<String, Vec<Stri
         }
     }
     Ok(output)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn parses_parentage_gap_blockers() {
+        let input = concat!(
+            "title_id\treview_priority\tnotes\n",
+            "title-demo-a\tblocked_parentage_review\tNeeds relation-status modeling.\n",
+            "title-demo-b\tblocked_parentage_review\tNeeds split-control modeling.\n",
+        );
+
+        let blockers = parentage_gap_blockers_from_tsv(input).expect("blockers should parse");
+
+        assert_eq!(blockers.len(), 2);
+        assert_eq!(
+            blockers
+                .get("title-demo-a")
+                .expect("first blocker")
+                .review_priority,
+            "blocked_parentage_review"
+        );
+    }
+
+    #[test]
+    fn rejects_invalid_parentage_gap_blocker_priority() {
+        let input = concat!(
+            "title_id\treview_priority\tnotes\n",
+            "title-demo-a\thigh_parentage_review\tNeeds relation-status modeling.\n",
+        );
+
+        let errors = match parentage_gap_blockers_from_tsv(input) {
+            Ok(_) => panic!("priority should fail"),
+            Err(errors) => errors,
+        };
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("unsupported blocker review_priority")));
+    }
+
+    #[test]
+    fn counts_blocked_parentage_gap_rows() {
+        let rows = vec![
+            ParentageGapRow {
+                title_id: "title-demo-a".to_string(),
+                name: "Demo A".to_string(),
+                rank: "Duchy".to_string(),
+                exists: "1..2".to_string(),
+                parentage_count: "0".to_string(),
+                review_priority: "blocked_parentage_review".to_string(),
+                notes: "Needs relation-status modeling.".to_string(),
+            },
+            ParentageGapRow {
+                title_id: "title-demo-b".to_string(),
+                name: "Demo B".to_string(),
+                rank: "Duchy".to_string(),
+                exists: "1..2".to_string(),
+                parentage_count: "0".to_string(),
+                review_priority: "high_parentage_review".to_string(),
+                notes: "Find reviewed parentage source.".to_string(),
+            },
+        ];
+
+        let counts = parentage_gap_priority_counts(&rows);
+
+        assert_eq!(counts.blocked, 1);
+        assert_eq!(counts.high, 1);
+    }
 }

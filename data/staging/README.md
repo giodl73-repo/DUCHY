@@ -245,8 +245,12 @@ cargo run --bin duchy-import -- parentage-coverage-report fixtures/first-real.so
 Parentage gap queues can be regenerated as TSV for batch review:
 
 ```powershell
-cargo run --bin duchy-import -- parentage-gap-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-gap-targets.tsv
+cargo run --bin duchy-import -- parentage-gap-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-gap-targets.tsv data/staging/parentage-gap-blockers.tsv
 ```
+
+The optional blocker TSV records reviewed gaps that should remain visible in
+the queue but are no longer active parentage-import work until the model gains
+the required relation semantics.
 
 Parentage gap queues can be split into fixed-size review shards and rendered as
 Markdown reports:
