@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 3 |
-| medium_parentage_review | 11 |
-| root_or_successor_review | 11 |
+| medium_parentage_review | 12 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 2 |
-| Empire | 11 |
-| Kingdom | 11 |
+| Empire | 10 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q178897 | Latin Empire
-
-- rank: Empire
-- exists: 1204..1261
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q1789596 | Croatia in personal union with Hungary
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1832..1973
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q212278 | Kingdom of Holland
+
+- rank: Kingdom
+- exists: 1806..1810
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

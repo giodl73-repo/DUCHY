@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q31929	Carolingian Empire	Empire	800..887	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q319586	Prince-Bishopric of Basel	Duchy	1032..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q325461	Kingdom of Thessalonica	Kingdom	1204..1224	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q48742118	Fascist Italy	Kingdom	1922..1943	0	medium_parentage_review	Find 
 title-q506008	Kingdom of Deira	Kingdom	450..655	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q50625	Hordaland	County	1919..2019	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q5177890	County of Luxembourg	County	963..1354	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
+title-q56089236	Kingdom of Western Georgia	Kingdom	1259..1330	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

@@ -7,9 +7,9 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 13 |
-| root_or_successor_review | 5 |
+| root_or_successor_review | 6 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 5 |
-| Empire | 5 |
+| Duchy | 4 |
+| Empire | 6 |
 | Kingdom | 11 |
 | TheocraticState | 1 |
 
@@ -192,10 +192,10 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q173863 | Prince-Bishopric of Augsburg
+### title-q178897 | Latin Empire
 
-- rank: Duchy
-- exists: 888..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
+- rank: Empire
+- exists: 1204..1261
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

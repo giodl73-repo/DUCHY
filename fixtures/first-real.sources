@@ -4507,3 +4507,15 @@ notes: Confederation of the Rhine article; used only for textual parentage conte
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed parentage context only; no member inventory, military obligations, borders, constitutional acts, or dissolution details imported.
+---
+source_id: src-wikipedia-prince-bishopric-augsburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Augsburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Augsburg article; used only for textual parentage context that identifies Augsburg as a state/prince-bishopric of the Holy Roman Empire in c.888-1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no holders, borders, ecclesiastical jurisdiction, or secularization details imported.

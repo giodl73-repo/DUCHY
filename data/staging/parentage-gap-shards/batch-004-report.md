@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 9 |
-| medium_parentage_review | 14 |
-| root_or_successor_review | 2 |
+| medium_parentage_review | 13 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,17 +17,10 @@ gap_rows: 25
 |---|---:|
 | County | 1 |
 | Duchy | 8 |
-| Empire | 2 |
-| Kingdom | 14 |
+| Empire | 3 |
+| Kingdom | 13 |
 
 ## Review Rows
-
-### title-q212278 | Kingdom of Holland
-
-- rank: Kingdom
-- exists: 1806..1810
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q215530 | Kingdom of Ireland
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 632..1517
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q31929 | Carolingian Empire
+
+- rank: Empire
+- exists: 800..887
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 12 |
-| medium_parentage_review | 11 |
+| high_parentage_review | 13 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 4 |
 | Crown | 1 |
-| Duchy | 8 |
+| Duchy | 9 |
 | Empire | 2 |
-| Kingdom | 10 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q56089236 | Kingdom of Western Georgia
-
-- rank: Kingdom
-- exists: 1259..1330
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q566639 | Duchy of Opava
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1281..1498
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q684030 | Principality of Serbia
+
+- rank: Duchy
+- exists: 1815..1882
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

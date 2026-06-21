@@ -9242,3 +9242,13 @@ span: 1806..1813
 value: title-q71084
 source_ids: src-wikidata-q154741, src-wikidata-q71084, src-wikipedia-confederation-rhine
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Prince-Bishopric of Augsburg under the Holy Roman Empire.
+
+fact_id: fact-q173863-parent-q12548
+subject_id: title-q173863
+claim_kind: parentage
+span: 962..1803
+value: title-q12548
+source_ids: src-wikidata-q173863, src-wikidata-q12548, src-wikipedia-prince-bishopric-augsburg
+confidence: multi_source

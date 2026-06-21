@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 13 |
-| medium_parentage_review | 9 |
+| high_parentage_review | 12 |
+| medium_parentage_review | 10 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 11 |
+| Duchy | 10 |
 | Empire | 3 |
-| Kingdom | 8 |
+| Kingdom | 9 |
 
 ## Review Rows
-
-### title-q684030 | Principality of Serbia
-
-- rank: Duchy
-- exists: 1815..1882
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q686312 | Duchy of Amalfi
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 911..1259
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
+
+### title-q854415 | Kingdom of the Lombards
+
+- rank: Kingdom
+- exists: 568..774
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
