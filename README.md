@@ -172,6 +172,11 @@ bringing reviewed county-scale shard rows to 250. Across those reviewed shards,
 agents recorded 5 already accepted seeds, 6 ready title/title-follow-up
 candidates, 18 rank-policy blockers, 178 source-resolution blockers, and 43
 rejected bad leads.
+The remaining shard reviews cover `003`, `005`, `007`, `008`, and `010`,
+completing the 500-row farm pass. The aggregate review set now has 13 accepted
+seeds, 21 ready title/title-follow-up candidates, 50 rank-policy blockers, 329
+source-resolution blockers, and 87 rejected bad leads, with zero ready
+parentage packets.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

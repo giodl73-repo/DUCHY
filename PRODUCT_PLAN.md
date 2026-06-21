@@ -385,6 +385,9 @@ Pulses:
 136. County-scale priority shard farm review. Complete for recording shard
     reviews 001, 002, 006, and 009, raising farm-reviewed rows to 250 and
     surfacing six title/title-follow-up candidates.
+137. County-scale full shard farm review. Complete for recording shard reviews
+    003, 005, 007, 008, and 010, closing the 500-row farm pass with 21
+    title/title-follow-up candidates and zero ready parentage packets.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
