@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q1789596 | Croatia in personal union with Hungary
-
-- rank: Kingdom
-- exists: 1102..1526
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q179023 | French colonial empire
 
 - rank: Empire
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1806..1810
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q215530 | Kingdom of Ireland
+
+- rank: Kingdom
+- exists: 1542..1801
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

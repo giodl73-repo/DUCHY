@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 10 |
+| medium_parentage_review | 12 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 1 |
-| Duchy | 8 |
+| Duchy | 9 |
 | Empire | 3 |
-| Kingdom | 13 |
+| Kingdom | 12 |
 
 ## Review Rows
-
-### title-q215530 | Kingdom of Ireland
-
-- rank: Kingdom
-- exists: 1542..1801
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q2162698 | Duchy of Bohemia
 
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 800..887
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q319586 | Prince-Bishopric of Basel
+
+- rank: Duchy
+- exists: 1032..1803
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 7
+gap_rows: 6
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 6 |
+| medium_parentage_review | 5 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 1 |
-| Kingdom | 6 |
+| Kingdom | 5 |
 
 ## Review Rows
-
-### title-q858841 | Kingdom of Croatia
-
-- rank: Kingdom
-- exists: 925..1102
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q870517 | Odrysian kingdom
 

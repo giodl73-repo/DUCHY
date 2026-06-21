@@ -105,6 +105,7 @@ records and validation.
 | 87 | Confederation of the Rhine Westphalia parentage | complete | Promote Confederation of the Rhine and import Kingdom of Westphalia parentage under it. |
 | 88 | Confederation of the Rhine French Empire parentage | complete | Add a reviewed Wikimedia text source and import Confederation of the Rhine parentage under the First French Empire. |
 | 89 | Prince-Bishopric of Augsburg HRE parentage | complete | Add a reviewed Wikimedia text source and import Prince-Bishopric of Augsburg parentage under the Holy Roman Empire. |
+| 90 | Kingdom of Imereti Russian Empire parentage | complete | Add a reviewed Wikimedia text source and import Kingdom of Imereti parentage under the Russian Empire. |
 
 ## Success Criteria
 

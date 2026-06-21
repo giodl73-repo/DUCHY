@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q319586 | Prince-Bishopric of Basel
-
-- rank: Duchy
-- exists: 1032..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q321371 | Bosporan Kingdom
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 1259..1330
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q566639 | Duchy of Opava
+
+- rank: Duchy
+- exists: 1269..1918
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

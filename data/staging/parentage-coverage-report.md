@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 348
-facts: 1190
+sources: 349
+facts: 1191
 titles: 332
-parentage_facts: 194
-titles_with_parentage: 150
-titles_without_parentage: 182
+parentage_facts: 195
+titles_with_parentage: 151
+titles_without_parentage: 181
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 182
 | Duchy | 136 | 95 | 41 |
 | Empire | 36 | 0 | 36 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 121 | 32 | 89 |
+| Kingdom | 121 | 33 | 88 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
@@ -29,7 +29,6 @@ titles_without_parentage: 182
 - title-q105092 | Kingdom of Mercia | Kingdom | 527..918
 - title-q105313 | Kingdom of Wessex | Kingdom | 519..927
 - title-q106577 | Neustria | Kingdom | 511..977
-- title-q1069959 | Kingdom of Imereti | Kingdom | 1260..1810
 - title-q107299 | Kingdom of Northumbria | Kingdom | 653..954
 - title-q110888 | Kingdom of Essex | Kingdom | 527..825
 - title-q116080 | Polish Underground State | Empire | 1939..1945

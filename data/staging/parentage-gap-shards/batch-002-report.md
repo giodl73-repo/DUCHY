@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 6 |
-| medium_parentage_review | 13 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 14 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -18,18 +18,11 @@ gap_rows: 25
 | County | 2 |
 | Crown | 1 |
 | Duchy | 4 |
-| Empire | 6 |
-| Kingdom | 11 |
+| Empire | 5 |
+| Kingdom | 12 |
 | TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q150981 | North German Confederation
-
-- rank: Empire
-- exists: 1867..1870
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q151624 | German Confederation
 
@@ -198,4 +191,11 @@ gap_rows: 25
 - exists: 1204..1261
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1789596 | Croatia in personal union with Hungary
+
+- rank: Kingdom
+- exists: 1102..1526
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 12 |
-| medium_parentage_review | 10 |
+| high_parentage_review | 11 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 10 |
+| Duchy | 9 |
 | Empire | 3 |
-| Kingdom | 9 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q686312 | Duchy of Amalfi
-
-- rank: Duchy
-- exists: 839..1137
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q693570 | Duchy of Ferrara
 
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 568..774
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q858841 | Kingdom of Croatia
+
+- rank: Kingdom
+- exists: 925..1102
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

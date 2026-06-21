@@ -8,16 +8,16 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 18 |
-| root_or_successor_review | 6 |
+| medium_parentage_review | 17 |
+| root_or_successor_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 1 |
-| Empire | 6 |
-| Kingdom | 18 |
+| Empire | 7 |
+| Kingdom | 17 |
 
 ## Review Rows
 
@@ -67,13 +67,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 511..977
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q1069959 | Kingdom of Imereti
-
-- rank: Kingdom
-- exists: 1260..1810
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
@@ -195,4 +188,11 @@ gap_rows: 25
 - exists: 1908..1946
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q150981 | North German Confederation
+
+- rank: Empire
+- exists: 1867..1870
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

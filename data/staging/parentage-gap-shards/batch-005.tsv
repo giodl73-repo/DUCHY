@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q319586	Prince-Bishopric of Basel	Duchy	1032..1803	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q325461	Kingdom of Thessalonica	Kingdom	1204..1224	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q328001	Prince-Bishopric of Toul	Duchy	1048..1801	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
@@ -24,3 +23,4 @@ title-q506008	Kingdom of Deira	Kingdom	450..655	0	medium_parentage_review	Find r
 title-q50625	Hordaland	County	1919..2019	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q5177890	County of Luxembourg	County	963..1354	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.
 title-q56089236	Kingdom of Western Georgia	Kingdom	1259..1330	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q566639	Duchy of Opava	Duchy	1269..1918	0	high_parentage_review	Find reviewed kingdom or empire parentage source.

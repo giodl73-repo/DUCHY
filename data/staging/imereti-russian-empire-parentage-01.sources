@@ -1,0 +1,11 @@
+source_id: src-wikipedia-georgia-russian-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Georgia_within_the_Russian_Empire
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Georgia within the Russian Empire article; used only for textual parentage context that identifies Imereti as accepting Russian vassalage in 1804 before annexation in 1810.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Imereti-Russian Empire parentage context only; no Georgian territorial, dynastic, occupation, or later province details imported.

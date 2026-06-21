@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q566639 | Duchy of Opava
-
-- rank: Duchy
-- exists: 1269..1918
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q568638 | Duchy of Silesia
 
 - rank: Duchy
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Duchy
 - exists: 1815..1882
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
+
+### title-q686312 | Duchy of Amalfi
+
+- rank: Duchy
+- exists: 839..1137
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 

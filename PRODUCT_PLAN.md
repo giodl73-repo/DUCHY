@@ -251,7 +251,10 @@ Pulses:
 90. Prince-Bishopric of Augsburg HRE parentage packet. Complete for adding a
     reviewed Wikimedia text source and importing Prince-Bishopric of Augsburg ->
     Holy Roman Empire for 962-1803.
-91. Next reviewed parentage packet.
+91. Kingdom of Imereti Russian Empire parentage packet. Complete for adding a
+    reviewed Wikimedia text source and importing Kingdom of Imereti -> Russian
+    Empire for 1804-1810.
+92. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
