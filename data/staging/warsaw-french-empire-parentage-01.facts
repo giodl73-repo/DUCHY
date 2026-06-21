@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Duchy of Warsaw under the First French Empire.
+
+fact_id: fact-q152115-parent-q71084
+subject_id: title-q152115
+claim_kind: parentage
+span: 1807..1815
+value: title-q71084
+source_ids: src-wikidata-q152115, src-wikidata-q71084, src-wikipedia-duchy-warsaw
+confidence: multi_source

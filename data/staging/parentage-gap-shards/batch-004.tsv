@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q2090473	Khazar Khaganate	Empire	650..969	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q209065	Kingdom of Greece	Kingdom	1832..1973	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q212278	Kingdom of Holland	Kingdom	1806..1810	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q215530	Kingdom of Ireland	Kingdom	1542..1801	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q2597352	Kingdom of Norway	Kingdom	1814..1814	0	medium_parentage_review	Fi
 title-q283627	Margraviate of Austria	Duchy	976..1156	0	high_parentage_review	Find reviewed kingdom or empire parentage source.
 title-q28513	Austria-Hungary	Empire	1867..1918	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q2980623	Kingdom of Bosnia	Kingdom	1377..1463	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q2991474	County of Wurttemberg	County	1083..1495	0	high_parentage_review	Find reviewed duchy, kingdom, or empire parentage source.

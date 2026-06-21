@@ -7,28 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 13 |
-| medium_parentage_review | 10 |
+| high_parentage_review | 12 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 2 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 6 |
+| County | 5 |
 | Crown | 1 |
 | Duchy | 7 |
 | Empire | 2 |
-| Kingdom | 9 |
+| Kingdom | 10 |
 
 ## Review Rows
-
-### title-q50625 | Hordaland
-
-- rank: County
-- exists: 1919..2019
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q5177890 | County of Luxembourg
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 900..1401
 - review_priority: high_parentage_review
 - notes: Find reviewed duchy, kingdom, or empire parentage source.
+
+### title-q676184 | Kingdom of Sussex
+
+- rank: Kingdom
+- exists: 477..825
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

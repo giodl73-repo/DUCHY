@@ -1,30 +1,23 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-008.tsv
-gap_rows: 10
+gap_rows: 9
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 2 |
-| medium_parentage_review | 8 |
+| medium_parentage_review | 7 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Duchy | 2 |
-| Kingdom | 8 |
+| Kingdom | 7 |
 
 ## Review Rows
-
-### title-q83958 | Macedonia
-
-- rank: Kingdom
-- exists: -808..-167
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q842091 | Duchy of Normandy
 

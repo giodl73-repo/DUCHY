@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q676184 | Kingdom of Sussex
-
-- rank: Kingdom
-- exists: 477..825
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q682001 | Duchy of Bytom
 
 - rank: Duchy
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 501..917
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q83958 | Macedonia
+
+- rank: Kingdom
+- exists: -808..-167
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

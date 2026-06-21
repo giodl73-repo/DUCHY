@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
-| medium_parentage_review | 13 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 14 |
 | root_or_successor_review | 5 |
 
 ## Rank Counts
@@ -17,9 +17,9 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 5 |
+| Duchy | 4 |
 | Empire | 5 |
-| Kingdom | 11 |
+| Kingdom | 12 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -37,13 +37,6 @@ gap_rows: 25
 - exists: 1815..1866
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q152115 | Duchy of Warsaw
-
-- rank: Duchy
-- exists: 1807..1815
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q15238138 | Kingdom of Spain
 
@@ -196,6 +189,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1282..1816
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q173082 | Dacia
+
+- rank: Kingdom
+- exists: -60..106
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

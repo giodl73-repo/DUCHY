@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 344
-facts: 1183
+sources: 345
+facts: 1184
 titles: 331
-parentage_facts: 190
-titles_with_parentage: 146
-titles_without_parentage: 185
+parentage_facts: 191
+titles_with_parentage: 147
+titles_without_parentage: 184
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 185
 |---|---:|---:|---:|
 | County | 30 | 18 | 12 |
 | Crown | 5 | 2 | 3 |
-| Duchy | 136 | 93 | 43 |
+| Duchy | 136 | 94 | 42 |
 | Empire | 36 | 0 | 36 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 31 | 90 |
@@ -49,7 +49,6 @@ titles_without_parentage: 185
 - title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
 - title-q150981 | North German Confederation | Empire | 1867..1870
 - title-q151624 | German Confederation | Empire | 1815..1866
-- title-q152115 | Duchy of Warsaw | Duchy | 1807..1815
 - title-q15238138 | Kingdom of Spain | Kingdom | 1814..1833
 - title-q153091 | Duchy of Prussia | Duchy | 1525..1618
 - title-q153943 | Kingdom of Westphalia | Kingdom | 1807..1813

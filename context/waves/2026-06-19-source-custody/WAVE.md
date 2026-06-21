@@ -101,6 +101,7 @@ records and validation.
 | 83 | Kalmar Union Sweden parentage | complete | Correct Kalmar Union to Crown rank and import Sweden parentage under it. |
 | 84 | Prince-Bishopric of Trent HRE parentage | complete | Add a reviewed Wikimedia text source and import Trent parentage under the Holy Roman Empire. |
 | 85 | County of Savoy HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Savoy parentage under the Holy Roman Empire. |
+| 86 | Duchy of Warsaw French Empire parentage | complete | Add a reviewed Wikimedia text source and import Duchy of Warsaw parentage under the First French Empire. |
 
 ## Success Criteria
 

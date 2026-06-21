@@ -22,13 +22,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q2991474 | County of Wurttemberg
-
-- rank: County
-- exists: 1083..1495
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q3181749 | Arab Caliphate
 
 - rank: Empire
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 450..655
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q50625 | Hordaland
+
+- rank: County
+- exists: 1919..2019
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

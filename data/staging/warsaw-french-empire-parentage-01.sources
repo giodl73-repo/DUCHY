@@ -1,0 +1,11 @@
+source_id: src-wikipedia-duchy-warsaw
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Warsaw
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-20
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Warsaw article; used only for textual parentage context that identifies the duchy as a satellite/client state of the French Empire in 1807-1815.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed parentage context only; no holders, borders, military administration, or treaty details imported.

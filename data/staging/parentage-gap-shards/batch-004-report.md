@@ -7,26 +7,20 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 8 |
+| high_parentage_review | 9 |
 | medium_parentage_review | 15 |
-| root_or_successor_review | 2 |
+| root_or_successor_review | 1 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
+| County | 1 |
 | Duchy | 8 |
-| Empire | 2 |
+| Empire | 1 |
 | Kingdom | 15 |
 
 ## Review Rows
-
-### title-q2090473 | Khazar Khaganate
-
-- rank: Empire
-- exists: 650..969
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q209065 | Kingdom of Greece
 
@@ -195,4 +189,11 @@ gap_rows: 25
 - exists: 1377..1463
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q2991474 | County of Wurttemberg
+
+- rank: County
+- exists: 1083..1495
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
