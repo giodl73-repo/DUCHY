@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 123
+gap_rows: 122
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 82 |
+| medium_parentage_review | 81 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 123
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 39 |
-| Kingdom | 78 |
+| Kingdom | 77 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -29,13 +29,6 @@ gap_rows: 123
 - exists: 316..484
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q1048340 | Albanian Kingdom
-
-- rank: Kingdom
-- exists: 1928..1939
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q1048918 | Kingdom of the Suebi
 

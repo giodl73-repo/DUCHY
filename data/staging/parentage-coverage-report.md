@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 418
-facts: 1270
+sources: 419
+facts: 1271
 titles: 337
-parentage_facts: 259
-titles_with_parentage: 214
-titles_without_parentage: 123
+parentage_facts: 260
+titles_with_parentage: 215
+titles_without_parentage: 122
 
 ## Coverage By Rank
 
@@ -16,14 +16,13 @@ titles_without_parentage: 123
 | Duchy | 137 | 135 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 1 | 1 | 0 |
-| Kingdom | 122 | 44 | 78 |
+| Kingdom | 122 | 45 | 77 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 1 | 0 | 1 |
 
 ## Titles Without Parentage
 
 - title-q10295972 | Hunnic Empire | Empire | 316..484
-- title-q1048340 | Albanian Kingdom | Kingdom | 1928..1939
 - title-q1048918 | Kingdom of the Suebi | Kingdom | 411..585
 - title-q105092 | Kingdom of Mercia | Kingdom | 527..918
 - title-q105313 | Kingdom of Wessex | Kingdom | 519..927

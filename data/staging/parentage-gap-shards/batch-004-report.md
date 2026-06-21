@@ -20,13 +20,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q321371 | Bosporan Kingdom
-
-- rank: Kingdom
-- exists: -437..370
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q328818 | Kingdom of Kent
 
 - rank: Kingdom
@@ -194,4 +187,11 @@ gap_rows: 25
 - exists: 1536..1814
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q633573 | Kingdom of Rheged
+
+- rank: Kingdom
+- exists: 500..650
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

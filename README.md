@@ -152,6 +152,9 @@ reviewed real parentage coverage to 258 facts.
 The fifth medium-priority parentage batch adds a Kingdom of Bosnia endpoint
 span under the Ottoman Empire, raising reviewed real parentage coverage to 259
 facts.
+The sixth medium-priority parentage batch adds an Albanian Kingdom endpoint
+span under the Italian Empire, raising reviewed real parentage coverage to 260
+facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

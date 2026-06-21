@@ -5373,3 +5373,17 @@ notes: Kingdom of Bosnia article; used only for endpoint parentage context that 
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded endpoint Kingdom of Bosnia parentage context only; no earlier Ottoman attacks, Hungarian claims, Banate of Jajce restoration, Herzegovina conquest, borders, rulers, or later Ottoman administrative claims imported.
+---
+# Reviewed text-backed parentage packet for Albanian Kingdom under the Italian Empire.
+
+source_id: src-wikipedia-italian-invasion-albania
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Italian_invasion_of_Albania
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Italian invasion of Albania article; used only for endpoint parentage context that identifies Albania as occupied in 1939 and made part of the Italian Empire as a protectorate in personal union with the Italian Crown.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded endpoint Albanian Kingdom parentage context only; no invasion order of battle, Italian military administration, League of Nations withdrawal, later protectorate governance, borders, or resistance history imported.

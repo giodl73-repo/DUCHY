@@ -1,6 +1,5 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
 title-q10295972	Hunnic Empire	Empire	316..484	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q1048340	Albanian Kingdom	Kingdom	1928..1939	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q1048918	Kingdom of the Suebi	Kingdom	411..585	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q105092	Kingdom of Mercia	Kingdom	527..918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q105313	Kingdom of Wessex	Kingdom	519..927	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
@@ -24,3 +23,4 @@ title-q147909	Kingdom of Bulgaria	Kingdom	1908..1946	0	medium_parentage_review	F
 title-q150981	North German Confederation	Empire	1867..1870	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q151624	German Confederation	Empire	1815..1866	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q15238138	Kingdom of Spain	Kingdom	1814..1833	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q154667	Kingdom of Georgia	Kingdom	1008..1466	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

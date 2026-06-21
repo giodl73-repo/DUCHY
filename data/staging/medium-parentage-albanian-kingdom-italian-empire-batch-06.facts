@@ -1,0 +1,9 @@
+# Reviewed text-backed parentage packet for Albanian Kingdom under the Italian Empire.
+
+fact_id: fact-q1048340-parent-q926295
+subject_id: title-q1048340
+claim_kind: parentage
+span: 1939..1939
+value: title-q926295
+source_ids: src-wikidata-q1048340, src-wikidata-q926295, src-wikipedia-italian-invasion-albania
+confidence: multi_source

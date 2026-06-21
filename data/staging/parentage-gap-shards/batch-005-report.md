@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 23
+gap_rows: 22
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 18 |
+| medium_parentage_review | 17 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -18,16 +18,9 @@ gap_rows: 23
 | Crown | 1 |
 | Duchy | 1 |
 | Empire | 4 |
-| Kingdom | 17 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q633573 | Kingdom of Rheged
-
-- rank: Kingdom
-- exists: 500..650
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 

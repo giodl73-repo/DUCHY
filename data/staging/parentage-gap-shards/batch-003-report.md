@@ -19,13 +19,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q19083 | Kingdom of Iberia
-
-- rank: Kingdom
-- exists: -299..580
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q191077 | Kingdom of Yugoslavia
 
 - rank: Kingdom
@@ -193,4 +186,11 @@ gap_rows: 25
 - exists: 800..887
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q321371 | Bosporan Kingdom
+
+- rank: Kingdom
+- exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

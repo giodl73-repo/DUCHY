@@ -369,6 +369,9 @@ Pulses:
     Tsardom of Russia and adding Kingdom of Livonia parentage under it.
 131. Medium-priority Bosnia Ottoman parentage batch 05. Complete for adding a
     Kingdom of Bosnia endpoint parentage span under the Ottoman Empire.
+132. Medium-priority Albanian Kingdom Italian Empire parentage batch 06.
+    Complete for adding an Albanian Kingdom endpoint parentage span under the
+    Italian Empire.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -26,13 +26,6 @@ gap_rows: 25
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
-### title-q1048340 | Albanian Kingdom
-
-- rank: Kingdom
-- exists: 1928..1939
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q1048918 | Kingdom of the Suebi
 
 - rank: Kingdom
@@ -191,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1814..1833
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q154667 | Kingdom of Georgia
+
+- rank: Kingdom
+- exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

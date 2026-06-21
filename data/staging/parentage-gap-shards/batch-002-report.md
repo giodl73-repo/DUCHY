@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q154667 | Kingdom of Georgia
-
-- rank: Kingdom
-- exists: 1008..1466
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q160307 | Fatimid Egyptian Caliphate
 
 - rank: Empire
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q19083 | Kingdom of Iberia
+
+- rank: Kingdom
+- exists: -299..580
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
