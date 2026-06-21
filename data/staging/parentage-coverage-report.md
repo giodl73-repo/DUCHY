@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 382
-facts: 1230
+sources: 386
+facts: 1234
 titles: 335
-parentage_facts: 225
-titles_with_parentage: 181
-titles_without_parentage: 154
+parentage_facts: 229
+titles_with_parentage: 185
+titles_without_parentage: 150
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 154
 |---|---:|---:|---:|
 | County | 30 | 26 | 4 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 113 | 24 |
+| Duchy | 137 | 117 | 20 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 37 | 84 |
@@ -145,10 +145,8 @@ titles_without_parentage: 154
 - title-q684030 | Principality of Serbia | Duchy | 1815..1882
 - title-q686312 | Duchy of Amalfi | Duchy | 839..1137
 - title-q693570 | Duchy of Ferrara | Duchy | 1264..1597
-- title-q698089 | Grand Duchy of Wurzburg | Duchy | 1806..1814
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q702327 | Duchy of Oswiecim | Duchy | 1315..1564
-- title-q704312 | Grand Duchy of Frankfurt | Duchy | 1810..1813
 - title-q706553 | County of Nice | County | 1388..1818
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815
@@ -162,11 +160,9 @@ titles_without_parentage: 154
 - title-q816814 | Kingdom of Gwynedd | Kingdom | 401..1216
 - title-q825902 | Polish-Lithuanian union | Duchy | 1385..1569
 - title-q83546 | Grand Principality of Vladimir | Duchy | 1125..1389
-- title-q836937 | Duchy of Julich | Duchy | 1003..1794
 - title-q837136 | Kingdom of Deheubarth | Kingdom | 920..1197
 - title-q837998 | Kingdom of East Anglia | Kingdom | 501..917
 - title-q83958 | Macedonia | Kingdom | -808..-167
-- title-q842091 | Duchy of Normandy | Duchy | 911..1259
 - title-q854415 | Kingdom of the Lombards | Kingdom | 568..774
 - title-q858841 | Kingdom of Croatia | Kingdom | 925..1102
 - title-q870517 | Odrysian kingdom | Kingdom | -460..46

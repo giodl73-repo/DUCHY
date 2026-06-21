@@ -1,0 +1,33 @@
+# Reviewed text-backed high-priority parentage batch for HRE, Rhine Confederation, and France gaps.
+
+fact_id: fact-q836937-parent-q12548
+subject_id: title-q836937
+claim_kind: parentage
+span: 1003..1794
+value: title-q12548
+source_ids: src-wikidata-q836937, src-wikidata-q12548, src-wikipedia-duchy-julich
+confidence: multi_source
+---
+fact_id: fact-q698089-parent-q154741
+subject_id: title-q698089
+claim_kind: parentage
+span: 1806..1813
+value: title-q154741
+source_ids: src-wikidata-q698089, src-wikidata-q154741, src-wikipedia-grand-duchy-wurzburg, src-wikipedia-confederation-rhine
+confidence: multi_source
+---
+fact_id: fact-q704312-parent-q154741
+subject_id: title-q704312
+claim_kind: parentage
+span: 1810..1813
+value: title-q154741
+source_ids: src-wikidata-q704312, src-wikidata-q154741, src-wikipedia-grand-duchy-frankfurt, src-wikipedia-confederation-rhine
+confidence: multi_source
+---
+fact_id: fact-q842091-parent-q70972
+subject_id: title-q842091
+claim_kind: parentage
+span: 987..1204
+value: title-q70972
+source_ids: src-wikidata-q842091, src-wikidata-q70972, src-wikipedia-duchy-normandy
+confidence: multi_source

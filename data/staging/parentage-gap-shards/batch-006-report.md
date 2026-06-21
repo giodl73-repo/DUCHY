@@ -7,9 +7,9 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 14 |
-| root_or_successor_review | 2 |
+| high_parentage_review | 6 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,25 +17,11 @@ gap_rows: 25
 |---|---:|
 | County | 2 |
 | Crown | 1 |
-| Duchy | 7 |
-| Empire | 2 |
-| Kingdom | 13 |
+| Duchy | 4 |
+| Empire | 3 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q702327 | Duchy of Oswiecim
-
-- rank: Duchy
-- exists: 1315..1564
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
-### title-q704312 | Grand Duchy of Frankfurt
-
-- rank: Duchy
-- exists: 1810..1813
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q706553 | County of Nice
 
@@ -128,13 +114,6 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q836937 | Duchy of Julich
-
-- rank: Duchy
-- exists: 1003..1794
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q837136 | Kingdom of Deheubarth
 
 - rank: Kingdom
@@ -155,13 +134,6 @@ gap_rows: 25
 - exists: -808..-167
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q842091 | Duchy of Normandy
-
-- rank: Duchy
-- exists: 911..1259
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q854415 | Kingdom of the Lombards
 
@@ -197,4 +169,32 @@ gap_rows: 25
 - exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q926295 | Italian Empire
+
+- rank: Empire
+- exists: 1882..1946
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q954585 | Kingdom of Brycheiniog
+
+- rank: Kingdom
+- exists: 450..1045
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q956451 | Kingdom of Dyfed
+
+- rank: Kingdom
+- exists: 410..920
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q958291 | United Principalities of Moldavia and Wallachia
+
+- rank: Duchy
+- exists: 1859..1881
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

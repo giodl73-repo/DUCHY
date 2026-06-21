@@ -184,17 +184,17 @@ gap_rows: 25
 - review_priority: high_parentage_review
 - notes: Find reviewed kingdom or empire parentage source.
 
-### title-q698089 | Grand Duchy of Wurzburg
-
-- rank: Duchy
-- exists: 1806..1814
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q701983 | Palatinate-Zweibrucken
 
 - rank: Empire
 - exists: 1444..1801
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q702327 | Duchy of Oswiecim
+
+- rank: Duchy
+- exists: 1315..1564
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

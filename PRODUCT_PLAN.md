@@ -330,7 +330,10 @@ Pulses:
 116. High-priority HRE county/duchy parentage batch 02. Complete for adding
     Bavaria, Geneva, and Lower Lotharingia parentage under the Holy Roman
     Empire.
-117. Continue high-priority parentage closure.
+117. High-priority mixed parentage batch 03. Complete for adding Julich,
+    Wurzburg, Frankfurt, and Normandy parentage spans under the Holy Roman
+    Empire, Confederation of the Rhine, and Kingdom of France.
+118. Continue high-priority parentage closure.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

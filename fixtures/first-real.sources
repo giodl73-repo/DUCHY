@@ -4929,3 +4929,51 @@ notes: Lower Lotharingia article; used only for textual parentage context that i
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded text-backed Lower Lotharingia parentage context only; no Middle Frankish predecessor detail, Upper Lotharingian split, ducal succession, Brabant inheritance, Lower Lorraine titulature, or post-1190 claims imported.
+---
+source_id: src-wikipedia-duchy-julich
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_J%C3%BClich
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Julich article; used only for textual parentage context that identifies Julich as a state of the Holy Roman Empire from about 1003 until 1794.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Julich parentage context only; no Lower Lotharingian predecessor detail, elevation-to-duchy distinction, personal unions, Julich-Cleves-Berg succession, French annexation detail, or post-1794 claims imported.
+---
+source_id: src-wikipedia-grand-duchy-wurzburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_W%C3%BCrzburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Wurzburg article; used only for textual parentage context that identifies Wurzburg as a client state of France and state of the Confederation of the Rhine during its Napoleonic-era existence.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Wurzburg parentage context only; no Prince-Bishopric predecessor, Peace of Pressburg, Ferdinand personal rule, Congress of Vienna settlement, Bavaria succession, or post-1814 claims imported.
+---
+source_id: src-wikipedia-grand-duchy-frankfurt
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Frankfurt
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Frankfurt article; used only for textual parentage context that identifies Frankfurt as a Napoleonic client state from 1810 until 1813, used with the accepted Confederation of the Rhine source for Rhine Confederation parentage context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Frankfurt parentage context only; no Free City predecessor, Dalberg offices, French commissioner administration, Beauharnais succession clause, allied occupation, territorial partition, or post-1813 claims imported.
+---
+source_id: src-wikipedia-duchy-normandy
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Normandy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Normandy article; used only for textual parentage context that identifies Normandy as a vassal state of West Francia from 911 to 987 and of the Kingdom of France from 987 to 1204, with the wider title dispute ending by the 1259 Treaty of Paris.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Normandy parentage context only; no Viking settlement detail, Angevin or English royal claims, Channel Islands continuation, royal-domain administration, or post-1204 disputed-claim parentage imported.

@@ -131,6 +131,7 @@ records and validation.
 | 113 | County of Luxembourg HRE parentage | complete | Add a reviewed Wikimedia text source and import County of Luxembourg parentage under the Holy Roman Empire. |
 | 114 | High-priority HRE county/duchy batch 01 | complete | Add four reviewed Wikimedia text sources and import Westphalia, Ravensberg, Montbeliard, and Namur parentage under the Holy Roman Empire. |
 | 115 | High-priority HRE county/duchy batch 02 | complete | Add three reviewed Wikimedia text sources and import Bavaria, Geneva, and Lower Lotharingia parentage under the Holy Roman Empire. |
+| 116 | High-priority mixed parentage batch 03 | complete | Add four reviewed Wikimedia text sources and import Julich, Wurzburg, Frankfurt, and Normandy parentage spans. |
 
 ## Success Criteria
 
