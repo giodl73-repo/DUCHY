@@ -7,28 +7,21 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 14 |
-| medium_parentage_review | 8 |
+| high_parentage_review | 15 |
+| medium_parentage_review | 7 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 3 |
 | Crown | 1 |
 | Duchy | 12 |
 | Empire | 3 |
-| Kingdom | 7 |
+| Kingdom | 6 |
 
 ## Review Rows
-
-### title-q623751 | Kingdom of Bernicia
-
-- rank: Kingdom
-- exists: 420..634
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q625380 | Eastern Hungarian Kingdom
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 577..780
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q736029 | Nassau-Siegen
+
+- rank: County
+- exists: 1303..1743
+- review_priority: high_parentage_review
+- notes: Find reviewed duchy, kingdom, or empire parentage source.
 

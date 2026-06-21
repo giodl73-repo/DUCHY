@@ -9441,3 +9441,13 @@ span: 1532..1569
 value: title-q12548
 source_ids: src-wikidata-q2252973, src-wikidata-q12548, src-wikipedia-duchy-florence, src-wikipedia-grand-duchy-tuscany
 confidence: multi_source
+---
+# Reviewed text-backed parentage packet for Prince-Bishopric of Freising under the Holy Roman Empire.
+
+fact_id: fact-q259511-parent-q12548
+subject_id: title-q259511
+claim_kind: parentage
+span: 1294..1802
+value: title-q12548
+source_ids: src-wikidata-q259511, src-wikidata-q12548, src-wikipedia-prince-bishopric-freising
+confidence: multi_source

@@ -7,8 +7,8 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 9 |
-| medium_parentage_review | 10 |
+| high_parentage_review | 8 |
+| medium_parentage_review | 11 |
 | root_or_successor_review | 6 |
 
 ## Rank Counts
@@ -16,18 +16,11 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | County | 5 |
-| Duchy | 4 |
+| Duchy | 3 |
 | Empire | 6 |
-| Kingdom | 10 |
+| Kingdom | 11 |
 
 ## Review Rows
-
-### title-q3624335 | Duchy of Austria
-
-- rank: Duchy
-- exists: 1156..1453
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q3755547 | Kingdom of Italy
 
@@ -194,6 +187,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q623751 | Kingdom of Bernicia
+
+- rank: Kingdom
+- exists: 420..634
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,0 +1,11 @@
+source_id: src-wikipedia-prince-bishopric-freising
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Freising
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-21
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Freising article; used only for textual parentage context that identifies Freising as an ecclesiastical principality of the Holy Roman Empire from 1294 until secularisation in the early 19th century.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Prince-Bishopric of Freising parentage context only; no diocese, abbey, scattered possessions, county-level subterritory, Reichstag, Bavarian Circle, Wittelsbach, witch trial, or later archdiocese claims imported.

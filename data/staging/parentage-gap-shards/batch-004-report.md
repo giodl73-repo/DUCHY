@@ -71,13 +71,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q259511 | Prince-Bishopric of Freising
-
-- rank: Duchy
-- exists: 1294..1803
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
-
 ### title-q2597352 | Kingdom of Norway
 
 - rank: Kingdom
@@ -196,4 +189,11 @@ gap_rows: 25
 - exists: 800..
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q3624335 | Duchy of Austria
+
+- rank: Duchy
+- exists: 1156..1453
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 

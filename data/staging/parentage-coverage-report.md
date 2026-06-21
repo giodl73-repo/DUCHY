@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
-sources: 363
-facts: 1211
+sources: 364
+facts: 1212
 titles: 335
-parentage_facts: 206
-titles_with_parentage: 162
-titles_without_parentage: 173
+parentage_facts: 207
+titles_with_parentage: 163
+titles_without_parentage: 172
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 173
 |---|---:|---:|---:|
 | County | 30 | 20 | 10 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 137 | 101 | 36 |
+| Duchy | 137 | 102 | 35 |
 | Empire | 38 | 0 | 38 |
 | FreeCity | 1 | 1 | 0 |
 | Kingdom | 121 | 36 | 85 |
@@ -104,7 +104,6 @@ titles_without_parentage: 173
 - title-q249428 | Grand Duchy of Berg | Duchy | 1806..1813
 - title-q252580 | Duchy of Modena and Reggio | Duchy | 1452..1859
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
-- title-q259511 | Prince-Bishopric of Freising | Duchy | 1294..1803
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
 - title-q283627 | Margraviate of Austria | Duchy | 976..1156
 - title-q28513 | Austria-Hungary | Empire | 1867..1918

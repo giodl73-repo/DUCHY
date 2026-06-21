@@ -287,7 +287,10 @@ Pulses:
 102. Duchy of Florence HRE parentage packet. Complete for adding a reviewed
      Wikimedia text source and importing Duchy of Florence -> Holy Roman Empire
      for 1532-1569.
-103. Next reviewed parentage packet.
+103. Prince-Bishopric of Freising HRE parentage packet. Complete for adding a
+     reviewed Wikimedia text source and importing Prince-Bishopric of Freising
+     -> Holy Roman Empire for 1294-1802.
+104. Next reviewed parentage packet.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

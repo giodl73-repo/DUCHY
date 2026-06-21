@@ -1,13 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-shards\batch-007.tsv
-gap_rows: 23
+gap_rows: 22
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 7 |
+| high_parentage_review | 6 |
 | medium_parentage_review | 14 |
 | root_or_successor_review | 2 |
 
@@ -15,20 +15,12 @@ gap_rows: 23
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Crown | 1 |
 | Duchy | 6 |
 | Empire | 2 |
 | Kingdom | 13 |
 
 ## Review Rows
-
-### title-q736029 | Nassau-Siegen
-
-- rank: County
-- exists: 1303..1743
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q766543 | Hispanic Monarchy
 
