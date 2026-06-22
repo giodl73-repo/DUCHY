@@ -33,6 +33,7 @@ cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 cargo run --bin duchy-import -- parentage-change-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-change-report.md
 cargo run --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
+cargo run --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-targets.tsv
 ```
 
 ## Product Shape
@@ -265,6 +266,11 @@ parentage facts, 308 parentable titles, 229 titles with parentage, 74.35%
 title-level parentage fill, 59.27% weighted span coverage, 222 valid rank-skip
 facts, no temporal parent conflicts, and no snapshot cycles across 544 generated
 snapshot years.
+The rank-skip queue exports those 222 valid-but-incomplete hierarchy edges for
+review: 160 high-priority intermediate-parent rows, 23 medium-priority rows, and
+39 low-priority rows. The largest class is duchy-to-empire parentage, which
+needs reviewed kingdom-layer packets before DUCHY can treat those branches as a
+proper immediate-rank tree.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
