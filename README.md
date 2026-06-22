@@ -42,6 +42,7 @@ cargo run --bin duchy-import -- parentage-rank-skip-bridge-clusters-tsv data/sta
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-report data/staging/parentage-rank-skip-bridge-clusters.tsv data/staging/parentage-rank-skip-bridge-cluster-report.md
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-review-tsv data/staging/parentage-rank-skip-bridge-clusters.tsv data/staging/parentage-rank-skip-bridge-cluster-review.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-review-report data/staging/parentage-rank-skip-bridge-cluster-review.tsv data/staging/parentage-rank-skip-bridge-cluster-review-report.md
+cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-packet-stubs data/staging/parentage-rank-skip-bridge-cluster-review.tsv data/staging/parentage-rank-skip-bridge-cluster-packet-stubs.md
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-review-shard data/staging/parentage-rank-skip-bridge-cluster-review.tsv data/staging/parentage-rank-skip-bridge-cluster-review-shards 5
 cargo run --bin duchy-import -- parentage-rank-skip-shard data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-shards 25
 cargo run --bin duchy-import -- parentage-rank-skip-report data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-report.md
@@ -311,6 +312,9 @@ index that preserves pending/not-inferred and priority totals for assignment.
 The cluster review report summarizes the editable review TSV by status,
 disposition, evidence need, and row priority so packet progress can be audited
 without opening every shard.
+The packet-stub report emits import-planning stubs only for rows explicitly
+marked `reviewed` and `ready_for_packet`; the current queue emits zero stubs
+because all rows remain blocked.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

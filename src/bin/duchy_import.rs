@@ -66,6 +66,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-bridge-cluster-review-report" {
             return parentage_rank_skip_bridge_cluster_review_report(manifest_path, output_path);
         }
+        if command == "parentage-rank-skip-bridge-cluster-packet-stubs" {
+            return parentage_rank_skip_bridge_cluster_packet_stubs(manifest_path, output_path);
+        }
     }
     if let [command, sources_path, facts_path, output_path] = args.as_slice() {
         if command == "parentage-coverage-report" {
@@ -125,7 +128,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-report input.tsv output.md | parentage-rank-skip-bridge-cluster-packet-stubs input.tsv output.md | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -1721,6 +1724,84 @@ fn parentage_rank_skip_bridge_cluster_review_report(
     Ok(())
 }
 
+fn parentage_rank_skip_bridge_cluster_packet_stubs(
+    input_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_bridge_cluster_review_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip bridge cluster review rows"
+        )]);
+    }
+
+    let ready_rows = rows
+        .iter()
+        .filter(|row| parentage_rank_skip_bridge_cluster_review_row_is_ready_for_packet(row))
+        .collect::<Vec<_>>();
+    let blocked_count = rows.len() - ready_rows.len();
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Rank Skip Bridge Cluster Packet Stubs\n\n");
+    output.push_str(&format!("source_tsv: {input_path}\n"));
+    output.push_str(&format!("review_rows: {}\n", rows.len()));
+    output.push_str(&format!("ready_for_packet: {}\n", ready_rows.len()));
+    output.push_str(&format!("blocked_rows: {blocked_count}\n\n"));
+
+    output.push_str("## Boundary\n\n");
+    output.push_str("- Packet stubs are not accepted facts.\n");
+    output.push_str("- Only rows marked `reviewed` and `ready_for_packet` are emitted.\n");
+    output.push_str("- Stubs still require normal source/fact promotion review before accepted fixtures change.\n\n");
+
+    if ready_rows.is_empty() {
+        output.push_str("## Packet Stubs\n\n");
+        output.push_str("No packet stubs emitted. All review rows remain blocked.\n");
+    } else {
+        output.push_str("## Packet Stubs\n\n");
+        for row in &ready_rows {
+            output.push_str(&format!(
+                "### {} -> {}\n\n",
+                markdown_escape(&row.candidate_parent_name),
+                markdown_escape(&row.current_parent_name)
+            ));
+            output.push_str(&format!(
+                "- candidate_parent_id: {}\n",
+                row.candidate_parent_id
+            ));
+            output.push_str(&format!("- current_parent_id: {}\n", row.current_parent_id));
+            output.push_str(&format!(
+                "- expected_parent_rank: {}\n",
+                row.expected_parent_rank
+            ));
+            output.push_str(&format!("- child_count: {}\n", row.child_count));
+            output.push_str(&format!(
+                "- priority_counts: high {}, medium {}, low {}\n",
+                row.high, row.medium, row.low
+            ));
+            output.push_str(&format!("- span_range: {}\n", row.span_range));
+            output.push_str(&format!("- evidence_needed: {}\n", row.evidence_needed));
+            output.push_str(&format!("- review_note: {}\n", row.review_note));
+            output.push_str(&format!("- bridge_fact_ids: {}\n", row.bridge_fact_ids));
+            output.push_str(&format!("- skip_fact_ids: {}\n", row.skip_fact_ids));
+            output.push_str(&format!("- child_ids: {}\n", row.child_ids));
+            output.push_str(&format!("- child_names: {}\n\n", row.child_names));
+        }
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip bridge cluster packet stubs");
+    println!("- review rows: {}", rows.len());
+    println!("- ready for packet: {}", ready_rows.len());
+    println!("- blocked rows: {blocked_count}");
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
     let manifest_text = fs::read_to_string(manifest_path)
         .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
@@ -3194,6 +3275,12 @@ fn parentage_rank_skip_bridge_cluster_review_counts(
         counts.low += row.low;
     }
     counts
+}
+
+fn parentage_rank_skip_bridge_cluster_review_row_is_ready_for_packet(
+    row: &ParentageRankSkipBridgeClusterReviewTsvRow,
+) -> bool {
+    row.review_status == "reviewed" && row.review_disposition == "ready_for_packet"
 }
 
 fn parentage_rank_skip_bridge_cluster_to_tsv(cluster: &ParentageRankSkipBridgeCluster) -> String {
@@ -4752,6 +4839,26 @@ mod tests {
         assert_eq!(counts.not_inferred, 1);
         assert_eq!(counts.high, 2);
         assert_eq!(counts.medium, 1);
+    }
+
+    #[test]
+    fn only_reviewed_ready_cluster_review_rows_are_packet_ready() {
+        let input = concat!(
+            "review_status\treview_disposition\tcandidate_parent_id\tcandidate_parent_name\tcurrent_parent_id\tcurrent_parent_name\texpected_parent_rank\tchild_count\thigh\tmedium\tlow\tspan_range\tevidence_needed\treview_note\tchild_ids\tchild_names\tskip_fact_ids\tbridge_fact_ids\n",
+            "pending_review\tnot_inferred\ttitle-kingdom\tDemo Kingdom\ttitle-empire\tDemo Empire\tKingdom\t2\t2\t0\t0\t1..30\tchild_to_candidate_parentage_source\tsame-parent bridge overlap is a lead, not evidence\ttitle-child-a,title-child-b\tDemo Child A; Demo Child B\tfact-a,fact-b\tfact-bridge\n",
+            "reviewed\tready_for_packet\ttitle-duchy\tDemo Duchy\ttitle-kingdom\tDemo Kingdom\tDuchy\t1\t0\t1\t0\t1..20\tpacket_source_ready\tverified child-to-candidate parentage\ttitle-child-c\tDemo Child C\tfact-c\tfact-bridge-2\n",
+        );
+        let rows = parentage_rank_skip_bridge_cluster_review_rows_from_tsv(input)
+            .expect("review rows should parse");
+
+        let ready_count = rows
+            .iter()
+            .filter(|row| parentage_rank_skip_bridge_cluster_review_row_is_ready_for_packet(row))
+            .count();
+
+        assert!(!parentage_rank_skip_bridge_cluster_review_row_is_ready_for_packet(&rows[0]));
+        assert!(parentage_rank_skip_bridge_cluster_review_row_is_ready_for_packet(&rows[1]));
+        assert_eq!(ready_count, 1);
     }
 
     fn bridge_row(skip_fact_id: &str, review_priority: &str) -> ParentageRankSkipBridgeTsvRow {
