@@ -54,6 +54,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-bridge-report" {
             return parentage_rank_skip_bridge_report(manifest_path, output_path);
         }
+        if command == "parentage-rank-skip-bridge-clusters-tsv" {
+            return parentage_rank_skip_bridge_clusters_tsv(manifest_path, output_path);
+        }
     }
     if let [command, sources_path, facts_path, output_path] = args.as_slice() {
         if command == "parentage-coverage-report" {
@@ -106,7 +109,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -1394,6 +1397,39 @@ fn parentage_rank_skip_bridge_report(
     Ok(())
 }
 
+fn parentage_rank_skip_bridge_clusters_tsv(
+    input_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_bridge_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip bridge rows"
+        )]);
+    }
+
+    let clusters = parentage_rank_skip_bridge_clusters(&rows);
+    let mut output = String::new();
+    output.push_str(parentage_rank_skip_bridge_cluster_tsv_header());
+    output.push('\n');
+    for cluster in &clusters {
+        output.push_str(&parentage_rank_skip_bridge_cluster_to_tsv(cluster));
+        output.push('\n');
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip bridge clusters TSV");
+    println!("- bridge rows: {}", rows.len());
+    println!("- clusters: {}", clusters.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
     let manifest_text = fs::read_to_string(manifest_path)
         .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
@@ -2096,6 +2132,24 @@ struct ParentageRankSkipBridgeTsvRow {
     notes: String,
 }
 
+struct ParentageRankSkipBridgeCluster {
+    candidate_parent_id: String,
+    candidate_parent_name: String,
+    current_parent_id: String,
+    current_parent_name: String,
+    expected_parent_rank: String,
+    child_count: usize,
+    high: usize,
+    medium: usize,
+    low: usize,
+    span_start: i32,
+    span_end: Option<i32>,
+    child_ids: Vec<String>,
+    child_names: Vec<String>,
+    skip_fact_ids: Vec<String>,
+    bridge_fact_ids: Vec<String>,
+}
+
 #[derive(Default)]
 struct ParentageGapPriorityCounts {
     high: usize,
@@ -2484,6 +2538,132 @@ fn parentage_rank_skip_bridge_priority_counts(
         }
     }
     counts
+}
+
+fn parentage_rank_skip_bridge_clusters(
+    rows: &[ParentageRankSkipBridgeTsvRow],
+) -> Vec<ParentageRankSkipBridgeCluster> {
+    let mut by_key: BTreeMap<
+        (String, String, String, String),
+        Vec<&ParentageRankSkipBridgeTsvRow>,
+    > = BTreeMap::new();
+    for row in rows {
+        by_key
+            .entry((
+                row.candidate_parent_id.clone(),
+                row.current_parent_id.clone(),
+                row.expected_parent_rank.clone(),
+                row.current_parent_rank.clone(),
+            ))
+            .or_default()
+            .push(row);
+    }
+
+    let mut clusters = Vec::new();
+    for (
+        (candidate_parent_id, current_parent_id, expected_parent_rank, _current_parent_rank),
+        cluster_rows,
+    ) in by_key
+    {
+        let candidate_parent_name = cluster_rows
+            .first()
+            .map(|row| row.candidate_parent_name.clone())
+            .unwrap_or_default();
+        let current_parent_name = cluster_rows
+            .first()
+            .map(|row| row.current_parent_name.clone())
+            .unwrap_or_default();
+        let mut high = 0;
+        let mut medium = 0;
+        let mut low = 0;
+        let mut span_start = i32::MAX;
+        let mut span_end = i32::MIN;
+        let mut span_is_open = false;
+        let mut child_ids = BTreeSet::new();
+        let mut child_names = BTreeSet::new();
+        let mut skip_fact_ids = BTreeSet::new();
+        let mut bridge_fact_ids = BTreeSet::new();
+        for row in cluster_rows {
+            match row.review_priority.as_str() {
+                "high_intermediate_parent_review" => high += 1,
+                "medium_intermediate_parent_review" => medium += 1,
+                "low_intermediate_parent_review" => low += 1,
+                _ => {}
+            }
+            if let Some((start, end)) = parse_year_span_label(&row.span) {
+                span_start = span_start.min(start);
+                match end {
+                    Some(end) => span_end = span_end.max(end),
+                    None => span_is_open = true,
+                }
+            }
+            child_ids.insert(row.child_id.clone());
+            child_names.insert(row.child_name.clone());
+            skip_fact_ids.insert(row.skip_fact_id.clone());
+            bridge_fact_ids.insert(row.bridge_fact_id.clone());
+        }
+        if span_start == i32::MAX {
+            span_start = 0;
+        }
+        let span_end = if span_is_open || span_end == i32::MIN {
+            None
+        } else {
+            Some(span_end)
+        };
+        clusters.push(ParentageRankSkipBridgeCluster {
+            candidate_parent_id,
+            candidate_parent_name,
+            current_parent_id,
+            current_parent_name,
+            expected_parent_rank,
+            child_count: child_ids.len(),
+            high,
+            medium,
+            low,
+            span_start,
+            span_end,
+            child_ids: child_ids.into_iter().collect(),
+            child_names: child_names.into_iter().collect(),
+            skip_fact_ids: skip_fact_ids.into_iter().collect(),
+            bridge_fact_ids: bridge_fact_ids.into_iter().collect(),
+        });
+    }
+    clusters.sort_by(|left, right| {
+        right
+            .child_count
+            .cmp(&left.child_count)
+            .then_with(|| right.high.cmp(&left.high))
+            .then_with(|| left.candidate_parent_name.cmp(&right.candidate_parent_name))
+            .then_with(|| left.current_parent_name.cmp(&right.current_parent_name))
+    });
+    clusters
+}
+
+fn parentage_rank_skip_bridge_cluster_tsv_header() -> &'static str {
+    "candidate_parent_id\tcandidate_parent_name\tcurrent_parent_id\tcurrent_parent_name\texpected_parent_rank\tchild_count\thigh\tmedium\tlow\tspan_range\tchild_ids\tchild_names\tskip_fact_ids\tbridge_fact_ids"
+}
+
+fn parentage_rank_skip_bridge_cluster_to_tsv(cluster: &ParentageRankSkipBridgeCluster) -> String {
+    [
+        tsv_escape(&cluster.candidate_parent_id),
+        tsv_escape(&cluster.candidate_parent_name),
+        tsv_escape(&cluster.current_parent_id),
+        tsv_escape(&cluster.current_parent_name),
+        tsv_escape(&cluster.expected_parent_rank),
+        cluster.child_count.to_string(),
+        cluster.high.to_string(),
+        cluster.medium.to_string(),
+        cluster.low.to_string(),
+        tsv_escape(&year_span_label(&duchy::YearSpan::new(
+            cluster.span_start,
+            cluster.span_end,
+        ))),
+        tsv_escape(&cluster.child_ids.join(",")),
+        tsv_escape(&cluster.child_names.join("; ")),
+        tsv_escape(&cluster.skip_fact_ids.join(",")),
+        tsv_escape(&cluster.bridge_fact_ids.join(",")),
+    ]
+    .join("\t")
 }
 
 fn parentage_rank_skip_bridge_tsv_row(
@@ -3284,6 +3464,17 @@ fn year_span_label(span: &duchy::YearSpan) -> String {
     }
 }
 
+fn parse_year_span_label(value: &str) -> Option<(i32, Option<i32>)> {
+    let (start, end) = value.split_once("..")?;
+    let start = start.parse::<i32>().ok()?;
+    let end = if end.is_empty() {
+        None
+    } else {
+        Some(end.parse::<i32>().ok()?)
+    };
+    Some((start, end))
+}
+
 fn parentage_gap_priority(rank: duchy::TitleRank) -> &'static str {
     match rank {
         duchy::TitleRank::County => "high_parentage_review",
@@ -3904,6 +4095,33 @@ mod tests {
         assert_eq!(counts.high, 1);
         assert_eq!(counts.medium, 1);
         assert_eq!(counts.low, 1);
+    }
+
+    #[test]
+    fn clusters_parentage_rank_skip_bridge_rows() {
+        let mut rows = vec![
+            bridge_row("fact-demo-1", "high_intermediate_parent_review"),
+            bridge_row("fact-demo-2", "high_intermediate_parent_review"),
+            bridge_row("fact-demo-3", "low_intermediate_parent_review"),
+        ];
+        rows[1].child_id = "title-child-b".to_string();
+        rows[1].child_name = "Demo Child B".to_string();
+        rows[1].span = "5..30".to_string();
+        rows[2].candidate_parent_id = "title-other-kingdom".to_string();
+        rows[2].candidate_parent_name = "Other Kingdom".to_string();
+
+        let clusters = parentage_rank_skip_bridge_clusters(&rows);
+
+        assert_eq!(clusters.len(), 2);
+        assert_eq!(clusters[0].candidate_parent_id, "title-kingdom");
+        assert_eq!(clusters[0].child_count, 2);
+        assert_eq!(clusters[0].high, 2);
+        assert_eq!(
+            parentage_rank_skip_bridge_cluster_to_tsv(&clusters[0])
+                .split('\t')
+                .nth(9),
+            Some("1..30")
+        );
     }
 
     fn bridge_row(skip_fact_id: &str, review_priority: &str) -> ParentageRankSkipBridgeTsvRow {

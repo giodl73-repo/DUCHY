@@ -38,6 +38,7 @@ cargo run --bin duchy-import -- parentage-rank-skip-candidates fixtures/first-re
 cargo run --bin duchy-import -- parentage-rank-skip-bridges-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-bridges.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-shard data/staging/parentage-rank-skip-bridges.tsv data/staging/parentage-rank-skip-bridge-shards 25
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-report data/staging/parentage-rank-skip-bridges.tsv data/staging/parentage-rank-skip-bridge-report.md
+cargo run --bin duchy-import -- parentage-rank-skip-bridge-clusters-tsv data/staging/parentage-rank-skip-bridges.tsv data/staging/parentage-rank-skip-bridge-clusters.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-shard data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-shards 25
 cargo run --bin duchy-import -- parentage-rank-skip-report data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-report.md
 ```
@@ -292,6 +293,9 @@ The bridge queue is also sharded into seven review batches. Its rollup shows
 the largest candidate-parent clusters are Kingdom of Bohemia, Kingdom of
 Bavaria, and Kingdom of Italy, while Holy Roman Empire is the dominant current
 parent for bridge review.
+The bridge cluster TSV groups those leads into 20 candidate/current-parent
+clusters, making the next source-review packets visible as coherent child sets
+rather than individual skipped facts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
