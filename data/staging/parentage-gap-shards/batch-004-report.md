@@ -7,25 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 17 |
-| root_or_successor_review | 8 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Crown | 1 |
-| Empire | 8 |
-| Kingdom | 16 |
+| Empire | 9 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q328818 | Kingdom of Kent
-
-- rank: Kingdom
-- exists: 450..871
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q34266 | Russian Empire
 
@@ -38,13 +31,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 824..1162
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q35 | Denmark
-
-- rank: Kingdom
-- exists: 800..
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
@@ -194,4 +180,18 @@ gap_rows: 25
 - exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q676184 | Kingdom of Sussex
+
+- rank: Kingdom
+- exists: 477..825
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q701983 | Palatinate-Zweibrucken
+
+- rank: Empire
+- exists: 1444..1801
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

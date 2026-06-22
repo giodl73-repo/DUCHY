@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 434
-facts: 1310
+facts: 1312
 titles: 347
-parentage_facts: 269
-titles_with_parentage: 224
-titles_without_parentage: 123
+parentage_facts: 271
+titles_with_parentage: 226
+titles_without_parentage: 121
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 123
 | Duchy | 138 | 136 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 2 | 2 | 0 |
-| Kingdom | 123 | 48 | 75 |
+| Kingdom | 123 | 50 | 73 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 1 | 2 |
 
@@ -84,7 +84,6 @@ titles_without_parentage: 123
 - title-q2042616 | Chalkidian League | Empire | -432..-348
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
-- title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
@@ -100,7 +99,6 @@ titles_without_parentage: 123
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
-- title-q35 | Denmark | Kingdom | 800..
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
 - title-q377350 | Iberian Union | Empire | 1580..1640
 - title-q386496 | Kingdom of Montenegro | Kingdom | 1910..1918

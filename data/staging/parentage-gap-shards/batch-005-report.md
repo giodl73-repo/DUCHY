@@ -1,15 +1,15 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 23
+gap_rows: 21
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 18 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 17 |
+| root_or_successor_review | 3 |
 
 ## Rank Counts
 
@@ -17,24 +17,10 @@ gap_rows: 23
 |---|---:|
 | Crown | 1 |
 | Duchy | 1 |
-| Empire | 4 |
-| Kingdom | 17 |
+| Empire | 3 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q676184 | Kingdom of Sussex
-
-- rank: Kingdom
-- exists: 477..825
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q701983 | Palatinate-Zweibrucken
-
-- rank: Empire
-- exists: 1444..1801
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q70972 | Kingdom of France
 

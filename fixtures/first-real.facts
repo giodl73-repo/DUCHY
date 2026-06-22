@@ -10291,3 +10291,21 @@ span: 1801..1801
 value: title-q174193
 source_ids: src-wikidata-q215530, src-wikidata-q174193, src-britannica-act-of-union-1801
 confidence: multi_source
+---
+# Reviewed parentage packet for Denmark and Norway under Kalmar Union.
+
+fact_id: fact-q35-parent-q62623
+subject_id: title-q35
+claim_kind: parentage
+span: 1397..1523
+value: title-q62623
+source_ids: src-wikidata-q35, src-wikidata-q62623
+confidence: multi_source
+---
+fact_id: fact-q2196956-parent-q62623
+subject_id: title-q2196956
+claim_kind: parentage
+span: 1397..1397
+value: title-q62623
+source_ids: src-wikidata-q2196956, src-wikidata-q62623
+confidence: multi_source

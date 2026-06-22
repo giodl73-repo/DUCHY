@@ -425,6 +425,9 @@ Pulses:
 150. Ireland UKGBI parentage. Complete for promoting United Kingdom of Great
     Britain and Ireland as a bounded `Crown` title and importing Kingdom of
     Ireland endpoint parentage under it for `1801..1801`.
+151. Kalmar Denmark Norway parentage. Complete for importing Denmark under the
+    Kalmar Union for `1397..1523` and medieval Norway under the Kalmar Union for
+    `1397..1397`.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -104,13 +104,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2196956 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 872..1397
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q2253783 | Kingdom of Glywysing
 
 - rank: Kingdom
@@ -192,6 +185,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q328818 | Kingdom of Kent
+
+- rank: Kingdom
+- exists: 450..871
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

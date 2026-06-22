@@ -235,6 +235,11 @@ of Ireland endpoint parentage under it for `1801..1801`. The accepted catalog no
 has 434 reviewed sources, 1310 facts, 347 titles, and 269 parentage facts; 224
 titles now have reviewed parentage and the parentage gap queue remains at 123
 rows because the new UKGBI crown title itself needs successor-context review.
+The next medium-priority parentage packet adds Denmark under the Kalmar Union
+for `1397..1523` and medieval Norway under the Kalmar Union for `1397..1397`.
+The accepted catalog now has 434 reviewed sources, 1312 facts, 347 titles, and
+271 parentage facts; 226 titles now have reviewed parentage and 121 titles
+remain without parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

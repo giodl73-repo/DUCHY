@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 123
+gap_rows: 121
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 82 |
+| medium_parentage_review | 80 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 123
 | Crown | 5 |
 | Duchy | 2 |
 | Empire | 39 |
-| Kingdom | 75 |
+| Kingdom | 73 |
 | TheocraticState | 2 |
 
 ## Review Rows
@@ -457,13 +457,6 @@ gap_rows: 123
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q2196956 | Kingdom of Norway
-
-- rank: Kingdom
-- exists: 872..1397
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q2253783 | Kingdom of Glywysing
 
 - rank: Kingdom
@@ -566,13 +559,6 @@ gap_rows: 123
 
 - rank: Kingdom
 - exists: 824..1162
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q35 | Denmark
-
-- rank: Kingdom
-- exists: 800..
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
