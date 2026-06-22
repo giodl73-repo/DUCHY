@@ -48,6 +48,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-gap-report" {
             return parentage_gap_report(manifest_path, output_path);
         }
+        if command == "parentage-rank-skip-report" {
+            return parentage_rank_skip_report(manifest_path, output_path);
+        }
     }
     if let [command, sources_path, facts_path, output_path] = args.as_slice() {
         if command == "parentage-coverage-report" {
@@ -78,6 +81,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-gap-shard" {
             return parentage_gap_shard(manifest_path, output_dir, chunk_size);
         }
+        if command == "parentage-rank-skip-shard" {
+            return parentage_rank_skip_shard(manifest_path, output_dir, chunk_size);
+        }
     }
 
     let (sources_path, facts_path) = match args.as_slice() {
@@ -88,7 +94,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -857,6 +863,148 @@ fn parentage_gap_report(input_path: &str, output_path: &str) -> Result<(), Vec<S
     Ok(())
 }
 
+fn parentage_rank_skip_shard(
+    input_path: &str,
+    output_dir: &str,
+    chunk_size: &str,
+) -> Result<(), Vec<String>> {
+    let chunk_size = chunk_size
+        .parse::<usize>()
+        .map_err(|error| vec![format!("invalid chunk size {chunk_size}: {error}")])?;
+    if chunk_size == 0 {
+        return Err(vec!["chunk size must be greater than zero".to_string()]);
+    }
+
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip rows"
+        )]);
+    }
+
+    fs::create_dir_all(output_dir)
+        .map_err(|error| vec![format!("failed to create {output_dir}: {error}")])?;
+
+    let mut index = String::new();
+    index.push_str("# DUCHY Parentage Rank Skip Shards\n\n");
+    index.push_str(&format!("source_tsv: {input_path}\n"));
+    index.push_str(&format!("rank_skip_rows: {}\n", rows.len()));
+    index.push_str(&format!("chunk_size: {chunk_size}\n\n"));
+    index.push_str("| Shard | Rows | High | Medium | Low |\n");
+    index.push_str("|---|---:|---:|---:|---:|\n");
+
+    for (index_number, chunk) in rows.chunks(chunk_size).enumerate() {
+        let shard_name = format!("batch-{:03}.tsv", index_number + 1);
+        let shard_path = Path::new(output_dir).join(&shard_name);
+        let shard_text = parentage_rank_skip_rows_to_tsv(chunk);
+        fs::write(&shard_path, shard_text)
+            .map_err(|error| vec![format!("failed to write {}: {error}", shard_path.display())])?;
+
+        let counts = parentage_rank_skip_priority_counts(chunk);
+        index.push_str(&format!(
+            "| {shard_name} | {} | {} | {} | {} |\n",
+            chunk.len(),
+            counts.high,
+            counts.medium,
+            counts.low
+        ));
+    }
+
+    let index_path = Path::new(output_dir).join("INDEX.md");
+    fs::write(&index_path, index)
+        .map_err(|error| vec![format!("failed to write {}: {error}", index_path.display())])?;
+
+    println!("DUCHY parentage rank skip shards");
+    println!("- rank skip rows: {}", rows.len());
+    println!("- shards: {}", rows.chunks(chunk_size).len());
+    println!("- output: {output_dir}");
+
+    Ok(())
+}
+
+fn parentage_rank_skip_report(input_path: &str, output_path: &str) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip rows"
+        )]);
+    }
+
+    let mut by_priority: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut by_rank_pair: BTreeMap<String, usize> = BTreeMap::new();
+    let mut by_expected_rank: BTreeMap<&str, usize> = BTreeMap::new();
+    for row in &rows {
+        *by_priority.entry(row.review_priority.as_str()).or_default() += 1;
+        *by_rank_pair
+            .entry(format!("{} -> {}", row.child_rank, row.current_parent_rank))
+            .or_default() += 1;
+        *by_expected_rank
+            .entry(row.expected_parent_rank.as_str())
+            .or_default() += 1;
+    }
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Rank Skip Review Report\n\n");
+    output.push_str(&format!("source_tsv: {input_path}\n"));
+    output.push_str(&format!("rank_skip_rows: {}\n\n", rows.len()));
+
+    output.push_str("## Priority Counts\n\n");
+    output.push_str("| Priority | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (priority, count) in &by_priority {
+        output.push_str(&format!("| {priority} | {count} |\n"));
+    }
+
+    output.push_str("\n## Missing Immediate Rank Counts\n\n");
+    output.push_str("| Expected Parent Rank | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (expected_rank, count) in &by_expected_rank {
+        output.push_str(&format!("| {expected_rank} | {count} |\n"));
+    }
+
+    output.push_str("\n## Rank Pair Counts\n\n");
+    output.push_str("| Current Edge | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (rank_pair, count) in &by_rank_pair {
+        output.push_str(&format!("| {rank_pair} | {count} |\n"));
+    }
+
+    output.push_str("\n## Review Rows\n\n");
+    for row in &rows {
+        output.push_str(&format!(
+            "### {} | {} -> {}\n\n",
+            row.fact_id, row.child_name, row.current_parent_name
+        ));
+        output.push_str(&format!("- child_id: {}\n", row.child_id));
+        output.push_str(&format!("- child_rank: {}\n", row.child_rank));
+        output.push_str(&format!(
+            "- expected_parent_rank: {}\n",
+            row.expected_parent_rank
+        ));
+        output.push_str(&format!("- current_parent_id: {}\n", row.current_parent_id));
+        output.push_str(&format!(
+            "- current_parent_rank: {}\n",
+            row.current_parent_rank
+        ));
+        output.push_str(&format!("- span: {}\n", row.span));
+        output.push_str(&format!("- review_priority: {}\n", row.review_priority));
+        output.push_str(&format!("- notes: {}\n\n", row.notes));
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip report");
+    println!("- rank skip rows: {}", rows.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
     let manifest_text = fs::read_to_string(manifest_path)
         .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
@@ -1524,12 +1672,34 @@ struct ParentageGapBlocker {
     notes: String,
 }
 
+#[derive(Clone)]
+struct ParentageRankSkipTsvRow {
+    fact_id: String,
+    child_id: String,
+    child_name: String,
+    child_rank: String,
+    expected_parent_rank: String,
+    current_parent_id: String,
+    current_parent_name: String,
+    current_parent_rank: String,
+    span: String,
+    review_priority: String,
+    notes: String,
+}
+
 #[derive(Default)]
 struct ParentageGapPriorityCounts {
     high: usize,
     medium: usize,
     root: usize,
     blocked: usize,
+}
+
+#[derive(Default)]
+struct ParentageRankSkipPriorityCounts {
+    high: usize,
+    medium: usize,
+    low: usize,
 }
 
 fn parentage_gap_blocker_tsv_header() -> &'static str {
@@ -1736,6 +1906,97 @@ fn parentage_rank_skip_rows(
 
 fn parentage_rank_skip_tsv_header() -> &'static str {
     "fact_id\tchild_id\tchild_name\tchild_rank\texpected_parent_rank\tcurrent_parent_id\tcurrent_parent_name\tcurrent_parent_rank\tspan\treview_priority\tnotes"
+}
+
+fn parentage_rank_skip_rows_from_tsv(
+    input: &str,
+) -> Result<Vec<ParentageRankSkipTsvRow>, Vec<String>> {
+    let mut lines = input.lines();
+    let Some(header) = lines.next() else {
+        return Err(vec!["parentage rank skip TSV is empty".to_string()]);
+    };
+    let expected_header = parentage_rank_skip_tsv_header();
+    if header != expected_header {
+        return Err(vec![format!(
+            "invalid parentage rank skip TSV header: expected {expected_header}"
+        )]);
+    }
+
+    let mut rows = Vec::new();
+    for (line_index, line) in lines.enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+        let line_number = line_index + 2;
+        let fields = line.split('\t').collect::<Vec<_>>();
+        if fields.len() != 11 {
+            return Err(vec![format!(
+                "line {line_number}: expected 11 TSV columns, found {}",
+                fields.len()
+            )]);
+        }
+        rows.push(ParentageRankSkipTsvRow {
+            fact_id: fields[0].to_string(),
+            child_id: fields[1].to_string(),
+            child_name: fields[2].to_string(),
+            child_rank: fields[3].to_string(),
+            expected_parent_rank: fields[4].to_string(),
+            current_parent_id: fields[5].to_string(),
+            current_parent_name: fields[6].to_string(),
+            current_parent_rank: fields[7].to_string(),
+            span: fields[8].to_string(),
+            review_priority: fields[9].to_string(),
+            notes: fields[10].to_string(),
+        });
+    }
+
+    Ok(rows)
+}
+
+fn parentage_rank_skip_rows_to_tsv(rows: &[ParentageRankSkipTsvRow]) -> String {
+    let mut output = String::new();
+    output.push_str(parentage_rank_skip_tsv_header());
+    output.push('\n');
+    for row in rows {
+        output.push_str(&tsv_escape(&row.fact_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_name));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.expected_parent_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_name));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.span));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.review_priority));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.notes));
+        output.push('\n');
+    }
+    output
+}
+
+fn parentage_rank_skip_priority_counts(
+    rows: &[ParentageRankSkipTsvRow],
+) -> ParentageRankSkipPriorityCounts {
+    let mut counts = ParentageRankSkipPriorityCounts::default();
+    for row in rows {
+        match row.review_priority.as_str() {
+            "high_intermediate_parent_review" => counts.high += 1,
+            "medium_intermediate_parent_review" => counts.medium += 1,
+            "low_intermediate_parent_review" => counts.low += 1,
+            _ => {}
+        }
+    }
+    counts
 }
 
 fn parentage_rank_skip_priority(
@@ -2848,6 +3109,59 @@ mod tests {
             parentage_rank_skip_priority(rows[0].child_rank, rows[0].parent_rank),
             "medium_intermediate_parent_review"
         );
+    }
+
+    #[test]
+    fn parses_parentage_rank_skip_tsv_rows() {
+        let input = concat!(
+            "fact_id\tchild_id\tchild_name\tchild_rank\texpected_parent_rank\tcurrent_parent_id\tcurrent_parent_name\tcurrent_parent_rank\tspan\treview_priority\tnotes\n",
+            "fact-demo-1\ttitle-child\tDemo Child\tCounty\tDuchy\ttitle-parent\tDemo Parent\tKingdom\t1..20\tmedium_intermediate_parent_review\tReview row.\n",
+        );
+
+        let rows = parentage_rank_skip_rows_from_tsv(input).expect("rows should parse");
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].fact_id, "fact-demo-1");
+        assert_eq!(rows[0].expected_parent_rank, "Duchy");
+        assert_eq!(parentage_rank_skip_rows_to_tsv(&rows), input);
+    }
+
+    #[test]
+    fn counts_parentage_rank_skip_priorities() {
+        let rows = vec![
+            ParentageRankSkipTsvRow {
+                fact_id: "fact-demo-1".to_string(),
+                child_id: "title-child-a".to_string(),
+                child_name: "Demo Child A".to_string(),
+                child_rank: "Duchy".to_string(),
+                expected_parent_rank: "Kingdom".to_string(),
+                current_parent_id: "title-parent-a".to_string(),
+                current_parent_name: "Demo Parent A".to_string(),
+                current_parent_rank: "Empire".to_string(),
+                span: "1..20".to_string(),
+                review_priority: "high_intermediate_parent_review".to_string(),
+                notes: "Review row.".to_string(),
+            },
+            ParentageRankSkipTsvRow {
+                fact_id: "fact-demo-2".to_string(),
+                child_id: "title-child-b".to_string(),
+                child_name: "Demo Child B".to_string(),
+                child_rank: "Kingdom".to_string(),
+                expected_parent_rank: "Crown".to_string(),
+                current_parent_id: "title-parent-b".to_string(),
+                current_parent_name: "Demo Parent B".to_string(),
+                current_parent_rank: "Empire".to_string(),
+                span: "1..20".to_string(),
+                review_priority: "low_intermediate_parent_review".to_string(),
+                notes: "Review row.".to_string(),
+            },
+        ];
+
+        let counts = parentage_rank_skip_priority_counts(&rows);
+
+        assert_eq!(counts.high, 1);
+        assert_eq!(counts.medium, 0);
+        assert_eq!(counts.low, 1);
     }
 
     fn title(id: &str, name: &str, rank: duchy::TitleRank) -> duchy::Title {

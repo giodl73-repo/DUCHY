@@ -34,6 +34,8 @@ cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest dat
 cargo run --bin duchy-import -- parentage-change-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-change-report.md
 cargo run --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
 cargo run --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-targets.tsv
+cargo run --bin duchy-import -- parentage-rank-skip-shard data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-shards 25
+cargo run --bin duchy-import -- parentage-rank-skip-report data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-report.md
 ```
 
 ## Product Shape
@@ -271,6 +273,9 @@ review: 160 high-priority intermediate-parent rows, 23 medium-priority rows, and
 39 low-priority rows. The largest class is duchy-to-empire parentage, which
 needs reviewed kingdom-layer packets before DUCHY can treat those branches as a
 proper immediate-rank tree.
+The rank-skip queue is now sharded into nine 25-row review batches with an
+index and Markdown rollup report, so intermediate-parent review can be assigned
+without reopening the broader graph report.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
