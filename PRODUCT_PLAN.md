@@ -428,6 +428,9 @@ Pulses:
 151. Kalmar Denmark Norway parentage. Complete for importing Denmark under the
     Kalmar Union for `1397..1523` and medieval Norway under the Kalmar Union for
     `1397..1397`.
+152. Serbia Empire parentage. Complete for promoting the Serbian Empire as a
+    bounded `Empire` title and importing medieval Kingdom of Serbia endpoint
+    parentage under it for `1346..1346`.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

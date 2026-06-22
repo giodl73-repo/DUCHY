@@ -7,15 +7,15 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 16 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 15 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 9 |
-| Kingdom | 16 |
+| Empire | 10 |
+| Kingdom | 15 |
 
 ## Review Rows
 
@@ -145,6 +145,13 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q1406298 | Serbian Empire
+
+- rank: Empire
+- exists: 1346..1371
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
 ### title-q141472 | Golden Horde
 
 - rank: Empire
@@ -184,13 +191,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1814..1833
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q154667 | Kingdom of Georgia
-
-- rank: Kingdom
-- exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

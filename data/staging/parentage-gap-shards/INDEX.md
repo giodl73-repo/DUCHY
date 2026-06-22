@@ -6,7 +6,7 @@ chunk_size: 25
 
 | Shard | Rows | High | Medium | Root | Blocked |
 |---|---:|---:|---:|---:|---:|
-| batch-001.tsv | 25 | 0 | 16 | 9 | 0 |
+| batch-001.tsv | 25 | 0 | 15 | 10 | 0 |
 | batch-002.tsv | 25 | 0 | 15 | 9 | 1 |
 | batch-003.tsv | 25 | 0 | 16 | 9 | 0 |
 | batch-004.tsv | 25 | 0 | 16 | 9 | 0 |

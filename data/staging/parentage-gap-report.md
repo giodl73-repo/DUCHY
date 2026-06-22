@@ -8,8 +8,8 @@ gap_rows: 121
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 80 |
-| root_or_successor_review | 39 |
+| medium_parentage_review | 79 |
+| root_or_successor_review | 40 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 121
 |---|---:|
 | Crown | 5 |
 | Duchy | 2 |
-| Empire | 39 |
-| Kingdom | 73 |
+| Empire | 40 |
+| Kingdom | 72 |
 | TheocraticState | 2 |
 
 ## Review Rows
@@ -148,6 +148,13 @@ gap_rows: 121
 - exists: 411..534
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q1406298 | Serbian Empire
+
+- rank: Empire
+- exists: 1346..1371
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q141472 | Golden Horde
 
@@ -468,13 +475,6 @@ gap_rows: 121
 
 - rank: Kingdom
 - exists: 718..910
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2415003 | Kingdom of Serbia
-
-- rank: Kingdom
-- exists: 1217..1346
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

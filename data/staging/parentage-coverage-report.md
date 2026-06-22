@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 434
-facts: 1312
-titles: 347
-parentage_facts: 271
-titles_with_parentage: 226
+sources: 436
+facts: 1316
+titles: 348
+parentage_facts: 272
+titles_with_parentage: 227
 titles_without_parentage: 121
 
 ## Coverage By Rank
@@ -14,9 +14,9 @@ titles_without_parentage: 121
 | County | 33 | 33 | 0 |
 | Crown | 8 | 3 | 5 |
 | Duchy | 138 | 136 | 2 |
-| Empire | 39 | 0 | 39 |
+| Empire | 40 | 0 | 40 |
 | FreeCity | 2 | 2 | 0 |
-| Kingdom | 123 | 50 | 73 |
+| Kingdom | 123 | 51 | 72 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 1 | 2 |
 
@@ -40,6 +40,7 @@ titles_without_parentage: 121
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
 - title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
+- title-q1406298 | Serbian Empire | Empire | 1346..1371
 - title-q141472 | Golden Horde | Empire | 1242..1502
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
 - title-q147909 | Kingdom of Bulgaria | Kingdom | 1908..1946
@@ -86,7 +87,6 @@ titles_without_parentage: 121
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
-- title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
 - title-q241748 | Kingdom of Serbia | Kingdom | 1882..1918
 - title-q252323 | Taifa of Denia | Kingdom | 1010..1227
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861

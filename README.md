@@ -240,6 +240,12 @@ for `1397..1523` and medieval Norway under the Kalmar Union for `1397..1397`.
 The accepted catalog now has 434 reviewed sources, 1312 facts, 347 titles, and
 271 parentage facts; 226 titles now have reviewed parentage and 121 titles
 remain without parentage.
+The next medium-priority endpoint packet promotes Serbian Empire as a bounded
+`Empire` title for `1346..1371` and adds medieval Kingdom of Serbia endpoint
+parentage under it for `1346..1346`. The accepted catalog now has 436 reviewed
+sources, 1316 facts, 348 titles, and 272 parentage facts; 227 titles now have
+reviewed parentage and the parentage gap queue remains at 121 rows because the
+new Serbian Empire title itself needs root-or-successor review.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

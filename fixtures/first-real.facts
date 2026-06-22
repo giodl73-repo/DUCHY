@@ -10309,3 +10309,37 @@ span: 1397..1397
 value: title-q62623
 source_ids: src-wikidata-q2196956, src-wikidata-q62623
 confidence: multi_source
+---
+# Reviewed title packet for the Serbian Empire.
+
+fact_id: fact-q1406298-name
+subject_id: title-q1406298
+claim_kind: name
+value: Serbian Empire
+source_ids: src-wikidata-q1406298, src-wikipedia-serbian-empire
+confidence: multi_source
+---
+fact_id: fact-q1406298-rank
+subject_id: title-q1406298
+claim_kind: rank
+value: Empire
+source_ids: src-wikidata-q1406298, src-wikipedia-serbian-empire
+confidence: multi_source
+---
+fact_id: fact-q1406298-exists
+subject_id: title-q1406298
+claim_kind: title_exists
+span: 1346..1371
+value: exists
+source_ids: src-wikidata-q1406298, src-wikipedia-serbian-empire
+confidence: multi_source
+---
+# Reviewed endpoint parentage packet for medieval Serbia under the Serbian Empire.
+
+fact_id: fact-q2415003-parent-q1406298
+subject_id: title-q2415003
+claim_kind: parentage
+span: 1346..1346
+value: title-q1406298
+source_ids: src-wikidata-q2415003, src-wikidata-q1406298, src-wikipedia-serbian-empire
+confidence: multi_source

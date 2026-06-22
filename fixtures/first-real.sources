@@ -5567,3 +5567,27 @@ notes: Britannica Act of Union article identifies the January 1, 1801 legislativ
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for endpoint successor parentage from the Kingdom of Ireland to the United Kingdom of Great Britain and Ireland in 1801 and title identity context; no parliamentary mechanics, Catholic emancipation, representation, churches, army, flag, monarchy, Irish Free State, or post-1801 United Kingdom history imported.
+---
+source_id: src-wikidata-q1406298
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1406298
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Serbian Empire (Q1406298) gives historical empire identity and 1346-1371 bounded state context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Serbian Empire title identity and endpoint parentage from the accepted medieval Kingdom of Serbia; no territorial extent, rulers, legal code, church hierarchy, successor principalities, or later national claims imported.
+---
+source_id: src-wikipedia-serbian-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Serbian_Empire
+license: Wikipedia text is CC BY-SA; structured page metadata may include additional terms
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Serbian Empire article identifies the empire as emerging from the Kingdom of Serbia, established in 1346 by Dusan, and ending in 1371.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded title identity and the 1346 Kingdom of Serbia to Serbian Empire endpoint transition; no territorial extent, rulers, imperial ideology, legal code, church hierarchy, collapse process, successor states, or later national claims imported.
