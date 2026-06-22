@@ -318,6 +318,8 @@ because all rows remain blocked.
 The first completed cluster review marks the Nassau/Brandenburg bridge lead as
 `same_parent_sibling_false_positive`: both were Holy Roman Empire states, but
 the review found no child-to-candidate parentage edge.
+A follow-up one-child cluster batch clears five more same-parent sibling false
+positives, leaving 14 cluster review rows pending and still zero packet stubs.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
