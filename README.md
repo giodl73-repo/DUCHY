@@ -35,6 +35,7 @@ cargo run --bin duchy-import -- parentage-change-report fixtures/first-real.sour
 cargo run --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
 cargo run --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-targets.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-candidates fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-candidates.md
+cargo run --bin duchy-import -- parentage-rank-skip-bridges-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-bridges.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-shard data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-shards 25
 cargo run --bin duchy-import -- parentage-rank-skip-report data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-report.md
 ```
@@ -281,6 +282,10 @@ The rank-skip candidate report cross-checks those rows against accepted titles:
 217 of 222 rank-skip rows have an overlapping accepted title at the expected
 immediate rank, and 162 rows have at least one stronger bridge candidate already
 parented under the same current parent during an overlapping span.
+The bridge TSV distills those 162 rows into a compact queue for targeted
+source-review work. A bridge row is not proof of correct immediate parentage; it
+only means DUCHY already has an accepted candidate title of the expected rank
+under the same current parent.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
