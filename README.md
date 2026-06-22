@@ -40,6 +40,7 @@ cargo run --bin duchy-import -- parentage-rank-skip-bridge-shard data/staging/pa
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-report data/staging/parentage-rank-skip-bridges.tsv data/staging/parentage-rank-skip-bridge-report.md
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-clusters-tsv data/staging/parentage-rank-skip-bridges.tsv data/staging/parentage-rank-skip-bridge-clusters.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-report data/staging/parentage-rank-skip-bridge-clusters.tsv data/staging/parentage-rank-skip-bridge-cluster-report.md
+cargo run --bin duchy-import -- parentage-rank-skip-bridge-cluster-review-tsv data/staging/parentage-rank-skip-bridge-clusters.tsv data/staging/parentage-rank-skip-bridge-cluster-review.tsv
 cargo run --bin duchy-import -- parentage-rank-skip-shard data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-shards 25
 cargo run --bin duchy-import -- parentage-rank-skip-report data/staging/parentage-rank-skip-targets.tsv data/staging/parentage-rank-skip-report.md
 ```
@@ -300,6 +301,9 @@ rather than individual skipped facts.
 The bridge cluster report turns those clusters into review packets and keeps
 the warning explicit: clusters are packet-planning leads, not import-ready
 parentage claims.
+The cluster review TSV makes that boundary operational: every cluster starts as
+`pending_review` with `not_inferred` disposition until a reviewer supplies
+child-to-candidate parentage evidence.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
