@@ -10179,3 +10179,13 @@ span: 958..1527
 value: exists
 source_ids: src-wikipedia-county-la-marche
 confidence: single_source
+---
+# Reviewed parentage packet for Dorohoi County under the Kingdom of Romania.
+
+fact_id: fact-q5298169-parent-q203493
+subject_id: title-q5298169
+claim_kind: parentage
+span: 1881..1947
+value: title-q203493
+source_ids: src-wikipedia-dorohoi-county, src-wikidata-q203493
+confidence: multi_source

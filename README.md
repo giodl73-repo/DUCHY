@@ -198,6 +198,10 @@ The county title harvest closure reconciles all 21 ready title/title-follow-up
 candidates from the 500-row farm: 7 were already accepted, 9 were promoted by
 harvest batches 01-04, and 5 remain deferred pending better bounded source or
 rank/span policy.
+The first post-harvest parentage packet adds Dorohoi County under the Kingdom of
+Romania for `1881..1947`. The accepted catalog now has 428 reviewed sources,
+1299 facts, 346 titles, and 261 parentage facts; county titles with parentage
+rise to 31.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

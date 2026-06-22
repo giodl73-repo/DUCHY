@@ -1,17 +1,17 @@
 # DUCHY Parentage Coverage Report
 
 sources: 428
-facts: 1298
+facts: 1299
 titles: 346
-parentage_facts: 260
-titles_with_parentage: 215
-titles_without_parentage: 131
+parentage_facts: 261
+titles_with_parentage: 216
+titles_without_parentage: 130
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 33 | 30 | 3 |
+| County | 33 | 31 | 2 |
 | Crown | 6 | 3 | 3 |
 | Duchy | 138 | 135 | 3 |
 | Empire | 39 | 0 | 39 |
@@ -116,7 +116,6 @@ titles_without_parentage: 131
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171
 - title-q48742118 | Fascist Italy | Kingdom | 1922..1943
 - title-q506008 | Kingdom of Deira | Kingdom | 450..655
-- title-q5298169 | Dorohoi County | County | 1859..1950
 - title-q56089236 | Kingdom of Western Georgia | Kingdom | 1259..1330
 - title-q58202 | July Monarchy | Kingdom | 1830..1848
 - title-q583038 | Ostrogothic Kingdom | Kingdom | 493..553

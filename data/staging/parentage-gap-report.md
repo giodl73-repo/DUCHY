@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 131
+gap_rows: 130
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| high_parentage_review | 4 |
+| high_parentage_review | 3 |
 | medium_parentage_review | 86 |
 | root_or_successor_review | 39 |
 
@@ -16,7 +16,7 @@ gap_rows: 131
 
 | Rank | Rows |
 |---|---:|
-| County | 3 |
+| County | 2 |
 | Crown | 3 |
 | Duchy | 3 |
 | Empire | 39 |
@@ -683,13 +683,6 @@ gap_rows: 131
 - exists: 450..655
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q5298169 | Dorohoi County
-
-- rank: County
-- exists: 1859..1950
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q56089236 | Kingdom of Western Georgia
 

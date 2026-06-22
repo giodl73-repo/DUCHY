@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 6
+gap_rows: 5
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 1 |
-| medium_parentage_review | 4 |
+| medium_parentage_review | 3 |
 | root_or_successor_review | 1 |
 
 ## Rank Counts
@@ -17,16 +17,9 @@ gap_rows: 6
 |---|---:|
 | County | 1 |
 | Empire | 1 |
-| Kingdom | 4 |
+| Kingdom | 3 |
 
 ## Review Rows
-
-### title-q904346 | Kingdom of Desmond
-
-- rank: Kingdom
-- exists: 1118..1596
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q905131 | Kingdom of Breifne
 

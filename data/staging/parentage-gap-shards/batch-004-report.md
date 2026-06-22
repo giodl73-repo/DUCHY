@@ -7,17 +7,15 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
-| medium_parentage_review | 14 |
+| medium_parentage_review | 15 |
 | root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Empire | 10 |
-| Kingdom | 13 |
+| Kingdom | 14 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -155,13 +153,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q5298169 | Dorohoi County
-
-- rank: County
-- exists: 1859..1950
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
-
 ### title-q56089236 | Kingdom of Western Georgia
 
 - rank: Kingdom
@@ -196,4 +187,11 @@ gap_rows: 25
 - exists: 820..961
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q612359 | Kingdom of Lithuania
+
+- rank: Kingdom
+- exists: 1918..1918
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 
