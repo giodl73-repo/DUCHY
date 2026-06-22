@@ -1,0 +1,9 @@
+# Reviewed parentage packet for County of La Marche endpoint under the Kingdom of France.
+
+fact_id: fact-q921473-parent-q70972
+subject_id: title-q921473
+claim_kind: parentage
+span: 1527..1527
+value: title-q70972
+source_ids: src-wikipedia-county-la-marche, src-britannica-marche, src-wikidata-q70972
+confidence: multi_source

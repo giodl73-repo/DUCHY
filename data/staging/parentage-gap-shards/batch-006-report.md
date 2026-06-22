@@ -1,13 +1,12 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-006.tsv
-gap_rows: 4
+gap_rows: 3
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_parentage_review | 1 |
 | medium_parentage_review | 2 |
 | root_or_successor_review | 1 |
 
@@ -15,18 +14,10 @@ gap_rows: 4
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Empire | 1 |
 | Kingdom | 2 |
 
 ## Review Rows
-
-### title-q921473 | County of La Marche
-
-- rank: County
-- exists: 958..1527
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q926295 | Italian Empire
 

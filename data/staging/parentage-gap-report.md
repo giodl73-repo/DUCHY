@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 129
+gap_rows: 128
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| high_parentage_review | 2 |
+| high_parentage_review | 1 |
 | medium_parentage_review | 86 |
 | root_or_successor_review | 39 |
 
@@ -16,7 +16,7 @@ gap_rows: 129
 
 | Rank | Rows |
 |---|---:|
-| County | 2 |
+| County | 1 |
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 39 |
@@ -900,13 +900,6 @@ gap_rows: 129
 - exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q921473 | County of La Marche
-
-- rank: County
-- exists: 958..1527
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q926295 | Italian Empire
 

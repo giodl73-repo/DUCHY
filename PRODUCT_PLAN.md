@@ -408,6 +408,9 @@ Pulses:
 144. Benevento Lombards parentage. Complete for importing a reviewed
     `577..774` Duchy of Benevento parentage span under the Kingdom of the
     Lombards.
+145. La Marche French crown parentage. Complete for importing a reviewed
+    `1527..1527` County of La Marche endpoint parentage span under the Kingdom
+    of France.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

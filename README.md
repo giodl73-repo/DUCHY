@@ -206,6 +206,10 @@ The next post-harvest parentage packet adds Duchy of Benevento under the Kingdom
 of the Lombards for `577..774`. The accepted catalog now has 428 reviewed
 sources, 1300 facts, 346 titles, and 262 parentage facts; 217 titles now have
 reviewed parentage.
+The next post-harvest endpoint packet adds County of La Marche under the
+Kingdom of France for `1527..1527`. The accepted catalog now has 429 reviewed
+sources, 1301 facts, 346 titles, and 263 parentage facts; 218 titles now have
+reviewed parentage and 128 titles remain without parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

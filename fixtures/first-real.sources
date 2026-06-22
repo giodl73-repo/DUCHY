@@ -5495,3 +5495,15 @@ notes: County of La Marche page gives medieval county identity, first listed cou
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for bounded title identity only; no Aquitaine parentage, French crown parentage, appanage status, territorial extent, or later province jurisdiction promoted.
+---
+source_id: src-britannica-marche
+source_kind: other
+source_url: https://www.britannica.com/place/Marche-historical-province-France
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Britannica Marche article identifies the countship/province context and says Francis I of France confiscated the countship in 1527.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for the 1527 French crown confiscation endpoint; no earlier Aquitaine, Poitou, Bourbon, Armagnac, province, jurisdiction, or later title-holder claims imported.
