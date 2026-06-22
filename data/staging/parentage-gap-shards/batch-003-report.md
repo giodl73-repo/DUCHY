@@ -20,6 +20,13 @@ gap_rows: 25
 
 ## Review Rows
 
+### title-q191077 | Kingdom of Yugoslavia
+
+- rank: Kingdom
+- exists: 1929..1945
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
 ### title-q191484 | Old Great Bulgaria
 
 - rank: Empire
@@ -94,13 +101,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1832..1973
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q215530 | Kingdom of Ireland
-
-- rank: Kingdom
-- exists: 1542..1801
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,0 +1,33 @@
+# Reviewed title packet for the United Kingdom of Great Britain and Ireland.
+
+fact_id: fact-q174193-name
+subject_id: title-q174193
+claim_kind: name
+value: United Kingdom of Great Britain and Ireland
+source_ids: src-wikidata-q174193, src-britannica-act-of-union-1801
+confidence: multi_source
+---
+fact_id: fact-q174193-rank
+subject_id: title-q174193
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q174193, src-britannica-act-of-union-1801
+confidence: multi_source
+---
+fact_id: fact-q174193-exists
+subject_id: title-q174193
+claim_kind: title_exists
+span: 1801..1922
+value: exists
+source_ids: src-wikidata-q174193, src-britannica-act-of-union-1801
+confidence: multi_source
+---
+# Reviewed endpoint parentage packet for Ireland under the United Kingdom of Great Britain and Ireland.
+
+fact_id: fact-q215530-parent-q174193
+subject_id: title-q215530
+claim_kind: parentage
+span: 1801..1801
+value: title-q174193
+source_ids: src-wikidata-q215530, src-wikidata-q174193, src-britannica-act-of-union-1801
+confidence: multi_source

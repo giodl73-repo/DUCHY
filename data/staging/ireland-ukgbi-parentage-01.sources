@@ -1,0 +1,23 @@
+source_id: src-wikidata-q174193
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q174193
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: United Kingdom of Great Britain and Ireland (Q174193) gives historical sovereign state identity and 1801-1922 description context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded title identity and 1801 successor-context packet; no modern United Kingdom identity, empire, dominions, Irish Free State, Northern Ireland, parliamentary mechanics, monarch sequence, or post-1922/1927 continuity claims imported.
+---
+source_id: src-britannica-act-of-union-1801
+source_kind: other
+source_url: https://www.britannica.com/event/Act-of-Union-United-Kingdom-1801
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Britannica Act of Union article identifies the January 1, 1801 legislative agreement uniting Great Britain and Ireland under the name United Kingdom of Great Britain and Ireland.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for endpoint successor parentage from the Kingdom of Ireland to the United Kingdom of Great Britain and Ireland in 1801 and title identity context; no parliamentary mechanics, Catholic emancipation, representation, churches, army, flag, monarchy, Irish Free State, or post-1801 United Kingdom history imported.

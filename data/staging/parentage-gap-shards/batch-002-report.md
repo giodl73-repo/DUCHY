@@ -15,10 +15,10 @@ gap_rows: 25
 
 | Rank | Rows |
 |---|---:|
-| Crown | 2 |
+| Crown | 3 |
 | Duchy | 1 |
 | Empire | 9 |
-| Kingdom | 12 |
+| Kingdom | 11 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -114,6 +114,13 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q174193 | United Kingdom of Great Britain and Ireland
+
+- rank: Crown
+- exists: 1801..1922
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
 ### title-q178897 | Latin Empire
 
 - rank: Empire
@@ -188,13 +195,6 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: -299..580
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q191077 | Kingdom of Yugoslavia
-
-- rank: Kingdom
-- exists: 1929..1945
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

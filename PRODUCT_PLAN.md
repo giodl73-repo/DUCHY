@@ -422,6 +422,9 @@ Pulses:
     Free imperial city of Dortmund parentage span under the Holy Roman Empire.
 149. Fulda HRE parentage. Complete for importing a reviewed `1221..1802`
     Princely Abbey of Fulda parentage span under the Holy Roman Empire.
+150. Ireland UKGBI parentage. Complete for promoting United Kingdom of Great
+    Britain and Ireland as a bounded `Crown` title and importing Kingdom of
+    Ireland endpoint parentage under it for `1801..1801`.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

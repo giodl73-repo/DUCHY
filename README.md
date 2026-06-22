@@ -229,6 +229,12 @@ The next medium-priority parentage packet adds Princely Abbey of Fulda under the
 Holy Roman Empire for `1221..1802`. The accepted catalog now has 432 reviewed
 sources, 1306 facts, 346 titles, and 268 parentage facts; 223 titles now have
 reviewed parentage and 123 titles remain without parentage.
+The next medium-priority successor packet promotes United Kingdom of Great
+Britain and Ireland as a bounded `Crown` title for `1801..1922` and adds Kingdom
+of Ireland endpoint parentage under it for `1801..1801`. The accepted catalog now
+has 434 reviewed sources, 1310 facts, 347 titles, and 269 parentage facts; 224
+titles now have reviewed parentage and the parentage gap queue remains at 123
+rows because the new UKGBI crown title itself needs successor-context review.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

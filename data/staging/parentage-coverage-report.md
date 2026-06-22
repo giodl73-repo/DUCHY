@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 432
-facts: 1306
-titles: 346
-parentage_facts: 268
-titles_with_parentage: 223
+sources: 434
+facts: 1310
+titles: 347
+parentage_facts: 269
+titles_with_parentage: 224
 titles_without_parentage: 123
 
 ## Coverage By Rank
@@ -12,11 +12,11 @@ titles_without_parentage: 123
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 33 | 33 | 0 |
-| Crown | 7 | 3 | 4 |
+| Crown | 8 | 3 | 5 |
 | Duchy | 138 | 136 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 2 | 2 | 0 |
-| Kingdom | 123 | 47 | 76 |
+| Kingdom | 123 | 48 | 75 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 1 | 2 |
 
@@ -60,6 +60,7 @@ titles_without_parentage: 123
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
 - title-q172579 | Kingdom of Italy | Kingdom | 1861..1946
 - title-q173082 | Dacia | Kingdom | -60..106
+- title-q174193 | United Kingdom of Great Britain and Ireland | Crown | 1801..1922
 - title-q178897 | Latin Empire | Empire | 1204..1261
 - title-q1789596 | Croatia in personal union with Hungary | Kingdom | 1102..1526
 - title-q179023 | French colonial empire | Empire | 1534..1980
@@ -83,7 +84,6 @@ titles_without_parentage: 123
 - title-q2042616 | Chalkidian League | Empire | -432..-348
 - title-q2090473 | Khazar Khaganate | Empire | 650..969
 - title-q209065 | Kingdom of Greece | Kingdom | 1832..1973
-- title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
