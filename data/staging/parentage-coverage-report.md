@@ -1,10 +1,10 @@
 # DUCHY Parentage Coverage Report
 
-sources: 436
-facts: 1317
-titles: 348
-parentage_facts: 273
-titles_with_parentage: 228
+sources: 438
+facts: 1321
+titles: 349
+parentage_facts: 274
+titles_with_parentage: 229
 titles_without_parentage: 120
 
 ## Coverage By Rank
@@ -14,9 +14,9 @@ titles_without_parentage: 120
 | County | 33 | 33 | 0 |
 | Crown | 8 | 3 | 5 |
 | Duchy | 138 | 136 | 2 |
-| Empire | 40 | 0 | 40 |
+| Empire | 41 | 0 | 41 |
 | FreeCity | 2 | 2 | 0 |
-| Kingdom | 123 | 52 | 71 |
+| Kingdom | 123 | 53 | 70 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 1 | 2 |
 
@@ -39,7 +39,6 @@ titles_without_parentage: 120
 - title-q12714608 | Fascist Romania | Kingdom | 1937..1938
 - title-q131964 | Austrian Empire | Empire | 1804..1867
 - title-q1333032 | Elmet | Kingdom | 500..627
-- title-q13590051 | Kingdom of the Burgundians | Kingdom | 411..534
 - title-q1406298 | Serbian Empire | Empire | 1346..1371
 - title-q141472 | Golden Horde | Empire | 1242..1502
 - title-q1470101 | Kingdom of Hungary (1000-1301) | Kingdom | 1000..1301
@@ -103,6 +102,7 @@ titles_without_parentage: 120
 - title-q386496 | Kingdom of Montenegro | Kingdom | 1910..1918
 - title-q389688 | Achaemenid Empire | Empire | -550..-330
 - title-q4208290 | Kazikumukh Khanate | Empire | 1642..1860
+- title-q42834 | Western Roman Empire | Empire | 395..476
 - title-q43287 | German Empire | Empire | 1871..1918
 - title-q435583 | Old Swiss Confederacy | Empire | 1291..1798
 - title-q436994 | Kingdom of Dublin | Kingdom | 839..1171

@@ -434,6 +434,9 @@ Pulses:
 153. Poland Commonwealth parentage. Complete for importing Jagiellon Kingdom of
     Poland endpoint parentage under the Polish-Lithuanian Commonwealth for
     `1569..1569`.
+154. Burgundians Western Roman parentage. Complete for promoting Western Roman
+    Empire as a bounded `Empire` title and importing clipped Kingdom of the
+    Burgundians parentage under it for `443..476`.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

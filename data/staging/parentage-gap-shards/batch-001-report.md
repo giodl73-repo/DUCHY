@@ -138,13 +138,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q13590051 | Kingdom of the Burgundians
-
-- rank: Kingdom
-- exists: 411..534
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q1406298 | Serbian Empire
 
 - rank: Empire
@@ -191,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1814..1833
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q154667 | Kingdom of Georgia
+
+- rank: Kingdom
+- exists: 1008..1466
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

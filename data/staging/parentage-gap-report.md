@@ -8,8 +8,8 @@ gap_rows: 120
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 78 |
-| root_or_successor_review | 40 |
+| medium_parentage_review | 77 |
+| root_or_successor_review | 41 |
 
 ## Rank Counts
 
@@ -17,8 +17,8 @@ gap_rows: 120
 |---|---:|
 | Crown | 5 |
 | Duchy | 2 |
-| Empire | 40 |
-| Kingdom | 71 |
+| Empire | 41 |
+| Kingdom | 70 |
 | TheocraticState | 2 |
 
 ## Review Rows
@@ -139,13 +139,6 @@ gap_rows: 120
 
 - rank: Kingdom
 - exists: 500..627
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q13590051 | Kingdom of the Burgundians
-
-- rank: Kingdom
-- exists: 411..534
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
@@ -587,6 +580,13 @@ gap_rows: 120
 
 - rank: Empire
 - exists: 1642..1860
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q42834 | Western Roman Empire
+
+- rank: Empire
+- exists: 395..476
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

@@ -7,25 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 17 |
-| root_or_successor_review | 8 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
 | Crown | 1 |
-| Empire | 8 |
-| Kingdom | 16 |
+| Empire | 9 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q3446210 | Kingdom of Pamplona
-
-- rank: Kingdom
-- exists: 824..1162
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q3755547 | Kingdom of Italy
 
@@ -59,6 +52,13 @@ gap_rows: 25
 
 - rank: Empire
 - exists: 1642..1860
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q42834 | Western Roman Empire
+
+- rank: Empire
+- exists: 395..476
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

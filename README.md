@@ -251,6 +251,13 @@ endpoint parentage under the Polish-Lithuanian Commonwealth for `1569..1569`.
 The accepted catalog now has 436 reviewed sources, 1317 facts, 348 titles, and
 273 parentage facts; 228 titles now have reviewed parentage and 120 titles
 remain without parentage.
+The next medium-priority parentage packet promotes Western Roman Empire as a
+bounded `Empire` title for `395..476` and adds clipped Kingdom of the
+Burgundians parentage under it for `443..476`. The accepted catalog now has 438
+reviewed sources, 1321 facts, 349 titles, and 274 parentage facts; 229 titles
+now have reviewed parentage and the parentage gap queue remains at 120 rows
+because the new Western Roman Empire title itself needs root-or-successor
+review.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

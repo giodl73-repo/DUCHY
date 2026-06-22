@@ -20,13 +20,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q191077 | Kingdom of Yugoslavia
-
-- rank: Kingdom
-- exists: 1929..1945
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q191484 | Old Great Bulgaria
 
 - rank: Empire
@@ -194,4 +187,11 @@ gap_rows: 25
 - exists: 1721..1917
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q3446210 | Kingdom of Pamplona
+
+- rank: Kingdom
+- exists: 824..1162
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

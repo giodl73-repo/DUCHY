@@ -1,0 +1,25 @@
+# Reviewed Western Roman Empire title and Burgundian-Roman parentage context.
+
+source_id: src-wikidata-q42834
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q42834
+license: Creative Commons CC0
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Western Roman Empire (Q42834) gives empire identity and a 395-476 bounded state context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Western Roman Empire title identity and bounded parentage clipping only; no imperial court succession, late Roman constitutional theory, or post-476 continuity claim imported.
+---
+source_id: src-wikipedia-kingdom-burgundians
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of the Burgundians article identifies the kingdom as a late Western Roman Empire barbarian kingdom and describes the 443 Imperial Roman resettlement of allied Burgundians in Sapaudia.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded 443-476 Western Roman parentage context; no Burgundian royal genealogy, battle narrative, territorial geometry, legal-code history, Frankish conquest, or later Burgundy claims imported.
