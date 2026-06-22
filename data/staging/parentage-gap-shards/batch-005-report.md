@@ -8,34 +8,20 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 19 |
-| root_or_successor_review | 5 |
+| medium_parentage_review | 20 |
+| root_or_successor_review | 4 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 2 |
+| Crown | 1 |
 | Duchy | 1 |
-| Empire | 5 |
-| Kingdom | 16 |
+| Empire | 4 |
+| Kingdom | 18 |
 | TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q62623 | Kalmar Union
-
-- rank: Crown
-- exists: 1397..1523
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
-
-### title-q62651 | Denmark-Norway
-
-- rank: Empire
-- exists: 1536..1814
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q633573 | Kingdom of Rheged
 
@@ -197,4 +183,18 @@ gap_rows: 25
 - exists: 1882..1946
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q954585 | Kingdom of Brycheiniog
+
+- rank: Kingdom
+- exists: 450..1045
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q956451 | Kingdom of Dyfed
+
+- rank: Kingdom
+- exists: 410..920
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -7,26 +7,19 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 18 |
-| root_or_successor_review | 7 |
+| medium_parentage_review | 16 |
+| root_or_successor_review | 9 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 7 |
+| Empire | 9 |
 | FreeCity | 1 |
-| Kingdom | 16 |
+| Kingdom | 14 |
 | TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q191077 | Kingdom of Yugoslavia
-
-- rank: Kingdom
-- exists: 1929..1945
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q191484 | Old Great Bulgaria
 
@@ -133,13 +126,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q230791 | Kingdom of Scotland
-
-- rank: Kingdom
-- exists: 843..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q231392 | Kingdom of Asturias
 
 - rank: Kingdom
@@ -195,4 +181,18 @@ gap_rows: 25
 - exists: 883..1836
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
+
+### title-q3181749 | Arab Caliphate
+
+- rank: Empire
+- exists: 632..1517
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q31929 | Carolingian Empire
+
+- rank: Empire
+- exists: 800..887
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

@@ -1,6 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q3181749	Arab Caliphate	Empire	632..1517	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
-title-q31929	Carolingian Empire	Empire	800..887	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q321371	Bosporan Kingdom	Kingdom	-437..370	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q328818	Kingdom of Kent	Kingdom	450..871	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +22,5 @@ title-q603771	Emirate of Crete	Empire	820..961	0	root_or_successor_review	May be
 title-q612359	Kingdom of Lithuania	Kingdom	1918..1918	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
+title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.

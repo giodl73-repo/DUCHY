@@ -414,6 +414,10 @@ Pulses:
 146. Girona Carolingian parentage. Complete for importing a reviewed
     `800..887` County of Girona parentage span under the Carolingian Empire,
     closing the active post-harvest high-priority parentage queue.
+147. Britain Union parentage. Complete for correcting Kingdom of Great Britain
+    to DUCHY's composite `Crown` rank and importing reviewed `1707..1707`
+    endpoint parentage from the Kingdoms of England and Scotland to Great
+    Britain.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -215,6 +215,12 @@ Carolingian Empire for `800..887`. The accepted catalog now has 430 reviewed
 sources, 1302 facts, 346 titles, and 264 parentage facts; 219 titles now have
 reviewed parentage, 33 county titles have parentage, and the generated parentage
 gap queue has no active high-priority rows.
+The next medium-priority endpoint packet corrects Kingdom of Great Britain to
+DUCHY's composite `Crown` rank and adds Kingdom of England and Kingdom of
+Scotland endpoint parentage under it for `1707..1707`. The accepted catalog now
+has 431 reviewed sources, 1304 facts, 346 titles, and 266 parentage facts; 221
+titles now have reviewed parentage and the parentage gap queue has 125 rows
+split across five shards.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

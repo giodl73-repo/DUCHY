@@ -1,25 +1,25 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 127
+gap_rows: 125
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 86 |
+| medium_parentage_review | 84 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 3 |
+| Crown | 4 |
 | Duchy | 2 |
 | Empire | 39 |
 | FreeCity | 1 |
-| Kingdom | 79 |
+| Kingdom | 76 |
 | TheocraticState | 3 |
 
 ## Review Rows
@@ -229,10 +229,10 @@ gap_rows: 127
 
 ### title-q161885 | Kingdom of Great Britain
 
-- rank: Kingdom
+- rank: Crown
 - exists: 1707..1801
 - review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q1649871 | Kingdom of Poland
 
@@ -310,13 +310,6 @@ gap_rows: 127
 - exists: 1534..1980
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q179876 | Kingdom of England
-
-- rank: Kingdom
-- exists: 927..1707
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q180393 | Kingdom of the Two Sicilies
 
@@ -483,13 +476,6 @@ gap_rows: 127
 
 - rank: Kingdom
 - exists: 500..1063
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q230791 | Kingdom of Scotland
-
-- rank: Kingdom
-- exists: 843..1707
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

@@ -1,22 +1,22 @@
 # DUCHY Parentage Coverage Report
 
-sources: 430
-facts: 1302
+sources: 431
+facts: 1304
 titles: 346
-parentage_facts: 264
-titles_with_parentage: 219
-titles_without_parentage: 127
+parentage_facts: 266
+titles_with_parentage: 221
+titles_without_parentage: 125
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 33 | 33 | 0 |
-| Crown | 6 | 3 | 3 |
+| Crown | 7 | 3 | 4 |
 | Duchy | 138 | 136 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 2 | 1 | 1 |
-| Kingdom | 124 | 45 | 79 |
+| Kingdom | 123 | 47 | 76 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 0 | 3 |
 
@@ -51,7 +51,7 @@ titles_without_parentage: 127
 - title-q160440 | Crimean Khanate | Empire | 1441..1783
 - title-q16056854 | Kingdom of Hungary | Kingdom | 1301..1526
 - title-q16084290 | Illyrian kingdom | Kingdom | -700..-135
-- title-q161885 | Kingdom of Great Britain | Kingdom | 1707..1801
+- title-q161885 | Kingdom of Great Britain | Crown | 1707..1801
 - title-q1649871 | Kingdom of Poland | Kingdom | 1386..1569
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
@@ -63,7 +63,6 @@ titles_without_parentage: 127
 - title-q178897 | Latin Empire | Empire | 1204..1261
 - title-q1789596 | Croatia in personal union with Hungary | Kingdom | 1102..1526
 - title-q179023 | French colonial empire | Empire | 1534..1980
-- title-q179876 | Kingdom of England | Kingdom | 927..1707
 - title-q180393 | Kingdom of the Two Sicilies | Kingdom | 1738..1861
 - title-q181254 | Empire of Nicaea | Empire | 1204..1261
 - title-q18285930 | German Empire of 1848/1849 | Empire | 1848..1849
@@ -88,7 +87,6 @@ titles_without_parentage: 127
 - title-q215530 | Kingdom of Ireland | Kingdom | 1542..1801
 - title-q2196956 | Kingdom of Norway | Kingdom | 872..1397
 - title-q2253783 | Kingdom of Glywysing | Kingdom | 500..1063
-- title-q230791 | Kingdom of Scotland | Kingdom | 843..1707
 - title-q231392 | Kingdom of Asturias | Kingdom | 718..910
 - title-q2415003 | Kingdom of Serbia | Kingdom | 1217..1346
 - title-q241748 | Kingdom of Serbia | Kingdom | 1882..1918

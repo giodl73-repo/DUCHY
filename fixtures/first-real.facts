@@ -5011,7 +5011,7 @@ confidence: single_source
 fact_id: fact-q161885-rank
 subject_id: title-q161885
 claim_kind: rank
-value: Kingdom
+value: Crown
 source_ids: src-wikidata-q161885
 confidence: single_source
 ---
@@ -10218,4 +10218,22 @@ claim_kind: parentage
 span: 800..887
 value: title-q31929
 source_ids: src-wikidata-q2037817, src-wikidata-q31929, src-wikipedia-carolingian-empire, src-chandler-carolingian-catalonia
+confidence: multi_source
+---
+# Reviewed endpoint parentage packet for England and Scotland under Great Britain.
+
+fact_id: fact-q179876-parent-q161885
+subject_id: title-q179876
+claim_kind: parentage
+span: 1707..1707
+value: title-q161885
+source_ids: src-wikidata-q179876, src-wikidata-q161885, src-britannica-act-of-union-1707
+confidence: multi_source
+---
+fact_id: fact-q230791-parent-q161885
+subject_id: title-q230791
+claim_kind: parentage
+span: 1707..1707
+value: title-q161885
+source_ids: src-wikidata-q230791, src-wikidata-q161885, src-britannica-act-of-union-1707
 confidence: multi_source

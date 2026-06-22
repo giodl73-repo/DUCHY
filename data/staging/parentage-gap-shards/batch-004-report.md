@@ -7,31 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 16 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 17 |
+| root_or_successor_review | 8 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 9 |
+| Crown | 1 |
+| Empire | 8 |
 | Kingdom | 16 |
 
 ## Review Rows
-
-### title-q3181749 | Arab Caliphate
-
-- rank: Empire
-- exists: 632..1517
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q31929 | Carolingian Empire
-
-- rank: Empire
-- exists: 800..887
-- review_priority: root_or_successor_review
-- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
 ### title-q321371 | Bosporan Kingdom
 
@@ -193,4 +180,18 @@ gap_rows: 25
 - exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62623 | Kalmar Union
+
+- rank: Crown
+- exists: 1397..1523
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
+### title-q62651 | Denmark-Norway
+
+- rank: Empire
+- exists: 1536..1814
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 
