@@ -32,6 +32,7 @@ cargo run --bin duchy-import -- manifest-tsv data/staging/example.manifest data/
 cargo run --bin duchy-import -- manifest-from-tsv data/staging/manifest.tsv data/staging/from-tsv.manifest
 cargo run --bin duchy-import -- shard-manifest data/staging/example.manifest data/staging/shards 2
 cargo run --bin duchy-import -- parentage-change-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-change-report.md
+cargo run --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
 ```
 
 ## Product Shape
@@ -50,7 +51,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 410 reviewed source records.
+  The accepted fixture catalog now contains 438 reviewed source records.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -258,6 +259,12 @@ reviewed sources, 1321 facts, 349 titles, and 274 parentage facts; 229 titles
 now have reviewed parentage and the parentage gap queue remains at 120 rows
 because the new Western Roman Empire title itself needs root-or-successor
 review.
+The parentage graph audit now treats hierarchy as a temporal forest instead of
+one timeless duchy tree. The current graph report covers 349 titles, 274
+parentage facts, 308 parentable titles, 229 titles with parentage, 74.35%
+title-level parentage fill, 59.27% weighted span coverage, 222 valid rank-skip
+facts, no temporal parent conflicts, and no snapshot cycles across 544 generated
+snapshot years.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

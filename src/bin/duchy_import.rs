@@ -1,4 +1,4 @@
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::fs;
 use std::path::Path;
@@ -56,6 +56,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-change-report" {
             return parentage_change_report(sources_path, facts_path, output_path);
         }
+        if command == "parentage-graph-report" {
+            return parentage_graph_report(sources_path, facts_path, output_path);
+        }
         if command == "parentage-gap-tsv" {
             return parentage_gap_tsv(sources_path, facts_path, output_path, None);
         }
@@ -82,7 +85,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -116,6 +119,231 @@ fn run() -> Result<(), Vec<String>> {
             .collect::<Vec<_>>()
     })?;
     println!("- timeline: valid");
+
+    Ok(())
+}
+
+fn parentage_graph_report(
+    sources_path: &str,
+    facts_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let source_text = fs::read_to_string(sources_path)
+        .map_err(|error| vec![format!("failed to read {sources_path}: {error}")])?;
+    let fact_text = fs::read_to_string(facts_path)
+        .map_err(|error| vec![format!("failed to read {facts_path}: {error}")])?;
+
+    let catalog = duchy::SourceCatalog::from_metadata_text(&source_text)?;
+    let facts = duchy::fact_records_from_text(&fact_text)?;
+    duchy::validate_fact_records(&catalog, &facts)?;
+    let titles = duchy::source_backed_titles_from_facts(&catalog, &facts)?;
+    let timeline = duchy::source_backed_timeline_from_facts(&catalog, &facts)?;
+    timeline.validate().map_err(|errors| {
+        errors
+            .into_iter()
+            .map(|error| format!("timeline: {error}"))
+            .collect::<Vec<_>>()
+    })?;
+
+    let title_by_id = titles
+        .iter()
+        .map(|title| (title.id.as_str(), title))
+        .collect::<BTreeMap<_, _>>();
+    let parentage_facts = facts
+        .iter()
+        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
+        .collect::<Vec<_>>();
+    let parentage_by_child = parentage_by_child(&parentage_facts);
+    let conflicts = parentage_conflict_rows(&parentage_facts, &title_by_id);
+    let rank_skip_rows = parentage_rank_skip_rows(&parentage_facts, &title_by_id);
+    let span_coverage = parentage_span_coverage_rows(&titles, &parentage_by_child);
+    let snapshot_years = parentage_graph_snapshot_years(&titles, &parentage_facts);
+    let snapshots = snapshot_years
+        .iter()
+        .map(|year| parentage_graph_snapshot(*year, &titles, &parentage_facts, &title_by_id))
+        .collect::<Vec<_>>();
+
+    let total_parentable_titles = titles
+        .iter()
+        .filter(|title| title_is_parentable(title))
+        .count();
+    let title_edges_possible = total_parentable_titles;
+    let titles_with_parentage = parentage_by_child.len();
+    let title_edge_fill_percent = percent(titles_with_parentage, title_edges_possible);
+    let rank_skip_percent = percent(rank_skip_rows.len(), parentage_facts.len());
+    let weighted_coverage_percent = weighted_parentage_coverage_percent(&span_coverage);
+    let conflict_count = conflicts.len();
+    let cycle_snapshots = snapshots
+        .iter()
+        .filter(|snapshot| !snapshot.cycles.is_empty())
+        .count();
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Graph Report\n\n");
+    output.push_str(&format!("sources: {}\n", catalog.record_count()));
+    output.push_str(&format!("facts: {}\n", facts.len()));
+    output.push_str(&format!("titles: {}\n", titles.len()));
+    output.push_str(&format!("parentage_facts: {}\n", parentage_facts.len()));
+    output.push_str(&format!("parentable_titles: {total_parentable_titles}\n"));
+    output.push_str(&format!("titles_with_parentage: {titles_with_parentage}\n"));
+    output.push_str(&format!(
+        "title_edge_fill_percent: {:.2}\n",
+        title_edge_fill_percent
+    ));
+    output.push_str(&format!(
+        "weighted_span_coverage_percent: {:.2}\n",
+        weighted_coverage_percent
+    ));
+    output.push_str(&format!("rank_skip_facts: {}\n", rank_skip_rows.len()));
+    output.push_str(&format!("rank_skip_percent: {:.2}\n", rank_skip_percent));
+    output.push_str(&format!("temporal_parent_conflicts: {conflict_count}\n"));
+    output.push_str(&format!("snapshot_years: {}\n", snapshots.len()));
+    output.push_str(&format!(
+        "snapshot_years_with_cycles: {cycle_snapshots}\n\n"
+    ));
+
+    output.push_str("## Interpretation\n\n");
+    output.push_str("- DUCHY parentage is a temporal forest, not one timeless duchy tree.\n");
+    output.push_str("- `title_edge_fill_percent` measures title-level parentage coverage for parentable ranks.\n");
+    output.push_str("- `weighted_span_coverage_percent` measures how much of parentable title existence time is covered by parentage spans.\n");
+    output.push_str("- `density_percent` in snapshots is active parent edges divided by active parentable titles for that year.\n");
+    output.push_str("- `rank_skip_facts` are valid but indicate missing intermediate hierarchy such as duchy or crown layers.\n\n");
+
+    output.push_str("## Snapshot Health\n\n");
+    output.push_str("| Year | Active Titles | Parentable | Edges | Density % | Roots | Orphans | Conflicts | Cycles | Max Depth | Avg Depth |\n");
+    output.push_str("|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n");
+    for snapshot in &snapshots {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} | {:.2} | {} | {} | {} | {} | {} | {:.2} |\n",
+            snapshot.year,
+            snapshot.active_titles,
+            snapshot.active_parentable_titles,
+            snapshot.active_edges,
+            snapshot.density_percent,
+            snapshot.roots,
+            snapshot.orphans,
+            snapshot.conflicts,
+            snapshot.cycles.len(),
+            snapshot.max_depth,
+            snapshot.avg_depth
+        ));
+    }
+
+    output.push_str("\n## Current Snapshot By Rank\n\n");
+    if let Some(current_snapshot) = snapshots.iter().find(|snapshot| snapshot.year == 2026) {
+        output.push_str("| Rank | Active | Parentable | With Parent | Orphans | Roots |\n");
+        output.push_str("|---|---:|---:|---:|---:|---:|\n");
+        for (rank, totals) in &current_snapshot.by_rank {
+            output.push_str(&format!(
+                "| {} | {} | {} | {} | {} | {} |\n",
+                title_rank_label(*rank),
+                totals.active,
+                totals.parentable,
+                totals.with_parent,
+                totals.orphans,
+                totals.roots
+            ));
+        }
+    } else {
+        output.push_str("No 2026 snapshot was generated.\n");
+    }
+
+    output.push_str("\n## Span Coverage By Rank\n\n");
+    output.push_str("| Rank | Titles | Covered Years | Expected Years | Coverage % |\n");
+    output.push_str("|---|---:|---:|---:|---:|\n");
+    for (rank, totals) in parentage_span_coverage_by_rank(&span_coverage) {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} | {:.2} |\n",
+            title_rank_label(rank),
+            totals.titles,
+            totals.covered_years,
+            totals.expected_years,
+            totals.coverage_percent()
+        ));
+    }
+
+    output.push_str("\n## Depth Distribution\n\n");
+    output.push_str("| Year | Depth | Active Titles |\n");
+    output.push_str("|---:|---:|---:|\n");
+    for snapshot in &snapshots {
+        for (depth, count) in &snapshot.depth_counts {
+            output.push_str(&format!("| {} | {} | {} |\n", snapshot.year, depth, count));
+        }
+    }
+
+    output.push_str("\n## Rank Skip Facts\n\n");
+    if rank_skip_rows.is_empty() {
+        output.push_str("none\n");
+    } else {
+        output.push_str("| Fact | Child | Child Rank | Parent | Parent Rank | Span |\n");
+        output.push_str("|---|---|---|---|---|---|\n");
+        for row in rank_skip_rows.iter().take(50) {
+            output.push_str(&format!(
+                "| {} | {} | {} | {} | {} | {} |\n",
+                row.fact_id,
+                markdown_escape(&row.child),
+                title_rank_label(row.child_rank),
+                markdown_escape(&row.parent),
+                title_rank_label(row.parent_rank),
+                row.span
+            ));
+        }
+    }
+
+    output.push_str("\n## Temporal Parent Conflicts\n\n");
+    if conflicts.is_empty() {
+        output.push_str("none\n");
+    } else {
+        output.push_str("| Child | Overlap | Parent Facts |\n");
+        output.push_str("|---|---|---|\n");
+        for conflict in &conflicts {
+            output.push_str(&format!(
+                "| {} | {} | {} |\n",
+                markdown_escape(&conflict.child),
+                conflict.overlap,
+                markdown_escape(&conflict.parents.join("; "))
+            ));
+        }
+    }
+
+    output.push_str("\n## Snapshot Cycles\n\n");
+    let cycle_rows = snapshots
+        .iter()
+        .flat_map(|snapshot| {
+            snapshot
+                .cycles
+                .iter()
+                .map(|cycle| (snapshot.year, cycle.clone()))
+                .collect::<Vec<_>>()
+        })
+        .collect::<Vec<_>>();
+    if cycle_rows.is_empty() {
+        output.push_str("none\n");
+    } else {
+        output.push_str("| Year | Cycle |\n");
+        output.push_str("|---:|---|\n");
+        for (year, cycle) in cycle_rows {
+            output.push_str(&format!(
+                "| {year} | {} |\n",
+                markdown_escape(&cycle.join(" -> "))
+            ));
+        }
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage graph report");
+    println!("- titles: {}", titles.len());
+    println!("- parentage facts: {}", parentage_facts.len());
+    println!("- title edge fill: {:.2}%", title_edge_fill_percent);
+    println!(
+        "- weighted span coverage: {:.2}%",
+        weighted_coverage_percent
+    );
+    println!("- temporal parent conflicts: {conflict_count}");
+    println!("- snapshot years: {}", snapshots.len());
+    println!("- output: {output_path}");
 
     Ok(())
 }
@@ -1251,6 +1479,500 @@ struct ParentageChangeParentRankTotals {
     facts: usize,
     changed_titles: usize,
     parent_changes: usize,
+}
+
+#[derive(Debug)]
+struct ParentageConflictRow {
+    child: String,
+    overlap: String,
+    parents: Vec<String>,
+}
+
+#[derive(Debug)]
+struct ParentageRankSkipRow {
+    fact_id: String,
+    child: String,
+    child_rank: duchy::TitleRank,
+    parent: String,
+    parent_rank: duchy::TitleRank,
+    span: String,
+}
+
+#[derive(Debug)]
+struct ParentageSpanCoverageRow {
+    rank: duchy::TitleRank,
+    expected_years: usize,
+    covered_years: usize,
+}
+
+#[derive(Default)]
+struct ParentageSpanCoverageTotals {
+    titles: usize,
+    expected_years: usize,
+    covered_years: usize,
+}
+
+impl ParentageSpanCoverageTotals {
+    fn coverage_percent(&self) -> f64 {
+        percent(self.covered_years, self.expected_years)
+    }
+}
+
+#[derive(Default)]
+struct ParentageSnapshotRankTotals {
+    active: usize,
+    parentable: usize,
+    with_parent: usize,
+    orphans: usize,
+    roots: usize,
+}
+
+struct ParentageGraphSnapshot {
+    year: i32,
+    active_titles: usize,
+    active_parentable_titles: usize,
+    active_edges: usize,
+    density_percent: f64,
+    roots: usize,
+    orphans: usize,
+    conflicts: usize,
+    cycles: Vec<Vec<String>>,
+    max_depth: usize,
+    avg_depth: f64,
+    by_rank: BTreeMap<duchy::TitleRank, ParentageSnapshotRankTotals>,
+    depth_counts: BTreeMap<usize, usize>,
+}
+
+fn parentage_by_child<'a>(
+    facts: &'a [&'a duchy::FactRecord],
+) -> BTreeMap<String, Vec<&'a duchy::FactRecord>> {
+    let mut by_child: BTreeMap<String, Vec<&duchy::FactRecord>> = BTreeMap::new();
+    for fact in facts {
+        by_child
+            .entry(fact.subject_id.clone())
+            .or_default()
+            .push(*fact);
+    }
+    by_child
+}
+
+fn title_is_parentable(title: &duchy::Title) -> bool {
+    title.rank.parent_rank().is_some()
+}
+
+fn percent(numerator: usize, denominator: usize) -> f64 {
+    if denominator == 0 {
+        0.0
+    } else {
+        (numerator as f64 / denominator as f64) * 100.0
+    }
+}
+
+fn parentage_conflict_rows(
+    facts: &[&duchy::FactRecord],
+    title_by_id: &BTreeMap<&str, &duchy::Title>,
+) -> Vec<ParentageConflictRow> {
+    let by_child = parentage_by_child(facts);
+    let mut rows = Vec::new();
+    for (child_id, child_facts) in by_child {
+        for left_index in 0..child_facts.len() {
+            for right_index in (left_index + 1)..child_facts.len() {
+                let left = child_facts[left_index];
+                let right = child_facts[right_index];
+                let (Some(left_span), Some(right_span)) = (&left.span, &right.span) else {
+                    continue;
+                };
+                let Some(overlap) = span_overlap_label(left_span, right_span) else {
+                    continue;
+                };
+                rows.push(ParentageConflictRow {
+                    child: title_display(&child_id, title_by_id),
+                    overlap,
+                    parents: vec![
+                        parentage_fact_display(left, title_by_id),
+                        parentage_fact_display(right, title_by_id),
+                    ],
+                });
+            }
+        }
+    }
+    rows.sort_by(|left, right| {
+        left.child
+            .cmp(&right.child)
+            .then_with(|| left.overlap.cmp(&right.overlap))
+    });
+    rows
+}
+
+fn parentage_rank_skip_rows(
+    facts: &[&duchy::FactRecord],
+    title_by_id: &BTreeMap<&str, &duchy::Title>,
+) -> Vec<ParentageRankSkipRow> {
+    let mut rows = Vec::new();
+    for fact in facts {
+        let (Some(child), Some(parent)) = (
+            title_by_id.get(fact.subject_id.as_str()),
+            title_by_id.get(fact.value.as_str()),
+        ) else {
+            continue;
+        };
+        let Some(expected_parent_rank) = child.rank.parent_rank() else {
+            continue;
+        };
+        if parent.rank == expected_parent_rank {
+            continue;
+        }
+        rows.push(ParentageRankSkipRow {
+            fact_id: fact.fact_id.clone(),
+            child: title_display(child.id.as_str(), title_by_id),
+            child_rank: child.rank,
+            parent: title_display(parent.id.as_str(), title_by_id),
+            parent_rank: parent.rank,
+            span: fact
+                .span
+                .as_ref()
+                .map(year_span_label)
+                .unwrap_or_else(|| "unspecified".to_string()),
+        });
+    }
+    rows.sort_by(|left, right| {
+        left.child
+            .cmp(&right.child)
+            .then_with(|| left.fact_id.cmp(&right.fact_id))
+    });
+    rows
+}
+
+fn parentage_span_coverage_rows(
+    titles: &[duchy::Title],
+    parentage_by_child: &BTreeMap<String, Vec<&duchy::FactRecord>>,
+) -> Vec<ParentageSpanCoverageRow> {
+    let audit_end_year = current_audit_year();
+    let mut rows = Vec::new();
+    for title in titles.iter().filter(|title| title_is_parentable(title)) {
+        let expected_years = span_duration_clamped(&title.exists, audit_end_year);
+        let intervals = parentage_by_child
+            .get(&title.id)
+            .map(|facts| {
+                facts
+                    .iter()
+                    .filter_map(|fact| {
+                        fact.span
+                            .as_ref()
+                            .and_then(|span| clipped_interval(span, &title.exists, audit_end_year))
+                    })
+                    .collect::<Vec<_>>()
+            })
+            .unwrap_or_default();
+        rows.push(ParentageSpanCoverageRow {
+            rank: title.rank,
+            expected_years,
+            covered_years: merged_year_count(intervals),
+        });
+    }
+    rows
+}
+
+fn weighted_parentage_coverage_percent(rows: &[ParentageSpanCoverageRow]) -> f64 {
+    let covered = rows.iter().map(|row| row.covered_years).sum::<usize>();
+    let expected = rows.iter().map(|row| row.expected_years).sum::<usize>();
+    percent(covered, expected)
+}
+
+fn parentage_span_coverage_by_rank(
+    rows: &[ParentageSpanCoverageRow],
+) -> BTreeMap<duchy::TitleRank, ParentageSpanCoverageTotals> {
+    let mut totals: BTreeMap<duchy::TitleRank, ParentageSpanCoverageTotals> = BTreeMap::new();
+    for row in rows {
+        let entry = totals.entry(row.rank).or_default();
+        entry.titles += 1;
+        entry.expected_years += row.expected_years;
+        entry.covered_years += row.covered_years;
+    }
+    totals
+}
+
+fn parentage_graph_snapshot_years(
+    titles: &[duchy::Title],
+    parentage_facts: &[&duchy::FactRecord],
+) -> Vec<i32> {
+    let mut years = BTreeSet::new();
+    years.insert(current_audit_year());
+    for title in titles {
+        years.insert(title.exists.start);
+        if let Some(end) = title.exists.end {
+            years.insert(end);
+            years.insert(end.saturating_add(1));
+        }
+    }
+    for fact in parentage_facts {
+        if let Some(span) = &fact.span {
+            years.insert(span.start);
+            if let Some(end) = span.end {
+                years.insert(end);
+                years.insert(end.saturating_add(1));
+            }
+        }
+    }
+    years
+        .into_iter()
+        .filter(|year| titles.iter().any(|title| title.exists.contains(*year)))
+        .collect()
+}
+
+fn parentage_graph_snapshot(
+    year: i32,
+    titles: &[duchy::Title],
+    parentage_facts: &[&duchy::FactRecord],
+    title_by_id: &BTreeMap<&str, &duchy::Title>,
+) -> ParentageGraphSnapshot {
+    let active_titles = titles
+        .iter()
+        .filter(|title| title.exists.contains(year))
+        .collect::<Vec<_>>();
+    let active_title_ids = active_titles
+        .iter()
+        .map(|title| title.id.as_str())
+        .collect::<BTreeSet<_>>();
+    let mut active_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
+    for fact in parentage_facts {
+        let Some(span) = &fact.span else {
+            continue;
+        };
+        if !span.contains(year) {
+            continue;
+        }
+        if !active_title_ids.contains(fact.subject_id.as_str())
+            || !active_title_ids.contains(fact.value.as_str())
+        {
+            continue;
+        }
+        active_by_child
+            .entry(fact.subject_id.as_str())
+            .or_default()
+            .push(*fact);
+    }
+
+    for facts in active_by_child.values_mut() {
+        facts.sort_by(|left, right| {
+            left.fact_id
+                .cmp(&right.fact_id)
+                .then_with(|| left.value.cmp(&right.value))
+        });
+    }
+
+    let mut active_parent: BTreeMap<&str, &str> = BTreeMap::new();
+    for (child_id, facts) in &active_by_child {
+        if let Some(fact) = facts.first() {
+            active_parent.insert(*child_id, fact.value.as_str());
+        }
+    }
+
+    let active_edges = active_by_child.values().map(Vec::len).sum::<usize>();
+    let conflicts = active_by_child
+        .values()
+        .filter(|facts| facts.len() > 1)
+        .count();
+    let active_parentable_titles = active_titles
+        .iter()
+        .filter(|title| title_is_parentable(title))
+        .count();
+    let orphans = active_titles
+        .iter()
+        .filter(|title| {
+            title_is_parentable(title) && !active_by_child.contains_key(title.id.as_str())
+        })
+        .count();
+    let roots = active_titles
+        .iter()
+        .filter(|title| {
+            !title_is_parentable(title) || !active_by_child.contains_key(title.id.as_str())
+        })
+        .count();
+
+    let cycles = parentage_snapshot_cycles(&active_parent, title_by_id);
+    let mut depths = Vec::new();
+    let mut depth_counts = BTreeMap::new();
+    for title in &active_titles {
+        let depth = parentage_snapshot_depth(title.id.as_str(), &active_parent);
+        *depth_counts.entry(depth).or_default() += 1;
+        depths.push(depth);
+    }
+    let max_depth = depths.iter().copied().max().unwrap_or_default();
+    let avg_depth = if depths.is_empty() {
+        0.0
+    } else {
+        depths.iter().sum::<usize>() as f64 / depths.len() as f64
+    };
+
+    let mut by_rank: BTreeMap<duchy::TitleRank, ParentageSnapshotRankTotals> = BTreeMap::new();
+    for title in &active_titles {
+        let entry = by_rank.entry(title.rank).or_default();
+        entry.active += 1;
+        if title_is_parentable(title) {
+            entry.parentable += 1;
+            if active_by_child.contains_key(title.id.as_str()) {
+                entry.with_parent += 1;
+            } else {
+                entry.orphans += 1;
+            }
+        }
+        if !title_is_parentable(title) || !active_by_child.contains_key(title.id.as_str()) {
+            entry.roots += 1;
+        }
+    }
+
+    ParentageGraphSnapshot {
+        year,
+        active_titles: active_titles.len(),
+        active_parentable_titles,
+        active_edges,
+        density_percent: percent(active_edges, active_parentable_titles),
+        roots,
+        orphans,
+        conflicts,
+        cycles,
+        max_depth,
+        avg_depth,
+        by_rank,
+        depth_counts,
+    }
+}
+
+fn parentage_snapshot_cycles(
+    active_parent: &BTreeMap<&str, &str>,
+    title_by_id: &BTreeMap<&str, &duchy::Title>,
+) -> Vec<Vec<String>> {
+    let mut cycles = Vec::new();
+    let mut seen_keys = BTreeSet::new();
+    for start in active_parent.keys() {
+        let mut path = Vec::new();
+        let mut positions = BTreeMap::new();
+        let mut current = *start;
+        while let Some(parent) = active_parent.get(current) {
+            if let Some(position) = positions.get(current) {
+                let cycle_ids = path[*position..].to_vec();
+                let key = canonical_cycle_key(&cycle_ids);
+                if seen_keys.insert(key) {
+                    cycles.push(
+                        cycle_ids
+                            .iter()
+                            .map(|title_id| title_display(title_id, title_by_id))
+                            .collect(),
+                    );
+                }
+                break;
+            }
+            positions.insert(current, path.len());
+            path.push(current);
+            current = parent;
+        }
+    }
+    cycles
+}
+
+fn parentage_snapshot_depth(start: &str, active_parent: &BTreeMap<&str, &str>) -> usize {
+    let mut depth = 0;
+    let mut seen = BTreeSet::new();
+    let mut current = start;
+    while let Some(parent) = active_parent.get(current) {
+        if !seen.insert(current) {
+            break;
+        }
+        depth += 1;
+        current = parent;
+    }
+    depth
+}
+
+fn canonical_cycle_key(cycle: &[&str]) -> String {
+    let mut values = cycle.iter().copied().collect::<Vec<_>>();
+    values.sort_unstable();
+    values.join("|")
+}
+
+fn current_audit_year() -> i32 {
+    2026
+}
+
+fn span_duration_clamped(span: &duchy::YearSpan, audit_end_year: i32) -> usize {
+    let end = span.end.unwrap_or(audit_end_year).min(audit_end_year);
+    if span.start > end {
+        0
+    } else {
+        (end - span.start + 1) as usize
+    }
+}
+
+fn clipped_interval(
+    span: &duchy::YearSpan,
+    bounds: &duchy::YearSpan,
+    audit_end_year: i32,
+) -> Option<(i32, i32)> {
+    let start = span.start.max(bounds.start);
+    let end = span
+        .end
+        .unwrap_or(audit_end_year)
+        .min(bounds.end.unwrap_or(audit_end_year))
+        .min(audit_end_year);
+    if start <= end {
+        Some((start, end))
+    } else {
+        None
+    }
+}
+
+fn merged_year_count(mut intervals: Vec<(i32, i32)>) -> usize {
+    if intervals.is_empty() {
+        return 0;
+    }
+    intervals.sort_unstable();
+    let mut total = 0;
+    let mut current = intervals[0];
+    for interval in intervals.into_iter().skip(1) {
+        if interval.0 <= current.1.saturating_add(1) {
+            current.1 = current.1.max(interval.1);
+        } else {
+            total += (current.1 - current.0 + 1) as usize;
+            current = interval;
+        }
+    }
+    total + (current.1 - current.0 + 1) as usize
+}
+
+fn span_overlap_label(left: &duchy::YearSpan, right: &duchy::YearSpan) -> Option<String> {
+    let start = left.start.max(right.start);
+    let left_end = left.end.unwrap_or(i32::MAX);
+    let right_end = right.end.unwrap_or(i32::MAX);
+    let end = left_end.min(right_end);
+    if start > end {
+        return None;
+    }
+    if end == i32::MAX {
+        Some(format!("{start}.."))
+    } else {
+        Some(format!("{start}..{end}"))
+    }
+}
+
+fn parentage_fact_display(
+    fact: &duchy::FactRecord,
+    title_by_id: &BTreeMap<&str, &duchy::Title>,
+) -> String {
+    let parent = title_display(fact.value.as_str(), title_by_id);
+    let span = fact
+        .span
+        .as_ref()
+        .map(year_span_label)
+        .unwrap_or_else(|| "unspecified".to_string());
+    format!("{} -> {parent} [{span}]", fact.fact_id)
+}
+
+fn title_display(title_id: &str, title_by_id: &BTreeMap<&str, &duchy::Title>) -> String {
+    title_by_id
+        .get(title_id)
+        .map(|title| format!("{} ({})", title.name, title.id))
+        .unwrap_or_else(|| title_id.to_string())
 }
 
 fn parentage_change_rows(
