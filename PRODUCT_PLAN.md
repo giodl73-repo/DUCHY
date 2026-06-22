@@ -405,6 +405,9 @@ Pulses:
 143. Dorohoi Romania parentage. Complete for importing a reviewed
     `1881..1947` Dorohoi County parentage span under the Kingdom of Romania,
     using already accepted Dorohoi and Kingdom of Romania sources.
+144. Benevento Lombards parentage. Complete for importing a reviewed
+    `577..774` Duchy of Benevento parentage span under the Kingdom of the
+    Lombards.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

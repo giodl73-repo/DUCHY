@@ -23,13 +23,6 @@ gap_rows: 25
 
 ## Review Rows
 
-### title-q623751 | Kingdom of Bernicia
-
-- rank: Kingdom
-- exists: 420..634
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q62567 | Kingdom of Iceland
 
 - rank: Kingdom
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 1118..1596
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q905131 | Kingdom of Breifne
+
+- rank: Kingdom
+- exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

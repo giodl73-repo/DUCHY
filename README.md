@@ -202,6 +202,10 @@ The first post-harvest parentage packet adds Dorohoi County under the Kingdom of
 Romania for `1881..1947`. The accepted catalog now has 428 reviewed sources,
 1299 facts, 346 titles, and 261 parentage facts; county titles with parentage
 rise to 31.
+The next post-harvest parentage packet adds Duchy of Benevento under the Kingdom
+of the Lombards for `577..774`. The accepted catalog now has 428 reviewed
+sources, 1300 facts, 346 titles, and 262 parentage facts; 217 titles now have
+reviewed parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

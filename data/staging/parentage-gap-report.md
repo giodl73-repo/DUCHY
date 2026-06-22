@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 130
+gap_rows: 129
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| high_parentage_review | 3 |
+| high_parentage_review | 2 |
 | medium_parentage_review | 86 |
 | root_or_successor_review | 39 |
 
@@ -18,7 +18,7 @@ gap_rows: 130
 |---|---:|
 | County | 2 |
 | Crown | 3 |
-| Duchy | 3 |
+| Duchy | 2 |
 | Empire | 39 |
 | FreeCity | 1 |
 | Kingdom | 79 |
@@ -543,13 +543,6 @@ gap_rows: 130
 - exists: 1814..1814
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q267816 | Duchy of Benevento
-
-- rank: Duchy
-- exists: 577..774
-- review_priority: high_parentage_review
-- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q28513 | Austria-Hungary
 

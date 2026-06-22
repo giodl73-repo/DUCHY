@@ -10189,3 +10189,13 @@ span: 1881..1947
 value: title-q203493
 source_ids: src-wikipedia-dorohoi-county, src-wikidata-q203493
 confidence: multi_source
+---
+# Reviewed parentage packet for Duchy of Benevento under the Kingdom of the Lombards.
+
+fact_id: fact-q267816-parent-q854415
+subject_id: title-q267816
+claim_kind: parentage
+span: 577..774
+value: title-q854415
+source_ids: src-wikipedia-duchy-benevento, src-wikidata-q854415
+confidence: multi_source

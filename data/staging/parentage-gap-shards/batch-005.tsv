@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q623751	Kingdom of Bernicia	Kingdom	420..634	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62567	Kingdom of Iceland	Kingdom	1918..1944	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q62623	Kalmar Union	Crown	1397..1523	0	medium_parentage_review	Find reviewed empire, union, or successor-context source.
 title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q858841	Kingdom of Croatia	Kingdom	925..1102	0	medium_parentage_review	Fin
 title-q870517	Odrysian kingdom	Kingdom	-460..46	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q87791	Frisian Kingdom	Kingdom	500..734	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q904346	Kingdom of Desmond	Kingdom	1118..1596	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
+title-q905131	Kingdom of Breifne	Kingdom	700..1256	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

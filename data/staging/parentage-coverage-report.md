@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 428
-facts: 1299
+facts: 1300
 titles: 346
-parentage_facts: 261
-titles_with_parentage: 216
-titles_without_parentage: 130
+parentage_facts: 262
+titles_with_parentage: 217
+titles_without_parentage: 129
 
 ## Coverage By Rank
 
@@ -13,7 +13,7 @@ titles_without_parentage: 130
 |---|---:|---:|---:|
 | County | 33 | 31 | 2 |
 | Crown | 6 | 3 | 3 |
-| Duchy | 138 | 135 | 3 |
+| Duchy | 138 | 136 | 2 |
 | Empire | 39 | 0 | 39 |
 | FreeCity | 2 | 1 | 1 |
 | Kingdom | 124 | 45 | 79 |
@@ -96,7 +96,6 @@ titles_without_parentage: 130
 - title-q252323 | Taifa of Denia | Kingdom | 1010..1227
 - title-q2577303 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q2597352 | Kingdom of Norway | Kingdom | 1814..1814
-- title-q267816 | Duchy of Benevento | Duchy | 577..774
 - title-q28513 | Austria-Hungary | Empire | 1867..1918
 - title-q2992329 | County Palatine of Durham | TheocraticState | 883..1836
 - title-q3181749 | Arab Caliphate | Empire | 632..1517
