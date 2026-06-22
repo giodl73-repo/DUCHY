@@ -15,8 +15,7 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | Empire | 9 |
-| FreeCity | 1 |
-| Kingdom | 14 |
+| Kingdom | 15 |
 | TheocraticState | 1 |
 
 ## Review Rows
@@ -83,13 +82,6 @@ gap_rows: 25
 - exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2055974 | Free imperial city of Dortmund
-
-- rank: FreeCity
-- exists: 1220..1803
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2090473 | Khazar Khaganate
 
@@ -195,4 +187,11 @@ gap_rows: 25
 - exists: 800..887
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q321371 | Bosporan Kingdom
+
+- rank: Kingdom
+- exists: -437..370
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
 

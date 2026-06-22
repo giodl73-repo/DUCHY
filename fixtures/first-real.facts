@@ -10237,3 +10237,13 @@ span: 1707..1707
 value: title-q161885
 source_ids: src-wikidata-q230791, src-wikidata-q161885, src-britannica-act-of-union-1707
 confidence: multi_source
+---
+# Reviewed parentage packet for Free imperial city of Dortmund under the Holy Roman Empire.
+
+fact_id: fact-q2055974-parent-q12548
+subject_id: title-q2055974
+claim_kind: parentage
+span: 1220..1803
+value: title-q12548
+source_ids: src-britannica-dortmund, src-britannica-imperial-city-hre, src-wikidata-q12548
+confidence: multi_source

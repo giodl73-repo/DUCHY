@@ -1,0 +1,11 @@
+source_id: src-britannica-imperial-city-hre
+source_kind: other
+source_url: https://www.britannica.com/topic/imperial-city-Holy-Roman-Empire
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Britannica imperial city article defines imperial cities as cities and towns of the Holy Roman Empire subject only to the authority of the emperor or German king.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for the bounded Holy Roman Empire parentage context of already accepted imperial-city titles; no city constitution, diet, league, privilege, governance, conquest, or post-Holy-Roman-Empire free-city claims imported.

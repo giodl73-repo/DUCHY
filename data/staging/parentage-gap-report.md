@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
-source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 125
+source_tsv: data/staging/parentage-gap-targets.tsv
+gap_rows: 124
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 84 |
+| medium_parentage_review | 83 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
@@ -18,7 +18,6 @@ gap_rows: 125
 | Crown | 4 |
 | Duchy | 2 |
 | Empire | 39 |
-| FreeCity | 1 |
 | Kingdom | 76 |
 | TheocraticState | 3 |
 
@@ -436,13 +435,6 @@ gap_rows: 125
 - exists: -432..-348
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q2055974 | Free imperial city of Dortmund
-
-- rank: FreeCity
-- exists: 1220..1803
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q2090473 | Khazar Khaganate
 

@@ -221,6 +221,10 @@ Scotland endpoint parentage under it for `1707..1707`. The accepted catalog now
 has 431 reviewed sources, 1304 facts, 346 titles, and 266 parentage facts; 221
 titles now have reviewed parentage and the parentage gap queue has 125 rows
 split across five shards.
+The next medium-priority parentage packet adds Free imperial city of Dortmund
+under the Holy Roman Empire for `1220..1803`. The accepted catalog now has 432
+reviewed sources, 1305 facts, 346 titles, and 267 parentage facts; 222 titles
+now have reviewed parentage and 124 titles remain without parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

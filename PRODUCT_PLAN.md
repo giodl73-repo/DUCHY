@@ -418,6 +418,8 @@ Pulses:
     to DUCHY's composite `Crown` rank and importing reviewed `1707..1707`
     endpoint parentage from the Kingdoms of England and Scotland to Great
     Britain.
+148. Dortmund HRE parentage. Complete for importing a reviewed `1220..1803`
+    Free imperial city of Dortmund parentage span under the Holy Roman Empire.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
