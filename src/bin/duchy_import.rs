@@ -51,6 +51,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-report" {
             return parentage_rank_skip_report(manifest_path, output_path);
         }
+        if command == "parentage-rank-skip-bridge-report" {
+            return parentage_rank_skip_bridge_report(manifest_path, output_path);
+        }
     }
     if let [command, sources_path, facts_path, output_path] = args.as_slice() {
         if command == "parentage-coverage-report" {
@@ -90,6 +93,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-shard" {
             return parentage_rank_skip_shard(manifest_path, output_dir, chunk_size);
         }
+        if command == "parentage-rank-skip-bridge-shard" {
+            return parentage_rank_skip_bridge_shard(manifest_path, output_dir, chunk_size);
+        }
     }
 
     let (sources_path, facts_path) = match args.as_slice() {
@@ -100,7 +106,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -1233,6 +1239,161 @@ fn parentage_rank_skip_report(input_path: &str, output_path: &str) -> Result<(),
     Ok(())
 }
 
+fn parentage_rank_skip_bridge_shard(
+    input_path: &str,
+    output_dir: &str,
+    chunk_size: &str,
+) -> Result<(), Vec<String>> {
+    let chunk_size = chunk_size
+        .parse::<usize>()
+        .map_err(|error| vec![format!("invalid chunk size {chunk_size}: {error}")])?;
+    if chunk_size == 0 {
+        return Err(vec!["chunk size must be greater than zero".to_string()]);
+    }
+
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_bridge_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip bridge rows"
+        )]);
+    }
+
+    fs::create_dir_all(output_dir)
+        .map_err(|error| vec![format!("failed to create {output_dir}: {error}")])?;
+
+    let mut index = String::new();
+    index.push_str("# DUCHY Parentage Rank Skip Bridge Shards\n\n");
+    index.push_str(&format!("source_tsv: {input_path}\n"));
+    index.push_str(&format!("bridge_rows: {}\n", rows.len()));
+    index.push_str(&format!("chunk_size: {chunk_size}\n\n"));
+    index.push_str("| Shard | Rows | High | Medium | Low |\n");
+    index.push_str("|---|---:|---:|---:|---:|\n");
+
+    for (index_number, chunk) in rows.chunks(chunk_size).enumerate() {
+        let shard_name = format!("batch-{:03}.tsv", index_number + 1);
+        let shard_path = Path::new(output_dir).join(&shard_name);
+        let shard_text = parentage_rank_skip_bridge_rows_to_tsv(chunk);
+        fs::write(&shard_path, shard_text)
+            .map_err(|error| vec![format!("failed to write {}: {error}", shard_path.display())])?;
+
+        let counts = parentage_rank_skip_bridge_priority_counts(chunk);
+        index.push_str(&format!(
+            "| {shard_name} | {} | {} | {} | {} |\n",
+            chunk.len(),
+            counts.high,
+            counts.medium,
+            counts.low
+        ));
+    }
+
+    let index_path = Path::new(output_dir).join("INDEX.md");
+    fs::write(&index_path, index)
+        .map_err(|error| vec![format!("failed to write {}: {error}", index_path.display())])?;
+
+    println!("DUCHY parentage rank skip bridge shards");
+    println!("- bridge rows: {}", rows.len());
+    println!("- shards: {}", rows.chunks(chunk_size).len());
+    println!("- output: {output_dir}");
+
+    Ok(())
+}
+
+fn parentage_rank_skip_bridge_report(
+    input_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_bridge_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip bridge rows"
+        )]);
+    }
+
+    let mut by_priority: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut by_candidate: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut by_current_parent: BTreeMap<&str, usize> = BTreeMap::new();
+    for row in &rows {
+        *by_priority.entry(row.review_priority.as_str()).or_default() += 1;
+        *by_candidate
+            .entry(row.candidate_parent_name.as_str())
+            .or_default() += 1;
+        *by_current_parent
+            .entry(row.current_parent_name.as_str())
+            .or_default() += 1;
+    }
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Rank Skip Bridge Review Report\n\n");
+    output.push_str(&format!("source_tsv: {input_path}\n"));
+    output.push_str(&format!("bridge_rows: {}\n\n", rows.len()));
+
+    output.push_str("## Priority Counts\n\n");
+    output.push_str("| Priority | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (priority, count) in &by_priority {
+        output.push_str(&format!("| {priority} | {count} |\n"));
+    }
+
+    output.push_str("\n## Candidate Parent Counts\n\n");
+    output.push_str("| Candidate Parent | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (candidate, count) in sorted_count_rows(&by_candidate).into_iter().take(25) {
+        output.push_str(&format!("| {} | {} |\n", markdown_escape(candidate), count));
+    }
+
+    output.push_str("\n## Current Parent Counts\n\n");
+    output.push_str("| Current Parent | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (parent, count) in sorted_count_rows(&by_current_parent) {
+        output.push_str(&format!("| {} | {} |\n", markdown_escape(parent), count));
+    }
+
+    output.push_str("\n## Review Rows\n\n");
+    for row in &rows {
+        output.push_str(&format!(
+            "### {} | {} -> {} -> {}\n\n",
+            row.skip_fact_id,
+            markdown_escape(&row.child_name),
+            markdown_escape(&row.candidate_parent_name),
+            markdown_escape(&row.current_parent_name)
+        ));
+        output.push_str(&format!("- child_id: {}\n", row.child_id));
+        output.push_str(&format!("- child_rank: {}\n", row.child_rank));
+        output.push_str(&format!(
+            "- expected_parent_rank: {}\n",
+            row.expected_parent_rank
+        ));
+        output.push_str(&format!(
+            "- candidate_parent_id: {}\n",
+            row.candidate_parent_id
+        ));
+        output.push_str(&format!("- candidate_exists: {}\n", row.candidate_exists));
+        output.push_str(&format!("- current_parent_id: {}\n", row.current_parent_id));
+        output.push_str(&format!(
+            "- current_parent_rank: {}\n",
+            row.current_parent_rank
+        ));
+        output.push_str(&format!("- span: {}\n", row.span));
+        output.push_str(&format!("- overlap_years: {}\n", row.overlap_years));
+        output.push_str(&format!("- bridge_fact_id: {}\n", row.bridge_fact_id));
+        output.push_str(&format!("- review_priority: {}\n", row.review_priority));
+        output.push_str(&format!("- notes: {}\n\n", row.notes));
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip bridge report");
+    println!("- bridge rows: {}", rows.len());
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
 fn manifest_status(manifest_path: &str) -> Result<(), Vec<String>> {
     let manifest_text = fs::read_to_string(manifest_path)
         .map_err(|error| vec![format!("failed to read {manifest_path}: {error}")])?;
@@ -1915,6 +2076,26 @@ struct ParentageRankSkipTsvRow {
     notes: String,
 }
 
+#[derive(Clone)]
+struct ParentageRankSkipBridgeTsvRow {
+    skip_fact_id: String,
+    child_id: String,
+    child_name: String,
+    child_rank: String,
+    expected_parent_rank: String,
+    current_parent_id: String,
+    current_parent_name: String,
+    current_parent_rank: String,
+    span: String,
+    candidate_parent_id: String,
+    candidate_parent_name: String,
+    candidate_exists: String,
+    overlap_years: String,
+    bridge_fact_id: String,
+    review_priority: String,
+    notes: String,
+}
+
 #[derive(Default)]
 struct ParentageGapPriorityCounts {
     high: usize,
@@ -2197,6 +2378,112 @@ fn parentage_rank_skip_tsv_header() -> &'static str {
 
 fn parentage_rank_skip_bridge_tsv_header() -> &'static str {
     "skip_fact_id\tchild_id\tchild_name\tchild_rank\texpected_parent_rank\tcurrent_parent_id\tcurrent_parent_name\tcurrent_parent_rank\tspan\tcandidate_parent_id\tcandidate_parent_name\tcandidate_exists\toverlap_years\tbridge_fact_id\treview_priority\tnotes"
+}
+
+fn parentage_rank_skip_bridge_rows_from_tsv(
+    input: &str,
+) -> Result<Vec<ParentageRankSkipBridgeTsvRow>, Vec<String>> {
+    let mut lines = input.lines();
+    let Some(header) = lines.next() else {
+        return Err(vec!["parentage rank skip bridge TSV is empty".to_string()]);
+    };
+    let expected_header = parentage_rank_skip_bridge_tsv_header();
+    if header != expected_header {
+        return Err(vec![format!(
+            "invalid parentage rank skip bridge TSV header: expected {expected_header}"
+        )]);
+    }
+
+    let mut rows = Vec::new();
+    for (line_index, line) in lines.enumerate() {
+        if line.trim().is_empty() {
+            continue;
+        }
+        let line_number = line_index + 2;
+        let fields = line.split('\t').collect::<Vec<_>>();
+        if fields.len() != 16 {
+            return Err(vec![format!(
+                "line {line_number}: expected 16 TSV columns, found {}",
+                fields.len()
+            )]);
+        }
+        rows.push(ParentageRankSkipBridgeTsvRow {
+            skip_fact_id: fields[0].to_string(),
+            child_id: fields[1].to_string(),
+            child_name: fields[2].to_string(),
+            child_rank: fields[3].to_string(),
+            expected_parent_rank: fields[4].to_string(),
+            current_parent_id: fields[5].to_string(),
+            current_parent_name: fields[6].to_string(),
+            current_parent_rank: fields[7].to_string(),
+            span: fields[8].to_string(),
+            candidate_parent_id: fields[9].to_string(),
+            candidate_parent_name: fields[10].to_string(),
+            candidate_exists: fields[11].to_string(),
+            overlap_years: fields[12].to_string(),
+            bridge_fact_id: fields[13].to_string(),
+            review_priority: fields[14].to_string(),
+            notes: fields[15].to_string(),
+        });
+    }
+
+    Ok(rows)
+}
+
+fn parentage_rank_skip_bridge_rows_to_tsv(rows: &[ParentageRankSkipBridgeTsvRow]) -> String {
+    let mut output = String::new();
+    output.push_str(parentage_rank_skip_bridge_tsv_header());
+    output.push('\n');
+    for row in rows {
+        output.push_str(&tsv_escape(&row.skip_fact_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_name));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.child_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.expected_parent_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_name));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.current_parent_rank));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.span));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.candidate_parent_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.candidate_parent_name));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.candidate_exists));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.overlap_years));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.bridge_fact_id));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.review_priority));
+        output.push('\t');
+        output.push_str(&tsv_escape(&row.notes));
+        output.push('\n');
+    }
+    output
+}
+
+fn parentage_rank_skip_bridge_priority_counts(
+    rows: &[ParentageRankSkipBridgeTsvRow],
+) -> ParentageRankSkipPriorityCounts {
+    let mut counts = ParentageRankSkipPriorityCounts::default();
+    for row in rows {
+        match row.review_priority.as_str() {
+            "high_intermediate_parent_review" => counts.high += 1,
+            "medium_intermediate_parent_review" => counts.medium += 1,
+            "low_intermediate_parent_review" => counts.low += 1,
+            _ => {}
+        }
+    }
+    counts
 }
 
 fn parentage_rank_skip_bridge_tsv_row(
@@ -3043,6 +3330,15 @@ fn markdown_escape(value: &str) -> String {
         .to_string()
 }
 
+fn sorted_count_rows<'a>(counts: &'a BTreeMap<&'a str, usize>) -> Vec<(&'a str, usize)> {
+    let mut rows = counts
+        .iter()
+        .map(|(label, count)| (*label, *count))
+        .collect::<Vec<_>>();
+    rows.sort_by(|left, right| right.1.cmp(&left.1).then_with(|| left.0.cmp(right.0)));
+    rows
+}
+
 fn import_scope_label(import_scope: duchy::ImportScope) -> &'static str {
     match import_scope {
         duchy::ImportScope::TitleIdentityOnly => "title_identity_only",
@@ -3578,6 +3874,57 @@ mod tests {
 
         assert!(tsv.starts_with("fact-demo-skip\ttitle-demo-child\tDemo Child"));
         assert!(tsv.contains("\ttitle-demo-kingdom\tDemo Kingdom\t1..20\t20\tfact-demo-bridge\t"));
+    }
+
+    #[test]
+    fn parses_parentage_rank_skip_bridge_tsv_rows() {
+        let input = concat!(
+            "skip_fact_id\tchild_id\tchild_name\tchild_rank\texpected_parent_rank\tcurrent_parent_id\tcurrent_parent_name\tcurrent_parent_rank\tspan\tcandidate_parent_id\tcandidate_parent_name\tcandidate_exists\toverlap_years\tbridge_fact_id\treview_priority\tnotes\n",
+            "fact-demo-skip\ttitle-child\tDemo Child\tDuchy\tKingdom\ttitle-empire\tDemo Empire\tEmpire\t1..20\ttitle-kingdom\tDemo Kingdom\t1..20\t20\tfact-demo-bridge\thigh_intermediate_parent_review\tReview row.\n",
+        );
+
+        let rows = parentage_rank_skip_bridge_rows_from_tsv(input).expect("rows should parse");
+
+        assert_eq!(rows.len(), 1);
+        assert_eq!(rows[0].candidate_parent_id, "title-kingdom");
+        assert_eq!(rows[0].bridge_fact_id, "fact-demo-bridge");
+        assert_eq!(parentage_rank_skip_bridge_rows_to_tsv(&rows), input);
+    }
+
+    #[test]
+    fn counts_parentage_rank_skip_bridge_priorities() {
+        let rows = vec![
+            bridge_row("fact-demo-1", "high_intermediate_parent_review"),
+            bridge_row("fact-demo-2", "medium_intermediate_parent_review"),
+            bridge_row("fact-demo-3", "low_intermediate_parent_review"),
+        ];
+
+        let counts = parentage_rank_skip_bridge_priority_counts(&rows);
+
+        assert_eq!(counts.high, 1);
+        assert_eq!(counts.medium, 1);
+        assert_eq!(counts.low, 1);
+    }
+
+    fn bridge_row(skip_fact_id: &str, review_priority: &str) -> ParentageRankSkipBridgeTsvRow {
+        ParentageRankSkipBridgeTsvRow {
+            skip_fact_id: skip_fact_id.to_string(),
+            child_id: "title-child".to_string(),
+            child_name: "Demo Child".to_string(),
+            child_rank: "Duchy".to_string(),
+            expected_parent_rank: "Kingdom".to_string(),
+            current_parent_id: "title-empire".to_string(),
+            current_parent_name: "Demo Empire".to_string(),
+            current_parent_rank: "Empire".to_string(),
+            span: "1..20".to_string(),
+            candidate_parent_id: "title-kingdom".to_string(),
+            candidate_parent_name: "Demo Kingdom".to_string(),
+            candidate_exists: "1..20".to_string(),
+            overlap_years: "20".to_string(),
+            bridge_fact_id: "fact-demo-bridge".to_string(),
+            review_priority: review_priority.to_string(),
+            notes: "Review row.".to_string(),
+        }
     }
 
     fn title(id: &str, name: &str, rank: duchy::TitleRank) -> duchy::Title {
