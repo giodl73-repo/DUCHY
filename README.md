@@ -194,6 +194,10 @@ gap queue now has 130 rows.
 The fourth county title harvest promotes County of La Marche with a corrected
 `958..1527` span. The accepted catalog now has 428 reviewed sources, 1298 facts,
 346 titles, and 260 parentage facts; the parentage gap queue now has 131 rows.
+The county title harvest closure reconciles all 21 ready title/title-follow-up
+candidates from the 500-row farm: 7 were already accepted, 9 were promoted by
+harvest batches 01-04, and 5 remain deferred pending better bounded source or
+rank/span policy.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

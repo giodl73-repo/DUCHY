@@ -399,6 +399,9 @@ Pulses:
 141. County title harvest batch 04. Complete for promoting County of La Marche
     as a corrected title-only packet using the first listed count for the
     bounded start and 1527 crown seizure for the endpoint.
+142. County title harvest closure. Complete for reconciling all 21 ready
+    title/title-follow-up candidates from the county-scale farm into already
+    accepted, promoted, or deferred states.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.
