@@ -63,6 +63,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-bridge-cluster-review-tsv" {
             return parentage_rank_skip_bridge_cluster_review_tsv(manifest_path, output_path);
         }
+        if command == "parentage-rank-skip-bridge-cluster-review-report" {
+            return parentage_rank_skip_bridge_cluster_review_report(manifest_path, output_path);
+        }
     }
     if let [command, sources_path, facts_path, output_path] = args.as_slice() {
         if command == "parentage-coverage-report" {
@@ -122,7 +125,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -1622,6 +1625,97 @@ fn parentage_rank_skip_bridge_cluster_review_tsv(
     println!("- clusters: {}", rows.len());
     println!("- default status: pending_review");
     println!("- default disposition: not_inferred");
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn parentage_rank_skip_bridge_cluster_review_report(
+    input_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let input_text = fs::read_to_string(input_path)
+        .map_err(|error| vec![format!("failed to read {input_path}: {error}")])?;
+    let rows = parentage_rank_skip_bridge_cluster_review_rows_from_tsv(&input_text)?;
+    if rows.is_empty() {
+        return Err(vec![format!(
+            "{input_path} has no parentage rank skip bridge cluster review rows"
+        )]);
+    }
+
+    let counts = parentage_rank_skip_bridge_cluster_review_counts(&rows);
+    let mut by_status: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut by_disposition: BTreeMap<&str, usize> = BTreeMap::new();
+    let mut by_evidence: BTreeMap<&str, usize> = BTreeMap::new();
+    for row in &rows {
+        *by_status.entry(row.review_status.as_str()).or_default() += 1;
+        *by_disposition
+            .entry(row.review_disposition.as_str())
+            .or_default() += 1;
+        *by_evidence.entry(row.evidence_needed.as_str()).or_default() += 1;
+    }
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Rank Skip Bridge Cluster Review Report\n\n");
+    output.push_str(&format!("source_tsv: {input_path}\n"));
+    output.push_str(&format!("review_rows: {}\n", rows.len()));
+    output.push_str(&format!("pending_review: {}\n", counts.pending));
+    output.push_str(&format!("not_inferred: {}\n", counts.not_inferred));
+    output.push_str(&format!("high_priority_rows: {}\n", counts.high));
+    output.push_str(&format!("medium_priority_rows: {}\n", counts.medium));
+    output.push_str(&format!("low_priority_rows: {}\n\n", counts.low));
+
+    output.push_str("## Boundary\n\n");
+    output.push_str("- Review rows are not import-ready parentage claims.\n");
+    output.push_str("- `not_inferred` rows must remain blocked until child-to-candidate evidence is reviewed.\n");
+    output.push_str("- Status or disposition changes should be made in review TSVs, then regenerated into this report.\n\n");
+
+    output.push_str("## Status Counts\n\n");
+    output.push_str("| Status | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (status, count) in by_status {
+        output.push_str(&format!("| {} | {count} |\n", markdown_escape(status)));
+    }
+
+    output.push_str("\n## Disposition Counts\n\n");
+    output.push_str("| Disposition | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (disposition, count) in by_disposition {
+        output.push_str(&format!("| {} | {count} |\n", markdown_escape(disposition)));
+    }
+
+    output.push_str("\n## Evidence Counts\n\n");
+    output.push_str("| Evidence Needed | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (evidence, count) in by_evidence {
+        output.push_str(&format!("| {} | {count} |\n", markdown_escape(evidence)));
+    }
+
+    output.push_str("\n## Review Rows\n\n");
+    output.push_str("| Status | Disposition | Candidate Parent | Current Parent | Children | High | Medium | Low | Evidence Needed |\n");
+    output.push_str("|---|---|---|---|---:|---:|---:|---:|---|\n");
+    for row in &rows {
+        output.push_str(&format!(
+            "| {} | {} | {} | {} | {} | {} | {} | {} | {} |\n",
+            markdown_escape(&row.review_status),
+            markdown_escape(&row.review_disposition),
+            markdown_escape(&row.candidate_parent_name),
+            markdown_escape(&row.current_parent_name),
+            row.child_count,
+            row.high,
+            row.medium,
+            row.low,
+            markdown_escape(&row.evidence_needed)
+        ));
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip bridge cluster review report");
+    println!("- review rows: {}", rows.len());
+    println!("- pending review: {}", counts.pending);
+    println!("- not inferred: {}", counts.not_inferred);
     println!("- output: {output_path}");
 
     Ok(())
@@ -4639,6 +4733,25 @@ mod tests {
         assert_eq!(counts.high, 2);
         assert!(parentage_rank_skip_bridge_cluster_review_rows_to_tsv(&rows)
             .starts_with(parentage_rank_skip_bridge_cluster_review_tsv_header()));
+    }
+
+    #[test]
+    fn counts_parentage_rank_skip_bridge_cluster_review_disposition_variants() {
+        let input = concat!(
+            "review_status\treview_disposition\tcandidate_parent_id\tcandidate_parent_name\tcurrent_parent_id\tcurrent_parent_name\texpected_parent_rank\tchild_count\thigh\tmedium\tlow\tspan_range\tevidence_needed\treview_note\tchild_ids\tchild_names\tskip_fact_ids\tbridge_fact_ids\n",
+            "pending_review\tnot_inferred\ttitle-kingdom\tDemo Kingdom\ttitle-empire\tDemo Empire\tKingdom\t2\t2\t0\t0\t1..30\tchild_to_candidate_parentage_source\tsame-parent bridge overlap is a lead, not evidence\ttitle-child-a,title-child-b\tDemo Child A; Demo Child B\tfact-a,fact-b\tfact-bridge\n",
+            "reviewed\tready_for_packet\ttitle-duchy\tDemo Duchy\ttitle-kingdom\tDemo Kingdom\tDuchy\t1\t0\t1\t0\t1..20\tpacket_source_ready\tverified child-to-candidate parentage\ttitle-child-c\tDemo Child C\tfact-c\tfact-bridge-2\n",
+        );
+
+        let rows = parentage_rank_skip_bridge_cluster_review_rows_from_tsv(input)
+            .expect("review rows should parse");
+        let counts = parentage_rank_skip_bridge_cluster_review_counts(&rows);
+
+        assert_eq!(rows.len(), 2);
+        assert_eq!(counts.pending, 1);
+        assert_eq!(counts.not_inferred, 1);
+        assert_eq!(counts.high, 2);
+        assert_eq!(counts.medium, 1);
     }
 
     fn bridge_row(skip_fact_id: &str, review_priority: &str) -> ParentageRankSkipBridgeTsvRow {
