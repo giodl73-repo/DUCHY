@@ -1,0 +1,9 @@
+# Reviewed parentage packet for Princely Abbey of Fulda under the Holy Roman Empire.
+
+fact_id: fact-q661240-parent-q12548
+subject_id: title-q661240
+claim_kind: parentage
+span: 1221..1802
+value: title-q12548
+source_ids: src-wikipedia-princely-abbey-fulda, src-wikidata-q12548
+confidence: multi_source

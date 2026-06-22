@@ -225,6 +225,10 @@ The next medium-priority parentage packet adds Free imperial city of Dortmund
 under the Holy Roman Empire for `1220..1803`. The accepted catalog now has 432
 reviewed sources, 1305 facts, 346 titles, and 267 parentage facts; 222 titles
 now have reviewed parentage and 124 titles remain without parentage.
+The next medium-priority parentage packet adds Princely Abbey of Fulda under the
+Holy Roman Empire for `1221..1802`. The accepted catalog now has 432 reviewed
+sources, 1306 facts, 346 titles, and 268 parentage facts; 223 titles now have
+reviewed parentage and 123 titles remain without parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

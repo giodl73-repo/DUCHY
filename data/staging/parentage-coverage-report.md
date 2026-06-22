@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 432
-facts: 1305
+facts: 1306
 titles: 346
-parentage_facts: 267
-titles_with_parentage: 222
-titles_without_parentage: 124
+parentage_facts: 268
+titles_with_parentage: 223
+titles_without_parentage: 123
 
 ## Coverage By Rank
 
@@ -18,7 +18,7 @@ titles_without_parentage: 124
 | FreeCity | 2 | 2 | 0 |
 | Kingdom | 123 | 47 | 76 |
 | Province | 1 | 1 | 0 |
-| TheocraticState | 3 | 0 | 3 |
+| TheocraticState | 3 | 1 | 2 |
 
 ## Titles Without Parentage
 
@@ -122,7 +122,6 @@ titles_without_parentage: 124
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
-- title-q661240 | Princely Abbey of Fulda | TheocraticState | 1221..1802
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q70972 | Kingdom of France | Kingdom | 987..1791

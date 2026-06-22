@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 24
+gap_rows: 23
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 19 |
+| medium_parentage_review | 18 |
 | root_or_successor_review | 4 |
 
 ## Rank Counts
@@ -19,16 +19,8 @@ gap_rows: 24
 | Duchy | 1 |
 | Empire | 4 |
 | Kingdom | 17 |
-| TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q661240 | Princely Abbey of Fulda
-
-- rank: TheocraticState
-- exists: 1221..1802
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 

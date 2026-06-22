@@ -420,6 +420,8 @@ Pulses:
     Britain.
 148. Dortmund HRE parentage. Complete for importing a reviewed `1220..1803`
     Free imperial city of Dortmund parentage span under the Holy Roman Empire.
+149. Fulda HRE parentage. Complete for importing a reviewed `1221..1802`
+    Princely Abbey of Fulda parentage span under the Holy Roman Empire.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

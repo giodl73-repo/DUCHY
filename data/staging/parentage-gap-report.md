@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 124
+gap_rows: 123
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 83 |
+| medium_parentage_review | 82 |
 | root_or_successor_review | 39 |
 
 ## Rank Counts
@@ -19,7 +19,7 @@ gap_rows: 124
 | Duchy | 2 |
 | Empire | 39 |
 | Kingdom | 76 |
-| TheocraticState | 3 |
+| TheocraticState | 2 |
 
 ## Review Rows
 
@@ -722,13 +722,6 @@ gap_rows: 124
 - exists: 500..650
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q661240 | Princely Abbey of Fulda
-
-- rank: TheocraticState
-- exists: 1221..1802
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q676184 | Kingdom of Sussex
 
