@@ -1,11 +1,11 @@
 # DUCHY Parentage Coverage Report
 
 sources: 436
-facts: 1316
+facts: 1317
 titles: 348
-parentage_facts: 272
-titles_with_parentage: 227
-titles_without_parentage: 121
+parentage_facts: 273
+titles_with_parentage: 228
+titles_without_parentage: 120
 
 ## Coverage By Rank
 
@@ -16,7 +16,7 @@ titles_without_parentage: 121
 | Duchy | 138 | 136 | 2 |
 | Empire | 40 | 0 | 40 |
 | FreeCity | 2 | 2 | 0 |
-| Kingdom | 123 | 51 | 72 |
+| Kingdom | 123 | 52 | 71 |
 | Province | 1 | 1 | 0 |
 | TheocraticState | 3 | 1 | 2 |
 
@@ -53,7 +53,6 @@ titles_without_parentage: 121
 - title-q16056854 | Kingdom of Hungary | Kingdom | 1301..1526
 - title-q16084290 | Illyrian kingdom | Kingdom | -700..-135
 - title-q161885 | Kingdom of Great Britain | Crown | 1707..1801
-- title-q1649871 | Kingdom of Poland | Kingdom | 1386..1569
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
 - title-q170174 | Papal States | TheocraticState | 754..1870

@@ -1,5 +1,4 @@
 title_id	name	rank	exists	parentage_count	review_priority	notes
-title-q34266	Russian Empire	Empire	1721..1917	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
 title-q3446210	Kingdom of Pamplona	Kingdom	824..1162	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q3755547	Kingdom of Italy	Kingdom	476..493	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q377350	Iberian Union	Empire	1580..1640	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
@@ -24,3 +23,4 @@ title-q62651	Denmark-Norway	Empire	1536..1814	0	root_or_successor_review	May be 
 title-q633573	Kingdom of Rheged	Kingdom	500..650	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q676184	Kingdom of Sussex	Kingdom	477..825	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.
 title-q701983	Palatinate-Zweibrucken	Empire	1444..1801	0	root_or_successor_review	May be a root title; review only if successor, union, or super-entity claim exists.
+title-q70972	Kingdom of France	Kingdom	987..1791	0	medium_parentage_review	Find reviewed empire, union, confederation, or successor-context source.

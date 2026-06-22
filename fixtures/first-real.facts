@@ -10343,3 +10343,13 @@ span: 1346..1346
 value: title-q1406298
 source_ids: src-wikidata-q2415003, src-wikidata-q1406298, src-wikipedia-serbian-empire
 confidence: multi_source
+---
+# Reviewed endpoint parentage packet for Jagiellon Kingdom of Poland under the Polish-Lithuanian Commonwealth.
+
+fact_id: fact-q1649871-parent-q172107
+subject_id: title-q1649871
+claim_kind: parentage
+span: 1569..1569
+value: title-q172107
+source_ids: src-wikidata-q1649871, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth
+confidence: multi_source

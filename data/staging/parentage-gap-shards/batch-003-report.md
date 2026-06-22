@@ -7,25 +7,18 @@ gap_rows: 25
 
 | Priority | Rows |
 |---|---:|
-| medium_parentage_review | 16 |
-| root_or_successor_review | 9 |
+| medium_parentage_review | 15 |
+| root_or_successor_review | 10 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Empire | 9 |
-| Kingdom | 15 |
+| Empire | 10 |
+| Kingdom | 14 |
 | TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q19083 | Kingdom of Iberia
-
-- rank: Kingdom
-- exists: -299..580
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q191077 | Kingdom of Yugoslavia
 
@@ -194,4 +187,11 @@ gap_rows: 25
 - exists: 450..871
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q34266 | Russian Empire
+
+- rank: Empire
+- exists: 1721..1917
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

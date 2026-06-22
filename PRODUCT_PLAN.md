@@ -431,6 +431,9 @@ Pulses:
 152. Serbia Empire parentage. Complete for promoting the Serbian Empire as a
     bounded `Empire` title and importing medieval Kingdom of Serbia endpoint
     parentage under it for `1346..1346`.
+153. Poland Commonwealth parentage. Complete for importing Jagiellon Kingdom of
+    Poland endpoint parentage under the Polish-Lithuanian Commonwealth for
+    `1569..1569`.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 121
+gap_rows: 120
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| medium_parentage_review | 79 |
+| medium_parentage_review | 78 |
 | root_or_successor_review | 40 |
 
 ## Rank Counts
@@ -18,7 +18,7 @@ gap_rows: 121
 | Crown | 5 |
 | Duchy | 2 |
 | Empire | 40 |
-| Kingdom | 72 |
+| Kingdom | 71 |
 | TheocraticState | 2 |
 
 ## Review Rows
@@ -239,13 +239,6 @@ gap_rows: 121
 - exists: 1707..1801
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
-
-### title-q1649871 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1386..1569
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q165154 | Kingdom of Sardinia
 

@@ -1,9 +1,9 @@
 # DUCHY Parentage Change Report
 
 sources: 436
-facts: 1316
+facts: 1317
 titles: 348
-parentage_titles: 227
+parentage_titles: 228
 titles_with_parent_changes: 34
 parent_changes: 44
 county_parentage_titles: 33
@@ -18,7 +18,7 @@ county_parent_changes: 2
 | Duchy | 136 | 26 | 33 |
 | Province | 1 | 0 | 0 |
 | FreeCity | 2 | 0 | 0 |
-| Kingdom | 51 | 6 | 9 |
+| Kingdom | 52 | 6 | 9 |
 | Crown | 3 | 0 | 0 |
 | TheocraticState | 1 | 0 | 0 |
 

@@ -65,13 +65,6 @@ gap_rows: 25
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, or successor-context source.
 
-### title-q1649871 | Kingdom of Poland
-
-- rank: Kingdom
-- exists: 1386..1569
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
-
 ### title-q165154 | Kingdom of Sardinia
 
 - rank: Kingdom
@@ -195,6 +188,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 893..1020
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q19083 | Kingdom of Iberia
+
+- rank: Kingdom
+- exists: -299..580
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

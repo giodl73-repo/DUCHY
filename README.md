@@ -246,6 +246,11 @@ parentage under it for `1346..1346`. The accepted catalog now has 436 reviewed
 sources, 1316 facts, 348 titles, and 272 parentage facts; 227 titles now have
 reviewed parentage and the parentage gap queue remains at 121 rows because the
 new Serbian Empire title itself needs root-or-successor review.
+The next medium-priority endpoint packet adds Jagiellon Kingdom of Poland
+endpoint parentage under the Polish-Lithuanian Commonwealth for `1569..1569`.
+The accepted catalog now has 436 reviewed sources, 1317 facts, 348 titles, and
+273 parentage facts; 228 titles now have reviewed parentage and 120 titles
+remain without parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

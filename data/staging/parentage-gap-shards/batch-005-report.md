@@ -1,14 +1,14 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: C:\src\TRACKER\repos\games-design\duchy\data\staging\parentage-gap-shards\batch-005.tsv
-gap_rows: 21
+gap_rows: 20
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 17 |
+| medium_parentage_review | 16 |
 | root_or_successor_review | 3 |
 
 ## Rank Counts
@@ -18,16 +18,9 @@ gap_rows: 21
 | Crown | 1 |
 | Duchy | 1 |
 | Empire | 3 |
-| Kingdom | 16 |
+| Kingdom | 15 |
 
 ## Review Rows
-
-### title-q70972 | Kingdom of France
-
-- rank: Kingdom
-- exists: 987..1791
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q71084 | First French Empire
 
