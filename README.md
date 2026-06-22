@@ -315,6 +315,9 @@ without opening every shard.
 The packet-stub report emits import-planning stubs only for rows explicitly
 marked `reviewed` and `ready_for_packet`; the current queue emits zero stubs
 because all rows remain blocked.
+The first completed cluster review marks the Nassau/Brandenburg bridge lead as
+`same_parent_sibling_false_positive`: both were Holy Roman Empire states, but
+the review found no child-to-candidate parentage edge.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

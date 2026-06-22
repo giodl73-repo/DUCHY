@@ -2,8 +2,8 @@
 
 source_tsv: data/staging/parentage-rank-skip-bridge-cluster-review.tsv
 review_rows: 20
-pending_review: 20
-not_inferred: 20
+pending_review: 19
+not_inferred: 19
 high_priority_rows: 150
 medium_priority_rows: 9
 low_priority_rows: 3
@@ -18,19 +18,22 @@ low_priority_rows: 3
 
 | Status | Rows |
 |---|---:|
-| pending_review | 20 |
+| pending_review | 19 |
+| reviewed | 1 |
 
 ## Disposition Counts
 
 | Disposition | Rows |
 |---|---:|
-| not_inferred | 20 |
+| not_inferred | 19 |
+| same_parent_sibling_false_positive | 1 |
 
 ## Evidence Counts
 
 | Evidence Needed | Rows |
 |---|---:|
-| child_to_candidate_parentage_source | 20 |
+| child_to_candidate_parentage_source | 19 |
+| none_after_negative_review | 1 |
 
 ## Review Rows
 
@@ -55,4 +58,4 @@ low_priority_rows: 3
 | pending_review | not_inferred | Duchy of Ferrara | Papal States | 1 | 1 | 0 | 0 | child_to_candidate_parentage_source |
 | pending_review | not_inferred | Eastern Hungarian Kingdom | Ottoman Empire | 1 | 1 | 0 | 0 | child_to_candidate_parentage_source |
 | pending_review | not_inferred | Kingdom of Imereti | Russian Empire | 1 | 1 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Margraviate of Brandenburg | Holy Roman Empire | 1 | 1 | 0 | 0 | child_to_candidate_parentage_source |
+| reviewed | same_parent_sibling_false_positive | Margraviate of Brandenburg | Holy Roman Empire | 1 | 1 | 0 | 0 | none_after_negative_review |
