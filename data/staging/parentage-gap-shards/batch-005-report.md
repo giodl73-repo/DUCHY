@@ -8,8 +8,8 @@ gap_rows: 25
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 1 |
-| medium_parentage_review | 20 |
-| root_or_successor_review | 4 |
+| medium_parentage_review | 19 |
+| root_or_successor_review | 5 |
 
 ## Rank Counts
 
@@ -17,18 +17,11 @@ gap_rows: 25
 |---|---:|
 | Crown | 2 |
 | Duchy | 1 |
-| Empire | 4 |
-| Kingdom | 17 |
+| Empire | 5 |
+| Kingdom | 16 |
 | TheocraticState | 1 |
 
 ## Review Rows
-
-### title-q62567 | Kingdom of Iceland
-
-- rank: Kingdom
-- exists: 1918..1944
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, confederation, or successor-context source.
 
 ### title-q62623 | Kalmar Union
 
@@ -197,4 +190,11 @@ gap_rows: 25
 - exists: 700..1256
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q926295 | Italian Empire
+
+- rank: Empire
+- exists: 1882..1946
+- review_priority: root_or_successor_review
+- notes: May be a root title; review only if successor, union, or super-entity claim exists.
 

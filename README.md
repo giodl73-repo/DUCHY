@@ -210,6 +210,11 @@ The next post-harvest endpoint packet adds County of La Marche under the
 Kingdom of France for `1527..1527`. The accepted catalog now has 429 reviewed
 sources, 1301 facts, 346 titles, and 263 parentage facts; 218 titles now have
 reviewed parentage and 128 titles remain without parentage.
+The next post-harvest parentage packet adds County of Girona under the
+Carolingian Empire for `800..887`. The accepted catalog now has 430 reviewed
+sources, 1302 facts, 346 titles, and 264 parentage facts; 219 titles now have
+reviewed parentage, 33 county titles have parentage, and the generated parentage
+gap queue has no active high-priority rows.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

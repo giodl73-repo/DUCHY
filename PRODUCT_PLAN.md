@@ -411,6 +411,9 @@ Pulses:
 145. La Marche French crown parentage. Complete for importing a reviewed
     `1527..1527` County of La Marche endpoint parentage span under the Kingdom
     of France.
+146. Girona Carolingian parentage. Complete for importing a reviewed
+    `800..887` County of Girona parentage span under the Carolingian Empire,
+    closing the active post-harvest high-priority parentage queue.
 
 Real historical title data may be imported only after the concrete source record
 passes the source-custody review gate.

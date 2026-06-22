@@ -15,17 +15,9 @@ gap_rows: 25
 | Rank | Rows |
 |---|---:|
 | Empire | 9 |
-| Kingdom | 15 |
-| TheocraticState | 1 |
+| Kingdom | 16 |
 
 ## Review Rows
-
-### title-q2992329 | County Palatine of Durham
-
-- rank: TheocraticState
-- exists: 883..1836
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q3181749 | Arab Caliphate
 
@@ -192,6 +184,13 @@ gap_rows: 25
 
 - rank: Kingdom
 - exists: 420..634
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q62567 | Kingdom of Iceland
+
+- rank: Kingdom
+- exists: 1918..1944
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 

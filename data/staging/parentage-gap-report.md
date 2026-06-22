@@ -1,14 +1,13 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data\staging\parentage-gap-targets.tsv
-gap_rows: 128
+gap_rows: 127
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | blocked_parentage_review | 2 |
-| high_parentage_review | 1 |
 | medium_parentage_review | 86 |
 | root_or_successor_review | 39 |
 
@@ -16,7 +15,6 @@ gap_rows: 128
 
 | Rank | Rows |
 |---|---:|
-| County | 1 |
 | Crown | 3 |
 | Duchy | 2 |
 | Empire | 39 |
@@ -431,13 +429,6 @@ gap_rows: 128
 - exists: 1881..1947
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q2037817 | County of Girona
-
-- rank: County
-- exists: 785..897
-- review_priority: high_parentage_review
-- notes: Find reviewed duchy, kingdom, or empire parentage source.
 
 ### title-q203817 | First Bulgarian Empire
 

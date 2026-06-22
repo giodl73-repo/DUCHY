@@ -10209,3 +10209,13 @@ span: 1527..1527
 value: title-q70972
 source_ids: src-wikipedia-county-la-marche, src-britannica-marche, src-wikidata-q70972
 confidence: multi_source
+---
+# Reviewed parentage packet for County of Girona under the Carolingian Empire.
+
+fact_id: fact-q2037817-parent-q31929
+subject_id: title-q2037817
+claim_kind: parentage
+span: 800..887
+value: title-q31929
+source_ids: src-wikidata-q2037817, src-wikidata-q31929, src-wikipedia-carolingian-empire, src-chandler-carolingian-catalonia
+confidence: multi_source
