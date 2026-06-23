@@ -11607,3 +11607,69 @@ span: 1871..1918
 value: federal_state_member:title-q43287
 source_ids: src-wikidata-q157710, src-wikidata-q43287, src-wikipedia-saxe-meiningen
 confidence: multi_source
+---
+# Reviewed German state relation packet.
+
+fact_id: fact-q673865-relation-q12548-imperial-state
+subject_id: title-q673865
+claim_kind: relation
+span: 1576..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q673865, src-wikidata-q12548, src-wikipedia-hohenzollern-hechingen
+confidence: multi_source
+---
+fact_id: fact-q673865-relation-q151624-confederation-member
+subject_id: title-q673865
+claim_kind: relation
+span: 1815..1850
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q673865, src-wikidata-q151624, src-wikipedia-hohenzollern-hechingen
+confidence: multi_source
+---
+fact_id: fact-q157013-relation-q12548-imperial-state
+subject_id: title-q157013
+claim_kind: relation
+span: 1576..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q157013, src-wikidata-q12548, src-wikipedia-hohenzollern-sigmaringen
+confidence: multi_source
+---
+fact_id: fact-q157013-relation-q151624-confederation-member
+subject_id: title-q157013
+claim_kind: relation
+span: 1815..1850
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q157013, src-wikidata-q151624, src-wikipedia-hohenzollern-sigmaringen
+confidence: multi_source
+---
+fact_id: fact-q529605-relation-q151624-confederation-member
+subject_id: title-q529605
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q529605, src-wikidata-q151624, src-wikipedia-electorate-hesse
+confidence: multi_source
+---
+fact_id: fact-q693669-relation-q151624-confederation-member
+subject_id: title-q693669
+claim_kind: relation
+span: 1816..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q693669, src-wikidata-q151624, src-wikipedia-grand-duchy-oldenburg
+confidence: multi_source
+---
+fact_id: fact-q693669-relation-q150981-confederation-member
+subject_id: title-q693669
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q693669, src-wikidata-q150981, src-wikipedia-grand-duchy-oldenburg
+confidence: multi_source
+---
+fact_id: fact-q693669-relation-q43287-federal-state-member
+subject_id: title-q693669
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q693669, src-wikidata-q43287, src-wikipedia-grand-duchy-oldenburg
+confidence: multi_source

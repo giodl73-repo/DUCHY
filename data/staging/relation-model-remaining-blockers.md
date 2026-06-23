@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty accepted relation-model packets promote 104 non-parentage
-relation facts. The generated relation report explains 100 of 231 active
+The first twenty-one accepted relation-model packets promote 112 non-parentage
+relation facts. The generated relation report explains 108 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1467 |
+| facts | 1475 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 104 |
+| relation facts | 112 |
 | rank-skip rows | 231 |
-| relation-explained rows | 100 |
-| unexplained rank-skip rows | 131 |
+| relation-explained rows | 108 |
+| unexplained rank-skip rows | 123 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -55,6 +55,7 @@ Current measured baseline:
 | `hre-electorate-relation-01` | 8 | `imperial_state` |
 | `hre-landgraviate-margraviate-relation-01` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-09` | 10 | `imperial_state`, `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
+| `german-state-relation-batch-01` | 8 | `imperial_state`, `confederation_member`, `federal_state_member` |
 
 ## Held Rows
 
@@ -213,3 +214,10 @@ wording; Toul, Lippe, Salzburg, and Saxe-Meiningen use `imperial_state` for
 Holy Roman Empire spans; Lippe, Nassau, and Saxe-Meiningen use
 `confederation_member` for German Confederation spans; and Saxe-Meiningen uses
 `federal_state_member` for its German Empire span.
+
+`german-state-relation-batch-01` promotes eight bounded German state
+membership contexts. Hohenzollern-Hechingen and Hohenzollern-Sigmaringen use
+`imperial_state` for Holy Roman Empire spans and `confederation_member` for
+German Confederation spans; Electorate of Hesse uses `confederation_member`;
+and Oldenburg uses `confederation_member` for German and North German
+Confederation spans plus `federal_state_member` for its German Empire span.

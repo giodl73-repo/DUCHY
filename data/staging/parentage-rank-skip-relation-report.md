@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1467
+facts: 1475
 titles: 356
-relation_facts: 104
+relation_facts: 112
 rank_skip_rows: 231
-relation_explained_rows: 100
-unexplained_rows: 131
+relation_explained_rows: 108
+unexplained_rows: 123
 
 ## Interpretation
 
@@ -19,10 +19,10 @@ unexplained_rows: 131
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 8 |
+| confederation_member | 13 |
 | crownland_component | 2 |
-| federal_state_member | 2 |
-| imperial_state | 62 |
+| federal_state_member | 3 |
+| imperial_state | 64 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
 
@@ -1345,7 +1345,10 @@ unexplained_rows: 131
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q284667-parent-q12548 | Electorate of Mainz -> Holy Roman Empire
 
@@ -1554,7 +1557,10 @@ unexplained_rows: 131
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q693669-parent-q151624 | Grand Duchy of Oldenburg -> German Confederation
 
@@ -1564,7 +1570,10 @@ unexplained_rows: 131
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1816..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1816..1866 | 1816..1866 |
 
 ### fact-q693669-parent-q43287 | Grand Duchy of Oldenburg -> German Empire
 
@@ -1574,7 +1583,10 @@ unexplained_rows: 131
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q154849-parent-q12548 | Grand Duchy of Tuscany -> Holy Roman Empire
 
@@ -1627,7 +1639,10 @@ unexplained_rows: 131
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1576..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1576..1806 | 1576..1806 |
 
 ### fact-q673865-parent-q151624 | Hohenzollern-Hechingen -> German Confederation
 
@@ -1637,7 +1652,10 @@ unexplained_rows: 131
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1850
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1850 | 1815..1850 |
 
 ### fact-q157013-parent-q12548 | Hohenzollern-Sigmaringen -> Holy Roman Empire
 
@@ -1647,7 +1665,10 @@ unexplained_rows: 131
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1576..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1576..1806 | 1576..1806 |
 
 ### fact-q157013-parent-q151624 | Hohenzollern-Sigmaringen -> German Confederation
 
@@ -1657,7 +1678,10 @@ unexplained_rows: 131
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1850
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1850 | 1815..1850 |
 
 ### fact-q50625-parent-q20 | Hordaland -> Kingdom of Norway
 
