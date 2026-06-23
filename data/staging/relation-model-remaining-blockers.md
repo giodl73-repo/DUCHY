@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twelve accepted relation-model packets promote 43 non-parentage
-relation facts. The generated relation report explains 50 of 231 active
+The first thirteen accepted relation-model packets promote 50 non-parentage
+relation facts. The generated relation report explains 57 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1417 |
+| facts | 1424 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 54 |
+| relation facts | 61 |
 | rank-skip rows | 231 |
-| relation-explained rows | 50 |
-| unexplained rank-skip rows | 181 |
+| relation-explained rows | 57 |
+| unexplained rank-skip rows | 174 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -49,6 +49,7 @@ Current measured baseline:
 | `brunswick-wolfenbuttel-welf-relation-01` | 1 | `subdivision_or_appanage` |
 | `duchy-savoy-hre-relation-01` | 1 | `imperial_state` |
 | `hre-relation-batch-05` | 2 | `imperial_state`, `vassalage_or_suzerainty` |
+| `hre-relation-batch-06` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -169,3 +170,10 @@ parent: Duchy of Pomerania as `vassalage_or_suzerainty` for 1121..1637 and
 Duchy of Saxony as `imperial_state` for 962..1296. Both remain relation-only
 because the accepted source notes exclude partition, successor, and dynastic
 detail.
+
+`hre-relation-batch-06` promotes seven bounded relations against the current HRE
+parent for Holstein, Julich, Lorraine, Mecklenburg-Schwerin, Mirandola,
+Augsburg, and Basel. Mirandola uses `vassalage_or_suzerainty` because the
+accepted note says imperial suzerainty; the others use `imperial_state` from
+state/principality wording. All remain relation-only and preserve the accepted
+parentage tree.

@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1417
+facts: 1424
 titles: 356
-relation_facts: 54
+relation_facts: 61
 rank_skip_rows: 231
-relation_explained_rows: 50
-unexplained_rows: 181
+relation_explained_rows: 57
+unexplained_rows: 174
 
 ## Interpretation
 
@@ -22,9 +22,9 @@ unexplained_rows: 181
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 26 |
+| imperial_state | 32 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 2 |
+| vassalage_or_suzerainty | 3 |
 
 ## Review Rows
 
@@ -924,7 +924,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1474..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1474..1806 | 1474..1806 |
 
 ### fact-q704288-parent-q151624 | Duchy of Holstein -> German Confederation
 
@@ -944,7 +947,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1003..1794
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1003..1794 | 1003..1794 |
 
 ### fact-q1352878-parent-q172107 | Duchy of Livonia -> Polish-Lithuanian Commonwealth
 
@@ -964,7 +970,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1766
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1766 | 962..1766 |
 
 ### fact-q2719360-parent-q12548 | Duchy of Luxembourg -> Holy Roman Empire
 
@@ -1004,7 +1013,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1701..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1701..1806 | 1701..1806 |
 
 ### fact-q153529-parent-q12548 | Duchy of Milan -> Holy Roman Empire
 
@@ -1024,7 +1036,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1310..1710
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1310..1710 | 1310..1710 |
 
 ### fact-q252580-parent-q12548 | Duchy of Modena and Reggio -> Holy Roman Empire
 
@@ -2133,7 +2148,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1803 | 962..1803 |
 
 ### fact-q319586-parent-q12548 | Prince-Bishopric of Basel -> Holy Roman Empire
 
@@ -2143,7 +2161,10 @@ unexplained_rows: 181
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1032..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1032..1803 | 1032..1803 |
 
 ### fact-q259511-parent-q12548 | Prince-Bishopric of Freising -> Holy Roman Empire
 
