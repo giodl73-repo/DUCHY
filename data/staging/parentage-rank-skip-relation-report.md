@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1522
+facts: 1531
 titles: 356
-relation_facts: 159
+relation_facts: 168
 rank_skip_rows: 231
-relation_explained_rows: 154
-unexplained_rows: 77
+relation_explained_rows: 163
+unexplained_rows: 68
 
 ## Interpretation
 
@@ -24,7 +24,7 @@ unexplained_rows: 77
 | federal_state_member | 11 |
 | imperial_state | 79 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 12 |
+| vassalage_or_suzerainty | 21 |
 
 ## Review Rows
 
@@ -1229,7 +1229,10 @@ unexplained_rows: 77
 - current_parent_id: title-q71084
 - current_parent_rank: Empire
 - span: 1807..1815
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | First French Empire (title-q71084) | 1807..1815 | 1807..1815 |
 
 ### fact-q657241-parent-q12548 | Duchy of Westphalia -> Holy Roman Empire
 
@@ -1285,7 +1288,10 @@ unexplained_rows: 77
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1529..1570
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Ottoman Empire (title-q12560) | 1529..1570 | 1529..1570 |
 
 ### fact-q22880-parent-q12548 | Electoral Palatinate -> Holy Roman Empire
 
@@ -1661,7 +1667,10 @@ unexplained_rows: 77
 - current_parent_id: title-q141472
 - current_parent_rank: Empire
 - span: 1263..1478
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Golden Horde (title-q141472) | 1263..1478 | 1263..1478 |
 
 ### fact-q83546-parent-q141472 | Grand Principality of Vladimir -> Golden Horde
 
@@ -1671,7 +1680,10 @@ unexplained_rows: 77
 - current_parent_id: title-q141472
 - current_parent_rank: Empire
 - span: 1259..1389
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Golden Horde (title-q141472) | 1259..1389 | 1259..1389 |
 
 ### fact-q673865-parent-q12548 | Hohenzollern-Hechingen -> Holy Roman Empire
 
@@ -1935,7 +1947,10 @@ unexplained_rows: 77
 - current_parent_id: title-q34266
 - current_parent_rank: Empire
 - span: 1804..1810
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Russian Empire (title-q34266) | 1804..1810 | 1804..1810 |
 
 ### fact-q223936-parent-q71084 | Kingdom of Italy -> First French Empire
 
@@ -2277,7 +2292,10 @@ unexplained_rows: 77
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1390..1402
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Ottoman Empire (title-q12560) | 1390..1402 | 1390..1402 |
 
 ### fact-q736029-parent-q12548-1303 | Nassau-Siegen -> Holy Roman Empire
 
@@ -2414,7 +2432,10 @@ unexplained_rows: 77
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1516..1696
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Ottoman Empire (title-q12560) | 1516..1696 | 1516..1696 |
 
 ### fact-q697254-parent-q12548 | Prince-Bishopric of Munster -> Holy Roman Empire
 
@@ -2554,7 +2575,10 @@ unexplained_rows: 77
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1815..1867
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Ottoman Empire (title-q12560) | 1815..1867 | 1815..1867 |
 
 ### fact-q158151-parent-q12548 | Saxe-Altenburg -> Holy Roman Empire
 
@@ -2798,5 +2822,8 @@ unexplained_rows: 77
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1859..1877
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Ottoman Empire (title-q12560) | 1859..1877 | 1859..1877 |
 

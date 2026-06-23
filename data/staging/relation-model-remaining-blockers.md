@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-seven accepted relation-model packets promote 159 non-parentage
-relation facts. The generated relation report explains 154 of 231 active
+The first twenty-eight accepted relation-model packets promote 168 non-parentage
+relation facts. The generated relation report explains 163 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1522 |
+| facts | 1531 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 159 |
+| relation facts | 168 |
 | rank-skip rows | 231 |
-| relation-explained rows | 154 |
-| unexplained rank-skip rows | 77 |
+| relation-explained rows | 163 |
+| unexplained rank-skip rows | 68 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -62,6 +62,7 @@ Current measured baseline:
 | `german-structured-bridge-relation-01` | 9 | `confederation_member`, `federal_state_member` |
 | `hre-relation-batch-11` | 3 | `imperial_state`, `confederation_member` |
 | `german-structured-bridge-relation-02` | 3 | `confederation_member`, `federal_state_member` |
+| `vassal-satellite-relation-batch-01` | 9 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -264,3 +265,10 @@ unchanged.
 Brunswick bridge contexts authorized by accepted source custody: German
 Confederation, North German Confederation, and German Empire membership for the
 active 1815..1918 title span.
+
+`vassal-satellite-relation-batch-01` promotes nine bounded
+`vassalage_or_suzerainty` contexts from accepted text-backed rows: Duchy of
+Warsaw under the First French Empire, Imereti under the Russian Empire, Moscow
+and Vladimir under the Golden Horde, and five Ottoman vassal/suzerainty rows
+for Eastern Hungarian Kingdom, Moravian Serbia, Prince-Bishopric of Montenegro,
+Principality of Serbia, and the United Principalities.
