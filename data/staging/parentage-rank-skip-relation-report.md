@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 520
-facts: 1336
+facts: 1348
 titles: 349
-relation_facts: 6
+relation_facts: 18
 rank_skip_rows: 223
-relation_explained_rows: 6
-unexplained_rows: 217
+relation_explained_rows: 18
+unexplained_rows: 205
 
 ## Interpretation
 
@@ -18,9 +18,9 @@ unexplained_rows: 217
 
 | Relation Kind | Rows |
 |---|---:|
-| confederation_member | 2 |
+| confederation_member | 5 |
 | federal_state_member | 1 |
-| imperial_state | 3 |
+| imperial_state | 12 |
 
 ## Review Rows
 
@@ -52,7 +52,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1252..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1252..1806 | 1252..1806 |
 
 ### fact-q686965-parent-q151624 | Anhalt-Bernburg -> German Confederation
 
@@ -62,7 +65,10 @@ unexplained_rows: 217
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1863
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1863 | 1815..1863 |
 
 ### fact-q278874-parent-q12548 | Anhalt-Dessau -> Holy Roman Empire
 
@@ -72,7 +78,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1396..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1396..1806 | 1396..1806 |
 
 ### fact-q278874-parent-q151624 | Anhalt-Dessau -> German Confederation
 
@@ -82,7 +91,10 @@ unexplained_rows: 217
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1853
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1853 | 1815..1853 |
 
 ### fact-q264970-parent-q12548 | Anhalt-Kothen -> Holy Roman Empire
 
@@ -92,7 +104,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1396..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1396..1806 | 1396..1806 |
 
 ### fact-q264970-parent-q151624 | Anhalt-Kothen -> German Confederation
 
@@ -102,7 +117,10 @@ unexplained_rows: 217
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1863
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1863 | 1815..1863 |
 
 ### fact-q699964-parent-q12548 | Archduchy of Austria -> Holy Roman Empire
 
@@ -112,7 +130,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1358..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1358..1803 | 1358..1803 |
 
 ### fact-q699964-parent-q131964 | Archduchy of Austria -> Austrian Empire
 
@@ -142,7 +163,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1392..1505
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1392..1505 | 1392..1505 |
 
 ### fact-q556263-parent-q12548 | Brunswick-Luneburg -> Holy Roman Empire
 
@@ -345,7 +369,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1042..1793
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1042..1793 | 1042..1793 |
 
 ### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
 
@@ -375,7 +402,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1160..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1160..1806 | 1160..1806 |
 
 ### fact-q706553-parent-q2577303 | County of Nice -> Kingdom of Sardinia
 
@@ -445,7 +475,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1003..1416
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1003..1416 | 1003..1416 |
 
 ### fact-q1917014-parent-q188586 | County of Sicily -> Kingdom of Sicily
 
@@ -465,7 +498,10 @@ unexplained_rows: 217
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1083..1495
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1083..1495 | 1083..1495 |
 
 ### fact-q5298169-parent-q203493 | Dorohoi County -> Kingdom of Romania
 

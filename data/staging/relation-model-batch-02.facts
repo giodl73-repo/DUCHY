@@ -1,0 +1,97 @@
+# Reviewed non-parentage relation packet for remaining accepted HRE/confederation blockers.
+
+fact_id: fact-q686965-relation-q12548-imperial-state
+subject_id: title-q686965
+claim_kind: relation
+span: 1252..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q686965, src-wikidata-q12548, src-wikipedia-anhalt-bernburg
+confidence: multi_source
+---
+fact_id: fact-q686965-relation-q151624-confederation-member
+subject_id: title-q686965
+claim_kind: relation
+span: 1815..1863
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q686965, src-wikidata-q151624, src-wikipedia-anhalt-bernburg
+confidence: multi_source
+---
+fact_id: fact-q278874-relation-q12548-imperial-state
+subject_id: title-q278874
+claim_kind: relation
+span: 1396..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q278874, src-wikidata-q12548, src-wikipedia-anhalt-dessau
+confidence: multi_source
+---
+fact_id: fact-q278874-relation-q151624-confederation-member
+subject_id: title-q278874
+claim_kind: relation
+span: 1815..1853
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q278874, src-wikidata-q151624, src-wikipedia-anhalt-dessau
+confidence: multi_source
+---
+fact_id: fact-q264970-relation-q12548-imperial-state
+subject_id: title-q264970
+claim_kind: relation
+span: 1396..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q264970, src-wikidata-q12548, src-wikipedia-anhalt-kothen
+confidence: multi_source
+---
+fact_id: fact-q264970-relation-q151624-confederation-member
+subject_id: title-q264970
+claim_kind: relation
+span: 1815..1863
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q264970, src-wikidata-q151624, src-wikipedia-anhalt-kothen
+confidence: multi_source
+---
+fact_id: fact-q699964-relation-q12548-imperial-state
+subject_id: title-q699964
+claim_kind: relation
+span: 1358..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q699964, src-wikidata-q12548, src-wikipedia-archduchy-austria
+confidence: multi_source
+---
+fact_id: fact-q552033-relation-q12548-imperial-state
+subject_id: title-q552033
+claim_kind: relation
+span: 1392..1505
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q552033, src-wikidata-q12548, src-wikipedia-bavaria-munich
+confidence: multi_source
+---
+fact_id: fact-q589251-relation-q12548-imperial-state
+subject_id: title-q589251
+claim_kind: relation
+span: 1042..1793
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q589251, src-wikidata-q12548, src-wikipedia-county-montbeliard
+confidence: multi_source
+---
+fact_id: fact-q12817455-relation-q12548-imperial-state
+subject_id: title-q12817455
+claim_kind: relation
+span: 1160..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q12817455, src-wikidata-q12548, src-wikipedia-county-nassau
+confidence: multi_source
+---
+fact_id: fact-q1232887-relation-q12548-imperial-state
+subject_id: title-q1232887
+claim_kind: relation
+span: 1003..1416
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q1232887, src-wikidata-q12548, src-wikipedia-county-savoy
+confidence: multi_source
+---
+fact_id: fact-q2991474-relation-q12548-imperial-state
+subject_id: title-q2991474
+claim_kind: relation
+span: 1083..1495
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q2991474, src-wikidata-q12548, src-wikipedia-county-wurttemberg
+confidence: multi_source
