@@ -23,6 +23,7 @@ intended answer surfaces before CLI/API behavior is locked.
 | IF-012 | contested fact review packet | Group contested claims and block normal materialization until resolution. | implemented first slice |
 | IF-013 | source-backed parentage materializer | Convert reviewed parentage fact records into temporal `ParentageSpan` relations. | implemented with first real parentage import |
 | IF-014 | reviewed source fixture parser | Parse real reviewed source records that authorize fact fixtures. | implemented first slice |
+| IF-015 | source-backed relation fact materializer | Convert reviewed non-parentage relation facts into typed temporal relation records that can appear in query traces without replacing parentage. | proposed |
 
 ## Answer Shape
 
@@ -48,3 +49,6 @@ Lineage answers should eventually include:
   and remain deferred until fixtures express them.
 - Area identity and title identity must remain separable so a place can move
   between duchies without losing its continuity.
+- Non-parentage relation facts must not silently alter title paths. They may
+  explain rank skips, dependency, membership, subdivision, or transition context
+  in the trace only when source-backed and typed.

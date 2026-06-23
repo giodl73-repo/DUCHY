@@ -14,6 +14,7 @@ Work packages for lineage and territorial-transfer query capability.
 | WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | complete |
 | WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | complete |
 | WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-custody/`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted; concrete imports remain gated per source. | L0: docs review / L1: custody review / L2: source package gate | complete |
+| WP-007 | Non-parentage relation model and query integration. | REQ-002, REQ-003, REQ-004, REQ-006, REQ-015 | `src/lib.rs`, source fixture schema/materializer, query traces, rank-skip reports | Rank-skip review batches show repeated blockers that are not safe parentage replacements. | Typed relation facts exist for membership, vassalage/suzerainty, subdivision/appanage, split fief/control, composite crown, imperial state, federal/confederation member, and rank transition; relation facts appear in traces without creating parentage conflicts or cycles; rank-skip reports can classify explained skips. | L0: cargo test / L1: source-backed fixture demo / L2: lineage and source-custody review | proposed |
 
 ## Work Package Details
 
@@ -150,9 +151,49 @@ Exit criteria:
 Status: complete for policy; concrete source imports remain blocked until a
 source record passes `docs/vtrace/source-custody/REVIEW_GATE.md`.
 
+### WP-007: Non-Parentage Relation Model And Query Integration
+
+Objective: model source-backed historical relations that explain hierarchy and
+lineage questions without collapsing them into direct parentage.
+
+Parent requirement IDs: REQ-002, REQ-003, REQ-004, REQ-006, REQ-015.
+
+Affected files/modules:
+
+- `src/lib.rs`
+- source fixture schema and parser
+- query trace answer types
+- rank-skip reports and review artifacts
+- source-backed fixture tests
+
+Exit criteria:
+
+- relation facts are distinct from `parentage` facts,
+- relation types cover imperial-state/estate, confederation membership,
+  federal-state membership, composite-crown component, split fief/control,
+  vassalage/suzerainty, subdivision/appanage, and rank transition,
+- relation facts can be source-backed, date-bounded, and confidence-labeled,
+- query traces can display relation facts beside a parentage path without
+  changing the path,
+- rank-skip reports can classify rows explained by relation facts,
+- tests prove relation facts do not create parentage conflicts or snapshot
+  cycles.
+
+Verification commands:
+
+```powershell
+cargo test --quiet
+cargo run --quiet --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
+cargo run --quiet --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-targets.tsv
+git diff --check
+```
+
+Status: proposed.
+
 ## Orphan Check
 
 - [x] Every accepted `REQ-*` is assigned to a work package or dispositioned.
+- [x] Proposed `REQ-*` entries are assigned to a proposed work package.
 - [x] Every interface-changing work package names `IF-*` IDs in `TRACE.md` or
   `INTERFACES.md`.
 - [x] Every work package has exit criteria and verification commands or a

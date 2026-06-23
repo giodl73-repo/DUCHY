@@ -19,6 +19,7 @@ Lineage and territorial-transfer question support for DUCHY.
 | REQ-009 | DUCHY shall represent time-varying parentage as spans or events rather than overwriting a title's current parent. | CONOPS-001 / CONOPS-002 | Areas moving between duchies cannot be reconstructed from a single static parent field. | must | Timeline Steward | test / inspection | accepted |
 | REQ-010 | DUCHY shall support area identity separately from title identity when a place, title, holder, or parentage changes independently. | CONOPS-002 / CONOPS-003 | The user asks about areas moving between duchies, not only title records changing labels. | must | Territorial Lineage Reviewer | test / review | accepted |
 | REQ-011 | DUCHY shall define seed fixtures that include at least one no-transfer case, one single-transfer case, and one multi-transfer case before accepting range-transfer behavior. | CONOPS-002 / CONOPS-005 | Transfer queries need positive and negative fixtures before implementation claims. | must | Query Interface Reviewer | test / inspection | accepted |
+| REQ-015 | DUCHY shall represent source-backed non-parentage title relations separately from parentage when evidence expresses membership, vassalage, subdivision, fief/control, composite-crown, or rank-transition semantics. | CONOPS-001 / CONOPS-002 / CONOPS-005 | The rank-skip review queue shows many CK-style hierarchy gaps are real historical relations that are not safe parentage replacements. | must later | Territorial Lineage Reviewer | test / review | proposed |
 
 ## Requirement Quality Checklist
 

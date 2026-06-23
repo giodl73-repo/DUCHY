@@ -472,6 +472,11 @@ imports no replacements; every row is a relation-model blocker, with repeated
 needs for subdivision, vassalage, confederation membership, federal-state
 membership, imperial principality, and rank-elevation semantics outside the
 strict parentage tree.
+The relation-model work package converts those blockers into the next major
+milestone: `WP-007` proposes typed source-backed relation facts for imperial
+state, confederation membership, federal-state membership, composite-crown
+component, split fief/control, vassalage, subdivision/appanage, and rank
+transition semantics that can explain rank skips without mutating parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
