@@ -1,0 +1,71 @@
+source_id: src-wikipedia-habsburg-netherlands
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Habsburg_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Habsburg Netherlands article; candidate source for Low Countries successor and split-control review, including Habsburg rule from 1482, Seventeen Provinces context, Spanish Netherlands, Dutch Republic secession, Austrian Netherlands, and French annexation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Low Countries relation review only; no facts promoted in this packet.
+---
+source_id: src-wikipedia-seventeen-provinces
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Seventeen_Provinces
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Seventeen Provinces article; candidate source for Low Countries composite and imperial-fief relation review, including Burgundian inheritance, Habsburg Spain, 1549 Pragmatic Sanction, and the County of Flanders and County of Holland among listed provinces.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Seventeen Provinces relation review only; no facts promoted in this packet.
+---
+source_id: src-wikipedia-spanish-netherlands
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Spanish_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Spanish Netherlands article; candidate source for post-1556 Southern Netherlands successor-state review, including Low Countries states of the Holy Roman Empire held in personal union by the Spanish Habsburgs.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Spanish Netherlands relation review only; no facts promoted in this packet.
+---
+source_id: src-wikipedia-austrian-netherlands
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Austrian_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Austrian Netherlands article; candidate source for post-1714 Southern Netherlands successor-state review, including Burgundian Circle territory under Austrian Habsburg rule until Revolutionary French annexation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Austrian Netherlands relation review only; no facts promoted in this packet.
+---
+source_id: src-wikipedia-dutch-republic
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Dutch_Republic
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Dutch Republic article; candidate source for post-1581 northern Low Countries successor-state review, including County of Holland among the United Provinces.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Dutch Republic relation review only; no facts promoted in this packet.
+---
+source_id: src-wikipedia-batavian-republic
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Batavian_Republic
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Batavian Republic article; candidate source for 1795 successor-state review after the Dutch Republic.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Batavian Republic relation review only; no facts promoted in this packet.

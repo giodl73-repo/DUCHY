@@ -148,6 +148,16 @@ fn promotion_report(
     ));
     report.push_str(&format!("merged_facts: {}\n\n", merged_facts.len()));
 
+    report.push_str("## Candidate Sources\n\n");
+    let mut candidate_sources = candidate_catalog.records().collect::<Vec<_>>();
+    candidate_sources.sort_by(|left, right| left.source_id.cmp(&right.source_id));
+    for source in candidate_sources {
+        report.push_str(&format!(
+            "- {} | {:?} | {:?} | {}\n",
+            source.source_id, source.source_kind, source.allowed_use, source.source_url
+        ));
+    }
+
     report.push_str("## Candidate Titles\n\n");
     for title in candidate_titles {
         report.push_str(&format!(

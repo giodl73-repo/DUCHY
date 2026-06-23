@@ -1177,6 +1177,10 @@ impl SourceCatalog {
         self.records.len()
     }
 
+    pub fn records(&self) -> impl Iterator<Item = &SourceRecord> {
+        self.records.values()
+    }
+
     pub fn review_count(&self) -> usize {
         self.reviews.len()
     }

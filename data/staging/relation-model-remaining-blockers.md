@@ -18,7 +18,7 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 520 |
+| sources | 526 |
 | facts | 1358 |
 | parentage facts | 278 |
 | relation facts | 28 |
@@ -74,3 +74,19 @@ the same gate as the first four packets:
   fixture,
 - `parentage-rank-skip-relation-report` and `parentage-graph-report` are
   regenerated.
+
+## Source-Custody Progress
+
+`low-countries-successor-sources-01` adds six accepted source records for the
+next Low Countries review pass:
+
+- Habsburg Netherlands,
+- Seventeen Provinces,
+- Spanish Netherlands,
+- Austrian Netherlands,
+- Dutch Republic,
+- Batavian Republic.
+
+These records intentionally promote no facts yet. They provide narrower
+source-custody input for later split-control and successor-state relation
+packets covering Flanders, Holland, and Namur.

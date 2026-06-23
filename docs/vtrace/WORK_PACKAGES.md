@@ -198,7 +198,8 @@ milestone is scaling reviewed relation facts so the generated rank-skip relation
 report can classify more of the remaining 195 unexplained rows. The immediate
 reviewed queue is exhausted for safe relation promotion; the next work needs
 source-custody packets for split-control, internal monarchy/crownland, Catalonia,
-rank identity, and child-level intermediate review.
+rank identity, and child-level intermediate review. The first Low Countries
+successor source-custody packet has promoted six source records and no facts.
 
 ## Orphan Check
 
