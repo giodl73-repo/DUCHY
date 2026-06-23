@@ -1,0 +1,25 @@
+# Reviewed German structured bridge relation packet 02.
+
+fact_id: fact-q326029-relation-q151624-confederation-member
+subject_id: title-q326029
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q326029, src-wikidata-q151624, src-wikipedia-duchy-brunswick
+confidence: multi_source
+---
+fact_id: fact-q326029-relation-q150981-confederation-member
+subject_id: title-q326029
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q326029, src-wikidata-q150981, src-wikipedia-duchy-brunswick
+confidence: multi_source
+---
+fact_id: fact-q326029-relation-q43287-federal-state-member
+subject_id: title-q326029
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q326029, src-wikidata-q43287, src-wikipedia-duchy-brunswick
+confidence: multi_source

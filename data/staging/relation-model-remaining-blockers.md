@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-six accepted relation-model packets promote 156 non-parentage
-relation facts. The generated relation report explains 151 of 231 active
+The first twenty-seven accepted relation-model packets promote 159 non-parentage
+relation facts. The generated relation report explains 154 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1519 |
+| facts | 1522 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 156 |
+| relation facts | 159 |
 | rank-skip rows | 231 |
-| relation-explained rows | 151 |
-| unexplained rank-skip rows | 80 |
+| relation-explained rows | 154 |
+| unexplained rank-skip rows | 77 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -61,6 +61,7 @@ Current measured baseline:
 | `hre-relation-batch-10` | 8 | `imperial_state` |
 | `german-structured-bridge-relation-01` | 9 | `confederation_member`, `federal_state_member` |
 | `hre-relation-batch-11` | 3 | `imperial_state`, `confederation_member` |
+| `german-structured-bridge-relation-02` | 3 | `confederation_member`, `federal_state_member` |
 
 ## Held Rows
 
@@ -258,3 +259,8 @@ contexts: Holstein and Saxe-Lauenburg as German Confederation members for
 1815..1866, and Swabia as a Holy Roman Empire imperial state for 962..1313.
 The packet reuses already accepted source custody and leaves parentage
 unchanged.
+
+`german-structured-bridge-relation-02` promotes the three reviewed Duchy of
+Brunswick bridge contexts authorized by accepted source custody: German
+Confederation, North German Confederation, and German Empire membership for the
+active 1815..1918 title span.

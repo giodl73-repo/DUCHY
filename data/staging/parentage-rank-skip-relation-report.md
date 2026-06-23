@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1519
+facts: 1522
 titles: 356
-relation_facts: 156
+relation_facts: 159
 rank_skip_rows: 231
-relation_explained_rows: 151
-unexplained_rows: 80
+relation_explained_rows: 154
+unexplained_rows: 77
 
 ## Interpretation
 
@@ -19,9 +19,9 @@ unexplained_rows: 80
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 34 |
+| confederation_member | 36 |
 | crownland_component | 2 |
-| federal_state_member | 10 |
+| federal_state_member | 11 |
 | imperial_state | 79 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
@@ -804,7 +804,10 @@ unexplained_rows: 80
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q326029-parent-q151624 | Duchy of Brunswick -> German Confederation
 
@@ -814,7 +817,10 @@ unexplained_rows: 80
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q326029-parent-q43287 | Duchy of Brunswick -> German Empire
 
@@ -824,7 +830,10 @@ unexplained_rows: 80
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q2360973-parent-q12548 | Duchy of Carniola -> Holy Roman Empire
 
