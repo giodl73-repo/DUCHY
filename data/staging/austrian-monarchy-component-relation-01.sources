@@ -1,0 +1,122 @@
+# Reviewed Austrian monarchy component relation source packet.
+
+source_id: src-wikipedia-carniola-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Carniola
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Carniola article; reviewed only for post-1804 Austrian Empire and Austria-Hungary crownland/component relation context overlapping accepted parentage spans.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Carniola component relation context under the Austrian Empire and Austria-Hungary; no Inner Austria, Illyrian Provinces interruption, Cisleithanian administration, provincial diet, borders, or Slovenian successor claims imported.
+---
+source_id: src-wikipedia-gorizia-gradisca-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Princely_County_of_Gorizia_and_Gradisca
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Princely County of Gorizia and Gradisca article; reviewed only for Austrian crownland/component relation context during accepted Austrian Empire and Austria-Hungary parentage spans.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Gorizia and Gradisca component relation context under the Austrian Empire and Austria-Hungary; no county partitions, Littoral hierarchy, borders, demographic detail, or post-1918 successor claims imported.
+---
+source_id: src-wikipedia-bohemia-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Bohemia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Bohemia article; reviewed narrowly for Austrian Empire and Austria-Hungary component context after the earlier HRE-only source record.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Kingdom of Bohemia component relation context under the Austrian Empire and Austria-Hungary; no Bohemian Crown internal hierarchy, electoral role, estates, borders, Czechoslovak successor, or nationalist politics imported.
+---
+source_id: src-wikipedia-galicia-lodomeria-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Galicia_and_Lodomeria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Galicia and Lodomeria article; reviewed only for Austrian crownland/component relation context during accepted Austrian Empire and Austria-Hungary parentage spans.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Galicia and Lodomeria component relation context under the Austrian Empire and Austria-Hungary; no partitions of Poland narrative, administrative subdivisions, Bukovina/Lodomeria claim detail, demographics, or post-1918 successor claims imported.
+---
+source_id: src-wikipedia-croatia-slavonia-ah-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Croatia-Slavonia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Croatia-Slavonia article; reviewed only for bounded component relation context under Austria-Hungary during the accepted 1868..1918 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Kingdom of Croatia-Slavonia component relation context under Austria-Hungary; no Croatian-Hungarian Settlement detail, counties, military frontier, Triune Kingdom claims, or Yugoslav successor claims imported.
+---
+source_id: src-wikipedia-hungary-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Hungary
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Hungary article; reviewed only for accepted Austrian Empire and Austria-Hungary component relation context on existing Hungary title nodes.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Kingdom of Hungary component relation context under the Austrian Empire and Austria-Hungary; no medieval kingdom continuity, county inventory, crown lands hierarchy, revolution, compromise detail, or post-1918 successor claims imported.
+---
+source_id: src-wikipedia-illyria-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Illyria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Illyria article; reviewed only for Austrian Empire crownland/component relation context during the accepted 1816..1849 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Kingdom of Illyria component relation context under the Austrian Empire; no Napoleonic predecessor detail, provincial subdivisions, national movement, or later Austrian Littoral claims imported.
+---
+source_id: src-wikipedia-lombardy-venetia-austrian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Lombardy%E2%80%93Venetia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Lombardy-Venetia article; reviewed only for Austrian Empire component relation context during the accepted 1815..1866 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Lombardy-Venetia component relation context under the Austrian Empire; no Napoleonic predecessor, provinces, revolutions, wars of independence, Venetian/Lombard split, or Italian successor claims imported.
+---
+source_id: src-wikipedia-moravia-ah-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Margraviate_of_Moravia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Margraviate of Moravia article; reviewed only for Austria-Hungary component relation context during the accepted 1867..1918 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Margraviate of Moravia component relation context under Austria-Hungary; no Bohemian Crown internal hierarchy, diets, districts, borders, or Czechoslovak successor claims imported.
+---
+source_id: src-wikipedia-salzburg-ah-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Salzburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Salzburg article; reviewed only for Austria-Hungary crownland/component relation context during the accepted 1867..1918 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Duchy of Salzburg component relation context under Austria-Hungary; no archbishopric predecessor, electorate, Bavarian transfer, district detail, or modern Austrian state successor claims imported.
+---

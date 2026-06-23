@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 555
-facts: 1566
+sources: 565
+facts: 1582
 titles: 356
-relation_facts: 203
+relation_facts: 219
 rank_skip_rows: 231
-relation_explained_rows: 198
-unexplained_rows: 33
+relation_explained_rows: 214
+unexplained_rows: 17
 
 ## Interpretation
 
@@ -18,9 +18,9 @@ unexplained_rows: 33
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 15 |
+| composite_crown_component | 19 |
 | confederation_member | 41 |
-| crownland_component | 2 |
+| crownland_component | 14 |
 | federal_state_member | 13 |
 | imperial_state | 79 |
 | rank_transition | 6 |
@@ -881,7 +881,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1804..1866 | 1804..1866 |
 
 ### fact-q2360973-parent-q28513 | Duchy of Carniola -> Austria-Hungary
 
@@ -891,7 +894,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q641138-parent-q12548 | Duchy of Cleves -> Holy Roman Empire
 
@@ -1168,7 +1174,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q426025-parent-q12548 | Duchy of Savoy -> Holy Roman Empire
 
@@ -1465,7 +1474,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1804..1866 | 1804..1866 |
 
 ### fact-q692946-parent-q28513 | Gorizia and Gradisca -> Austria-Hungary
 
@@ -1475,7 +1487,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q186320-parent-q151624 | Grand Duchy of Baden -> German Confederation
 
@@ -1875,7 +1890,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1804..1866 | 1804..1866 |
 
 ### fact-q42585-parent-q28513 | Kingdom of Bohemia -> Austria-Hungary
 
@@ -1885,7 +1903,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q2980623-parent-q12560 | Kingdom of Bosnia -> Ottoman Empire
 
@@ -1908,7 +1929,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1868..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austria-Hungary (title-q28513) | 1868..1918 | 1868..1918 |
 
 ### fact-q223793-parent-q71084 | Kingdom of Etruria -> First French Empire
 
@@ -1931,7 +1955,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1804..1866 | 1804..1866 |
 
 ### fact-q2396442-parent-q28513 | Kingdom of Galicia and Lodomeria -> Austria-Hungary
 
@@ -1941,7 +1968,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q164079-parent-q151624 | Kingdom of Hanover -> German Confederation
 
@@ -1977,7 +2007,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1867
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austrian Empire (title-q131964) | 1804..1867 | 1804..1867 |
 
 ### fact-q253094-parent-q131964 | Kingdom of Hungary -> Austrian Empire
 
@@ -1987,7 +2020,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1867
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austrian Empire (title-q131964) | 1804..1867 | 1804..1867 |
 
 ### fact-q25395037-parent-q28513 | Kingdom of Hungary -> Austria-Hungary
 
@@ -1997,7 +2033,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q1117051-parent-q131964 | Kingdom of Illyria -> Austrian Empire
 
@@ -2007,7 +2046,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1816..1849
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1816..1849 | 1816..1849 |
 
 ### fact-q1069959-parent-q34266 | Kingdom of Imereti -> Russian Empire
 
@@ -2066,7 +2108,10 @@ unexplained_rows: 33
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1815..1866 | 1815..1866 |
 
 ### fact-q696908-parent-q43287 | Kingdom of Poland -> German Empire
 
@@ -2372,7 +2417,10 @@ unexplained_rows: 33
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q552822-parent-q12548 | Mecklenburg-Gustrow -> Holy Roman Empire
 

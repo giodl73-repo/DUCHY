@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty-five accepted relation-model packets promote 203 non-parentage
-relation facts. The generated relation report explains 198 of 231 active
+The first thirty-six accepted relation-model packets promote 219 non-parentage
+relation facts. The generated relation report explains 214 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -21,14 +21,14 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 555 |
-| facts | 1566 |
+| sources | 565 |
+| facts | 1582 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 203 |
+| relation facts | 219 |
 | rank-skip rows | 231 |
-| relation-explained rows | 198 |
-| unexplained rank-skip rows | 33 |
+| relation-explained rows | 214 |
+| unexplained rank-skip rows | 17 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -70,6 +70,7 @@ Current measured baseline:
 | `commonwealth-union-subdivision-relation-01` | 6 | `vassalage_or_suzerainty`, `composite_crown_component`, `subdivision_or_appanage` |
 | `german-polish-client-relation-01` | 5 | `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 | `administrative-dependency-relation-01` | 6 | `subdivision_or_appanage`, `vassalage_or_suzerainty` |
+| `austrian-monarchy-component-relation-01` | 16 | `crownland_component`, `composite_crown_component` |
 
 ## Held Rows
 
@@ -324,3 +325,12 @@ and promotes six bounded relation contexts: Cetatea-Alba County, Dorohoi County,
 County of Nice, Grand Duchy of Finland, and Illyrian Provinces as
 subdivision/appanage contexts under their accepted parents, plus Kingdom of the
 Burgundians as a Western Roman dependency/suzerainty context.
+
+`austrian-monarchy-component-relation-01` adds ten reviewed text source records
+and promotes sixteen bounded Austrian monarchy component contexts. Carniola,
+Gorizia and Gradisca, Bohemia, Galicia and Lodomeria, Illyria,
+Lombardy-Venetia, Moravia, and Salzburg use `crownland_component` for accepted
+Austrian Empire or Austria-Hungary parent spans. Croatia-Slavonia and the three
+accepted Kingdom of Hungary title rows use `composite_crown_component` where
+the source custody is broader kingdom/dual-monarchy component context rather
+than narrow Cisleithanian crownland context. Parentage remains unchanged.

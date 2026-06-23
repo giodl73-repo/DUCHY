@@ -12433,3 +12433,134 @@ value: vassalage_or_suzerainty:title-q42834
 source_ids: src-wikidata-q13590051, src-wikidata-q42834, src-wikipedia-kingdom-burgundians-western-roman-dependency
 confidence: multi_source
 ---
+---
+# Reviewed Austrian monarchy component relation packet 01.
+
+fact_id: fact-q2360973-relation-q131964-crownland-component
+subject_id: title-q2360973
+claim_kind: relation
+span: 1804..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q2360973, src-wikidata-q131964, src-wikipedia-carniola-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q2360973-relation-q28513-crownland-component
+subject_id: title-q2360973
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q2360973, src-wikidata-q28513, src-wikipedia-carniola-austrian-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q692946-relation-q131964-crownland-component
+subject_id: title-q692946
+claim_kind: relation
+span: 1804..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q692946, src-wikidata-q131964, src-wikipedia-gorizia-gradisca-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q692946-relation-q28513-crownland-component
+subject_id: title-q692946
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q692946, src-wikidata-q28513, src-wikipedia-gorizia-gradisca-austrian-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q42585-relation-q131964-crownland-component
+subject_id: title-q42585
+claim_kind: relation
+span: 1804..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q42585, src-wikidata-q131964, src-wikipedia-bohemia-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q42585-relation-q28513-crownland-component
+subject_id: title-q42585
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q42585, src-wikidata-q28513, src-wikipedia-bohemia-austrian-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q2396442-relation-q131964-crownland-component
+subject_id: title-q2396442
+claim_kind: relation
+span: 1804..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q2396442, src-wikidata-q131964, src-wikipedia-galicia-lodomeria-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q2396442-relation-q28513-crownland-component
+subject_id: title-q2396442
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q2396442, src-wikidata-q28513, src-wikipedia-galicia-lodomeria-austrian-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q533558-relation-q28513-composite-crown-component
+subject_id: title-q533558
+claim_kind: relation
+span: 1868..1918
+value: composite_crown_component:title-q28513
+source_ids: src-wikidata-q533558, src-wikidata-q28513, src-wikipedia-croatia-slavonia-ah-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q171150-relation-q131964-composite-crown-component
+subject_id: title-q171150
+claim_kind: relation
+span: 1804..1867
+value: composite_crown_component:title-q131964
+source_ids: src-wikidata-q171150, src-wikidata-q131964, src-wikipedia-hungary-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q253094-relation-q131964-composite-crown-component
+subject_id: title-q253094
+claim_kind: relation
+span: 1804..1867
+value: composite_crown_component:title-q131964
+source_ids: src-wikidata-q253094, src-wikidata-q131964, src-wikipedia-hungary-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q25395037-relation-q28513-composite-crown-component
+subject_id: title-q25395037
+claim_kind: relation
+span: 1867..1918
+value: composite_crown_component:title-q28513
+source_ids: src-wikidata-q25395037, src-wikidata-q28513, src-wikipedia-hungary-austrian-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q1117051-relation-q131964-crownland-component
+subject_id: title-q1117051
+claim_kind: relation
+span: 1816..1849
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q1117051, src-wikidata-q131964, src-wikipedia-illyria-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q209857-relation-q131964-crownland-component
+subject_id: title-q209857
+claim_kind: relation
+span: 1815..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q209857, src-wikidata-q131964, src-wikipedia-lombardy-venetia-austrian-component, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q2670751-relation-q28513-crownland-component
+subject_id: title-q2670751
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q2670751, src-wikidata-q28513, src-wikipedia-moravia-ah-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
+fact_id: fact-q661340-relation-q28513-crownland-component
+subject_id: title-q661340
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q661340, src-wikidata-q28513, src-wikipedia-salzburg-ah-component, src-wikipedia-austria-hungary
+confidence: multi_source
+---
