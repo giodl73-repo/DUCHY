@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 520
-facts: 1358
+sources: 526
+facts: 1361
 titles: 349
-relation_facts: 28
+relation_facts: 31
 rank_skip_rows: 223
-relation_explained_rows: 28
-unexplained_rows: 195
+relation_explained_rows: 31
+unexplained_rows: 192
 
 ## Interpretation
 
@@ -21,6 +21,7 @@ unexplained_rows: 195
 | confederation_member | 5 |
 | federal_state_member | 1 |
 | imperial_state | 19 |
+| split_fief_or_control | 3 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 1 |
 
@@ -303,7 +304,10 @@ unexplained_rows: 195
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1483..1797
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1797 | 1483..1797 |
 
 ### fact-q675363-parent-q12548 | County of Geneva -> Holy Roman Empire
 
@@ -349,7 +353,10 @@ unexplained_rows: 195
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1483..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1795 | 1483..1795 |
 
 ### fact-q921473-parent-q70972 | County of La Marche -> Kingdom of France
 
@@ -412,7 +419,10 @@ unexplained_rows: 195
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1483..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1795 | 1483..1795 |
 
 ### fact-q12817455-parent-q12548 | County of Nassau -> Holy Roman Empire
 

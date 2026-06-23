@@ -10700,3 +10700,29 @@ span: 1105..1440
 value: imperial_state:title-q12548
 source_ids: src-wikidata-q568473, src-wikidata-q12548, src-wikipedia-burgraviate-nuremberg
 confidence: multi_source
+---
+# Reviewed Low Countries split-control relation packet.
+
+fact_id: fact-q157070-relation-q12548-split-fief-or-control
+subject_id: title-q157070
+claim_kind: relation
+span: 1483..1797
+value: split_fief_or_control:title-q12548
+source_ids: src-wikidata-q157070, src-wikidata-q12548, src-wikipedia-county-flanders, src-wikipedia-habsburg-netherlands, src-wikipedia-seventeen-provinces, src-wikipedia-spanish-netherlands, src-wikipedia-austrian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q762943-relation-q12548-split-fief-or-control
+subject_id: title-q762943
+claim_kind: relation
+span: 1483..1795
+value: split_fief_or_control:title-q12548
+source_ids: src-wikidata-q762943, src-wikidata-q12548, src-wikipedia-county-holland, src-wikipedia-habsburg-netherlands, src-wikipedia-seventeen-provinces, src-wikipedia-dutch-republic, src-wikipedia-batavian-republic
+confidence: multi_source
+---
+fact_id: fact-q599613-relation-q12548-split-fief-or-control
+subject_id: title-q599613
+claim_kind: relation
+span: 1483..1795
+value: split_fief_or_control:title-q12548
+source_ids: src-wikidata-q599613, src-wikidata-q12548, src-wikipedia-county-namur, src-wikipedia-habsburg-netherlands, src-wikipedia-spanish-netherlands, src-wikipedia-austrian-netherlands
+confidence: multi_source

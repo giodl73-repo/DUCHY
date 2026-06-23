@@ -192,14 +192,14 @@ git diff --check
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
 lookup, validation, title-path query trace context, and rank-skip relation
-classification. The first four accepted relation packets promote 28 relation
-facts and explain 28 active rank-skip rows. The remaining `WP-007` data
+classification. The first five accepted relation packets promote 31 relation
+facts and explain 31 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
-report can classify more of the remaining 195 unexplained rows. The immediate
-reviewed queue is exhausted for safe relation promotion; the next work needs
-source-custody packets for split-control, internal monarchy/crownland, Catalonia,
-rank identity, and child-level intermediate review. The first Low Countries
-successor source-custody packet has promoted six source records and no facts.
+report can classify more of the remaining 192 unexplained rows. The Low
+Countries source-custody pass has promoted six source records and three bounded
+`split_fief_or_control` relation facts; the next work needs source-custody
+packets for internal monarchy/crownland, Catalonia, rank identity, child-level
+intermediate review, and deeper successor-state title modeling.
 
 ## Orphan Check
 
