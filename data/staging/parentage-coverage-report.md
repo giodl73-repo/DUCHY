@@ -1,18 +1,18 @@
 # DUCHY Parentage Coverage Report
 
-sources: 580
-facts: 1601
+sources: 584
+facts: 1609
 titles: 356
-parentage_facts: 290
-titles_with_parentage: 230
-titles_without_parentage: 126
+parentage_facts: 294
+titles_with_parentage: 234
+titles_without_parentage: 122
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
 | County | 32 | 32 | 0 |
-| Crown | 14 | 3 | 11 |
+| Crown | 14 | 7 | 7 |
 | Duchy | 140 | 138 | 2 |
 | Empire | 41 | 0 | 41 |
 | FreeCity | 2 | 2 | 0 |
@@ -23,7 +23,6 @@ titles_without_parentage: 126
 ## Titles Without Parentage
 
 - title-q10295972 | Hunnic Empire | Empire | 316..484
-- title-q1031430 | Habsburg Netherlands | Crown | 1482..1797
 - title-q1048918 | Kingdom of the Suebi | Kingdom | 411..585
 - title-q105092 | Kingdom of Mercia | Kingdom | 527..918
 - title-q105313 | Kingdom of Wessex | Kingdom | 519..927
@@ -98,7 +97,6 @@ titles_without_parentage: 126
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
-- title-q330533 | Seventeen Provinces | Crown | 1549..1581
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
@@ -118,14 +116,12 @@ titles_without_parentage: 126
 - title-q600018 | Kingdom of Hungary | Kingdom | 1920..1946
 - title-q603771 | Emirate of Crete | Empire | 820..961
 - title-q612359 | Kingdom of Lithuania | Kingdom | 1918..1918
-- title-q622783 | Spanish Netherlands | Crown | 1581..1714
 - title-q623751 | Kingdom of Bernicia | Kingdom | 420..634
 - title-q62567 | Kingdom of Iceland | Kingdom | 1918..1944
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
-- title-q700283 | Austrian Netherlands | Crown | 1714..1797
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815

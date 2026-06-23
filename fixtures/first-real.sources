@@ -7351,3 +7351,54 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for Principality of Catalonia parentage and composite-component relation context under the Crown of Aragon; no Generalitat institutional detail, French occupation, Spanish succession, modern autonomous community, or nationalist continuity claims imported.
 ---
+---
+# Reviewed Low Countries crown titles under Holy Roman Empire parentage packet.
+
+source_id: src-wikipedia-habsburg-netherlands-hre-parentage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Habsburg_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Habsburg Netherlands article; reviewed only for bounded Holy Roman Empire parentage and composite relation context for Habsburg-held Low Countries fiefs.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Habsburg Netherlands parentage and composite relation context under the Holy Roman Empire; no Dutch Republic successor, Spanish/Austrian administrative split detail, provincial estates, French annexation, or post-1797 claims imported.
+---
+source_id: src-wikipedia-seventeen-provinces-hre-parentage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Seventeen_Provinces
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Seventeen Provinces article; reviewed only for bounded Holy Roman Empire parentage and composite relation context over the accepted 1549..1581 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Seventeen Provinces parentage and composite relation context under the Holy Roman Empire; no individual province inventory expansion, Dutch Revolt chronology, Spanish Netherlands split, or Dutch Republic successor claims imported.
+---
+source_id: src-wikipedia-spanish-netherlands-hre-parentage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Spanish_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Spanish Netherlands article; reviewed only for bounded Holy Roman Empire parentage and composite relation context for the accepted 1581..1714 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Spanish Netherlands parentage and composite relation context under the Holy Roman Empire; no Spanish Crown hierarchy, Eighty Years' War detail, Dutch Republic recognition, War of Spanish Succession, or Austrian successor claims imported.
+---
+source_id: src-wikipedia-austrian-netherlands-hre-parentage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Austrian_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Austrian Netherlands article; reviewed only for bounded Holy Roman Empire parentage and composite relation context over the accepted 1714..1797 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Austrian Netherlands parentage and composite relation context under the Holy Roman Empire; no Austrian administration, Brabant Revolution, French annexation detail, Burgundian Circle expansion, or Belgian successor claims imported.
+---

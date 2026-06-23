@@ -1,21 +1,21 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 126
+gap_rows: 122
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
 | high_parentage_review | 2 |
-| medium_parentage_review | 83 |
+| medium_parentage_review | 79 |
 | root_or_successor_review | 41 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 11 |
+| Crown | 7 |
 | Duchy | 2 |
 | Empire | 41 |
 | Kingdom | 70 |
@@ -29,13 +29,6 @@ gap_rows: 126
 - exists: 316..484
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
-
-### title-q1031430 | Habsburg Netherlands
-
-- rank: Crown
-- exists: 1482..1797
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q1048918 | Kingdom of the Suebi
 
@@ -555,13 +548,6 @@ gap_rows: 126
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q330533 | Seventeen Provinces
-
-- rank: Crown
-- exists: 1549..1581
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
-
 ### title-q34266 | Russian Empire
 
 - rank: Empire
@@ -695,13 +681,6 @@ gap_rows: 126
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
-### title-q622783 | Spanish Netherlands
-
-- rank: Crown
-- exists: 1581..1714
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
-
 ### title-q623751 | Kingdom of Bernicia
 
 - rank: Kingdom
@@ -743,13 +722,6 @@ gap_rows: 126
 - exists: 477..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
-
-### title-q700283 | Austrian Netherlands
-
-- rank: Crown
-- exists: 1714..1797
-- review_priority: medium_parentage_review
-- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q701983 | Palatinate-Zweibrucken
 

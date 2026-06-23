@@ -12722,3 +12722,70 @@ value: composite_crown_component:title-q204920
 source_ids: src-wikidata-q15581, src-wikidata-q204920, src-wikipedia-principality-catalonia-crown-aragon-parentage, src-wikipedia-crown-aragon
 confidence: multi_source
 ---
+---
+# Reviewed Low Countries crown titles under Holy Roman Empire parentage packet.
+
+fact_id: fact-q1031430-parent-q12548
+subject_id: title-q1031430
+claim_kind: parentage
+span: 1482..1797
+value: title-q12548
+source_ids: src-wikidata-q1031430, src-wikidata-q12548, src-wikipedia-habsburg-netherlands-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q1031430-relation-q12548-composite-crown-component
+subject_id: title-q1031430
+claim_kind: relation
+span: 1482..1797
+value: composite_crown_component:title-q12548
+source_ids: src-wikidata-q1031430, src-wikidata-q12548, src-wikipedia-habsburg-netherlands-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q330533-parent-q12548
+subject_id: title-q330533
+claim_kind: parentage
+span: 1549..1581
+value: title-q12548
+source_ids: src-wikidata-q330533, src-wikidata-q12548, src-wikipedia-seventeen-provinces-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q330533-relation-q12548-composite-crown-component
+subject_id: title-q330533
+claim_kind: relation
+span: 1549..1581
+value: composite_crown_component:title-q12548
+source_ids: src-wikidata-q330533, src-wikidata-q12548, src-wikipedia-seventeen-provinces-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q622783-parent-q12548
+subject_id: title-q622783
+claim_kind: parentage
+span: 1581..1714
+value: title-q12548
+source_ids: src-wikidata-q622783, src-wikidata-q12548, src-wikipedia-spanish-netherlands-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q622783-relation-q12548-composite-crown-component
+subject_id: title-q622783
+claim_kind: relation
+span: 1581..1714
+value: composite_crown_component:title-q12548
+source_ids: src-wikidata-q622783, src-wikidata-q12548, src-wikipedia-spanish-netherlands-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q700283-parent-q12548
+subject_id: title-q700283
+claim_kind: parentage
+span: 1714..1797
+value: title-q12548
+source_ids: src-wikidata-q700283, src-wikidata-q12548, src-wikipedia-austrian-netherlands-hre-parentage
+confidence: multi_source
+---
+fact_id: fact-q700283-relation-q12548-composite-crown-component
+subject_id: title-q700283
+claim_kind: relation
+span: 1714..1797
+value: composite_crown_component:title-q12548
+source_ids: src-wikidata-q700283, src-wikidata-q12548, src-wikipedia-austrian-netherlands-hre-parentage
+confidence: multi_source
+---
