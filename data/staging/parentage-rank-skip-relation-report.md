@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1424
+facts: 1433
 titles: 356
-relation_facts: 61
+relation_facts: 70
 rank_skip_rows: 231
-relation_explained_rows: 57
-unexplained_rows: 174
+relation_explained_rows: 66
+unexplained_rows: 165
 
 ## Interpretation
 
@@ -22,9 +22,9 @@ unexplained_rows: 174
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 32 |
+| imperial_state | 39 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 3 |
+| vassalage_or_suzerainty | 5 |
 
 ## Review Rows
 
@@ -831,7 +831,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1364..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1364..1803 | 1364..1803 |
 
 ### fact-q2360973-parent-q131964 | Duchy of Carniola -> Austrian Empire
 
@@ -861,7 +864,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1092..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1092..1795 | 1092..1795 |
 
 ### fact-q156038-parent-q172107 | Duchy of Courland and Semigallia -> Polish-Lithuanian Commonwealth
 
@@ -983,7 +989,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1353..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1353..1795 | 1353..1795 |
 
 ### fact-q766501-parent-q12548 | Duchy of Mantua -> Holy Roman Empire
 
@@ -1049,7 +1058,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1452..1796
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1452..1796 | 1452..1796 |
 
 ### fact-q836680-parent-q151624 | Duchy of Nassau -> German Confederation
 
@@ -1069,7 +1081,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1748..1801
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1748..1801 | 1748..1801 |
 
 ### fact-q696640-parent-q12548 | Duchy of Pomerania -> Holy Roman Empire
 
@@ -2174,7 +2189,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1294..1802
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1294..1802 | 1294..1802 |
 
 ### fact-q158835-parent-q12548 | Prince-Bishopric of Liege -> Holy Roman Empire
 
@@ -2184,7 +2202,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 985..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 985..1795 | 985..1795 |
 
 ### fact-q650645-parent-q12548 | Prince-Bishopric of Minden -> Holy Roman Empire
 
@@ -2194,7 +2215,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1180..1648
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1180..1648 | 1180..1648 |
 
 ### fact-q3324486-parent-q12560 | Prince-Bishopric of Montenegro -> Ottoman Empire
 
@@ -2214,7 +2238,10 @@ unexplained_rows: 174
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1180..1802
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1180..1802 | 1180..1802 |
 
 ### fact-q477035-parent-q12548 | Prince-Bishopric of Osnabruck -> Holy Roman Empire
 
