@@ -10,9 +10,12 @@ source_inputs:
 
 ## Status
 
-The first nine accepted relation-model packets promote 39 non-parentage
-relation facts. The generated relation report now explains 39 of 223 active
-rank-skip rows while parentage facts remain unchanged.
+The first ten accepted relation-model packets promote 40 non-parentage
+relation facts. The generated relation report explains 47 of 231 active
+rank-skip rows while parentage facts remain unchanged. Relation facts now allow
+multiple simultaneous contexts for the same title and span, so a title can be
+both an imperial state and a reviewed subdivision or appanage when sources
+support both claims.
 
 Current measured baseline:
 
@@ -43,6 +46,7 @@ Current measured baseline:
 | `relation-model-austria-crownland-01` | 2 | `crownland_component` |
 | `low-countries-successor-parentage-01` | 7 | `composite_crown_component` |
 | `namur-successor-parentage-01` | 4 | `composite_crown_component` |
+| `brunswick-wolfenbuttel-welf-relation-01` | 1 | `subdivision_or_appanage` |
 
 ## Held Rows
 
@@ -54,7 +58,7 @@ source-custody work or a narrower modeling decision.
 | Structured-data-only context | Comtat Venaissin | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody and bounded crownland-component relations. |
 | Split-control / successor context | Flanders, Holland, Namur | First successor parentage packets now replace the post-Burgundian HRE current-parent spans with bounded successor title edges and matching `composite_crown_component` relations. |
 | Child-level intermediate source needed | Luxembourg, early Namur, Ravensberg, early Holland | Current-parent `imperial_state` relations now explain these rank skips, but the reviewed note still forbids inferring deeper intermediate parentage without bounded child-level evidence. |
-| Broader relation semantics not yet source-backed | Burgundy/Arles layers, Geneva/Savoyard successor, HRE partitions, Welf partitions | Current accepted relations explain the direct current-parent context, but deeper intermediate structure remains unimported. |
+| Broader relation semantics not yet source-backed | Burgundy/Arles layers, Geneva/Savoyard successor, HRE partitions, deeper Welf partitions | Current accepted relations explain the direct current-parent context, and Brunswick-Wolfenbuttel now carries Welf subdivision context, but deeper intermediate structure remains unimported. |
 
 ## Next Source-Custody Targets
 
@@ -146,3 +150,9 @@ relations to the current HRE parent for early Holland, County of Luxembourg,
 early Namur, and County of Ravensberg. These explain rank skips without
 importing Lower Lotharingia, Ardennes, Jülich-Cleves-Berg, or successor
 parentage.
+
+`brunswick-wolfenbuttel-welf-relation-01` promotes one bounded
+`subdivision_or_appanage` relation from Brunswick-Wolfenbuttel to
+Brunswick-Luneburg for 1269..1806. Parentage remains under the Holy Roman
+Empire because the current rank policy rejects Duchy-to-Duchy parent edges, and
+the existing `imperial_state` relation remains valid as a simultaneous context.

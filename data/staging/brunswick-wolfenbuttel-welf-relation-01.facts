@@ -1,0 +1,9 @@
+# Reviewed Brunswick-Wolfenbuttel Welf subdivision relation packet.
+
+fact_id: fact-q830084-relation-q556263-subdivision-or-appanage
+subject_id: title-q830084
+claim_kind: relation
+span: 1269..1806
+value: subdivision_or_appanage:title-q556263
+source_ids: src-wikidata-q830084, src-wikidata-q556263, src-wikipedia-brunswick-wolfenbuttel, src-wikipedia-duchy-brunswick-luneburg
+confidence: multi_source

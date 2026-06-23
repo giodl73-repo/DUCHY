@@ -111,6 +111,9 @@ Rules:
   `composite_crown_component`, `split_fief_or_control`,
   `vassalage_or_suzerainty`, `subdivision_or_appanage`, and
   `crownland_component`, and `rank_transition`.
+- Relation facts are multi-valued contexts. A title may have multiple accepted
+  relation facts over the same span when the reviewed sources support distinct
+  relation kinds or related titles.
 - Source-backed parentage uses direct documented links and may skip CK-style
   intermediate ranks when the reviewed source supports that relation.
 - Fact files still require separate source metadata and source-custody review.

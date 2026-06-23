@@ -2049,6 +2049,10 @@ pub fn validate_fact_records(
             continue;
         }
 
+        if fact.claim_kind == ClaimKind::Relation {
+            continue;
+        }
+
         let claim_key = (fact.subject_id.as_str(), fact.claim_kind, fact.span.clone());
         match accepted_claims.get(&claim_key) {
             Some(existing) if existing.value != fact.value => errors.push(format!(
@@ -4429,6 +4433,17 @@ confidence: maybe
             conflict_group: None,
             supersedes_fact_id: None,
         });
+        facts.push(FactRecord {
+            fact_id: "fact-child-imperial-state".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Relation,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "imperial_state:title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: None,
+        });
 
         let timeline = source_backed_timeline_from_facts(&catalog, &facts).unwrap();
 
@@ -4445,9 +4460,15 @@ confidence: maybe
         );
 
         let relations = timeline.relations_for_title_in_year("title-child-duchy", 1050);
-        assert_eq!(relations.len(), 1);
-        assert_eq!(relations[0].relation_kind, RelationKind::CrownlandComponent);
-        assert_eq!(relations[0].related_title_id, "title-parent-kingdom");
+        assert_eq!(relations.len(), 2);
+        assert!(relations.iter().any(|relation| {
+            relation.relation_kind == RelationKind::CrownlandComponent
+                && relation.related_title_id == "title-parent-kingdom"
+        }));
+        assert!(relations.iter().any(|relation| {
+            relation.relation_kind == RelationKind::ImperialState
+                && relation.related_title_id == "title-parent-kingdom"
+        }));
     }
 
     #[test]
