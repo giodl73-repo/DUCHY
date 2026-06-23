@@ -1,0 +1,9 @@
+# Reviewed Guelders relation packet after rank identity correction.
+
+fact_id: fact-q152420-relation-q12548-imperial-state
+subject_id: title-q152420
+claim_kind: relation
+span: 1096..1795
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q152420, src-wikidata-q12548, src-wikipedia-duchy-guelders
+confidence: multi_source

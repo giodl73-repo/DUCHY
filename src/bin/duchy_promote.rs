@@ -36,12 +36,11 @@ fn run() -> Result<(), Vec<String>> {
     let candidate_facts = duchy::fact_records_from_text(&candidate_fact_text)?;
 
     let merged_catalog = duchy::SourceCatalog::from_metadata_text(&merged_source_text)?;
-    duchy::validate_fact_records(&merged_catalog, &candidate_facts)?;
     let merged_facts = duchy::fact_records_from_text(&merged_fact_text)?;
     duchy::validate_fact_records(&merged_catalog, &merged_facts)?;
     let merged_timeline = duchy::source_backed_timeline_from_facts(&merged_catalog, &merged_facts)?;
     let candidate_titles =
-        duchy::source_backed_titles_from_facts(&merged_catalog, &candidate_facts)?;
+        candidate_titles_from_merged_facts(&merged_catalog, &merged_facts, &candidate_facts)?;
 
     if apply {
         fs::write(&accepted_sources, &merged_source_text)
@@ -224,6 +223,34 @@ fn promotion_report(
     }
 
     report
+}
+
+fn candidate_titles_from_merged_facts(
+    merged_catalog: &duchy::SourceCatalog,
+    merged_facts: &[duchy::FactRecord],
+    candidate_facts: &[duchy::FactRecord],
+) -> Result<Vec<duchy::Title>, Vec<String>> {
+    let candidate_title_ids = candidate_facts
+        .iter()
+        .filter(|fact| {
+            matches!(
+                fact.claim_kind,
+                duchy::ClaimKind::Name | duchy::ClaimKind::Rank | duchy::ClaimKind::TitleExists
+            )
+        })
+        .map(|fact| fact.subject_id.as_str())
+        .collect::<std::collections::HashSet<_>>();
+
+    if candidate_title_ids.is_empty() {
+        return Ok(Vec::new());
+    }
+
+    let mut titles = duchy::source_backed_titles_from_facts(merged_catalog, merged_facts)?
+        .into_iter()
+        .filter(|title| candidate_title_ids.contains(title.id.as_str()))
+        .collect::<Vec<_>>();
+    titles.sort_by(|left, right| left.id.cmp(&right.id));
+    Ok(titles)
 }
 
 fn read_text(path: &str) -> Result<String, Vec<String>> {

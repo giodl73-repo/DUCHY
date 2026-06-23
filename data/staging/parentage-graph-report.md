@@ -1,7 +1,7 @@
 # DUCHY Parentage Graph Report
 
 sources: 532
-facts: 1362
+facts: 1364
 titles: 349
 parentage_edges: 284
 parentable_titles: 308
@@ -585,8 +585,8 @@ snapshot_years_with_cycles: 0
 
 | Rank | Titles | Covered Years | Expected Years | Coverage % |
 |---|---:|---:|---:|---:|
-| County | 33 | 12136 | 15599 | 77.80 |
-| Duchy | 138 | 41750 | 48259 | 86.51 |
+| County | 32 | 11436 | 14899 | 76.76 |
+| Duchy | 139 | 42450 | 48959 | 86.71 |
 | Province | 1 | 7 | 8 | 87.50 |
 | FreeCity | 2 | 1080 | 1080 | 100.00 |
 | Kingdom | 123 | 8677 | 39407 | 22.02 |

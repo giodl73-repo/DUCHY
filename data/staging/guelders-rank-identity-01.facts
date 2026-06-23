@@ -1,0 +1,9 @@
+# Reviewed rank identity correction for Duchy of Guelders.
+
+fact_id: fact-q152420-rank-duchy
+subject_id: title-q152420
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q152420, src-wikipedia-duchy-guelders
+confidence: multi_source
+supersedes_fact_id: fact-q152420-rank

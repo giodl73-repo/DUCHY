@@ -10736,3 +10736,23 @@ span: 1162..1164
 value: composite_crown_component:title-q204920
 source_ids: src-wikidata-q1233672, src-wikidata-q204920, src-wikipedia-county-barcelona, src-wikipedia-crown-aragon
 confidence: multi_source
+---
+# Reviewed rank identity correction for Duchy of Guelders.
+
+fact_id: fact-q152420-rank-duchy
+subject_id: title-q152420
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q152420, src-wikipedia-duchy-guelders
+confidence: multi_source
+supersedes_fact_id: fact-q152420-rank
+---
+# Reviewed Guelders relation packet after rank identity correction.
+
+fact_id: fact-q152420-relation-q12548-imperial-state
+subject_id: title-q152420
+claim_kind: relation
+span: 1096..1795
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q152420, src-wikidata-q12548, src-wikipedia-duchy-guelders
+confidence: multi_source
