@@ -456,6 +456,11 @@ and imports no replacements: two rows are shared-parent sibling false positives,
 three need child-level intermediate sources, and five need split-control or
 relation-model work before DUCHY can safely replace direct county-to-crown or
 county-to-empire parentage.
+The second county rank-skip review batch covers the next ten high-priority rows
+and again imports no replacements: three need child-level intermediate sources,
+six need relation-model or split-control work, and Duchy of Guelders is flagged
+as a rank-identity blocker because its accepted label is Duchy while its
+accepted rank fact is County.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
