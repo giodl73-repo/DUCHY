@@ -1,0 +1,26 @@
+# Reviewed endpoint and subdivision relation packet 02.
+
+fact_id: fact-q2415003-relation-q1406298-rank-transition
+subject_id: title-q2415003
+claim_kind: relation
+span: 1346..1346
+value: rank_transition:title-q1406298
+source_ids: src-wikidata-q2415003, src-wikidata-q1406298, src-wikipedia-serbian-empire
+confidence: multi_source
+---
+fact_id: fact-q921473-relation-q70972-rank-transition
+subject_id: title-q921473
+claim_kind: relation
+span: 1527..1527
+value: rank_transition:title-q70972
+source_ids: src-wikipedia-county-la-marche, src-britannica-marche, src-wikidata-q70972
+confidence: multi_source
+---
+fact_id: fact-q50625-relation-q20-subdivision-or-appanage
+subject_id: title-q50625
+claim_kind: relation
+span: 1919..2019
+value: subdivision_or_appanage:title-q20
+source_ids: src-wikidata-q50625, src-wikidata-q20, src-wikipedia-norway
+confidence: multi_source
+---

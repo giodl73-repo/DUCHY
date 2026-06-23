@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty-one accepted relation-model packets promote 183 non-parentage
-relation facts. The generated relation report explains 178 of 231 active
+The first thirty-two accepted relation-model packets promote 186 non-parentage
+relation facts. The generated relation report explains 181 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1546 |
+| facts | 1549 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 183 |
+| relation facts | 186 |
 | rank-skip rows | 231 |
-| relation-explained rows | 178 |
-| unexplained rank-skip rows | 53 |
+| relation-explained rows | 181 |
+| unexplained rank-skip rows | 50 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -66,6 +66,7 @@ Current measured baseline:
 | `napoleonic-client-relation-batch-01` | 7 | `confederation_member`, `vassalage_or_suzerainty` |
 | `vassal-client-relation-batch-02` | 4 | `vassalage_or_suzerainty` |
 | `endpoint-transition-relation-batch-01` | 4 | `rank_transition` |
+| `endpoint-transition-relation-batch-02` | 3 | `rank_transition`, `subdivision_or_appanage` |
 
 ## Held Rows
 
@@ -293,3 +294,11 @@ Russia, and Kingdom of Thessalonica under the Latin Empire.
 Kingdom of Sicily, Polish-Lithuanian union to the Polish-Lithuanian
 Commonwealth, Duchy of Ferrara to direct Papal States rule, and Kingdom of
 Bosnia to Ottoman conquest/fall.
+
+`endpoint-transition-relation-batch-02` promotes three additional relation
+contexts from already accepted source custody: medieval Kingdom of Serbia to
+Serbian Empire as a 1346 rank transition, County of La Marche to French crown
+confiscation as a 1527 rank transition, and Hordaland to modern Norway as a
+bounded `subdivision_or_appanage` relation for 1919..2019. Structured-only
+Romanian, Hungarian, Portuguese, and Commonwealth rows remain held for
+relation-specific source review.

@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1546
+facts: 1549
 titles: 356
-relation_facts: 183
+relation_facts: 186
 rank_skip_rows: 231
-relation_explained_rows: 178
-unexplained_rows: 53
+relation_explained_rows: 181
+unexplained_rows: 50
 
 ## Interpretation
 
@@ -23,8 +23,8 @@ unexplained_rows: 53
 | crownland_component | 2 |
 | federal_state_member | 11 |
 | imperial_state | 79 |
-| rank_transition | 4 |
-| subdivision_or_appanage | 2 |
+| rank_transition | 6 |
+| subdivision_or_appanage | 3 |
 | vassalage_or_suzerainty | 29 |
 
 ## Review Rows
@@ -448,7 +448,10 @@ unexplained_rows: 53
 - current_parent_id: title-q70972
 - current_parent_rank: Kingdom
 - span: 1527..1527
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Kingdom of France (title-q70972) | 1527..1527 | 1527..1527 |
 
 ### fact-q5177890-parent-q12548 | County of Luxembourg -> Holy Roman Empire
 
@@ -1767,7 +1770,10 @@ unexplained_rows: 53
 - current_parent_id: title-q20
 - current_parent_rank: Kingdom
 - span: 1919..2019
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Norway (title-q20) | 1919..2019 | 1919..2019 |
 
 ### fact-q699923-parent-q71084 | Illyrian Provinces -> First French Empire
 
@@ -2126,7 +2132,10 @@ unexplained_rows: 53
 - current_parent_id: title-q1406298
 - current_parent_rank: Empire
 - span: 1346..1346
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Serbian Empire (title-q1406298) | 1346..1346 | 1346..1346 |
 
 ### fact-q325461-parent-q178897 | Kingdom of Thessalonica -> Latin Empire
 
