@@ -1,19 +1,19 @@
 # DUCHY Parentage Coverage Report
 
-sources: 520
-facts: 1330
-titles: 349
-parentage_facts: 278
-titles_with_parentage: 229
-titles_without_parentage: 120
+sources: 580
+facts: 1601
+titles: 356
+parentage_facts: 290
+titles_with_parentage: 230
+titles_without_parentage: 126
 
 ## Coverage By Rank
 
 | Rank | Titles | With Parentage | Without Parentage |
 |---|---:|---:|---:|
-| County | 33 | 33 | 0 |
-| Crown | 8 | 3 | 5 |
-| Duchy | 138 | 136 | 2 |
+| County | 32 | 32 | 0 |
+| Crown | 14 | 3 | 11 |
+| Duchy | 140 | 138 | 2 |
 | Empire | 41 | 0 | 41 |
 | FreeCity | 2 | 2 | 0 |
 | Kingdom | 123 | 53 | 70 |
@@ -23,6 +23,7 @@ titles_without_parentage: 120
 ## Titles Without Parentage
 
 - title-q10295972 | Hunnic Empire | Empire | 316..484
+- title-q1031430 | Habsburg Netherlands | Crown | 1482..1797
 - title-q1048918 | Kingdom of the Suebi | Kingdom | 411..585
 - title-q105092 | Kingdom of Mercia | Kingdom | 527..918
 - title-q105313 | Kingdom of Wessex | Kingdom | 519..927
@@ -54,6 +55,7 @@ titles_without_parentage: 120
 - title-q161885 | Kingdom of Great Britain | Crown | 1707..1801
 - title-q165154 | Kingdom of Sardinia | Kingdom | 1720..1861
 - title-q1656775 | Kingdom of Lithuania | Kingdom | 1251..1263
+- title-q170072 | Dutch Republic | Crown | 1581..1795
 - title-q170174 | Papal States | TheocraticState | 754..1870
 - title-q171740 | Caliphate of Cordoba | Empire | 929..1031
 - title-q172107 | Polish-Lithuanian Commonwealth | Crown | 1569..1795
@@ -70,6 +72,7 @@ titles_without_parentage: 120
 - title-q186537 | Khanate of Qazan | Empire | 1438..1552
 - title-q187035 | Principality of Albania | Duchy | 1914..1925
 - title-q187461 | Kingdom of Hereti | Kingdom | 893..1020
+- title-q188553 | Batavian Republic | Crown | 1795..1806
 - title-q19083 | Kingdom of Iberia | Kingdom | -299..580
 - title-q191077 | Kingdom of Yugoslavia | Kingdom | 1929..1945
 - title-q191484 | Old Great Bulgaria | Empire | 632..668
@@ -95,6 +98,7 @@ titles_without_parentage: 120
 - title-q31929 | Carolingian Empire | Empire | 800..887
 - title-q321371 | Bosporan Kingdom | Kingdom | -437..370
 - title-q328818 | Kingdom of Kent | Kingdom | 450..871
+- title-q330533 | Seventeen Provinces | Crown | 1549..1581
 - title-q34266 | Russian Empire | Empire | 1721..1917
 - title-q3446210 | Kingdom of Pamplona | Kingdom | 824..1162
 - title-q3755547 | Kingdom of Italy | Kingdom | 476..493
@@ -114,12 +118,14 @@ titles_without_parentage: 120
 - title-q600018 | Kingdom of Hungary | Kingdom | 1920..1946
 - title-q603771 | Emirate of Crete | Empire | 820..961
 - title-q612359 | Kingdom of Lithuania | Kingdom | 1918..1918
+- title-q622783 | Spanish Netherlands | Crown | 1581..1714
 - title-q623751 | Kingdom of Bernicia | Kingdom | 420..634
 - title-q62567 | Kingdom of Iceland | Kingdom | 1918..1944
 - title-q62623 | Kalmar Union | Crown | 1397..1523
 - title-q62651 | Denmark-Norway | Empire | 1536..1814
 - title-q633573 | Kingdom of Rheged | Kingdom | 500..650
 - title-q676184 | Kingdom of Sussex | Kingdom | 477..825
+- title-q700283 | Austrian Netherlands | Crown | 1714..1797
 - title-q701983 | Palatinate-Zweibrucken | Empire | 1444..1801
 - title-q70972 | Kingdom of France | Kingdom | 987..1791
 - title-q71084 | First French Empire | Empire | 1804..1815
@@ -167,6 +173,12 @@ titles_without_parentage: 120
 - title-q157013 | Hohenzollern-Sigmaringen
   - fact-q157013-parent-q12548 | title-q12548 | 1576..1806
   - fact-q157013-parent-q151624 | title-q151624 | 1815..1850
+- title-q157070 | County of Flanders
+  - fact-q157070-parent-q157109 | title-q157109 | 1384..1482
+  - fact-q157070-parent-q1031430 | title-q1031430 | 1483..1548
+  - fact-q157070-parent-q330533 | title-q330533 | 1549..1580
+  - fact-q157070-parent-q622783 | title-q622783 | 1581..1713
+  - fact-q157070-parent-q700283 | title-q700283 | 1714..1797
 - title-q157710 | Duchy of Saxe-Meiningen
   - fact-q157710-parent-q151624 | title-q151624 | 1815..1866
   - fact-q157710-parent-q43287 | title-q43287 | 1871..1918
@@ -234,6 +246,12 @@ titles_without_parentage: 120
 - title-q47261 | Duchy of Bavaria
   - fact-q47261-parent-q12548 | title-q12548 | 962..1805
   - fact-q47261-parent-q153080 | title-q153080 | 907..961
+- title-q599613 | County of Namur
+  - fact-q599613-parent-q157109 | title-q157109 | 1421..1482
+  - fact-q599613-parent-q1031430 | title-q1031430 | 1483..1548
+  - fact-q599613-parent-q330533 | title-q330533 | 1549..1580
+  - fact-q599613-parent-q622783 | title-q622783 | 1581..1713
+  - fact-q599613-parent-q700283 | title-q700283 | 1714..1795
 - title-q630163 | Schwarzburg-Sondershausen
   - fact-q630163-parent-q151624 | title-q151624 | 1815..1866
   - fact-q630163-parent-q12548 | title-q12548 | 1599..1806
@@ -272,3 +290,8 @@ titles_without_parentage: 120
 - title-q736029 | Nassau-Siegen
   - fact-q736029-parent-q12548-1303 | title-q12548 | 1303..1328
   - fact-q736029-parent-q12548-1606 | title-q12548 | 1606..1743
+- title-q762943 | County of Holland
+  - fact-q762943-parent-q157109 | title-q157109 | 1433..1482
+  - fact-q762943-parent-q1031430 | title-q1031430 | 1483..1548
+  - fact-q762943-parent-q330533 | title-q330533 | 1549..1580
+  - fact-q762943-parent-q170072 | title-q170072 | 1581..1795

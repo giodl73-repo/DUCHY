@@ -7336,3 +7336,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded Lower Alsace imperial landgraviate relation context to the Holy Roman Empire; no Upper Alsace comparison, Habsburg landgraviate succession, Reichslandvogtei, French annexation, or modern Alsace claims imported.
 ---
+---
+# Reviewed Principality of Catalonia under Crown of Aragon parentage packet.
+
+source_id: src-wikipedia-principality-catalonia-crown-aragon-parentage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Principality_of_Catalonia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Principality of Catalonia article; reviewed only for bounded Crown of Aragon component/parentage context over the accepted 1173..1714 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Principality of Catalonia parentage and composite-component relation context under the Crown of Aragon; no Generalitat institutional detail, French occupation, Spanish succession, modern autonomous community, or nationalist continuity claims imported.
+---

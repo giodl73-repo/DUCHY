@@ -1,21 +1,21 @@
 # DUCHY Parentage Change Report
 
-sources: 520
-facts: 1330
-titles: 349
-parentage_titles: 229
+sources: 580
+facts: 1601
+titles: 356
+parentage_titles: 230
 titles_with_parent_changes: 41
-parent_changes: 51
-county_parentage_titles: 33
+parent_changes: 62
+county_parentage_titles: 32
 county_titles_with_parent_changes: 5
-county_parent_changes: 5
+county_parent_changes: 16
 
 ## Changes By Child Rank
 
 | Child Rank | Titles | Changed Titles | Parent Changes |
 |---|---:|---:|---:|
-| County | 33 | 5 | 5 |
-| Duchy | 136 | 30 | 37 |
+| County | 32 | 5 | 16 |
+| Duchy | 138 | 30 | 37 |
 | Province | 1 | 0 | 0 |
 | FreeCity | 2 | 0 | 0 |
 | Kingdom | 53 | 6 | 9 |
@@ -26,16 +26,19 @@ county_parent_changes: 5
 
 | Parent Rank | Facts | Changed Titles | Parent Changes |
 |---|---:|---:|---:|
-| Duchy | 4 | 3 | 3 |
+| Duchy | 4 | 3 | 14 |
 | Kingdom | 13 | 1 | 1 |
-| Crown | 2 | 0 | 0 |
+| Crown | 13 | 3 | 14 |
 | TheocraticState | 1 | 0 | 0 |
-| Empire | 22 | 4 | 4 |
+| Empire | 18 | 4 | 15 |
 
 ## Top Parent Changes
 
 | Changes | Facts | Child | Rank | Parent Spans |
 |---:|---:|---|---|---|
+| 5 | 6 | County of Flanders (title-q157070) | County | 962..1383: Holy Roman Empire [Empire]; 1384..1482: Burgundian Netherlands [Duchy]; 1483..1548: Habsburg Netherlands [Crown]; 1549..1580: Seventeen Provinces [Crown]; 1581..1713: Spanish Netherlands [Crown]; 1714..1797: Austrian Netherlands [Crown] |
+| 5 | 6 | County of Namur (title-q599613) | County | 981..1420: Holy Roman Empire [Empire]; 1421..1482: Burgundian Netherlands [Duchy]; 1483..1548: Habsburg Netherlands [Crown]; 1549..1580: Seventeen Provinces [Crown]; 1581..1713: Spanish Netherlands [Crown]; 1714..1795: Austrian Netherlands [Crown] |
+| 4 | 5 | County of Holland (title-q762943) | County | 962..1432: Holy Roman Empire [Empire]; 1433..1482: Burgundian Netherlands [Duchy]; 1483..1548: Habsburg Netherlands [Crown]; 1549..1580: Seventeen Provinces [Crown]; 1581..1795: Dutch Republic [Crown] |
 | 2 | 3 | Archduchy of Austria (title-q699964) | Duchy | 1358..1803: Holy Roman Empire [Empire]; 1804..1866: Austrian Empire [Empire]; 1867..1918: Austria-Hungary [Empire] |
 | 2 | 3 | Duchy of Anhalt (title-q16550783) | Duchy | 1863..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
 | 2 | 3 | Duchy of Brunswick (title-q326029) | Duchy | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
@@ -46,9 +49,6 @@ county_parent_changes: 5
 | 2 | 3 | Kingdom of Bohemia (title-q42585) | Kingdom | 1198..1803: Holy Roman Empire [Empire]; 1804..1866: Austrian Empire [Empire]; 1867..1918: Austria-Hungary [Empire] |
 | 2 | 3 | Kingdom of Prussia (title-q27306) | Kingdom | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
 | 2 | 3 | Kingdom of Saxony (title-q153015) | Kingdom | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
-| 1 | 3 | County of Flanders (title-q157070) | County | 962..1383: Holy Roman Empire [Empire]; 1384..1482: Burgundian Netherlands [Duchy]; 1483..1797: Holy Roman Empire [Empire] |
-| 1 | 3 | County of Holland (title-q762943) | County | 962..1432: Holy Roman Empire [Empire]; 1433..1482: Burgundian Netherlands [Duchy]; 1483..1795: Holy Roman Empire [Empire] |
-| 1 | 3 | County of Namur (title-q599613) | County | 981..1420: Holy Roman Empire [Empire]; 1421..1482: Burgundian Netherlands [Duchy]; 1483..1795: Holy Roman Empire [Empire] |
 | 1 | 2 | Anhalt-Bernburg (title-q686965) | Duchy | 1252..1806: Holy Roman Empire [Empire]; 1815..1863: German Confederation [Empire] |
 | 1 | 2 | Anhalt-Dessau (title-q278874) | Duchy | 1396..1806: Holy Roman Empire [Empire]; 1815..1853: German Confederation [Empire] |
 | 1 | 2 | Anhalt-Kothen (title-q264970) | Duchy | 1396..1806: Holy Roman Empire [Empire]; 1815..1863: German Confederation [Empire] |

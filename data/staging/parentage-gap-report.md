@@ -1,21 +1,21 @@
 # DUCHY Parentage Gap Review Report
 
 source_tsv: data/staging/parentage-gap-targets.tsv
-gap_rows: 120
+gap_rows: 126
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| blocked_parentage_review | 2 |
-| medium_parentage_review | 77 |
+| high_parentage_review | 2 |
+| medium_parentage_review | 83 |
 | root_or_successor_review | 41 |
 
 ## Rank Counts
 
 | Rank | Rows |
 |---|---:|
-| Crown | 5 |
+| Crown | 11 |
 | Duchy | 2 |
 | Empire | 41 |
 | Kingdom | 70 |
@@ -29,6 +29,13 @@ gap_rows: 120
 - exists: 316..484
 - review_priority: root_or_successor_review
 - notes: May be a root title; review only if successor, union, or super-entity claim exists.
+
+### title-q1031430 | Habsburg Netherlands
+
+- rank: Crown
+- exists: 1482..1797
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q1048918 | Kingdom of the Suebi
 
@@ -247,6 +254,13 @@ gap_rows: 120
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q170072 | Dutch Republic
+
+- rank: Crown
+- exists: 1581..1795
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
 ### title-q170174 | Papal States
 
 - rank: TheocraticState
@@ -349,8 +363,8 @@ gap_rows: 120
 
 - rank: Duchy
 - exists: 1914..1925
-- review_priority: blocked_parentage_review
-- notes: Reviewed blocker: World War I protectorate and occupation sources are partial or outside the accepted title span; needs contested/de facto or split-control relation modeling before parentage import.
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q187461 | Kingdom of Hereti
 
@@ -358,6 +372,13 @@ gap_rows: 120
 - exists: 893..1020
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q188553 | Batavian Republic
+
+- rank: Crown
+- exists: 1795..1806
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q19083 | Kingdom of Iberia
 
@@ -534,6 +555,13 @@ gap_rows: 120
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q330533 | Seventeen Provinces
+
+- rank: Crown
+- exists: 1549..1581
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
 ### title-q34266 | Russian Empire
 
 - rank: Empire
@@ -667,6 +695,13 @@ gap_rows: 120
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
 
+### title-q622783 | Spanish Netherlands
+
+- rank: Crown
+- exists: 1581..1714
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
+
 ### title-q623751 | Kingdom of Bernicia
 
 - rank: Kingdom
@@ -708,6 +743,13 @@ gap_rows: 120
 - exists: 477..825
 - review_priority: medium_parentage_review
 - notes: Find reviewed empire, union, confederation, or successor-context source.
+
+### title-q700283 | Austrian Netherlands
+
+- rank: Crown
+- exists: 1714..1797
+- review_priority: medium_parentage_review
+- notes: Find reviewed empire, union, or successor-context source.
 
 ### title-q701983 | Palatinate-Zweibrucken
 
@@ -762,8 +804,8 @@ gap_rows: 120
 
 - rank: Duchy
 - exists: 1852..1910
-- review_priority: blocked_parentage_review
-- notes: Reviewed blocker: sources support de facto independence and later recognition rather than clean Ottoman parentage; needs contested/de facto relation modeling before parentage import.
+- review_priority: high_parentage_review
+- notes: Find reviewed kingdom or empire parentage source.
 
 ### title-q7882199 | Burgundian State
 

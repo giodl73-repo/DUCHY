@@ -1,0 +1,18 @@
+# Reviewed Principality of Catalonia under Crown of Aragon parentage packet.
+
+fact_id: fact-q15581-parent-q204920
+subject_id: title-q15581
+claim_kind: parentage
+span: 1173..1714
+value: title-q204920
+source_ids: src-wikidata-q15581, src-wikidata-q204920, src-wikipedia-principality-catalonia-crown-aragon-parentage, src-wikipedia-crown-aragon
+confidence: multi_source
+---
+fact_id: fact-q15581-relation-q204920-composite-crown-component
+subject_id: title-q15581
+claim_kind: relation
+span: 1173..1714
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q15581, src-wikidata-q204920, src-wikipedia-principality-catalonia-crown-aragon-parentage, src-wikipedia-crown-aragon
+confidence: multi_source
+---

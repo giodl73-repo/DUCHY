@@ -1,11 +1,11 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 579
-facts: 1599
+sources: 580
+facts: 1601
 titles: 356
-relation_facts: 236
-rank_skip_rows: 231
-relation_explained_rows: 231
+relation_facts: 237
+rank_skip_rows: 232
+relation_explained_rows: 232
 unexplained_rows: 0
 
 ## Interpretation
@@ -18,7 +18,7 @@ unexplained_rows: 0
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 21 |
+| composite_crown_component | 22 |
 | confederation_member | 41 |
 | crownland_component | 14 |
 | federal_state_member | 13 |
@@ -2746,6 +2746,19 @@ unexplained_rows: 0
 | Relation Kind | Related Title | Relation Span | Overlap |
 |---|---|---|---|
 | imperial_state | Holy Roman Empire (title-q12548) | 997..1552 | 997..1552 |
+
+### fact-q15581-parent-q204920 | Principality of Catalonia -> Crown of Aragon
+
+- child_id: title-q15581
+- child_rank: Duchy
+- expected_parent_rank: Kingdom
+- current_parent_id: title-q204920
+- current_parent_rank: Crown
+- span: 1173..1714
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Crown of Aragon (title-q204920) | 1173..1714 | 1173..1714 |
 
 ### fact-q14551680-parent-q12548 | Principality of Lippe -> Holy Roman Empire
 

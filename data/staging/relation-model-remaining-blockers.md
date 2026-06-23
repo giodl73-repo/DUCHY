@@ -10,9 +10,10 @@ source_inputs:
 
 ## Status
 
-The first thirty-seven accepted relation-model packets promote 236 non-parentage
-relation facts. The generated relation report explains all 231 active
-rank-skip rows while parentage facts remain unchanged. Relation facts now allow
+The first thirty-eight accepted relation-model packets promote 237 non-parentage
+relation facts. The generated relation report explains all 232 active
+rank-skip rows after the Catalonia parentage edge added one new explained
+rank-skip row. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
 support both claims.
@@ -21,13 +22,13 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 579 |
-| facts | 1599 |
+| sources | 580 |
+| facts | 1601 |
 | titles | 356 |
-| parentage facts | 289 |
-| relation facts | 236 |
-| rank-skip rows | 231 |
-| relation-explained rows | 231 |
+| parentage facts | 290 |
+| relation facts | 237 |
+| rank-skip rows | 232 |
+| relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
 | temporal parent conflicts | 0 |
 
@@ -72,6 +73,7 @@ Current measured baseline:
 | `administrative-dependency-relation-01` | 6 | `subdivision_or_appanage`, `vassalage_or_suzerainty` |
 | `austrian-monarchy-component-relation-01` | 16 | `crownland_component`, `composite_crown_component` |
 | `residual-rank-skip-relation-01` | 17 | `subdivision_or_appanage`, `split_fief_or_control`, `vassalage_or_suzerainty`, `imperial_state`, `composite_crown_component`, `rank_transition` |
+| `catalonia-crown-aragon-parentage-01` | 1 | `composite_crown_component` |
 
 ## Held Rows
 
@@ -343,3 +345,8 @@ Alsace residual rows using bounded relation semantics rather than changing
 parentage. The generated relation report now explains all active rank-skip rows
 while preserving the measured temporal forest and zero temporal parent
 conflicts.
+
+`catalonia-crown-aragon-parentage-01` adds one reviewed text source record, one
+parentage fact, and one matching `composite_crown_component` relation for the
+Principality of Catalonia under the Crown of Aragon. This improves graph
+coverage while keeping the rank-skip relation report fully explained.
