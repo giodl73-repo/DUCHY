@@ -195,7 +195,10 @@ lookup, validation, title-path query trace context, and rank-skip relation
 classification. The first four accepted relation packets promote 28 relation
 facts and explain 28 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
-report can classify the remaining 195 unexplained rows.
+report can classify more of the remaining 195 unexplained rows. The immediate
+reviewed queue is exhausted for safe relation promotion; the next work needs
+source-custody packets for split-control, internal monarchy/crownland, Catalonia,
+rank identity, and child-level intermediate review.
 
 ## Orphan Check
 
