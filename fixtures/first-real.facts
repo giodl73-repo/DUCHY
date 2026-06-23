@@ -10726,3 +10726,13 @@ span: 1483..1795
 value: split_fief_or_control:title-q12548
 source_ids: src-wikidata-q599613, src-wikidata-q12548, src-wikipedia-county-namur, src-wikipedia-habsburg-netherlands, src-wikipedia-spanish-netherlands, src-wikipedia-austrian-netherlands
 confidence: multi_source
+---
+# Reviewed Barcelona/Catalonia relation packet.
+
+fact_id: fact-q1233672-relation-q204920-composite-crown-component
+subject_id: title-q1233672
+claim_kind: relation
+span: 1162..1164
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q1233672, src-wikidata-q204920, src-wikipedia-county-barcelona, src-wikipedia-crown-aragon
+confidence: multi_source

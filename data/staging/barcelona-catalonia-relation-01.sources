@@ -1,0 +1,37 @@
+# Reviewed Barcelona/Catalonia relation source packet.
+
+source_id: src-wikipedia-county-barcelona
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Barcelona
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Barcelona article; candidate source for bounded Barcelona-to-Crown-of-Aragon relation review after the short 1162..1164 parentage endpoint.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Barcelona relation context with the Crown of Aragon after the dynastic union; no count-list detail, early Carolingian frontier detail, Catalan institutional development, or modern Catalonia claim imported.
+---
+source_id: src-wikipedia-crown-aragon
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Crown_of_Aragon
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Crown of Aragon article; candidate source for bounded composite monarchy and Aragon-Barcelona union context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Crown of Aragon relation context involving the County of Barcelona and the 1162 composite crown endpoint; no Mediterranean expansion, full realm inventory, succession politics, or post-1715 Spanish successor claims imported.
+---
+source_id: src-wikipedia-principality-catalonia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Principality_of_Catalonia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Principality of Catalonia article; candidate source for later Catalan institutional and Crown of Aragon component review.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as source-custody input for future Principality of Catalonia relation/title review only; no new title facts, parentage replacements, institutional detail, French personal union, or successor-state claims imported in this packet.

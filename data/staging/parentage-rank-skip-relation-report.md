@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 529
-facts: 1361
+sources: 532
+facts: 1362
 titles: 349
-relation_facts: 31
+relation_facts: 32
 rank_skip_rows: 223
-relation_explained_rows: 31
-unexplained_rows: 192
+relation_explained_rows: 32
+unexplained_rows: 191
 
 ## Interpretation
 
@@ -18,6 +18,7 @@ unexplained_rows: 192
 
 | Relation Kind | Rows |
 |---|---:|
+| composite_crown_component | 1 |
 | confederation_member | 5 |
 | federal_state_member | 1 |
 | imperial_state | 19 |
@@ -258,7 +259,10 @@ unexplained_rows: 192
 - current_parent_id: title-q204920
 - current_parent_rank: Crown
 - span: 1162..1164
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Crown of Aragon (title-q204920) | 1162..1164 | 1162..1164 |
 
 ### fact-q642314-parent-q12548 | County of Burgundy -> Holy Roman Empire
 
