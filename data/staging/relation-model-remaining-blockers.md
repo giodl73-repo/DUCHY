@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty-four accepted relation-model packets promote 197 non-parentage
-relation facts. The generated relation report explains 192 of 231 active
+The first thirty-five accepted relation-model packets promote 203 non-parentage
+relation facts. The generated relation report explains 198 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -21,14 +21,14 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 550 |
-| facts | 1560 |
+| sources | 555 |
+| facts | 1566 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 197 |
+| relation facts | 203 |
 | rank-skip rows | 231 |
-| relation-explained rows | 192 |
-| unexplained rank-skip rows | 39 |
+| relation-explained rows | 198 |
+| unexplained rank-skip rows | 33 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -69,6 +69,7 @@ Current measured baseline:
 | `endpoint-transition-relation-batch-02` | 3 | `rank_transition`, `subdivision_or_appanage` |
 | `commonwealth-union-subdivision-relation-01` | 6 | `vassalage_or_suzerainty`, `composite_crown_component`, `subdivision_or_appanage` |
 | `german-polish-client-relation-01` | 5 | `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
+| `administrative-dependency-relation-01` | 6 | `subdivision_or_appanage`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -317,3 +318,9 @@ promotes five bounded relation contexts: Prussia and Saxony as German
 Confederation members, Prussia and Saxony as North German Confederation federal
 state/member contexts, and the 1916..1918 Kingdom of Poland as a German Empire
 client/suzerainty context.
+
+`administrative-dependency-relation-01` adds five reviewed text source records
+and promotes six bounded relation contexts: Cetatea-Alba County, Dorohoi County,
+County of Nice, Grand Duchy of Finland, and Illyrian Provinces as
+subdivision/appanage contexts under their accepted parents, plus Kingdom of the
+Burgundians as a Western Roman dependency/suzerainty context.

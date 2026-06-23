@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 550
-facts: 1560
+sources: 555
+facts: 1566
 titles: 356
-relation_facts: 197
+relation_facts: 203
 rank_skip_rows: 231
-relation_explained_rows: 192
-unexplained_rows: 39
+relation_explained_rows: 198
+unexplained_rows: 33
 
 ## Interpretation
 
@@ -24,8 +24,8 @@ unexplained_rows: 39
 | federal_state_member | 13 |
 | imperial_state | 79 |
 | rank_transition | 6 |
-| subdivision_or_appanage | 4 |
-| vassalage_or_suzerainty | 32 |
+| subdivision_or_appanage | 9 |
+| vassalage_or_suzerainty | 33 |
 
 ## Review Rows
 
@@ -245,7 +245,10 @@ unexplained_rows: 39
 - current_parent_id: title-q203493
 - current_parent_rank: Kingdom
 - span: 1925..1944
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Romania (title-q203493) | 1925..1944 | 1925..1944 |
 
 ### fact-q1122980-parent-q170174 | Comtat Venaissin -> Papal States
 
@@ -581,7 +584,10 @@ unexplained_rows: 39
 - current_parent_id: title-q2577303
 - current_parent_rank: Kingdom
 - span: 1814..1818
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Sardinia (title-q2577303) | 1814..1818 | 1814..1818 |
 
 ### fact-q1139807-parent-q231392 | County of Portugal -> Kingdom of Asturias
 
@@ -683,7 +689,10 @@ unexplained_rows: 39
 - current_parent_id: title-q203493
 - current_parent_rank: Kingdom
 - span: 1881..1947
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Romania (title-q203493) | 1881..1947 | 1881..1947 |
 
 ### fact-q686312-parent-q12544 | Duchy of Amalfi -> Byzantine Empire
 
@@ -1515,7 +1524,10 @@ unexplained_rows: 39
 - current_parent_id: title-q34266
 - current_parent_rank: Empire
 - span: 1809..1917
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Russian Empire (title-q34266) | 1809..1917 | 1809..1917 |
 
 ### fact-q704312-parent-q154741 | Grand Duchy of Frankfurt -> Confederation of the Rhine
 
@@ -1798,7 +1810,10 @@ unexplained_rows: 39
 - current_parent_id: title-q71084
 - current_parent_rank: Empire
 - span: 1809..1815
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | First French Empire (title-q71084) | 1809..1815 | 1809..1815 |
 
 ### fact-q1448131-parent-q926295 | Italian protectorate of Albania -> Italian Empire
 
@@ -2217,7 +2232,10 @@ unexplained_rows: 39
 - current_parent_id: title-q42834
 - current_parent_rank: Empire
 - span: 443..476
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Western Roman Empire (title-q42834) | 443..476 | 443..476 |
 
 ### fact-q751868-parent-q12548 | Landgraviate of Brabant -> Holy Roman Empire
 

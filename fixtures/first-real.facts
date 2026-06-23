@@ -12382,3 +12382,54 @@ value: vassalage_or_suzerainty:title-q43287
 source_ids: src-wikidata-q696908, src-wikidata-q43287, src-wikipedia-kingdom-poland-regency-client
 confidence: multi_source
 ---
+---
+# Reviewed administrative and dependency relation packet 01.
+
+fact_id: fact-q8273263-relation-q203493-subdivision-or-appanage
+subject_id: title-q8273263
+claim_kind: relation
+span: 1925..1944
+value: subdivision_or_appanage:title-q203493
+source_ids: src-wikidata-q8273263, src-wikidata-q203493, src-wikipedia-cetatea-alba-county-romania
+confidence: multi_source
+---
+fact_id: fact-q5298169-relation-q203493-subdivision-or-appanage
+subject_id: title-q5298169
+claim_kind: relation
+span: 1881..1947
+value: subdivision_or_appanage:title-q203493
+source_ids: src-wikipedia-dorohoi-county-romania, src-wikidata-q203493
+confidence: multi_source
+---
+fact_id: fact-q706553-relation-q2577303-subdivision-or-appanage
+subject_id: title-q706553
+claim_kind: relation
+span: 1814..1818
+value: subdivision_or_appanage:title-q2577303
+source_ids: src-wikidata-q706553, src-wikidata-q2577303, src-wikipedia-county-nice, src-wikipedia-kingdom-sardinia
+confidence: multi_source
+---
+fact_id: fact-q62633-relation-q34266-subdivision-or-appanage
+subject_id: title-q62633
+claim_kind: relation
+span: 1809..1917
+value: subdivision_or_appanage:title-q34266
+source_ids: src-wikidata-q62633, src-wikidata-q34266, src-wikipedia-grand-duchy-finland-russian-empire
+confidence: multi_source
+---
+fact_id: fact-q699923-relation-q71084-subdivision-or-appanage
+subject_id: title-q699923
+claim_kind: relation
+span: 1809..1815
+value: subdivision_or_appanage:title-q71084
+source_ids: src-wikidata-q699923, src-wikidata-q71084, src-wikipedia-illyrian-provinces-french-empire
+confidence: multi_source
+---
+fact_id: fact-q13590051-relation-q42834-vassalage-or-suzerainty
+subject_id: title-q13590051
+claim_kind: relation
+span: 443..476
+value: vassalage_or_suzerainty:title-q42834
+source_ids: src-wikidata-q13590051, src-wikidata-q42834, src-wikipedia-kingdom-burgundians-western-roman-dependency
+confidence: multi_source
+---

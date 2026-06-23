@@ -6979,3 +6979,66 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded 1916..1918 Kingdom of Poland to German Empire client/suzerainty relation context; no border-strip plans, military administration, regency institutions, Central Powers diplomacy, or Second Polish Republic transition detail imported.
 ---
+---
+# Reviewed administrative and dependency relation source packet.
+
+source_id: src-wikipedia-cetatea-alba-county-romania
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Cetatea-Alb%C4%83_County
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Cetatea-Alba County article; used only for relation context identifying Cetatea-Alba as a county of the Kingdom of Romania during the accepted 1925..1944 span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded administrative subdivision relation context between Cetatea-Alba County and the Kingdom of Romania; no county-seat detail, demographic table, borders, Soviet annexation narrative, or post-1944 successor claims imported.
+---
+source_id: src-wikipedia-dorohoi-county-romania
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Dorohoi_County
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Dorohoi County article; used only for relation context identifying Dorohoi as a county of Romania overlapping the accepted Kingdom of Romania parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded administrative subdivision relation context between Dorohoi County and the Kingdom of Romania; no borders, capitals, population tables, administrative reform detail, or post-1947 claims imported.
+---
+source_id: src-wikipedia-grand-duchy-finland-russian-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Finland
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Finland article; used only for relation context identifying Finland as an autonomous part of the Russian Empire during the accepted 1809..1917 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded subdivision/appanage relation context between Grand Duchy of Finland and the Russian Empire; no diet, autonomy disputes, Russification, border changes, or independence transition detail imported.
+---
+source_id: src-wikipedia-illyrian-provinces-french-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Illyrian_Provinces
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Illyrian Provinces article; used only for relation context identifying the provinces as autonomous provinces of the First French Empire from 1809 to 1815.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded subdivision relation context between Illyrian Provinces and the First French Empire; no Napoleonic administration, borders, governor list, Austrian recovery, or successor provincial claims imported.
+---
+source_id: src-wikipedia-kingdom-burgundians-western-roman-dependency
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of the Burgundians article; used only for relation context identifying the 443 Western Roman resettlement of allied Burgundians in Sapaudia during the accepted Western Roman parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded dependency/suzerainty relation context between Kingdom of the Burgundians and the Western Roman Empire for 443..476; no royal genealogy, battle narrative, territorial geometry, legal code, Frankish conquest, or later Burgundy claims imported.
+---
