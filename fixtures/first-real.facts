@@ -11869,3 +11869,69 @@ span: 1815..1866
 value: confederation_member:title-q151624
 source_ids: src-wikidata-q630163, src-wikidata-q151624, src-wikipedia-schwarzburg-sondershausen
 confidence: multi_source
+---
+# Reviewed residual HRE relation packet 10.
+
+fact_id: fact-q42585-relation-q12548-imperial-state
+subject_id: title-q42585
+claim_kind: relation
+span: 1198..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q42585, src-wikidata-q12548, src-wikipedia-kingdom-bohemia
+confidence: multi_source
+---
+fact_id: fact-q2629137-relation-q12548-imperial-state
+subject_id: title-q2629137
+claim_kind: relation
+span: 1306..1801
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q2629137, src-wikidata-q12548, src-wikipedia-free-imperial-city-aachen
+confidence: multi_source
+---
+fact_id: fact-q673837-relation-q12548-imperial-state
+subject_id: title-q673837
+claim_kind: relation
+span: 1458..1604
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q673837, src-wikidata-q12548, src-wikipedia-hesse-marburg
+confidence: multi_source
+---
+fact_id: fact-q660393-relation-q12548-imperial-state
+subject_id: title-q660393
+claim_kind: relation
+span: 962..1190
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q660393, src-wikidata-q12548, src-wikipedia-lower-lotharingia
+confidence: multi_source
+---
+fact_id: fact-q552822-relation-q12548-imperial-state
+subject_id: title-q552822
+claim_kind: relation
+span: 1520..1695
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q552822, src-wikidata-q12548, src-wikipedia-mecklenburg-gustrow
+confidence: multi_source
+---
+fact_id: fact-q736029-relation-q12548-imperial-state-1303
+subject_id: title-q736029
+claim_kind: relation
+span: 1303..1328
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q736029, src-wikidata-q12548, src-wikipedia-nassau-siegen
+confidence: multi_source
+---
+fact_id: fact-q736029-relation-q12548-imperial-state-1606
+subject_id: title-q736029
+claim_kind: relation
+span: 1606..1743
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q736029, src-wikidata-q12548, src-wikipedia-nassau-siegen
+confidence: multi_source
+---
+fact_id: fact-q454436-relation-q12548-imperial-state
+subject_id: title-q454436
+claim_kind: relation
+span: 1557..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q454436, src-wikidata-q12548, src-wikipedia-palatinate-sulzbach
+confidence: multi_source

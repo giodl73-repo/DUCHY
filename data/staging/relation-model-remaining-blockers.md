@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-three accepted relation-model packets promote 136 non-parentage
-relation facts. The generated relation report explains 132 of 231 active
+The first twenty-four accepted relation-model packets promote 144 non-parentage
+relation facts. The generated relation report explains 139 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1499 |
+| facts | 1507 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 136 |
+| relation facts | 144 |
 | rank-skip rows | 231 |
-| relation-explained rows | 132 |
-| unexplained rank-skip rows | 99 |
+| relation-explained rows | 139 |
+| unexplained rank-skip rows | 92 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -58,6 +58,7 @@ Current measured baseline:
 | `german-state-relation-batch-01` | 8 | `imperial_state`, `confederation_member`, `federal_state_member` |
 | `german-state-relation-batch-02` | 12 | `imperial_state`, `confederation_member`, `federal_state_member` |
 | `german-state-relation-batch-03` | 12 | `imperial_state`, `confederation_member` |
+| `hre-relation-batch-10` | 8 | `imperial_state` |
 
 ## Held Rows
 
@@ -238,3 +239,9 @@ Schwarzburg-Rudolstadt, and Schwarzburg-Sondershausen. The packet stays on
 active current-parent rows and does not import extra North German
 Confederation, German Empire, Weimar Republic, or Confederation of the Rhine
 contexts that sources mention but current parentage does not yet model.
+
+`hre-relation-batch-10` promotes eight residual HRE `imperial_state` relation
+contexts from accepted text-backed rows: Kingdom of Bohemia, Free Imperial City
+of Aachen, Hesse-Marburg, Lower Lotharingia, Mecklenburg-Gustrow, two
+Nassau-Siegen spans, and Palatinate-Sulzbach. Lower Alsace and Austrian
+structured-only rows remain unpromoted.

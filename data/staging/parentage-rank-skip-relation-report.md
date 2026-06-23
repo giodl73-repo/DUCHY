@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1499
+facts: 1507
 titles: 356
-relation_facts: 136
+relation_facts: 144
 rank_skip_rows: 231
-relation_explained_rows: 132
-unexplained_rows: 99
+relation_explained_rows: 139
+unexplained_rows: 92
 
 ## Interpretation
 
@@ -22,7 +22,7 @@ unexplained_rows: 99
 | confederation_member | 28 |
 | crownland_component | 2 |
 | federal_state_member | 5 |
-| imperial_state | 71 |
+| imperial_state | 78 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
 
@@ -1762,7 +1762,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1198..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1198..1803 | 1198..1803 |
 
 ### fact-q42585-parent-q131964 | Kingdom of Bohemia -> Austrian Empire
 
@@ -2134,7 +2137,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1458..1604
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1458..1604 | 1458..1604 |
 
 ### fact-q58942549-parent-q12548 | Landgraviate of Lower Alsace -> Holy Roman Empire
 
@@ -2154,7 +2160,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1190
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1190 | 962..1190 |
 
 ### fact-q283627-parent-q12548 | Margraviate of Austria -> Holy Roman Empire
 
@@ -2213,7 +2222,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1520..1695
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1520..1695 | 1520..1695 |
 
 ### fact-q2273304-parent-q12560 | Moravian Serbia -> Ottoman Empire
 
@@ -2233,7 +2245,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1303..1328
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1303..1328 | 1303..1328 |
 
 ### fact-q736029-parent-q12548-1606 | Nassau-Siegen -> Holy Roman Empire
 
@@ -2243,7 +2258,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1606..1743
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1606..1743 | 1606..1743 |
 
 ### fact-q454436-parent-q12548 | Palatinate-Sulzbach -> Holy Roman Empire
 
@@ -2253,7 +2271,10 @@ unexplained_rows: 99
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1557..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1557..1806 | 1557..1806 |
 
 ### fact-q825902-parent-q172107 | Polish-Lithuanian union -> Polish-Lithuanian Commonwealth
 
