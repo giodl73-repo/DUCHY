@@ -1,0 +1,10 @@
+# Reviewed Kingdom of Sicily and Crown of Aragon relation packet.
+
+fact_id: fact-q188586-relation-q204920-composite-crown-component
+subject_id: title-q188586
+claim_kind: relation
+span: 1282..1707
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q188586, src-wikidata-q204920, src-wikipedia-kingdom-sicily-aragon
+confidence: multi_source
+---
