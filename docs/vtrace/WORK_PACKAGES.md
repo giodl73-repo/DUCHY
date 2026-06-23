@@ -192,10 +192,10 @@ git diff --check
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
 lookup, validation, title-path query trace context, and rank-skip relation
-classification. The first two accepted relation packets promote 18 relation
-facts and explain 18 active rank-skip rows. The remaining `WP-007` data
+classification. The first three accepted relation packets promote 25 relation
+facts and explain 25 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
-report can classify the remaining 205 unexplained rows.
+report can classify the remaining 198 unexplained rows.
 
 ## Orphan Check
 

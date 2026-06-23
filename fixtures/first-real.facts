@@ -10616,3 +10616,61 @@ span: 1083..1495
 value: imperial_state:title-q12548
 source_ids: src-wikidata-q2991474, src-wikidata-q12548, src-wikipedia-county-wurttemberg
 confidence: multi_source
+---
+# Reviewed non-parentage relation packet for remaining direct current-parent blockers.
+
+fact_id: fact-q830084-relation-q12548-imperial-state
+subject_id: title-q830084
+claim_kind: relation
+span: 1269..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q830084, src-wikidata-q12548, src-wikipedia-brunswick-wolfenbuttel
+confidence: multi_source
+---
+fact_id: fact-q686312-relation-q12544-vassalage-or-suzerainty
+subject_id: title-q686312
+claim_kind: relation
+span: 839..958
+value: vassalage_or_suzerainty:title-q12544
+source_ids: src-wikidata-q686312, src-wikidata-q12544, src-wikipedia-duchy-amalfi
+confidence: multi_source
+---
+fact_id: fact-q47261-relation-q12548-imperial-state
+subject_id: title-q47261
+claim_kind: relation
+span: 962..1805
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q47261, src-wikidata-q12548, src-wikipedia-duchy-bavaria
+confidence: multi_source
+---
+fact_id: fact-q151095-relation-q12548-imperial-state
+subject_id: title-q151095
+claim_kind: relation
+span: 1380..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q151095, src-wikidata-q12548, src-wikipedia-duchy-berg-hre
+confidence: multi_source
+---
+fact_id: fact-q642314-relation-q12548-imperial-state
+subject_id: title-q642314
+claim_kind: relation
+span: 982..1678
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q642314, src-wikidata-q12548, src-wikipedia-county-burgundy
+confidence: multi_source
+---
+fact_id: fact-q675363-relation-q12548-imperial-state
+subject_id: title-q675363
+claim_kind: relation
+span: 1032..1401
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q675363, src-wikidata-q12548, src-wikipedia-county-geneva
+confidence: multi_source
+---
+fact_id: fact-q1231403-relation-q12548-imperial-state
+subject_id: title-q1231403
+claim_kind: relation
+span: 1027..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q1231403, src-wikidata-q12548, src-wikipedia-prince-bishopric-trent
+confidence: multi_source

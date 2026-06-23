@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 520
-facts: 1348
+facts: 1355
 titles: 349
-relation_facts: 18
+relation_facts: 25
 rank_skip_rows: 223
-relation_explained_rows: 18
-unexplained_rows: 205
+relation_explained_rows: 25
+unexplained_rows: 198
 
 ## Interpretation
 
@@ -20,7 +20,8 @@ unexplained_rows: 205
 |---|---:|
 | confederation_member | 5 |
 | federal_state_member | 1 |
-| imperial_state | 12 |
+| imperial_state | 18 |
+| vassalage_or_suzerainty | 1 |
 
 ## Review Rows
 
@@ -189,7 +190,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1269..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1269..1806 | 1269..1806 |
 
 ### fact-q568473-parent-q12548 | Burgraviate of Nuremberg -> Holy Roman Empire
 
@@ -259,7 +263,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 982..1678
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 982..1678 | 982..1678 |
 
 ### fact-q1541699-parent-q204920 | County of Empuries -> Crown of Aragon
 
@@ -299,7 +306,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1032..1401
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1032..1401 | 1032..1401 |
 
 ### fact-q2037817-parent-q31929 | County of Girona -> Carolingian Empire
 
@@ -521,7 +531,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12544
 - current_parent_rank: Empire
 - span: 839..958
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Byzantine Empire (title-q12544) | 839..958 | 839..958 |
 
 ### fact-q16550783-parent-q150981 | Duchy of Anhalt -> North German Confederation
 
@@ -583,7 +596,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1805
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1805 | 962..1805 |
 
 ### fact-q151095-parent-q12548 | Duchy of Berg -> Holy Roman Empire
 
@@ -593,7 +609,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1380..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1380..1806 | 1380..1806 |
 
 ### fact-q2162698-parent-q12548 | Duchy of Bohemia -> Holy Roman Empire
 
@@ -2066,7 +2085,10 @@ unexplained_rows: 205
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1027..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1027..1803 | 1027..1803 |
 
 ### fact-q707767-parent-q12548 | Prince-Bishopric of Utrecht -> Holy Roman Empire
 
