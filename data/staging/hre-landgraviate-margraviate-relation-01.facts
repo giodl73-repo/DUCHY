@@ -1,0 +1,57 @@
+# Reviewed HRE landgraviate and margraviate relation packet.
+
+fact_id: fact-q751868-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q751868
+claim_kind: relation
+span: 1085..1183
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q751868, src-wikidata-q12548, src-wikipedia-landgraviate-brabant
+confidence: multi_source
+---
+fact_id: fact-q695322-relation-q12548-imperial-state
+subject_id: title-q695322
+claim_kind: relation
+span: 1264..1567
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q695322, src-wikidata-q12548, src-wikipedia-landgraviate-hesse
+confidence: multi_source
+---
+fact_id: fact-q693551-relation-q12548-imperial-state
+subject_id: title-q693551
+claim_kind: relation
+span: 1567..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q693551, src-wikidata-q12548, src-wikipedia-landgraviate-hesse-darmstadt
+confidence: multi_source
+---
+fact_id: fact-q168651-relation-q12548-imperial-state
+subject_id: title-q168651
+claim_kind: relation
+span: 1567..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q168651, src-wikidata-q12548, src-wikipedia-landgraviate-hesse-kassel
+confidence: multi_source
+---
+fact_id: fact-q283627-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q283627
+claim_kind: relation
+span: 976..1156
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q283627, src-wikidata-q12548, src-wikipedia-margraviate-austria
+confidence: multi_source
+---
+fact_id: fact-q148499-relation-q12548-imperial-state
+subject_id: title-q148499
+claim_kind: relation
+span: 1157..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q148499, src-wikidata-q12548, src-wikipedia-margraviate-brandenburg
+confidence: multi_source
+---
+fact_id: fact-q170180-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q170180
+claim_kind: relation
+span: 965..1423
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q170180, src-wikidata-q12548, src-wikipedia-margraviate-meissen
+confidence: multi_source

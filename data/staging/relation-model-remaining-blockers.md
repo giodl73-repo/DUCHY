@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first sixteen accepted relation-model packets promote 76 non-parentage
-relation facts. The generated relation report explains 83 of 231 active
+The first seventeen accepted relation-model packets promote 83 non-parentage
+relation facts. The generated relation report explains 90 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1450 |
+| facts | 1457 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 87 |
+| relation facts | 94 |
 | rank-skip rows | 231 |
-| relation-explained rows | 83 |
-| unexplained rank-skip rows | 148 |
+| relation-explained rows | 90 |
+| unexplained rank-skip rows | 141 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -53,6 +53,7 @@ Current measured baseline:
 | `hre-relation-batch-07` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-08` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-electorate-relation-01` | 8 | `imperial_state` |
+| `hre-landgraviate-margraviate-relation-01` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -197,3 +198,9 @@ ecclesiastical-principality wording.
 current HRE parent. Bavaria and Mainz are narrowed to materialized title overlap
 where source wording or the subject title outlives the accepted HRE or
 electorate identity spans.
+
+`hre-landgraviate-margraviate-relation-01` promotes seven bounded relations for
+landgraviates and margraviates. Brabant, Austria, and Meissen use
+`vassalage_or_suzerainty` from fief/frontier-march wording; Hesse,
+Hesse-Darmstadt, Hesse-Kassel, and Brandenburg use `imperial_state` from
+state/principality wording.

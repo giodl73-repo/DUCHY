@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1450
+facts: 1457
 titles: 356
-relation_facts: 87
+relation_facts: 94
 rank_skip_rows: 231
-relation_explained_rows: 83
-unexplained_rows: 148
+relation_explained_rows: 90
+unexplained_rows: 141
 
 ## Interpretation
 
@@ -22,9 +22,9 @@ unexplained_rows: 148
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 54 |
+| imperial_state | 58 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 7 |
+| vassalage_or_suzerainty | 10 |
 
 ## Review Rows
 
@@ -2019,7 +2019,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1085..1183
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1085..1183 | 1085..1183 |
 
 ### fact-q695322-parent-q12548 | Landgraviate of Hesse -> Holy Roman Empire
 
@@ -2029,7 +2032,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1264..1567
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1264..1567 | 1264..1567 |
 
 ### fact-q693551-parent-q12548 | Landgraviate of Hesse-Darmstadt -> Holy Roman Empire
 
@@ -2039,7 +2045,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1567..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1567..1806 | 1567..1806 |
 
 ### fact-q168651-parent-q12548 | Landgraviate of Hesse-Kassel -> Holy Roman Empire
 
@@ -2049,7 +2058,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1567..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1567..1803 | 1567..1803 |
 
 ### fact-q673837-parent-q12548 | Landgraviate of Hesse-Marburg -> Holy Roman Empire
 
@@ -2089,7 +2101,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 976..1156
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 976..1156 | 976..1156 |
 
 ### fact-q148499-parent-q12548 | Margraviate of Brandenburg -> Holy Roman Empire
 
@@ -2099,7 +2114,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1157..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1157..1806 | 1157..1806 |
 
 ### fact-q170180-parent-q12548 | Margraviate of Meissen -> Holy Roman Empire
 
@@ -2109,7 +2127,10 @@ unexplained_rows: 148
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 965..1423
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 965..1423 | 965..1423 |
 
 ### fact-q2670751-parent-q28513 | Margraviate of Moravia -> Austria-Hungary
 
