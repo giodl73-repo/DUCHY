@@ -12914,3 +12914,14 @@ value: vassalage_or_suzerainty:title-q171348
 source_ids: src-wikidata-q153091, src-wikidata-q171348, src-wikipedia-duchy-prussia
 confidence: multi_source
 ---
+---
+# Reviewed Confederation of the Rhine and First French Empire relation packet.
+
+fact_id: fact-q154741-relation-q71084-vassalage-or-suzerainty
+subject_id: title-q154741
+claim_kind: relation
+span: 1806..1813
+value: vassalage_or_suzerainty:title-q71084
+source_ids: src-wikidata-q154741, src-wikidata-q71084, src-wikipedia-confederation-rhine
+confidence: multi_source
+---
