@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1487
+facts: 1499
 titles: 356
-relation_facts: 124
+relation_facts: 136
 rank_skip_rows: 231
-relation_explained_rows: 120
-unexplained_rows: 111
+relation_explained_rows: 132
+unexplained_rows: 99
 
 ## Interpretation
 
@@ -19,10 +19,10 @@ unexplained_rows: 111
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 21 |
+| confederation_member | 28 |
 | crownland_component | 2 |
 | federal_state_member | 5 |
-| imperial_state | 66 |
+| imperial_state | 71 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
 
@@ -2527,7 +2527,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1826..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1826..1866 | 1826..1866 |
 
 ### fact-q700663-parent-q12548 | Saxe-Coburg-Saalfeld -> Holy Roman Empire
 
@@ -2537,7 +2540,10 @@ unexplained_rows: 111
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1699..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1699..1806 | 1699..1806 |
 
 ### fact-q700663-parent-q151624 | Saxe-Coburg-Saalfeld -> German Confederation
 
@@ -2547,7 +2553,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1825
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1825 | 1815..1825 |
 
 ### fact-q675085-parent-q12548 | Saxe-Gotha-Altenburg -> Holy Roman Empire
 
@@ -2557,7 +2566,10 @@ unexplained_rows: 111
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1680..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1680..1806 | 1680..1806 |
 
 ### fact-q675085-parent-q151624 | Saxe-Gotha-Altenburg -> German Confederation
 
@@ -2567,7 +2579,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1826
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1826 | 1815..1826 |
 
 ### fact-q281005-parent-q12548 | Saxe-Hildburghausen -> Holy Roman Empire
 
@@ -2577,7 +2592,10 @@ unexplained_rows: 111
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1680..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1680..1806 | 1680..1806 |
 
 ### fact-q281005-parent-q151624 | Saxe-Hildburghausen -> German Confederation
 
@@ -2587,7 +2605,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1826
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1826 | 1815..1826 |
 
 ### fact-q313175-parent-q12548 | Saxe-Lauenburg -> Holy Roman Empire
 
@@ -2646,7 +2667,10 @@ unexplained_rows: 111
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1643..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1643..1806 | 1643..1806 |
 
 ### fact-q310650-parent-q151624 | Schaumburg-Lippe -> German Confederation
 
@@ -2656,7 +2680,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q695316-parent-q151624 | Schwarzburg-Rudolstadt -> German Confederation
 
@@ -2666,7 +2693,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q630163-parent-q12548 | Schwarzburg-Sondershausen -> Holy Roman Empire
 
@@ -2676,7 +2706,10 @@ unexplained_rows: 111
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1599..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1599..1806 | 1599..1806 |
 
 ### fact-q630163-parent-q151624 | Schwarzburg-Sondershausen -> German Confederation
 
@@ -2686,7 +2719,10 @@ unexplained_rows: 111
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q958291-parent-q12560 | United Principalities of Moldavia and Wallachia -> Ottoman Empire
 

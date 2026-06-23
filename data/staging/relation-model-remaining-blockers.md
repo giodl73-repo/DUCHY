@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-two accepted relation-model packets promote 124 non-parentage
-relation facts. The generated relation report explains 120 of 231 active
+The first twenty-three accepted relation-model packets promote 136 non-parentage
+relation facts. The generated relation report explains 132 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1487 |
+| facts | 1499 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 124 |
+| relation facts | 136 |
 | rank-skip rows | 231 |
-| relation-explained rows | 120 |
-| unexplained rank-skip rows | 111 |
+| relation-explained rows | 132 |
+| unexplained rank-skip rows | 99 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -57,6 +57,7 @@ Current measured baseline:
 | `hre-relation-batch-09` | 10 | `imperial_state`, `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 | `german-state-relation-batch-01` | 8 | `imperial_state`, `confederation_member`, `federal_state_member` |
 | `german-state-relation-batch-02` | 12 | `imperial_state`, `confederation_member`, `federal_state_member` |
+| `german-state-relation-batch-03` | 12 | `imperial_state`, `confederation_member` |
 
 ## Held Rows
 
@@ -229,3 +230,11 @@ Mecklenburg-Strelitz, Saxe-Altenburg, Saxe-Weimar-Eisenach, and Saxe-Lauenburg
 use the same relation vocabulary for accepted German Confederation, North
 German Confederation, German Empire, and Holy Roman Empire spans without
 changing parentage.
+
+`german-state-relation-batch-03` promotes twelve more source-backed relation
+contexts for Saxe-Coburg and Gotha, Saxe-Coburg-Saalfeld,
+Saxe-Gotha-Altenburg, Saxe-Hildburghausen, Schaumburg-Lippe,
+Schwarzburg-Rudolstadt, and Schwarzburg-Sondershausen. The packet stays on
+active current-parent rows and does not import extra North German
+Confederation, German Empire, Weimar Republic, or Confederation of the Rhine
+contexts that sources mention but current parentage does not yet model.

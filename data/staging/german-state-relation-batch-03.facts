@@ -1,0 +1,97 @@
+# Reviewed German state relation packet 03.
+
+fact_id: fact-q3462133-relation-q151624-confederation-member
+subject_id: title-q3462133
+claim_kind: relation
+span: 1826..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q3462133, src-wikidata-q151624, src-wikipedia-saxe-coburg-gotha
+confidence: multi_source
+---
+fact_id: fact-q700663-relation-q12548-imperial-state
+subject_id: title-q700663
+claim_kind: relation
+span: 1699..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q700663, src-wikidata-q12548, src-wikipedia-saxe-coburg-saalfeld
+confidence: multi_source
+---
+fact_id: fact-q700663-relation-q151624-confederation-member
+subject_id: title-q700663
+claim_kind: relation
+span: 1815..1825
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q700663, src-wikidata-q151624, src-wikipedia-saxe-coburg-saalfeld
+confidence: multi_source
+---
+fact_id: fact-q675085-relation-q12548-imperial-state
+subject_id: title-q675085
+claim_kind: relation
+span: 1680..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q675085, src-wikidata-q12548, src-wikipedia-saxe-gotha-altenburg
+confidence: multi_source
+---
+fact_id: fact-q675085-relation-q151624-confederation-member
+subject_id: title-q675085
+claim_kind: relation
+span: 1815..1826
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q675085, src-wikidata-q151624, src-wikipedia-saxe-gotha-altenburg
+confidence: multi_source
+---
+fact_id: fact-q281005-relation-q12548-imperial-state
+subject_id: title-q281005
+claim_kind: relation
+span: 1680..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q281005, src-wikidata-q12548, src-wikipedia-saxe-hildburghausen
+confidence: multi_source
+---
+fact_id: fact-q281005-relation-q151624-confederation-member
+subject_id: title-q281005
+claim_kind: relation
+span: 1815..1826
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q281005, src-wikidata-q151624, src-wikipedia-saxe-hildburghausen
+confidence: multi_source
+---
+fact_id: fact-q310650-relation-q12548-imperial-state
+subject_id: title-q310650
+claim_kind: relation
+span: 1643..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q310650, src-wikidata-q12548, src-wikipedia-schaumburg-lippe
+confidence: multi_source
+---
+fact_id: fact-q310650-relation-q151624-confederation-member
+subject_id: title-q310650
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q310650, src-wikidata-q151624, src-wikipedia-schaumburg-lippe
+confidence: multi_source
+---
+fact_id: fact-q695316-relation-q151624-confederation-member
+subject_id: title-q695316
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q695316, src-wikidata-q151624, src-wikipedia-schwarzburg-rudolstadt
+confidence: multi_source
+---
+fact_id: fact-q630163-relation-q12548-imperial-state
+subject_id: title-q630163
+claim_kind: relation
+span: 1599..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q630163, src-wikidata-q12548, src-wikipedia-schwarzburg-sondershausen
+confidence: multi_source
+---
+fact_id: fact-q630163-relation-q151624-confederation-member
+subject_id: title-q630163
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q630163, src-wikidata-q151624, src-wikipedia-schwarzburg-sondershausen
+confidence: multi_source
