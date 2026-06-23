@@ -461,6 +461,12 @@ and again imports no replacements: three need child-level intermediate sources,
 six need relation-model or split-control work, and Duchy of Guelders is flagged
 as a rank-identity blocker because its accepted label is Duchy while its
 accepted rank fact is County.
+The third rank-skip review batch switches from county-only review to generic
+parentage review because the remaining high-priority queue has reached
+duchy-rank titles. It reviews ten more rows, imports no replacements, and
+classifies eight as relation-model blockers and two as source-custody
+tightening rows for Archduchy of Austria under Austrian Empire and
+Austria-Hungary.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
