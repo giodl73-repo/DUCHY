@@ -209,8 +209,8 @@ has corrected the title rank to `Duchy` and promoted one bounded
 `imperial_state` relation. The Low Countries HRE pass has promoted four
 additional `imperial_state` relation facts for early Holland, Luxembourg,
 early Namur, and Ravensberg. The next work needs source-custody or modeling
-packets for future Principality of Catalonia title
-modeling, broader Burgundy/Arles or partition semantics, and deeper
+packets for Catalonia edge modeling only when a bounded child-level source
+overlaps an accepted title span, broader Burgundy/Arles or partition semantics, and deeper
 intermediate parentage only when bounded child-level evidence is available.
 
 ## Orphan Check

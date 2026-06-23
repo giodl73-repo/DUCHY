@@ -11133,3 +11133,27 @@ span: 1714..1795
 value: composite_crown_component:title-q700283
 source_ids: src-wikidata-q599613, src-wikidata-q700283, src-wikipedia-county-namur-successor-context, src-wikipedia-austrian-netherlands
 confidence: multi_source
+---
+# Reviewed Principality of Catalonia title identity packet.
+
+fact_id: fact-q15581-name
+subject_id: title-q15581
+claim_kind: name
+value: Principality of Catalonia
+source_ids: src-wikidata-q15581, src-wikipedia-principality-catalonia
+confidence: multi_source
+---
+fact_id: fact-q15581-rank
+subject_id: title-q15581
+claim_kind: rank
+value: Duchy
+source_ids: src-wikidata-q15581, src-wikipedia-principality-catalonia
+confidence: multi_source
+---
+fact_id: fact-q15581-exists
+subject_id: title-q15581
+claim_kind: title_exists
+span: 1173..1714
+value: exists
+source_ids: src-wikidata-q15581, src-wikipedia-principality-catalonia
+confidence: multi_source

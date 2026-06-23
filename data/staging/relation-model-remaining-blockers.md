@@ -18,9 +18,9 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 539 |
-| facts | 1410 |
-| titles | 355 |
+| sources | 540 |
+| facts | 1413 |
+| titles | 356 |
 | parentage facts | 289 |
 | relation facts | 50 |
 | rank-skip rows | 231 |
@@ -63,8 +63,8 @@ Prioritize packets that can unlock multiple held rows:
 1. Deeper Low Countries successor-state title modeling for Habsburg
    Netherlands, Seventeen Provinces, Dutch Republic, Spanish Netherlands,
    Austrian Netherlands, and Batavian Republic.
-2. Deeper Principality of Catalonia title modeling after the Barcelona
-   composite-crown relation pass.
+2. Catalonia edge modeling only after a bounded child-level source overlaps an
+   accepted title span.
 3. Burgundy/Arles, Geneva/Savoyard successor, HRE partition, and Welf
    partition relation semantics.
 4. Deeper Luxembourg/Namur/Ravensberg/early Holland intermediate parentage only
@@ -129,6 +129,12 @@ records and promotes one bounded `composite_crown_component` relation for
 County of Barcelona under the Crown of Aragon in 1162..1164. This explains the
 current-parent rank skip without importing a Principality of Catalonia title or
 changing parentage.
+
+`principality-catalonia-title-01` materializes Principality of Catalonia as a
+Duchy-rank title for 1173..1714. It intentionally does not replace the accepted
+County of Barcelona -> Crown of Aragon parentage because the Barcelona title
+span ends in 1164 in the current fixture, before the Principality title span
+starts.
 
 `guelders-rank-identity-01` supersedes the erroneous `County` rank for Duchy of
 Guelders with a reviewed `Duchy` rank. `relation-model-guelders-01` then

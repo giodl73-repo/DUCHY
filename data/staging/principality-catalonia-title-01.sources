@@ -1,0 +1,13 @@
+# Reviewed Principality of Catalonia title identity packet.
+
+source_id: src-wikidata-q15581
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q15581
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Principality of Catalonia (Q15581).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Principality of Catalonia title identity only; no Barcelona parentage replacement, Catalan institutional detail, French personal union, Spanish successor claim, or modern Catalonia claim imported.
