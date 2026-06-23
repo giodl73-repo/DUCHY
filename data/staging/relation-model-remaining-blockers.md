@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first ten accepted relation-model packets promote 40 non-parentage
-relation facts. The generated relation report explains 47 of 231 active
+The first eleven accepted relation-model packets promote 41 non-parentage
+relation facts. The generated relation report explains 48 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1413 |
+| facts | 1415 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 50 |
+| relation facts | 52 |
 | rank-skip rows | 231 |
-| relation-explained rows | 47 |
-| unexplained rank-skip rows | 184 |
+| relation-explained rows | 48 |
+| unexplained rank-skip rows | 183 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -47,6 +47,7 @@ Current measured baseline:
 | `low-countries-successor-parentage-01` | 7 | `composite_crown_component` |
 | `namur-successor-parentage-01` | 4 | `composite_crown_component` |
 | `brunswick-wolfenbuttel-welf-relation-01` | 1 | `subdivision_or_appanage` |
+| `duchy-savoy-hre-relation-01` | 1 | `imperial_state` |
 
 ## Held Rows
 
@@ -156,3 +157,8 @@ parentage.
 Brunswick-Luneburg for 1269..1806. Parentage remains under the Holy Roman
 Empire because the current rank policy rejects Duchy-to-Duchy parent edges, and
 the existing `imperial_state` relation remains valid as a simultaneous context.
+
+`duchy-savoy-hre-relation-01` promotes one bounded `imperial_state` relation
+from Duchy of Savoy to the Holy Roman Empire for 1416..1806. This explains the
+current-parent rank skip without importing County of Savoy predecessor detail,
+French occupation periods, Sardinian transition, or territorial inventory.

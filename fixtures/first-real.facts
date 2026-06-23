@@ -11167,3 +11167,13 @@ span: 1269..1806
 value: subdivision_or_appanage:title-q556263
 source_ids: src-wikidata-q830084, src-wikidata-q556263, src-wikipedia-brunswick-wolfenbuttel, src-wikipedia-duchy-brunswick-luneburg
 confidence: multi_source
+---
+# Reviewed Duchy of Savoy imperial-state relation packet.
+
+fact_id: fact-q426025-relation-q12548-imperial-state
+subject_id: title-q426025
+claim_kind: relation
+span: 1416..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q426025, src-wikidata-q12548, src-wikipedia-duchy-savoy
+confidence: multi_source
