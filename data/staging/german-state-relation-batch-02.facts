@@ -1,0 +1,97 @@
+# Reviewed German state relation packet 02.
+
+fact_id: fact-q20135-relation-q151624-confederation-member
+subject_id: title-q20135
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q20135, src-wikidata-q151624, src-wikipedia-grand-duchy-hesse
+confidence: multi_source
+---
+fact_id: fact-q20135-relation-q43287-federal-state-member
+subject_id: title-q20135
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q20135, src-wikidata-q43287, src-wikipedia-grand-duchy-hesse
+confidence: multi_source
+---
+fact_id: fact-q158445-relation-q151624-confederation-member
+subject_id: title-q158445
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q158445, src-wikidata-q151624, src-wikipedia-grand-duchy-mecklenburg-schwerin
+confidence: multi_source
+---
+fact_id: fact-q158445-relation-q150981-confederation-member
+subject_id: title-q158445
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q158445, src-wikidata-q150981, src-wikipedia-grand-duchy-mecklenburg-schwerin
+confidence: multi_source
+---
+fact_id: fact-q158445-relation-q43287-federal-state-member
+subject_id: title-q158445
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q158445, src-wikidata-q43287, src-wikipedia-grand-duchy-mecklenburg-schwerin
+confidence: multi_source
+---
+fact_id: fact-q161215-relation-q151624-confederation-member
+subject_id: title-q161215
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q161215, src-wikidata-q151624, src-wikipedia-grand-duchy-mecklenburg-strelitz
+confidence: multi_source
+---
+fact_id: fact-q161215-relation-q150981-confederation-member
+subject_id: title-q161215
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q161215, src-wikidata-q150981, src-wikipedia-grand-duchy-mecklenburg-strelitz
+confidence: multi_source
+---
+fact_id: fact-q158151-relation-q12548-imperial-state
+subject_id: title-q158151
+claim_kind: relation
+span: 1602..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q158151, src-wikidata-q12548, src-wikipedia-saxe-altenburg
+confidence: multi_source
+---
+fact_id: fact-q158151-relation-q151624-confederation-member
+subject_id: title-q158151
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q158151, src-wikidata-q151624, src-wikipedia-saxe-altenburg
+confidence: multi_source
+---
+fact_id: fact-q155570-relation-q151624-confederation-member
+subject_id: title-q155570
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q155570, src-wikidata-q151624, src-wikipedia-saxe-weimar-eisenach
+confidence: multi_source
+---
+fact_id: fact-q155570-relation-q150981-confederation-member
+subject_id: title-q155570
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q155570, src-wikidata-q150981, src-wikipedia-saxe-weimar-eisenach
+confidence: multi_source
+---
+fact_id: fact-q313175-relation-q12548-imperial-state
+subject_id: title-q313175
+claim_kind: relation
+span: 1296..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q313175, src-wikidata-q12548, src-wikipedia-saxe-lauenburg
+confidence: multi_source

@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1475
+facts: 1487
 titles: 356
-relation_facts: 112
+relation_facts: 124
 rank_skip_rows: 231
-relation_explained_rows: 108
-unexplained_rows: 123
+relation_explained_rows: 120
+unexplained_rows: 111
 
 ## Interpretation
 
@@ -19,10 +19,10 @@ unexplained_rows: 123
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 13 |
+| confederation_member | 21 |
 | crownland_component | 2 |
-| federal_state_member | 3 |
-| imperial_state | 64 |
+| federal_state_member | 5 |
+| imperial_state | 66 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
 
@@ -1477,7 +1477,10 @@ unexplained_rows: 123
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q20135-parent-q43287 | Grand Duchy of Hesse -> German Empire
 
@@ -1487,7 +1490,10 @@ unexplained_rows: 123
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q49683-parent-q172107 | Grand Duchy of Lithuania -> Polish-Lithuanian Commonwealth
 
@@ -1507,7 +1513,10 @@ unexplained_rows: 123
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q158445-parent-q151624 | Grand Duchy of Mecklenburg-Schwerin -> German Confederation
 
@@ -1517,7 +1526,10 @@ unexplained_rows: 123
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q158445-parent-q43287 | Grand Duchy of Mecklenburg-Schwerin -> German Empire
 
@@ -1527,7 +1539,10 @@ unexplained_rows: 123
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q161215-parent-q150981 | Grand Duchy of Mecklenburg-Strelitz -> North German Confederation
 
@@ -1537,7 +1552,10 @@ unexplained_rows: 123
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q161215-parent-q151624 | Grand Duchy of Mecklenburg-Strelitz -> German Confederation
 
@@ -1547,7 +1565,10 @@ unexplained_rows: 123
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q693669-parent-q150981 | Grand Duchy of Oldenburg -> North German Confederation
 
@@ -2480,7 +2501,10 @@ unexplained_rows: 123
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1602..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1602..1806 | 1602..1806 |
 
 ### fact-q158151-parent-q151624 | Saxe-Altenburg -> German Confederation
 
@@ -2490,7 +2514,10 @@ unexplained_rows: 123
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q3462133-parent-q151624 | Saxe-Coburg and Gotha -> German Confederation
 
@@ -2570,7 +2597,10 @@ unexplained_rows: 123
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1296..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1296..1806 | 1296..1806 |
 
 ### fact-q313175-parent-q151624 | Saxe-Lauenburg -> German Confederation
 
@@ -2590,7 +2620,10 @@ unexplained_rows: 123
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q155570-parent-q151624 | Saxe-Weimar-Eisenach -> German Confederation
 
@@ -2600,7 +2633,10 @@ unexplained_rows: 123
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q310650-parent-q12548 | Schaumburg-Lippe -> Holy Roman Empire
 

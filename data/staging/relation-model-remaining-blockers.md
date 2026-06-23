@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-one accepted relation-model packets promote 112 non-parentage
-relation facts. The generated relation report explains 108 of 231 active
+The first twenty-two accepted relation-model packets promote 124 non-parentage
+relation facts. The generated relation report explains 120 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1475 |
+| facts | 1487 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 112 |
+| relation facts | 124 |
 | rank-skip rows | 231 |
-| relation-explained rows | 108 |
-| unexplained rank-skip rows | 123 |
+| relation-explained rows | 120 |
+| unexplained rank-skip rows | 111 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -56,6 +56,7 @@ Current measured baseline:
 | `hre-landgraviate-margraviate-relation-01` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-09` | 10 | `imperial_state`, `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 | `german-state-relation-batch-01` | 8 | `imperial_state`, `confederation_member`, `federal_state_member` |
+| `german-state-relation-batch-02` | 12 | `imperial_state`, `confederation_member`, `federal_state_member` |
 
 ## Held Rows
 
@@ -221,3 +222,10 @@ membership contexts. Hohenzollern-Hechingen and Hohenzollern-Sigmaringen use
 German Confederation spans; Electorate of Hesse uses `confederation_member`;
 and Oldenburg uses `confederation_member` for German and North German
 Confederation spans plus `federal_state_member` for its German Empire span.
+
+`german-state-relation-batch-02` promotes twelve additional bounded German
+state membership contexts. Grand Duchy of Hesse, Mecklenburg-Schwerin,
+Mecklenburg-Strelitz, Saxe-Altenburg, Saxe-Weimar-Eisenach, and Saxe-Lauenburg
+use the same relation vocabulary for accepted German Confederation, North
+German Confederation, German Empire, and Holy Roman Empire spans without
+changing parentage.
