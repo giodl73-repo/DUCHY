@@ -1,0 +1,49 @@
+# Reviewed non-parentage relation packet for first WP-007 rank-skip explanations.
+
+fact_id: fact-q16550783-relation-q151624-confederation-member
+subject_id: title-q16550783
+claim_kind: relation
+span: 1863..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q16550783, src-wikidata-q151624, src-wikipedia-duchy-anhalt
+confidence: multi_source
+---
+fact_id: fact-q16550783-relation-q150981-confederation-member
+subject_id: title-q16550783
+claim_kind: relation
+span: 1867..1870
+value: confederation_member:title-q150981
+source_ids: src-wikidata-q16550783, src-wikidata-q150981, src-wikipedia-duchy-anhalt
+confidence: multi_source
+---
+fact_id: fact-q16550783-relation-q43287-federal-state-member
+subject_id: title-q16550783
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q16550783, src-wikidata-q43287, src-wikipedia-duchy-anhalt
+confidence: multi_source
+---
+fact_id: fact-q556263-relation-q12548-imperial-state
+subject_id: title-q556263
+claim_kind: relation
+span: 1235..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q556263, src-wikidata-q12548, src-wikipedia-duchy-brunswick-luneburg
+confidence: multi_source
+---
+fact_id: fact-q3624335-relation-q12548-imperial-state
+subject_id: title-q3624335
+claim_kind: relation
+span: 1156..1453
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q3624335, src-wikidata-q12548, src-wikipedia-duchy-austria
+confidence: multi_source
+---
+fact_id: fact-q2162698-relation-q12548-imperial-state
+subject_id: title-q2162698
+claim_kind: relation
+span: 1002..1198
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q2162698, src-wikidata-q12548, src-wikipedia-duchy-bohemia
+confidence: multi_source

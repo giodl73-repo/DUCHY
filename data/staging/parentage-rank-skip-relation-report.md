@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 520
-facts: 1330
+facts: 1336
 titles: 349
-relation_facts: 0
+relation_facts: 6
 rank_skip_rows: 223
-relation_explained_rows: 0
-unexplained_rows: 223
+relation_explained_rows: 6
+unexplained_rows: 217
 
 ## Interpretation
 
@@ -18,7 +18,9 @@ unexplained_rows: 223
 
 | Relation Kind | Rows |
 |---|---:|
-| none | 0 |
+| confederation_member | 2 |
+| federal_state_member | 1 |
+| imperial_state | 3 |
 
 ## Review Rows
 
@@ -150,7 +152,10 @@ unexplained_rows: 223
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1235..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1235..1806 | 1235..1806 |
 
 ### fact-q830084-parent-q12548 | Brunswick-Wolfenbuttel -> Holy Roman Empire
 
@@ -490,7 +495,10 @@ unexplained_rows: 223
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q16550783-parent-q151624 | Duchy of Anhalt -> German Confederation
 
@@ -500,7 +508,10 @@ unexplained_rows: 223
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1863..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1863..1866 | 1863..1866 |
 
 ### fact-q16550783-parent-q43287 | Duchy of Anhalt -> German Empire
 
@@ -510,7 +521,10 @@ unexplained_rows: 223
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q3624335-parent-q12548 | Duchy of Austria -> Holy Roman Empire
 
@@ -520,7 +534,10 @@ unexplained_rows: 223
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1156..1453
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1156..1453 | 1156..1453 |
 
 ### fact-q47261-parent-q12548 | Duchy of Bavaria -> Holy Roman Empire
 
@@ -550,7 +567,10 @@ unexplained_rows: 223
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1002..1198
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1002..1198 | 1002..1198 |
 
 ### fact-q159856-parent-q12548 | Duchy of Brabant -> Holy Roman Empire
 

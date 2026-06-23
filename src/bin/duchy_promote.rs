@@ -185,6 +185,29 @@ fn promotion_report(
         ));
     }
 
+    report.push_str("\n## Candidate Relations\n\n");
+    for fact in candidate_facts
+        .iter()
+        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Relation)
+    {
+        let span = fact
+            .span
+            .as_ref()
+            .map(|span| {
+                format!(
+                    "{}..{}",
+                    span.start,
+                    span.end
+                        .map_or_else(|| "present".to_string(), |end| end.to_string())
+                )
+            })
+            .unwrap_or_else(|| "missing-span".to_string());
+        report.push_str(&format!(
+            "- {} | {} -> {} | {}\n",
+            fact.fact_id, fact.subject_id, fact.value, span
+        ));
+    }
+
     report.push_str("\n## Candidate Fact IDs\n\n");
     for fact in candidate_facts {
         report.push_str(&format!("- {}\n", fact.fact_id));

@@ -69,7 +69,7 @@ Future title facts should include:
 |---|---:|---|
 | `fact_id` | yes | Stable DUCHY-local ID. |
 | `subject_id` | yes | Area or title identity. |
-| `claim_kind` | yes | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
+| `claim_kind` | yes | `title_exists`, `area_title`, `parentage`, `relation`, `holder`, `event`, `name`, or `rank`. |
 | `span` | conditional | Date span for temporal claims. |
 | `value` | yes | Referenced title, holder, event kind, name, or status. |
 | `source_ids` | yes | Source records supporting the claim. |
@@ -105,6 +105,12 @@ Rules:
 - `span` uses `start..end`; open spans use `start..present`.
 - `parentage` facts use `subject_id` as the child title and `value` as the
   parent title ID.
+- `relation` facts use `subject_id` as the relation subject and `value` as
+  `relation_kind:related_title_id`; current relation kinds are
+  `imperial_state`, `confederation_member`, `federal_state_member`,
+  `composite_crown_component`, `split_fief_or_control`,
+  `vassalage_or_suzerainty`, `subdivision_or_appanage`, and
+  `rank_transition`.
 - Source-backed parentage uses direct documented links and may skip CK-style
   intermediate ranks when the reviewed source supports that relation.
 - Fact files still require separate source metadata and source-custody review.
