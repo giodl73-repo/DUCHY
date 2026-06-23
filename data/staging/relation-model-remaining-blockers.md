@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first seventeen accepted relation-model packets promote 83 non-parentage
-relation facts. The generated relation report explains 90 of 231 active
+The first twenty accepted relation-model packets promote 104 non-parentage
+relation facts. The generated relation report explains 100 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1457 |
+| facts | 1467 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 94 |
+| relation facts | 104 |
 | rank-skip rows | 231 |
-| relation-explained rows | 90 |
-| unexplained rank-skip rows | 141 |
+| relation-explained rows | 100 |
+| unexplained rank-skip rows | 131 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -54,6 +54,7 @@ Current measured baseline:
 | `hre-relation-batch-08` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-electorate-relation-01` | 8 | `imperial_state` |
 | `hre-landgraviate-margraviate-relation-01` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
+| `hre-relation-batch-09` | 10 | `imperial_state`, `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -204,3 +205,11 @@ landgraviates and margraviates. Brabant, Austria, and Meissen use
 `vassalage_or_suzerainty` from fief/frontier-march wording; Hesse,
 Hesse-Darmstadt, Hesse-Kassel, and Brandenburg use `imperial_state` from
 state/principality wording.
+
+`hre-relation-batch-09` promotes ten residual bounded relation contexts from
+already accepted source-custody rows. Tuscany and Florence use
+`vassalage_or_suzerainty` from imperial-fief and imperial-determination
+wording; Toul, Lippe, Salzburg, and Saxe-Meiningen use `imperial_state` for
+Holy Roman Empire spans; Lippe, Nassau, and Saxe-Meiningen use
+`confederation_member` for German Confederation spans; and Saxe-Meiningen uses
+`federal_state_member` for its German Empire span.

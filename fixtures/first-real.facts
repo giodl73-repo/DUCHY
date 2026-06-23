@@ -11525,3 +11525,85 @@ span: 965..1423
 value: vassalage_or_suzerainty:title-q12548
 source_ids: src-wikidata-q170180, src-wikidata-q12548, src-wikipedia-margraviate-meissen
 confidence: multi_source
+---
+# Reviewed HRE/German Confederation residual relation packet.
+
+fact_id: fact-q154849-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q154849
+claim_kind: relation
+span: 1575..1801
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q154849, src-wikidata-q12548, src-wikipedia-grand-duchy-tuscany
+confidence: multi_source
+---
+fact_id: fact-q2252973-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q2252973
+claim_kind: relation
+span: 1532..1569
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q2252973, src-wikidata-q12548, src-wikipedia-duchy-florence, src-wikipedia-grand-duchy-tuscany
+confidence: multi_source
+---
+fact_id: fact-q328001-relation-q12548-imperial-state
+subject_id: title-q328001
+claim_kind: relation
+span: 1048..1648
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q328001, src-wikidata-q12548, src-wikipedia-diocese-toul
+confidence: multi_source
+---
+fact_id: fact-q14551680-relation-q12548-imperial-state
+subject_id: title-q14551680
+claim_kind: relation
+span: 1789..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q14551680, src-wikidata-q12548, src-wikipedia-principality-lippe
+confidence: multi_source
+---
+fact_id: fact-q14551680-relation-q151624-confederation-member
+subject_id: title-q14551680
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q14551680, src-wikidata-q151624, src-wikipedia-principality-lippe
+confidence: multi_source
+---
+fact_id: fact-q836680-relation-q151624-confederation-member
+subject_id: title-q836680
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q836680, src-wikidata-q151624, src-wikipedia-duchy-nassau
+confidence: multi_source
+---
+fact_id: fact-q701614-relation-q12548-imperial-state
+subject_id: title-q701614
+claim_kind: relation
+span: 1281..1802
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q701614, src-wikidata-q12548, src-wikipedia-prince-archbishopric-salzburg
+confidence: multi_source
+---
+fact_id: fact-q157710-relation-q12548-imperial-state
+subject_id: title-q157710
+claim_kind: relation
+span: 1675..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q157710, src-wikidata-q12548, src-wikipedia-saxe-meiningen
+confidence: multi_source
+---
+fact_id: fact-q157710-relation-q151624-confederation-member
+subject_id: title-q157710
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q157710, src-wikidata-q151624, src-wikipedia-saxe-meiningen
+confidence: multi_source
+---
+fact_id: fact-q157710-relation-q43287-federal-state-member
+subject_id: title-q157710
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q157710, src-wikidata-q43287, src-wikipedia-saxe-meiningen
+confidence: multi_source

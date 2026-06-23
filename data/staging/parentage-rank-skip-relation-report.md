@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1457
+facts: 1467
 titles: 356
-relation_facts: 94
+relation_facts: 104
 rank_skip_rows: 231
-relation_explained_rows: 90
-unexplained_rows: 141
+relation_explained_rows: 100
+unexplained_rows: 131
 
 ## Interpretation
 
@@ -19,12 +19,12 @@ unexplained_rows: 141
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 5 |
+| confederation_member | 8 |
 | crownland_component | 2 |
-| federal_state_member | 1 |
-| imperial_state | 58 |
+| federal_state_member | 2 |
+| imperial_state | 62 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 10 |
+| vassalage_or_suzerainty | 12 |
 
 ## Review Rows
 
@@ -910,7 +910,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1532..1569
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1532..1569 | 1532..1569 |
 
 ### fact-q152420-parent-q12548 | Duchy of Guelders -> Holy Roman Empire
 
@@ -1077,7 +1080,10 @@ unexplained_rows: 141
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q165040-parent-q12548 | Duchy of Parma and Piacenza -> Holy Roman Empire
 
@@ -1136,7 +1142,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1675..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1675..1806 | 1675..1806 |
 
 ### fact-q157710-parent-q151624 | Duchy of Saxe-Meiningen -> German Confederation
 
@@ -1146,7 +1155,10 @@ unexplained_rows: 141
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q157710-parent-q43287 | Duchy of Saxe-Meiningen -> German Empire
 
@@ -1156,7 +1168,10 @@ unexplained_rows: 141
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q164092-parent-q12548 | Duchy of Saxony -> Holy Roman Empire
 
@@ -1569,7 +1584,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1575..1801
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1575..1801 | 1575..1801 |
 
 ### fact-q698089-parent-q154741 | Grand Duchy of Wurzburg -> Confederation of the Rhine
 
@@ -2210,7 +2228,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1278..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1281..1802 | 1281..1802 |
 
 ### fact-q173863-parent-q12548 | Prince-Bishopric of Augsburg -> Holy Roman Empire
 
@@ -2347,7 +2368,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1048..1648
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1048..1648 | 1048..1648 |
 
 ### fact-q1231403-parent-q12548 | Prince-Bishopric of Trent -> Holy Roman Empire
 
@@ -2396,7 +2420,10 @@ unexplained_rows: 141
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1789..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1789..1806 | 1789..1806 |
 
 ### fact-q14551680-parent-q151624 | Principality of Lippe -> German Confederation
 
@@ -2406,7 +2433,10 @@ unexplained_rows: 141
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q684030-parent-q12560 | Principality of Serbia -> Ottoman Empire
 
