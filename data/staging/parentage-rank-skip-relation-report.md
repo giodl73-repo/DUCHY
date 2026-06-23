@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1516
+facts: 1519
 titles: 356
-relation_facts: 153
+relation_facts: 156
 rank_skip_rows: 231
-relation_explained_rows: 148
-unexplained_rows: 83
+relation_explained_rows: 151
+unexplained_rows: 80
 
 ## Interpretation
 
@@ -19,10 +19,10 @@ unexplained_rows: 83
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 32 |
+| confederation_member | 34 |
 | crownland_component | 2 |
 | federal_state_member | 10 |
-| imperial_state | 78 |
+| imperial_state | 79 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
 
@@ -949,7 +949,10 @@ unexplained_rows: 83
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q836937-parent-q12548 | Duchy of Julich -> Holy Roman Empire
 
@@ -1194,7 +1197,10 @@ unexplained_rows: 83
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1313
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1313 | 962..1313 |
 
 ### fact-q649202-parent-q170174 | Duchy of Urbino -> Papal States
 
@@ -2679,7 +2685,10 @@ unexplained_rows: 83
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q155570-parent-q150981 | Saxe-Weimar-Eisenach -> North German Confederation
 

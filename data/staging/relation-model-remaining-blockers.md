@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-five accepted relation-model packets promote 153 non-parentage
-relation facts. The generated relation report explains 148 of 231 active
+The first twenty-six accepted relation-model packets promote 156 non-parentage
+relation facts. The generated relation report explains 151 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1516 |
+| facts | 1519 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 153 |
+| relation facts | 156 |
 | rank-skip rows | 231 |
-| relation-explained rows | 148 |
-| unexplained rank-skip rows | 83 |
+| relation-explained rows | 151 |
+| unexplained rank-skip rows | 80 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -60,6 +60,7 @@ Current measured baseline:
 | `german-state-relation-batch-03` | 12 | `imperial_state`, `confederation_member` |
 | `hre-relation-batch-10` | 8 | `imperial_state` |
 | `german-structured-bridge-relation-01` | 9 | `confederation_member`, `federal_state_member` |
+| `hre-relation-batch-11` | 3 | `imperial_state`, `confederation_member` |
 
 ## Held Rows
 
@@ -251,3 +252,9 @@ structured-only rows remain unpromoted.
 accepted structured bridge reviews. It is limited to source records whose
 review notes explicitly allow bridge relations: German Confederation or German
 Empire relations for Bavaria, Wurttemberg, Baden, Hanover, Prussia, and Saxony.
+
+`hre-relation-batch-11` promotes three residual current-parent relation
+contexts: Holstein and Saxe-Lauenburg as German Confederation members for
+1815..1866, and Swabia as a Holy Roman Empire imperial state for 962..1313.
+The packet reuses already accepted source custody and leaves parentage
+unchanged.

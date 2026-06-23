@@ -12009,3 +12009,29 @@ span: 1815..1866
 value: confederation_member:title-q151624
 source_ids: src-wikidata-q164079, src-wikidata-q151624
 confidence: multi_source
+---
+# Reviewed residual HRE/German Confederation relation packet 11.
+
+fact_id: fact-q704288-relation-q151624-confederation-member
+subject_id: title-q704288
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q704288, src-wikidata-q151624, src-wikipedia-duchy-holstein
+confidence: multi_source
+---
+fact_id: fact-q313175-relation-q151624-confederation-member
+subject_id: title-q313175
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q313175, src-wikidata-q151624, src-wikipedia-saxe-lauenburg
+confidence: multi_source
+---
+fact_id: fact-q693980-relation-q12548-imperial-state
+subject_id: title-q693980
+claim_kind: relation
+span: 962..1313
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q693980, src-wikidata-q12548, src-wikipedia-duchy-swabia
+confidence: multi_source
