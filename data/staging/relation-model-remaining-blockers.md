@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty-six accepted relation-model packets promote 219 non-parentage
-relation facts. The generated relation report explains 214 of 231 active
+The first thirty-seven accepted relation-model packets promote 236 non-parentage
+relation facts. The generated relation report explains all 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -21,14 +21,14 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 565 |
-| facts | 1582 |
+| sources | 579 |
+| facts | 1599 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 219 |
+| relation facts | 236 |
 | rank-skip rows | 231 |
-| relation-explained rows | 214 |
-| unexplained rank-skip rows | 17 |
+| relation-explained rows | 231 |
+| unexplained rank-skip rows | 0 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -71,6 +71,7 @@ Current measured baseline:
 | `german-polish-client-relation-01` | 5 | `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 | `administrative-dependency-relation-01` | 6 | `subdivision_or_appanage`, `vassalage_or_suzerainty` |
 | `austrian-monarchy-component-relation-01` | 16 | `crownland_component`, `composite_crown_component` |
+| `residual-rank-skip-relation-01` | 17 | `subdivision_or_appanage`, `split_fief_or_control`, `vassalage_or_suzerainty`, `imperial_state`, `composite_crown_component`, `rank_transition` |
 
 ## Held Rows
 
@@ -334,3 +335,11 @@ Austrian Empire or Austria-Hungary parent spans. Croatia-Slavonia and the three
 accepted Kingdom of Hungary title rows use `composite_crown_component` where
 the source custody is broader kingdom/dual-monarchy component context rather
 than narrow Cisleithanian crownland context. Parentage remains unchanged.
+
+`residual-rank-skip-relation-01` adds fourteen reviewed text source records and
+promotes the final seventeen active rank-skip relation contexts. The packet
+covers Papal, Iberian, French, Prussian, HRE, Byzantine, Carolingian, and Lower
+Alsace residual rows using bounded relation semantics rather than changing
+parentage. The generated relation report now explains all active rank-skip rows
+while preserving the measured temporal forest and zero temporal parent
+conflicts.

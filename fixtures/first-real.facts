@@ -12564,3 +12564,142 @@ value: crownland_component:title-q28513
 source_ids: src-wikidata-q661340, src-wikidata-q28513, src-wikipedia-salzburg-ah-component, src-wikipedia-austria-hungary
 confidence: multi_source
 ---
+---
+# Reviewed residual rank-skip relation packet 01.
+
+fact_id: fact-q1122980-relation-q170174-subdivision-or-appanage
+subject_id: title-q1122980
+claim_kind: relation
+span: 1274..1791
+value: subdivision_or_appanage:title-q170174
+source_ids: src-wikidata-q1122980, src-wikidata-q170174, src-wikipedia-comtat-venaissin-papal-component
+confidence: multi_source
+---
+fact_id: fact-q1235737-relation-q3446210-subdivision-or-appanage
+subject_id: title-q1235737
+claim_kind: relation
+span: 824..1035
+value: subdivision_or_appanage:title-q3446210
+source_ids: src-wikidata-q1235737, src-wikidata-q3446210, src-wikipedia-county-aragon-pamplona-component
+confidence: multi_source
+---
+fact_id: fact-q157070-relation-q12548-split-fief-or-control-early
+subject_id: title-q157070
+claim_kind: relation
+span: 962..1383
+value: split_fief_or_control:title-q12548
+source_ids: src-wikidata-q157070, src-wikidata-q12548, src-wikipedia-county-flanders-early-imperial-fief
+confidence: multi_source
+---
+fact_id: fact-q700198-relation-q27306-subdivision-or-appanage
+subject_id: title-q700198
+claim_kind: relation
+span: 1701..1806
+value: subdivision_or_appanage:title-q27306
+source_ids: src-wikidata-q700198, src-wikidata-q27306, src-wikipedia-county-mark-prussian-component
+confidence: multi_source
+---
+fact_id: fact-q1139807-relation-q231392-subdivision-or-appanage
+subject_id: title-q1139807
+claim_kind: relation
+span: 868..909
+value: subdivision_or_appanage:title-q231392
+source_ids: src-wikidata-q1139807, src-wikidata-q231392, src-wikipedia-county-portugal-iberian-component
+confidence: multi_source
+---
+fact_id: fact-q1139807-relation-q303421-subdivision-or-appanage
+subject_id: title-q1139807
+claim_kind: relation
+span: 910..1139
+value: subdivision_or_appanage:title-q303421
+source_ids: src-wikidata-q1139807, src-wikidata-q303421, src-wikipedia-county-portugal-iberian-component
+confidence: multi_source
+---
+fact_id: fact-q2991382-relation-q70972-vassalage-or-suzerainty
+subject_id: title-q2991382
+claim_kind: relation
+span: 987..1487
+value: vassalage_or_suzerainty:title-q70972
+source_ids: src-wikidata-q2991382, src-wikidata-q70972, src-wikipedia-county-provence-french-component
+confidence: multi_source
+---
+fact_id: fact-q1297894-relation-q199442-subdivision-or-appanage
+subject_id: title-q1297894
+claim_kind: relation
+span: 1035..1598
+value: subdivision_or_appanage:title-q199442
+source_ids: src-wikidata-q1297894, src-wikidata-q199442, src-wikipedia-ribagorza-aragon-component
+confidence: multi_source
+---
+fact_id: fact-q159856-relation-q12548-imperial-state
+subject_id: title-q159856
+claim_kind: relation
+span: 1183..1795
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q159856, src-wikidata-q12548, src-wikipedia-duchy-brabant
+confidence: multi_source
+---
+fact_id: fact-q933592-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q933592
+claim_kind: relation
+span: 1473..1806
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q933592, src-wikidata-q12548, src-wikipedia-massa-carrara-imperial-fief
+confidence: multi_source
+---
+fact_id: fact-q153529-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q153529
+claim_kind: relation
+span: 1395..1797
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q153529, src-wikidata-q12548, src-wikipedia-duchy-milan-imperial-fief
+confidence: multi_source
+---
+fact_id: fact-q649202-relation-q170174-vassalage-or-suzerainty
+subject_id: title-q649202
+claim_kind: relation
+span: 1443..1631
+value: vassalage_or_suzerainty:title-q170174
+source_ids: src-wikidata-q649202, src-wikidata-q170174, src-wikipedia-duchy-urbino-papal-fief
+confidence: multi_source
+---
+fact_id: fact-q1252942-relation-q12544-vassalage-or-suzerainty
+subject_id: title-q1252942
+claim_kind: relation
+span: 854..1252
+value: vassalage_or_suzerainty:title-q12544
+source_ids: src-wikidata-q1252942, src-wikidata-q12544, src-wikipedia-duklja-byzantine-vassalage
+confidence: multi_source
+---
+fact_id: fact-q153080-relation-q31929-composite-crown-component
+subject_id: title-q153080
+claim_kind: relation
+span: 843..887
+value: composite_crown_component:title-q31929
+source_ids: src-wikidata-q153080, src-wikidata-q31929, src-wikipedia-east-francia-carolingian-component
+confidence: multi_source
+---
+fact_id: fact-q146246-relation-q31929-rank-transition
+subject_id: title-q146246
+claim_kind: relation
+span: 800..843
+value: rank_transition:title-q31929
+source_ids: src-wikidata-q146246, src-wikidata-q31929, src-wikipedia-francia-carolingian-transition
+confidence: multi_source
+---
+fact_id: fact-q838931-relation-q12548-composite-crown-component
+subject_id: title-q838931
+claim_kind: relation
+span: 962..1806
+value: composite_crown_component:title-q12548
+source_ids: src-wikidata-q838931, src-wikidata-q12548, src-wikipedia-kingdom-italy-hre
+confidence: multi_source
+---
+fact_id: fact-q58942549-relation-q12548-imperial-state
+subject_id: title-q58942549
+claim_kind: relation
+span: 1200..1700
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q58942549, src-wikidata-q12548, src-wikipedia-lower-alsace-imperial-landgraviate
+confidence: multi_source
+---

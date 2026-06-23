@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 565
-facts: 1582
+sources: 579
+facts: 1599
 titles: 356
-relation_facts: 219
+relation_facts: 236
 rank_skip_rows: 231
-relation_explained_rows: 214
-unexplained_rows: 17
+relation_explained_rows: 231
+unexplained_rows: 0
 
 ## Interpretation
 
@@ -18,14 +18,15 @@ unexplained_rows: 17
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 19 |
+| composite_crown_component | 21 |
 | confederation_member | 41 |
 | crownland_component | 14 |
 | federal_state_member | 13 |
-| imperial_state | 79 |
-| rank_transition | 6 |
-| subdivision_or_appanage | 9 |
-| vassalage_or_suzerainty | 33 |
+| imperial_state | 81 |
+| rank_transition | 7 |
+| split_fief_or_control | 1 |
+| subdivision_or_appanage | 15 |
+| vassalage_or_suzerainty | 38 |
 
 ## Review Rows
 
@@ -258,7 +259,10 @@ unexplained_rows: 17
 - current_parent_id: title-q170174
 - current_parent_rank: TheocraticState
 - span: 1274..1791
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Papal States (title-q170174) | 1274..1791 | 1274..1791 |
 
 ### fact-q1235737-parent-q3446210 | County of Aragon -> Kingdom of Pamplona
 
@@ -268,7 +272,10 @@ unexplained_rows: 17
 - current_parent_id: title-q3446210
 - current_parent_rank: Kingdom
 - span: 824..1035
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Pamplona (title-q3446210) | 824..1035 | 824..1035 |
 
 ### fact-q1233672-parent-q204920 | County of Barcelona -> Crown of Aragon
 
@@ -330,7 +337,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1383
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| split_fief_or_control | Holy Roman Empire (title-q12548) | 962..1383 | 962..1383 |
 
 ### fact-q157070-parent-q330533 | County of Flanders -> Seventeen Provinces
 
@@ -483,7 +493,10 @@ unexplained_rows: 17
 - current_parent_id: title-q27306
 - current_parent_rank: Kingdom
 - span: 1701..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Prussia (title-q27306) | 1701..1806 | 1701..1806 |
 
 ### fact-q589251-parent-q12548 | County of Montbeliard -> Holy Roman Empire
 
@@ -597,7 +610,10 @@ unexplained_rows: 17
 - current_parent_id: title-q231392
 - current_parent_rank: Kingdom
 - span: 868..909
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Asturias (title-q231392) | 868..909 | 868..909 |
 
 ### fact-q1139807-parent-q303421 | County of Portugal -> Kingdom of Galicia
 
@@ -607,7 +623,10 @@ unexplained_rows: 17
 - current_parent_id: title-q303421
 - current_parent_rank: Kingdom
 - span: 910..1139
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Galicia (title-q303421) | 910..1139 | 910..1139 |
 
 ### fact-q2991382-parent-q70972 | County of Provence -> Kingdom of France
 
@@ -617,7 +636,10 @@ unexplained_rows: 17
 - current_parent_id: title-q70972
 - current_parent_rank: Kingdom
 - span: 987..1487
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Kingdom of France (title-q70972) | 987..1487 | 987..1487 |
 
 ### fact-q573290-parent-q12548 | County of Ravensberg -> Holy Roman Empire
 
@@ -640,7 +662,10 @@ unexplained_rows: 17
 - current_parent_id: title-q199442
 - current_parent_rank: Kingdom
 - span: 1035..1598
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Aragon (title-q199442) | 1035..1598 | 1035..1598 |
 
 ### fact-q1232887-parent-q12548 | County of Savoy -> Holy Roman Empire
 
@@ -806,7 +831,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1183..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1183..1795 | 1183..1795 |
 
 ### fact-q694594-parent-q12548 | Duchy of Bremen and Verden -> Holy Roman Empire
 
@@ -1076,7 +1104,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1473..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1473..1806 | 1473..1806 |
 
 ### fact-q11024667-parent-q12548 | Duchy of Mecklenburg-Schwerin -> Holy Roman Empire
 
@@ -1099,7 +1130,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1395..1797
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1395..1797 | 1395..1797 |
 
 ### fact-q1615455-parent-q12548 | Duchy of Mirandola -> Holy Roman Empire
 
@@ -1265,7 +1299,10 @@ unexplained_rows: 17
 - current_parent_id: title-q170174
 - current_parent_rank: TheocraticState
 - span: 1443..1631
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Papal States (title-q170174) | 1443..1631 | 1443..1631 |
 
 ### fact-q152115-parent-q71084 | Duchy of Warsaw -> First French Empire
 
@@ -1314,7 +1351,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12544
 - current_parent_rank: Empire
 - span: 854..1252
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Byzantine Empire (title-q12544) | 854..1252 | 854..1252 |
 
 ### fact-q153080-parent-q31929 | East Francia -> Carolingian Empire
 
@@ -1324,7 +1364,10 @@ unexplained_rows: 17
 - current_parent_id: title-q31929
 - current_parent_rank: Empire
 - span: 843..887
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Carolingian Empire (title-q31929) | 843..887 | 843..887 |
 
 ### fact-q625380-parent-q12560 | Eastern Hungarian Kingdom -> Ottoman Empire
 
@@ -1464,7 +1507,10 @@ unexplained_rows: 17
 - current_parent_id: title-q31929
 - current_parent_rank: Empire
 - span: 800..843
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Carolingian Empire (title-q31929) | 800..843 | 800..843 |
 
 ### fact-q692946-parent-q131964 | Gorizia and Gradisca -> Austrian Empire
 
@@ -2085,7 +2131,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Holy Roman Empire (title-q12548) | 962..1806 | 962..1806 |
 
 ### fact-q2346056-parent-q186096 | Kingdom of Livonia -> Tsardom of Russia
 
@@ -2355,7 +2404,10 @@ unexplained_rows: 17
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1200..1700
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1200..1700 | 1200..1700 |
 
 ### fact-q660393-parent-q12548 | Lower Lotharingia -> Holy Roman Empire
 

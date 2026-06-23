@@ -7165,3 +7165,174 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded Duchy of Salzburg component relation context under Austria-Hungary; no archbishopric predecessor, electorate, Bavarian transfer, district detail, or modern Austrian state successor claims imported.
 ---
+---
+# Reviewed residual rank-skip relation source packet.
+
+source_id: src-wikipedia-comtat-venaissin-papal-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Comtat_Venaissin
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Comtat Venaissin article; reviewed only for bounded Papal States component/enclave relation context during the accepted 1274..1791 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for Comtat Venaissin relation context under the Papal States; no Avignon separation, French annexation votes, communes, papal administration, or modern Vaucluse successor claims imported.
+---
+source_id: src-wikipedia-county-aragon-pamplona-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Aragon
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Aragon article; reviewed only for county-under-Pamplona relation context overlapping the accepted 824..1035 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Aragon component relation context under the Kingdom of Pamplona; no genealogical succession, Sobrarbe/Ribagorza detail, kingdom elevation, or later Crown of Aragon claims imported.
+---
+source_id: src-wikipedia-county-flanders-early-imperial-fief
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Flanders
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Flanders article; reviewed narrowly for early Holy Roman Empire split-fief relation context before Burgundian and Habsburg successor parentage packets.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Flanders split-fief relation context to the Holy Roman Empire for the accepted early HRE span; no French fief inventory, Burgundian state detail, Low Countries successors, or French annexation claims imported.
+---
+source_id: src-wikipedia-county-mark-prussian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Mark
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Mark article; reviewed only for relation context identifying Mark as held in the Prussian/Brandenburg-Prussian monarchy during the accepted 1701..1806 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Mark component relation context under the Kingdom of Prussia; no Berg/Cleves succession, county subdivisions, Napoleonic transfers, Westphalia province, or modern district claims imported.
+---
+source_id: src-wikipedia-county-portugal-iberian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Portugal
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Portugal article; reviewed only for county component relation context under the accepted Asturias and Galicia parentage spans.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Portugal component relation contexts under the Kingdom of Asturias and Kingdom of Galicia; no first/second county distinction, counts, independence war, or Kingdom of Portugal successor claims imported.
+---
+source_id: src-wikipedia-county-provence-french-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Provence
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Provence article; reviewed only for relation context to the Kingdom of France over the accepted rank-skip span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Provence relation context under the Kingdom of France; no Burgundian/Arles layering, Angevin succession, imperial claims, county partitions, or French provincial successor detail imported.
+---
+source_id: src-wikipedia-ribagorza-aragon-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Ribagorza
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Ribagorza article; reviewed only for county component relation context under the Kingdom of Aragon during the accepted 1035..1598 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Ribagorza component relation context under the Kingdom of Aragon; no dynastic partition, Sobrarbe detail, Catalan/Aragonese legal status, or later provincial successor claims imported.
+---
+source_id: src-wikipedia-massa-carrara-imperial-fief
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Massa_and_Carrara
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Massa and Carrara article; reviewed only for imperial-fief relation context under the Holy Roman Empire during the accepted 1473..1806 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Massa and Carrara imperial-fief relation context to the Holy Roman Empire; no Malaspina/Cybo-Malaspina genealogy, Modena union, Napoleonic interruption, or Italian successor claims imported.
+---
+source_id: src-wikipedia-duchy-milan-imperial-fief
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Milan
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Milan article; reviewed only for imperial-fief relation context under the Holy Roman Empire during the accepted 1395..1797 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Duchy of Milan imperial-fief relation context to the Holy Roman Empire; no Visconti/Sforza/Habsburg succession, imperial vicariate detail, Spanish/Austrian administration, or Napoleonic successor claims imported.
+---
+source_id: src-wikipedia-duchy-urbino-papal-fief
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Urbino
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Urbino article; reviewed only for papal-fief relation context under the Papal States during the accepted 1443..1631 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Duchy of Urbino papal-fief relation context to the Papal States; no Montefeltro/Della Rovere genealogy, city inventory, devolution detail, or later Marche successor claims imported.
+---
+source_id: src-wikipedia-duklja-byzantine-vassalage
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duklja
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duklja article; reviewed only for Byzantine suzerainty/vassalage relation context over the accepted broad parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Duklja relation context to the Byzantine Empire; no ruler list, Serbian polity succession, Dioclea/Zeta naming, papal church politics, or Montenegrin successor claims imported.
+---
+source_id: src-wikipedia-east-francia-carolingian-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/East_Francia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: East Francia article; reviewed only for component/successor relation context inside the Carolingian imperial partition period.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded East Francia component relation context to the Carolingian Empire over 843..887; no stem duchy detail, German kingdom successor, Ottonian transition, or Holy Roman Empire claims imported.
+---
+source_id: src-wikipedia-francia-carolingian-transition
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Francia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Francia article; reviewed only for rank-transition context from Frankish kingdom realm to Carolingian imperial framing during 800..843.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Francia to Carolingian Empire rank-transition relation context; no Merovingian detail, partition sequence, West/East Francia successors, or later French/German national claims imported.
+---
+source_id: src-wikipedia-lower-alsace-imperial-landgraviate
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Landgraviate_of_Lower_Alsace
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Landgraviate of Lower Alsace article; reviewed only for imperial landgraviate relation context under the Holy Roman Empire during the accepted 1200..1700 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Lower Alsace imperial landgraviate relation context to the Holy Roman Empire; no Upper Alsace comparison, Habsburg landgraviate succession, Reichslandvogtei, French annexation, or modern Alsace claims imported.
+---
