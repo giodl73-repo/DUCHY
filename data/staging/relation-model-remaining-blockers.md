@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first forty accepted relation-model packets promote 242 non-parentage
+The first forty-one accepted relation-model packets promote 245 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -19,17 +19,19 @@ both an imperial state and a reviewed subdivision or appanage when sources
 support both claims. `great-britain-ukgbi-relation-01` also records the 1801
 Great Britain to United Kingdom of Great Britain and Ireland transition as a
 relation-only packet because the parentage validator correctly rejects
-Crown-to-Crown parentage.
+Crown-to-Crown parentage. `british-isles-union-component-relation-01` then
+adds matching composite-component relation context for the already accepted
+England, Scotland, and Ireland endpoint parentage facts.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 585 |
-| facts | 1610 |
+| facts | 1613 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 242 |
+| relation facts | 245 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -79,6 +81,7 @@ Current measured baseline:
 | `catalonia-crown-aragon-parentage-01` | 1 | `composite_crown_component` |
 | `low-countries-crown-hre-parentage-01` | 4 | `composite_crown_component` |
 | `great-britain-ukgbi-relation-01` | 1 | `composite_crown_component` |
+| `british-isles-union-component-relation-01` | 3 | `composite_crown_component` |
 
 ## Held Rows
 
