@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 540
-facts: 1549
+sources: 546
+facts: 1555
 titles: 356
-relation_facts: 186
+relation_facts: 192
 rank_skip_rows: 231
-relation_explained_rows: 181
-unexplained_rows: 50
+relation_explained_rows: 187
+unexplained_rows: 44
 
 ## Interpretation
 
@@ -18,14 +18,14 @@ unexplained_rows: 50
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 12 |
+| composite_crown_component | 15 |
 | confederation_member | 39 |
 | crownland_component | 2 |
 | federal_state_member | 11 |
 | imperial_state | 79 |
 | rank_transition | 6 |
-| subdivision_or_appanage | 3 |
-| vassalage_or_suzerainty | 29 |
+| subdivision_or_appanage | 4 |
+| vassalage_or_suzerainty | 31 |
 
 ## Review Rows
 
@@ -37,7 +37,10 @@ unexplained_rows: 50
 - current_parent_id: title-q171150
 - current_parent_rank: Kingdom
 - span: 1201..1881
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Kingdom of Hungary (title-q171150) | 1201..1881 | 1201..1881 |
 
 ### fact-q1048340-parent-q926295 | Albanian Kingdom -> Italian Empire
 
@@ -229,7 +232,10 @@ unexplained_rows: 50
 - current_parent_id: title-q7882199
 - current_parent_rank: Crown
 - span: 1384..1482
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Burgundian State (title-q7882199) | 1384..1482 | 1384..1482 |
 
 ### fact-q8273263-parent-q203493 | Cetatea-Albă County -> Kingdom of Romania
 
@@ -899,7 +905,10 @@ unexplained_rows: 50
 - current_parent_id: title-q172107
 - current_parent_rank: Crown
 - span: 1569..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Polish-Lithuanian Commonwealth (title-q172107) | 1569..1795 | 1569..1795 |
 
 ### fact-q1991540-parent-q43287 | Duchy of Courland and Semigallia -> German Empire
 
@@ -1000,7 +1009,10 @@ unexplained_rows: 50
 - current_parent_id: title-q172107
 - current_parent_rank: Crown
 - span: 1569..1621
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Polish-Lithuanian Commonwealth (title-q172107) | 1569..1621 | 1569..1621 |
 
 ### fact-q155019-parent-q12548 | Duchy of Lorraine -> Holy Roman Empire
 
@@ -1552,7 +1564,10 @@ unexplained_rows: 50
 - current_parent_id: title-q172107
 - current_parent_rank: Crown
 - span: 1569..1795
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Polish-Lithuanian Commonwealth (title-q172107) | 1569..1795 | 1569..1795 |
 
 ### fact-q158445-parent-q150981 | Grand Duchy of Mecklenburg-Schwerin -> North German Confederation
 
@@ -2056,7 +2071,10 @@ unexplained_rows: 50
 - current_parent_id: title-q377350
 - current_parent_rank: Empire
 - span: 1580..1640
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Iberian Union (title-q377350) | 1580..1640 | 1580..1640 |
 
 ### fact-q27306-parent-q150981 | Kingdom of Prussia -> North German Confederation
 

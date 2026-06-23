@@ -12288,3 +12288,54 @@ value: subdivision_or_appanage:title-q20
 source_ids: src-wikidata-q50625, src-wikidata-q20, src-wikipedia-norway
 confidence: multi_source
 ---
+---
+# Reviewed Commonwealth, union, and subdivision relation packet 01.
+
+fact_id: fact-q156038-relation-q172107-vassalage-or-suzerainty
+subject_id: title-q156038
+claim_kind: relation
+span: 1569..1795
+value: vassalage_or_suzerainty:title-q172107
+source_ids: src-wikidata-q156038, src-wikidata-q172107, src-wikipedia-duchy-courland-semigallia-plc-vassal
+confidence: multi_source
+---
+fact_id: fact-q1352878-relation-q172107-vassalage-or-suzerainty
+subject_id: title-q1352878
+claim_kind: relation
+span: 1569..1621
+value: vassalage_or_suzerainty:title-q172107
+source_ids: src-wikidata-q1352878, src-wikidata-q172107, src-wikipedia-duchy-livonia-plc-vassal
+confidence: multi_source
+---
+fact_id: fact-q49683-relation-q172107-composite-crown-component
+subject_id: title-q49683
+claim_kind: relation
+span: 1569..1795
+value: composite_crown_component:title-q172107
+source_ids: src-wikidata-q49683, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth-component
+confidence: multi_source
+---
+fact_id: fact-q45670-relation-q377350-composite-crown-component
+subject_id: title-q45670
+claim_kind: relation
+span: 1580..1640
+value: composite_crown_component:title-q377350
+source_ids: src-wikidata-q45670, src-wikidata-q377350, src-wikipedia-iberian-union-portugal
+confidence: multi_source
+---
+fact_id: fact-q1049854-relation-q171150-subdivision-or-appanage
+subject_id: title-q1049854
+claim_kind: relation
+span: 1201..1881
+value: subdivision_or_appanage:title-q171150
+source_ids: src-wikidata-q1049854, src-wikidata-q171150, src-wikipedia-abauj-county
+confidence: multi_source
+---
+fact_id: fact-q157109-relation-q7882199-composite-crown-component
+subject_id: title-q157109
+claim_kind: relation
+span: 1384..1482
+value: composite_crown_component:title-q7882199
+source_ids: src-wikidata-q157109, src-wikidata-q7882199, src-wikipedia-burgundian-netherlands-burgundian-state
+confidence: multi_source
+---

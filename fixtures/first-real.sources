@@ -6853,3 +6853,78 @@ notes: Principality of Catalonia (Q15581).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for Principality of Catalonia title identity only; no Barcelona parentage replacement, Catalan institutional detail, French personal union, Spanish successor claim, or modern Catalonia claim imported.
+---
+# Reviewed Commonwealth, union, and subdivision relation source packet.
+
+source_id: src-wikipedia-duchy-courland-semigallia-plc-vassal
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Courland and Semigallia article; used only for relation context identifying the duchy as a vassal state of the Grand Duchy of Lithuania and Poland-Lithuania, overlapping the accepted 1569..1795 Commonwealth parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded vassalage relation context between Duchy of Courland and Semigallia and the Polish-Lithuanian Commonwealth; no colonial, ducal succession, internal estate conflict, Swedish war, or Russian annexation detail imported.
+---
+source_id: src-wikipedia-duchy-livonia-plc-vassal
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Livonia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Livonia article; used only for relation context identifying Livonia as a vassal of Lithuania and then Poland-Lithuania, and as a joint domain after the 1569 Union of Lublin.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded vassalage or joint-domain relation context between Duchy of Livonia and the Polish-Lithuanian Commonwealth for the accepted 1569..1621 parentage span; no Swedish conquest, voivodeship inventory, administrative subdivisions, or Russian imperial title detail imported.
+---
+source_id: src-wikipedia-polish-lithuanian-commonwealth-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Polish-Lithuanian Commonwealth article; used only for relation context identifying the Commonwealth as a federative real union of the Kingdom of Poland and the Grand Duchy of Lithuania from 1569 to 1795.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded component relation context between the Grand Duchy of Lithuania and the Polish-Lithuanian Commonwealth; no Sejm mechanics, offices, military, voivodeship inventory, partitions, or post-1795 successor detail imported.
+---
+source_id: src-wikipedia-iberian-union-portugal
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Iberian_Union
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Iberian Union article; used only for relation context identifying the 1580..1640 composite monarchy/personal union that included the Kingdom of Portugal.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded composite-monarchy relation context between the Kingdom of Portugal and the Iberian Union; no succession war narrative, overseas possessions, councils, Habsburg reign detail, or Restoration War detail imported.
+---
+source_id: src-wikipedia-abauj-county
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Aba%C3%BAj_County
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Abauj County article; used only for relation context identifying Abauj as a historic administrative county of the Kingdom of Hungary.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded administrative subdivision relation context between Abauj county and the Kingdom of Hungary; no geography, capitals, population table, later Abauj-Torna administration, or modern informal-region claims imported.
+---
+source_id: src-wikipedia-burgundian-netherlands-burgundian-state
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Burgundian_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Burgundian Netherlands article; used only for relation context identifying the Burgundian Netherlands as a 1384..1482 personal union of Imperial and French fiefs within the Burgundian dynastic aggregate.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded component relation context between Burgundian Netherlands and the accepted Burgundian State parent; no Habsburg Netherlands successor detail, French reversion, provincial estates, acquired-title inventory expansion, or post-1482 claims imported.
+---
