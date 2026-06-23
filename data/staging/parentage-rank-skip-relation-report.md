@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1531
+facts: 1538
 titles: 356
-relation_facts: 168
+relation_facts: 175
 rank_skip_rows: 231
-relation_explained_rows: 163
-unexplained_rows: 68
+relation_explained_rows: 170
+unexplained_rows: 61
 
 ## Interpretation
 
@@ -19,12 +19,12 @@ unexplained_rows: 68
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 36 |
+| confederation_member | 39 |
 | crownland_component | 2 |
 | federal_state_member | 11 |
 | imperial_state | 79 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 21 |
+| vassalage_or_suzerainty | 25 |
 
 ## Review Rows
 
@@ -899,7 +899,10 @@ unexplained_rows: 68
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1918..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | German Empire (title-q43287) | 1918..1918 | 1918..1918 |
 
 ### fact-q693570-parent-q170174 | Duchy of Ferrara -> Papal States
 
@@ -1474,7 +1477,10 @@ unexplained_rows: 68
 - current_parent_id: title-q154741
 - current_parent_rank: Crown
 - span: 1806..1813
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | Confederation of the Rhine (title-q154741) | 1806..1813 | 1806..1813 |
 
 ### fact-q62633-parent-q34266 | Grand Duchy of Finland -> Russian Empire
 
@@ -1494,7 +1500,10 @@ unexplained_rows: 68
 - current_parent_id: title-q154741
 - current_parent_rank: Crown
 - span: 1810..1813
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | Confederation of the Rhine (title-q154741) | 1810..1813 | 1810..1813 |
 
 ### fact-q20135-parent-q151624 | Grand Duchy of Hesse -> German Confederation
 
@@ -1657,7 +1666,10 @@ unexplained_rows: 68
 - current_parent_id: title-q154741
 - current_parent_rank: Crown
 - span: 1806..1813
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | Confederation of the Rhine (title-q154741) | 1806..1813 | 1806..1813 |
 
 ### fact-q170770-parent-q141472 | Grand Principality of Moscow -> Golden Horde
 
@@ -1854,7 +1866,10 @@ unexplained_rows: 68
 - current_parent_id: title-q71084
 - current_parent_rank: Empire
 - span: 1804..1807
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | First French Empire (title-q71084) | 1804..1807 | 1804..1807 |
 
 ### fact-q2396442-parent-q131964 | Kingdom of Galicia and Lodomeria -> Austrian Empire
 
@@ -1897,7 +1912,10 @@ unexplained_rows: 68
 - current_parent_id: title-q71084
 - current_parent_rank: Empire
 - span: 1806..1810
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | First French Empire (title-q71084) | 1806..1810 | 1806..1810 |
 
 ### fact-q171150-parent-q131964 | Kingdom of Hungary -> Austrian Empire
 
@@ -1960,7 +1978,10 @@ unexplained_rows: 68
 - current_parent_id: title-q71084
 - current_parent_rank: Empire
 - span: 1805..1814
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | First French Empire (title-q71084) | 1805..1814 | 1805..1814 |
 
 ### fact-q838931-parent-q12548 | Kingdom of Italy -> Holy Roman Empire
 

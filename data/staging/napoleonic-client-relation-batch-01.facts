@@ -1,0 +1,57 @@
+# Reviewed Napoleonic client and confederation relation packet 01.
+
+fact_id: fact-q249428-relation-q154741-confederation-member
+subject_id: title-q249428
+claim_kind: relation
+span: 1806..1813
+value: confederation_member:title-q154741
+source_ids: src-wikidata-q249428, src-wikidata-q154741, src-wikipedia-duchy-berg
+confidence: multi_source
+---
+fact_id: fact-q698089-relation-q154741-confederation-member
+subject_id: title-q698089
+claim_kind: relation
+span: 1806..1813
+value: confederation_member:title-q154741
+source_ids: src-wikidata-q698089, src-wikidata-q154741, src-wikipedia-grand-duchy-wurzburg, src-wikipedia-confederation-rhine
+confidence: multi_source
+---
+fact_id: fact-q704312-relation-q154741-confederation-member
+subject_id: title-q704312
+claim_kind: relation
+span: 1810..1813
+value: confederation_member:title-q154741
+source_ids: src-wikidata-q704312, src-wikidata-q154741, src-wikipedia-grand-duchy-frankfurt, src-wikipedia-confederation-rhine
+confidence: multi_source
+---
+fact_id: fact-q212278-relation-q71084-vassalage
+subject_id: title-q212278
+claim_kind: relation
+span: 1806..1810
+value: vassalage_or_suzerainty:title-q71084
+source_ids: src-wikidata-q212278, src-wikidata-q71084, src-wikipedia-kingdom-holland
+confidence: multi_source
+---
+fact_id: fact-q223793-relation-q71084-vassalage
+subject_id: title-q223793
+claim_kind: relation
+span: 1804..1807
+value: vassalage_or_suzerainty:title-q71084
+source_ids: src-wikidata-q223793, src-wikidata-q71084, src-wikipedia-kingdom-etruria
+confidence: multi_source
+---
+fact_id: fact-q223936-relation-q71084-vassalage
+subject_id: title-q223936
+claim_kind: relation
+span: 1805..1814
+value: vassalage_or_suzerainty:title-q71084
+source_ids: src-wikidata-q223936, src-wikidata-q71084, src-wikipedia-kingdom-italy-napoleonic
+confidence: multi_source
+---
+fact_id: fact-q1991540-relation-q43287-vassalage
+subject_id: title-q1991540
+claim_kind: relation
+span: 1918..1918
+value: vassalage_or_suzerainty:title-q43287
+source_ids: src-wikidata-q1991540, src-wikidata-q43287, src-wikipedia-courland-semigallia-1918
+confidence: multi_source
