@@ -1,0 +1,73 @@
+# Reviewed German structured bridge relation packet.
+
+fact_id: fact-q27306-relation-q43287-federal-state-member
+subject_id: title-q27306
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q27306, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q153015-relation-q43287-federal-state-member
+subject_id: title-q153015
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q153015, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q154195-relation-q151624-confederation-member
+subject_id: title-q154195
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q154195, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q154195-relation-q43287-federal-state-member
+subject_id: title-q154195
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q154195, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q159631-relation-q151624-confederation-member
+subject_id: title-q159631
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q159631, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q159631-relation-q43287-federal-state-member
+subject_id: title-q159631
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q159631, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q186320-relation-q151624-confederation-member
+subject_id: title-q186320
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q186320, src-wikidata-q151624
+confidence: multi_source
+---
+fact_id: fact-q186320-relation-q43287-federal-state-member
+subject_id: title-q186320
+claim_kind: relation
+span: 1871..1918
+value: federal_state_member:title-q43287
+source_ids: src-wikidata-q186320, src-wikidata-q43287
+confidence: multi_source
+---
+fact_id: fact-q164079-relation-q151624-confederation-member
+subject_id: title-q164079
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q164079, src-wikidata-q151624
+confidence: multi_source

@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1507
+facts: 1516
 titles: 356
-relation_facts: 144
+relation_facts: 153
 rank_skip_rows: 231
-relation_explained_rows: 139
-unexplained_rows: 92
+relation_explained_rows: 148
+unexplained_rows: 83
 
 ## Interpretation
 
@@ -19,9 +19,9 @@ unexplained_rows: 92
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 12 |
-| confederation_member | 28 |
+| confederation_member | 32 |
 | crownland_component | 2 |
-| federal_state_member | 5 |
+| federal_state_member | 10 |
 | imperial_state | 78 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 12 |
@@ -1427,7 +1427,10 @@ unexplained_rows: 92
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q186320-parent-q43287 | Grand Duchy of Baden -> German Empire
 
@@ -1437,7 +1440,10 @@ unexplained_rows: 92
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q249428-parent-q154741 | Grand Duchy of Berg -> Confederation of the Rhine
 
@@ -1742,7 +1748,10 @@ unexplained_rows: 92
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q154195-parent-q43287 | Kingdom of Bavaria -> German Empire
 
@@ -1752,7 +1761,10 @@ unexplained_rows: 92
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q42585-parent-q12548 | Kingdom of Bohemia -> Holy Roman Empire
 
@@ -1845,7 +1857,10 @@ unexplained_rows: 92
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q212278-parent-q71084 | Kingdom of Holland -> First French Empire
 
@@ -1995,7 +2010,10 @@ unexplained_rows: 92
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q153015-parent-q150981 | Kingdom of Saxony -> North German Confederation
 
@@ -2025,7 +2043,10 @@ unexplained_rows: 92
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q2415003-parent-q1406298 | Kingdom of Serbia -> Serbian Empire
 
@@ -2055,7 +2076,10 @@ unexplained_rows: 92
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q159631-parent-q43287 | Kingdom of Wurttemberg -> German Empire
 
@@ -2065,7 +2089,10 @@ unexplained_rows: 92
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1871..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | German Empire (title-q43287) | 1871..1918 | 1871..1918 |
 
 ### fact-q13590051-parent-q42834 | Kingdom of the Burgundians -> Western Roman Empire
 

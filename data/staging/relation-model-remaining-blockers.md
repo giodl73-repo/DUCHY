@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-four accepted relation-model packets promote 144 non-parentage
-relation facts. The generated relation report explains 139 of 231 active
+The first twenty-five accepted relation-model packets promote 153 non-parentage
+relation facts. The generated relation report explains 148 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1507 |
+| facts | 1516 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 144 |
+| relation facts | 153 |
 | rank-skip rows | 231 |
-| relation-explained rows | 139 |
-| unexplained rank-skip rows | 92 |
+| relation-explained rows | 148 |
+| unexplained rank-skip rows | 83 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -59,6 +59,7 @@ Current measured baseline:
 | `german-state-relation-batch-02` | 12 | `imperial_state`, `confederation_member`, `federal_state_member` |
 | `german-state-relation-batch-03` | 12 | `imperial_state`, `confederation_member` |
 | `hre-relation-batch-10` | 8 | `imperial_state` |
+| `german-structured-bridge-relation-01` | 9 | `confederation_member`, `federal_state_member` |
 
 ## Held Rows
 
@@ -245,3 +246,8 @@ contexts from accepted text-backed rows: Kingdom of Bohemia, Free Imperial City
 of Aachen, Hesse-Marburg, Lower Lotharingia, Mecklenburg-Gustrow, two
 Nassau-Siegen spans, and Palatinate-Sulzbach. Lower Alsace and Austrian
 structured-only rows remain unpromoted.
+
+`german-structured-bridge-relation-01` promotes nine relation contexts from
+accepted structured bridge reviews. It is limited to source records whose
+review notes explicitly allow bridge relations: German Confederation or German
+Empire relations for Bavaria, Wurttemberg, Baden, Hanover, Prussia, and Saxony.
