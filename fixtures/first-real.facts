@@ -12993,3 +12993,14 @@ value: composite_crown_component:title-q204920
 source_ids: src-wikidata-q188586, src-wikidata-q204920, src-wikipedia-kingdom-sicily-aragon
 confidence: multi_source
 ---
+---
+# Reviewed Kingdom of Naples and Crown of Aragon relation packet.
+
+fact_id: fact-q173065-relation-q204920-composite-crown-component
+subject_id: title-q173065
+claim_kind: relation
+span: 1442..1458
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q173065, src-wikidata-q204920, src-wikipedia-kingdom-naples
+confidence: multi_source
+---
