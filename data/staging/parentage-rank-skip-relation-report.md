@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 546
-facts: 1555
+sources: 550
+facts: 1560
 titles: 356
-relation_facts: 192
+relation_facts: 197
 rank_skip_rows: 231
-relation_explained_rows: 187
-unexplained_rows: 44
+relation_explained_rows: 192
+unexplained_rows: 39
 
 ## Interpretation
 
@@ -19,13 +19,13 @@ unexplained_rows: 44
 | Relation Kind | Rows |
 |---|---:|
 | composite_crown_component | 15 |
-| confederation_member | 39 |
+| confederation_member | 41 |
 | crownland_component | 2 |
-| federal_state_member | 11 |
+| federal_state_member | 13 |
 | imperial_state | 79 |
 | rank_transition | 6 |
 | subdivision_or_appanage | 4 |
-| vassalage_or_suzerainty | 31 |
+| vassalage_or_suzerainty | 32 |
 
 ## Review Rows
 
@@ -2061,7 +2061,10 @@ unexplained_rows: 44
 - current_parent_id: title-q43287
 - current_parent_rank: Empire
 - span: 1916..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | German Empire (title-q43287) | 1916..1918 | 1916..1918 |
 
 ### fact-q45670-parent-q377350 | Kingdom of Portugal -> Iberian Union
 
@@ -2084,7 +2087,10 @@ unexplained_rows: 44
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q27306-parent-q151624 | Kingdom of Prussia -> German Confederation
 
@@ -2094,7 +2100,10 @@ unexplained_rows: 44
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q27306-parent-q43287 | Kingdom of Prussia -> German Empire
 
@@ -2117,7 +2126,10 @@ unexplained_rows: 44
 - current_parent_id: title-q150981
 - current_parent_rank: Empire
 - span: 1867..1870
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| federal_state_member | North German Confederation (title-q150981) | 1867..1870 | 1867..1870 |
 
 ### fact-q153015-parent-q151624 | Kingdom of Saxony -> German Confederation
 
@@ -2127,7 +2139,10 @@ unexplained_rows: 44
 - current_parent_id: title-q151624
 - current_parent_rank: Empire
 - span: 1815..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| confederation_member | German Confederation (title-q151624) | 1815..1866 | 1815..1866 |
 
 ### fact-q153015-parent-q43287 | Kingdom of Saxony -> German Empire
 

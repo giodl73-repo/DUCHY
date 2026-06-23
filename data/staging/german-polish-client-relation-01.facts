@@ -1,0 +1,42 @@
+# Reviewed German membership and Polish client relation packet 01.
+
+fact_id: fact-q27306-relation-q151624-confederation-member
+subject_id: title-q27306
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q27306, src-wikidata-q151624, src-wikipedia-german-confederation-prussia-saxony
+confidence: multi_source
+---
+fact_id: fact-q153015-relation-q151624-confederation-member
+subject_id: title-q153015
+claim_kind: relation
+span: 1815..1866
+value: confederation_member:title-q151624
+source_ids: src-wikidata-q153015, src-wikidata-q151624, src-wikipedia-german-confederation-prussia-saxony, src-wikipedia-kingdom-saxony-german-membership
+confidence: multi_source
+---
+fact_id: fact-q27306-relation-q150981-federal-state-member
+subject_id: title-q27306
+claim_kind: relation
+span: 1867..1870
+value: federal_state_member:title-q150981
+source_ids: src-wikidata-q27306, src-wikidata-q150981, src-wikipedia-north-german-confederation-prussia
+confidence: multi_source
+---
+fact_id: fact-q153015-relation-q150981-federal-state-member
+subject_id: title-q153015
+claim_kind: relation
+span: 1867..1870
+value: federal_state_member:title-q150981
+source_ids: src-wikidata-q153015, src-wikidata-q150981, src-wikipedia-kingdom-saxony-german-membership
+confidence: multi_source
+---
+fact_id: fact-q696908-relation-q43287-vassalage-or-suzerainty
+subject_id: title-q696908
+claim_kind: relation
+span: 1916..1918
+value: vassalage_or_suzerainty:title-q43287
+source_ids: src-wikidata-q696908, src-wikidata-q43287, src-wikipedia-kingdom-poland-regency-client
+confidence: multi_source
+---

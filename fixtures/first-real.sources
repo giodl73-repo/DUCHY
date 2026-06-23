@@ -6928,3 +6928,54 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded component relation context between Burgundian Netherlands and the accepted Burgundian State parent; no Habsburg Netherlands successor detail, French reversion, provincial estates, acquired-title inventory expansion, or post-1482 claims imported.
 ---
+---
+# Reviewed German membership and Polish client relation source packet.
+
+source_id: src-wikipedia-german-confederation-prussia-saxony
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/German_Confederation
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: German Confederation article; used only for relation context that identifies the confederation as an 1815..1866 association of German states including the kingdoms of Prussia and Saxony.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded German Confederation member relation context for Kingdom of Prussia and Kingdom of Saxony; no Austrian presidency, diet mechanics, member inventory expansion, Austro-Prussian War narrative, or post-1866 successor claims imported.
+---
+source_id: src-wikipedia-north-german-confederation-prussia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/North_German_Confederation
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: North German Confederation article; used only for relation context that identifies the confederation as a 1867..1870 federal state headed by the Kingdom of Prussia and including Prussian territories.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded North German Confederation federal-state/member relation context for Kingdom of Prussia; no constitutional detail, annexation sequence, southern-state treaties, German Empire transformation, or modern German continuity imported.
+---
+source_id: src-wikipedia-kingdom-saxony-german-membership
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Saxony
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Saxony article; used only for relation context identifying Saxony as a state of the German Confederation, North German Confederation, and German Empire during its accepted 1806..1918 span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded German Confederation and North German Confederation member relation context for Kingdom of Saxony; no Napoleonic alliance, Tilsit changes, Prussian occupation, internal monarchy, or post-1918 free-state detail imported.
+---
+source_id: src-wikipedia-kingdom-poland-regency-client
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Poland_%281917%E2%80%931918%29
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Poland 1917-1918 article; used only for relation context identifying the Regency Kingdom as a German Empire puppet or client state during World War I.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded 1916..1918 Kingdom of Poland to German Empire client/suzerainty relation context; no border-strip plans, military administration, regency institutions, Central Powers diplomacy, or Second Polish Republic transition detail imported.
+---

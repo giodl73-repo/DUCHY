@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty-three accepted relation-model packets promote 192 non-parentage
-relation facts. The generated relation report explains 187 of 231 active
+The first thirty-four accepted relation-model packets promote 197 non-parentage
+relation facts. The generated relation report explains 192 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -21,14 +21,14 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 546 |
-| facts | 1555 |
+| sources | 550 |
+| facts | 1560 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 192 |
+| relation facts | 197 |
 | rank-skip rows | 231 |
-| relation-explained rows | 187 |
-| unexplained rank-skip rows | 44 |
+| relation-explained rows | 192 |
+| unexplained rank-skip rows | 39 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -68,6 +68,7 @@ Current measured baseline:
 | `endpoint-transition-relation-batch-01` | 4 | `rank_transition` |
 | `endpoint-transition-relation-batch-02` | 3 | `rank_transition`, `subdivision_or_appanage` |
 | `commonwealth-union-subdivision-relation-01` | 6 | `vassalage_or_suzerainty`, `composite_crown_component`, `subdivision_or_appanage` |
+| `german-polish-client-relation-01` | 5 | `confederation_member`, `federal_state_member`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -310,3 +311,9 @@ as Commonwealth vassalage/suzerainty contexts, Grand Duchy of Lithuania and
 Kingdom of Portugal as component contexts under the Polish-Lithuanian
 Commonwealth and Iberian Union, Abauj county as a Kingdom of Hungary
 subdivision, and Burgundian Netherlands as a Burgundian State component.
+
+`german-polish-client-relation-01` adds four reviewed text source records and
+promotes five bounded relation contexts: Prussia and Saxony as German
+Confederation members, Prussia and Saxony as North German Confederation federal
+state/member contexts, and the 1916..1918 Kingdom of Poland as a German Empire
+client/suzerainty context.
