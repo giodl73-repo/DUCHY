@@ -1,0 +1,17 @@
+# Reviewed HRE relation batch for Pomerania and Saxony.
+
+fact_id: fact-q696640-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q696640
+claim_kind: relation
+span: 1121..1637
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q696640, src-wikidata-q12548, src-wikipedia-duchy-pomerania
+confidence: multi_source
+---
+fact_id: fact-q164092-relation-q12548-imperial-state
+subject_id: title-q164092
+claim_kind: relation
+span: 962..1296
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q164092, src-wikidata-q12548, src-wikipedia-duchy-saxony
+confidence: multi_source

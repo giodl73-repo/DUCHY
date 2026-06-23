@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1415
+facts: 1417
 titles: 356
-relation_facts: 52
+relation_facts: 54
 rank_skip_rows: 231
-relation_explained_rows: 48
-unexplained_rows: 183
+relation_explained_rows: 50
+unexplained_rows: 181
 
 ## Interpretation
 
@@ -22,9 +22,9 @@ unexplained_rows: 183
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 25 |
+| imperial_state | 26 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 1 |
+| vassalage_or_suzerainty | 2 |
 
 ## Review Rows
 
@@ -1064,7 +1064,10 @@ unexplained_rows: 183
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1121..1637
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1121..1637 | 1121..1637 |
 
 ### fact-q661340-parent-q28513 | Duchy of Salzburg -> Austria-Hungary
 
@@ -1127,7 +1130,10 @@ unexplained_rows: 183
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1296
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1296 | 962..1296 |
 
 ### fact-q693980-parent-q12548 | Duchy of Swabia -> Holy Roman Empire
 

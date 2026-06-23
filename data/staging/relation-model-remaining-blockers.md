@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first eleven accepted relation-model packets promote 41 non-parentage
-relation facts. The generated relation report explains 48 of 231 active
+The first twelve accepted relation-model packets promote 43 non-parentage
+relation facts. The generated relation report explains 50 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1415 |
+| facts | 1417 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 52 |
+| relation facts | 54 |
 | rank-skip rows | 231 |
-| relation-explained rows | 48 |
-| unexplained rank-skip rows | 183 |
+| relation-explained rows | 50 |
+| unexplained rank-skip rows | 181 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -48,6 +48,7 @@ Current measured baseline:
 | `namur-successor-parentage-01` | 4 | `composite_crown_component` |
 | `brunswick-wolfenbuttel-welf-relation-01` | 1 | `subdivision_or_appanage` |
 | `duchy-savoy-hre-relation-01` | 1 | `imperial_state` |
+| `hre-relation-batch-05` | 2 | `imperial_state`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -162,3 +163,9 @@ the existing `imperial_state` relation remains valid as a simultaneous context.
 from Duchy of Savoy to the Holy Roman Empire for 1416..1806. This explains the
 current-parent rank skip without importing County of Savoy predecessor detail,
 French occupation periods, Sardinian transition, or territorial inventory.
+
+`hre-relation-batch-05` promotes two bounded relations against the current HRE
+parent: Duchy of Pomerania as `vassalage_or_suzerainty` for 1121..1637 and
+Duchy of Saxony as `imperial_state` for 962..1296. Both remain relation-only
+because the accepted source notes exclude partition, successor, and dynastic
+detail.
