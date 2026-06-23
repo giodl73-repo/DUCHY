@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 520
-facts: 1355
+facts: 1358
 titles: 349
-relation_facts: 25
+relation_facts: 28
 rank_skip_rows: 223
-relation_explained_rows: 25
-unexplained_rows: 198
+relation_explained_rows: 28
+unexplained_rows: 195
 
 ## Interpretation
 
@@ -20,7 +20,8 @@ unexplained_rows: 198
 |---|---:|
 | confederation_member | 5 |
 | federal_state_member | 1 |
-| imperial_state | 18 |
+| imperial_state | 19 |
+| subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 1 |
 
 ## Review Rows
@@ -203,7 +204,10 @@ unexplained_rows: 198
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1105..1440
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1105..1440 | 1105..1440 |
 
 ### fact-q157109-parent-q7882199 | Burgundian Netherlands -> Burgundian State
 
@@ -276,7 +280,10 @@ unexplained_rows: 198
 - current_parent_id: title-q204920
 - current_parent_rank: Crown
 - span: 1341..1402
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Crown of Aragon (title-q204920) | 1341..1402 | 1341..1402 |
 
 ### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
 
@@ -319,7 +326,10 @@ unexplained_rows: 198
 - current_parent_id: title-q31929
 - current_parent_rank: Empire
 - span: 800..887
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| subdivision_or_appanage | Carolingian Empire (title-q31929) | 800..887 | 800..887 |
 
 ### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
 

@@ -1,0 +1,25 @@
+# Reviewed non-parentage relation packet for appanage/frontier and imperial-office rows.
+
+fact_id: fact-q1541699-relation-q204920-subdivision-or-appanage
+subject_id: title-q1541699
+claim_kind: relation
+span: 1341..1402
+value: subdivision_or_appanage:title-q204920
+source_ids: src-wikidata-q1541699, src-wikidata-q204920, src-wikipedia-county-empuries
+confidence: multi_source
+---
+fact_id: fact-q2037817-relation-q31929-subdivision-or-appanage
+subject_id: title-q2037817
+claim_kind: relation
+span: 800..887
+value: subdivision_or_appanage:title-q31929
+source_ids: src-wikidata-q2037817, src-wikidata-q31929, src-wikipedia-carolingian-empire, src-chandler-carolingian-catalonia
+confidence: multi_source
+---
+fact_id: fact-q568473-relation-q12548-imperial-state
+subject_id: title-q568473
+claim_kind: relation
+span: 1105..1440
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q568473, src-wikidata-q12548, src-wikipedia-burgraviate-nuremberg
+confidence: multi_source

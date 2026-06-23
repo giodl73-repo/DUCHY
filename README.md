@@ -486,8 +486,8 @@ changing the returned parentage path.
 The rank-skip reporting slice adds
 `parentage-rank-skip-relation-report`, which classifies active rank-skip rows
 when an overlapping source-backed relation fact connects the child title to the
-current parent title. The first three relation packets promote 25 accepted
-non-parentage relation facts and explain 25 of 223 active rank-skip rows without
+current parent title. The first four relation packets promote 28 accepted
+non-parentage relation facts and explain 28 of 223 active rank-skip rows without
 changing parentage counts.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
