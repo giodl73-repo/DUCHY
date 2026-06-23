@@ -19,12 +19,12 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 538 |
-| facts | 1388 |
+| facts | 1402 |
 | titles | 355 |
-| parentage facts | 278 |
-| relation facts | 39 |
-| rank-skip rows | 223 |
-| relation-explained rows | 39 |
+| parentage facts | 285 |
+| relation facts | 46 |
+| rank-skip rows | 228 |
+| relation-explained rows | 44 |
 | unexplained rank-skip rows | 184 |
 | temporal parent conflicts | 0 |
 
@@ -41,6 +41,7 @@ Current measured baseline:
 | `relation-model-guelders-01` | 1 | `imperial_state` |
 | `relation-model-low-countries-hre-01` | 4 | `imperial_state` |
 | `relation-model-austria-crownland-01` | 2 | `crownland_component` |
+| `low-countries-successor-parentage-01` | 7 | `composite_crown_component` |
 
 ## Held Rows
 
@@ -50,7 +51,7 @@ source-custody work or a narrower modeling decision.
 | Class | Rows / examples | Reason held |
 |---|---|---|
 | Structured-data-only context | Comtat Venaissin | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody and bounded crownland-component relations. |
-| Split-control / successor context | Flanders, Holland, Namur | First Low Countries packet now explains the post-Burgundian current-parent rank skips with bounded `split_fief_or_control` relations; deeper successor parentage remains held. |
+| Split-control / successor context | Namur | First Low Countries packet explains the remaining post-Burgundian Namur current-parent rank skip with bounded `split_fief_or_control`; Flanders and Holland now have first successor parentage edges. |
 | Child-level intermediate source needed | Luxembourg, early Namur, Ravensberg, early Holland | Current-parent `imperial_state` relations now explain these rank skips, but the reviewed note still forbids inferring deeper intermediate parentage without bounded child-level evidence. |
 | Broader relation semantics not yet source-backed | Burgundy/Arles layers, Geneva/Savoyard successor, HRE partitions, Welf partitions | Current accepted relations explain the direct current-parent context, but deeper intermediate structure remains unimported. |
 
@@ -100,7 +101,11 @@ Seventeen Provinces, Spanish Netherlands, Austrian Netherlands, Dutch Republic,
 and Batavian Republic. `relation-model-low-countries-01` uses the accepted text
 sources to promote three bounded `split_fief_or_control` relations for
 Flanders, Holland, and Namur to the current HRE parent, while keeping successor
-parentage edges for a later bounded packet.
+parentage edges separate. `low-countries-successor-parentage-01` then connects
+Flanders and Holland to reviewed successor title nodes with seven bounded
+parentage facts and seven matching `composite_crown_component` relation facts.
+Namur successor parentage remains held pending equally bounded child-level
+source support.
 
 `austria-internal-monarchy-sources-01` adds three accepted Wikimedia text
 source records and attaches them to the existing Archduchy of Austria parentage

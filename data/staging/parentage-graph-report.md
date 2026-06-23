@@ -1,15 +1,15 @@
 # DUCHY Parentage Graph Report
 
 sources: 538
-facts: 1388
+facts: 1402
 titles: 355
-parentage_edges: 284
+parentage_edges: 289
 parentable_titles: 314
 titles_with_parentage: 229
 title_edge_fill_percent: 72.93
 weighted_span_coverage_percent: 59.01
-rank_skip_facts: 223
-rank_skip_percent: 78.52
+rank_skip_facts: 228
+rank_skip_percent: 78.89
 temporal_parent_conflicts: 0
 snapshot_years: 550
 snapshot_years_with_cycles: 0
@@ -2143,12 +2143,17 @@ snapshot_years_with_cycles: 0
 | fact-q1233672-parent-q204920 | County of Barcelona (title-q1233672) | County | Crown of Aragon (title-q204920) | Crown | 1162..1164 |
 | fact-q642314-parent-q12548 | County of Burgundy (title-q642314) | County | Holy Roman Empire (title-q12548) | Empire | 982..1678 |
 | fact-q1541699-parent-q204920 | County of Empuries (title-q1541699) | County | Crown of Aragon (title-q204920) | Crown | 1341..1402 |
+| fact-q157070-parent-q1031430 | County of Flanders (title-q157070) | County | Habsburg Netherlands (title-q1031430) | Crown | 1483..1548 |
 | fact-q157070-parent-q12548 | County of Flanders (title-q157070) | County | Holy Roman Empire (title-q12548) | Empire | 962..1383 |
-| fact-q157070-parent-q12548 | County of Flanders (title-q157070) | County | Holy Roman Empire (title-q12548) | Empire | 1483..1797 |
+| fact-q157070-parent-q330533 | County of Flanders (title-q157070) | County | Seventeen Provinces (title-q330533) | Crown | 1549..1580 |
+| fact-q157070-parent-q622783 | County of Flanders (title-q157070) | County | Spanish Netherlands (title-q622783) | Crown | 1581..1713 |
+| fact-q157070-parent-q700283 | County of Flanders (title-q157070) | County | Austrian Netherlands (title-q700283) | Crown | 1714..1797 |
 | fact-q675363-parent-q12548 | County of Geneva (title-q675363) | County | Holy Roman Empire (title-q12548) | Empire | 1032..1401 |
 | fact-q2037817-parent-q31929 | County of Girona (title-q2037817) | County | Carolingian Empire (title-q31929) | Empire | 800..887 |
+| fact-q762943-parent-q1031430 | County of Holland (title-q762943) | County | Habsburg Netherlands (title-q1031430) | Crown | 1483..1548 |
 | fact-q762943-parent-q12548 | County of Holland (title-q762943) | County | Holy Roman Empire (title-q12548) | Empire | 962..1432 |
-| fact-q762943-parent-q12548 | County of Holland (title-q762943) | County | Holy Roman Empire (title-q12548) | Empire | 1483..1795 |
+| fact-q762943-parent-q170072 | County of Holland (title-q762943) | County | Dutch Republic (title-q170072) | Crown | 1581..1795 |
+| fact-q762943-parent-q330533 | County of Holland (title-q762943) | County | Seventeen Provinces (title-q330533) | Crown | 1549..1580 |
 | fact-q921473-parent-q70972 | County of La Marche (title-q921473) | County | Kingdom of France (title-q70972) | Kingdom | 1527..1527 |
 | fact-q5177890-parent-q12548 | County of Luxembourg (title-q5177890) | County | Holy Roman Empire (title-q12548) | Empire | 963..1354 |
 | fact-q700198-parent-q27306 | County of Mark (title-q700198) | County | Kingdom of Prussia (title-q27306) | Kingdom | 1701..1806 |
@@ -2166,11 +2171,6 @@ snapshot_years_with_cycles: 0
 | fact-q1917014-parent-q188586 | County of Sicily (title-q1917014) | County | Kingdom of Sicily (title-q188586) | Kingdom | 1130..1130 |
 | fact-q2991474-parent-q12548 | County of Wurttemberg (title-q2991474) | County | Holy Roman Empire (title-q12548) | Empire | 1083..1495 |
 | fact-q5298169-parent-q203493 | Dorohoi County (title-q5298169) | County | Kingdom of Romania (title-q203493) | Kingdom | 1881..1947 |
-| fact-q686312-parent-q12544 | Duchy of Amalfi (title-q686312) | Duchy | Byzantine Empire (title-q12544) | Empire | 839..958 |
-| fact-q16550783-parent-q150981 | Duchy of Anhalt (title-q16550783) | Duchy | North German Confederation (title-q150981) | Empire | 1867..1870 |
-| fact-q16550783-parent-q151624 | Duchy of Anhalt (title-q16550783) | Duchy | German Confederation (title-q151624) | Empire | 1863..1866 |
-| fact-q16550783-parent-q43287 | Duchy of Anhalt (title-q16550783) | Duchy | German Empire (title-q43287) | Empire | 1871..1918 |
-| fact-q3624335-parent-q12548 | Duchy of Austria (title-q3624335) | Duchy | Holy Roman Empire (title-q12548) | Empire | 1156..1453 |
 
 ## Temporal Parent Conflicts
 

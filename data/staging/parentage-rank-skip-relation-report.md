@@ -1,11 +1,11 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 538
-facts: 1388
+facts: 1402
 titles: 355
-relation_facts: 39
-rank_skip_rows: 223
-relation_explained_rows: 39
+relation_facts: 46
+rank_skip_rows: 228
+relation_explained_rows: 44
 unexplained_rows: 184
 
 ## Interpretation
@@ -18,12 +18,12 @@ unexplained_rows: 184
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 1 |
+| composite_crown_component | 8 |
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
 | imperial_state | 24 |
-| split_fief_or_control | 3 |
+| split_fief_or_control | 1 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 1 |
 
@@ -297,6 +297,19 @@ unexplained_rows: 184
 |---|---|---|---|
 | subdivision_or_appanage | Crown of Aragon (title-q204920) | 1341..1402 | 1341..1402 |
 
+### fact-q157070-parent-q1031430 | County of Flanders -> Habsburg Netherlands
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q1031430
+- current_parent_rank: Crown
+- span: 1483..1548
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Habsburg Netherlands (title-q1031430) | 1483..1548 | 1483..1548 |
+
 ### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
 
 - child_id: title-q157070
@@ -307,18 +320,44 @@ unexplained_rows: 184
 - span: 962..1383
 - relation_context: none
 
-### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
+### fact-q157070-parent-q330533 | County of Flanders -> Seventeen Provinces
 
 - child_id: title-q157070
 - child_rank: County
 - expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 1483..1797
+- current_parent_id: title-q330533
+- current_parent_rank: Crown
+- span: 1549..1580
 
 | Relation Kind | Related Title | Relation Span | Overlap |
 |---|---|---|---|
-| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1797 | 1483..1797 |
+| composite_crown_component | Seventeen Provinces (title-q330533) | 1549..1580 | 1549..1580 |
+
+### fact-q157070-parent-q622783 | County of Flanders -> Spanish Netherlands
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q622783
+- current_parent_rank: Crown
+- span: 1581..1713
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Spanish Netherlands (title-q622783) | 1581..1713 | 1581..1713 |
+
+### fact-q157070-parent-q700283 | County of Flanders -> Austrian Netherlands
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q700283
+- current_parent_rank: Crown
+- span: 1714..1797
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austrian Netherlands (title-q700283) | 1714..1797 | 1714..1797 |
 
 ### fact-q675363-parent-q12548 | County of Geneva -> Holy Roman Empire
 
@@ -346,6 +385,19 @@ unexplained_rows: 184
 |---|---|---|---|
 | subdivision_or_appanage | Carolingian Empire (title-q31929) | 800..887 | 800..887 |
 
+### fact-q762943-parent-q1031430 | County of Holland -> Habsburg Netherlands
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q1031430
+- current_parent_rank: Crown
+- span: 1483..1548
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Habsburg Netherlands (title-q1031430) | 1483..1548 | 1483..1548 |
+
 ### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
 
 - child_id: title-q762943
@@ -359,18 +411,31 @@ unexplained_rows: 184
 |---|---|---|---|
 | imperial_state | Holy Roman Empire (title-q12548) | 962..1432 | 962..1432 |
 
-### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
+### fact-q762943-parent-q170072 | County of Holland -> Dutch Republic
 
 - child_id: title-q762943
 - child_rank: County
 - expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 1483..1795
+- current_parent_id: title-q170072
+- current_parent_rank: Crown
+- span: 1581..1795
 
 | Relation Kind | Related Title | Relation Span | Overlap |
 |---|---|---|---|
-| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1795 | 1483..1795 |
+| composite_crown_component | Dutch Republic (title-q170072) | 1581..1795 | 1581..1795 |
+
+### fact-q762943-parent-q330533 | County of Holland -> Seventeen Provinces
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q330533
+- current_parent_rank: Crown
+- span: 1549..1580
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Seventeen Provinces (title-q330533) | 1549..1580 | 1549..1580 |
 
 ### fact-q921473-parent-q70972 | County of La Marche -> Kingdom of France
 

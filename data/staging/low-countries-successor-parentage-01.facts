@@ -1,0 +1,120 @@
+# Reviewed Low Countries successor parentage packet for Flanders and Holland.
+
+fact_id: fact-q157070-parent-q1031430
+subject_id: title-q157070
+claim_kind: parentage
+span: 1483..1548
+value: title-q1031430
+source_ids: src-wikidata-q157070, src-wikidata-q1031430, src-wikipedia-county-flanders, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q157070-parent-q12548
+---
+fact_id: fact-q157070-relation-q1031430-composite-crown-component
+subject_id: title-q157070
+claim_kind: relation
+span: 1483..1548
+value: composite_crown_component:title-q1031430
+source_ids: src-wikidata-q157070, src-wikidata-q1031430, src-wikipedia-county-flanders, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q157070-parent-q330533
+subject_id: title-q157070
+claim_kind: parentage
+span: 1549..1580
+value: title-q330533
+source_ids: src-wikidata-q157070, src-wikidata-q330533, src-wikipedia-county-flanders, src-wikipedia-seventeen-provinces
+confidence: multi_source
+supersedes_fact_id: fact-q157070-parent-q12548
+---
+fact_id: fact-q157070-relation-q330533-composite-crown-component
+subject_id: title-q157070
+claim_kind: relation
+span: 1549..1580
+value: composite_crown_component:title-q330533
+source_ids: src-wikidata-q157070, src-wikidata-q330533, src-wikipedia-county-flanders, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q157070-parent-q622783
+subject_id: title-q157070
+claim_kind: parentage
+span: 1581..1713
+value: title-q622783
+source_ids: src-wikidata-q157070, src-wikidata-q622783, src-wikipedia-county-flanders, src-wikipedia-spanish-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q157070-parent-q12548
+---
+fact_id: fact-q157070-relation-q622783-composite-crown-component
+subject_id: title-q157070
+claim_kind: relation
+span: 1581..1713
+value: composite_crown_component:title-q622783
+source_ids: src-wikidata-q157070, src-wikidata-q622783, src-wikipedia-county-flanders, src-wikipedia-spanish-netherlands
+confidence: multi_source
+---
+fact_id: fact-q157070-parent-q700283
+subject_id: title-q157070
+claim_kind: parentage
+span: 1714..1797
+value: title-q700283
+source_ids: src-wikidata-q157070, src-wikidata-q700283, src-wikipedia-county-flanders, src-wikipedia-austrian-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q157070-parent-q12548
+---
+fact_id: fact-q157070-relation-q700283-composite-crown-component
+subject_id: title-q157070
+claim_kind: relation
+span: 1714..1797
+value: composite_crown_component:title-q700283
+source_ids: src-wikidata-q157070, src-wikidata-q700283, src-wikipedia-county-flanders, src-wikipedia-austrian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q762943-parent-q1031430
+subject_id: title-q762943
+claim_kind: parentage
+span: 1483..1548
+value: title-q1031430
+source_ids: src-wikidata-q762943, src-wikidata-q1031430, src-wikipedia-county-holland, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q762943-parent-q12548
+---
+fact_id: fact-q762943-relation-q1031430-composite-crown-component
+subject_id: title-q762943
+claim_kind: relation
+span: 1483..1548
+value: composite_crown_component:title-q1031430
+source_ids: src-wikidata-q762943, src-wikidata-q1031430, src-wikipedia-county-holland, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q762943-parent-q330533
+subject_id: title-q762943
+claim_kind: parentage
+span: 1549..1580
+value: title-q330533
+source_ids: src-wikidata-q762943, src-wikidata-q330533, src-wikipedia-county-holland, src-wikipedia-seventeen-provinces
+confidence: multi_source
+supersedes_fact_id: fact-q762943-parent-q12548
+---
+fact_id: fact-q762943-relation-q330533-composite-crown-component
+subject_id: title-q762943
+claim_kind: relation
+span: 1549..1580
+value: composite_crown_component:title-q330533
+source_ids: src-wikidata-q762943, src-wikidata-q330533, src-wikipedia-county-holland, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q762943-parent-q170072
+subject_id: title-q762943
+claim_kind: parentage
+span: 1581..1795
+value: title-q170072
+source_ids: src-wikidata-q762943, src-wikidata-q170072, src-wikipedia-county-holland, src-wikipedia-dutch-republic
+confidence: multi_source
+supersedes_fact_id: fact-q762943-parent-q12548
+---
+fact_id: fact-q762943-relation-q170072-composite-crown-component
+subject_id: title-q762943
+claim_kind: relation
+span: 1581..1795
+value: composite_crown_component:title-q170072
+source_ids: src-wikidata-q762943, src-wikidata-q170072, src-wikipedia-county-holland, src-wikipedia-dutch-republic
+confidence: multi_source
