@@ -14,7 +14,7 @@ Work packages for lineage and territorial-transfer query capability.
 | WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | complete |
 | WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | complete |
 | WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-custody/`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted; concrete imports remain gated per source. | L0: docs review / L1: custody review / L2: source package gate | complete |
-| WP-007 | Non-parentage relation model and query integration. | REQ-002, REQ-003, REQ-004, REQ-006, REQ-015 | `src/lib.rs`, source fixture schema/materializer, query traces, rank-skip reports | Rank-skip review batches show repeated blockers that are not safe parentage replacements. | Typed relation facts exist for membership, vassalage/suzerainty, subdivision/appanage, split fief/control, composite crown, imperial state, federal/confederation member, and rank transition; relation facts appear in traces without creating parentage conflicts or cycles; rank-skip reports can classify explained skips. | L0: cargo test / L1: source-backed fixture demo / L2: lineage and source-custody review | proposed |
+| WP-007 | Non-parentage relation model and query integration. | REQ-002, REQ-003, REQ-004, REQ-006, REQ-015 | `src/lib.rs`, source fixture schema/materializer, query traces, rank-skip reports | Rank-skip review batches show repeated blockers that are not safe parentage replacements. | Typed relation facts exist for membership, vassalage/suzerainty, subdivision/appanage, split fief/control, composite crown, imperial state, federal/confederation member, and rank transition; relation facts appear in traces without creating parentage conflicts or cycles; rank-skip reports can classify explained skips. | L0: cargo test / L1: source-backed fixture demo / L2: lineage and source-custody review | in progress |
 
 ## Work Package Details
 
@@ -188,7 +188,10 @@ cargo run --quiet --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-r
 git diff --check
 ```
 
-Status: proposed.
+Status: in progress. The first code slice implements typed relation spans,
+source-backed relation fact parsing/materialization, timeline storage, year
+lookup, and validation. Query trace integration and rank-skip report
+classification remain open.
 
 ## Orphan Check
 

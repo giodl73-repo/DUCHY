@@ -80,6 +80,26 @@ pub struct ParentageSpan {
     pub rank_policy: ParentageRankPolicy,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RelationSpan {
+    pub subject_title_id: String,
+    pub related_title_id: String,
+    pub relation_kind: RelationKind,
+    pub span: YearSpan,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub enum RelationKind {
+    ImperialState,
+    ConfederationMember,
+    FederalStateMember,
+    CompositeCrownComponent,
+    SplitFiefOrControl,
+    VassalageOrSuzerainty,
+    SubdivisionOrAppanage,
+    RankTransition,
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ParentageRankPolicy {
     StrictImmediate,
@@ -334,6 +354,7 @@ pub enum ClaimKind {
     TitleExists,
     AreaTitle,
     Parentage,
+    Relation,
     Holder,
     Event,
     Name,
@@ -386,6 +407,7 @@ pub struct TitleTimeline {
     titles: HashMap<String, Title>,
     area_titles: Vec<AreaTitleSpan>,
     parentage: Vec<ParentageSpan>,
+    relations: Vec<RelationSpan>,
     control: Vec<ControlSpan>,
     events: Vec<ContinuityEvent>,
 }
@@ -409,6 +431,10 @@ impl TitleTimeline {
 
     pub fn add_parentage(&mut self, parentage: ParentageSpan) {
         self.parentage.push(parentage);
+    }
+
+    pub fn add_relation(&mut self, relation: RelationSpan) {
+        self.relations.push(relation);
     }
 
     pub fn add_control(&mut self, control: ControlSpan) {
@@ -456,6 +482,27 @@ impl TitleTimeline {
     pub fn parent_title_in_year(&self, child_title_id: &str, year: Year) -> Option<&Title> {
         self.parentage_for_title_in_year(child_title_id, year)
             .and_then(|parentage| self.titles.get(&parentage.parent_title_id))
+    }
+
+    pub fn relations_for_title_in_year(
+        &self,
+        subject_title_id: &str,
+        year: Year,
+    ) -> Vec<&RelationSpan> {
+        let mut relations: Vec<&RelationSpan> = self
+            .relations
+            .iter()
+            .filter(|relation| {
+                relation.subject_title_id == subject_title_id && relation.span.contains(year)
+            })
+            .collect();
+        relations.sort_by(|left, right| {
+            left.relation_kind
+                .cmp(&right.relation_kind)
+                .then(left.related_title_id.cmp(&right.related_title_id))
+                .then(left.span.start.cmp(&right.span.start))
+        });
+        relations
     }
 
     pub fn title_path_for_area_in_year(
@@ -872,6 +919,56 @@ impl TitleTimeline {
                 (None, None) => errors.push(format!(
                     "parentage references missing child title {} and parent title {}",
                     parentage.child_title_id, parentage.parent_title_id
+                )),
+            }
+        }
+
+        for relation in &self.relations {
+            match (
+                self.titles.get(&relation.subject_title_id),
+                self.titles.get(&relation.related_title_id),
+            ) {
+                (Some(subject), Some(related)) => {
+                    if !relation.span.is_valid() {
+                        errors.push(format!(
+                            "{} -> {} has an invalid relation span",
+                            relation.subject_title_id, relation.related_title_id
+                        ));
+                    }
+                    if relation.span.start < subject.exists.start {
+                        errors.push(format!(
+                            "{} relation starts before subject title exists",
+                            subject.id
+                        ));
+                    }
+                    if relation.span.start < related.exists.start {
+                        errors.push(format!(
+                            "{} relation starts before related title exists",
+                            related.id
+                        ));
+                    }
+                    if let Some(subject_end) = subject.exists.end {
+                        if relation.span.end.map_or(true, |end| end > subject_end) {
+                            errors.push(format!("{} relation outlives subject title", subject.id));
+                        }
+                    }
+                    if let Some(related_end) = related.exists.end {
+                        if relation.span.end.map_or(true, |end| end > related_end) {
+                            errors.push(format!("{} relation outlives related title", related.id));
+                        }
+                    }
+                }
+                (None, Some(_)) => errors.push(format!(
+                    "relation references missing subject title {}",
+                    relation.subject_title_id
+                )),
+                (Some(_), None) => errors.push(format!(
+                    "relation references missing related title {}",
+                    relation.related_title_id
+                )),
+                (None, None) => errors.push(format!(
+                    "relation references missing subject title {} and related title {}",
+                    relation.subject_title_id, relation.related_title_id
                 )),
             }
         }
@@ -1397,12 +1494,37 @@ fn parse_claim_kind(value: &str) -> Option<ClaimKind> {
         "title_exists" => Some(ClaimKind::TitleExists),
         "area_title" => Some(ClaimKind::AreaTitle),
         "parentage" => Some(ClaimKind::Parentage),
+        "relation" => Some(ClaimKind::Relation),
         "holder" => Some(ClaimKind::Holder),
         "event" => Some(ClaimKind::Event),
         "name" => Some(ClaimKind::Name),
         "rank" => Some(ClaimKind::Rank),
         _ => None,
     }
+}
+
+fn parse_relation_kind(value: &str) -> Option<RelationKind> {
+    match value {
+        "imperial_state" => Some(RelationKind::ImperialState),
+        "confederation_member" => Some(RelationKind::ConfederationMember),
+        "federal_state_member" => Some(RelationKind::FederalStateMember),
+        "composite_crown_component" => Some(RelationKind::CompositeCrownComponent),
+        "split_fief_or_control" => Some(RelationKind::SplitFiefOrControl),
+        "vassalage_or_suzerainty" => Some(RelationKind::VassalageOrSuzerainty),
+        "subdivision_or_appanage" => Some(RelationKind::SubdivisionOrAppanage),
+        "rank_transition" => Some(RelationKind::RankTransition),
+        _ => None,
+    }
+}
+
+fn parse_relation_value(value: &str) -> Option<(RelationKind, String)> {
+    let (kind, related_title_id) = value.split_once(':')?;
+    let relation_kind = parse_relation_kind(kind.trim())?;
+    let related_title_id = related_title_id.trim();
+    if related_title_id.is_empty() {
+        return None;
+    }
+    Some((relation_kind, related_title_id.to_string()))
 }
 
 fn parse_confidence_label(value: &str) -> Option<ConfidenceLabel> {
@@ -2212,6 +2334,11 @@ pub fn source_backed_timeline_from_facts(
         timeline.add_parentage(parentage);
     }
 
+    let relations = source_backed_relations_from_facts(catalog, facts, &timeline)?;
+    for relation in relations {
+        timeline.add_relation(relation);
+    }
+
     timeline.validate()?;
     Ok(timeline)
 }
@@ -2313,6 +2440,79 @@ pub fn source_backed_parentage_from_facts(
     }
 }
 
+pub fn source_backed_relations_from_facts(
+    catalog: &SourceCatalog,
+    facts: &[FactRecord],
+    timeline: &TitleTimeline,
+) -> Result<Vec<RelationSpan>, Vec<String>> {
+    let mut errors = validate_fact_records(catalog, facts)
+        .err()
+        .unwrap_or_default();
+    let mut relations = Vec::new();
+
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.claim_kind == ClaimKind::Relation)
+    {
+        if let Err(mut fact_errors) = catalog.validate_fact(fact) {
+            errors.append(&mut fact_errors);
+        }
+        if fact.confidence == ConfidenceLabel::Contested {
+            errors.push(format!(
+                "{} is contested; resolve before relation materialization",
+                fact.fact_id
+            ));
+            continue;
+        }
+
+        let Some(span) = fact.span.clone() else {
+            errors.push(format!("{} relation fact requires a span", fact.fact_id));
+            continue;
+        };
+        let Some((relation_kind, related_title_id)) = parse_relation_value(&fact.value) else {
+            errors.push(format!(
+                "{} relation fact requires value relation_kind:related_title_id",
+                fact.fact_id
+            ));
+            continue;
+        };
+        let subject_title_id = fact.subject_id.clone();
+
+        if !timeline.titles.contains_key(&subject_title_id) {
+            errors.push(format!(
+                "{} relation subject {} is not materialized",
+                fact.fact_id, subject_title_id
+            ));
+        }
+        if !timeline.titles.contains_key(&related_title_id) {
+            errors.push(format!(
+                "{} relation target {} is not materialized",
+                fact.fact_id, related_title_id
+            ));
+        }
+
+        relations.push(RelationSpan {
+            subject_title_id,
+            related_title_id,
+            relation_kind,
+            span,
+        });
+    }
+
+    if errors.is_empty() {
+        relations.sort_by(|left, right| {
+            left.subject_title_id
+                .cmp(&right.subject_title_id)
+                .then(left.span.start.cmp(&right.span.start))
+                .then(left.relation_kind.cmp(&right.relation_kind))
+                .then(left.related_title_id.cmp(&right.related_title_id))
+        });
+        Ok(relations)
+    } else {
+        Err(errors)
+    }
+}
+
 pub fn first_real_timeline() -> Result<TitleTimeline, Vec<String>> {
     let catalog = first_real_source_catalog();
     let facts = first_real_fact_records();
@@ -2364,11 +2564,8 @@ fn subtract_year_spans(base: &YearSpan, cuts: &[YearSpan]) -> Vec<YearSpan> {
         .filter(|cut| span_contains_span(base, cut))
         .cloned()
         .collect::<Vec<_>>();
-    contained_cuts.sort_by(|left, right| {
-        left.start
-            .cmp(&right.start)
-            .then(left.end.cmp(&right.end))
-    });
+    contained_cuts
+        .sort_by(|left, right| left.start.cmp(&right.start).then(left.end.cmp(&right.end)));
 
     let mut spans = Vec::new();
     let mut next_start = base.start;
@@ -4151,5 +4348,78 @@ confidence: maybe
                 supersedes_fact_id: None,
             },
         ]
+    }
+
+    #[test]
+    fn source_backed_relation_facts_materialize_separately_from_parentage() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.push(FactRecord {
+            fact_id: "fact-child-imperial-state".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Relation,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "imperial_state:title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: None,
+        });
+
+        let timeline = source_backed_timeline_from_facts(&catalog, &facts).unwrap();
+
+        let title_path = timeline
+            .title_path_for_title_in_year("title-child-duchy", 1050)
+            .unwrap();
+        assert_eq!(
+            title_path
+                .titles
+                .iter()
+                .map(|step| step.title_id.as_str())
+                .collect::<Vec<_>>(),
+            vec!["title-child-duchy", "title-parent-kingdom"]
+        );
+
+        let relations = timeline.relations_for_title_in_year("title-child-duchy", 1050);
+        assert_eq!(relations.len(), 1);
+        assert_eq!(relations[0].relation_kind, RelationKind::ImperialState);
+        assert_eq!(relations[0].related_title_id, "title-parent-kingdom");
+    }
+
+    #[test]
+    fn source_backed_relation_facts_require_typed_value_and_span() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.push(FactRecord {
+            fact_id: "fact-child-bad-relation".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Relation,
+            span: None,
+            value: "imperial_state:title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: None,
+        });
+        facts.push(FactRecord {
+            fact_id: "fact-child-unknown-relation".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Relation,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "unknown_relation:title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: None,
+        });
+
+        let timeline = source_backed_timeline_from_facts(&catalog, &facts).unwrap_err();
+
+        assert!(timeline
+            .iter()
+            .any(|error| error.contains("fact-child-bad-relation relation fact requires a span")));
+        assert!(timeline.iter().any(|error| error.contains(
+            "fact-child-unknown-relation relation fact requires value relation_kind:related_title_id"
+        )));
     }
 }
