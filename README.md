@@ -451,6 +451,11 @@ false positives and one held Trent relation-model lead. The Trent review keeps
 Prince-Bishopric of Trent directly under the Holy Roman Empire for `1027..1803`;
 the current evidence supports HRE imperial-estate/state semantics, not a clean
 Kingdom of Italy parentage replacement.
+The first county rank-skip review batch covers ten high-priority county rows
+and imports no replacements: two rows are shared-parent sibling false positives,
+three need child-level intermediate sources, and five need split-control or
+relation-model work before DUCHY can safely replace direct county-to-crown or
+county-to-empire parentage.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
