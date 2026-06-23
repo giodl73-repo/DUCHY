@@ -12936,3 +12936,14 @@ value: vassalage_or_suzerainty:title-q325461
 source_ids: src-wikidata-q334714, src-wikidata-q325461, src-wikipedia-duchy-athens
 confidence: multi_source
 ---
+---
+# Reviewed Duchy of Normandy and Kingdom of France relation packet.
+
+fact_id: fact-q842091-relation-q70972-vassalage-or-suzerainty
+subject_id: title-q842091
+claim_kind: relation
+span: 987..1204
+value: vassalage_or_suzerainty:title-q70972
+source_ids: src-wikidata-q842091, src-wikidata-q70972, src-wikipedia-duchy-normandy
+confidence: multi_source
+---

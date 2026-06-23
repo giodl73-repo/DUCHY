@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first forty-eight accepted relation-model packets promote 256 non-parentage
+The first forty-nine accepted relation-model packets promote 257 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -38,17 +38,19 @@ parentage under the Crown of the Kingdom of Poland.
 vassalage/suzerainty context for the accepted Confederation of the Rhine
 parentage under the First French Empire. `athens-thessalonica-relation-01`
 adds matching vassalage/suzerainty context for the accepted Duchy of Athens
-parentage under the Kingdom of Thessalonica.
+parentage under the Kingdom of Thessalonica. `normandy-france-relation-01`
+adds matching vassalage/suzerainty context for the accepted Duchy of Normandy
+parentage under the Kingdom of France.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1624 |
+| facts | 1625 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 256 |
+| relation facts | 257 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -106,6 +108,7 @@ Current measured baseline:
 | `prussia-polish-crown-relation-01` | 1 | `vassalage_or_suzerainty` |
 | `rhine-confederation-french-empire-relation-01` | 1 | `vassalage_or_suzerainty` |
 | `athens-thessalonica-relation-01` | 1 | `vassalage_or_suzerainty` |
+| `normandy-france-relation-01` | 1 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 
