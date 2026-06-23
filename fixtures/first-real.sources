@@ -7417,3 +7417,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for endpoint transition and composite-component relation context from the Kingdom of Great Britain to the United Kingdom of Great Britain and Ireland in 1801; no parentage fact is imported because the rank model rejects Crown-to-Crown parentage.
 ---
+---
+# Reviewed Kalmar Union component relation packet.
+
+source_id: src-britannica-kalmar-union-component-context
+source_kind: other
+source_url: https://www.britannica.com/place/Kalmar-Union
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Britannica Kalmar Union article identifies the union as formed at Kalmar in June 1397 and bringing Norway, Sweden, and Denmark together under a single monarch until 1523.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded component relation context between the Kalmar Union and its accepted Denmark, Sweden, and Norway child-title spans; no royal holder sequence, Sweden secession mechanics, Danish-Norwegian successor claims, borders, dependencies, or post-1523 history imported.
+---

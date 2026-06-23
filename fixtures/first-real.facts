@@ -12827,3 +12827,30 @@ value: composite_crown_component:title-q174193
 source_ids: src-wikidata-q215530, src-wikidata-q174193, src-britannica-act-of-union-1801
 confidence: multi_source
 ---
+---
+# Reviewed Kalmar Union component relation packet.
+
+fact_id: fact-q34-relation-q62623-composite-crown-component
+subject_id: title-q34
+claim_kind: relation
+span: 1397..1523
+value: composite_crown_component:title-q62623
+source_ids: src-wikidata-q34, src-wikidata-q62623, src-britannica-kalmar-union-component-context
+confidence: multi_source
+---
+fact_id: fact-q35-relation-q62623-composite-crown-component
+subject_id: title-q35
+claim_kind: relation
+span: 1397..1523
+value: composite_crown_component:title-q62623
+source_ids: src-wikidata-q35, src-wikidata-q62623, src-britannica-kalmar-union-component-context
+confidence: multi_source
+---
+fact_id: fact-q2196956-relation-q62623-composite-crown-component
+subject_id: title-q2196956
+claim_kind: relation
+span: 1397..1397
+value: composite_crown_component:title-q62623
+source_ids: src-wikidata-q2196956, src-wikidata-q62623, src-britannica-kalmar-union-component-context
+confidence: multi_source
+---
