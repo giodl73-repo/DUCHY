@@ -15,15 +15,15 @@ candidate_tsv: `data/staging/kingdom-italy-hre-replacement-candidates.tsv`
 
 | Status | Rows |
 |---|---:|
-| source_backed_replacement_candidate | 2 |
+| accepted_replacement_imported | 2 |
 | held_for_relation_model | 1 |
 
 ## Replacement Candidates
 
 | Child | Current Parent | Candidate Parent | Span | Decision |
 |---|---|---|---|---|
-| March of Turin | Holy Roman Empire | Kingdom of Italy | 964..1091 | source-backed replacement candidate; blocked until replacement/deprecation support exists |
-| March of Tuscany | Holy Roman Empire | Kingdom of Italy | 962..1197 | source-backed replacement candidate; blocked until replacement/deprecation support exists |
+| March of Turin | Holy Roman Empire | Kingdom of Italy | 964..1091 | imported as replacement parentage; older direct HRE fact retained for audit |
+| March of Tuscany | Holy Roman Empire | Kingdom of Italy | 962..1197 | imported as replacement parentage; older direct HRE fact retained for audit |
 
 ## Held Lead
 
@@ -33,16 +33,10 @@ candidate_tsv: `data/staging/kingdom-italy-hre-replacement-candidates.tsv`
 
 ## Engineering Need
 
-DUCHY needs an explicit parentage replacement/deprecation mechanism before
-accepted fixtures can safely replace a broad direct parent edge with an
-intermediate parent. The mechanism should:
-
-- identify the current fact being superseded;
-- preserve source custody for the original and replacement facts;
-- prevent overlapping active parents for the same child span;
-- regenerate graph health reports with zero temporal parent conflicts;
-- keep a review note explaining why the replacement is a hierarchy refinement,
-  not a new simultaneous parent.
+DUCHY now has partial parentage replacement support. March of Turin and March
+of Tuscany have moved from candidate rows to accepted replacement facts. Trent
+remains held because its current source basis supports HRE estate/state
+semantics, not accepted child parentage under the Kingdom of Italy.
 
 ## Sources Checked
 

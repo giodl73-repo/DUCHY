@@ -2,8 +2,8 @@
 
 source_tsv: data/staging/parentage-rank-skip-bridge-clusters.tsv
 clusters: 20
-clustered_children: 159
-high_priority_rows: 148
+clustered_children: 162
+high_priority_rows: 151
 medium_priority_rows: 9
 low_priority_rows: 3
 
@@ -23,11 +23,11 @@ low_priority_rows: 3
 | Duchy of Bavaria | Holy Roman Empire | Duchy | 12 | 12 | 0 | 0 | 962..1806 |
 | Kingdom of Bavaria | German Empire | Kingdom | 8 | 8 | 0 | 0 | 1871..1918 |
 | Kingdom of Prussia | North German Confederation | Kingdom | 6 | 6 | 0 | 0 | 1867..1870 |
+| Anhalt-Bernburg | Holy Roman Empire | Duchy | 5 | 6 | 0 | 0 | 1303..1797 |
 | Kingdom of Bohemia | Austria-Hungary | Kingdom | 4 | 4 | 0 | 0 | 1867..1918 |
 | Crown of the Kingdom of Poland | Polish-Lithuanian Commonwealth | Kingdom | 4 | 0 | 4 | 0 | 1569..1795 |
 | Confederation of the Rhine | First French Empire | Crown | 3 | 0 | 0 | 3 | 1804..1814 |
 | Kingdom of Westphalia | Confederation of the Rhine | Kingdom | 3 | 0 | 3 | 0 | 1806..1813 |
-| Anhalt-Bernburg | Holy Roman Empire | Duchy | 2 | 3 | 0 | 0 | 1303..1743 |
 | Kingdom of Bohemia | Austrian Empire | Kingdom | 2 | 2 | 0 | 0 | 1804..1866 |
 | Kingdom of Italy | First French Empire | Kingdom | 2 | 2 | 0 | 0 | 1807..1815 |
 | Duchy of Brittany | Kingdom of France | Duchy | 2 | 0 | 2 | 0 | 987..1527 |
@@ -118,6 +118,19 @@ low_priority_rows: 3
 - child_ids: title-q155570,title-q158445,title-q161215,title-q16550783,title-q326029,title-q693669
 - child_names: Duchy of Anhalt; Duchy of Brunswick; Grand Duchy of Mecklenburg-Schwerin; Grand Duchy of Mecklenburg-Strelitz; Grand Duchy of Oldenburg; Saxe-Weimar-Eisenach
 
+### Anhalt-Bernburg -> Holy Roman Empire
+
+- candidate_parent_id: title-q686965
+- current_parent_id: title-q12548
+- expected_parent_rank: Duchy
+- child_count: 5
+- priority_counts: high 6, medium 0, low 0
+- span_range: 1303..1797
+- bridge_fact_ids: fact-q686965-parent-q12548
+- skip_fact_ids: fact-q157070-parent-q12548,fact-q1615455-parent-q12548,fact-q599613-parent-q12548,fact-q736029-parent-q12548-1303,fact-q736029-parent-q12548-1606,fact-q762943-parent-q12548
+- child_ids: title-q157070,title-q1615455,title-q599613,title-q736029,title-q762943
+- child_names: County of Flanders; County of Holland; County of Namur; Duchy of Mirandola; Nassau-Siegen
+
 ### Kingdom of Bohemia -> Austria-Hungary
 
 - candidate_parent_id: title-q42585
@@ -169,19 +182,6 @@ low_priority_rows: 3
 - skip_fact_ids: fact-q249428-parent-q154741,fact-q698089-parent-q154741,fact-q704312-parent-q154741
 - child_ids: title-q249428,title-q698089,title-q704312
 - child_names: Grand Duchy of Berg; Grand Duchy of Frankfurt; Grand Duchy of Wurzburg
-
-### Anhalt-Bernburg -> Holy Roman Empire
-
-- candidate_parent_id: title-q686965
-- current_parent_id: title-q12548
-- expected_parent_rank: Duchy
-- child_count: 2
-- priority_counts: high 3, medium 0, low 0
-- span_range: 1303..1743
-- bridge_fact_ids: fact-q686965-parent-q12548
-- skip_fact_ids: fact-q1615455-parent-q12548,fact-q736029-parent-q12548-1303,fact-q736029-parent-q12548-1606
-- child_ids: title-q1615455,title-q736029
-- child_names: Duchy of Mirandola; Nassau-Siegen
 
 ### Kingdom of Bohemia -> Austrian Empire
 

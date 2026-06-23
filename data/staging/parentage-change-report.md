@@ -4,17 +4,17 @@ sources: 520
 facts: 1330
 titles: 349
 parentage_titles: 229
-titles_with_parent_changes: 38
-parent_changes: 48
+titles_with_parent_changes: 41
+parent_changes: 51
 county_parentage_titles: 33
-county_titles_with_parent_changes: 2
-county_parent_changes: 2
+county_titles_with_parent_changes: 5
+county_parent_changes: 5
 
 ## Changes By Child Rank
 
 | Child Rank | Titles | Changed Titles | Parent Changes |
 |---|---:|---:|---:|
-| County | 33 | 2 | 2 |
+| County | 33 | 5 | 5 |
 | Duchy | 136 | 30 | 37 |
 | Province | 1 | 0 | 0 |
 | FreeCity | 2 | 0 | 0 |
@@ -26,11 +26,11 @@ county_parent_changes: 2
 
 | Parent Rank | Facts | Changed Titles | Parent Changes |
 |---|---:|---:|---:|
-| Duchy | 4 | 0 | 0 |
+| Duchy | 4 | 3 | 3 |
 | Kingdom | 13 | 1 | 1 |
 | Crown | 2 | 0 | 0 |
 | TheocraticState | 1 | 0 | 0 |
-| Empire | 16 | 1 | 1 |
+| Empire | 22 | 4 | 4 |
 
 ## Top Parent Changes
 
@@ -46,6 +46,9 @@ county_parent_changes: 2
 | 2 | 3 | Kingdom of Bohemia (title-q42585) | Kingdom | 1198..1803: Holy Roman Empire [Empire]; 1804..1866: Austrian Empire [Empire]; 1867..1918: Austria-Hungary [Empire] |
 | 2 | 3 | Kingdom of Prussia (title-q27306) | Kingdom | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
 | 2 | 3 | Kingdom of Saxony (title-q153015) | Kingdom | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire]; 1871..1918: German Empire [Empire] |
+| 1 | 3 | County of Flanders (title-q157070) | County | 962..1383: Holy Roman Empire [Empire]; 1384..1482: Burgundian Netherlands [Duchy]; 1483..1797: Holy Roman Empire [Empire] |
+| 1 | 3 | County of Holland (title-q762943) | County | 962..1432: Holy Roman Empire [Empire]; 1433..1482: Burgundian Netherlands [Duchy]; 1483..1795: Holy Roman Empire [Empire] |
+| 1 | 3 | County of Namur (title-q599613) | County | 981..1420: Holy Roman Empire [Empire]; 1421..1482: Burgundian Netherlands [Duchy]; 1483..1795: Holy Roman Empire [Empire] |
 | 1 | 2 | Anhalt-Bernburg (title-q686965) | Duchy | 1252..1806: Holy Roman Empire [Empire]; 1815..1863: German Confederation [Empire] |
 | 1 | 2 | Anhalt-Dessau (title-q278874) | Duchy | 1396..1806: Holy Roman Empire [Empire]; 1815..1853: German Confederation [Empire] |
 | 1 | 2 | Anhalt-Kothen (title-q264970) | Duchy | 1396..1806: Holy Roman Empire [Empire]; 1815..1863: German Confederation [Empire] |
@@ -58,6 +61,3 @@ county_parent_changes: 2
 | 1 | 2 | Gorizia and Gradisca (title-q692946) | County | 1804..1866: Austrian Empire [Empire]; 1867..1918: Austria-Hungary [Empire] |
 | 1 | 2 | Grand Duchy of Baden (title-q186320) | Duchy | 1815..1866: German Confederation [Empire]; 1871..1918: German Empire [Empire] |
 | 1 | 2 | Grand Duchy of Hesse (title-q20135) | Duchy | 1815..1866: German Confederation [Empire]; 1871..1918: German Empire [Empire] |
-| 1 | 2 | Grand Duchy of Mecklenburg-Strelitz (title-q161215) | Duchy | 1815..1866: German Confederation [Empire]; 1867..1870: North German Confederation [Empire] |
-| 1 | 2 | Hohenzollern-Hechingen (title-q673865) | Duchy | 1576..1806: Holy Roman Empire [Empire]; 1815..1850: German Confederation [Empire] |
-| 1 | 2 | Hohenzollern-Sigmaringen (title-q157013) | Duchy | 1576..1806: Holy Roman Empire [Empire]; 1815..1850: German Confederation [Empire] |

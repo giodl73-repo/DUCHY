@@ -16,10 +16,10 @@ exclude them.
 
 | Metric | Count |
 |---|---:|
-| active bridge rows | 160 |
+| active bridge rows | 163 |
 | active bridge clusters | 20 |
-| clustered children | 159 |
-| high priority bridge rows | 148 |
+| clustered children | 162 |
+| high priority bridge rows | 151 |
 | medium priority bridge rows | 9 |
 | low priority bridge rows | 3 |
 
@@ -62,7 +62,7 @@ Italy.
 ## Next Queue
 
 The next scaling milestone should not reopen the closed bridge-cluster review
-queue. Use the active rank-skip queue (`220` rows) to choose new source-backed
+queue. Use the active rank-skip queue (`223` rows) to choose new source-backed
 intermediate-parent packets, prioritizing rows where independent child-level
 sources can replace direct empire/crown parentage without creating overlapping
 active parents.

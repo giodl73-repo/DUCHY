@@ -4,7 +4,7 @@ source_tsv: data/staging/parentage-rank-skip-bridge-cluster-review.tsv
 review_rows: 20
 pending_review: 0
 not_inferred: 0
-high_priority_rows: 148
+high_priority_rows: 151
 medium_priority_rows: 9
 low_priority_rows: 3
 
@@ -44,11 +44,11 @@ low_priority_rows: 3
 | reviewed | same_parent_sibling_false_positive | Duchy of Bavaria | Holy Roman Empire | 12 | 12 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Bavaria | German Empire | 8 | 8 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Prussia | North German Confederation | 6 | 6 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Anhalt-Bernburg | Holy Roman Empire | 5 | 6 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Bohemia | Austria-Hungary | 4 | 4 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Crown of the Kingdom of Poland | Polish-Lithuanian Commonwealth | 4 | 0 | 4 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Confederation of the Rhine | First French Empire | 3 | 0 | 0 | 3 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Westphalia | Confederation of the Rhine | 3 | 0 | 3 | 0 | none |
-| reviewed | same_parent_sibling_false_positive | Anhalt-Bernburg | Holy Roman Empire | 2 | 3 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Bohemia | Austrian Empire | 2 | 2 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Kingdom of Italy | First French Empire | 2 | 2 | 0 | 0 | none |
 | reviewed | same_parent_sibling_false_positive | Duchy of Brittany | Kingdom of France | 2 | 0 | 2 | 0 | none |

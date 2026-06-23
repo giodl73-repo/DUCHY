@@ -401,7 +401,12 @@ through Burgundian Netherlands while keeping the older HRE facts auditable and
 active outside those bounded spans. The catalog now has 520 reviewed sources,
 1330 facts, 5 superseded parentage facts, and a valid timeline; active
 fact-row rank skips drop from 220 to 217.
-The rank-skip queue exports those 217 valid-but-incomplete hierarchy edges for
+The report layer now materializes those partial supersessions before graph,
+change, rank-skip, candidate, and bridge analysis. The current graph report has
+284 parentage edges, 59.44% weighted span coverage, 223 rank-skip edge rows,
+zero temporal parent conflicts, and zero snapshot cycle years across 547
+generated snapshot years.
+The rank-skip queue exports those 223 valid-but-incomplete hierarchy edges for
 review. The largest class is duchy-to-empire parentage, which needs reviewed
 kingdom-layer packets before DUCHY can treat those branches as a proper
 immediate-rank tree.
@@ -409,10 +414,10 @@ The rank-skip queue is now sharded into nine 25-row review batches with an
 index and Markdown rollup report, so intermediate-parent review can be assigned
 without reopening the broader graph report.
 The rank-skip candidate report cross-checks those rows against accepted titles:
-212 of 217 rank-skip rows have an overlapping accepted title at the expected
-immediate rank, and 157 rows have at least one stronger bridge candidate already
+218 of 223 rank-skip rows have an overlapping accepted title at the expected
+immediate rank, and 163 rows have at least one stronger bridge candidate already
 parented under the same current parent during an overlapping span.
-The bridge TSV distills those 157 rows into a compact queue for targeted
+The bridge TSV distills those 163 rows into a compact queue for targeted
 source-review work. A bridge row is not proof of correct immediate parentage; it
 only means DUCHY already has an accepted candidate title of the expected rank
 under the same current parent.
@@ -421,27 +426,28 @@ the largest candidate-parent clusters are Kingdom of Bohemia, Kingdom of
 Bavaria, and Kingdom of Italy, while Holy Roman Empire is the dominant current
 parent for bridge review.
 The bridge cluster TSV groups those leads into 20 candidate/current-parent
-clusters, making the next source-review packets visible as coherent child sets
-rather than individual skipped facts.
+clusters covering 162 distinct skipped children, making the next source-review
+packets visible as coherent child sets rather than individual skipped facts.
 The bridge cluster report turns those clusters into review packets and keeps
 the warning explicit: clusters are packet-planning leads, not import-ready
 parentage claims.
-The cluster review TSV makes that boundary operational: every cluster starts as
-`pending_review` with `not_inferred` disposition until a reviewer supplies
-child-to-candidate parentage evidence.
+The cluster review TSV makes that boundary operational and now preserves
+existing review decisions when regenerated from refreshed materialized-edge
+clusters. The current 20 cluster rows are all reviewed: 19 are marked
+`same_parent_sibling_false_positive`, and the remaining Kingdom of Italy/HRE
+cluster is held as `mixed_cluster_requires_child_split`.
 The cluster review shards split those 20 rows into four five-row packets with an
-index that preserves pending/not-inferred and priority totals for assignment.
+index that preserves review dispositions and priority totals for assignment.
 The cluster review report summarizes the editable review TSV by status,
 disposition, evidence need, and row priority so packet progress can be audited
 without opening every shard.
 The packet-stub report emits import-planning stubs only for rows explicitly
 marked `reviewed` and `ready_for_packet`; the current queue emits zero stubs
 because all rows remain blocked.
-The first completed cluster review marks the Nassau/Brandenburg bridge lead as
-`same_parent_sibling_false_positive`: both were Holy Roman Empire states, but
-the review found no child-to-candidate parentage edge.
-A follow-up one-child cluster batch clears five more same-parent sibling false
-positives, leaving 14 cluster review rows pending and still zero packet stubs.
+The active Kingdom of Italy/HRE split review now has 29 rows: March of Turin
+and March of Tuscany are removed from the active cluster because their Kingdom
+of Italy replacement parentage was imported, leaving 28 same-parent sibling
+false positives and one held Trent relation-model lead.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

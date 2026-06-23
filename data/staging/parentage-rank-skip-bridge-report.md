@@ -1,13 +1,13 @@
 # DUCHY Parentage Rank Skip Bridge Review Report
 
 source_tsv: data/staging/parentage-rank-skip-bridges.tsv
-bridge_rows: 157
+bridge_rows: 163
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_intermediate_parent_review | 145 |
+| high_intermediate_parent_review | 151 |
 | low_intermediate_parent_review | 3 |
 | medium_intermediate_parent_review | 9 |
 
@@ -18,10 +18,10 @@ bridge_rows: 157
 | Kingdom of Bohemia | 55 |
 | Kingdom of Bavaria | 35 |
 | Kingdom of Italy | 31 |
-| Duchy of Bavaria | 9 |
+| Duchy of Bavaria | 12 |
+| Anhalt-Bernburg | 6 |
 | Kingdom of Prussia | 6 |
 | Crown of the Kingdom of Poland | 4 |
-| Anhalt-Bernburg | 3 |
 | Confederation of the Rhine | 3 |
 | Kingdom of Westphalia | 3 |
 | Archduchy of Austria | 2 |
@@ -35,7 +35,7 @@ bridge_rows: 157
 
 | Current Parent | Rows |
 |---|---:|
-| Holy Roman Empire | 91 |
+| Holy Roman Empire | 97 |
 | German Confederation | 27 |
 | German Empire | 8 |
 | North German Confederation | 6 |
@@ -276,6 +276,36 @@ bridge_rows: 157
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
+### fact-q157070-parent-q12548 | County of Flanders -> Duchy of Bavaria -> Holy Roman Empire
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q47261
+- candidate_exists: 907..1805
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 962..1383
+- overlap_years: 422
+- bridge_fact_id: fact-q47261-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
+### fact-q157070-parent-q12548 | County of Flanders -> Anhalt-Bernburg -> Holy Roman Empire
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q686965
+- candidate_exists: 1252..1863
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1797
+- overlap_years: 315
+- bridge_fact_id: fact-q686965-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
 ### fact-q675363-parent-q12548 | County of Geneva -> Duchy of Bavaria -> Holy Roman Empire
 
 - child_id: title-q675363
@@ -288,6 +318,36 @@ bridge_rows: 157
 - span: 1032..1401
 - overlap_years: 370
 - bridge_fact_id: fact-q47261-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
+### fact-q762943-parent-q12548 | County of Holland -> Duchy of Bavaria -> Holy Roman Empire
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q47261
+- candidate_exists: 907..1805
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 962..1432
+- overlap_years: 471
+- bridge_fact_id: fact-q47261-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
+### fact-q762943-parent-q12548 | County of Holland -> Anhalt-Bernburg -> Holy Roman Empire
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q686965
+- candidate_exists: 1252..1863
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1795
+- overlap_years: 313
+- bridge_fact_id: fact-q686965-parent-q12548
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
@@ -333,6 +393,36 @@ bridge_rows: 157
 - span: 1042..1793
 - overlap_years: 752
 - bridge_fact_id: fact-q47261-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
+### fact-q599613-parent-q12548 | County of Namur -> Duchy of Bavaria -> Holy Roman Empire
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q47261
+- candidate_exists: 907..1805
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 981..1420
+- overlap_years: 440
+- bridge_fact_id: fact-q47261-parent-q12548
+- review_priority: high_intermediate_parent_review
+- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
+
+### fact-q599613-parent-q12548 | County of Namur -> Anhalt-Bernburg -> Holy Roman Empire
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- candidate_parent_id: title-q686965
+- candidate_exists: 1252..1863
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1795
+- overlap_years: 313
+- bridge_fact_id: fact-q686965-parent-q12548
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 

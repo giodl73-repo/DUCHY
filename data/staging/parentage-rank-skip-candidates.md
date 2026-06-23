@@ -3,10 +3,10 @@
 sources: 520
 facts: 1330
 titles: 349
-rank_skip_rows: 217
+rank_skip_rows: 223
 
-rows_with_any_candidate: 212
-rows_with_bridge_candidate: 157
+rows_with_any_candidate: 218
+rows_with_bridge_candidate: 163
 
 ## Interpretation
 
@@ -604,6 +604,62 @@ No accepted overlapping candidate titles found.
 
 52 additional candidates omitted from this row.
 
+### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 962..1383
+- candidate_count: 70
+- bridge_candidate_count: 44
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 422 | fact-q47261-parent-q12548 |
+| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 422 | fact-q155019-parent-q12548 |
+| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 422 | fact-q7904317-parent-q12548 |
+| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 422 | fact-q284667-parent-q12548 |
+| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 422 | fact-q173863-parent-q12548 |
+| Margraviate of Meissen (title-q170180) | Duchy | 965..1423 | 419 | fact-q170180-parent-q12548 |
+| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 402 | fact-q771332-parent-q12548 |
+| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 399 | fact-q158835-parent-q12548 |
+| Prince-Bishopric of Verdun (title-q17015016) | Duchy | 997..1552 | 387 | fact-q17015016-parent-q12548 |
+| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 381 | fact-q836937-parent-q12548 |
+| Prince-Bishopric of Utrecht (title-q707767) | Duchy | 1024..1528 | 360 | fact-q707767-parent-q12548 |
+| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 357 | fact-q1231403-parent-q12548 |
+
+58 additional candidates omitted from this row.
+
+### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
+
+- child_id: title-q157070
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1797
+- candidate_count: 88
+- bridge_candidate_count: 68
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Anhalt-Bernburg (title-q686965) | Duchy | 1252..1863 | 315 | fact-q686965-parent-q12548 |
+| Anhalt-Dessau (title-q278874) | Duchy | 1396..1853 | 315 | fact-q278874-parent-q12548 |
+| Anhalt-Kothen (title-q264970) | Duchy | 1396..1863 | 315 | fact-q264970-parent-q12548 |
+| Archduchy of Austria (title-q699964) | Duchy | 1358..1918 | 315 | fact-q699964-parent-q12548 |
+| Brunswick-Luneburg (title-q556263) | Duchy | 1235..1806 | 315 | fact-q556263-parent-q12548 |
+| Brunswick-Wolfenbuttel (title-q830084) | Duchy | 1269..1815 | 315 | fact-q830084-parent-q12548 |
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 315 | fact-q47261-parent-q12548 |
+| Duchy of Berg (title-q151095) | Duchy | 1380..1806 | 315 | fact-q151095-parent-q12548 |
+| Duchy of Carniola (title-q2360973) | Duchy | 1364..1918 | 315 | fact-q2360973-parent-q12548 |
+| Duchy of Holstein (title-q704288) | Duchy | 1474..1867 | 315 | fact-q704288-parent-q12548 |
+| Duchy of Massa and Carrara (title-q933592) | Duchy | 1473..1829 | 315 | fact-q933592-parent-q12548 |
+| Duchy of Milan (title-q153529) | Duchy | 1395..1797 | 315 | fact-q153529-parent-q12548 |
+
+76 additional candidates omitted from this row.
+
 ### fact-q675363-parent-q12548 | County of Geneva -> Holy Roman Empire
 
 - child_id: title-q675363
@@ -656,6 +712,62 @@ No accepted overlapping candidate titles found.
 | Duchy of Bohemia (title-q2162698) | Duchy | 870..1198 | 18 |  |
 | Duchy of Burgundy (title-q4712) | Duchy | 880..1477 | 8 |  |
 | Duchy of Alsace (title-q95950649) | Duchy | 700..800 | 1 |  |
+
+### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 962..1432
+- candidate_count: 77
+- bridge_candidate_count: 49
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 471 | fact-q47261-parent-q12548 |
+| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 471 | fact-q155019-parent-q12548 |
+| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 471 | fact-q7904317-parent-q12548 |
+| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 471 | fact-q284667-parent-q12548 |
+| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 471 | fact-q173863-parent-q12548 |
+| Margraviate of Meissen (title-q170180) | Duchy | 965..1423 | 459 | fact-q170180-parent-q12548 |
+| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 451 | fact-q771332-parent-q12548 |
+| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 448 | fact-q158835-parent-q12548 |
+| Prince-Bishopric of Verdun (title-q17015016) | Duchy | 997..1552 | 436 | fact-q17015016-parent-q12548 |
+| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 430 | fact-q836937-parent-q12548 |
+| Prince-Bishopric of Utrecht (title-q707767) | Duchy | 1024..1528 | 409 | fact-q707767-parent-q12548 |
+| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 406 | fact-q1231403-parent-q12548 |
+
+65 additional candidates omitted from this row.
+
+### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
+
+- child_id: title-q762943
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1795
+- candidate_count: 88
+- bridge_candidate_count: 68
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Anhalt-Bernburg (title-q686965) | Duchy | 1252..1863 | 313 | fact-q686965-parent-q12548 |
+| Anhalt-Dessau (title-q278874) | Duchy | 1396..1853 | 313 | fact-q278874-parent-q12548 |
+| Anhalt-Kothen (title-q264970) | Duchy | 1396..1863 | 313 | fact-q264970-parent-q12548 |
+| Archduchy of Austria (title-q699964) | Duchy | 1358..1918 | 313 | fact-q699964-parent-q12548 |
+| Brunswick-Luneburg (title-q556263) | Duchy | 1235..1806 | 313 | fact-q556263-parent-q12548 |
+| Brunswick-Wolfenbuttel (title-q830084) | Duchy | 1269..1815 | 313 | fact-q830084-parent-q12548 |
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 313 | fact-q47261-parent-q12548 |
+| Duchy of Berg (title-q151095) | Duchy | 1380..1806 | 313 | fact-q151095-parent-q12548 |
+| Duchy of Brabant (title-q159856) | Duchy | 1183..1795 | 313 | fact-q159856-parent-q12548 |
+| Duchy of Carniola (title-q2360973) | Duchy | 1364..1918 | 313 | fact-q2360973-parent-q12548 |
+| Duchy of Cleves (title-q641138) | Duchy | 1092..1795 | 313 | fact-q641138-parent-q12548 |
+| Duchy of Holstein (title-q704288) | Duchy | 1474..1867 | 313 | fact-q704288-parent-q12548 |
+
+76 additional candidates omitted from this row.
 
 ### fact-q921473-parent-q70972 | County of La Marche -> Kingdom of France
 
@@ -768,6 +880,62 @@ No accepted overlapping candidate titles found.
 | Electoral Palatinate (title-q22880) | Duchy | 1085..1803 | 709 | fact-q22880-parent-q12548 |
 
 98 additional candidates omitted from this row.
+
+### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 981..1420
+- candidate_count: 77
+- bridge_candidate_count: 49
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 440 | fact-q47261-parent-q12548 |
+| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 440 | fact-q155019-parent-q12548 |
+| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 440 | fact-q7904317-parent-q12548 |
+| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 440 | fact-q284667-parent-q12548 |
+| Margraviate of Meissen (title-q170180) | Duchy | 965..1423 | 440 | fact-q170180-parent-q12548 |
+| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 440 | fact-q173863-parent-q12548 |
+| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 439 | fact-q771332-parent-q12548 |
+| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 436 | fact-q158835-parent-q12548 |
+| Prince-Bishopric of Verdun (title-q17015016) | Duchy | 997..1552 | 424 | fact-q17015016-parent-q12548 |
+| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 418 | fact-q836937-parent-q12548 |
+| Prince-Bishopric of Utrecht (title-q707767) | Duchy | 1024..1528 | 397 | fact-q707767-parent-q12548 |
+| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 394 | fact-q1231403-parent-q12548 |
+
+65 additional candidates omitted from this row.
+
+### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q12548
+- current_parent_rank: Empire
+- span: 1483..1795
+- candidate_count: 88
+- bridge_candidate_count: 68
+
+| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
+|---|---|---|---:|---|
+| Anhalt-Bernburg (title-q686965) | Duchy | 1252..1863 | 313 | fact-q686965-parent-q12548 |
+| Anhalt-Dessau (title-q278874) | Duchy | 1396..1853 | 313 | fact-q278874-parent-q12548 |
+| Anhalt-Kothen (title-q264970) | Duchy | 1396..1863 | 313 | fact-q264970-parent-q12548 |
+| Archduchy of Austria (title-q699964) | Duchy | 1358..1918 | 313 | fact-q699964-parent-q12548 |
+| Brunswick-Luneburg (title-q556263) | Duchy | 1235..1806 | 313 | fact-q556263-parent-q12548 |
+| Brunswick-Wolfenbuttel (title-q830084) | Duchy | 1269..1815 | 313 | fact-q830084-parent-q12548 |
+| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 313 | fact-q47261-parent-q12548 |
+| Duchy of Berg (title-q151095) | Duchy | 1380..1806 | 313 | fact-q151095-parent-q12548 |
+| Duchy of Brabant (title-q159856) | Duchy | 1183..1795 | 313 | fact-q159856-parent-q12548 |
+| Duchy of Carniola (title-q2360973) | Duchy | 1364..1918 | 313 | fact-q2360973-parent-q12548 |
+| Duchy of Cleves (title-q641138) | Duchy | 1092..1795 | 313 | fact-q641138-parent-q12548 |
+| Duchy of Holstein (title-q704288) | Duchy | 1474..1867 | 313 | fact-q704288-parent-q12548 |
+
+76 additional candidates omitted from this row.
 
 ### fact-q12817455-parent-q12548 | County of Nassau -> Holy Roman Empire
 
