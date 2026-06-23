@@ -483,6 +483,12 @@ year lookup that keeps relation context separate from parentage title paths.
 The next `WP-007` slice adds `relation_context` trace notes to title-path query
 answers, so relation facts can explain dependency or membership context without
 changing the returned parentage path.
+The rank-skip reporting slice adds
+`parentage-rank-skip-relation-report`, which classifies active rank-skip rows
+when an overlapping source-backed relation fact connects the child title to the
+current parent title. The current accepted fixture has 223 active rank-skip
+rows and zero relation facts, so the report is ready but the next data import
+milestone is promoting reviewed relation facts from the blocker queue.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:

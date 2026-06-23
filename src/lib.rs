@@ -101,7 +101,7 @@ pub enum RelationKind {
 }
 
 impl RelationKind {
-    fn as_str(self) -> &'static str {
+    pub fn as_str(self) -> &'static str {
         match self {
             Self::ImperialState => "imperial_state",
             Self::ConfederationMember => "confederation_member",

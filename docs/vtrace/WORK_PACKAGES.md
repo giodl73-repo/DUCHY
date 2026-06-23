@@ -185,13 +185,16 @@ Verification commands:
 cargo test --quiet
 cargo run --quiet --bin duchy-import -- parentage-graph-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-graph-report.md
 cargo run --quiet --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-targets.tsv
+cargo run --quiet --bin duchy-import -- parentage-rank-skip-relation-report fixtures/first-real.sources fixtures/first-real.facts data/staging/parentage-rank-skip-relation-report.md
 git diff --check
 ```
 
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
-lookup, validation, and title-path query trace context. Rank-skip report
-classification remains open.
+lookup, validation, title-path query trace context, and rank-skip relation
+classification. The remaining `WP-007` data milestone is promoting reviewed
+relation facts so the generated rank-skip relation report can explain real
+rows.
 
 ## Orphan Check
 

@@ -87,6 +87,9 @@ fn run() -> Result<(), Vec<String>> {
         if command == "parentage-rank-skip-candidates" {
             return parentage_rank_skip_candidate_report(sources_path, facts_path, output_path);
         }
+        if command == "parentage-rank-skip-relation-report" {
+            return parentage_rank_skip_relation_report(sources_path, facts_path, output_path);
+        }
         if command == "parentage-rank-skip-bridges-tsv" {
             return parentage_rank_skip_bridges_tsv(sources_path, facts_path, output_path);
         }
@@ -129,7 +132,7 @@ fn run() -> Result<(), Vec<String>> {
         [command, sources, facts] if command == "status" => (sources.as_str(), facts.as_str()),
         _ => {
             return Err(vec![
-                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-report input.tsv output.md | parentage-rank-skip-bridge-cluster-packet-stubs input.tsv output.md | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
+                "usage: duchy-import [status [sources-file facts-file]] | manifest manifest-file | source-stubs manifest-file output.sources | rejected-report manifest-file output.md | active-manifest manifest-file output.manifest | archive-manifest manifest-file output.manifest | manifest-report manifest-file output.md | duplicate-url-report manifest-file output.md | manifest-tsv manifest-file output.tsv | manifest-from-tsv input.tsv output.manifest | shard-manifest manifest-file output-dir chunk-size | parentage-coverage-report sources-file facts-file output.md | parentage-change-report sources-file facts-file output.md | parentage-graph-report sources-file facts-file output.md | parentage-rank-skip-tsv sources-file facts-file output.tsv | parentage-rank-skip-candidates sources-file facts-file output.md | parentage-rank-skip-relation-report sources-file facts-file output.md | parentage-rank-skip-bridges-tsv sources-file facts-file output.tsv | parentage-rank-skip-shard input.tsv output-dir chunk-size | parentage-rank-skip-report input.tsv output.md | parentage-rank-skip-bridge-shard input.tsv output-dir chunk-size | parentage-rank-skip-bridge-report input.tsv output.md | parentage-rank-skip-bridge-clusters-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-report input.tsv output.md | parentage-rank-skip-bridge-cluster-review-tsv input.tsv output.tsv | parentage-rank-skip-bridge-cluster-review-report input.tsv output.md | parentage-rank-skip-bridge-cluster-packet-stubs input.tsv output.md | parentage-rank-skip-bridge-cluster-review-shard input.tsv output-dir chunk-size | parentage-gap-tsv sources-file facts-file output.tsv [blockers.tsv] | parentage-gap-shard input.tsv output-dir chunk-size | parentage-gap-report input.tsv output.md".to_string(),
             ])
         }
     };
@@ -675,6 +678,135 @@ fn parentage_rank_skip_candidate_report(
     println!("- rank skip rows: {}", rank_skip_rows.len());
     println!("- rows with candidates: {rows_with_any_candidate}");
     println!("- rows with bridge candidates: {rows_with_bridge_candidate}");
+    println!("- output: {output_path}");
+
+    Ok(())
+}
+
+fn parentage_rank_skip_relation_report(
+    sources_path: &str,
+    facts_path: &str,
+    output_path: &str,
+) -> Result<(), Vec<String>> {
+    let source_text = fs::read_to_string(sources_path)
+        .map_err(|error| vec![format!("failed to read {sources_path}: {error}")])?;
+    let fact_text = fs::read_to_string(facts_path)
+        .map_err(|error| vec![format!("failed to read {facts_path}: {error}")])?;
+
+    let catalog = duchy::SourceCatalog::from_metadata_text(&source_text)?;
+    let facts = duchy::fact_records_from_text(&fact_text)?;
+    duchy::validate_fact_records(&catalog, &facts)?;
+    let titles = duchy::source_backed_titles_from_facts(&catalog, &facts)?;
+    let timeline = duchy::source_backed_timeline_from_facts(&catalog, &facts)?;
+    timeline.validate().map_err(|errors| {
+        errors
+            .into_iter()
+            .map(|error| format!("timeline: {error}"))
+            .collect::<Vec<_>>()
+    })?;
+    let relations = duchy::source_backed_relations_from_facts(&catalog, &facts, &timeline)?;
+
+    let title_by_id = titles
+        .iter()
+        .map(|title| (title.id.as_str(), title))
+        .collect::<BTreeMap<_, _>>();
+    let parentage_edges = active_parentage_edges(&facts);
+    let rank_skip_rows = parentage_rank_skip_rows(&parentage_edges, &title_by_id);
+    let explanations = parentage_rank_skip_relation_explanations(&rank_skip_rows, &relations);
+
+    let explained_count = explanations
+        .iter()
+        .filter(|explanation| !explanation.relations.is_empty())
+        .count();
+    let mut by_relation_kind: BTreeMap<&str, usize> = BTreeMap::new();
+    for explanation in &explanations {
+        let mut kinds_for_row = BTreeSet::new();
+        for relation in &explanation.relations {
+            kinds_for_row.insert(relation.relation_kind.as_str());
+        }
+        for relation_kind in kinds_for_row {
+            *by_relation_kind.entry(relation_kind).or_default() += 1;
+        }
+    }
+
+    let mut output = String::new();
+    output.push_str("# DUCHY Parentage Rank Skip Relation Report\n\n");
+    output.push_str(&format!("sources: {}\n", catalog.record_count()));
+    output.push_str(&format!("facts: {}\n", facts.len()));
+    output.push_str(&format!("titles: {}\n", titles.len()));
+    output.push_str(&format!("relation_facts: {}\n", relations.len()));
+    output.push_str(&format!("rank_skip_rows: {}\n", rank_skip_rows.len()));
+    output.push_str(&format!("relation_explained_rows: {explained_count}\n"));
+    output.push_str(&format!(
+        "unexplained_rows: {}\n\n",
+        rank_skip_rows.len().saturating_sub(explained_count)
+    ));
+
+    output.push_str("## Interpretation\n\n");
+    output.push_str("- A row is relation-explained only when the child title has an overlapping source-backed relation fact to the current parent title.\n");
+    output.push_str("- Relation facts preserve context such as imperial state, confederation member, split control, or vassalage without changing the canonical parentage tree.\n");
+    output.push_str("- Unexplained rows still need an intermediate parent, a relation fact, or a source-custody blocker before import.\n\n");
+
+    output.push_str("## Relation Kind Counts\n\n");
+    output.push_str("| Relation Kind | Rows |\n");
+    output.push_str("|---|---:|\n");
+    for (relation_kind, count) in &by_relation_kind {
+        output.push_str(&format!("| {relation_kind} | {count} |\n"));
+    }
+    if by_relation_kind.is_empty() {
+        output.push_str("| none | 0 |\n");
+    }
+
+    output.push_str("\n## Review Rows\n\n");
+    for explanation in &explanations {
+        let row = explanation.row;
+        output.push_str(&format!(
+            "### {} | {} -> {}\n\n",
+            row.fact_id,
+            markdown_escape(&row.child_name),
+            markdown_escape(&row.parent_name)
+        ));
+        output.push_str(&format!("- child_id: {}\n", row.child_id));
+        output.push_str(&format!(
+            "- child_rank: {}\n",
+            title_rank_label(row.child_rank)
+        ));
+        output.push_str(&format!(
+            "- expected_parent_rank: {}\n",
+            title_rank_label(row.expected_parent_rank)
+        ));
+        output.push_str(&format!("- current_parent_id: {}\n", row.parent_id));
+        output.push_str(&format!(
+            "- current_parent_rank: {}\n",
+            title_rank_label(row.parent_rank)
+        ));
+        output.push_str(&format!("- span: {}\n", row.span));
+        if explanation.relations.is_empty() {
+            output.push_str("- relation_context: none\n\n");
+            continue;
+        }
+        output.push_str("\n| Relation Kind | Related Title | Relation Span | Overlap |\n");
+        output.push_str("|---|---|---|---|\n");
+        for relation in &explanation.relations {
+            output.push_str(&format!(
+                "| {} | {} | {} | {} |\n",
+                relation.relation_kind.as_str(),
+                markdown_escape(&row.parent),
+                year_span_label(&relation.span),
+                relation.overlap
+            ));
+        }
+        output.push('\n');
+    }
+
+    fs::write(output_path, output)
+        .map_err(|error| vec![format!("failed to write {output_path}: {error}")])?;
+
+    println!("DUCHY parentage rank skip relation report");
+    println!("- titles: {}", titles.len());
+    println!("- relation facts: {}", relations.len());
+    println!("- rank skip rows: {}", rank_skip_rows.len());
+    println!("- relation explained rows: {explained_count}");
     println!("- output: {output_path}");
 
     Ok(())
@@ -2746,6 +2878,19 @@ struct ParentageRankSkipCandidate {
 }
 
 #[derive(Debug)]
+struct ParentageRankSkipRelationExplanation<'a> {
+    row: &'a ParentageRankSkipRow,
+    relations: Vec<ParentageRankSkipRelationMatch>,
+}
+
+#[derive(Debug, Clone)]
+struct ParentageRankSkipRelationMatch {
+    relation_kind: duchy::RelationKind,
+    span: duchy::YearSpan,
+    overlap: String,
+}
+
+#[derive(Debug)]
 struct ParentageSpanCoverageRow {
     rank: duchy::TitleRank,
     expected_years: usize,
@@ -2935,6 +3080,49 @@ fn parentage_rank_skip_candidates(
             .then_with(|| left.title.cmp(&right.title))
     });
     candidates
+}
+
+fn parentage_rank_skip_relation_explanations<'a>(
+    rows: &'a [ParentageRankSkipRow],
+    relations: &[duchy::RelationSpan],
+) -> Vec<ParentageRankSkipRelationExplanation<'a>> {
+    let mut explanations = Vec::new();
+    for row in rows {
+        let Some(skip_span) = year_span_from_label(&row.span) else {
+            explanations.push(ParentageRankSkipRelationExplanation {
+                row,
+                relations: Vec::new(),
+            });
+            continue;
+        };
+        let mut relation_matches = relations
+            .iter()
+            .filter(|relation| {
+                relation.subject_title_id == row.child_id
+                    && relation.related_title_id == row.parent_id
+            })
+            .filter_map(|relation| {
+                span_overlap_label(&relation.span, &skip_span).map(|overlap| {
+                    ParentageRankSkipRelationMatch {
+                        relation_kind: relation.relation_kind,
+                        span: relation.span.clone(),
+                        overlap,
+                    }
+                })
+            })
+            .collect::<Vec<_>>();
+        relation_matches.sort_by(|left, right| {
+            left.relation_kind
+                .cmp(&right.relation_kind)
+                .then(left.span.start.cmp(&right.span.start))
+                .then(left.span.end.cmp(&right.span.end))
+        });
+        explanations.push(ParentageRankSkipRelationExplanation {
+            row,
+            relations: relation_matches,
+        });
+    }
+    explanations
 }
 
 fn parentage_rank_skip_tsv_header() -> &'static str {
@@ -4836,6 +5024,54 @@ mod tests {
             Some("fact-demo-bridge")
         );
         assert!(candidates[0].title.contains("Demo Kingdom B"));
+    }
+
+    #[test]
+    fn explains_rank_skip_rows_with_overlapping_relation_to_current_parent() {
+        let row = ParentageRankSkipRow {
+            fact_id: "fact-demo-skip".to_string(),
+            child_id: "title-demo-child".to_string(),
+            child_name: "Demo Child".to_string(),
+            child: "Demo Child (title-demo-child)".to_string(),
+            child_rank: duchy::TitleRank::Duchy,
+            expected_parent_rank: duchy::TitleRank::Kingdom,
+            parent_id: "title-demo-empire".to_string(),
+            parent_name: "Demo Empire".to_string(),
+            parent: "Demo Empire (title-demo-empire)".to_string(),
+            parent_rank: duchy::TitleRank::Empire,
+            span: "1000..1100".to_string(),
+        };
+        let relations = vec![
+            duchy::RelationSpan {
+                subject_title_id: "title-demo-child".to_string(),
+                related_title_id: "title-demo-empire".to_string(),
+                relation_kind: duchy::RelationKind::ImperialState,
+                span: duchy::YearSpan::new(1050, Some(1150)),
+            },
+            duchy::RelationSpan {
+                subject_title_id: "title-demo-child".to_string(),
+                related_title_id: "title-other-empire".to_string(),
+                relation_kind: duchy::RelationKind::VassalageOrSuzerainty,
+                span: duchy::YearSpan::new(1000, Some(1100)),
+            },
+            duchy::RelationSpan {
+                subject_title_id: "title-demo-child".to_string(),
+                related_title_id: "title-demo-empire".to_string(),
+                relation_kind: duchy::RelationKind::SplitFiefOrControl,
+                span: duchy::YearSpan::new(1200, Some(1250)),
+            },
+        ];
+
+        let rows = vec![row];
+        let explanations = parentage_rank_skip_relation_explanations(&rows, &relations);
+
+        assert_eq!(explanations.len(), 1);
+        assert_eq!(explanations[0].relations.len(), 1);
+        assert_eq!(
+            explanations[0].relations[0].relation_kind,
+            duchy::RelationKind::ImperialState
+        );
+        assert_eq!(explanations[0].relations[0].overlap, "1050..1100");
     }
 
     #[test]
