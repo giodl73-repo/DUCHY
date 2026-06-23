@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first thirty accepted relation-model packets promote 179 non-parentage
-relation facts. The generated relation report explains 174 of 231 active
+The first thirty-one accepted relation-model packets promote 183 non-parentage
+relation facts. The generated relation report explains 178 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1542 |
+| facts | 1546 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 179 |
+| relation facts | 183 |
 | rank-skip rows | 231 |
-| relation-explained rows | 174 |
-| unexplained rank-skip rows | 57 |
+| relation-explained rows | 178 |
+| unexplained rank-skip rows | 53 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -65,6 +65,7 @@ Current measured baseline:
 | `vassal-satellite-relation-batch-01` | 9 | `vassalage_or_suzerainty` |
 | `napoleonic-client-relation-batch-01` | 7 | `confederation_member`, `vassalage_or_suzerainty` |
 | `vassal-client-relation-batch-02` | 4 | `vassalage_or_suzerainty` |
+| `endpoint-transition-relation-batch-01` | 4 | `rank_transition` |
 
 ## Held Rows
 
@@ -286,3 +287,9 @@ German Empire client/suzerainty context.
 personal-union, and vassal wording: Albanian Kingdom and Italian protectorate
 of Albania under the Italian Empire, Kingdom of Livonia under the Tsardom of
 Russia, and Kingdom of Thessalonica under the Latin Empire.
+
+`endpoint-transition-relation-batch-01` promotes four endpoint
+`rank_transition` contexts from accepted text-backed rows: County of Sicily to
+Kingdom of Sicily, Polish-Lithuanian union to the Polish-Lithuanian
+Commonwealth, Duchy of Ferrara to direct Papal States rule, and Kingdom of
+Bosnia to Ottoman conquest/fall.

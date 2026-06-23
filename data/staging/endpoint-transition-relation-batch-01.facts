@@ -1,0 +1,33 @@
+# Reviewed endpoint transition relation packet 01.
+
+fact_id: fact-q1917014-relation-q188586-rank-transition
+subject_id: title-q1917014
+claim_kind: relation
+span: 1130..1130
+value: rank_transition:title-q188586
+source_ids: src-wikidata-q1917014, src-wikidata-q188586, src-wikipedia-kingdom-sicily
+confidence: multi_source
+---
+fact_id: fact-q825902-relation-q172107-rank-transition
+subject_id: title-q825902
+claim_kind: relation
+span: 1569..1569
+value: rank_transition:title-q172107
+source_ids: src-wikidata-q825902, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth
+confidence: multi_source
+---
+fact_id: fact-q693570-relation-q170174-rank-transition
+subject_id: title-q693570
+claim_kind: relation
+span: 1597..1597
+value: rank_transition:title-q170174
+source_ids: src-wikidata-q693570, src-wikidata-q170174, src-wikipedia-duchy-ferrara
+confidence: multi_source
+---
+fact_id: fact-q2980623-relation-q12560-rank-transition
+subject_id: title-q2980623
+claim_kind: relation
+span: 1463..1463
+value: rank_transition:title-q12560
+source_ids: src-wikidata-q2980623, src-wikidata-q12560, src-wikipedia-kingdom-bosnia-ottoman
+confidence: multi_source

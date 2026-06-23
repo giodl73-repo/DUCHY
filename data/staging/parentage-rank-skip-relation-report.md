@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1542
+facts: 1546
 titles: 356
-relation_facts: 179
+relation_facts: 183
 rank_skip_rows: 231
-relation_explained_rows: 174
-unexplained_rows: 57
+relation_explained_rows: 178
+unexplained_rows: 53
 
 ## Interpretation
 
@@ -23,6 +23,7 @@ unexplained_rows: 57
 | crownland_component | 2 |
 | federal_state_member | 11 |
 | imperial_state | 79 |
+| rank_transition | 4 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 29 |
 
@@ -647,7 +648,10 @@ unexplained_rows: 57
 - current_parent_id: title-q188586
 - current_parent_rank: Kingdom
 - span: 1130..1130
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Kingdom of Sicily (title-q188586) | 1130..1130 | 1130..1130 |
 
 ### fact-q2991474-parent-q12548 | County of Wurttemberg -> Holy Roman Empire
 
@@ -915,7 +919,10 @@ unexplained_rows: 57
 - current_parent_id: title-q170174
 - current_parent_rank: TheocraticState
 - span: 1597..1597
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Papal States (title-q170174) | 1597..1597 | 1597..1597 |
 
 ### fact-q2252973-parent-q12548 | Duchy of Florence -> Holy Roman Empire
 
@@ -1852,7 +1859,10 @@ unexplained_rows: 57
 - current_parent_id: title-q12560
 - current_parent_rank: Empire
 - span: 1463..1463
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Ottoman Empire (title-q12560) | 1463..1463 | 1463..1463 |
 
 ### fact-q533558-parent-q28513 | Kingdom of Croatia-Slavonia -> Austria-Hungary
 
@@ -2377,7 +2387,10 @@ unexplained_rows: 57
 - current_parent_id: title-q172107
 - current_parent_rank: Crown
 - span: 1569..1569
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| rank_transition | Polish-Lithuanian Commonwealth (title-q172107) | 1569..1569 | 1569..1569 |
 
 ### fact-q701614-parent-q12548 | Prince-Archbishopric of Salzburg -> Holy Roman Empire
 
