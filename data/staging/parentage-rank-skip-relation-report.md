@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1433
+facts: 1442
 titles: 356
-relation_facts: 70
+relation_facts: 79
 rank_skip_rows: 231
-relation_explained_rows: 66
-unexplained_rows: 165
+relation_explained_rows: 75
+unexplained_rows: 156
 
 ## Interpretation
 
@@ -22,9 +22,9 @@ unexplained_rows: 165
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 39 |
+| imperial_state | 46 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 5 |
+| vassalage_or_suzerainty | 7 |
 
 ## Review Rows
 
@@ -791,7 +791,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1648..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1648..1806 | 1648..1806 |
 
 ### fact-q326029-parent-q150981 | Duchy of Brunswick -> North German Confederation
 
@@ -1002,7 +1005,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1530..1797
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Holy Roman Empire (title-q12548) | 1530..1797 | 1530..1797 |
 
 ### fact-q933592-parent-q12548 | Duchy of Massa and Carrara -> Holy Roman Empire
 
@@ -1203,7 +1209,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1180..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1180..1803 | 1180..1803 |
 
 ### fact-q2227570-parent-q12548 | Duchy of Wurttemberg -> Holy Roman Empire
 
@@ -1213,7 +1222,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1495..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1495..1803 | 1495..1803 |
 
 ### fact-q1252942-parent-q12544 | Duklja -> Byzantine Empire
 
@@ -2251,7 +2263,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1225..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1225..1803 | 1225..1803 |
 
 ### fact-q649192-parent-q12548 | Prince-Bishopric of Paderborn -> Holy Roman Empire
 
@@ -2261,7 +2276,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1281..1802
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1281..1802 | 1281..1802 |
 
 ### fact-q771332-parent-q12548 | Prince-Bishopric of Strasbourg -> Holy Roman Empire
 
@@ -2271,7 +2289,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 982..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 982..1803 | 982..1803 |
 
 ### fact-q328001-parent-q12548 | Prince-Bishopric of Toul -> Holy Roman Empire
 
@@ -2304,7 +2325,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1024..1528
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1024..1528 | 1024..1528 |
 
 ### fact-q17015016-parent-q12548 | Prince-Bishopric of Verdun -> Holy Roman Empire
 
@@ -2314,7 +2338,10 @@ unexplained_rows: 165
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 997..1552
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 997..1552 | 997..1552 |
 
 ### fact-q14551680-parent-q12548 | Principality of Lippe -> Holy Roman Empire
 

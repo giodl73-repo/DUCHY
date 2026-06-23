@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first fourteen accepted relation-model packets promote 59 non-parentage
-relation facts. The generated relation report explains 66 of 231 active
+The first fifteen accepted relation-model packets promote 68 non-parentage
+relation facts. The generated relation report explains 75 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1433 |
+| facts | 1442 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 70 |
+| relation facts | 79 |
 | rank-skip rows | 231 |
-| relation-explained rows | 66 |
-| unexplained rank-skip rows | 165 |
+| relation-explained rows | 75 |
+| unexplained rank-skip rows | 156 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -51,6 +51,7 @@ Current measured baseline:
 | `hre-relation-batch-05` | 2 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-06` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-07` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
+| `hre-relation-batch-08` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -184,3 +185,9 @@ HRE parent. Carniola, Luxembourg, Cleves, Freising, Liege, Minden, and Munster
 use `imperial_state` from state/estate/principality wording; Modena and Reggio
 and Parma and Piacenza use `vassalage_or_suzerainty` from imperial fief or
 imperial protection wording.
+
+`hre-relation-batch-08` promotes nine bounded current-parent relation contexts.
+Bremen-Verden and Mantua use `vassalage_or_suzerainty` from immediate fief or
+imperial elevation wording; Wurttemberg, Westphalia, Osnabruck, Paderborn,
+Strasbourg, Utrecht, and Verdun use `imperial_state` from state, territory, or
+ecclesiastical-principality wording.

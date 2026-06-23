@@ -11327,3 +11327,77 @@ span: 1180..1802
 value: imperial_state:title-q12548
 source_ids: src-wikidata-q697254, src-wikidata-q12548, src-wikipedia-prince-bishopric-munster
 confidence: multi_source
+---
+# Reviewed HRE relation batch for remaining accepted state and fief rows.
+
+fact_id: fact-q694594-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q694594
+claim_kind: relation
+span: 1648..1806
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q694594, src-wikidata-q12548, src-wikipedia-bremen-verden
+confidence: multi_source
+---
+fact_id: fact-q766501-relation-q12548-vassalage-or-suzerainty
+subject_id: title-q766501
+claim_kind: relation
+span: 1530..1797
+value: vassalage_or_suzerainty:title-q12548
+source_ids: src-wikidata-q766501, src-wikidata-q12548, src-wikipedia-duchy-mantua
+confidence: multi_source
+---
+fact_id: fact-q2227570-relation-q12548-imperial-state
+subject_id: title-q2227570
+claim_kind: relation
+span: 1495..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q2227570, src-wikidata-q12548, src-wikipedia-duchy-wurttemberg
+confidence: multi_source
+---
+fact_id: fact-q657241-relation-q12548-imperial-state
+subject_id: title-q657241
+claim_kind: relation
+span: 1180..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q657241, src-wikidata-q12548, src-wikipedia-duchy-westphalia
+confidence: multi_source
+---
+fact_id: fact-q477035-relation-q12548-imperial-state
+subject_id: title-q477035
+claim_kind: relation
+span: 1225..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q477035, src-wikidata-q12548, src-wikipedia-prince-bishopric-osnabruck
+confidence: multi_source
+---
+fact_id: fact-q649192-relation-q12548-imperial-state
+subject_id: title-q649192
+claim_kind: relation
+span: 1281..1802
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q649192, src-wikidata-q12548, src-wikipedia-prince-bishopric-paderborn
+confidence: multi_source
+---
+fact_id: fact-q771332-relation-q12548-imperial-state
+subject_id: title-q771332
+claim_kind: relation
+span: 982..1803
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q771332, src-wikidata-q12548, src-wikipedia-prince-bishopric-strasbourg
+confidence: multi_source
+---
+fact_id: fact-q707767-relation-q12548-imperial-state
+subject_id: title-q707767
+claim_kind: relation
+span: 1024..1528
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q707767, src-wikidata-q12548, src-wikipedia-prince-bishopric-utrecht
+confidence: multi_source
+---
+fact_id: fact-q17015016-relation-q12548-imperial-state
+subject_id: title-q17015016
+claim_kind: relation
+span: 997..1552
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q17015016, src-wikidata-q12548, src-wikipedia-prince-bishopric-verdun
+confidence: multi_source
