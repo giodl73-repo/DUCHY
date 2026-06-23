@@ -1,0 +1,34 @@
+# Reviewed Bohemian Silesian duchy vassal relation packet.
+
+fact_id: fact-q566639-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q566639
+claim_kind: relation
+span: 1269..1918
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q566639, src-wikidata-q42585, src-wikipedia-duchy-troppau
+confidence: multi_source
+---
+fact_id: fact-q671899-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q671899
+claim_kind: relation
+span: 1327..1918
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q671899, src-wikidata-q42585, src-wikipedia-duchy-teschen
+confidence: multi_source
+---
+fact_id: fact-q682001-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q682001
+claim_kind: relation
+span: 1289..1498
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q682001, src-wikidata-q42585, src-wikipedia-duchy-bytom
+confidence: multi_source
+---
+fact_id: fact-q702327-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q702327
+claim_kind: relation
+span: 1327..1457
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q702327, src-wikidata-q42585, src-wikipedia-duchy-oswiecim
+confidence: multi_source
+---
