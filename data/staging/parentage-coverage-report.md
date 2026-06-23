@@ -1,7 +1,7 @@
 # DUCHY Parentage Coverage Report
 
 sources: 588
-facts: 1621
+facts: 1622
 titles: 356
 parentage_facts: 294
 titles_with_parentage: 234

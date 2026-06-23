@@ -12903,3 +12903,14 @@ value: composite_crown_component:title-q766543
 source_ids: src-wikidata-q217196, src-wikidata-q766543, src-wikipedia-hispanic-monarchy-component-context
 confidence: multi_source
 ---
+---
+# Reviewed Duchy of Prussia and Polish Crown relation packet.
+
+fact_id: fact-q153091-relation-q171348-vassalage-or-suzerainty
+subject_id: title-q153091
+claim_kind: relation
+span: 1525..1618
+value: vassalage_or_suzerainty:title-q171348
+source_ids: src-wikidata-q153091, src-wikidata-q171348, src-wikipedia-duchy-prussia
+confidence: multi_source
+---

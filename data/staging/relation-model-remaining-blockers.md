@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first forty-five accepted relation-model packets promote 253 non-parentage
+The first forty-six accepted relation-model packets promote 254 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -31,17 +31,19 @@ parentage under the Polish-Lithuanian Commonwealth.
 context for accepted Kingdom of Poland boundary-year parentage into the
 Commonwealth. `hispanic-monarchy-component-relation-01` adds text-backed
 component relation context for the accepted Crowns of Aragon and Castile
-parentage under the Hispanic Monarchy.
+parentage under the Hispanic Monarchy. `prussia-polish-crown-relation-01`
+adds matching vassalage/suzerainty context for the accepted Duchy of Prussia
+parentage under the Crown of the Kingdom of Poland.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1621 |
+| facts | 1622 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 253 |
+| relation facts | 254 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -96,6 +98,7 @@ Current measured baseline:
 | `commonwealth-polish-crown-component-relation-01` | 1 | `composite_crown_component` |
 | `poland-commonwealth-endpoint-relation-01` | 2 | `rank_transition` |
 | `hispanic-monarchy-component-relation-01` | 2 | `composite_crown_component` |
+| `prussia-polish-crown-relation-01` | 1 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 
