@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1442
+facts: 1450
 titles: 356
-relation_facts: 79
+relation_facts: 87
 rank_skip_rows: 231
-relation_explained_rows: 75
-unexplained_rows: 156
+relation_explained_rows: 83
+unexplained_rows: 148
 
 ## Interpretation
 
@@ -22,7 +22,7 @@ unexplained_rows: 156
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
-| imperial_state | 46 |
+| imperial_state | 54 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 7 |
 
@@ -1265,7 +1265,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1085..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1085..1803 | 1085..1803 |
 
 ### fact-q637238-parent-q12548 | Electorate of Baden -> Holy Roman Empire
 
@@ -1275,7 +1278,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1803..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1803..1806 | 1803..1806 |
 
 ### fact-q256961-parent-q12548 | Electorate of Bavaria -> Holy Roman Empire
 
@@ -1285,7 +1291,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1623..1805
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1623..1805 | 1623..1805 |
 
 ### fact-q7904317-parent-q12548 | Electorate of Cologne -> Holy Roman Empire
 
@@ -1295,7 +1304,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1803 | 962..1803 |
 
 ### fact-q706018-parent-q12548 | Electorate of Hanover -> Holy Roman Empire
 
@@ -1305,7 +1317,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1692..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1692..1806 | 1692..1806 |
 
 ### fact-q529605-parent-q151624 | Electorate of Hesse -> German Confederation
 
@@ -1325,7 +1340,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1803
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1803 | 962..1803 |
 
 ### fact-q156199-parent-q12548 | Electorate of Saxony -> Holy Roman Empire
 
@@ -1335,7 +1353,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1356..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1356..1806 | 1356..1806 |
 
 ### fact-q2172530-parent-q12548 | Electorate of Wurttemberg -> Holy Roman Empire
 
@@ -1345,7 +1366,10 @@ unexplained_rows: 156
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1803..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1803..1806 | 1803..1806 |
 
 ### fact-q146246-parent-q31929 | Francia -> Carolingian Empire
 

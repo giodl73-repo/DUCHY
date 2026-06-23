@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first fifteen accepted relation-model packets promote 68 non-parentage
-relation facts. The generated relation report explains 75 of 231 active
+The first sixteen accepted relation-model packets promote 76 non-parentage
+relation facts. The generated relation report explains 83 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1442 |
+| facts | 1450 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 79 |
+| relation facts | 87 |
 | rank-skip rows | 231 |
-| relation-explained rows | 75 |
-| unexplained rank-skip rows | 156 |
+| relation-explained rows | 83 |
+| unexplained rank-skip rows | 148 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -52,6 +52,7 @@ Current measured baseline:
 | `hre-relation-batch-06` | 7 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-07` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
 | `hre-relation-batch-08` | 9 | `imperial_state`, `vassalage_or_suzerainty` |
+| `hre-electorate-relation-01` | 8 | `imperial_state` |
 
 ## Held Rows
 
@@ -191,3 +192,8 @@ Bremen-Verden and Mantua use `vassalage_or_suzerainty` from immediate fief or
 imperial elevation wording; Wurttemberg, Westphalia, Osnabruck, Paderborn,
 Strasbourg, Utrecht, and Verdun use `imperial_state` from state, territory, or
 ecclesiastical-principality wording.
+
+`hre-electorate-relation-01` promotes eight bounded electorate relations to the
+current HRE parent. Bavaria and Mainz are narrowed to materialized title overlap
+where source wording or the subject title outlives the accepted HRE or
+electorate identity spans.
