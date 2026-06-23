@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first twenty-nine accepted relation-model packets promote 175 non-parentage
-relation facts. The generated relation report explains 170 of 231 active
+The first thirty accepted relation-model packets promote 179 non-parentage
+relation facts. The generated relation report explains 174 of 231 active
 rank-skip rows while parentage facts remain unchanged. Relation facts now allow
 multiple simultaneous contexts for the same title and span, so a title can be
 both an imperial state and a reviewed subdivision or appanage when sources
@@ -22,13 +22,13 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 540 |
-| facts | 1538 |
+| facts | 1542 |
 | titles | 356 |
 | parentage facts | 289 |
-| relation facts | 175 |
+| relation facts | 179 |
 | rank-skip rows | 231 |
-| relation-explained rows | 170 |
-| unexplained rank-skip rows | 61 |
+| relation-explained rows | 174 |
+| unexplained rank-skip rows | 57 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -64,6 +64,7 @@ Current measured baseline:
 | `german-structured-bridge-relation-02` | 3 | `confederation_member`, `federal_state_member` |
 | `vassal-satellite-relation-batch-01` | 9 | `vassalage_or_suzerainty` |
 | `napoleonic-client-relation-batch-01` | 7 | `confederation_member`, `vassalage_or_suzerainty` |
+| `vassal-client-relation-batch-02` | 4 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 
@@ -279,3 +280,9 @@ contexts: Berg, Frankfurt, and Wurzburg as Confederation of the Rhine member
 contexts, Holland, Etruria, and Napoleonic Italy as First French Empire
 client/suzerainty contexts, and the 1918 Duchy of Courland and Semigallia as a
 German Empire client/suzerainty context.
+
+`vassal-client-relation-batch-02` promotes four bounded
+`vassalage_or_suzerainty` contexts for source-backed client, protectorate,
+personal-union, and vassal wording: Albanian Kingdom and Italian protectorate
+of Albania under the Italian Empire, Kingdom of Livonia under the Tsardom of
+Russia, and Kingdom of Thessalonica under the Latin Empire.

@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 540
-facts: 1538
+facts: 1542
 titles: 356
-relation_facts: 175
+relation_facts: 179
 rank_skip_rows: 231
-relation_explained_rows: 170
-unexplained_rows: 61
+relation_explained_rows: 174
+unexplained_rows: 57
 
 ## Interpretation
 
@@ -24,7 +24,7 @@ unexplained_rows: 61
 | federal_state_member | 11 |
 | imperial_state | 79 |
 | subdivision_or_appanage | 2 |
-| vassalage_or_suzerainty | 25 |
+| vassalage_or_suzerainty | 29 |
 
 ## Review Rows
 
@@ -46,7 +46,10 @@ unexplained_rows: 61
 - current_parent_id: title-q926295
 - current_parent_rank: Empire
 - span: 1939..1939
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Italian Empire (title-q926295) | 1939..1939 | 1939..1939 |
 
 ### fact-q686965-parent-q12548 | Anhalt-Bernburg -> Holy Roman Empire
 
@@ -1777,7 +1780,10 @@ unexplained_rows: 61
 - current_parent_id: title-q926295
 - current_parent_rank: Empire
 - span: 1939..1943
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Italian Empire (title-q926295) | 1939..1943 | 1939..1943 |
 
 ### fact-q154195-parent-q151624 | Kingdom of Bavaria -> German Confederation
 
@@ -2001,7 +2007,10 @@ unexplained_rows: 61
 - current_parent_id: title-q186096
 - current_parent_rank: Empire
 - span: 1570..1578
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Tsardom of Russia (title-q186096) | 1570..1578 | 1570..1578 |
 
 ### fact-q209857-parent-q131964 | Kingdom of Lombardy-Venetia -> Austrian Empire
 
@@ -2117,7 +2126,10 @@ unexplained_rows: 61
 - current_parent_id: title-q178897
 - current_parent_rank: Empire
 - span: 1204..1224
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| vassalage_or_suzerainty | Latin Empire (title-q178897) | 1204..1224 | 1204..1224 |
 
 ### fact-q159631-parent-q151624 | Kingdom of Wurttemberg -> German Confederation
 

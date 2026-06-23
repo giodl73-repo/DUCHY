@@ -12193,3 +12193,37 @@ span: 1918..1918
 value: vassalage_or_suzerainty:title-q43287
 source_ids: src-wikidata-q1991540, src-wikidata-q43287, src-wikipedia-courland-semigallia-1918
 confidence: multi_source
+---
+# Reviewed vassal and client relation packet 02.
+
+fact_id: fact-q1048340-relation-q926295-vassalage
+subject_id: title-q1048340
+claim_kind: relation
+span: 1939..1939
+value: vassalage_or_suzerainty:title-q926295
+source_ids: src-wikidata-q1048340, src-wikidata-q926295, src-wikipedia-italian-invasion-albania
+confidence: multi_source
+---
+fact_id: fact-q1448131-relation-q926295-vassalage
+subject_id: title-q1448131
+claim_kind: relation
+span: 1939..1943
+value: vassalage_or_suzerainty:title-q926295
+source_ids: src-wikidata-q1448131, src-wikidata-q926295, src-wikipedia-kingdom-albania-personal-union-italy
+confidence: multi_source
+---
+fact_id: fact-q2346056-relation-q186096-vassalage
+subject_id: title-q2346056
+claim_kind: relation
+span: 1570..1578
+value: vassalage_or_suzerainty:title-q186096
+source_ids: src-wikidata-q2346056, src-wikidata-q186096, src-wikipedia-kingdom-livonia
+confidence: multi_source
+---
+fact_id: fact-q325461-relation-q178897-vassalage
+subject_id: title-q325461
+claim_kind: relation
+span: 1204..1224
+value: vassalage_or_suzerainty:title-q178897
+source_ids: src-wikidata-q325461, src-wikidata-q178897, src-wikipedia-kingdom-thessalonica
+confidence: multi_source
