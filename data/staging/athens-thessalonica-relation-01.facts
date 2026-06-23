@@ -1,0 +1,10 @@
+# Reviewed Duchy of Athens and Kingdom of Thessalonica relation packet.
+
+fact_id: fact-q334714-relation-q325461-vassalage-or-suzerainty
+subject_id: title-q334714
+claim_kind: relation
+span: 1205..1224
+value: vassalage_or_suzerainty:title-q325461
+source_ids: src-wikidata-q334714, src-wikidata-q325461, src-wikipedia-duchy-athens
+confidence: multi_source
+---
