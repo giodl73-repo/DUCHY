@@ -7402,3 +7402,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for Austrian Netherlands parentage and composite relation context under the Holy Roman Empire; no Austrian administration, Brabant Revolution, French annexation detail, Burgundian Circle expansion, or Belgian successor claims imported.
 ---
+---
+# Reviewed Great Britain and United Kingdom of Great Britain and Ireland relation packet.
+
+source_id: src-britannica-act-of-union-1801-gb-successor
+source_kind: other
+source_url: https://www.britannica.com/event/Act-of-Union-United-Kingdom-1801
+license: Britannica web article; use limited factual citation only
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Encyclopaedia Britannica editors
+notes: Britannica Act of Union article identifies the January 1, 1801 legislative agreement uniting Great Britain and Ireland under the name United Kingdom of Great Britain and Ireland.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for endpoint transition and composite-component relation context from the Kingdom of Great Britain to the United Kingdom of Great Britain and Ireland in 1801; no parentage fact is imported because the rank model rejects Crown-to-Crown parentage.
+---

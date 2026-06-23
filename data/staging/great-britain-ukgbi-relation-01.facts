@@ -1,0 +1,10 @@
+# Reviewed Great Britain and United Kingdom of Great Britain and Ireland relation packet.
+
+fact_id: fact-q161885-relation-q174193-composite-crown-component
+subject_id: title-q161885
+claim_kind: relation
+span: 1801..1801
+value: composite_crown_component:title-q174193
+source_ids: src-wikidata-q161885, src-wikidata-q174193, src-britannica-act-of-union-1801-gb-successor
+confidence: multi_source
+---
