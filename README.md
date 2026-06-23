@@ -447,7 +447,10 @@ because all rows remain blocked.
 The active Kingdom of Italy/HRE split review now has 29 rows: March of Turin
 and March of Tuscany are removed from the active cluster because their Kingdom
 of Italy replacement parentage was imported, leaving 28 same-parent sibling
-false positives and one held Trent relation-model lead.
+false positives and one held Trent relation-model lead. The Trent review keeps
+Prince-Bishopric of Trent directly under the Holy Roman Empire for `1027..1803`;
+the current evidence supports HRE imperial-estate/state semantics, not a clean
+Kingdom of Italy parentage replacement.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
