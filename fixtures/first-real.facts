@@ -10790,3 +10790,21 @@ span: 1140..1806
 value: imperial_state:title-q12548
 source_ids: src-wikidata-q573290, src-wikidata-q12548, src-wikipedia-county-ravensberg
 confidence: multi_source
+---
+# Reviewed Austria crownland relation packet.
+
+fact_id: fact-q699964-relation-q131964-crownland-component
+subject_id: title-q699964
+claim_kind: relation
+span: 1804..1866
+value: crownland_component:title-q131964
+source_ids: src-wikidata-q699964, src-wikidata-q131964, src-wikipedia-archduchy-austria-crownland, src-wikipedia-austrian-empire
+confidence: multi_source
+---
+fact_id: fact-q699964-relation-q28513-crownland-component
+subject_id: title-q699964
+claim_kind: relation
+span: 1867..1918
+value: crownland_component:title-q28513
+source_ids: src-wikidata-q699964, src-wikidata-q28513, src-wikipedia-archduchy-austria-crownland, src-wikipedia-austria-hungary
+confidence: multi_source

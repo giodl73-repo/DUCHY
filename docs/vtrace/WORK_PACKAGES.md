@@ -14,7 +14,7 @@ Work packages for lineage and territorial-transfer query capability.
 | WP-004 | Duchy-transfer range query. | REQ-004, REQ-009, REQ-010, REQ-011 | `src/lib.rs`, transfer fixtures/tests | WP-003 answer shape stable. | Query lists movements between duchies over date range. | L0: cargo test / L1: demo output / L2: role review | complete |
 | WP-005 | Answer trace and status taxonomy. | REQ-006, REQ-007, REQ-011 | answer types, negative fixtures, docs | WP-003 and WP-004 query semantics known. | Answers distinguish answered, empty, unknown, unsupported, seed, and reserved contested/source-backed classes. | L0: cargo test / L1: fixture demos / L2: Source Custody review | complete |
 | WP-006 | Source-custody VTRACE package for real historical data. | REQ-006, deferred REQ-SRC-001 | `docs/vtrace/source-custody/`, future fixtures | Query surface stable. | Source policy, confidence model, and allowed import path accepted; concrete imports remain gated per source. | L0: docs review / L1: custody review / L2: source package gate | complete |
-| WP-007 | Non-parentage relation model and query integration. | REQ-002, REQ-003, REQ-004, REQ-006, REQ-015 | `src/lib.rs`, source fixture schema/materializer, query traces, rank-skip reports | Rank-skip review batches show repeated blockers that are not safe parentage replacements. | Typed relation facts exist for membership, vassalage/suzerainty, subdivision/appanage, split fief/control, composite crown, imperial state, federal/confederation member, and rank transition; relation facts appear in traces without creating parentage conflicts or cycles; rank-skip reports can classify explained skips. | L0: cargo test / L1: source-backed fixture demo / L2: lineage and source-custody review | in progress |
+| WP-007 | Non-parentage relation model and query integration. | REQ-002, REQ-003, REQ-004, REQ-006, REQ-015 | `src/lib.rs`, source fixture schema/materializer, query traces, rank-skip reports | Rank-skip review batches show repeated blockers that are not safe parentage replacements. | Typed relation facts exist for membership, vassalage/suzerainty, subdivision/appanage, split fief/control, composite crown, crownland component, imperial state, federal/confederation member, and rank transition; relation facts appear in traces without creating parentage conflicts or cycles; rank-skip reports can classify explained skips. | L0: cargo test / L1: source-backed fixture demo / L2: lineage and source-custody review | in progress |
 
 ## Work Package Details
 
@@ -192,22 +192,22 @@ git diff --check
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
 lookup, validation, title-path query trace context, and rank-skip relation
-classification. The first eight accepted relation packets promote 37 relation
-facts and explain 37 active rank-skip rows. The remaining `WP-007` data
+classification. The first nine accepted relation packets promote 39 relation
+facts and explain 39 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
-report can classify more of the remaining 186 unexplained rows. The Low
+report can classify more of the remaining 184 unexplained rows. The Low
 Countries source-custody pass has promoted six source records and three bounded
 `split_fief_or_control` relation facts. The Austria internal-monarchy
-source-custody pass has promoted three source records and attached them to the
+source-custody pass has promoted three source records, attached them to the
 two Archduchy of Austria parentage facts under Austrian Empire and
-Austria-Hungary. The Barcelona/Catalonia pass has promoted three source records
+Austria-Hungary, and promoted two bounded `crownland_component` relation
+facts. The Barcelona/Catalonia pass has promoted three source records
 and one bounded `composite_crown_component` relation fact. The Guelders pass
 has corrected the title rank to `Duchy` and promoted one bounded
 `imperial_state` relation. The Low Countries HRE pass has promoted four
 additional `imperial_state` relation facts for early Holland, Luxembourg,
 early Namur, and Ravensberg. The next work needs source-custody or modeling
-packets for internal monarchy/crownland relation semantics, deeper
-successor-state title modeling, future Principality of Catalonia title
+packets for deeper successor-state title modeling, future Principality of Catalonia title
 modeling, broader Burgundy/Arles or partition semantics, and deeper
 intermediate parentage only when bounded child-level evidence is available.
 

@@ -97,6 +97,7 @@ pub enum RelationKind {
     SplitFiefOrControl,
     VassalageOrSuzerainty,
     SubdivisionOrAppanage,
+    CrownlandComponent,
     RankTransition,
 }
 
@@ -110,6 +111,7 @@ impl RelationKind {
             Self::SplitFiefOrControl => "split_fief_or_control",
             Self::VassalageOrSuzerainty => "vassalage_or_suzerainty",
             Self::SubdivisionOrAppanage => "subdivision_or_appanage",
+            Self::CrownlandComponent => "crownland_component",
             Self::RankTransition => "rank_transition",
         }
     }
@@ -1565,6 +1567,7 @@ fn parse_relation_kind(value: &str) -> Option<RelationKind> {
         "split_fief_or_control" => Some(RelationKind::SplitFiefOrControl),
         "vassalage_or_suzerainty" => Some(RelationKind::VassalageOrSuzerainty),
         "subdivision_or_appanage" => Some(RelationKind::SubdivisionOrAppanage),
+        "crownland_component" => Some(RelationKind::CrownlandComponent),
         "rank_transition" => Some(RelationKind::RankTransition),
         _ => None,
     }
@@ -4416,11 +4419,11 @@ confidence: maybe
         let catalog = test_structured_claim_catalog();
         let mut facts = test_parentage_fact_set();
         facts.push(FactRecord {
-            fact_id: "fact-child-imperial-state".to_string(),
+            fact_id: "fact-child-crownland-component".to_string(),
             subject_id: "title-child-duchy".to_string(),
             claim_kind: ClaimKind::Relation,
             span: Some(YearSpan::new(1000, Some(1100))),
-            value: "imperial_state:title-parent-kingdom".to_string(),
+            value: "crownland_component:title-parent-kingdom".to_string(),
             source_ids: vec!["src-test-structured".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
@@ -4443,7 +4446,7 @@ confidence: maybe
 
         let relations = timeline.relations_for_title_in_year("title-child-duchy", 1050);
         assert_eq!(relations.len(), 1);
-        assert_eq!(relations[0].relation_kind, RelationKind::ImperialState);
+        assert_eq!(relations[0].relation_kind, RelationKind::CrownlandComponent);
         assert_eq!(relations[0].related_title_id, "title-parent-kingdom");
     }
 

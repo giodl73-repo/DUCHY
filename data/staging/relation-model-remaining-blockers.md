@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first eight accepted relation-model packets promote 37 non-parentage
-relation facts. The generated relation report now explains 37 of 223 active
+The first nine accepted relation-model packets promote 39 non-parentage
+relation facts. The generated relation report now explains 39 of 223 active
 rank-skip rows while parentage facts remain unchanged.
 
 Current measured baseline:
@@ -19,12 +19,12 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 532 |
-| facts | 1368 |
+| facts | 1370 |
 | parentage facts | 278 |
-| relation facts | 37 |
+| relation facts | 39 |
 | rank-skip rows | 223 |
-| relation-explained rows | 37 |
-| unexplained rank-skip rows | 186 |
+| relation-explained rows | 39 |
+| unexplained rank-skip rows | 184 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -39,6 +39,7 @@ Current measured baseline:
 | `barcelona-catalonia-relation-01` | 1 | `composite_crown_component` |
 | `relation-model-guelders-01` | 1 | `imperial_state` |
 | `relation-model-low-countries-hre-01` | 4 | `imperial_state` |
+| `relation-model-austria-crownland-01` | 2 | `crownland_component` |
 
 ## Held Rows
 
@@ -47,7 +48,7 @@ source-custody work or a narrower modeling decision.
 
 | Class | Rows / examples | Reason held |
 |---|---|---|
-| Structured-data-only context | Comtat Venaissin | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody, but internal monarchy semantics remain unmodeled. |
+| Structured-data-only context | Comtat Venaissin | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody and bounded crownland-component relations. |
 | Split-control / successor context | Flanders, Holland, Namur | First Low Countries packet now explains the post-Burgundian current-parent rank skips with bounded `split_fief_or_control` relations; deeper successor parentage remains held. |
 | Child-level intermediate source needed | Luxembourg, early Namur, Ravensberg, early Holland | Current-parent `imperial_state` relations now explain these rank skips, but the reviewed note still forbids inferring deeper intermediate parentage without bounded child-level evidence. |
 | Broader relation semantics not yet source-backed | Burgundy/Arles layers, Geneva/Savoyard successor, HRE partitions, Welf partitions | Current accepted relations explain the direct current-parent context, but deeper intermediate structure remains unimported. |
@@ -56,16 +57,14 @@ source-custody work or a narrower modeling decision.
 
 Prioritize packets that can unlock multiple held rows:
 
-1. Archduchy of Austria internal monarchy/crownland relation modeling for
-   1804-1918 rows.
-2. Deeper Low Countries successor-state title modeling for Habsburg
+1. Deeper Low Countries successor-state title modeling for Habsburg
    Netherlands, Seventeen Provinces, Dutch Republic, Spanish Netherlands,
    Austrian Netherlands, and Batavian Republic.
-3. Deeper Principality of Catalonia title modeling after the Barcelona
+2. Deeper Principality of Catalonia title modeling after the Barcelona
    composite-crown relation pass.
-4. Burgundy/Arles, Geneva/Savoyard successor, HRE partition, and Welf
+3. Burgundy/Arles, Geneva/Savoyard successor, HRE partition, and Welf
    partition relation semantics.
-5. Deeper Luxembourg/Namur/Ravensberg/early Holland intermediate parentage only
+4. Deeper Luxembourg/Namur/Ravensberg/early Holland intermediate parentage only
    after bounded child-level evidence is available.
 
 ## Boundary
@@ -107,9 +106,11 @@ facts under Austrian Empire and Austria-Hungary:
 - Austrian Empire,
 - Austria-Hungary.
 
-This tightens source custody for the two 1804-1918 Archduchy rows without
-adding relation facts or changing parentage structure. Crownland, Cisleithania,
-and internal monarchy semantics remain a separate relation-model decision.
+This tightened source custody for the two 1804-1918 Archduchy rows without
+changing parentage structure. `relation-model-austria-crownland-01` then
+promotes two bounded `crownland_component` relations to the current Austrian
+Empire and Austria-Hungary parents. Cisleithanian administrative detail and
+modern successor claims remain out of scope.
 
 `barcelona-catalonia-relation-01` adds three accepted Wikimedia text source
 records and promotes one bounded `composite_crown_component` relation for

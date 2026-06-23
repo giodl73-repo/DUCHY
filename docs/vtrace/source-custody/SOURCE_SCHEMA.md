@@ -110,7 +110,7 @@ Rules:
   `imperial_state`, `confederation_member`, `federal_state_member`,
   `composite_crown_component`, `split_fief_or_control`,
   `vassalage_or_suzerainty`, `subdivision_or_appanage`, and
-  `rank_transition`.
+  `crownland_component`, and `rank_transition`.
 - Source-backed parentage uses direct documented links and may skip CK-style
   intermediate ranks when the reviewed source supports that relation.
 - Fact files still require separate source metadata and source-custody review.

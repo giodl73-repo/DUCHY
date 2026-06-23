@@ -744,7 +744,7 @@ fn parentage_rank_skip_relation_report(
 
     output.push_str("## Interpretation\n\n");
     output.push_str("- A row is relation-explained only when the child title has an overlapping source-backed relation fact to the current parent title.\n");
-    output.push_str("- Relation facts preserve context such as imperial state, confederation member, split control, or vassalage without changing the canonical parentage tree.\n");
+    output.push_str("- Relation facts preserve context such as imperial state, confederation member, split control, crownland component, or vassalage without changing the canonical parentage tree.\n");
     output.push_str("- Unexplained rows still need an intermediate parent, a relation fact, or a source-custody blocker before import.\n\n");
 
     output.push_str("## Relation Kind Counts\n\n");

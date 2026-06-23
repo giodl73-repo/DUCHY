@@ -1,17 +1,17 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 532
-facts: 1368
+facts: 1370
 titles: 349
-relation_facts: 37
+relation_facts: 39
 rank_skip_rows: 223
-relation_explained_rows: 37
-unexplained_rows: 186
+relation_explained_rows: 39
+unexplained_rows: 184
 
 ## Interpretation
 
 - A row is relation-explained only when the child title has an overlapping source-backed relation fact to the current parent title.
-- Relation facts preserve context such as imperial state, confederation member, split control, or vassalage without changing the canonical parentage tree.
+- Relation facts preserve context such as imperial state, confederation member, split control, crownland component, or vassalage without changing the canonical parentage tree.
 - Unexplained rows still need an intermediate parent, a relation fact, or a source-custody blocker before import.
 
 ## Relation Kind Counts
@@ -20,6 +20,7 @@ unexplained_rows: 186
 |---|---:|
 | composite_crown_component | 1 |
 | confederation_member | 5 |
+| crownland_component | 2 |
 | federal_state_member | 1 |
 | imperial_state | 24 |
 | split_fief_or_control | 3 |
@@ -147,7 +148,10 @@ unexplained_rows: 186
 - current_parent_id: title-q131964
 - current_parent_rank: Empire
 - span: 1804..1866
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austrian Empire (title-q131964) | 1804..1866 | 1804..1866 |
 
 ### fact-q699964-parent-q28513 | Archduchy of Austria -> Austria-Hungary
 
@@ -157,7 +161,10 @@ unexplained_rows: 186
 - current_parent_id: title-q28513
 - current_parent_rank: Empire
 - span: 1867..1918
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| crownland_component | Austria-Hungary (title-q28513) | 1867..1918 | 1867..1918 |
 
 ### fact-q552033-parent-q12548 | Bavaria-Munich -> Holy Roman Empire
 
