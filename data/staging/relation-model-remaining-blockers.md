@@ -18,7 +18,7 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 526 |
+| sources | 529 |
 | facts | 1361 |
 | parentage facts | 278 |
 | relation facts | 31 |
@@ -44,7 +44,7 @@ source-custody work or a narrower modeling decision.
 
 | Class | Rows / examples | Reason held |
 |---|---|---|
-| Structured-data-only context | Comtat Venaissin, County of Barcelona, Archduchy of Austria under Austrian Empire/Austria-Hungary | Current accepted fact support is not text-backed enough for new relation semantics. |
+| Structured-data-only context | Comtat Venaissin, County of Barcelona | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody, but internal monarchy semantics remain unmodeled. |
 | Split-control / successor context | Flanders, Holland, Namur | First Low Countries packet now explains the post-Burgundian current-parent rank skips with bounded `split_fief_or_control` relations; deeper successor parentage remains held. |
 | Child-level intermediate source needed | Barcelona, Luxembourg, early Namur, Ravensberg, early Holland | The reviewed note explicitly forbids inferring the proposed intermediate without bounded child-level evidence. |
 | Rank identity blocker | Duchy of Guelders | Accepted title name and rank disagree; fix rank identity before relation or parentage changes. |
@@ -54,12 +54,12 @@ source-custody work or a narrower modeling decision.
 
 Prioritize packets that can unlock multiple held rows:
 
-1. Archduchy of Austria internal monarchy/crownland text custody for
-   1804-1918 rows.
-2. Barcelona/Empuries/Catalonia relation source review for Catalan Counties or
+1. Barcelona/Empuries/Catalonia relation source review for Catalan Counties or
    Principality of Catalonia.
-3. Guelders rank-identity review.
-4. Luxembourg/Namur/Ravensberg child-level intermediate source review.
+2. Guelders rank-identity review.
+3. Luxembourg/Namur/Ravensberg child-level intermediate source review.
+4. Archduchy of Austria internal monarchy/crownland relation modeling for
+   1804-1918 rows.
 5. Deeper Low Countries successor-state title modeling for Habsburg
    Netherlands, Seventeen Provinces, Dutch Republic, Spanish Netherlands,
    Austrian Netherlands, and Batavian Republic.
@@ -67,7 +67,7 @@ Prioritize packets that can unlock multiple held rows:
 ## Boundary
 
 No new relation fact should be added from this remaining queue unless it passes
-the same gate as the first four packets:
+the same gate as the first five packets:
 
 - source-backed subject and related title exist in accepted fixtures,
 - relation points to the reviewed current parent or a separately reviewed
@@ -94,3 +94,15 @@ These records initially promoted no facts. `relation-model-low-countries-01`
 uses them to promote three bounded `split_fief_or_control` relations for
 Flanders, Holland, and Namur to the current HRE parent, while keeping deeper
 successor-state title modeling out of scope.
+
+`austria-internal-monarchy-sources-01` adds three accepted Wikimedia text
+source records and attaches them to the existing Archduchy of Austria parentage
+facts under Austrian Empire and Austria-Hungary:
+
+- Archduchy of Austria crownland/internal monarchy context,
+- Austrian Empire,
+- Austria-Hungary.
+
+This tightens source custody for the two 1804-1918 Archduchy rows without
+adding relation facts or changing parentage structure. Crownland, Cisleithania,
+and internal monarchy semantics remain a separate relation-model decision.

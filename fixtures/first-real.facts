@@ -7828,7 +7828,7 @@ subject_id: title-q699964
 claim_kind: parentage
 span: 1804..1866
 value: title-q131964
-source_ids: src-wikidata-q699964, src-wikidata-q131964
+source_ids: src-wikidata-q699964, src-wikidata-q131964, src-wikipedia-archduchy-austria-crownland, src-wikipedia-austrian-empire
 confidence: multi_source
 ---
 fact_id: fact-q699964-parent-q28513
@@ -7836,7 +7836,7 @@ subject_id: title-q699964
 claim_kind: parentage
 span: 1867..1918
 value: title-q28513
-source_ids: src-wikidata-q699964, src-wikidata-q28513
+source_ids: src-wikidata-q699964, src-wikidata-q28513, src-wikipedia-archduchy-austria-crownland, src-wikipedia-austria-hungary
 confidence: multi_source
 ---
 # Reviewed parentage packet for Holy Roman Empire member titles.

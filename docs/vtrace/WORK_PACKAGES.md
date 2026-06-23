@@ -197,9 +197,13 @@ facts and explain 31 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
 report can classify more of the remaining 192 unexplained rows. The Low
 Countries source-custody pass has promoted six source records and three bounded
-`split_fief_or_control` relation facts; the next work needs source-custody
-packets for internal monarchy/crownland, Catalonia, rank identity, child-level
-intermediate review, and deeper successor-state title modeling.
+`split_fief_or_control` relation facts. The Austria internal-monarchy
+source-custody pass has promoted three source records and attached them to the
+two Archduchy of Austria parentage facts under Austrian Empire and
+Austria-Hungary. The next work needs source-custody or modeling packets for
+Catalonia, rank identity, child-level intermediate review, internal
+monarchy/crownland relation semantics, and deeper successor-state title
+modeling.
 
 ## Orphan Check
 

@@ -6675,3 +6675,41 @@ notes: Batavian Republic article; candidate source for 1795 successor-state revi
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted as source-custody input for future Batavian Republic relation review only; no facts promoted in this packet.
+---
+# Reviewed Austrian internal monarchy source-custody packet.
+
+source_id: src-wikipedia-archduchy-austria-crownland
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Archduchy_of_Austria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Archduchy of Austria article; reviewed as a narrower post-1804 source for crownland/internal monarchy context after the earlier HRE-only source record.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for attaching text custody to Archduchy of Austria under Austrian Empire and Austria-Hungary parentage spans; no Habsburg office theory, hereditary lands hierarchy, Cisleithanian administrative detail, or modern Austrian successor claim imported.
+---
+source_id: src-wikipedia-austrian-empire
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Austrian_Empire
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Austrian Empire article; candidate text custody for Austrian Empire identity and constituent Habsburg land context during 1804-1867.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Austrian Empire parent context on already accepted Austrian parentage facts; no imperial politics, German Confederation role, crownland inventory expansion, or successor-state claims imported.
+---
+source_id: src-wikipedia-austria-hungary
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Austria-Hungary
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Austria-Hungary article; candidate text custody for Austria-Hungary identity and dual-monarchy parent context during 1867-1918.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded Austria-Hungary parent context on already accepted Austrian parentage facts; no common institutions, internal crownland hierarchy, Cisleithania/Transleithania modeling, or successor-state claims imported.
