@@ -1,0 +1,33 @@
+# Reviewed Low Countries HRE current-parent relation packet.
+
+fact_id: fact-q762943-relation-q12548-imperial-state-early
+subject_id: title-q762943
+claim_kind: relation
+span: 962..1432
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q762943, src-wikidata-q12548, src-wikipedia-county-holland
+confidence: multi_source
+---
+fact_id: fact-q5177890-relation-q12548-imperial-state
+subject_id: title-q5177890
+claim_kind: relation
+span: 963..1354
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q5177890, src-wikidata-q12548, src-wikipedia-county-luxembourg
+confidence: multi_source
+---
+fact_id: fact-q599613-relation-q12548-imperial-state-early
+subject_id: title-q599613
+claim_kind: relation
+span: 981..1420
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q599613, src-wikidata-q12548, src-wikipedia-county-namur
+confidence: multi_source
+---
+fact_id: fact-q573290-relation-q12548-imperial-state
+subject_id: title-q573290
+claim_kind: relation
+span: 1140..1806
+value: imperial_state:title-q12548
+source_ids: src-wikidata-q573290, src-wikidata-q12548, src-wikipedia-county-ravensberg
+confidence: multi_source

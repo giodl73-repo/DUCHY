@@ -10,8 +10,8 @@ source_inputs:
 
 ## Status
 
-The first seven accepted relation-model packets promote 33 non-parentage
-relation facts. The generated relation report now explains 33 of 223 active
+The first eight accepted relation-model packets promote 37 non-parentage
+relation facts. The generated relation report now explains 37 of 223 active
 rank-skip rows while parentage facts remain unchanged.
 
 Current measured baseline:
@@ -19,12 +19,12 @@ Current measured baseline:
 | Metric | Value |
 |---|---:|
 | sources | 532 |
-| facts | 1364 |
+| facts | 1368 |
 | parentage facts | 278 |
-| relation facts | 33 |
+| relation facts | 37 |
 | rank-skip rows | 223 |
-| relation-explained rows | 33 |
-| unexplained rank-skip rows | 190 |
+| relation-explained rows | 37 |
+| unexplained rank-skip rows | 186 |
 | temporal parent conflicts | 0 |
 
 ## Safe Relation Packets Promoted
@@ -38,6 +38,7 @@ Current measured baseline:
 | `relation-model-low-countries-01` | 3 | `split_fief_or_control` |
 | `barcelona-catalonia-relation-01` | 1 | `composite_crown_component` |
 | `relation-model-guelders-01` | 1 | `imperial_state` |
+| `relation-model-low-countries-hre-01` | 4 | `imperial_state` |
 
 ## Held Rows
 
@@ -48,23 +49,24 @@ source-custody work or a narrower modeling decision.
 |---|---|---|
 | Structured-data-only context | Comtat Venaissin | Current accepted fact support is not text-backed enough for new relation semantics. Archduchy of Austria post-1804 edges now have text custody, but internal monarchy semantics remain unmodeled. |
 | Split-control / successor context | Flanders, Holland, Namur | First Low Countries packet now explains the post-Burgundian current-parent rank skips with bounded `split_fief_or_control` relations; deeper successor parentage remains held. |
-| Child-level intermediate source needed | Luxembourg, early Namur, Ravensberg, early Holland | The reviewed note explicitly forbids inferring the proposed intermediate without bounded child-level evidence. Barcelona now has bounded text custody and a current-parent relation explanation, but deeper Principality title modeling remains unimported. |
+| Child-level intermediate source needed | Luxembourg, early Namur, Ravensberg, early Holland | Current-parent `imperial_state` relations now explain these rank skips, but the reviewed note still forbids inferring deeper intermediate parentage without bounded child-level evidence. |
 | Broader relation semantics not yet source-backed | Burgundy/Arles layers, Geneva/Savoyard successor, HRE partitions, Welf partitions | Current accepted relations explain the direct current-parent context, but deeper intermediate structure remains unimported. |
 
 ## Next Source-Custody Targets
 
 Prioritize packets that can unlock multiple held rows:
 
-1. Luxembourg/Namur/Ravensberg child-level intermediate source review.
-2. Archduchy of Austria internal monarchy/crownland relation modeling for
+1. Archduchy of Austria internal monarchy/crownland relation modeling for
    1804-1918 rows.
-3. Deeper Low Countries successor-state title modeling for Habsburg
+2. Deeper Low Countries successor-state title modeling for Habsburg
    Netherlands, Seventeen Provinces, Dutch Republic, Spanish Netherlands,
    Austrian Netherlands, and Batavian Republic.
-4. Deeper Principality of Catalonia title modeling after the Barcelona
+3. Deeper Principality of Catalonia title modeling after the Barcelona
    composite-crown relation pass.
-5. Burgundy/Arles, Geneva/Savoyard successor, HRE partition, and Welf
+4. Burgundy/Arles, Geneva/Savoyard successor, HRE partition, and Welf
    partition relation semantics.
+5. Deeper Luxembourg/Namur/Ravensberg/early Holland intermediate parentage only
+   after bounded child-level evidence is available.
 
 ## Boundary
 
@@ -119,3 +121,9 @@ changing parentage.
 Guelders with a reviewed `Duchy` rank. `relation-model-guelders-01` then
 promotes a bounded `imperial_state` relation to the current HRE parent for
 1096..1795. Parentage remains unchanged.
+
+`relation-model-low-countries-hre-01` promotes four bounded `imperial_state`
+relations to the current HRE parent for early Holland, County of Luxembourg,
+early Namur, and County of Ravensberg. These explain rank skips without
+importing Lower Lotharingia, Ardennes, Jülich-Cleves-Berg, or successor
+parentage.

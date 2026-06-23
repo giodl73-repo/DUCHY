@@ -192,10 +192,10 @@ git diff --check
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
 lookup, validation, title-path query trace context, and rank-skip relation
-classification. The first seven accepted relation packets promote 33 relation
-facts and explain 33 active rank-skip rows. The remaining `WP-007` data
+classification. The first eight accepted relation packets promote 37 relation
+facts and explain 37 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
-report can classify more of the remaining 190 unexplained rows. The Low
+report can classify more of the remaining 186 unexplained rows. The Low
 Countries source-custody pass has promoted six source records and three bounded
 `split_fief_or_control` relation facts. The Austria internal-monarchy
 source-custody pass has promoted three source records and attached them to the
@@ -203,10 +203,13 @@ two Archduchy of Austria parentage facts under Austrian Empire and
 Austria-Hungary. The Barcelona/Catalonia pass has promoted three source records
 and one bounded `composite_crown_component` relation fact. The Guelders pass
 has corrected the title rank to `Duchy` and promoted one bounded
-`imperial_state` relation. The next work needs source-custody or modeling
-packets for child-level intermediate review, internal monarchy/crownland
-relation semantics, deeper successor-state title modeling, future Principality
-of Catalonia title modeling, and broader Burgundy/Arles or partition semantics.
+`imperial_state` relation. The Low Countries HRE pass has promoted four
+additional `imperial_state` relation facts for early Holland, Luxembourg,
+early Namur, and Ravensberg. The next work needs source-custody or modeling
+packets for internal monarchy/crownland relation semantics, deeper
+successor-state title modeling, future Principality of Catalonia title
+modeling, broader Burgundy/Arles or partition semantics, and deeper
+intermediate parentage only when bounded child-level evidence is available.
 
 ## Orphan Check
 

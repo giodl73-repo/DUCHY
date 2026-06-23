@@ -1,7 +1,7 @@
 # DUCHY Parentage Graph Report
 
 sources: 532
-facts: 1364
+facts: 1368
 titles: 349
 parentage_edges: 284
 parentable_titles: 308

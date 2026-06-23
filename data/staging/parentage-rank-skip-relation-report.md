@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 532
-facts: 1364
+facts: 1368
 titles: 349
-relation_facts: 33
+relation_facts: 37
 rank_skip_rows: 223
-relation_explained_rows: 33
-unexplained_rows: 190
+relation_explained_rows: 37
+unexplained_rows: 186
 
 ## Interpretation
 
@@ -21,7 +21,7 @@ unexplained_rows: 190
 | composite_crown_component | 1 |
 | confederation_member | 5 |
 | federal_state_member | 1 |
-| imperial_state | 20 |
+| imperial_state | 24 |
 | split_fief_or_control | 3 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 1 |
@@ -347,7 +347,10 @@ unexplained_rows: 190
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1432
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 962..1432 | 962..1432 |
 
 ### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
 
@@ -380,7 +383,10 @@ unexplained_rows: 190
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 963..1354
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 963..1354 | 963..1354 |
 
 ### fact-q700198-parent-q27306 | County of Mark -> Kingdom of Prussia
 
@@ -413,7 +419,10 @@ unexplained_rows: 190
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 981..1420
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 981..1420 | 981..1420 |
 
 ### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
 
@@ -489,7 +498,10 @@ unexplained_rows: 190
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1140..1806
-- relation_context: none
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| imperial_state | Holy Roman Empire (title-q12548) | 1140..1806 | 1140..1806 |
 
 ### fact-q1297894-parent-q199442 | County of Ribagorza -> Kingdom of Aragon
 
