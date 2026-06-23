@@ -196,7 +196,8 @@ classification. The first nine accepted relation packets promote 39 relation
 facts and explain 39 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
 report can classify more of the remaining 184 unexplained rows. The Low
-Countries source-custody pass has promoted six source records and three bounded
+Countries source-custody/title pass has promoted twelve source records, six
+Crown-rank successor title identities, and three bounded
 `split_fief_or_control` relation facts. The Austria internal-monarchy
 source-custody pass has promoted three source records, attached them to the
 two Archduchy of Austria parentage facts under Austrian Empire and
@@ -207,7 +208,7 @@ has corrected the title rank to `Duchy` and promoted one bounded
 `imperial_state` relation. The Low Countries HRE pass has promoted four
 additional `imperial_state` relation facts for early Holland, Luxembourg,
 early Namur, and Ravensberg. The next work needs source-custody or modeling
-packets for deeper successor-state title modeling, future Principality of Catalonia title
+packets for connecting reviewed successor-state title nodes, future Principality of Catalonia title
 modeling, broader Burgundy/Arles or partition semantics, and deeper
 intermediate parentage only when bounded child-level evidence is available.
 

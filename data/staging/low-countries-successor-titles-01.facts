@@ -1,0 +1,133 @@
+# Reviewed Low Countries successor title identity packet.
+
+fact_id: fact-q1031430-name
+subject_id: title-q1031430
+claim_kind: name
+value: Habsburg Netherlands
+source_ids: src-wikidata-q1031430, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q1031430-rank
+subject_id: title-q1031430
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q1031430, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q1031430-exists
+subject_id: title-q1031430
+claim_kind: title_exists
+span: 1482..1797
+value: exists
+source_ids: src-wikidata-q1031430, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q330533-name
+subject_id: title-q330533
+claim_kind: name
+value: Seventeen Provinces
+source_ids: src-wikidata-q330533, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q330533-rank
+subject_id: title-q330533
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q330533, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q330533-exists
+subject_id: title-q330533
+claim_kind: title_exists
+span: 1549..1581
+value: exists
+source_ids: src-wikidata-q330533, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q622783-name
+subject_id: title-q622783
+claim_kind: name
+value: Spanish Netherlands
+source_ids: src-wikidata-q622783, src-wikipedia-spanish-netherlands
+confidence: multi_source
+---
+fact_id: fact-q622783-rank
+subject_id: title-q622783
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q622783, src-wikipedia-spanish-netherlands
+confidence: multi_source
+---
+fact_id: fact-q622783-exists
+subject_id: title-q622783
+claim_kind: title_exists
+span: 1581..1714
+value: exists
+source_ids: src-wikidata-q622783, src-wikipedia-spanish-netherlands
+confidence: multi_source
+---
+fact_id: fact-q700283-name
+subject_id: title-q700283
+claim_kind: name
+value: Austrian Netherlands
+source_ids: src-wikidata-q700283, src-wikipedia-austrian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q700283-rank
+subject_id: title-q700283
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q700283, src-wikipedia-austrian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q700283-exists
+subject_id: title-q700283
+claim_kind: title_exists
+span: 1714..1797
+value: exists
+source_ids: src-wikidata-q700283, src-wikipedia-austrian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q170072-name
+subject_id: title-q170072
+claim_kind: name
+value: Dutch Republic
+source_ids: src-wikidata-q170072, src-wikipedia-dutch-republic
+confidence: multi_source
+---
+fact_id: fact-q170072-rank
+subject_id: title-q170072
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q170072, src-wikipedia-dutch-republic
+confidence: multi_source
+---
+fact_id: fact-q170072-exists
+subject_id: title-q170072
+claim_kind: title_exists
+span: 1581..1795
+value: exists
+source_ids: src-wikidata-q170072, src-wikipedia-dutch-republic
+confidence: multi_source
+---
+fact_id: fact-q188553-name
+subject_id: title-q188553
+claim_kind: name
+value: Batavian Republic
+source_ids: src-wikidata-q188553, src-wikipedia-batavian-republic
+confidence: multi_source
+---
+fact_id: fact-q188553-rank
+subject_id: title-q188553
+claim_kind: rank
+value: Crown
+source_ids: src-wikidata-q188553, src-wikipedia-batavian-republic
+confidence: multi_source
+---
+fact_id: fact-q188553-exists
+subject_id: title-q188553
+claim_kind: title_exists
+span: 1795..1806
+value: exists
+source_ids: src-wikidata-q188553, src-wikipedia-batavian-republic
+confidence: multi_source

@@ -1,0 +1,73 @@
+# Reviewed Low Countries successor title identity packet.
+
+source_id: src-wikidata-q1031430
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q1031430
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Habsburg Netherlands (Q1031430).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no county membership, Habsburg dynastic hierarchy, provincial estates, French annexation, or successor claims imported.
+---
+source_id: src-wikidata-q330533
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q330533
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Seventeen Provinces (Q330533).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no county membership, Burgundian Circle parentage, Spanish succession, revolt partition, or successor claims imported.
+---
+source_id: src-wikidata-q622783
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q622783
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Spanish Netherlands (Q622783).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no Southern Netherlands membership expansion, Spanish Crown hierarchy, Dutch Republic split, or Austrian successor claims imported.
+---
+source_id: src-wikidata-q700283
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q700283
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Austrian Netherlands (Q700283).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no Burgundian Circle membership expansion, Habsburg monarchy hierarchy, Brabant Revolution detail, French annexation, or successor claims imported.
+---
+source_id: src-wikidata-q170072
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q170072
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Dutch Republic (Q170072).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no provincial membership expansion, Union of Utrecht mechanics, treaty recognition detail, colonial claims, or Batavian successor claims imported.
+---
+source_id: src-wikidata-q188553
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q188553
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-23
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Batavian Republic (Q188553).
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Low Countries successor title identity only; no French client-state hierarchy, constitutional phases, Kingdom of Holland successor, or later Netherlands claims imported.

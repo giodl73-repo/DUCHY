@@ -18,8 +18,9 @@ Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 532 |
-| facts | 1370 |
+| sources | 538 |
+| facts | 1388 |
+| titles | 355 |
 | parentage facts | 278 |
 | relation facts | 39 |
 | rank-skip rows | 223 |
@@ -93,10 +94,13 @@ next Low Countries review pass:
 - Dutch Republic,
 - Batavian Republic.
 
-These records initially promoted no facts. `relation-model-low-countries-01`
-uses them to promote three bounded `split_fief_or_control` relations for
-Flanders, Holland, and Namur to the current HRE parent, while keeping deeper
-successor-state title modeling out of scope.
+These records initially promoted no facts. `low-countries-successor-titles-01`
+then materializes six Crown-rank title identities for Habsburg Netherlands,
+Seventeen Provinces, Spanish Netherlands, Austrian Netherlands, Dutch Republic,
+and Batavian Republic. `relation-model-low-countries-01` uses the accepted text
+sources to promote three bounded `split_fief_or_control` relations for
+Flanders, Holland, and Namur to the current HRE parent, while keeping successor
+parentage edges for a later bounded packet.
 
 `austria-internal-monarchy-sources-01` adds three accepted Wikimedia text
 source records and attaches them to the existing Archduchy of Austria parentage
