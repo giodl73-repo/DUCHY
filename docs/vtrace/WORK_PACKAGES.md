@@ -192,14 +192,14 @@ git diff --check
 Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
 lookup, validation, title-path query trace context, and rank-skip relation
-classification. The accepted relation packets now promote 46 relation
-facts and explain 44 active rank-skip rows. The remaining `WP-007` data
+classification. The accepted relation packets now promote 50 relation
+facts and explain 47 active rank-skip rows. The remaining `WP-007` data
 milestone is scaling reviewed relation facts so the generated rank-skip relation
 report can classify more of the remaining 184 unexplained rows. The Low
 Countries source-custody/title pass has promoted twelve source records, six
 Crown-rank successor title identities, three bounded
-`split_fief_or_control` relation facts, and the first seven successor
-parentage edges with matching `composite_crown_component` relations. The Austria internal-monarchy
+`split_fief_or_control` relation facts, and eleven successor parentage edges
+with matching `composite_crown_component` relations. The Austria internal-monarchy
 source-custody pass has promoted three source records, attached them to the
 two Archduchy of Austria parentage facts under Austrian Empire and
 Austria-Hungary, and promoted two bounded `crownland_component` relation
@@ -209,7 +209,7 @@ has corrected the title rank to `Duchy` and promoted one bounded
 `imperial_state` relation. The Low Countries HRE pass has promoted four
 additional `imperial_state` relation facts for early Holland, Luxembourg,
 early Namur, and Ravensberg. The next work needs source-custody or modeling
-packets for Namur successor modeling, future Principality of Catalonia title
+packets for future Principality of Catalonia title
 modeling, broader Burgundy/Arles or partition semantics, and deeper
 intermediate parentage only when bounded child-level evidence is available.
 

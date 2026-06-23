@@ -1,11 +1,11 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 538
-facts: 1402
+sources: 539
+facts: 1410
 titles: 355
-relation_facts: 46
-rank_skip_rows: 228
-relation_explained_rows: 44
+relation_facts: 50
+rank_skip_rows: 231
+relation_explained_rows: 47
 unexplained_rows: 184
 
 ## Interpretation
@@ -18,12 +18,11 @@ unexplained_rows: 184
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 8 |
+| composite_crown_component | 12 |
 | confederation_member | 5 |
 | crownland_component | 2 |
 | federal_state_member | 1 |
 | imperial_state | 24 |
-| split_fief_or_control | 1 |
 | subdivision_or_appanage | 2 |
 | vassalage_or_suzerainty | 1 |
 
@@ -483,6 +482,19 @@ unexplained_rows: 184
 |---|---|---|---|
 | imperial_state | Holy Roman Empire (title-q12548) | 1042..1793 | 1042..1793 |
 
+### fact-q599613-parent-q1031430 | County of Namur -> Habsburg Netherlands
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q1031430
+- current_parent_rank: Crown
+- span: 1483..1548
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Habsburg Netherlands (title-q1031430) | 1483..1548 | 1483..1548 |
+
 ### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
 
 - child_id: title-q599613
@@ -496,18 +508,44 @@ unexplained_rows: 184
 |---|---|---|---|
 | imperial_state | Holy Roman Empire (title-q12548) | 981..1420 | 981..1420 |
 
-### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
+### fact-q599613-parent-q330533 | County of Namur -> Seventeen Provinces
 
 - child_id: title-q599613
 - child_rank: County
 - expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 1483..1795
+- current_parent_id: title-q330533
+- current_parent_rank: Crown
+- span: 1549..1580
 
 | Relation Kind | Related Title | Relation Span | Overlap |
 |---|---|---|---|
-| split_fief_or_control | Holy Roman Empire (title-q12548) | 1483..1795 | 1483..1795 |
+| composite_crown_component | Seventeen Provinces (title-q330533) | 1549..1580 | 1549..1580 |
+
+### fact-q599613-parent-q622783 | County of Namur -> Spanish Netherlands
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q622783
+- current_parent_rank: Crown
+- span: 1581..1713
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Spanish Netherlands (title-q622783) | 1581..1713 | 1581..1713 |
+
+### fact-q599613-parent-q700283 | County of Namur -> Austrian Netherlands
+
+- child_id: title-q599613
+- child_rank: County
+- expected_parent_rank: Duchy
+- current_parent_id: title-q700283
+- current_parent_rank: Crown
+- span: 1714..1795
+
+| Relation Kind | Related Title | Relation Span | Overlap |
+|---|---|---|---|
+| composite_crown_component | Austrian Netherlands (title-q700283) | 1714..1795 | 1714..1795 |
 
 ### fact-q12817455-parent-q12548 | County of Nassau -> Holy Roman Empire
 

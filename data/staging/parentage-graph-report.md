@@ -1,15 +1,15 @@
 # DUCHY Parentage Graph Report
 
-sources: 538
-facts: 1402
+sources: 539
+facts: 1410
 titles: 355
-parentage_edges: 289
+parentage_edges: 292
 parentable_titles: 314
 titles_with_parentage: 229
 title_edge_fill_percent: 72.93
 weighted_span_coverage_percent: 59.01
-rank_skip_facts: 228
-rank_skip_percent: 78.89
+rank_skip_facts: 231
+rank_skip_percent: 79.11
 temporal_parent_conflicts: 0
 snapshot_years: 550
 snapshot_years_with_cycles: 0
@@ -2158,8 +2158,11 @@ snapshot_years_with_cycles: 0
 | fact-q5177890-parent-q12548 | County of Luxembourg (title-q5177890) | County | Holy Roman Empire (title-q12548) | Empire | 963..1354 |
 | fact-q700198-parent-q27306 | County of Mark (title-q700198) | County | Kingdom of Prussia (title-q27306) | Kingdom | 1701..1806 |
 | fact-q589251-parent-q12548 | County of Montbeliard (title-q589251) | County | Holy Roman Empire (title-q12548) | Empire | 1042..1793 |
+| fact-q599613-parent-q1031430 | County of Namur (title-q599613) | County | Habsburg Netherlands (title-q1031430) | Crown | 1483..1548 |
 | fact-q599613-parent-q12548 | County of Namur (title-q599613) | County | Holy Roman Empire (title-q12548) | Empire | 981..1420 |
-| fact-q599613-parent-q12548 | County of Namur (title-q599613) | County | Holy Roman Empire (title-q12548) | Empire | 1483..1795 |
+| fact-q599613-parent-q330533 | County of Namur (title-q599613) | County | Seventeen Provinces (title-q330533) | Crown | 1549..1580 |
+| fact-q599613-parent-q622783 | County of Namur (title-q599613) | County | Spanish Netherlands (title-q622783) | Crown | 1581..1713 |
+| fact-q599613-parent-q700283 | County of Namur (title-q599613) | County | Austrian Netherlands (title-q700283) | Crown | 1714..1795 |
 | fact-q12817455-parent-q12548 | County of Nassau (title-q12817455) | County | Holy Roman Empire (title-q12548) | Empire | 1160..1806 |
 | fact-q706553-parent-q2577303 | County of Nice (title-q706553) | County | Kingdom of Sardinia (title-q2577303) | Kingdom | 1814..1818 |
 | fact-q1139807-parent-q231392 | County of Portugal (title-q1139807) | County | Kingdom of Asturias (title-q231392) | Kingdom | 868..909 |
@@ -2168,9 +2171,6 @@ snapshot_years_with_cycles: 0
 | fact-q573290-parent-q12548 | County of Ravensberg (title-q573290) | County | Holy Roman Empire (title-q12548) | Empire | 1140..1806 |
 | fact-q1297894-parent-q199442 | County of Ribagorza (title-q1297894) | County | Kingdom of Aragon (title-q199442) | Kingdom | 1035..1598 |
 | fact-q1232887-parent-q12548 | County of Savoy (title-q1232887) | County | Holy Roman Empire (title-q12548) | Empire | 1003..1416 |
-| fact-q1917014-parent-q188586 | County of Sicily (title-q1917014) | County | Kingdom of Sicily (title-q188586) | Kingdom | 1130..1130 |
-| fact-q2991474-parent-q12548 | County of Wurttemberg (title-q2991474) | County | Holy Roman Empire (title-q12548) | Empire | 1083..1495 |
-| fact-q5298169-parent-q203493 | Dorohoi County (title-q5298169) | County | Kingdom of Romania (title-q203493) | Kingdom | 1881..1947 |
 
 ## Temporal Parent Conflicts
 

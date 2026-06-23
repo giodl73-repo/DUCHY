@@ -6825,3 +6825,17 @@ notes: Batavian Republic (Q188553).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for Low Countries successor title identity only; no French client-state hierarchy, constitutional phases, Kingdom of Holland successor, or later Netherlands claims imported.
+---
+# Reviewed Namur successor parentage source packet.
+
+source_id: src-wikipedia-county-namur-successor-context
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Namur
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Namur article; reviewed successor-context pass for Burgundian, Habsburg, Spanish, Austrian, and French Revolutionary-era end statements after the earlier HRE-only source record.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded County of Namur successor parentage under already materialized Low Countries successor titles from 1483 to the fixture title end in 1795; no Roman or Frankish prehistory, modern province boundaries, French department parentage, ruler lists, or post-1795 claims imported.

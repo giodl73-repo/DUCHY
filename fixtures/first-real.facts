@@ -11063,3 +11063,73 @@ span: 1581..1795
 value: composite_crown_component:title-q170072
 source_ids: src-wikidata-q762943, src-wikidata-q170072, src-wikipedia-county-holland, src-wikipedia-dutch-republic
 confidence: multi_source
+---
+# Reviewed Namur successor parentage packet.
+
+fact_id: fact-q599613-parent-q1031430
+subject_id: title-q599613
+claim_kind: parentage
+span: 1483..1548
+value: title-q1031430
+source_ids: src-wikidata-q599613, src-wikidata-q1031430, src-wikipedia-county-namur-successor-context, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q599613-parent-q12548
+---
+fact_id: fact-q599613-relation-q1031430-composite-crown-component
+subject_id: title-q599613
+claim_kind: relation
+span: 1483..1548
+value: composite_crown_component:title-q1031430
+source_ids: src-wikidata-q599613, src-wikidata-q1031430, src-wikipedia-county-namur-successor-context, src-wikipedia-habsburg-netherlands
+confidence: multi_source
+---
+fact_id: fact-q599613-parent-q330533
+subject_id: title-q599613
+claim_kind: parentage
+span: 1549..1580
+value: title-q330533
+source_ids: src-wikidata-q599613, src-wikidata-q330533, src-wikipedia-county-namur-successor-context, src-wikipedia-seventeen-provinces
+confidence: multi_source
+supersedes_fact_id: fact-q599613-parent-q12548
+---
+fact_id: fact-q599613-relation-q330533-composite-crown-component
+subject_id: title-q599613
+claim_kind: relation
+span: 1549..1580
+value: composite_crown_component:title-q330533
+source_ids: src-wikidata-q599613, src-wikidata-q330533, src-wikipedia-county-namur-successor-context, src-wikipedia-seventeen-provinces
+confidence: multi_source
+---
+fact_id: fact-q599613-parent-q622783
+subject_id: title-q599613
+claim_kind: parentage
+span: 1581..1713
+value: title-q622783
+source_ids: src-wikidata-q599613, src-wikidata-q622783, src-wikipedia-county-namur-successor-context, src-wikipedia-spanish-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q599613-parent-q12548
+---
+fact_id: fact-q599613-relation-q622783-composite-crown-component
+subject_id: title-q599613
+claim_kind: relation
+span: 1581..1713
+value: composite_crown_component:title-q622783
+source_ids: src-wikidata-q599613, src-wikidata-q622783, src-wikipedia-county-namur-successor-context, src-wikipedia-spanish-netherlands
+confidence: multi_source
+---
+fact_id: fact-q599613-parent-q700283
+subject_id: title-q599613
+claim_kind: parentage
+span: 1714..1795
+value: title-q700283
+source_ids: src-wikidata-q599613, src-wikidata-q700283, src-wikipedia-county-namur-successor-context, src-wikipedia-austrian-netherlands
+confidence: multi_source
+supersedes_fact_id: fact-q599613-parent-q12548
+---
+fact_id: fact-q599613-relation-q700283-composite-crown-component
+subject_id: title-q599613
+claim_kind: relation
+span: 1714..1795
+value: composite_crown_component:title-q700283
+source_ids: src-wikidata-q599613, src-wikidata-q700283, src-wikipedia-county-namur-successor-context, src-wikipedia-austrian-netherlands
+confidence: multi_source
