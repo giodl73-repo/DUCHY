@@ -1,13 +1,13 @@
 # DUCHY Parentage Rank Skip Bridge Review Report
 
 source_tsv: data/staging/parentage-rank-skip-bridges.tsv
-bridge_rows: 162
+bridge_rows: 157
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_intermediate_parent_review | 150 |
+| high_intermediate_parent_review | 145 |
 | low_intermediate_parent_review | 3 |
 | medium_intermediate_parent_review | 9 |
 
@@ -17,8 +17,8 @@ bridge_rows: 162
 |---|---:|
 | Kingdom of Bohemia | 55 |
 | Kingdom of Bavaria | 35 |
-| Kingdom of Italy | 33 |
-| Duchy of Bavaria | 12 |
+| Kingdom of Italy | 31 |
+| Duchy of Bavaria | 9 |
 | Kingdom of Prussia | 6 |
 | Crown of the Kingdom of Poland | 4 |
 | Anhalt-Bernburg | 3 |
@@ -35,7 +35,7 @@ bridge_rows: 162
 
 | Current Parent | Rows |
 |---|---:|
-| Holy Roman Empire | 96 |
+| Holy Roman Empire | 91 |
 | German Confederation | 27 |
 | German Empire | 8 |
 | North German Confederation | 6 |
@@ -276,21 +276,6 @@ bridge_rows: 162
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
-### fact-q157070-parent-q12548 | County of Flanders -> Duchy of Bavaria -> Holy Roman Empire
-
-- child_id: title-q157070
-- child_rank: County
-- expected_parent_rank: Duchy
-- candidate_parent_id: title-q47261
-- candidate_exists: 907..1805
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1797
-- overlap_years: 836
-- bridge_fact_id: fact-q47261-parent-q12548
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
 ### fact-q675363-parent-q12548 | County of Geneva -> Duchy of Bavaria -> Holy Roman Empire
 
 - child_id: title-q675363
@@ -302,21 +287,6 @@ bridge_rows: 162
 - current_parent_rank: Empire
 - span: 1032..1401
 - overlap_years: 370
-- bridge_fact_id: fact-q47261-parent-q12548
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q762943-parent-q12548 | County of Holland -> Duchy of Bavaria -> Holy Roman Empire
-
-- child_id: title-q762943
-- child_rank: County
-- expected_parent_rank: Duchy
-- candidate_parent_id: title-q47261
-- candidate_exists: 907..1805
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1795
-- overlap_years: 834
 - bridge_fact_id: fact-q47261-parent-q12548
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
@@ -362,21 +332,6 @@ bridge_rows: 162
 - current_parent_rank: Empire
 - span: 1042..1793
 - overlap_years: 752
-- bridge_fact_id: fact-q47261-parent-q12548
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q599613-parent-q12548 | County of Namur -> Duchy of Bavaria -> Holy Roman Empire
-
-- child_id: title-q599613
-- child_rank: County
-- expected_parent_rank: Duchy
-- candidate_parent_id: title-q47261
-- candidate_exists: 907..1805
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 981..1795
-- overlap_years: 815
 - bridge_fact_id: fact-q47261-parent-q12548
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
@@ -1787,36 +1742,6 @@ bridge_rows: 162
 - current_parent_rank: Empire
 - span: 962..1190
 - overlap_years: 229
-- bridge_fact_id: fact-q838931-parent-q12548
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q426488-parent-q12548 | March of Turin -> Kingdom of Italy -> Holy Roman Empire
-
-- child_id: title-q426488
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- candidate_parent_id: title-q838931
-- candidate_exists: 961..1806
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 964..1091
-- overlap_years: 128
-- bridge_fact_id: fact-q838931-parent-q12548
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q1867844-parent-q12548 | March of Tuscany -> Kingdom of Italy -> Holy Roman Empire
-
-- child_id: title-q1867844
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- candidate_parent_id: title-q838931
-- candidate_exists: 961..1806
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1197
-- overlap_years: 236
 - bridge_fact_id: fact-q838931-parent-q12548
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.

@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 pub type Year = i32;
 
@@ -224,6 +224,7 @@ pub struct FactRecord {
     pub source_ids: Vec<String>,
     pub confidence: ConfidenceLabel,
     pub conflict_group: Option<String>,
+    pub supersedes_fact_id: Option<String>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -1787,6 +1788,8 @@ pub fn validate_fact_records(
 ) -> Result<(), Vec<String>> {
     let mut errors = catalog.validate().err().unwrap_or_default();
     let mut fact_ids: HashMap<&str, usize> = HashMap::new();
+    let mut fact_by_id: HashMap<&str, &FactRecord> = HashMap::new();
+    let mut superseded_fact_ids: HashSet<&str> = HashSet::new();
     let mut accepted_claims: HashMap<(&str, ClaimKind, Option<YearSpan>), &FactRecord> =
         HashMap::new();
 
@@ -1797,12 +1800,66 @@ pub fn validate_fact_records(
                 fact.fact_id, first_seen
             ));
         }
+        fact_by_id.insert(fact.fact_id.as_str(), fact);
+        if let Some(superseded_fact_id) = &fact.supersedes_fact_id {
+            superseded_fact_ids.insert(superseded_fact_id.as_str());
+        }
+    }
 
+    for fact in facts {
         if let Err(mut fact_errors) = catalog.validate_fact(fact) {
             errors.append(&mut fact_errors);
         }
 
+        if let Some(superseded_fact_id) = &fact.supersedes_fact_id {
+            if superseded_fact_id == &fact.fact_id {
+                errors.push(format!("{} cannot supersede itself", fact.fact_id));
+            }
+            if fact.confidence == ConfidenceLabel::Contested {
+                errors.push(format!(
+                    "{} contested fact cannot supersede an accepted fact",
+                    fact.fact_id
+                ));
+            }
+            match fact_by_id.get(superseded_fact_id.as_str()) {
+                Some(superseded) => {
+                    if superseded.confidence == ConfidenceLabel::Contested {
+                        errors.push(format!(
+                            "{} cannot supersede contested fact {}",
+                            fact.fact_id, superseded_fact_id
+                        ));
+                    }
+                    let compatible_span = if fact.claim_kind == ClaimKind::Parentage {
+                        match (&superseded.span, &fact.span) {
+                            (Some(superseded_span), Some(replacement_span)) => {
+                                span_contains_span(superseded_span, replacement_span)
+                            }
+                            _ => superseded.span == fact.span,
+                        }
+                    } else {
+                        superseded.span == fact.span
+                    };
+                    if superseded.subject_id != fact.subject_id
+                        || superseded.claim_kind != fact.claim_kind
+                        || !compatible_span
+                    {
+                        errors.push(format!(
+                            "{} supersedes {} but subject, claim_kind, or span are incompatible",
+                            fact.fact_id, superseded_fact_id
+                        ));
+                    }
+                }
+                None => errors.push(format!(
+                    "{} supersedes missing fact {}",
+                    fact.fact_id, superseded_fact_id
+                )),
+            }
+        }
+
         if fact.confidence == ConfidenceLabel::Contested {
+            continue;
+        }
+        if superseded_fact_ids.contains(fact.fact_id.as_str()) {
             continue;
         }
 
@@ -1989,6 +2046,10 @@ fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
         .get("conflict_group")
         .filter(|value| !value.trim().is_empty())
         .cloned();
+    let supersedes_fact_id = values
+        .get("supersedes_fact_id")
+        .filter(|value| !value.trim().is_empty())
+        .cloned();
 
     if !errors.is_empty() {
         return Err(errors);
@@ -2003,6 +2064,7 @@ fn parse_fact_record_block(block: &str) -> Result<FactRecord, Vec<String>> {
         source_ids,
         confidence,
         conflict_group,
+        supersedes_fact_id,
     })
 }
 
@@ -2041,24 +2103,29 @@ pub fn contested_fact_groups(facts: &[FactRecord]) -> Vec<ContestedFactGroup> {
     groups
 }
 
+fn superseded_fact_ids(facts: &[FactRecord]) -> HashSet<&str> {
+    facts
+        .iter()
+        .filter_map(|fact| fact.supersedes_fact_id.as_deref())
+        .collect()
+}
+
 pub fn source_backed_titles_from_facts(
     catalog: &SourceCatalog,
     facts: &[FactRecord],
 ) -> Result<Vec<Title>, Vec<String>> {
-    let mut errors = catalog.validate().err().unwrap_or_default();
-
-    for fact in facts {
-        if let Err(mut fact_errors) = catalog.validate_fact(fact) {
-            errors.append(&mut fact_errors);
-        }
-    }
+    let mut errors = validate_fact_records(catalog, facts)
+        .err()
+        .unwrap_or_default();
+    let superseded_fact_ids = superseded_fact_ids(facts);
 
     let mut grouped: HashMap<&str, Vec<&FactRecord>> = HashMap::new();
     for fact in facts.iter().filter(|fact| {
-        matches!(
-            fact.claim_kind,
-            ClaimKind::Name | ClaimKind::Rank | ClaimKind::TitleExists
-        )
+        !superseded_fact_ids.contains(fact.fact_id.as_str())
+            && matches!(
+                fact.claim_kind,
+                ClaimKind::Name | ClaimKind::Rank | ClaimKind::TitleExists
+            )
     }) {
         grouped.entry(&fact.subject_id).or_default().push(fact);
     }
@@ -2154,8 +2221,25 @@ pub fn source_backed_parentage_from_facts(
     facts: &[FactRecord],
     timeline: &TitleTimeline,
 ) -> Result<Vec<ParentageSpan>, Vec<String>> {
-    let mut errors = catalog.validate().err().unwrap_or_default();
+    let mut errors = validate_fact_records(catalog, facts)
+        .err()
+        .unwrap_or_default();
     let mut parentage = Vec::new();
+    let superseded_fact_ids = superseded_fact_ids(facts);
+    let mut replacement_spans_by_fact_id: HashMap<&str, Vec<YearSpan>> = HashMap::new();
+    for fact in facts
+        .iter()
+        .filter(|fact| fact.claim_kind == ClaimKind::Parentage)
+    {
+        if let (Some(superseded_fact_id), Some(span)) =
+            (fact.supersedes_fact_id.as_deref(), fact.span.clone())
+        {
+            replacement_spans_by_fact_id
+                .entry(superseded_fact_id)
+                .or_default()
+                .push(span);
+        }
+    }
 
     for fact in facts
         .iter()
@@ -2178,6 +2262,20 @@ pub fn source_backed_parentage_from_facts(
         };
         let child_title_id = fact.subject_id.clone();
         let parent_title_id = fact.value.clone();
+        let active_spans = if superseded_fact_ids.contains(fact.fact_id.as_str()) {
+            subtract_year_spans(
+                &span,
+                replacement_spans_by_fact_id
+                    .get(fact.fact_id.as_str())
+                    .map(Vec::as_slice)
+                    .unwrap_or(&[]),
+            )
+        } else {
+            vec![span]
+        };
+        if active_spans.is_empty() {
+            continue;
+        }
 
         if !timeline.titles.contains_key(&child_title_id) {
             errors.push(format!(
@@ -2192,12 +2290,14 @@ pub fn source_backed_parentage_from_facts(
             ));
         }
 
-        parentage.push(ParentageSpan {
-            child_title_id,
-            parent_title_id,
-            span,
-            rank_policy: ParentageRankPolicy::AllowRankSkip,
-        });
+        for active_span in active_spans {
+            parentage.push(ParentageSpan {
+                child_title_id: child_title_id.clone(),
+                parent_title_id: parent_title_id.clone(),
+                span: active_span,
+                rank_policy: ParentageRankPolicy::AllowRankSkip,
+            });
+        }
     }
 
     if errors.is_empty() {
@@ -2245,6 +2345,53 @@ fn parse_title_rank(value: &str) -> Option<TitleRank> {
 
 fn span_overlaps(span: &YearSpan, start: Year, end: Year) -> bool {
     span.start <= end && span.end.map_or(true, |span_end| span_end >= start)
+}
+
+fn span_contains_span(outer: &YearSpan, inner: &YearSpan) -> bool {
+    if outer.start > inner.start {
+        return false;
+    }
+    match (outer.end, inner.end) {
+        (None, _) => true,
+        (Some(_), None) => false,
+        (Some(outer_end), Some(inner_end)) => inner_end <= outer_end,
+    }
+}
+
+fn subtract_year_spans(base: &YearSpan, cuts: &[YearSpan]) -> Vec<YearSpan> {
+    let mut contained_cuts = cuts
+        .iter()
+        .filter(|cut| span_contains_span(base, cut))
+        .cloned()
+        .collect::<Vec<_>>();
+    contained_cuts.sort_by(|left, right| {
+        left.start
+            .cmp(&right.start)
+            .then(left.end.cmp(&right.end))
+    });
+
+    let mut spans = Vec::new();
+    let mut next_start = base.start;
+    for cut in contained_cuts {
+        if cut.start > next_start {
+            spans.push(YearSpan::new(next_start, Some(cut.start - 1)));
+        }
+        match cut.end {
+            Some(cut_end) => {
+                next_start = next_start.max(cut_end + 1);
+            }
+            None => return spans,
+        }
+    }
+
+    match base.end {
+        Some(base_end) if next_start <= base_end => {
+            spans.push(YearSpan::new(next_start, Some(base_end)));
+        }
+        None => spans.push(YearSpan::new(next_start, None)),
+        _ => {}
+    }
+    spans
 }
 
 impl TitlePathStep {
@@ -2909,6 +3056,7 @@ review_note: Duplicate record.
             source_ids: vec!["src-structured".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
+            supersedes_fact_id: None,
         };
 
         assert_eq!(catalog.validate(), Ok(()));
@@ -2927,6 +3075,7 @@ review_note: Duplicate record.
             source_ids: vec!["src-wikidata-licensing".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
+            supersedes_fact_id: None,
         };
 
         let errors = catalog
@@ -2968,6 +3117,7 @@ review_note: Duplicate record.
             source_ids: vec!["src-structured".to_string()],
             confidence: ConfidenceLabel::MultiSource,
             conflict_group: None,
+            supersedes_fact_id: None,
         };
 
         let errors = catalog
@@ -3006,6 +3156,7 @@ review_note: Duplicate record.
             source_ids: vec!["src-structured".to_string()],
             confidence: ConfidenceLabel::Contested,
             conflict_group: None,
+            supersedes_fact_id: None,
         };
 
         let errors = catalog
@@ -3029,6 +3180,7 @@ review_note: Duplicate record.
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-duplicate".to_string(),
@@ -3039,6 +3191,7 @@ review_note: Duplicate record.
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
         ];
 
@@ -3063,6 +3216,7 @@ review_note: Duplicate record.
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-name-two".to_string(),
@@ -3073,6 +3227,7 @@ review_note: Duplicate record.
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
         ];
 
@@ -3307,6 +3462,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::Contested,
                 conflict_group: Some("conflict-title-contested-rank".to_string()),
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-contested-rank-kingdom".to_string(),
@@ -3317,6 +3473,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::Contested,
                 conflict_group: Some("conflict-title-contested-rank".to_string()),
+                supersedes_fact_id: None,
             },
         ];
 
@@ -3393,9 +3550,13 @@ confidence: maybe
             first_real_timeline_from_fixture().expect("first real timeline should materialize");
         let facts =
             first_real_fact_records_from_fixture().expect("first real fact fixture should parse");
+        let superseded_fact_ids = superseded_fact_ids(&facts);
         let parentage_facts = facts
             .iter()
-            .filter(|fact| fact.claim_kind == ClaimKind::Parentage)
+            .filter(|fact| {
+                fact.claim_kind == ClaimKind::Parentage
+                    && !superseded_fact_ids.contains(fact.fact_id.as_str())
+            })
             .collect::<Vec<_>>();
 
         assert!(!parentage_facts.is_empty());
@@ -3500,6 +3661,7 @@ confidence: maybe
             source_ids: vec!["src-test-structured".to_string()],
             confidence: ConfidenceLabel::SingleSource,
             conflict_group: None,
+            supersedes_fact_id: None,
         }];
 
         let errors = source_backed_titles_from_facts(&catalog, &facts).unwrap_err();
@@ -3525,6 +3687,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-contested-rank".to_string(),
@@ -3535,6 +3698,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::Contested,
                 conflict_group: Some("conflict-title-contested-rank".to_string()),
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-contested-exists".to_string(),
@@ -3545,6 +3709,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
         ];
 
@@ -3574,6 +3739,192 @@ confidence: maybe
                 .collect::<Vec<_>>(),
             vec!["title-child-duchy", "title-parent-kingdom"]
         );
+    }
+
+    #[test]
+    fn source_backed_timeline_uses_parentage_replacement_fact() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.extend([
+            FactRecord {
+                fact_id: "fact-replacement-parent-name".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Test Replacement Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-replacement-parent-rank".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-replacement-parent-exists".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::TitleExists,
+                span: Some(YearSpan::new(1000, Some(1100))),
+                value: "exists".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-parentage-replacement".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::Parentage,
+                span: Some(YearSpan::new(1000, Some(1100))),
+                value: "title-replacement-kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: Some("fact-child-parentage".to_string()),
+            },
+        ]);
+
+        validate_fact_records(&catalog, &facts).expect("replacement fact should validate");
+        let timeline =
+            source_backed_timeline_from_facts(&catalog, &facts).expect("timeline should build");
+        let answer = timeline
+            .title_path_for_title_in_year("title-child-duchy", 1050)
+            .expect("child should have replacement parent path");
+
+        assert_eq!(
+            answer
+                .titles
+                .iter()
+                .map(|step| step.title_id.as_str())
+                .collect::<Vec<_>>(),
+            vec!["title-child-duchy", "title-replacement-kingdom"]
+        );
+    }
+
+    #[test]
+    fn source_backed_timeline_splits_partial_parentage_replacement_fact() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.extend([
+            FactRecord {
+                fact_id: "fact-replacement-parent-name".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::Name,
+                span: None,
+                value: "Test Replacement Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-replacement-parent-rank".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::Rank,
+                span: None,
+                value: "Kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-replacement-parent-exists".to_string(),
+                subject_id: "title-replacement-kingdom".to_string(),
+                claim_kind: ClaimKind::TitleExists,
+                span: Some(YearSpan::new(1025, Some(1075))),
+                value: "exists".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: None,
+            },
+            FactRecord {
+                fact_id: "fact-child-parentage-partial-replacement".to_string(),
+                subject_id: "title-child-duchy".to_string(),
+                claim_kind: ClaimKind::Parentage,
+                span: Some(YearSpan::new(1025, Some(1075))),
+                value: "title-replacement-kingdom".to_string(),
+                source_ids: vec!["src-test-structured".to_string()],
+                confidence: ConfidenceLabel::SingleSource,
+                conflict_group: None,
+                supersedes_fact_id: Some("fact-child-parentage".to_string()),
+            },
+        ]);
+
+        validate_fact_records(&catalog, &facts).expect("partial replacement fact should validate");
+        let timeline =
+            source_backed_timeline_from_facts(&catalog, &facts).expect("timeline should build");
+
+        let before = timeline
+            .parent_title_in_year("title-child-duchy", 1024)
+            .expect("original parent remains before replacement");
+        let during = timeline
+            .parent_title_in_year("title-child-duchy", 1050)
+            .expect("replacement parent applies during replacement span");
+        let after = timeline
+            .parent_title_in_year("title-child-duchy", 1076)
+            .expect("original parent remains after replacement");
+
+        assert_eq!(before.id, "title-parent-kingdom");
+        assert_eq!(during.id, "title-replacement-kingdom");
+        assert_eq!(after.id, "title-parent-kingdom");
+    }
+
+    #[test]
+    fn fact_set_validation_rejects_unrelated_replacement_fact() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.push(FactRecord {
+            fact_id: "fact-child-parentage-unrelated-replacement".to_string(),
+            subject_id: "title-parent-kingdom".to_string(),
+            claim_kind: ClaimKind::Parentage,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "title-child-duchy".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: Some("fact-child-parentage".to_string()),
+        });
+
+        let errors = validate_fact_records(&catalog, &facts)
+            .expect_err("unrelated replacement fact should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("subject, claim_kind, or span are incompatible")));
+    }
+
+    #[test]
+    fn fact_set_validation_rejects_parentage_replacement_outside_superseded_span() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.push(FactRecord {
+            fact_id: "fact-child-parentage-outside-replacement".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Parentage,
+            span: Some(YearSpan::new(900, Some(950))),
+            value: "title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: Some("fact-child-parentage".to_string()),
+        });
+
+        let errors = validate_fact_records(&catalog, &facts)
+            .expect_err("replacement outside superseded span should fail");
+
+        assert!(errors
+            .iter()
+            .any(|error| error.contains("subject, claim_kind, or span are incompatible")));
     }
 
     #[test]
@@ -3731,6 +4082,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-parent-rank".to_string(),
@@ -3741,6 +4093,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-parent-exists".to_string(),
@@ -3751,6 +4104,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-child-name".to_string(),
@@ -3761,6 +4115,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-child-rank".to_string(),
@@ -3771,6 +4126,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-child-exists".to_string(),
@@ -3781,6 +4137,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
             FactRecord {
                 fact_id: "fact-child-parentage".to_string(),
@@ -3791,6 +4148,7 @@ confidence: maybe
                 source_ids: vec!["src-test-structured".to_string()],
                 confidence: ConfidenceLabel::SingleSource,
                 conflict_group: None,
+                supersedes_fact_id: None,
             },
         ]
     }

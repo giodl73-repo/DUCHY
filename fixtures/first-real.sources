@@ -13,6 +13,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-grand-duchy-mecklenburg-schwerin
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Mecklenburg-Schwerin
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Mecklenburg-Schwerin article identifies the grand duchy as a sovereign member state of the German Confederation, then a federated state of the North German Confederation, and finally of the German Empire in 1871.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Mecklenburg-Schwerin parentage context only; no House of Mecklenburg history, territorial geography, ruler lists, constitutional episodes, or Free State successor claims imported.
+---
 source_id: src-wikidata-q43287
 source_kind: wikidata
 source_url: https://www.wikidata.org/wiki/Q43287
@@ -36,6 +48,18 @@ notes: Grand Duchy of Hesse (Q20135).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-grand-duchy-hesse
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Hesse
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Hesse article identifies the grand duchy as joining the German Confederation after 1815 and joining the German Empire in 1871.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Hesse parentage context only; no Confederation of the Rhine predecessor, Rhenish Hesse territorial exchange, constitutional reforms, military integration, ruler lists, or People's State successor claims imported.
 ---
 source_id: src-wikidata-q27306
 source_kind: wikidata
@@ -151,6 +175,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and bridge relations to German Confederation, North German Confederation, and German Empire only.
 ---
+source_id: src-wikipedia-grand-duchy-oldenburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Oldenburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Oldenburg article identifies the grand duchy as within the German Confederation, North German Confederation, and German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Grand Duchy of Oldenburg parentage context only; no Oldenburg dynastic history, territorial components, foreign relations, ruler lists, or Free State successor claims imported.
+---
 source_id: src-wikidata-q326029
 source_kind: wikidata
 source_url: https://www.wikidata.org/wiki/Q326029
@@ -162,6 +198,18 @@ notes: Duchy of Brunswick (Q326029).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, dissolution, and bridge relations to German Confederation, North German Confederation, and German Empire only.
+---
+source_id: src-wikipedia-duchy-brunswick
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Brunswick
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Brunswick article identifies the duchy as part of the German Confederation, the North German Confederation, and from 1871 the German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Brunswick parentage context only; no Brunswick-Wolfenbuttel predecessor detail, succession disputes, ruler lists, constitutional history, territorial map claims, or Free State successor claims imported.
 ---
 # Reviewed mass title packet to reach 50 accepted sources.
 
@@ -177,6 +225,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-anhalt
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Anhalt
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Anhalt article identifies the duchy as a member of the German Confederation, a state of the North German Confederation, and a state of the German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Anhalt parentage context only; no Ascanian genealogy, medieval partitions, constituent enclaves, ruler lists, or post-1918 Free State claims imported.
+---
 
 source_id: src-wikidata-q686965
 source_kind: wikidata
@@ -189,6 +249,18 @@ notes: Anhalt-Bernburg (Q686965).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-anhalt-bernburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Anhalt-Bernburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Anhalt-Bernburg article identifies the principality/duchy as a state of the Holy Roman Empire until 1806 and a state of the German Confederation from 1815.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Anhalt-Bernburg parentage context only; no Anhalt partitions, Anhalt-Zeitz-Hoym, ducal elevation, inheritance by Anhalt-Dessau, Ascanian genealogy, or re-unified Duchy of Anhalt successor claims imported.
 ---
 
 source_id: src-wikidata-q155570
@@ -203,6 +275,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-saxe-weimar-eisenach
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Weimar-Eisenach
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Weimar-Eisenach article identifies the grand duchy as a state of the German Confederation and a federal state of the North German Confederation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Weimar-Eisenach parentage context only; no Saxe-Weimar/Saxe-Eisenach personal union, grand-duchy elevation, German Empire status, ruler lists, currency, or Thuringia successor claims imported.
+---
 
 source_id: src-wikidata-q3462133
 source_kind: wikidata
@@ -215,6 +299,18 @@ notes: Saxe-Coburg and Gotha (Q3462133).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-saxe-coburg-gotha
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Coburg_and_Gotha
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Coburg and Gotha article identifies the duchy as a state of the German Confederation from 1826 to 1866 and a federal state of the German Empire from 1867 to 1918.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Coburg and Gotha German Confederation parentage context only; no Gotha partition, personal union mechanics, German Empire status, military treaty, ruler lists, or successor Free State claims imported.
 ---
 
 source_id: src-wikidata-q157710
@@ -229,6 +325,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-saxe-meiningen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Meiningen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Meiningen article identifies the duchy as a state of the Holy Roman Empire, German Confederation, North German Confederation, and German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Meiningen parentage context only; no Saxe-Gotha partition detail, Saxe-Hildburghausen acquisition, Ernestine genealogy, rulers, flag history, or Thuringia successor claims imported.
+---
 
 source_id: src-wikidata-q158151
 source_kind: wikidata
@@ -241,6 +349,18 @@ notes: Saxe-Altenburg (Q158151).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-saxe-altenburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Altenburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Altenburg article identifies the duchy as a state of the Holy Roman Empire, German Confederation, North German Confederation, and German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Altenburg parentage context only; no Saxe-Weimar partition, Saxe-Gotha personal union, Ernestine rearrangement, ruler lists, flag history, or Thuringia successor claims imported.
 ---
 
 source_id: src-wikidata-q529605
@@ -255,6 +375,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-electorate-hesse
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Hesse
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Hesse article identifies Hesse-Kassel as a state of the German Confederation from 1815 to 1848 and 1850 to 1866.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Hesse German Confederation parentage context only; no HRE elector status, Confederation of the Rhine, Westphalian annexation, 1848-1849 German Empire episode, restored independence, annexation by Prussia, or Hesse-Nassau successor claims imported.
+---
 
 source_id: src-wikidata-q836680
 source_kind: wikidata
@@ -267,6 +399,18 @@ notes: Duchy of Nassau (Q836680).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-nassau
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Nassau
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Nassau article identifies the duchy as a state of the German Confederation from 1815 to 1848 and 1850 to 1866.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Nassau German Confederation parentage context only; no Confederation of the Rhine period, 1848-1849 German Empire episode, interim independence, annexation by Prussia, military history, or Hesse-Nassau successor claims imported.
 ---
 
 source_id: src-wikidata-q14551680
@@ -281,6 +425,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-principality-lippe
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Principality_of_Lippe
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Principality of Lippe article identifies Lippe as a state of the Holy Roman Empire from 1789 to 1806 and a state of the German Confederation from 1815 to 1866.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Principality of Lippe parentage context only; no County of Lippe predecessor, Confederation of the Rhine, North German Confederation, German Empire, constitutional history, dynastic branches, or Free State successor claims imported.
+---
 
 source_id: src-wikidata-q310650
 source_kind: wikidata
@@ -293,6 +449,18 @@ notes: Schaumburg-Lippe (Q310650).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-schaumburg-lippe
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Schaumburg-Lippe
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Schaumburg-Lippe article identifies the principality as a state of the Holy Roman Empire, German Confederation, North German Confederation, and German Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Schaumburg-Lippe parentage context only; no Schaumburg partition, Lippe-Alverdissen inheritance, princely elevation, ruler lists, territorial geography, or Lower Saxony successor claims imported.
 ---
 
 source_id: src-wikidata-q695316
@@ -307,6 +475,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-schwarzburg-rudolstadt
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Schwarzburg-Rudolstadt
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Schwarzburg-Rudolstadt article identifies the principality as a state of the German Confederation, North German Confederation, German Empire, and Weimar Republic.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Schwarzburg-Rudolstadt German Confederation parentage context only; no Schwarzburg emergence, princely elevation, ruler lists, North German Confederation, German Empire, Weimar Republic, or Thuringia successor claims imported.
+---
 
 source_id: src-wikidata-q630163
 source_kind: wikidata
@@ -319,6 +499,18 @@ notes: Schwarzburg-Sondershausen (Q630163).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-schwarzburg-sondershausen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Schwarzburg-Sondershausen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Schwarzburg-Sondershausen article identifies the principality as a state of the Holy Roman Empire, Confederation of the Rhine, German Confederation, North German Confederation, German Empire, and Weimar Republic.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Schwarzburg-Sondershausen parentage context only; no Schwarzburg partition, princely elevation, ruler lists, Confederation of the Rhine, North German Confederation, German Empire, Weimar Republic, or Thuringia successor claims imported.
 ---
 
 source_id: src-wikidata-q161215
@@ -333,6 +525,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-grand-duchy-mecklenburg-strelitz
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Grand_Duchy_of_Mecklenburg-Strelitz
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Grand Duchy of Mecklenburg-Strelitz article identifies the grand duchy as a sovereign member state of the German Confederation and then a federated state of the North German Confederation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Mecklenburg-Strelitz parentage context only; no House of Mecklenburg history, territorial geography, ruler lists, constitutional episodes, or Free State successor claims imported.
+---
 
 source_id: src-wikidata-q700663
 source_kind: wikidata
@@ -345,6 +549,18 @@ notes: Saxe-Coburg-Saalfeld (Q700663).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-saxe-coburg-saalfeld
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Coburg-Saalfeld
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Coburg-Saalfeld article identifies the duchy as a state of the Holy Roman Empire, Confederation of the Rhine, and German Confederation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Coburg-Saalfeld parentage context only; no French occupation, Bavarian border treaty, Lichtenberg acquisition, Ernestine succession arbitration, dynastic marriages, or later Saxe-Coburg and Gotha claims imported.
 ---
 
 source_id: src-wikidata-q281005
@@ -359,6 +575,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-saxe-hildburghausen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Hildburghausen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Hildburghausen article identifies the duchy as a state of the Holy Roman Empire from 1680 to 1806 and a state of the German Confederation from 1815 to 1826.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Hildburghausen parentage context only; no partition from Saxe-Gotha, Reichsunmittelbarkeit event detail, constitution, Ernestine arbitration, successor duchy allocations, or modern district claims imported.
+---
 
 source_id: src-wikidata-q675085
 source_kind: wikidata
@@ -371,6 +599,18 @@ notes: Saxe-Gotha-Altenburg (Q675085).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-saxe-gotha-altenburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Gotha-Altenburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Gotha-Altenburg article identifies the duchy as a state of the Holy Roman Empire, Confederation of the Rhine, and German Confederation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Gotha-Altenburg parentage context only; no Ernestine partition narrative, House of Wettin genealogy, succession dispute, successor allocation, population/area statistics, or modern Thuringia claims imported.
 ---
 
 source_id: src-wikidata-q704288
@@ -385,6 +625,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-holstein
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Holstein
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Holstein article identifies Holstein as a state of the Holy Roman Empire from 1474 to 1806 and a state of the German Confederation from 1815 to 1864.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Holstein parentage context only; no Danish personal union, Schleswig relation, Oldenburg branches, treaty history, Second Schleswig War, Austrian/Prussian administration, or 1866 annexation claims imported.
+---
 
 source_id: src-wikidata-q313175
 source_kind: wikidata
@@ -397,6 +649,18 @@ notes: Saxe-Lauenburg (Q313175).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-saxe-lauenburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Saxe-Lauenburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Saxe-Lauenburg article identifies the duchy as a state of the Holy Roman Empire and the German Confederation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Saxe-Lauenburg parentage context only; no partitions, personal unions with Hanover/Denmark/Prussia, North German Confederation, German Empire, Prussian district conversion, or Bismarck honorific title claims imported.
 ---
 
 source_id: src-wikidata-q26167
@@ -699,6 +963,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-anhalt-dessau
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Anhalt-Dessau
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Anhalt-Dessau article identifies the principality/duchy as a state of the Holy Roman Empire until 1806 and a state of the German Confederation from 1815.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Anhalt-Dessau parentage context only; no Anhalt-Zerbst partition, Anhalt-Plotzkau, ducal elevation, merger with Anhalt-Kothen, Ascanian genealogy, or re-unified Duchy of Anhalt successor claims imported.
+---
 
 source_id: src-wikidata-q264970
 source_kind: wikidata
@@ -711,6 +987,18 @@ notes: Anhalt-Kothen (Q264970).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-anhalt-kothen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Anhalt-K%C3%B6then
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Anhalt-Kothen article identifies the principality/duchy as a state of the Holy Roman Empire until 1806 and a member of the German Confederation from 1815.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Anhalt-Kothen parentage context only; no Anhalt-Zerbst partition, Anhalt-Pless, ducal elevation, line extinction, merger with Anhalt-Dessau, Ascanian genealogy, or re-unified Duchy of Anhalt successor claims imported.
 ---
 
 source_id: src-wikidata-q3181749
@@ -737,6 +1025,18 @@ notes: Archduchy of Austria (Q699964).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-archduchy-austria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Archduchy_of_Austria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Archduchy of Austria article; used only for bounded text parentage context that identifies the archduchy as a state of the Holy Roman Empire and records the empire's 1806 dissolution.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Archduchy of Austria -> Holy Roman Empire parentage context only; no Habsburg crown-land, Austrian Empire, Austria-Hungary, hereditary lands, imperial office, or post-1806 successor claims imported.
 ---
 
 source_id: src-wikidata-q131964
@@ -777,6 +1077,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-bavaria-munich
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Bavaria-Munich
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Bavaria-Munich article; used only for bounded text parentage context that identifies the duchy as a Holy Roman Empire constituent state from 1392 to 1505.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Bavaria-Munich -> Holy Roman Empire parentage context only; no Bavaria-Landshut, Bavaria-Ingolstadt, Bavaria-Straubing, Dachau separation, Wittelsbach dynastic conflict, or post-1505 reunified Bavaria claims imported.
+---
 
 source_id: src-wikidata-q321371
 source_kind: wikidata
@@ -803,6 +1115,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-brunswick-luneburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Brunswick-L%C3%BCneburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Brunswick-Luneburg article identifies the duchy as an imperial principality of the Holy Roman Empire from 1235 until 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Brunswick-Luneburg HRE parentage context only; no Welf allod origin, partitions, successor Hanover or Brunswick states, Electoral Rhenish Circle, or modern titular usage imported.
+---
 
 source_id: src-wikidata-q830084
 source_kind: wikidata
@@ -815,6 +1139,18 @@ notes: Brunswick-Wolfenbuttel (Q830084).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-brunswick-wolfenbuttel
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Principality_of_Brunswick-Wolfenb%C3%BCttel
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Principality of Brunswick-Wolfenbuttel article identifies the principality as a subdivision of Brunswick-Luneburg ruled by Welf lines until dissolution of the Holy Roman Empire in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Brunswick-Wolfenbuttel HRE parentage context only; no Welf partitions, Saxon/Lower Saxon Circle, Grubenhagen/Gottingen/Calenberg details, Westphalian annexation, or Duchy of Brunswick successor claims imported.
 ---
 
 source_id: src-wikidata-q568473
@@ -829,6 +1165,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-burgraviate-nuremberg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Burgraviate_of_Nuremberg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Burgraviate of Nuremberg article; used only for bounded text parentage context identifying the burgraviate as an imperial office/territory in the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as bounded text support for Burgraviate of Nuremberg -> Holy Roman Empire parentage context only; no Hohenzollern succession, Brandenburg-Ansbach, Brandenburg-Kulmbach, or later Franconian claims imported.
+---
 
 source_id: src-wikidata-q157109
 source_kind: wikidata
@@ -841,6 +1189,18 @@ notes: Burgundian Netherlands (Q157109).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 001 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-burgundian-netherlands
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Burgundian_Netherlands
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Burgundian Netherlands article identifies a 1384-1482 personal union of Imperial and French fiefs, with County of Flanders, County of Holland, and County of Namur among predecessor/acquired Low Countries titles.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded child-to-Burgundian-Netherlands parentage replacement packets only; no Habsburg Netherlands, French reversion, detailed provincial estates, or post-1482 claims imported.
 ---
 
 source_id: src-wikidata-q12544
@@ -961,6 +1321,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-county-burgundy
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Burgundy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Burgundy article identifies the Free County of Burgundy as a medieval and early modern county of the Holy Roman Empire from 982 to 1678.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Burgundy HRE parentage context only; no Upper Burgundy origin, Kingdom of Arles incorporation detail, personal unions, Burgundian Circle, Habsburg transfer, French cession, or Franche-Comte province claims imported.
+---
 
 source_id: src-wikidata-q1541699
 source_kind: wikidata
@@ -987,6 +1359,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-county-flanders
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Flanders
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Flanders article; used only for bounded text parentage context that identifies Flanders as a French and Imperial fiefdom and places it in relation to the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for County of Flanders -> Holy Roman Empire parentage context only; article is under-cited, so no French fief split, Burgundian, Habsburg, Spanish, Austrian, Dutch, French annexation, or post-1797 claims imported.
+---
 
 source_id: src-wikidata-q675363
 source_kind: wikidata
@@ -1012,6 +1396,18 @@ notes: County of Holland (Q762943).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-county-holland
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Holland
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Holland article; used only for textual parentage context that identifies Holland as a state of the Holy Roman Empire during the accepted 1091-1795 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Holland parentage context only; no Lower Lorraine predecessor, Burgundian Netherlands, Habsburg Netherlands, Dutch Republic, Batavian Revolution, county administration, or post-1795 claims imported.
 ---
 
 source_id: src-wikidata-q5177890
@@ -1077,6 +1473,18 @@ notes: County of Nassau (Q12817455).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from 500-source candidate batch 002 for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-county-nassau
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/County_of_Nassau
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: County of Nassau article identifies Nassau as a German state within the Holy Roman Empire until declaration of the Duchy of Nassau in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed County of Nassau HRE parentage context only; no countly-title recognition dispute, internal partitions, princely rank, Confederation of the Rhine, Duchy of Nassau successor, or dynastic branch claims imported.
 ---
 
 source_id: src-wikidata-q706553
@@ -1353,6 +1761,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-berg-hre
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Berg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Berg article; used only for bounded text parentage context that identifies Berg as a member state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Berg -> Holy Roman Empire parentage context only; article is under-cited, so no Mark, Julich, Cleves, Palatinate-Neuburg, Grand Duchy of Berg, or succession claims imported.
+---
 
 source_id: src-wikidata-q2162698
 source_kind: wikidata
@@ -1379,6 +1799,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-brabant
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Brabant
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Brabant article identifies Brabant as a state of the Holy Roman Empire established in 1183.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Brabant HRE parentage context only; no Landgraviate predecessor, Burgundian Netherlands, Habsburg Netherlands, Southern Netherlands, Dutch Revolt partition, or French departmental successor claims imported.
+---
 
 source_id: src-wikidata-q694594
 source_kind: wikidata
@@ -1391,6 +1823,18 @@ notes: Duchy of Bremen and Verden (Q694594).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-bremen-verden
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Bremen-Verden
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Bremen-Verden article identifies the duchies as immediate fiefs / states of the Holy Roman Empire from 1648 until HRE dissolution.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Bremen-Verden HRE parentage context only; no prince-bishopric predecessor, Swedish or Hanoverian personal union, French/Westphalian administration, restoration to Hanover, or post-1813 claims imported.
 ---
 
 source_id: src-wikidata-q71747
@@ -1443,6 +1887,18 @@ notes: Duchy of Carniola (Q2360973).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-carniola
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Carniola
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Carniola article identifies Carniola as an imperial estate / state of the Holy Roman Empire from its 1364 ducal establishment until 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Carniola HRE parentage context only; no March of Carniola predecessor, Inner Austria, Austrian Circle, Illyrian Provinces, Austrian Empire, Austria-Hungary, or Slovenian successor claims imported.
 ---
 
 source_id: src-wikidata-q641138
@@ -1535,6 +1991,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-guelders
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Guelders
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Guelders article; used only for bounded text parentage context that identifies Guelders as a historical duchy, previously county, of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Guelders -> Holy Roman Empire parentage context only; article is under-cited, so no Lower Lorraine, Jülich, Burgundy, Habsburg, Seventeen Provinces, Dutch Republic, Batavian Republic, or province claims imported.
+---
 
 source_id: src-wikidata-q836937
 source_kind: wikidata
@@ -1574,6 +2042,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-lorraine
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Lorraine
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Lorraine article; used only for textual parentage context that identifies Lorraine as part of East Francia from 959 to 962 and a state of the Holy Roman Empire from 962 until 1766.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Lorraine parentage context only; no Lotharingian predecessor detail, Upper/Lower division mechanics, Burgundian or French occupations, ducal succession, Barrois mouvant, or annexation administration imported.
+---
 
 source_id: src-wikidata-q2719360
 source_kind: wikidata
@@ -1587,6 +2067,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-luxembourg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Luxembourg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Luxembourg article; used only for bounded text parentage context that identifies the duchy as a Holy Roman Empire state with 1353/1354 elevation and later Low Countries affiliations.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Luxembourg -> Holy Roman Empire parentage context only; article is under-cited, so no Burgundian, Habsburg, Spanish Netherlands, Austrian Netherlands, French occupation, or grand-duchy successor claims imported.
+---
 
 source_id: src-wikidata-q766501
 source_kind: wikidata
@@ -1599,6 +2091,18 @@ notes: Duchy of Mantua (Q766501).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-mantua
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Mantua
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Mantua article; used only for textual parentage context that identifies Mantua's elevation to a duchy by Holy Roman Emperor Charles V in 1530 and its 1797 end.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Mantua parentage context only; no Gonzaga genealogy, Montferrat acquisition, succession war, Habsburg partition, Milan annexation, artistic history, or post-1797 claims imported.
 ---
 
 source_id: src-wikidata-q933592
@@ -1626,6 +2130,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-mecklenburg-schwerin
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Mecklenburg-Schwerin
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Mecklenburg-Schwerin article; used only for bounded text parentage context identifying Mecklenburg-Schwerin as a state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Mecklenburg-Schwerin -> Holy Roman Empire parentage context only; article has source-quality warnings, so no Confederation of the Rhine, Grand Duchy, Mecklenburg partition, Swedish/Brandenburg dispute, Lower Saxon Circle, or post-1815 claims imported.
+---
 
 source_id: src-wikidata-q153529
 source_kind: wikidata
@@ -1651,6 +2167,18 @@ notes: Duchy of Mirandola (Q1615455).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-mirandola
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Mirandola
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Mirandola article; used only for bounded text parentage context identifying Mirandola's imperial suzerainty and predecessor relation to the Kingdom of Italy in the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Mirandola -> Holy Roman Empire parentage context only; article is under-cited, so no Pico genealogy, bishop of Reggio fief details, imperial city/principality elevation, Modena sale, or post-1711 claims imported.
 ---
 
 source_id: src-wikidata-q842091
@@ -1730,6 +2258,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-pomerania
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Pomerania
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Pomerania article; used only for textual parentage context that identifies Pomerania's bounded vassalage to the Holy Roman Empire within the 1121-1637 title span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Pomerania parentage context only; no Polish, Saxon, Danish, or Brandenburg vassalage segmentation, Griffin genealogy, internal partitions, Swedish occupation, or post-1637 partition claims imported.
+---
 
 source_id: src-wikidata-q153091
 source_kind: wikidata
@@ -1769,6 +2309,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-savoy
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Savoy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Savoy article; used only for textual parentage context that identifies Savoy as an Imperial fief/subject of the Holy Roman Empire after its 1416 elevation to duchy and before French Revolutionary annexation.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Savoy parentage context only; no County of Savoy predecessor, French occupations, Sardinian kingdom transition, Upper Rhenish Circle detail, Nice/Piedmont/Geneva territorial detail, or post-1792 restoration claims imported.
+---
 
 source_id: src-wikidata-q164092
 source_kind: wikidata
@@ -1781,6 +2333,18 @@ notes: Duchy of Saxony (Q164092).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-saxony
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Saxony
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Saxony article; used only for textual parentage context that identifies Saxony as belonging to East Francia after the Treaty of Verdun and as later part of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Duchy of Saxony parentage context only; no Old Saxony prehistory, ducal succession detail, Liudolfing/Ottonian dynastic claims, Ascanian partition detail, electorate transfer, or post-1296 claims imported.
 ---
 
 source_id: src-wikidata-q568638
@@ -1807,6 +2371,18 @@ notes: Duchy of Swabia (Q693980).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-duchy-swabia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Swabia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Swabia article; used only for bounded text parentage context identifying Swabia as a Holy Roman Empire state from 962.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Duchy of Swabia -> Holy Roman Empire parentage context only; article is under-cited, so no East Francia, Alamannia, Staufer, Habsburg revival, Swabian Circle, or successor claims imported.
 ---
 
 source_id: src-wikidata-q671899
@@ -1860,6 +2436,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-duchy-wurttemberg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_W%C3%BCrttemberg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Wurttemberg article; used only for bounded text parentage context identifying Wurttemberg as a Holy Roman Empire state from 1495 to 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Duchy of Wurttemberg -> Holy Roman Empire parentage context only; no County of Wurttemberg, Electorate/Kingdom of Wurttemberg, French wars, Reformation, or post-1803 successor claims imported.
+---
 
 source_id: src-wikidata-q1252942
 source_kind: wikidata
@@ -1912,6 +2500,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-electoral-palatinate
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electoral_Palatinate
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electoral Palatinate article; used only for textual parentage context that identifies the Palatinate as an Imperial Estate/state of the Holy Roman Empire from 1085 until annexation in 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electoral Palatinate parentage context only; no Rhenish Franconia predecessor, elector dignity development, Bohemian crown episode, Bavarian personal union, religious history, French occupation, or post-1803 claims imported.
+---
 
 source_id: src-wikidata-q637238
 source_kind: wikidata
@@ -1924,6 +2524,18 @@ notes: Electorate of Baden (Q637238).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-electorate-baden
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Baden
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Baden article identifies Baden as a State of the Holy Roman Empire from 1803 to 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Baden parentage context only; no margraviate predecessor, Napoleon/Imperial Diet mechanics, ruler biography, territorial gains, or Grand Duchy successor claims imported.
 ---
 
 source_id: src-wikidata-q256961
@@ -1938,6 +2550,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-electorate-bavaria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Bavaria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Bavaria article; used only for textual parentage context that identifies Bavaria as an electorate of the Holy Roman Empire from 1623 until its succession by the Kingdom of Bavaria in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Bavaria parentage context only; no Duchy of Bavaria predecessor detail, Palatinate personal union, imperial ban, circle administration, Tyrol/Vorarlberg acquisition, or kingdom transition imported.
+---
 
 source_id: src-wikidata-q7904317
 source_kind: wikidata
@@ -1950,6 +2574,18 @@ notes: Electorate of Cologne (Q7904317).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-electorate-cologne
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Cologne
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Cologne article; used only for textual parentage context that identifies Cologne as an ecclesiastical principality/electorate of the Holy Roman Empire from the tenth century until 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Cologne parentage context only; no archdiocese spiritual geography, Free Imperial City of Cologne, Arch-chancellor detail, French occupation, secularization mechanics, or successor claims imported.
 ---
 
 source_id: src-wikidata-q706018
@@ -1964,6 +2600,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-electorate-hanover
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Hanover
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Hanover article; used only for textual parentage context that identifies Hanover as a state/electorate of the Holy Roman Empire from 1692 until the empire's dissolution in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Hanover parentage context only; no Brunswick-Luneburg predecessor detail, British personal union, Bremen-Verden acquisition, French/Westphalian occupation, or Kingdom of Hanover transition imported.
+---
 
 source_id: src-wikidata-q284667
 source_kind: wikidata
@@ -1976,6 +2624,18 @@ notes: Electorate of Mainz (Q284667).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-electorate-mainz
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Mainz
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Mainz article; used only for textual parentage context that identifies Mainz as a state of the Holy Roman Empire until German mediatisation in 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Mainz parentage context only; no bishopric antiquity, archchancellor role, church hierarchy, Free City of Mainz, Republic of Mainz, secularization transfers, or successor claims imported.
 ---
 
 source_id: src-wikidata-q156199
@@ -1990,6 +2650,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-electorate-saxony
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_Saxony
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Saxony article; used only for textual parentage context that identifies Saxony as an electorate/state of the Holy Roman Empire from 1356 until its elevation to kingdom in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Saxony parentage context only; no Saxe-Wittenberg predecessor detail, Meissen/Thuringia merger, Wittenberg capitulation, Lusatia acquisition, Polish-Lithuanian personal union, or kingdom transition imported.
+---
 
 source_id: src-wikidata-q2172530
 source_kind: wikidata
@@ -2002,6 +2674,18 @@ notes: Electorate of Wurttemberg (Q2172530).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-electorate-wurttemberg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Electorate_of_W%C3%BCrttemberg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Electorate of Wurttemberg article identifies Wurttemberg as a short-lived state of the Holy Roman Empire and Electorate from 1803 to 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Electorate of Wurttemberg parentage context only; no duchy predecessor, New Wurttemberg administration, mediatisation details, Peace of Pressburg acquisitions, Confederation of the Rhine, or kingdom successor claims imported.
 ---
 
 source_id: src-wikidata-q1333032
@@ -2133,6 +2817,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-free-imperial-city-aachen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Free_Imperial_City_of_Aachen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Free Imperial City of Aachen article; used only for bounded text parentage context identifying Aachen as a Free Imperial City and state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Free Imperial City of Aachen -> Holy Roman Empire parentage context only; no coronation, pilgrimage, French annexation, Prussian, Lower Rhenish-Westphalian Circle, or post-1801 claims imported.
+---
 
 source_id: src-wikidata-q179023
 source_kind: wikidata
@@ -2250,6 +2946,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-hohenzollern-hechingen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Hohenzollern-Hechingen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Hohenzollern-Hechingen article identifies the principality as in the Holy Roman Empire and as a member state of the German Confederation from 1815 to 1850.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Hohenzollern-Hechingen parentage context only; no Confederation of the Rhine, 1848 constitution, Prussian occupation, sale to Prussia, Province of Hohenzollern, or dynastic claims imported.
+---
 
 source_id: src-wikidata-q157013
 source_kind: wikidata
@@ -2262,6 +2970,18 @@ notes: Hohenzollern-Sigmaringen (Q157013).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-hohenzollern-sigmaringen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Hohenzollern-Sigmaringen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Hohenzollern-Sigmaringen article identifies the principality as a state of the Holy Roman Empire from 1576 to 1806 and a state of the German Confederation from 1815 to 1850.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Hohenzollern-Sigmaringen parentage context only; no Confederation of the Rhine, abdication, incorporation into Prussia, Province of Hohenzollern, territorial list, or dynastic succession claims imported.
 ---
 
 source_id: src-wikidata-q12548
@@ -2470,6 +3190,18 @@ notes: Kingdom of Bohemia (Q42585).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-kingdom-bohemia
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Bohemia
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Bohemia article; used only for bounded text parentage context that identifies Bohemia as a state of the Holy Roman Empire from 1198 to 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Kingdom of Bohemia -> Holy Roman Empire parentage context only; article has quality warnings, so no Bohemian Crown, elector, Habsburg monarchy, Austrian Empire, Austria-Hungary, crown-land, or Czechoslovak successor claims imported.
 ---
 
 source_id: src-wikidata-q2980623
@@ -2951,6 +3683,18 @@ notes: Kingdom of Italy (Q838931).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-kingdom-italy-hre
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Italy_%28Holy_Roman_Empire%29
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Italy (Holy Roman Empire) article; used only for bounded text parentage context identifying the Kingdom of Italy as a constituent kingdom of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Kingdom of Italy -> Holy Roman Empire parentage context only; no Middle Francia predecessor, Treaty of Prum, arch-chancellor, imperial coronation, Treaty of Luneville, or Napoleonic successor claims imported.
 ---
 
 source_id: src-wikidata-q3755547
@@ -3537,6 +4281,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-landgraviate-brabant
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Landgraviate_of_Brabant
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Landgraviate of Brabant article; used only for bounded text parentage context identifying Brabant as an imperial fiefdom in the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Landgraviate of Brabant -> Holy Roman Empire parentage context only; article lacks inline citations, so no Lower Lotharingia, Louvain/Brussels merger, Duchy of Brabant successor, or post-medieval provincial claims imported.
+---
 
 source_id: src-wikidata-q695322
 source_kind: wikidata
@@ -3549,6 +4305,18 @@ notes: Landgraviate of Hesse (Q695322).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-landgraviate-hesse
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Landgraviate of Hesse article; used only for bounded text parentage context that identifies Hesse as a principality/state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Landgraviate of Hesse -> Holy Roman Empire parentage context only; article is under-cited, so no Thuringia predecessor, partition, Upper/Lower Hesse, Reformation, or successor landgraviate claims imported.
 ---
 
 source_id: src-wikidata-q693551
@@ -3563,6 +4331,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-landgraviate-hesse-darmstadt
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse-Darmstadt
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Landgraviate of Hesse-Darmstadt article; used only for bounded text parentage context that identifies Hesse-Darmstadt as a Holy Roman Empire state from 1567 to 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Landgraviate of Hesse-Darmstadt -> Holy Roman Empire parentage context only; no Grand Duchy of Hesse, Katzenelnbogen, Hessian War, or successor-state claims imported.
+---
 
 source_id: src-wikidata-q168651
 source_kind: wikidata
@@ -3576,6 +4356,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-landgraviate-hesse-kassel
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Landgraviate_of_Hesse-Kassel
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Landgraviate of Hesse-Kassel article; used only for bounded text parentage context that identifies Hesse-Kassel as a state within the Holy Roman Empire from 1567 to 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Landgraviate of Hesse-Kassel -> Holy Roman Empire parentage context only; no Electorate of Hesse, Swedish royal personal union, Hesse-Cassel spelling variants, or successor-state claims imported.
+---
 
 source_id: src-wikidata-q673837
 source_kind: wikidata
@@ -3588,6 +4380,18 @@ notes: Landgraviate of Hesse-Marburg (Q673837).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-hesse-marburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Hesse-Marburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Hesse-Marburg article; used only for bounded text parentage context that identifies Hesse-Marburg as an independent principality within the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Hesse-Marburg -> Holy Roman Empire parentage context only; article is unsourced, so no split/reunion, succession dispute, Calvinist/Lutheran, Hessian War, or post-1604 territorial claims imported.
 ---
 
 source_id: src-wikidata-q58942549
@@ -3706,6 +4510,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-margraviate-brandenburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Margraviate_of_Brandenburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Margraviate of Brandenburg article; used only for textual parentage context that identifies Brandenburg as a state/principality of the Holy Roman Empire from 1157 until the empire's dissolution in 1806.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Margraviate of Brandenburg parentage context only; no Bohemian Crown period, electoral dignity, Brandenburg-Prussia union, Prussian kingdom treatment, Hohenzollern succession, or post-1806 province claims imported.
+---
 
 source_id: src-wikidata-q170180
 source_kind: wikidata
@@ -3718,6 +4534,18 @@ notes: Margraviate of Meissen (Q170180).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-margraviate-meissen
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Margravate_of_Meissen
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Margraviate of Meissen article; used only for textual parentage context that identifies Meissen as a march/frontier province of the Holy Roman Empire from its 965 creation until the 1423 Saxon electorate transition.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for bounded text-backed Margraviate of Meissen parentage context only; no Sorbian March predecessor, Wettin dynastic history, Polish or Bohemian temporary occupation, Thuringian acquisition, later Saxon integration, or post-1423 claims imported.
 ---
 
 source_id: src-wikidata-q2670751
@@ -3744,6 +4572,18 @@ notes: Mecklenburg-Gustrow (Q552822).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-mecklenburg-gustrow
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Mecklenburg-G%C3%BCstrow
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Mecklenburg-Gustrow article; used only for bounded text parentage context identifying the duchy as a state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Mecklenburg-Gustrow -> Holy Roman Empire parentage context only; article lacks inline citations, so no Mecklenburg partition, Wallenstein, Ratzeburg, Schwerin succession, or ducal-line claims imported.
 ---
 
 source_id: src-wikidata-q2273304
@@ -3862,6 +4702,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-palatinate-sulzbach
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Palatinate-Sulzbach
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Palatinate-Sulzbach article; used only for bounded text parentage context identifying Palatinate-Sulzbach as two states of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Palatinate-Sulzbach -> Holy Roman Empire parentage context only; article is unsourced/notability-flagged, so no Zweibrucken, Neuburg, Electoral Palatinate, branch genealogy, or two-state split detail imported.
+---
 
 source_id: src-wikidata-q701983
 source_kind: wikidata
@@ -3940,6 +4792,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-prince-archbishopric-salzburg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Archbishopric_of_Salzburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Archbishopric of Salzburg article; used only for bounded text parentage context identifying Salzburg as an ecclesiastic principality in the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Salzburg -> Holy Roman Empire parentage context only; article is under-cited, so no Bavarian Circle, secularization, electorate, Austrian annexation, or archdiocesan claims imported.
+---
 
 source_id: src-wikidata-q173863
 source_kind: wikidata
@@ -3992,6 +4856,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-prince-bishopric-liege
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Li%C3%A8ge
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Liege article; used only for bounded text parentage context identifying Liege as an ecclesiastic state of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Liege -> Holy Roman Empire parentage context only; article is under-cited, so no diocese history, Revolution, French occupation, personal unions, or post-1795 claims imported.
+---
 
 source_id: src-wikidata-q650645
 source_kind: wikidata
@@ -4004,6 +4880,18 @@ notes: Prince-Bishopric of Minden (Q650645).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-prince-bishopric-minden
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Minden
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Minden article; used only for bounded text parentage context identifying Minden as an ecclesiastical principality of the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Minden -> Holy Roman Empire parentage context only; no diocese, Reichsfreiheit detail, Brandenburg-Prussia, Principality of Minden, or Westphalian claims imported.
 ---
 
 source_id: src-wikidata-q3324486
@@ -4031,6 +4919,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-prince-bishopric-munster
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_M%C3%BCnster
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Munster article; used only for bounded text parentage context identifying Munster as an ecclesiastical principality in the Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Munster -> Holy Roman Empire parentage context only; no diocese, Cologne/Paderborn/Osnabruck/Hildesheim/Liege personal unions, Prussian secularization, Arenberg, Oldenburg, or Salm claims imported.
+---
 
 source_id: src-wikidata-q477035
 source_kind: wikidata
@@ -4043,6 +4943,18 @@ notes: Prince-Bishopric of Osnabruck (Q477035).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-prince-bishopric-osnabruck
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Osnabr%C3%BCck
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Osnabruck article; used only for bounded text parentage context identifying Osnabruck as an ecclesiastical principality of the Holy Roman Empire from 1225 to 1803.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Osnabruck -> Holy Roman Empire parentage context only; article is under-cited, so no diocese, Hanover secularization, alternating confessional rule, or post-1803 claims imported.
 ---
 
 source_id: src-wikidata-q649192
@@ -4057,6 +4969,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-prince-bishopric-paderborn
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Paderborn
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Paderborn article; used only for bounded text parentage context identifying Paderborn as an ecclesiastical principality of the Holy Roman Empire from 1281 to 1802.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Paderborn -> Holy Roman Empire parentage context only; no diocese, Cologne claims, Prussian secularization, Kingdom of Westphalia, or archdiocesan claims imported.
+---
 
 source_id: src-wikidata-q771332
 source_kind: wikidata
@@ -4069,6 +4993,18 @@ notes: Prince-Bishopric of Strasbourg (Q771332).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-prince-bishopric-strasbourg
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Strassburg
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Strasbourg article; used only for bounded text parentage context identifying Strasbourg's imperial immediacy and Holy Roman Empire recognition.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as bounded text support for Strasbourg -> Holy Roman Empire parentage context only; no diocese, Alsace, French annexation, Baden mediatisation, or right-bank/left-bank split claims imported.
 ---
 
 source_id: src-wikidata-q328001
@@ -4109,6 +5045,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
 ---
+source_id: src-wikipedia-prince-bishopric-utrecht
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Utrecht
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Utrecht article; used only for bounded text parentage context identifying Utrecht as a Holy Roman Empire state from 1024 to 1528.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted as weak bounded text support for Utrecht -> Holy Roman Empire parentage context only; article is under-cited, so no diocese, Lower Lotharingia, Nedersticht/Oversticht, Habsburg transfer, or post-1528 claims imported.
+---
 
 source_id: src-wikidata-q17015016
 source_kind: wikidata
@@ -4121,6 +5069,18 @@ notes: Prince-Bishopric of Verdun (Q17015016).
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted from remaining 500-source candidate queue for minimal structured-claim import: label, inception, and dissolution only.
+---
+source_id: src-wikipedia-prince-bishopric-verdun
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Prince-Bishopric_of_Verdun
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Prince-Bishopric of Verdun article; used only for bounded text parentage context identifying Verdun as a Holy Roman Empire state.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted for Verdun -> Holy Roman Empire parentage context only; no County of Verdun, Three Bishoprics, France annexation, Peace of Westphalia, or diocesan claims imported.
 ---
 
 source_id: src-wikidata-q506218
@@ -5617,3 +6577,29 @@ notes: Kingdom of the Burgundians article identifies the kingdom as a late Weste
 review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded 443-476 Western Roman parentage context; no Burgundian royal genealogy, battle narrative, territorial geometry, legal-code history, Frankish conquest, or later Burgundy claims imported.
+---
+# Reviewed Kingdom of Italy replacement parentage context.
+
+source_id: src-wikipedia-march-turin
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/March_of_Turin
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: March of Turin article identifies the march as an Italian march formed in the Kingdom of Italy / Holy Roman Empire context.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for replacing the existing direct HRE parentage with bounded Kingdom of Italy parentage for 964-1091; no rulers, family inheritance, territorial geometry, or later Savoy continuity imported.
+---
+source_id: src-wikipedia-march-tuscany
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/March_of_Tuscany
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: March of Tuscany article identifies the march as a march of the Kingdom of Italy and Holy Roman Empire.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for replacing the existing direct HRE parentage with bounded Kingdom of Italy parentage for 962-1197; no rulers, family inheritance, territorial geometry, or Tuscan regional continuity imported.

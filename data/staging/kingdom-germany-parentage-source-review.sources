@@ -1,0 +1,35 @@
+source_id: src-wikidata-q175211
+source_kind: wikidata
+source_url: https://www.wikidata.org/wiki/Q175211
+license: Wikidata structured data in main namespace is CC0; page text is CC BY-SA
+retrieved_on: 2026-06-22
+allowed_use: structured_claims
+attribution: Wikidata contributors
+notes: Kingdom of Germany (Q175211). Staging source only for candidate review; not accepted until child-level replacement evidence is ready.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Staging review for Kingdom of Germany candidate packet only; do not promote without child-level replacement sources.
+---
+source_id: src-wikipedia-kingdom-germany
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Kingdom_of_Germany
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Kingdom of Germany article; used for realm-level context only while candidate packet waits for child-level replacement evidence.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Staging review only; accepted fixture promotion requires child-level source custody for each replacement edge.
+---
+source_id: src-wikipedia-duchy-bavaria
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Duchy_of_Bavaria
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Duchy of Bavaria article; used for candidate review of Bavaria under East Francia / Kingdom of Germany before 962 and HRE state status from 962.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Staging review only; not sufficient by itself to replace direct HRE parentage for the full 962-1805 span.

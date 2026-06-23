@@ -1,12 +1,12 @@
 # DUCHY Parentage Rank Skip Candidate Report
 
-sources: 438
-facts: 1321
+sources: 520
+facts: 1330
 titles: 349
-rank_skip_rows: 222
+rank_skip_rows: 217
 
-rows_with_any_candidate: 217
-rows_with_bridge_candidate: 162
+rows_with_any_candidate: 212
+rows_with_bridge_candidate: 157
 
 ## Interpretation
 
@@ -402,7 +402,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1105..1440
 - candidate_count: 75
-- bridge_candidate_count: 50
+- bridge_candidate_count: 49
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -557,7 +557,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 982..1678
 - candidate_count: 105
-- bridge_candidate_count: 71
+- bridge_candidate_count: 69
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -604,34 +604,6 @@ No accepted overlapping candidate titles found.
 
 52 additional candidates omitted from this row.
 
-### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
-
-- child_id: title-q157070
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1797
-- candidate_count: 111
-- bridge_candidate_count: 78
-
-| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
-|---|---|---|---:|---|
-| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 836 | fact-q47261-parent-q12548 |
-| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 836 | fact-q7904317-parent-q12548 |
-| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 836 | fact-q284667-parent-q12548 |
-| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 836 | fact-q173863-parent-q12548 |
-| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 816 | fact-q771332-parent-q12548 |
-| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 811 | fact-q158835-parent-q12548 |
-| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 805 | fact-q155019-parent-q12548 |
-| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 792 | fact-q836937-parent-q12548 |
-| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 771 | fact-q1231403-parent-q12548 |
-| Prince-Bishopric of Basel (title-q319586) | Duchy | 1032..1803 | 766 | fact-q319586-parent-q12548 |
-| Prince-Bishopric of Toul (title-q328001) | Duchy | 1048..1801 | 750 | fact-q328001-parent-q12548 |
-| Electoral Palatinate (title-q22880) | Duchy | 1085..1803 | 713 | fact-q22880-parent-q12548 |
-
-99 additional candidates omitted from this row.
-
 ### fact-q675363-parent-q12548 | County of Geneva -> Holy Roman Empire
 
 - child_id: title-q675363
@@ -641,7 +613,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1032..1401
 - candidate_count: 75
-- bridge_candidate_count: 50
+- bridge_candidate_count: 48
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -685,34 +657,6 @@ No accepted overlapping candidate titles found.
 | Duchy of Burgundy (title-q4712) | Duchy | 880..1477 | 8 |  |
 | Duchy of Alsace (title-q95950649) | Duchy | 700..800 | 1 |  |
 
-### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
-
-- child_id: title-q762943
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1795
-- candidate_count: 111
-- bridge_candidate_count: 78
-
-| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
-|---|---|---|---:|---|
-| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 834 | fact-q47261-parent-q12548 |
-| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 834 | fact-q7904317-parent-q12548 |
-| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 834 | fact-q284667-parent-q12548 |
-| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 834 | fact-q173863-parent-q12548 |
-| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 814 | fact-q771332-parent-q12548 |
-| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 811 | fact-q158835-parent-q12548 |
-| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 805 | fact-q155019-parent-q12548 |
-| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 792 | fact-q836937-parent-q12548 |
-| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 769 | fact-q1231403-parent-q12548 |
-| Prince-Bishopric of Basel (title-q319586) | Duchy | 1032..1803 | 764 | fact-q319586-parent-q12548 |
-| Prince-Bishopric of Toul (title-q328001) | Duchy | 1048..1801 | 748 | fact-q328001-parent-q12548 |
-| Electoral Palatinate (title-q22880) | Duchy | 1085..1803 | 711 | fact-q22880-parent-q12548 |
-
-99 additional candidates omitted from this row.
-
 ### fact-q921473-parent-q70972 | County of La Marche -> Kingdom of France
 
 - child_id: title-q921473
@@ -750,7 +694,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 963..1354
 - candidate_count: 65
-- bridge_candidate_count: 42
+- bridge_candidate_count: 40
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -806,7 +750,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1042..1793
 - candidate_count: 110
-- bridge_candidate_count: 78
+- bridge_candidate_count: 76
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -825,34 +769,6 @@ No accepted overlapping candidate titles found.
 
 98 additional candidates omitted from this row.
 
-### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
-
-- child_id: title-q599613
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 981..1795
-- candidate_count: 111
-- bridge_candidate_count: 78
-
-| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
-|---|---|---|---:|---|
-| Duchy of Bavaria (title-q47261) | Duchy | 907..1805 | 815 | fact-q47261-parent-q12548 |
-| Electorate of Cologne (title-q7904317) | Duchy | 953..1803 | 815 | fact-q7904317-parent-q12548 |
-| Electorate of Mainz (title-q284667) | Duchy | 780..1803 | 815 | fact-q284667-parent-q12548 |
-| Prince-Bishopric of Augsburg (title-q173863) | Duchy | 888..1803 | 815 | fact-q173863-parent-q12548 |
-| Prince-Bishopric of Strasbourg (title-q771332) | Duchy | 982..1803 | 814 | fact-q771332-parent-q12548 |
-| Prince-Bishopric of Liege (title-q158835) | Duchy | 985..1795 | 811 | fact-q158835-parent-q12548 |
-| Duchy of Julich (title-q836937) | Duchy | 1003..1794 | 792 | fact-q836937-parent-q12548 |
-| Duchy of Lorraine (title-q155019) | Duchy | 959..1766 | 786 | fact-q155019-parent-q12548 |
-| Prince-Bishopric of Trent (title-q1231403) | Duchy | 1027..1803 | 769 | fact-q1231403-parent-q12548 |
-| Prince-Bishopric of Basel (title-q319586) | Duchy | 1032..1803 | 764 | fact-q319586-parent-q12548 |
-| Prince-Bishopric of Toul (title-q328001) | Duchy | 1048..1801 | 748 | fact-q328001-parent-q12548 |
-| Electoral Palatinate (title-q22880) | Duchy | 1085..1803 | 711 | fact-q22880-parent-q12548 |
-
-99 additional candidates omitted from this row.
-
 ### fact-q12817455-parent-q12548 | County of Nassau -> Holy Roman Empire
 
 - child_id: title-q12817455
@@ -862,7 +778,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1160..1806
 - candidate_count: 114
-- bridge_candidate_count: 78
+- bridge_candidate_count: 77
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -1000,7 +916,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1140..1806
 - candidate_count: 115
-- bridge_candidate_count: 79
+- bridge_candidate_count: 78
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -1056,7 +972,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1003..1416
 - candidate_count: 77
-- bridge_candidate_count: 51
+- bridge_candidate_count: 49
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -1112,7 +1028,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1083..1495
 - candidate_count: 82
-- bridge_candidate_count: 56
+- bridge_candidate_count: 54
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -1756,7 +1672,7 @@ No accepted overlapping candidate titles found.
 - current_parent_rank: Empire
 - span: 1096..1795
 - candidate_count: 109
-- bridge_candidate_count: 77
+- bridge_candidate_count: 76
 
 | Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
 |---|---|---|---:|---|
@@ -4343,62 +4259,6 @@ No accepted overlapping candidate titles found.
 | Kingdom of Norway (title-q2196956) | Kingdom | 872..1397 | 229 |  |
 | Kingdom of Scotland (title-q230791) | Kingdom | 843..1707 | 229 |  |
 | Sweden (title-q34) | Kingdom | 900.. | 229 |  |
-
-23 additional candidates omitted from this row.
-
-### fact-q426488-parent-q12548 | March of Turin -> Holy Roman Empire
-
-- child_id: title-q426488
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 964..1091
-- candidate_count: 29
-- bridge_candidate_count: 1
-
-| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
-|---|---|---|---:|---|
-| Kingdom of Italy (title-q838931) | Kingdom | 961..1806 | 128 | fact-q838931-parent-q12548 |
-| Denmark (title-q35) | Kingdom | 800.. | 128 |  |
-| Judicate of Arborea (title-q1241847) | Kingdom | 800..1420 | 128 |  |
-| Kingdom of Breifne (title-q905131) | Kingdom | 700..1256 | 128 |  |
-| Kingdom of Croatia (title-q858841) | Kingdom | 925..1102 | 128 |  |
-| Kingdom of Deheubarth (title-q837136) | Kingdom | 920..1197 | 128 |  |
-| Kingdom of Dublin (title-q436994) | Kingdom | 839..1171 | 128 |  |
-| Kingdom of England (title-q179876) | Kingdom | 927..1707 | 128 |  |
-| Kingdom of Galicia (title-q303421) | Kingdom | 910..1833 | 128 |  |
-| Kingdom of Gwynedd (title-q816814) | Kingdom | 401..1216 | 128 |  |
-| Kingdom of Leon (title-q175276) | Kingdom | 910..1833 | 128 |  |
-| Kingdom of Norway (title-q2196956) | Kingdom | 872..1397 | 128 |  |
-
-17 additional candidates omitted from this row.
-
-### fact-q1867844-parent-q12548 | March of Tuscany -> Holy Roman Empire
-
-- child_id: title-q1867844
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1197
-- candidate_count: 35
-- bridge_candidate_count: 1
-
-| Candidate | Candidate Rank | Exists | Overlap Years | Bridge Fact |
-|---|---|---|---:|---|
-| Kingdom of Italy (title-q838931) | Kingdom | 961..1806 | 236 | fact-q838931-parent-q12548 |
-| Denmark (title-q35) | Kingdom | 800.. | 236 |  |
-| Judicate of Arborea (title-q1241847) | Kingdom | 800..1420 | 236 |  |
-| Kingdom of Breifne (title-q905131) | Kingdom | 700..1256 | 236 |  |
-| Kingdom of Deheubarth (title-q837136) | Kingdom | 920..1197 | 236 |  |
-| Kingdom of England (title-q179876) | Kingdom | 927..1707 | 236 |  |
-| Kingdom of Galicia (title-q303421) | Kingdom | 910..1833 | 236 |  |
-| Kingdom of Gwynedd (title-q816814) | Kingdom | 401..1216 | 236 |  |
-| Kingdom of Leon (title-q175276) | Kingdom | 910..1833 | 236 |  |
-| Kingdom of Norway (title-q2196956) | Kingdom | 872..1397 | 236 |  |
-| Kingdom of Scotland (title-q230791) | Kingdom | 843..1707 | 236 |  |
-| Sweden (title-q34) | Kingdom | 900.. | 236 |  |
 
 23 additional candidates omitted from this row.
 

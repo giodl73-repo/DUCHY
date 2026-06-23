@@ -1,7 +1,7 @@
 # DUCHY Parentage Rank Skip Shards
 
 source_tsv: data/staging/parentage-rank-skip-targets.tsv
-rank_skip_rows: 222
+rank_skip_rows: 220
 chunk_size: 25
 
 | Shard | Rows | High | Medium | Low |
@@ -14,4 +14,4 @@ chunk_size: 25
 | batch-006.tsv | 25 | 5 | 1 | 19 |
 | batch-007.tsv | 25 | 9 | 0 | 16 |
 | batch-008.tsv | 25 | 24 | 1 | 0 |
-| batch-009.tsv | 22 | 22 | 0 | 0 |
+| batch-009.tsv | 20 | 20 | 0 | 0 |

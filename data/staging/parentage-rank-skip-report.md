@@ -1,13 +1,13 @@
 # DUCHY Parentage Rank Skip Review Report
 
 source_tsv: data/staging/parentage-rank-skip-targets.tsv
-rank_skip_rows: 222
+rank_skip_rows: 217
 
 ## Priority Counts
 
 | Priority | Rows |
 |---|---:|
-| high_intermediate_parent_review | 160 |
+| high_intermediate_parent_review | 155 |
 | low_intermediate_parent_review | 39 |
 | medium_intermediate_parent_review | 23 |
 
@@ -16,19 +16,19 @@ rank_skip_rows: 222
 | Expected Parent Rank | Rows |
 |---|---:|
 | Crown | 39 |
-| Duchy | 35 |
-| Kingdom | 148 |
+| Duchy | 32 |
+| Kingdom | 146 |
 
 ## Rank Pair Counts
 
 | Current Edge | Rows |
 |---|---:|
 | County -> Crown | 2 |
-| County -> Empire | 19 |
+| County -> Empire | 16 |
 | County -> Kingdom | 13 |
 | County -> TheocraticState | 1 |
 | Duchy -> Crown | 8 |
-| Duchy -> Empire | 137 |
+| Duchy -> Empire | 135 |
 | Duchy -> TheocraticState | 2 |
 | Kingdom -> Empire | 39 |
 | Province -> Empire | 1 |
@@ -277,17 +277,6 @@ rank_skip_rows: 222
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
-### fact-q157070-parent-q12548 | County of Flanders -> Holy Roman Empire
-
-- child_id: title-q157070
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1797
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
 ### fact-q675363-parent-q12548 | County of Geneva -> Holy Roman Empire
 
 - child_id: title-q675363
@@ -307,17 +296,6 @@ rank_skip_rows: 222
 - current_parent_id: title-q31929
 - current_parent_rank: Empire
 - span: 800..887
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q762943-parent-q12548 | County of Holland -> Holy Roman Empire
-
-- child_id: title-q762943
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1795
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
@@ -362,17 +340,6 @@ rank_skip_rows: 222
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 1042..1793
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q599613-parent-q12548 | County of Namur -> Holy Roman Empire
-
-- child_id: title-q599613
-- child_rank: County
-- expected_parent_rank: Duchy
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 981..1795
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 
@@ -1935,28 +1902,6 @@ rank_skip_rows: 222
 - current_parent_id: title-q12548
 - current_parent_rank: Empire
 - span: 962..1190
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q426488-parent-q12548 | March of Turin -> Holy Roman Empire
-
-- child_id: title-q426488
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 964..1091
-- review_priority: high_intermediate_parent_review
-- notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
-
-### fact-q1867844-parent-q12548 | March of Tuscany -> Holy Roman Empire
-
-- child_id: title-q1867844
-- child_rank: Duchy
-- expected_parent_rank: Kingdom
-- current_parent_id: title-q12548
-- current_parent_rank: Empire
-- span: 962..1197
 - review_priority: high_intermediate_parent_review
 - notes: Find reviewed immediate parent layer for this span before treating the hierarchy as a complete tree.
 

@@ -1,9 +1,9 @@
 # DUCHY Parentage Coverage Report
 
-sources: 438
-facts: 1321
+sources: 520
+facts: 1330
 titles: 349
-parentage_facts: 274
+parentage_facts: 278
 titles_with_parentage: 229
 titles_without_parentage: 120
 
@@ -158,6 +158,9 @@ titles_without_parentage: 120
 - title-q154195 | Kingdom of Bavaria
   - fact-q154195-parent-q151624 | title-q151624 | 1815..1866
   - fact-q154195-parent-q43287 | title-q43287 | 1871..1918
+- title-q155019 | Duchy of Lorraine
+  - fact-q155019-parent-q12548 | title-q12548 | 962..1766
+  - fact-q155019-parent-q153080 | title-q153080 | 959..961
 - title-q155570 | Saxe-Weimar-Eisenach
   - fact-q155570-parent-q151624 | title-q151624 | 1815..1866
   - fact-q155570-parent-q150981 | title-q150981 | 1867..1870
@@ -181,6 +184,9 @@ titles_without_parentage: 120
 - title-q161215 | Grand Duchy of Mecklenburg-Strelitz
   - fact-q161215-parent-q151624 | title-q151624 | 1815..1866
   - fact-q161215-parent-q150981 | title-q150981 | 1867..1870
+- title-q164092 | Duchy of Saxony
+  - fact-q164092-parent-q12548 | title-q12548 | 962..1296
+  - fact-q164092-parent-q153080 | title-q153080 | 843..961
 - title-q16550783 | Duchy of Anhalt
   - fact-q16550783-parent-q151624 | title-q151624 | 1863..1866
   - fact-q16550783-parent-q150981 | title-q150981 | 1867..1870
@@ -225,9 +231,15 @@ titles_without_parentage: 120
   - fact-q42585-parent-q131964 | title-q131964 | 1804..1866
   - fact-q42585-parent-q28513 | title-q28513 | 1867..1918
   - fact-q42585-parent-q12548 | title-q12548 | 1198..1803
+- title-q47261 | Duchy of Bavaria
+  - fact-q47261-parent-q12548 | title-q12548 | 962..1805
+  - fact-q47261-parent-q153080 | title-q153080 | 907..961
 - title-q630163 | Schwarzburg-Sondershausen
   - fact-q630163-parent-q151624 | title-q151624 | 1815..1866
   - fact-q630163-parent-q12548 | title-q12548 | 1599..1806
+- title-q660393 | Lower Lotharingia
+  - fact-q660393-parent-q12548 | title-q12548 | 962..1190
+  - fact-q660393-parent-q153080 | title-q153080 | 959..961
 - title-q673865 | Hohenzollern-Hechingen
   - fact-q673865-parent-q12548 | title-q12548 | 1576..1806
   - fact-q673865-parent-q151624 | title-q151624 | 1815..1850

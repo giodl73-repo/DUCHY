@@ -192,6 +192,7 @@ The current crate implements the fact-gate layer:
 | `ContestedFactGroup` | Review packet for alternative contested fact claims. |
 | `ClaimKind` | `title_exists`, `area_title`, `parentage`, `holder`, `event`, `name`, or `rank`. |
 | `ConfidenceLabel` | `single_source`, `multi_source`, `contested`, and rejected non-fact labels. |
+| `supersedes_fact_id` | Optional fact pointer for reviewed replacement facts that refine an already accepted claim. |
 | `SourceCatalog::validate_fact` | Ensures facts cite reviewed sources with allowed use and coherent confidence. |
 | `validate_fact_records` | Validates a fact batch for duplicate IDs and conflicting accepted claims. |
 | `source_backed_parentage_from_facts` | Converts reviewed parentage facts into `ParentageSpan` records after title materialization. |
@@ -209,6 +210,13 @@ Fact-gate rules:
 - Duplicate source IDs and duplicate fact IDs are rejected.
 - Contradictory non-contested facts with the same subject, claim kind, and span
   are rejected.
+- Replacement facts using `supersedes_fact_id` must name an existing
+  non-contested fact with the same subject and claim kind. Non-parentage
+  replacements must use the same span. Parentage replacements may use either
+  the same span or a narrower span contained by the superseded fact.
+- Superseded facts remain auditable in accepted fixtures. Parentage
+  materialization excludes fully replaced spans and keeps uncovered residual
+  spans from partially superseded parentage facts.
 - Materialization rejects fact sets containing contested facts.
 - Parentage materialization requires a span and already-materialized child and
   parent titles.

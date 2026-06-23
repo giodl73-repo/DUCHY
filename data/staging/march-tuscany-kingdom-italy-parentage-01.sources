@@ -1,0 +1,11 @@
+source_id: src-wikipedia-march-tuscany
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/March_of_Tuscany
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-22
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: March of Tuscany article; used only for bounded replacement-candidate context identifying the march as a march of the Kingdom of Italy and Holy Roman Empire.
+review_decision: accepted_for_replacement_candidate
+reviewer: Source Custody Reviewer
+review_note: Accepted for staging replacement-candidate review only; no accepted fixture change until parentage replacement/deprecation support exists.

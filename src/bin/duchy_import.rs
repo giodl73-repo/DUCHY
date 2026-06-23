@@ -144,10 +144,11 @@ fn run() -> Result<(), Vec<String>> {
     let titles = duchy::source_backed_titles_from_facts(&catalog, &facts)?;
     let timeline = duchy::source_backed_timeline_from_facts(&catalog, &facts)?;
 
-    let parentage_count = facts
+    let raw_parentage_count = facts
         .iter()
         .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
         .count();
+    let parentage_count = active_parentage_facts(&facts).len();
 
     println!("DUCHY import status");
     println!("- sources: {}", catalog.record_count());
@@ -155,6 +156,10 @@ fn run() -> Result<(), Vec<String>> {
     println!("- facts: {}", facts.len());
     println!("- titles: {}", titles.len());
     println!("- parentage facts: {parentage_count}");
+    println!(
+        "- superseded parentage facts: {}",
+        raw_parentage_count - parentage_count
+    );
     timeline.validate().map_err(|errors| {
         errors
             .into_iter()
@@ -164,6 +169,20 @@ fn run() -> Result<(), Vec<String>> {
     println!("- timeline: valid");
 
     Ok(())
+}
+
+fn active_parentage_facts(facts: &[duchy::FactRecord]) -> Vec<&duchy::FactRecord> {
+    let superseded_fact_ids = facts
+        .iter()
+        .filter_map(|fact| fact.supersedes_fact_id.as_deref())
+        .collect::<BTreeSet<_>>();
+    facts
+        .iter()
+        .filter(|fact| {
+            fact.claim_kind == duchy::ClaimKind::Parentage
+                && !superseded_fact_ids.contains(fact.fact_id.as_str())
+        })
+        .collect()
 }
 
 fn parentage_graph_report(
@@ -192,10 +211,7 @@ fn parentage_graph_report(
         .iter()
         .map(|title| (title.id.as_str(), title))
         .collect::<BTreeMap<_, _>>();
-    let parentage_facts = facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-        .collect::<Vec<_>>();
+    let parentage_facts = active_parentage_facts(&facts);
     let parentage_by_child = parentage_by_child(&parentage_facts);
     let conflicts = parentage_conflict_rows(&parentage_facts, &title_by_id);
     let rank_skip_rows = parentage_rank_skip_rows(&parentage_facts, &title_by_id);
@@ -249,6 +265,7 @@ fn parentage_graph_report(
     output.push_str("- DUCHY parentage is a temporal forest, not one timeless duchy tree.\n");
     output.push_str("- `title_edge_fill_percent` measures title-level parentage coverage for parentable ranks.\n");
     output.push_str("- `weighted_span_coverage_percent` measures how much of parentable title existence time is covered by parentage spans.\n");
+    output.push_str("- Coverage and rank-skip counts use active fact rows; when a broad parentage fact is partially superseded, timeline materialization keeps uncovered residual spans even though this fact-row report excludes the superseded source row.\n");
     output.push_str("- `density_percent` in snapshots is active parent edges divided by active parentable titles for that year.\n");
     output.push_str("- `rank_skip_facts` are valid but indicate missing intermediate hierarchy such as duchy or crown layers.\n\n");
 
@@ -417,10 +434,7 @@ fn parentage_rank_skip_tsv(
         .iter()
         .map(|title| (title.id.as_str(), title))
         .collect::<BTreeMap<_, _>>();
-    let parentage_facts = facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-        .collect::<Vec<_>>();
+    let parentage_facts = active_parentage_facts(&facts);
     let rows = parentage_rank_skip_rows(&parentage_facts, &title_by_id);
 
     let mut output = String::new();
@@ -495,10 +509,7 @@ fn parentage_rank_skip_candidate_report(
         .iter()
         .map(|title| (title.id.as_str(), title))
         .collect::<BTreeMap<_, _>>();
-    let parentage_facts = facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-        .collect::<Vec<_>>();
+    let parentage_facts = active_parentage_facts(&facts);
     let parentage_fact_by_id = parentage_facts
         .iter()
         .map(|fact| (fact.fact_id.as_str(), *fact))
@@ -643,10 +654,7 @@ fn parentage_rank_skip_bridges_tsv(
         .iter()
         .map(|title| (title.id.as_str(), title))
         .collect::<BTreeMap<_, _>>();
-    let parentage_facts = facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-        .collect::<Vec<_>>();
+    let parentage_facts = active_parentage_facts(&facts);
     let parentage_fact_by_id = parentage_facts
         .iter()
         .map(|fact| (fact.fact_id.as_str(), *fact))
@@ -815,10 +823,7 @@ fn parentage_coverage_report(
             .collect::<Vec<_>>()
     })?;
 
-    let parentage_facts = facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-        .collect::<Vec<_>>();
+    let parentage_facts = active_parentage_facts(&facts);
     let mut parentage_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
     for fact in &parentage_facts {
         parentage_by_child
@@ -942,11 +947,9 @@ fn parentage_gap_tsv(
             .collect::<Vec<_>>()
     })?;
 
+    let parentage_facts = active_parentage_facts(&facts);
     let mut parentage_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
-    for fact in facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-    {
+    for fact in &parentage_facts {
         parentage_by_child
             .entry(fact.subject_id.as_str())
             .or_default()
@@ -3819,10 +3822,8 @@ fn parentage_change_rows(
         .map(|title| (title.id.as_str(), title))
         .collect::<BTreeMap<_, _>>();
     let mut parentage_by_child: BTreeMap<&str, Vec<&duchy::FactRecord>> = BTreeMap::new();
-    for fact in facts
-        .iter()
-        .filter(|fact| fact.claim_kind == duchy::ClaimKind::Parentage)
-    {
+    let parentage_facts = active_parentage_facts(facts);
+    for fact in parentage_facts {
         parentage_by_child
             .entry(fact.subject_id.as_str())
             .or_default()
@@ -4908,6 +4909,7 @@ mod tests {
             source_ids: vec!["src-demo".to_string()],
             confidence: duchy::ConfidenceLabel::SingleSource,
             conflict_group: None,
+            supersedes_fact_id: None,
         }
     }
 }

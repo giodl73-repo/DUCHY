@@ -64,7 +64,7 @@ requires source custody, citation policy, and rights review before import.
 - `docs/vtrace/` defines the lineage-query mission, CONOPS, requirements,
   interfaces, trace matrix, verification, validation, and work packages.
 - `docs/vtrace/source-custody/` defines the gate for real historical sources.
-  The accepted fixture catalog now contains 438 reviewed source records.
+  The accepted fixture catalog now contains 520 reviewed source records.
 
 The first accepted capability target is the ability to ask which higher title
 contained an area in a year, how an area moved between duchies over a date
@@ -273,24 +273,146 @@ now have reviewed parentage and the parentage gap queue remains at 120 rows
 because the new Western Roman Empire title itself needs root-or-successor
 review.
 The parentage graph audit now treats hierarchy as a temporal forest instead of
-one timeless duchy tree. The current graph report covers 349 titles, 274
+one timeless duchy tree. The current graph report covers 349 titles, 278 active
 parentage facts, 308 parentable titles, 229 titles with parentage, 74.35%
-title-level parentage fill, 59.27% weighted span coverage, 222 valid rank-skip
+title-level parentage fill, 59.44% weighted span coverage, 220 valid rank-skip
 facts, no temporal parent conflicts, and no snapshot cycles across 544 generated
 snapshot years.
-The rank-skip queue exports those 222 valid-but-incomplete hierarchy edges for
-review: 160 high-priority intermediate-parent rows, 23 medium-priority rows, and
-39 low-priority rows. The largest class is duchy-to-empire parentage, which
-needs reviewed kingdom-layer packets before DUCHY can treat those branches as a
-proper immediate-rank tree.
+The Kingdom of Italy replacement parentage packet adds two reviewed text
+sources and two replacement facts, superseding direct HRE parentage for March of
+Turin and March of Tuscany while keeping the active graph conflict-free. The
+accepted catalog now has 440 reviewed sources, 1323 facts, 349 titles, 274
+active parentage facts, and 2 superseded parentage facts.
+The early Bavaria parentage packet adds Duchy of Bavaria under East Francia for
+`907..961`, extending the accepted catalog to 1324 facts and 275 active
+parentage facts without changing the active rank-skip row count.
+The early Saxony parentage packet adds one reviewed text source and parents
+Duchy of Saxony under East Francia for `843..961`, extending the accepted
+catalog to 441 reviewed sources, 1325 facts, and 276 active parentage facts.
+The early Lower Lotharingia parentage packet uses the existing reviewed Lower
+Lotharingia source to add East Francia parentage for `959..961`, extending the
+accepted catalog to 1326 facts and 277 active parentage facts.
+The early Lorraine parentage packet adds one reviewed text source and parents
+Duchy of Lorraine under East Francia for `959..961`, extending the accepted
+catalog to 442 reviewed sources, 1327 facts, and 278 active parentage facts.
+The HRE parentage source-custody tightening pass adds a reviewed Margraviate of
+Meissen text source and attaches reviewed text sources to the existing Lorraine,
+Saxony, and Meissen HRE parentage facts, extending the catalog to 443 reviewed
+sources without changing hierarchy metrics.
+The Brandenburg/Pomerania HRE source-custody pass adds two reviewed text
+sources and attaches them to the existing Margraviate of Brandenburg and Duchy
+of Pomerania HRE parentage facts, extending the catalog to 445 reviewed sources
+without changing hierarchy metrics.
+The Holland HRE source-custody pass adds one reviewed text source and attaches
+it to the existing County of Holland HRE parentage fact, extending the catalog
+to 446 reviewed sources. County of Flanders remains held for split
+French/Imperial parentage modeling instead of being flattened into a single
+source-custody claim.
+The Mantua/Savoy HRE source-custody pass adds two reviewed text sources and
+attaches them to the existing Duchy of Mantua and Duchy of Savoy HRE parentage
+facts, extending the catalog to 448 reviewed sources. Duchy of Milan remains
+held for Italian/Habsburg split review rather than using a full-span shortcut.
+The Palatinate/Mainz/Cologne HRE source-custody pass adds three reviewed text
+sources and attaches them to the existing Electoral Palatinate, Electorate of
+Mainz, and Electorate of Cologne HRE parentage facts, extending the catalog to
+451 reviewed sources without changing hierarchy metrics.
+The Bavaria/Hanover/Saxony electorate source-custody pass adds three reviewed
+text sources and attaches them to the existing Electorate of Bavaria,
+Electorate of Hanover, and Electorate of Saxony HRE parentage facts, extending
+the catalog to 454 reviewed sources without changing hierarchy metrics.
+The Baden/Wurttemberg electorate source-custody pass adds two reviewed text
+sources and attaches them to the existing Electorate of Baden and Electorate
+of Wurttemberg HRE parentage facts, extending the catalog to 456 reviewed
+sources without changing hierarchy metrics.
+The Duchy of Anhalt source-custody pass adds reviewed text support for its
+existing German Confederation, North German Confederation, and German Empire
+parentage facts, extending the catalog to 457 reviewed sources without
+changing hierarchy metrics.
+The Oldenburg/Brunswick source-custody pass adds reviewed text support for
+their existing German Confederation, North German Confederation, and German
+Empire parentage facts, extending the catalog to 459 reviewed sources without
+changing hierarchy metrics.
+The Mecklenburg/Hesse source-custody pass adds reviewed text support for
+existing Mecklenburg-Schwerin, Mecklenburg-Strelitz, and Hesse confederation
+and empire parentage facts, extending the catalog to 462 reviewed sources
+without changing hierarchy metrics.
+The Saxe-Meiningen source-custody pass adds reviewed text support for existing
+Holy Roman Empire, German Confederation, and German Empire parentage facts,
+extending the catalog to 463 reviewed sources without changing hierarchy
+metrics.
+The Saxe-Altenburg/Schaumburg-Lippe source-custody pass adds reviewed text
+support for their existing Holy Roman Empire and German Confederation parentage
+facts, extending the catalog to 465 reviewed sources without changing
+hierarchy metrics.
+The Saxe-Weimar-Eisenach/Schwarzburg-Sondershausen source-custody pass adds
+reviewed text support for existing German Confederation and North German
+Confederation spans, plus the existing Schwarzburg-Sondershausen HRE span,
+extending the catalog to 467 reviewed sources without changing hierarchy
+metrics.
+The Saxe-Coburg and Gotha/Schwarzburg-Rudolstadt source-custody pass adds
+reviewed text support for existing German Confederation parentage facts,
+extending the catalog to 469 reviewed sources without changing hierarchy
+metrics.
+The Saxe-Coburg-Saalfeld/Saxe-Gotha-Altenburg/Saxe-Hildburghausen
+source-custody pass adds reviewed text support for existing HRE and German
+Confederation parentage facts, extending the catalog to 472 reviewed sources
+without changing hierarchy metrics.
+The Nassau/Saxe-Lauenburg source-custody pass adds reviewed text support for
+existing German Confederation parentage and Saxe-Lauenburg HRE parentage,
+extending the catalog to 474 reviewed sources without changing hierarchy
+metrics.
+The Hesse/Lippe/Holstein source-custody pass adds reviewed text support for
+existing German Confederation parentage plus the accepted Lippe and Holstein
+HRE parentage facts, extending the catalog to 477 reviewed sources without
+changing hierarchy metrics.
+The Anhalt-Bernburg/Hohenzollern source-custody pass adds reviewed text
+support for existing Anhalt-Bernburg, Hohenzollern-Hechingen, and
+Hohenzollern-Sigmaringen HRE and German Confederation parentage facts,
+extending the catalog to 480 reviewed sources without changing hierarchy
+metrics.
+The Anhalt-Dessau/Anhalt-Kothen/Brunswick-Luneburg source-custody pass adds
+reviewed text support for existing Anhalt HRE and German Confederation facts
+plus Brunswick-Luneburg HRE parentage, extending the catalog to 483 reviewed
+sources without changing hierarchy metrics.
+The Brunswick-Wolfenbuttel/Burgundy/Nassau source-custody pass adds reviewed
+text support for existing HRE parentage facts, extending the catalog to 486
+reviewed sources without changing hierarchy metrics.
+The Brabant/Bremen-Verden/Carniola source-custody pass adds reviewed text
+support for existing HRE parentage facts, extending the catalog to 489
+reviewed sources without changing hierarchy metrics.
+The Austria/Bavaria-Munich/Luxembourg source-custody pass adds reviewed text
+support for existing HRE parentage facts, extending the catalog to 492
+reviewed sources without changing hierarchy metrics.
+The Flanders/Berg/Guelders/Bohemia/Hesse source-custody pass adds reviewed
+text support for existing HRE parentage facts, reaching the 500 reviewed
+source milestone without changing hierarchy metrics.
+The Swabia/Wurttemberg/ecclesiastical-principality source-custody pass adds
+reviewed text support for fourteen more existing HRE parentage facts,
+extending the catalog to 514 reviewed sources without changing hierarchy
+metrics.
+The Mecklenburg-Schwerin/Italy/Brabant/Mirandola/Sulzbach source-custody pass
+adds reviewed text support for five more existing HRE parentage facts,
+extending the catalog to 519 reviewed sources without changing hierarchy
+metrics.
+The Burgundian Netherlands replacement parentage packet adds one reviewed text
+source and three partial replacement facts, routing County of Flanders
+`1384..1482`, County of Holland `1433..1482`, and County of Namur `1421..1482`
+through Burgundian Netherlands while keeping the older HRE facts auditable and
+active outside those bounded spans. The catalog now has 520 reviewed sources,
+1330 facts, 5 superseded parentage facts, and a valid timeline; active
+fact-row rank skips drop from 220 to 217.
+The rank-skip queue exports those 217 valid-but-incomplete hierarchy edges for
+review. The largest class is duchy-to-empire parentage, which needs reviewed
+kingdom-layer packets before DUCHY can treat those branches as a proper
+immediate-rank tree.
 The rank-skip queue is now sharded into nine 25-row review batches with an
 index and Markdown rollup report, so intermediate-parent review can be assigned
 without reopening the broader graph report.
 The rank-skip candidate report cross-checks those rows against accepted titles:
-217 of 222 rank-skip rows have an overlapping accepted title at the expected
-immediate rank, and 162 rows have at least one stronger bridge candidate already
+212 of 217 rank-skip rows have an overlapping accepted title at the expected
+immediate rank, and 157 rows have at least one stronger bridge candidate already
 parented under the same current parent during an overlapping span.
-The bridge TSV distills those 162 rows into a compact queue for targeted
+The bridge TSV distills those 157 rows into a compact queue for targeted
 source-review work. A bridge row is not proof of correct immediate parentage; it
 only means DUCHY already has an accepted candidate title of the expected rank
 under the same current parent.

@@ -72,6 +72,7 @@ fn main() {
         source_ids: vec!["src-wikidata-licensing".to_string()],
         confidence: duchy::ConfidenceLabel::SingleSource,
         conflict_group: None,
+        supersedes_fact_id: None,
     };
     assert!(source_catalog.validate_fact(&blocked_fact).is_err());
     println!("Source fact gate: metadata-only records cannot import facts");
@@ -174,6 +175,7 @@ fn main() {
             source_ids: vec![reviewed_source_id.clone()],
             confidence: duchy::ConfidenceLabel::Contested,
             conflict_group: Some("conflict-demo-rank".to_string()),
+            supersedes_fact_id: None,
         },
         duchy::FactRecord {
             fact_id: "fact-demo-contested-rank-kingdom".to_string(),
@@ -184,6 +186,7 @@ fn main() {
             source_ids: vec![reviewed_source_id],
             confidence: duchy::ConfidenceLabel::Contested,
             conflict_group: Some("conflict-demo-rank".to_string()),
+            supersedes_fact_id: None,
         },
     ];
     let contested_groups = duchy::contested_fact_groups(&contested_demo);

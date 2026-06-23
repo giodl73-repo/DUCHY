@@ -2,9 +2,9 @@
 
 source_tsv: data/staging/parentage-rank-skip-bridge-cluster-review.tsv
 review_rows: 20
-pending_review: 14
-not_inferred: 14
-high_priority_rows: 150
+pending_review: 0
+not_inferred: 0
+high_priority_rows: 148
 medium_priority_rows: 9
 low_priority_rows: 3
 
@@ -18,44 +18,43 @@ low_priority_rows: 3
 
 | Status | Rows |
 |---|---:|
-| pending_review | 14 |
-| reviewed | 6 |
+| reviewed | 20 |
 
 ## Disposition Counts
 
 | Disposition | Rows |
 |---|---:|
-| not_inferred | 14 |
-| same_parent_sibling_false_positive | 6 |
+| mixed_cluster_requires_child_split | 1 |
+| same_parent_sibling_false_positive | 19 |
 
 ## Evidence Counts
 
 | Evidence Needed | Rows |
 |---|---:|
-| child_to_candidate_parentage_source | 14 |
-| none_after_negative_review | 6 |
+| child_split_review_required | 1 |
+| none | 19 |
 
 ## Review Rows
 
 | Status | Disposition | Candidate Parent | Current Parent | Children | High | Medium | Low | Evidence Needed |
 |---|---|---|---|---:|---:|---:|---:|---|
-| pending_review | not_inferred | Kingdom of Bohemia | Holy Roman Empire | 49 | 49 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Italy | Holy Roman Empire | 31 | 31 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Bavaria | German Confederation | 27 | 27 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Duchy of Bavaria | Holy Roman Empire | 12 | 12 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Bavaria | German Empire | 8 | 8 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Prussia | North German Confederation | 6 | 6 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Bohemia | Austria-Hungary | 4 | 4 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Crown of the Kingdom of Poland | Polish-Lithuanian Commonwealth | 4 | 0 | 4 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Confederation of the Rhine | First French Empire | 3 | 0 | 0 | 3 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Westphalia | Confederation of the Rhine | 3 | 0 | 3 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Anhalt-Bernburg | Holy Roman Empire | 2 | 3 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Bohemia | Austrian Empire | 2 | 2 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Kingdom of Italy | First French Empire | 2 | 2 | 0 | 0 | child_to_candidate_parentage_source |
-| pending_review | not_inferred | Duchy of Brittany | Kingdom of France | 2 | 0 | 2 | 0 | child_to_candidate_parentage_source |
-| reviewed | same_parent_sibling_false_positive | Archduchy of Austria | Austria-Hungary | 1 | 1 | 0 | 0 | none_after_negative_review |
-| reviewed | same_parent_sibling_false_positive | Archduchy of Austria | Austrian Empire | 1 | 1 | 0 | 0 | none_after_negative_review |
-| reviewed | same_parent_sibling_false_positive | Duchy of Ferrara | Papal States | 1 | 1 | 0 | 0 | none_after_negative_review |
-| reviewed | same_parent_sibling_false_positive | Eastern Hungarian Kingdom | Ottoman Empire | 1 | 1 | 0 | 0 | none_after_negative_review |
-| reviewed | same_parent_sibling_false_positive | Kingdom of Imereti | Russian Empire | 1 | 1 | 0 | 0 | none_after_negative_review |
-| reviewed | same_parent_sibling_false_positive | Margraviate of Brandenburg | Holy Roman Empire | 1 | 1 | 0 | 0 | none_after_negative_review |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Bohemia | Holy Roman Empire | 49 | 49 | 0 | 0 | none |
+| reviewed | mixed_cluster_requires_child_split | Kingdom of Italy | Holy Roman Empire | 29 | 29 | 0 | 0 | child_split_review_required |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Bavaria | German Confederation | 27 | 27 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Duchy of Bavaria | Holy Roman Empire | 12 | 12 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Bavaria | German Empire | 8 | 8 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Prussia | North German Confederation | 6 | 6 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Bohemia | Austria-Hungary | 4 | 4 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Crown of the Kingdom of Poland | Polish-Lithuanian Commonwealth | 4 | 0 | 4 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Confederation of the Rhine | First French Empire | 3 | 0 | 0 | 3 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Westphalia | Confederation of the Rhine | 3 | 0 | 3 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Anhalt-Bernburg | Holy Roman Empire | 2 | 3 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Bohemia | Austrian Empire | 2 | 2 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Italy | First French Empire | 2 | 2 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Duchy of Brittany | Kingdom of France | 2 | 0 | 2 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Archduchy of Austria | Austria-Hungary | 1 | 1 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Archduchy of Austria | Austrian Empire | 1 | 1 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Duchy of Ferrara | Papal States | 1 | 1 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Eastern Hungarian Kingdom | Ottoman Empire | 1 | 1 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Kingdom of Imereti | Russian Empire | 1 | 1 | 0 | 0 | none |
+| reviewed | same_parent_sibling_false_positive | Margraviate of Brandenburg | Holy Roman Empire | 1 | 1 | 0 | 0 | none |

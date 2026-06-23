@@ -2,8 +2,8 @@
 
 source_tsv: data/staging/parentage-rank-skip-bridge-clusters.tsv
 clusters: 20
-clustered_children: 161
-high_priority_rows: 150
+clustered_children: 159
+high_priority_rows: 148
 medium_priority_rows: 9
 low_priority_rows: 3
 
@@ -18,7 +18,7 @@ low_priority_rows: 3
 | Candidate Parent | Current Parent | Expected Rank | Children | High | Medium | Low | Span Range |
 |---|---|---|---:|---:|---:|---:|---|
 | Kingdom of Bohemia | Holy Roman Empire | Kingdom | 49 | 49 | 0 | 0 | 1200..1806 |
-| Kingdom of Italy | Holy Roman Empire | Kingdom | 31 | 31 | 0 | 0 | 962..1806 |
+| Kingdom of Italy | Holy Roman Empire | Kingdom | 29 | 29 | 0 | 0 | 962..1806 |
 | Kingdom of Bavaria | German Confederation | Kingdom | 27 | 27 | 0 | 0 | 1815..1866 |
 | Duchy of Bavaria | Holy Roman Empire | Duchy | 12 | 12 | 0 | 0 | 962..1806 |
 | Kingdom of Bavaria | German Empire | Kingdom | 8 | 8 | 0 | 0 | 1871..1918 |
@@ -58,13 +58,13 @@ low_priority_rows: 3
 - candidate_parent_id: title-q838931
 - current_parent_id: title-q12548
 - expected_parent_rank: Kingdom
-- child_count: 31
-- priority_counts: high 31, medium 0, low 0
+- child_count: 29
+- priority_counts: high 29, medium 0, low 0
 - span_range: 962..1806
 - bridge_fact_ids: fact-q838931-parent-q12548
-- skip_fact_ids: fact-q1231403-parent-q12548,fact-q148499-parent-q12548,fact-q155019-parent-q12548,fact-q158835-parent-q12548,fact-q159856-parent-q12548,fact-q164092-parent-q12548,fact-q17015016-parent-q12548,fact-q170180-parent-q12548,fact-q173863-parent-q12548,fact-q1867844-parent-q12548,fact-q2162698-parent-q12548,fact-q22880-parent-q12548,fact-q283627-parent-q12548,fact-q284667-parent-q12548,fact-q319586-parent-q12548,fact-q328001-parent-q12548,fact-q3624335-parent-q12548,fact-q426488-parent-q12548,fact-q47261-parent-q12548,fact-q641138-parent-q12548,fact-q650645-parent-q12548,fact-q657241-parent-q12548,fact-q660393-parent-q12548,fact-q693980-parent-q12548,fact-q696640-parent-q12548,fact-q697254-parent-q12548,fact-q707767-parent-q12548,fact-q751868-parent-q12548,fact-q771332-parent-q12548,fact-q7904317-parent-q12548,fact-q836937-parent-q12548
-- child_ids: title-q1231403,title-q148499,title-q155019,title-q158835,title-q159856,title-q164092,title-q17015016,title-q170180,title-q173863,title-q1867844,title-q2162698,title-q22880,title-q283627,title-q284667,title-q319586,title-q328001,title-q3624335,title-q426488,title-q47261,title-q641138,title-q650645,title-q657241,title-q660393,title-q693980,title-q696640,title-q697254,title-q707767,title-q751868,title-q771332,title-q7904317,title-q836937
-- child_names: Duchy of Austria; Duchy of Bavaria; Duchy of Bohemia; Duchy of Brabant; Duchy of Cleves; Duchy of Julich; Duchy of Lorraine; Duchy of Pomerania; Duchy of Saxony; Duchy of Swabia; Duchy of Westphalia; Electoral Palatinate; Electorate of Cologne; Electorate of Mainz; Landgraviate of Brabant; Lower Lotharingia; March of Turin; March of Tuscany; Margraviate of Austria; Margraviate of Brandenburg; Margraviate of Meissen; Prince-Bishopric of Augsburg; Prince-Bishopric of Basel; Prince-Bishopric of Liege; Prince-Bishopric of Minden; Prince-Bishopric of Munster; Prince-Bishopric of Strasbourg; Prince-Bishopric of Toul; Prince-Bishopric of Trent; Prince-Bishopric of Utrecht; Prince-Bishopric of Verdun
+- skip_fact_ids: fact-q1231403-parent-q12548,fact-q148499-parent-q12548,fact-q155019-parent-q12548,fact-q158835-parent-q12548,fact-q159856-parent-q12548,fact-q164092-parent-q12548,fact-q17015016-parent-q12548,fact-q170180-parent-q12548,fact-q173863-parent-q12548,fact-q2162698-parent-q12548,fact-q22880-parent-q12548,fact-q283627-parent-q12548,fact-q284667-parent-q12548,fact-q319586-parent-q12548,fact-q328001-parent-q12548,fact-q3624335-parent-q12548,fact-q47261-parent-q12548,fact-q641138-parent-q12548,fact-q650645-parent-q12548,fact-q657241-parent-q12548,fact-q660393-parent-q12548,fact-q693980-parent-q12548,fact-q696640-parent-q12548,fact-q697254-parent-q12548,fact-q707767-parent-q12548,fact-q751868-parent-q12548,fact-q771332-parent-q12548,fact-q7904317-parent-q12548,fact-q836937-parent-q12548
+- child_ids: title-q1231403,title-q148499,title-q155019,title-q158835,title-q159856,title-q164092,title-q17015016,title-q170180,title-q173863,title-q2162698,title-q22880,title-q283627,title-q284667,title-q319586,title-q328001,title-q3624335,title-q47261,title-q641138,title-q650645,title-q657241,title-q660393,title-q693980,title-q696640,title-q697254,title-q707767,title-q751868,title-q771332,title-q7904317,title-q836937
+- child_names: Duchy of Austria; Duchy of Bavaria; Duchy of Bohemia; Duchy of Brabant; Duchy of Cleves; Duchy of Julich; Duchy of Lorraine; Duchy of Pomerania; Duchy of Saxony; Duchy of Swabia; Duchy of Westphalia; Electoral Palatinate; Electorate of Cologne; Electorate of Mainz; Landgraviate of Brabant; Lower Lotharingia; Margraviate of Austria; Margraviate of Brandenburg; Margraviate of Meissen; Prince-Bishopric of Augsburg; Prince-Bishopric of Basel; Prince-Bishopric of Liege; Prince-Bishopric of Minden; Prince-Bishopric of Munster; Prince-Bishopric of Strasbourg; Prince-Bishopric of Toul; Prince-Bishopric of Trent; Prince-Bishopric of Utrecht; Prince-Bishopric of Verdun
 
 ### Kingdom of Bavaria -> German Confederation
 
