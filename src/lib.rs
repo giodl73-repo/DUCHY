@@ -100,6 +100,21 @@ pub enum RelationKind {
     RankTransition,
 }
 
+impl RelationKind {
+    fn as_str(self) -> &'static str {
+        match self {
+            Self::ImperialState => "imperial_state",
+            Self::ConfederationMember => "confederation_member",
+            Self::FederalStateMember => "federal_state_member",
+            Self::CompositeCrownComponent => "composite_crown_component",
+            Self::SplitFiefOrControl => "split_fief_or_control",
+            Self::VassalageOrSuzerainty => "vassalage_or_suzerainty",
+            Self::SubdivisionOrAppanage => "subdivision_or_appanage",
+            Self::RankTransition => "rank_transition",
+        }
+    }
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ParentageRankPolicy {
     StrictImmediate,
@@ -564,12 +579,16 @@ impl TitleTimeline {
         }
 
         match self.title_path_for_title_in_year(title_id, year) {
-            Some(answer) => QueryEnvelope::with_answer(
-                answer,
-                source_class,
-                source_class.title_path_trace_code(),
-                format!("resolved {source_class:?} title path for title {title_id} in {year}"),
-            ),
+            Some(answer) => {
+                let mut envelope = QueryEnvelope::with_answer(
+                    answer,
+                    source_class,
+                    source_class.title_path_trace_code(),
+                    format!("resolved {source_class:?} title path for title {title_id} in {year}"),
+                );
+                self.append_relation_trace_notes(&mut envelope, year);
+                envelope
+            }
             None => QueryEnvelope::without_answer(
                 QueryStatus::Empty,
                 source_class,
@@ -610,6 +629,36 @@ impl TitleTimeline {
             titles,
             events,
         })
+    }
+
+    fn append_relation_trace_notes(
+        &self,
+        envelope: &mut QueryEnvelope<TitlePathAnswer>,
+        year: Year,
+    ) {
+        let Some(answer) = &envelope.answer else {
+            return;
+        };
+        for step in &answer.titles {
+            for relation in self.relations_for_title_in_year(&step.title_id, year) {
+                let related_name = self
+                    .titles
+                    .get(&relation.related_title_id)
+                    .map(|title| title.name.as_str())
+                    .unwrap_or("unknown title");
+                envelope.trace.push(TraceNote::new(
+                    "relation_context",
+                    format!(
+                        "{} has {} relation to {} ({}) over {}",
+                        step.title_id,
+                        relation.relation_kind.as_str(),
+                        relation.related_title_id,
+                        related_name,
+                        format_year_span(&relation.span)
+                    ),
+                ));
+            }
+        }
     }
 
     pub fn transfers_for_area_between(
@@ -1564,6 +1613,14 @@ fn parse_year_span(value: &str, errors: &mut Vec<String>) -> Option<YearSpan> {
     };
 
     Some(YearSpan::new(start, end))
+}
+
+fn format_year_span(span: &YearSpan) -> String {
+    let end = span
+        .end
+        .map(|end| end.to_string())
+        .unwrap_or_else(|| "present".to_string());
+    format!("{}..{end}", span.start)
 }
 
 fn parse_allowed_use(value: &str) -> Option<AllowedUse> {
@@ -4384,6 +4441,48 @@ confidence: maybe
         assert_eq!(relations.len(), 1);
         assert_eq!(relations[0].relation_kind, RelationKind::ImperialState);
         assert_eq!(relations[0].related_title_id, "title-parent-kingdom");
+    }
+
+    #[test]
+    fn title_path_query_traces_relation_context_without_mutating_path() {
+        let catalog = test_structured_claim_catalog();
+        let mut facts = test_parentage_fact_set();
+        facts.push(FactRecord {
+            fact_id: "fact-child-confederation-member".to_string(),
+            subject_id: "title-child-duchy".to_string(),
+            claim_kind: ClaimKind::Relation,
+            span: Some(YearSpan::new(1000, Some(1100))),
+            value: "confederation_member:title-parent-kingdom".to_string(),
+            source_ids: vec!["src-test-structured".to_string()],
+            confidence: ConfidenceLabel::SingleSource,
+            conflict_group: None,
+            supersedes_fact_id: None,
+        });
+
+        let timeline = source_backed_timeline_from_facts(&catalog, &facts).unwrap();
+        let query = timeline.title_path_query_for_title_in_year(
+            "title-child-duchy",
+            1050,
+            SourceClass::SourceBacked,
+        );
+
+        assert_eq!(query.status, QueryStatus::Answered);
+        assert_eq!(
+            query
+                .answer
+                .as_ref()
+                .unwrap()
+                .titles
+                .iter()
+                .map(|step| step.title_id.as_str())
+                .collect::<Vec<_>>(),
+            vec!["title-child-duchy", "title-parent-kingdom"]
+        );
+        assert!(query.trace.iter().any(|trace| {
+            trace.code == "relation_context"
+                && trace.detail.contains("confederation_member")
+                && trace.detail.contains("title-parent-kingdom")
+        }));
     }
 
     #[test]

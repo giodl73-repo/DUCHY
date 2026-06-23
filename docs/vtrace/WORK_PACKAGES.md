@@ -188,10 +188,10 @@ cargo run --quiet --bin duchy-import -- parentage-rank-skip-tsv fixtures/first-r
 git diff --check
 ```
 
-Status: in progress. The first code slice implements typed relation spans,
+Status: in progress. Implemented slices now cover typed relation spans,
 source-backed relation fact parsing/materialization, timeline storage, year
-lookup, and validation. Query trace integration and rank-skip report
-classification remain open.
+lookup, validation, and title-path query trace context. Rank-skip report
+classification remains open.
 
 ## Orphan Check
 

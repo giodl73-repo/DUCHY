@@ -480,6 +480,9 @@ transition semantics that can explain rank skips without mutating parentage.
 The first `WP-007` implementation slice adds typed `RelationSpan` materialized
 from `claim_kind: relation` fixture facts, with source-backed validation and
 year lookup that keeps relation context separate from parentage title paths.
+The next `WP-007` slice adds `relation_context` trace notes to title-path query
+answers, so relation facts can explain dependency or membership context without
+changing the returned parentage path.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
