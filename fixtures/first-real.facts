@@ -12884,3 +12884,22 @@ value: rank_transition:title-q172107
 source_ids: src-wikidata-q1649871, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth
 confidence: multi_source
 ---
+---
+# Reviewed Hispanic Monarchy component relation packet.
+
+fact_id: fact-q204920-relation-q766543-composite-crown-component
+subject_id: title-q204920
+claim_kind: relation
+span: 1479..1700
+value: composite_crown_component:title-q766543
+source_ids: src-wikidata-q204920, src-wikidata-q766543, src-wikipedia-hispanic-monarchy-component-context
+confidence: multi_source
+---
+fact_id: fact-q217196-relation-q766543-composite-crown-component
+subject_id: title-q217196
+claim_kind: relation
+span: 1479..1700
+value: composite_crown_component:title-q766543
+source_ids: src-wikidata-q217196, src-wikidata-q766543, src-wikipedia-hispanic-monarchy-component-context
+confidence: multi_source
+---

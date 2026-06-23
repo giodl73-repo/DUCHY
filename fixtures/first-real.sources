@@ -7447,3 +7447,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded component relation context between the Crown of the Kingdom of Poland and the Polish-Lithuanian Commonwealth; no Sejm mechanics, offices, military, voivodeship inventory, partitions, elective monarchy mechanics, or post-1795 successor detail imported.
 ---
+---
+# Reviewed Hispanic Monarchy component relation packet.
+
+source_id: src-wikipedia-hispanic-monarchy-component-context
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Hispanic_Monarchy
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Hispanic Monarchy article; used only for relation context identifying the composite monarchy formed from the Crowns of Castile and Aragon over the accepted 1479..1700 parentage span.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded component relation context between the Crown of Castile, Crown of Aragon, and the Hispanic Monarchy; no overseas possessions, councils, Habsburg reign detail, Iberian Union, wars, succession politics, or post-1700 successor detail imported.
+---

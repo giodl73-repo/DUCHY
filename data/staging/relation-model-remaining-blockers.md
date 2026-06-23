@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first forty-four accepted relation-model packets promote 251 non-parentage
+The first forty-five accepted relation-model packets promote 253 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -29,17 +29,19 @@ component relation context for the accepted Crown of the Kingdom of Poland
 parentage under the Polish-Lithuanian Commonwealth.
 `poland-commonwealth-endpoint-relation-01` adds endpoint rank-transition
 context for accepted Kingdom of Poland boundary-year parentage into the
-Commonwealth.
+Commonwealth. `hispanic-monarchy-component-relation-01` adds text-backed
+component relation context for the accepted Crowns of Aragon and Castile
+parentage under the Hispanic Monarchy.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 587 |
-| facts | 1619 |
+| sources | 588 |
+| facts | 1621 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 251 |
+| relation facts | 253 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -93,6 +95,7 @@ Current measured baseline:
 | `kalmar-union-component-relation-01` | 3 | `composite_crown_component` |
 | `commonwealth-polish-crown-component-relation-01` | 1 | `composite_crown_component` |
 | `poland-commonwealth-endpoint-relation-01` | 2 | `rank_transition` |
+| `hispanic-monarchy-component-relation-01` | 2 | `composite_crown_component` |
 
 ## Held Rows
 
