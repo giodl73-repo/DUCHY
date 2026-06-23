@@ -467,6 +467,11 @@ duchy-rank titles. It reviews ten more rows, imports no replacements, and
 classifies eight as relation-model blockers and two as source-custody
 tightening rows for Archduchy of Austria under Austrian Empire and
 Austria-Hungary.
+The fourth rank-skip review batch adds ten more duchy-rank rows and again
+imports no replacements; every row is a relation-model blocker, with repeated
+needs for subdivision, vassalage, confederation membership, federal-state
+membership, imperial principality, and rank-elevation semantics outside the
+strict parentage tree.
 
 Batch candidate imports go through `data/staging/` and must pass dry-run
 promotion before accepted fixture rows are appended:
