@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first forty-two accepted relation-model packets promote 248 non-parentage
+The first forty-three accepted relation-model packets promote 249 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -24,17 +24,19 @@ adds matching composite-component relation context for the already accepted
 England, Scotland, and Ireland endpoint parentage facts.
 `kalmar-union-component-relation-01` adds text-backed component relation
 context for accepted Sweden, Denmark, and Norway parentage under the Kalmar
-Union.
+Union. `commonwealth-polish-crown-component-relation-01` adds matching
+component relation context for the accepted Crown of the Kingdom of Poland
+parentage under the Polish-Lithuanian Commonwealth.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
-| sources | 586 |
-| facts | 1616 |
+| sources | 587 |
+| facts | 1617 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 248 |
+| relation facts | 249 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -86,6 +88,7 @@ Current measured baseline:
 | `great-britain-ukgbi-relation-01` | 1 | `composite_crown_component` |
 | `british-isles-union-component-relation-01` | 3 | `composite_crown_component` |
 | `kalmar-union-component-relation-01` | 3 | `composite_crown_component` |
+| `commonwealth-polish-crown-component-relation-01` | 1 | `composite_crown_component` |
 
 ## Held Rows
 

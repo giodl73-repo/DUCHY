@@ -1,9 +1,9 @@
 # DUCHY Parentage Rank Skip Relation Report
 
-sources: 586
-facts: 1616
+sources: 587
+facts: 1617
 titles: 356
-relation_facts: 248
+relation_facts: 249
 rank_skip_rows: 232
 relation_explained_rows: 232
 unexplained_rows: 0

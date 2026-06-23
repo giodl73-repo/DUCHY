@@ -7432,3 +7432,18 @@ review_decision: accepted_structured_claims
 reviewer: Source Custody Reviewer
 review_note: Accepted only for bounded component relation context between the Kalmar Union and its accepted Denmark, Sweden, and Norway child-title spans; no royal holder sequence, Sweden secession mechanics, Danish-Norwegian successor claims, borders, dependencies, or post-1523 history imported.
 ---
+---
+# Reviewed Crown of the Kingdom of Poland Commonwealth component relation packet.
+
+source_id: src-wikipedia-polish-lithuanian-commonwealth-polish-crown-component
+source_kind: wikimedia_text
+source_url: https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth
+license: Creative Commons Attribution-ShareAlike 4.0 International and GNU Free Documentation License
+retrieved_on: 2026-06-23
+allowed_use: text_excerpt
+attribution: Wikipedia contributors
+notes: Polish-Lithuanian Commonwealth article; used only for relation context identifying the Commonwealth as a federative real union including the Crown of the Kingdom of Poland from 1569 to 1795.
+review_decision: accepted_structured_claims
+reviewer: Source Custody Reviewer
+review_note: Accepted only for bounded component relation context between the Crown of the Kingdom of Poland and the Polish-Lithuanian Commonwealth; no Sejm mechanics, offices, military, voivodeship inventory, partitions, elective monarchy mechanics, or post-1795 successor detail imported.
+---

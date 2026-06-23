@@ -12854,3 +12854,14 @@ value: composite_crown_component:title-q62623
 source_ids: src-wikidata-q2196956, src-wikidata-q62623, src-britannica-kalmar-union-component-context
 confidence: multi_source
 ---
+---
+# Reviewed Crown of the Kingdom of Poland Commonwealth component relation packet.
+
+fact_id: fact-q171348-relation-q172107-composite-crown-component
+subject_id: title-q171348
+claim_kind: relation
+span: 1569..1795
+value: composite_crown_component:title-q172107
+source_ids: src-wikidata-q171348, src-wikidata-q172107, src-wikipedia-polish-lithuanian-commonwealth-polish-crown-component
+confidence: multi_source
+---
