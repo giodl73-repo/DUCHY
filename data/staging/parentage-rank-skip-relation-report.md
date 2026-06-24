@@ -1,9 +1,9 @@
 # DUCHY Parentage Rank Skip Relation Report
 
 sources: 588
-facts: 1631
+facts: 1636
 titles: 356
-relation_facts: 263
+relation_facts: 268
 rank_skip_rows: 232
 relation_explained_rows: 232
 unexplained_rows: 0
@@ -18,7 +18,7 @@ unexplained_rows: 0
 
 | Relation Kind | Rows |
 |---|---:|
-| composite_crown_component | 22 |
+| composite_crown_component | 23 |
 | confederation_member | 41 |
 | crownland_component | 14 |
 | federal_state_member | 13 |
@@ -314,6 +314,7 @@ unexplained_rows: 0
 
 | Relation Kind | Related Title | Relation Span | Overlap |
 |---|---|---|---|
+| composite_crown_component | Crown of Aragon (title-q204920) | 1341..1402 | 1341..1402 |
 | subdivision_or_appanage | Crown of Aragon (title-q204920) | 1341..1402 | 1341..1402 |
 
 ### fact-q157070-parent-q1031430 | County of Flanders -> Habsburg Netherlands

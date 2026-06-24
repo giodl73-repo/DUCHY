@@ -1,0 +1,42 @@
+# Reviewed residual Crown of Aragon component relation packet.
+
+fact_id: fact-q199442-relation-q204920-composite-crown-component
+subject_id: title-q199442
+claim_kind: relation
+span: 1162..1707
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q199442, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q142417-relation-q204920-composite-crown-component
+subject_id: title-q142417
+claim_kind: relation
+span: 1238..1707
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q142417, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q836676-relation-q204920-composite-crown-component
+subject_id: title-q836676
+claim_kind: relation
+span: 1229..1715
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q836676, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q55599391-relation-q204920-composite-crown-component
+subject_id: title-q55599391
+claim_kind: relation
+span: 1324..1713
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q55599391, src-wikidata-q204920
+confidence: multi_source
+---
+fact_id: fact-q1541699-relation-q204920-composite-crown-component
+subject_id: title-q1541699
+claim_kind: relation
+span: 1341..1402
+value: composite_crown_component:title-q204920
+source_ids: src-wikidata-q1541699, src-wikidata-q204920, src-wikipedia-county-empuries
+confidence: multi_source
+---
