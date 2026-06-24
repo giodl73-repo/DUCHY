@@ -13172,3 +13172,59 @@ value: vassalage_or_suzerainty:title-q70972
 source_ids: src-wikidata-q2295939, src-wikidata-q70972, src-wikipedia-duchy-gascony
 confidence: multi_source
 ---
+---
+# Reviewed East Francia stem duchy relation packet.
+# East Francia (q153080) is a Kingdom (843..962), so the stem duchies are
+# modeled as vassalage/suzerainty under the East Frankish crown, mirroring the
+# French crown vassal packet (Duchy under Kingdom). The imperial_state relations
+# these duchies already carry apply to their later Holy Roman Empire spans and
+# are not affected. Spans match the accepted parentage under East Francia.
+
+fact_id: fact-q164092-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q164092
+claim_kind: relation
+span: 843..961
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q164092, src-wikidata-q153080, src-wikipedia-duchy-saxony
+confidence: multi_source
+---
+fact_id: fact-q47261-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q47261
+claim_kind: relation
+span: 907..961
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q47261, src-wikidata-q153080, src-wikipedia-duchy-bavaria
+confidence: multi_source
+---
+fact_id: fact-q693980-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q693980
+claim_kind: relation
+span: 917..961
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q693980, src-wikidata-q153080
+confidence: multi_source
+---
+fact_id: fact-q155019-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q155019
+claim_kind: relation
+span: 959..961
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q155019, src-wikidata-q153080, src-wikipedia-duchy-lorraine
+confidence: multi_source
+---
+fact_id: fact-q6673921-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q6673921
+claim_kind: relation
+span: 880..959
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q6673921, src-wikidata-q153080, src-wikipedia-lotharingia
+confidence: multi_source
+---
+fact_id: fact-q660393-relation-q153080-vassalage-or-suzerainty
+subject_id: title-q660393
+claim_kind: relation
+span: 959..961
+value: vassalage_or_suzerainty:title-q153080
+source_ids: src-wikidata-q660393, src-wikidata-q153080, src-wikipedia-lower-lotharingia
+confidence: multi_source
+---

@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first fifty-two accepted relation-model packets promote 282 non-parentage
+The first fifty-two accepted relation-model packets promote 288 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -61,16 +61,21 @@ under the Burgundian Netherlands. `french-crown-vassal-relation-01` mirrors the
 Normandy packet for the major French crown vassals, adding vassalage/suzerainty
 context for accepted Duchy of Burgundy, Duchy of Brittany, Duchy of Aquitaine,
 and Duchy of Gascony parentage under the Kingdom of France.
+`east-francia-stem-duchy-relation-01` adds vassalage/suzerainty context for
+accepted Duchy of Saxony, Duchy of Bavaria, Duchy of Swabia, Duchy of Lorraine,
+Lotharingia, and Lower Lotharingia parentage under East Francia, a Kingdom that
+predates the Holy Roman Empire; the imperial_state relations these duchies carry
+for their later HRE spans are unaffected.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1650 |
+| facts | 1656 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 282 |
+| relation facts | 288 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -136,6 +141,7 @@ Current measured baseline:
 | `castile-component-relation-01` | 7 | `composite_crown_component` |
 | `burgundian-netherlands-component-relation-01` | 3 | `composite_crown_component` |
 | `french-crown-vassal-relation-01` | 4 | `vassalage_or_suzerainty` |
+| `east-francia-stem-duchy-relation-01` | 6 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 

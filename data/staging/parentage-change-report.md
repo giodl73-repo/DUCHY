@@ -1,7 +1,7 @@
 # DUCHY Parentage Change Report
 
 sources: 588
-facts: 1650
+facts: 1656
 titles: 356
 parentage_titles: 234
 titles_with_parent_changes: 41
