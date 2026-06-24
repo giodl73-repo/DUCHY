@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first fifty-two accepted relation-model packets promote 278 non-parentage
+The first fifty-two accepted relation-model packets promote 282 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -57,17 +57,20 @@ parentage under the Crown of Castile.
 `burgundian-netherlands-component-relation-01` fills the Burgundian Netherlands
 node skipped in each Low Countries county's composite-crown successor chain,
 adding component context for accepted Flanders, Holland, and Namur parentage
-under the Burgundian Netherlands.
+under the Burgundian Netherlands. `french-crown-vassal-relation-01` mirrors the
+Normandy packet for the major French crown vassals, adding vassalage/suzerainty
+context for accepted Duchy of Burgundy, Duchy of Brittany, Duchy of Aquitaine,
+and Duchy of Gascony parentage under the Kingdom of France.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1646 |
+| facts | 1650 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 278 |
+| relation facts | 282 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -132,6 +135,7 @@ Current measured baseline:
 | `aragon-component-relation-01` | 5 | `composite_crown_component` |
 | `castile-component-relation-01` | 7 | `composite_crown_component` |
 | `burgundian-netherlands-component-relation-01` | 3 | `composite_crown_component` |
+| `french-crown-vassal-relation-01` | 4 | `vassalage_or_suzerainty` |
 
 ## Held Rows
 
