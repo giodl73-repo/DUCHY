@@ -13106,3 +13106,32 @@ value: composite_crown_component:title-q217196
 source_ids: src-wikidata-q1796202, src-wikidata-q217196
 confidence: multi_source
 ---
+---
+# Reviewed Burgundian Netherlands component relation packet.
+# Fills the Burgundian Netherlands node skipped in each Low Countries county's
+# composite-crown successor chain.
+
+fact_id: fact-q157070-relation-q157109-composite-crown-component
+subject_id: title-q157070
+claim_kind: relation
+span: 1384..1482
+value: composite_crown_component:title-q157109
+source_ids: src-wikidata-q157070, src-wikidata-q157109, src-wikipedia-county-flanders, src-wikipedia-burgundian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q762943-relation-q157109-composite-crown-component
+subject_id: title-q762943
+claim_kind: relation
+span: 1433..1482
+value: composite_crown_component:title-q157109
+source_ids: src-wikidata-q762943, src-wikidata-q157109, src-wikipedia-county-holland, src-wikipedia-burgundian-netherlands
+confidence: multi_source
+---
+fact_id: fact-q599613-relation-q157109-composite-crown-component
+subject_id: title-q599613
+claim_kind: relation
+span: 1421..1482
+value: composite_crown_component:title-q157109
+source_ids: src-wikidata-q599613, src-wikidata-q157109, src-wikipedia-county-namur, src-wikipedia-burgundian-netherlands
+confidence: multi_source
+---

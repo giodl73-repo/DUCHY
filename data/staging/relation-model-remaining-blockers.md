@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first fifty-two accepted relation-model packets promote 275 non-parentage
+The first fifty-two accepted relation-model packets promote 278 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -54,16 +54,20 @@ that packet for the second great Iberian composite crown, adding component
 context for accepted Kingdom of Castile, Kingdom of Leon, Kingdom of Galicia,
 Kingdom of Toledo, Kingdom of Murcia, Kingdom of Jaen, and Kingdom of Granada
 parentage under the Crown of Castile.
+`burgundian-netherlands-component-relation-01` fills the Burgundian Netherlands
+node skipped in each Low Countries county's composite-crown successor chain,
+adding component context for accepted Flanders, Holland, and Namur parentage
+under the Burgundian Netherlands.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1643 |
+| facts | 1646 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 275 |
+| relation facts | 278 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -127,6 +131,7 @@ Current measured baseline:
 | `naples-crown-aragon-relation-01` | 1 | `composite_crown_component` |
 | `aragon-component-relation-01` | 5 | `composite_crown_component` |
 | `castile-component-relation-01` | 7 | `composite_crown_component` |
+| `burgundian-netherlands-component-relation-01` | 3 | `composite_crown_component` |
 
 ## Held Rows
 
