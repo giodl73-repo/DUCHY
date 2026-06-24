@@ -1,0 +1,37 @@
+# Reviewed Bohemian Silesian and Polish crown land vassal relation packet.
+# Duchy-rank titles under Kingdom-rank parents (Kingdom of Bohemia, Crown of the
+# Kingdom of Poland), modeled as vassalage/suzerainty, consistent with the prior
+# bohemian-silesian-vassal packet. Spans match the accepted parentage.
+
+fact_id: fact-q568638-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q568638
+claim_kind: relation
+span: 1335..1742
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q568638, src-wikidata-q42585, src-wikipedia-duchies-silesia
+confidence: multi_source
+---
+fact_id: fact-q570702-relation-q42585-vassalage-or-suzerainty
+subject_id: title-q570702
+claim_kind: relation
+span: 1290..1850
+value: vassalage_or_suzerainty:title-q42585
+source_ids: src-wikidata-q570702, src-wikidata-q42585
+confidence: multi_source
+---
+fact_id: fact-q2183293-relation-q171348-vassalage-or-suzerainty
+subject_id: title-q2183293
+claim_kind: relation
+span: 1387..1462
+value: vassalage_or_suzerainty:title-q171348
+source_ids: src-wikidata-q2183293, src-wikidata-q171348, src-wikipedia-duchy-belz
+confidence: multi_source
+---
+fact_id: fact-q506218-relation-q171348-vassalage-or-suzerainty
+subject_id: title-q506218
+claim_kind: relation
+span: 1386..1772
+value: vassalage_or_suzerainty:title-q171348
+source_ids: src-wikidata-q506218, src-wikidata-q171348
+confidence: multi_source
+---
