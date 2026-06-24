@@ -10,7 +10,7 @@ source_inputs:
 
 ## Status
 
-The first fifty-two accepted relation-model packets promote 268 non-parentage
+The first fifty-two accepted relation-model packets promote 275 non-parentage
 relation facts. The generated relation report explains all 232 active
 rank-skip rows after the Catalonia and Low Countries crown parentage edges
 added new explained rank-skip rows. Relation facts now allow
@@ -49,17 +49,21 @@ accepted Kingdom of Naples parentage under the Crown of Aragon.
 `aragon-component-relation-01` then closes the Crown of Aragon component set by
 adding matching component context for accepted Kingdom of Aragon, Kingdom of
 Valencia, Kingdom of Majorca, Kingdom of Sardinia, and County of Empuries
-parentage under the Crown of Aragon.
+parentage under the Crown of Aragon. `castile-component-relation-01` mirrors
+that packet for the second great Iberian composite crown, adding component
+context for accepted Kingdom of Castile, Kingdom of Leon, Kingdom of Galicia,
+Kingdom of Toledo, Kingdom of Murcia, Kingdom of Jaen, and Kingdom of Granada
+parentage under the Crown of Castile.
 
 Current measured baseline:
 
 | Metric | Value |
 |---|---:|
 | sources | 588 |
-| facts | 1636 |
+| facts | 1643 |
 | titles | 356 |
 | parentage facts | 294 |
-| relation facts | 268 |
+| relation facts | 275 |
 | rank-skip rows | 232 |
 | relation-explained rows | 232 |
 | unexplained rank-skip rows | 0 |
@@ -122,6 +126,7 @@ Current measured baseline:
 | `sicily-crown-aragon-relation-01` | 1 | `composite_crown_component` |
 | `naples-crown-aragon-relation-01` | 1 | `composite_crown_component` |
 | `aragon-component-relation-01` | 5 | `composite_crown_component` |
+| `castile-component-relation-01` | 7 | `composite_crown_component` |
 
 ## Held Rows
 

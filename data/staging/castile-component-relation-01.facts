@@ -1,0 +1,58 @@
+# Reviewed Crown of Castile component relation packet.
+
+fact_id: fact-q179293-relation-q217196-composite-crown-component
+subject_id: title-q179293
+claim_kind: relation
+span: 1230..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q179293, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q175276-relation-q217196-composite-crown-component
+subject_id: title-q175276
+claim_kind: relation
+span: 1230..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q175276, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q303421-relation-q217196-composite-crown-component
+subject_id: title-q303421
+claim_kind: relation
+span: 1230..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q303421, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q2301372-relation-q217196-composite-crown-component
+subject_id: title-q2301372
+claim_kind: relation
+span: 1230..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q2301372, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q1164500-relation-q217196-composite-crown-component
+subject_id: title-q1164500
+claim_kind: relation
+span: 1258..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q1164500, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q1617495-relation-q217196-composite-crown-component
+subject_id: title-q1617495
+claim_kind: relation
+span: 1246..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q1617495, src-wikidata-q217196
+confidence: multi_source
+---
+fact_id: fact-q1796202-relation-q217196-composite-crown-component
+subject_id: title-q1796202
+claim_kind: relation
+span: 1492..1715
+value: composite_crown_component:title-q217196
+source_ids: src-wikidata-q1796202, src-wikidata-q217196
+confidence: multi_source
+---
