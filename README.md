@@ -510,6 +510,21 @@ Add `--report path.md` after the mode to emit a promotion review report.
 - COURT/RACKET/MUDDLE are future experience surfaces only after DUCHY has a
   stable timeline contract.
 
+## Portfolio Reuse Posture
+
+DUCHY is intentionally a specialist historical-title data and game-design
+product, not currently a shared portfolio dependency. The BANISH, QUEST,
+TIGRIS, and experience-surface relationships above are prospective use cases,
+not downstream adoption records. The `duchy` 0.1 model, reviewed fixtures,
+source-custody decisions, import queues, and diagnostics remain owned by this
+repository.
+
+Other repositories should not copy title facts, identifiers, lineage rules, or
+fixture formats as stable APIs. A reusable timeline contract requires explicit
+versioning, source-custody and migration rules, a downstream manifest, and
+consumer-owned compatibility tests. Until at least two products need the same
+primitive, shared framework extraction remains out of scope.
+
 ## Non-Goals
 
 - No commercial-game data, mechanics, or clone behavior.
