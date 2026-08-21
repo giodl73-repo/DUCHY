@@ -1,3 +1,10 @@
+---
+name: Query Interface Reviewer
+slug: query-interface-reviewer
+tier: stakeholders
+applies_to: [queries, cli, answers, traceability]
+---
+
 # Query Interface Reviewer
 
 ## Review Scope

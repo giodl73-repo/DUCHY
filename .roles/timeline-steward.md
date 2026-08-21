@@ -1,3 +1,10 @@
+---
+name: Timeline Steward
+slug: timeline-steward
+tier: parliament
+applies_to: [titles, spans, continuity, events]
+---
+
 # Timeline Steward
 
 ## Review Scope

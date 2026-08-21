@@ -1,3 +1,10 @@
+---
+name: Territorial Lineage Reviewer
+slug: territorial-lineage-reviewer
+tier: parliament
+applies_to: [territory, parentage, containment, lineage]
+---
+
 # Territorial Lineage Reviewer
 
 ## Review Scope

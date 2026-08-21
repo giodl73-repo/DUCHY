@@ -1,3 +1,10 @@
+---
+name: Source Custody Reviewer
+slug: source-custody-reviewer
+tier: parliament
+applies_to: [sources, rights, uncertainty, imports]
+---
+
 # Source Custody Reviewer
 
 ## Review Scope

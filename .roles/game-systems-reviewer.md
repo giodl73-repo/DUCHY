@@ -1,3 +1,10 @@
+---
+name: Game Systems Reviewer
+slug: game-systems-reviewer
+tier: stakeholders
+applies_to: [game-design, fixtures, scope, usability]
+---
+
 # Game Systems Reviewer
 
 ## Review Scope
